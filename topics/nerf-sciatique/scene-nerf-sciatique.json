@@ -128,36 +128,60 @@
      }
     },
     {
-     "id": "piriformis_fascia_right",
+     "id": "medial_sural_cutaneous_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf cutané sural médial",
+     "name_en": "Right medial sural cutaneous nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/medial_sural_cutaneous_nerve_right.glb"
+    },
+    {
+     "id": "sural_communicating_branch_of_common_fibular_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Branche surale communiquante du nerf fibulaire commun",
+     "name_en": "Right sural communicating branch of common fibular nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/sural_communicating_branch_of_common_fibular_nerve_right.glb"
+    },
+    {
+     "id": "sural_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf sural",
+     "name_en": "Right sural nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/sural_nerve_right.glb"
+    },
+    {
+     "id": "medial_plantar_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf plantaire médial",
+     "name_en": "Right medial plantar nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/medial_plantar_nerve_right.glb"
+    },
+    {
+     "id": "lateral_plantar_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf plantaire latéral",
+     "name_en": "Right lateral plantar nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/lateral_plantar_nerve_right.glb"
+    },
+    {
+     "id": "superficial_fibular_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fibulaire superficiel",
+     "name_en": "Right superficial fibular nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/superficial_fibular_nerve_right.glb"
+    },
+    {
+     "id": "piriformis_muscle_right",
      "role": "contexte",
-     "nom_fr": "Fascia du muscle piriforme",
-     "name_en": "Right piriformis fascia",
-     "name_la": "Fascia musculi piriformis",
-     "systeme": "fascias",
-     "couleur": "#b03a2e",
-     "file": "models/muscles/piriformis_fascia_right.glb",
-     "bounds": {
-      "min": [
-       -132.1,
-       787.0,
-       30.3
-      ],
-      "max": [
-       -23.3,
-       851.4,
-       86.4
-      ],
-      "center": [
-       -77.7,
-       819.2,
-       58.3
-      ],
-      "size": [
-       108.8,
-       64.4,
-       56.2
-      ]
-     }
+     "nom_fr": "Muscle piriforme",
+     "name_en": "Right piriformis muscle",
+     "system": "muscles",
+     "file": "models/muscles/piriformis_muscle_right.glb"
     },
     {
      "id": "gluteus_maximus_muscle_right",
@@ -257,7 +281,7 @@
     },
     {
      "id": "hip_bone_right",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Os coxal",
      "name_en": "Right hip bone",
      "name_la": "Os coxae",
@@ -286,11 +310,77 @@
        135.1
       ]
      }
+    },
+    {
+     "id": "posterior_femoral_cutaneous_nerve_right",
+     "role": "contexte",
+     "nom_fr": "Nerf cutané postérieur de la cuisse",
+     "name_en": "Right posterior femoral cutaneous nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/posterior_femoral_cutaneous_nerve_right.glb"
+    },
+    {
+     "id": "adductor_magnus_right",
+     "role": "contexte",
+     "nom_fr": "Grand adducteur",
+     "name_en": "Right adductor magnus",
+     "system": "muscles",
+     "file": "models/muscles/adductor_magnus_right.glb"
+    },
+    {
+     "id": "semitendinosus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle semitendineux",
+     "name_en": "Right semitendinosus muscle",
+     "system": "muscles",
+     "file": "models/muscles/semitendinosus_muscle_right.glb"
+    },
+    {
+     "id": "semimembranosus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle semimembraneux",
+     "name_en": "Right semimembranosus muscle",
+     "system": "muscles",
+     "file": "models/muscles/semimembranosus_muscle_right.glb"
+    },
+    {
+     "id": "plantaris_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle plantaire",
+     "name_en": "Right plantaris muscle",
+     "system": "muscles",
+     "file": "models/muscles/plantaris_muscle_right.glb"
+    },
+    {
+     "id": "gastrocnemius_right",
+     "role": "contexte",
+     "nom_fr": "Gastrocnémien droit",
+     "name_en": "Right gastrocnemius",
+     "system": "muscles",
+     "file": "models/muscles/gastrocnemius_right.glb"
+    },
+    {
+     "id": "soleus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle soléaire",
+     "name_en": "Right soleus muscle",
+     "system": "muscles",
+     "file": "models/muscles/soleus_muscle_right.glb"
     }
    ],
    "diagram": null,
    "espaces": [],
-   "manquants": []
+   "manquants": [
+    "Nerfs cluniaux inférieurs : ABSENTS du manifeste",
+    "Rameaux périnéaux (du nerf cutané postérieur de la cuisse) : ABSENTS du manifeste",
+    "Nerf cutané sural latéral : ABSENT du manifeste",
+    "Rameau articulaire (×2 au schéma) : ABSENT (aucune géométrie de rameau articulaire)",
+    "Rameaux calcanéens médiaux : ABSENTS (aucune géométrie nerveuse calcanéenne)",
+    "Rameaux calcanéens latéraux : ABSENTS (aucune géométrie nerveuse calcanéenne)",
+    "Nerf cutané dorsal latéral : ABSENT du manifeste (aucune géométrie dédiée)",
+    "Divisions tibiale et fibulaire commune du nerf sciatique : non individualisées (fondues dans le maillage du nerf sciatique)",
+    "Chefs long et court du biceps fémoral : non séparés (maillage unique du biceps fémoral)"
+   ]
   }
  ],
  "structures_toutes": [

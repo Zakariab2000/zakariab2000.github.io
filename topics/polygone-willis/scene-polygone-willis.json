@@ -112,7 +112,7 @@
     },
     {
      "id": "middle_cerebral_artery_m1_segment_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/arteres/middle_cerebral_artery_m1_segment_right.glb",
      "nom_fr": "Artère cérébrale moyenne (Segment M1)",
      "name_en": "Right middle cerebral artery (M1-segment)",
@@ -122,7 +122,7 @@
     },
     {
      "id": "middle_cerebral_artery_m1_segment_left",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/arteres/middle_cerebral_artery_m1_segment_left.glb",
      "nom_fr": "Artère cérébrale moyenne (Segment M1)",
      "name_en": "Left middle cerebral artery (M1-segment)",
@@ -132,7 +132,7 @@
     },
     {
      "id": "vertebral_artery_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/arteres/vertebral_artery_right.glb",
      "nom_fr": "Artère vertébrale",
      "name_en": "Right vertebral artery",
@@ -142,13 +142,125 @@
     },
     {
      "id": "vertebral_artery_left",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/arteres/vertebral_artery_left.glb",
      "nom_fr": "Artère vertébrale",
      "name_en": "Left vertebral artery",
      "name_la": "Arteria vertebralis",
      "couleur": "#cf5346",
      "system": "arteres"
+    },
+    {
+     "id": "ophthalmic_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère ophtalmique",
+     "name_en": "Right ophthalmic artery",
+     "system": "arteres",
+     "file": "models/arteres/ophthalmic_artery_right.glb"
+    },
+    {
+     "id": "ophthalmic_artery_left",
+     "role": "rapports",
+     "nom_fr": "Artère ophtalmique",
+     "name_en": "Left ophthalmic artery",
+     "system": "arteres",
+     "file": "models/arteres/ophthalmic_artery_left.glb"
+    },
+    {
+     "id": "superior_cerebellar_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère cérébelleuse supérieure",
+     "name_en": "Right superior cerebellar artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_cerebellar_artery_right.glb"
+    },
+    {
+     "id": "superior_cerebellar_artery_left",
+     "role": "rapports",
+     "nom_fr": "Artère cérébelleuse supérieure",
+     "name_en": "Left superior cerebellar artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_cerebellar_artery_left.glb"
+    },
+    {
+     "id": "medial_pontine_branches_of_basilar_artery_right",
+     "role": "rapports",
+     "nom_fr": "Branches pontines médiales de l'artère basilaire",
+     "name_en": "Right medial pontine branches of basilar artery",
+     "system": "arteres",
+     "file": "models/arteres/medial_pontine_branches_of_basilar_artery_right.glb"
+    },
+    {
+     "id": "medial_pontine_branches_of_basilar_artery_left",
+     "role": "rapports",
+     "nom_fr": "Branches pontines médiales de l'artère basilaire",
+     "name_en": "Left medial pontine branches of basilar artery",
+     "system": "arteres",
+     "file": "models/arteres/medial_pontine_branches_of_basilar_artery_left.glb"
+    },
+    {
+     "id": "lateral_pontine_branches_of_basilar_artery_right",
+     "role": "rapports",
+     "nom_fr": "Branches pontines latérales de l'artère basilaire",
+     "name_en": "Right lateral pontine branches of basilar artery",
+     "system": "arteres",
+     "file": "models/arteres/lateral_pontine_branches_of_basilar_artery_right.glb"
+    },
+    {
+     "id": "lateral_pontine_branches_of_basilar_artery_left",
+     "role": "rapports",
+     "nom_fr": "Branches pontines latérales de l'artère basilaire",
+     "name_en": "Left lateral pontine branches of basilar artery",
+     "system": "arteres",
+     "file": "models/arteres/lateral_pontine_branches_of_basilar_artery_left.glb"
+    },
+    {
+     "id": "anterior_inferior_cerebellar_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère cérébelleuse inféro-antérieure",
+     "name_en": "Right anterior inferior cerebellar artery",
+     "system": "arteres",
+     "file": "models/arteres/anterior_inferior_cerebellar_artery_right.glb"
+    },
+    {
+     "id": "anterior_inferior_cerebellar_artery_left",
+     "role": "rapports",
+     "nom_fr": "Artère cérébelleuse inféro-antérieure",
+     "name_en": "Left anterior inferior cerebellar artery",
+     "system": "arteres",
+     "file": "models/arteres/anterior_inferior_cerebellar_artery_left.glb"
+    },
+    {
+     "id": "anterior_spinal_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère spinale antérieure",
+     "name_en": "Right anterior spinal artery",
+     "system": "arteres",
+     "file": "models/arteres/anterior_spinal_artery_right.glb"
+    },
+    {
+     "id": "anterior_spinal_artery_left",
+     "role": "rapports",
+     "nom_fr": "Artère spinale antérieure",
+     "name_en": "Left anterior spinal artery",
+     "system": "arteres",
+     "file": "models/arteres/anterior_spinal_artery_left.glb"
+    },
+    {
+     "id": "posterior_inferior_cerebellar_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère cérébelleuse inféropostérieure",
+     "name_en": "Right posterior inferior cerebellar artery",
+     "system": "arteres",
+     "file": "models/arteres/posterior_inferior_cerebellar_artery_right.glb"
+    },
+    {
+     "id": "posterior_inferior_cerebellar_artery_left",
+     "role": "rapports",
+     "nom_fr": "Artère cérébelleuse inféropostérieure",
+     "name_en": "Left posterior inferior cerebellar artery",
+     "system": "arteres",
+     "file": "models/arteres/posterior_inferior_cerebellar_artery_left.glb"
     }
    ],
    "camera": {
@@ -182,7 +294,11 @@
     "basilar_artery"
    ],
    "diagram": null,
-   "manquants": []
+   "manquants": [
+    "Artères centrales antéro-médiales",
+    "Artère choroïdienne antérieure",
+    "Artère labyrinthique"
+   ]
   }
  ]
 }

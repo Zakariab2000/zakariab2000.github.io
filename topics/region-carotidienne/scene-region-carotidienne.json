@@ -32,22 +32,6 @@
      "file": "models/muscles/sternocleidomastoid_muscle_left.glb"
     },
     {
-     "id": "ascending_part_of_trapezius_muscle_right",
-     "role": "sujet",
-     "nom_fr": "Partie ascendante du trapèze",
-     "name_en": "Right ascending part of trapezius muscle",
-     "system": "muscles",
-     "file": "models/muscles/ascending_part_of_trapezius_muscle_right.glb"
-    },
-    {
-     "id": "ascending_part_of_trapezius_muscle_left",
-     "role": "sujet",
-     "nom_fr": "Partie ascendante du trapèze",
-     "name_en": "Left ascending part of trapezius muscle",
-     "system": "muscles",
-     "file": "models/muscles/ascending_part_of_trapezius_muscle_left.glb"
-    },
-    {
      "id": "scalenus_anterior_muscle_right",
      "role": "sujet",
      "nom_fr": "Muscle scalène antérieur",
@@ -136,6 +120,14 @@
      "file": "models/organes/thyroid_gland.glb"
     },
     {
+     "id": "right_common_carotid_artery",
+     "role": "contexte",
+     "nom_fr": "Artère carotide commune droite",
+     "name_en": "Right common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/right_common_carotid_artery.glb"
+    },
+    {
      "id": "left_common_carotid_artery",
      "role": "contexte",
      "nom_fr": "Artère carotide commune gauche",
@@ -160,26 +152,74 @@
      "file": "models/veines/internal_jugular_vein_left.glb"
     },
     {
-     "id": "clavicle_right",
-     "role": "ghost",
-     "nom_fr": "Clavicule",
-     "name_en": "Right clavicle",
-     "system": "squelette",
-     "file": "models/squelette/clavicle_right.glb"
+     "id": "vagus_nerve_x_right",
+     "role": "contexte",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Right vagus nerve (X)",
+     "system": "nerfs",
+     "file": "models/nerfs/vagus_nerve_x_right.glb"
     },
     {
-     "id": "clavicle_left",
-     "role": "ghost",
-     "nom_fr": "Clavicule",
-     "name_en": "Left clavicle",
-     "system": "squelette",
-     "file": "models/squelette/clavicle_left.glb"
+     "id": "vagus_nerve_x_left",
+     "role": "contexte",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Left vagus nerve (X)",
+     "system": "nerfs",
+     "file": "models/nerfs/vagus_nerve_x_left.glb"
+    },
+    {
+     "id": "trachea",
+     "role": "contexte",
+     "nom_fr": "Trachée",
+     "name_en": "Trachea",
+     "system": "organes",
+     "file": "models/organes/trachea.glb"
+    },
+    {
+     "id": "oesophagus",
+     "role": "contexte",
+     "nom_fr": "Oesophage",
+     "name_en": "Oesophagus",
+     "system": "organes",
+     "file": "models/organes/oesophagus.glb"
+    },
+    {
+     "id": "longus_colli_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle long du cou",
+     "name_en": "Right longus colli muscle",
+     "system": "muscles",
+     "file": "models/muscles/longus_colli_muscle_right.glb"
+    },
+    {
+     "id": "longus_colli_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle long du cou",
+     "name_en": "Left longus colli muscle",
+     "system": "muscles",
+     "file": "models/muscles/longus_colli_muscle_left.glb"
+    },
+    {
+     "id": "longus_capitis_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle long de la tête",
+     "name_en": "Right longus capitis muscle",
+     "system": "muscles",
+     "file": "models/muscles/longus_capitis_muscle_right.glb"
+    },
+    {
+     "id": "longus_capitis_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle long de la tête",
+     "name_en": "Left longus capitis muscle",
+     "system": "muscles",
+     "file": "models/muscles/longus_capitis_muscle_left.glb"
     }
    ],
    "manquants": [
-    "Lames prétrachérale et prévertébrale du fascia cervical : absentes — voir cartes Espaces « Compartiment viscéral » et « Compartiment prévertébral »",
-    "Gaine carotidienne : absente — voir carte Espace « Gaine carotidienne »",
-    "Les compartiments sont des espaces délimités par les fascias : la délimitation 3D est partielle (fascia engainant + muscles)"
+    "Lames prétrachérale et prévertébrale du fascia cervical : ABSENTES ; gaine carotidienne : ABSENTE",
+    "Les compartiments sont des espaces délimités par ces fascias : la délimitation 3D ne peut être que partielle (fascia engainant + muscles)",
+    "Lame périphérique : ABSENTE comme entrée distincte du manifeste"
    ]
   },
   {
@@ -187,7 +227,7 @@
    "classe": "3D",
    "titre_fr": "Système carotidien",
    "titre_en": "The carotid system",
-   "vue": "antero-laterale",
+   "vue": "latérale gauche recadrée sur la bifurcation carotidienne et les branches de la carotide externe",
    "structures": [
     {
      "id": "left_common_carotid_artery",
@@ -318,6 +358,22 @@
      "file": "models/arteres/frontal_branch_of_superficial_temporal_artery_left.glb"
     },
     {
+     "id": "occipital_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère occipitale",
+     "name_en": "Right occipital artery",
+     "system": "arteres",
+     "file": "models/arteres/occipital_artery_right.glb"
+    },
+    {
+     "id": "occipital_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère occipitale",
+     "name_en": "Left occipital artery",
+     "system": "arteres",
+     "file": "models/arteres/occipital_artery_left.glb"
+    },
+    {
      "id": "internal_jugular_vein_right",
      "role": "contexte",
      "nom_fr": "Veine jugulaire interne",
@@ -334,24 +390,8 @@
      "file": "models/veines/internal_jugular_vein_left.glb"
     },
     {
-     "id": "vertebral_artery_right",
-     "role": "contexte",
-     "nom_fr": "Artère vertébrale",
-     "name_en": "Right vertebral artery",
-     "system": "arteres",
-     "file": "models/arteres/vertebral_artery_right.glb"
-    },
-    {
-     "id": "vertebral_artery_left",
-     "role": "contexte",
-     "nom_fr": "Artère vertébrale",
-     "name_en": "Left vertebral artery",
-     "system": "arteres",
-     "file": "models/arteres/vertebral_artery_left.glb"
-    },
-    {
      "id": "thyroid_gland",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Glande thyroïde",
      "name_en": "Thyroid gland",
      "system": "organes",
@@ -359,8 +399,9 @@
     }
    ],
    "manquants": [
-    "4 des 8 collatérales classiques de la carotide externe ABSENTES : thyroïdienne supérieure, linguale, occipitale, auriculaire postérieure — voir schéma « Collatérales de la carotide externe »",
-    "Présentes : pharyngienne ascendante, faciale, maxillaire, temporale superficielle (+ sa branche frontale)"
+    "Sur les 8 collatérales classiques de la carotide externe, 3 sont ABSENTES : thyroïdienne supérieure, linguale, auriculaire postérieure",
+    "Présentes : pharyngienne ascendante, faciale, maxillaire, temporale superficielle (+ sa branche frontale), occipitale",
+    "Sinus carotidien : ABSENT du manifeste"
    ]
   },
   {
@@ -368,7 +409,7 @@
    "classe": "3D",
    "titre_fr": "Système lymphatique dans le cou",
    "titre_en": "Lymphatic system of the neck",
-   "vue": "antero-laterale",
+   "vue": "latérale gauche tête et cou, recadrée sur les chaînes ganglionnaires",
    "structures": [
     {
      "id": "inferior_deep_lateral_cervical_nodes_right",
@@ -483,6 +524,134 @@
      "file": "models/lymphatique/pretracheal_nodes_left.glb"
     },
     {
+     "id": "pre_auricular_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds pré-auriculaires",
+     "name_en": "Right pre-auricular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/pre_auricular_nodes_right.glb"
+    },
+    {
+     "id": "pre_auricular_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds pré-auriculaires",
+     "name_en": "Left pre-auricular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/pre_auricular_nodes_left.glb"
+    },
+    {
+     "id": "superficial_parotid_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds parotidiens superficiels",
+     "name_en": "Right superficial parotid nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/superficial_parotid_nodes_right.glb"
+    },
+    {
+     "id": "superficial_parotid_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds parotidiens superficiels",
+     "name_en": "Left superficial parotid nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/superficial_parotid_nodes_left.glb"
+    },
+    {
+     "id": "intraglandular_parotid_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds parotidiens infraglandulaires",
+     "name_en": "Right intraglandular parotid nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/intraglandular_parotid_nodes_right.glb"
+    },
+    {
+     "id": "intraglandular_parotid_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds parotidiens infraglandulaires",
+     "name_en": "Left intraglandular parotid nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/intraglandular_parotid_nodes_left.glb"
+    },
+    {
+     "id": "occipital_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds occipitaux",
+     "name_en": "Right occipital nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/occipital_nodes_right.glb"
+    },
+    {
+     "id": "occipital_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds occipitaux",
+     "name_en": "Left occipital nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/occipital_nodes_left.glb"
+    },
+    {
+     "id": "mastoid_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds mastoïdiens",
+     "name_en": "Right mastoid nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/mastoid_nodes_right.glb"
+    },
+    {
+     "id": "mastoid_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds mastoïdiens",
+     "name_en": "Left mastoid nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/mastoid_nodes_left.glb"
+    },
+    {
+     "id": "submental_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds submentaux",
+     "name_en": "Right submental nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/submental_nodes_right.glb"
+    },
+    {
+     "id": "submental_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds submentaux",
+     "name_en": "Left submental nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/submental_nodes_left.glb"
+    },
+    {
+     "id": "submandibular_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds submandibulaires",
+     "name_en": "Right submandibular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/submandibular_nodes_right.glb"
+    },
+    {
+     "id": "submandibular_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds submandibulaires",
+     "name_en": "Left submandibular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/submandibular_nodes_left.glb"
+    },
+    {
+     "id": "jugulodigastric_node_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud jugulodigastrique",
+     "name_en": "Right jugulodigastric node",
+     "system": "lymphatique",
+     "file": "models/lymphatique/jugulodigastric_node_right.glb"
+    },
+    {
+     "id": "jugulodigastric_node_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud jugulodigastrique",
+     "name_en": "Left jugulodigastric node",
+     "system": "lymphatique",
+     "file": "models/lymphatique/jugulodigastric_node_left.glb"
+    },
+    {
      "id": "internal_jugular_vein_right",
      "role": "contexte",
      "nom_fr": "Veine jugulaire interne",
@@ -516,17 +685,49 @@
     },
     {
      "id": "thyroid_gland",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Glande thyroïde",
      "name_en": "Thyroid gland",
      "system": "organes",
      "file": "models/organes/thyroid_gland.glb"
+    },
+    {
+     "id": "omohyoid_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle omohyoïdien",
+     "name_en": "Right omohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/omohyoid_muscle_right.glb"
+    },
+    {
+     "id": "omohyoid_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle omohyoïdien",
+     "name_en": "Left omohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/omohyoid_muscle_left.glb"
+    },
+    {
+     "id": "external_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire externe",
+     "name_en": "Right external jugular vein",
+     "system": "veines",
+     "file": "models/veines/external_jugular_vein_right.glb"
+    },
+    {
+     "id": "external_jugular_vein_left",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire externe",
+     "name_en": "Left external jugular vein",
+     "system": "veines",
+     "file": "models/veines/external_jugular_vein_left.glb"
     }
    ],
    "manquants": [
-    "Canal thoracique (terminaison cervicale à gauche, pièce maîtresse de la figure) : absent du manifeste — voir schéma « Terminaison du canal thoracique »",
-    "Conduit lymphatique droit : absent ; troncs jugulaires et sous-claviers : non modélisés",
-    "Chaîne spinale (du nerf accessoire XI) : pas d'entrée ganglionnaire dédiée"
+    "Canal thoracique (terminaison cervicale à gauche) : ABSENT du manifeste — porté par le diagramme lymph_cou (cours Q37, confluent de Pirogoff) ; conduit lymphatique droit : ABSENT ; troncs jugulaires/subclaviers : non modélisés",
+    "Chaîne spinale (du nerf accessoire XI) : pas d'entrée ganglionnaire dédiée",
+    "Noeud jugulo-omohyoïdien (ganglion de Poirier) : pas d'entrée dédiée dans le manifeste"
    ]
   }
  ],

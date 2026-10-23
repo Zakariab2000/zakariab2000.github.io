@@ -148,13 +148,64 @@
       105.9,
       40.6
      ]
+    },
+    {
+     "id": "vagus_nerve_x_right",
+     "role": "contexte",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Right vagus nerve (X)",
+     "system": "nerfs",
+     "file": "models/nerfs/vagus_nerve_x_right.glb"
+    },
+    {
+     "id": "vagus_nerve_x_left",
+     "role": "contexte",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Left vagus nerve (X)",
+     "system": "nerfs",
+     "file": "models/nerfs/vagus_nerve_x_left.glb"
+    },
+    {
+     "id": "superior_epigastric_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère épigastrique supérieure",
+     "name_en": "Right superior epigastric artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_epigastric_artery_right.glb"
+    },
+    {
+     "id": "superior_epigastric_artery_left",
+     "role": "contexte",
+     "nom_fr": "Artère épigastrique supérieure",
+     "name_en": "Left superior epigastric artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_epigastric_artery_left.glb"
+    },
+    {
+     "id": "inferior_phrenic_artery",
+     "role": "contexte",
+     "nom_fr": "Artère phrénique inférieure",
+     "name_en": "Inferior phrenic artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_phrenic_artery.glb"
+    },
+    {
+     "id": "hemi_azygos_vein",
+     "role": "contexte",
+     "nom_fr": "Veine hémi-azygos",
+     "name_en": "Hemi-azygos vein",
+     "system": "veines",
+     "file": "models/veines/hemi_azygos_vein.glb"
     }
    ],
    "diagramme": null,
    "espaces": [],
    "manquants": [
     "Le diaphragme = UN seul maillage : tendon central (centre phrénique), piliers droit/gauche, feuillets et arcades NE sont PAS individualisés",
-    "Orifices (cave en T8, œsophagien en T10, aortique en T12) : aucun repère dédié dans le manifeste"
+    "Orifices (cave en T9, œsophagien en T10, aortique en T12 — niveaux du cours Q21) : aucun repère dédié dans le manifeste ; le diaphragme est un maillage unique, ses orifices ne sont pas individualisés",
+    "Nerfs phréniques droit et gauche : ABSENTS du manifeste — la légende de cette figure les nomme 3 fois (déclaration propre à la fig. 56 ; voir aussi figs 55/58)",
+    "Canal thoracique : ABSENT du manifeste — son passage par le hiatus aortique n'a pas de maillage",
+    "Nerfs grand et petit splanchniques et veine splanchnique : ABSENTS du manifeste comme maillages dédiés — leurs passages diaphragmatiques ne sont pas représentés"
    ]
   },
   {
@@ -320,48 +371,100 @@
      ]
     },
     {
-     "id": "supreme_intercostal_artery_right",
-     "nom_fr": "Artère intercostale suprême",
-     "name_en": "Right supreme intercostal artery",
-     "systeme": "arteres",
-     "couleur": "#cf5346",
-     "fichier": "models/arteres/supreme_intercostal_artery_right.glb",
+     "id": "internal_thoracic_veins_right",
      "role": "contexte",
-     "centre": [
-      -47.5,
-      1354.9,
-      86.2
-     ],
-     "taille": [
-      5.9,
-      2.7,
-      8.4
-     ]
+     "nom_fr": "Veines thoraciques internes",
+     "name_en": "Right internal thoracic veins",
+     "system": "veines",
+     "file": "models/veines/internal_thoracic_veins_right.glb"
     },
     {
-     "id": "supreme_intercostal_artery_left",
-     "nom_fr": "Artère intercostale suprême",
-     "name_en": "Left supreme intercostal artery",
-     "systeme": "arteres",
-     "couleur": "#cf5346",
-     "fichier": "models/arteres/supreme_intercostal_artery_left.glb",
+     "id": "internal_thoracic_veins_left",
      "role": "contexte",
-     "centre": [
-      46.9,
-      1354.9,
-      86.2
-     ],
-     "taille": [
-      5.9,
-      2.7,
-      8.4
-     ]
+     "nom_fr": "Veines thoraciques internes",
+     "name_en": "Left internal thoracic veins",
+     "system": "veines",
+     "file": "models/veines/internal_thoracic_veins_left.glb"
+    },
+    {
+     "id": "superior_epigastric_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère épigastrique supérieure",
+     "name_en": "Right superior epigastric artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_epigastric_artery_right.glb"
+    },
+    {
+     "id": "superior_epigastric_artery_left",
+     "role": "contexte",
+     "nom_fr": "Artère épigastrique supérieure",
+     "name_en": "Left superior epigastric artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_epigastric_artery_left.glb"
+    },
+    {
+     "id": "superior_epigastric_veins_right",
+     "role": "contexte",
+     "nom_fr": "Veines épigastriques supérieures",
+     "name_en": "Right superior epigastric veins",
+     "system": "veines",
+     "file": "models/veines/superior_epigastric_veins_right.glb"
+    },
+    {
+     "id": "superior_epigastric_veins_left",
+     "role": "contexte",
+     "nom_fr": "Veines épigastriques supérieures",
+     "name_en": "Left superior epigastric veins",
+     "system": "veines",
+     "file": "models/veines/superior_epigastric_veins_left.glb"
+    },
+    {
+     "id": "musculophrenic_veins_right",
+     "role": "contexte",
+     "nom_fr": "Veines musculophréniques",
+     "name_en": "Right musculophrenic veins",
+     "system": "veines",
+     "file": "models/veines/musculophrenic_veins_right.glb"
+    },
+    {
+     "id": "musculophrenic_veins_left",
+     "role": "contexte",
+     "nom_fr": "Veines musculophréniques",
+     "name_en": "Left musculophrenic veins",
+     "system": "veines",
+     "file": "models/veines/musculophrenic_veins_left.glb"
+    },
+    {
+     "id": "thoracic_aorta",
+     "role": "contexte",
+     "nom_fr": "Aorte thoracique",
+     "name_en": "Thoracic aorta",
+     "system": "arteres",
+     "file": "models/arteres/thoracic_aorta.glb"
+    },
+    {
+     "id": "inferior_vena_cava_thoracic_part",
+     "role": "contexte",
+     "nom_fr": "Veine cave inférieure (partie thoracique)",
+     "name_en": "Inferior vena cava (thoracic part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_thoracic_part.glb"
     }
    ],
    "diagramme": null,
-   "espaces": [],
+   "espaces": [
+    {
+     "key": "espace_5e_intercostal_droit",
+     "nom_fr": "Espace intercostal (5e, droit) — triangle de sécurité",
+     "name_en": "Intercostal space (5th, right) — triangle of safety",
+     "couleur": "#4dabf7",
+     "note_fr": "Volume schématique — 5e espace intercostal droit, zone du triangle de sécurité (ligne axillaire moyenne), délimité par les côtes 5 et 6 adjacentes ; contenu : paquet vasculo-nerveux intercostal (veine, artère, nerf). Aucun maillage source pour l'espace lui-même."
+    }
+   ],
    "manquants": [
-    "Artère péricardiacophrénique (branche de la thoracique interne, classique du cours) : ABSENTE du manifeste"
+    "Artère ET veine péricardiaco-phréniques (branches de la thoracique interne, classiques du cours) : ABSENTES du manifeste — aucune géométrie pour l'une ni pour l'autre",
+    "Veine phrénique inférieure gauche : ABSENTE du manifeste — aucune veine phrénique inférieure (seule right_superior_phrenic_vein existe)",
+    "Artère et veine surrénales : veine ABSENTE du manifeste ; artère seulement partielle (inferior_suprarenal_artery) et non câblée ici"
    ]
   },
   {
@@ -376,7 +479,7 @@
    "structures": [
     {
      "id": "superior_diaphragmatic_nodes",
-     "nom_fr": "Lymphonoeuds diaphragmatiques supérieurs",
+     "nom_fr": "Lymphonoeuds diaphragmatiques antérieurs",
      "name_en": "Superior diaphragmatic nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -395,7 +498,7 @@
     },
     {
      "id": "inferior_diaphragmatic_nodes",
-     "nom_fr": "Lymphonoeuds phréniques inférieurs",
+     "nom_fr": "Lymphonoeuds diaphragmatiques postérieurs",
      "name_en": "Inferior diaphragmatic nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -506,12 +609,86 @@
       231.0,
       69.4
      ]
+    },
+    {
+     "id": "parasternal_nodes_right",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds parasternaux",
+     "name_en": "Right parasternal nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/parasternal_nodes_right.glb"
+    },
+    {
+     "id": "parasternal_nodes_left",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds parasternaux",
+     "name_en": "Left parasternal nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/parasternal_nodes_left.glb"
+    },
+    {
+     "id": "coeliac_nodes",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds coeliaques",
+     "name_en": "Coeliac nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/coeliac_nodes.glb"
+    },
+    {
+     "id": "rep_hepatic_nodes",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds hépatiques",
+     "name_en": "Hepatic nodes",
+     "system": "reperes",
+     "file": "models-reperes/hepatic_nodes.glb"
+    },
+    {
+     "id": "intermediate_lumbar_nodes",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds lombaux intermédiaires",
+     "name_en": "Intermediate lumbar nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/intermediate_lumbar_nodes.glb"
+    },
+    {
+     "id": "rep_mediastinal_lymph_nodes",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds médiastinaux",
+     "name_en": "Mediastinal lymph nodes",
+     "system": "reperes",
+     "file": "models-reperes/mediastinal_lymph_nodes.glb"
+    },
+    {
+     "id": "coeliac_trunk",
+     "role": "contexte",
+     "nom_fr": "Tronc coeliaque",
+     "name_en": "Coeliac trunk",
+     "system": "arteres",
+     "file": "models/arteres/coeliac_trunk.glb"
+    },
+    {
+     "id": "abdominal_aorta",
+     "role": "contexte",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb"
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "contexte",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb"
     }
    ],
    "diagramme": "diaphragme_lymph_nerfs",
    "espaces": [],
    "manquants": [
-    "Nerf phrénique : ABSENT du manifeste — toute la partie B de la figure (nerfs) n'a pas de maillage ; seuls les lymphatiques (A) existent → schéma du trajet phrénique en regard"
+    "Nerf phrénique : ABSENT du manifeste — toute la partie B de la figure (nerfs) n'a pas de maillage ; seuls les lymphatiques (A) existent → schéma du trajet phrénique en regard",
+    "Nerfs subcostaux : ABSENTS du manifeste — aucun maillage dédié (portés au diagramme, nœud « intercost »)",
+    "Groupes diaphragmatiques : les deux maillages disponibles siègent au diaphragme antérieur et se recouvrent — le groupe postérieur n'est pas géométriquement distinct dans les sources ouvertes (noms alignés sur la légende : antérieurs/postérieurs)"
    ]
   }
  ],
@@ -1089,14 +1266,14 @@
      "x": 180,
      "y": 830,
      "w": 210,
-     "label": "Nerfs intercostaux",
-     "sub": "inférieurs",
+     "label": "6 à 7 derniers nerfs intercostaux",
+     "sub": "et nerfs subcostaux",
      "label_en": "Intercostal nerves",
      "sub_en": "lower",
      "lvl": "sensitif",
      "desc": {
-      "fr": "Innervation sensitive de la périphérie costale du diaphragme, en complément de la branche latérale du phrénique. Non cités dans le texte du cours Q21, qui ne retient que le phrénique et le sympathique — inclusion demandée par le cahier des charges, voir notes.",
-      "en": "Sensory supply of the costal periphery of the diaphragm, supplementing the lateral branch of the phrenic nerve. Not named in the course text Q21, which retains only the phrenic nerve and the sympathetic — included as required by the task brief, see notes."
+      "en": "Sensory innervation of the costal periphery of the diaphragm — named by the figure's own legend (part B). Intercostal nerves exist in the manifest (intercostal_nerves) without distinction of the last 6–7; the subcostal nerves have no dedicated mesh.",
+      "fr": "Innervation sensitive de la périphérie costale du diaphragme — cités par la légende de la figure elle-même (partie B). Les nerfs intercostaux existent au manifeste (intercostal_nerves) sans distinction des 6 à 7 derniers ; les nerfs subcostaux n'ont aucun maillage dédié."
      }
     },
     {

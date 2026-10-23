@@ -21,7 +21,7 @@
     {
      "id": "posterior_segment_of_liver_i",
      "role": "sujet",
-     "nom_fr": "Segment postérieur du foie (I)",
+     "nom_fr": "Segment caudé (I)",
      "name_en": "Posterior segment of liver (I)",
      "system": "organes",
      "file": "models/organes/posterior_segment_of_liver_i.glb",
@@ -54,7 +54,7 @@
     {
      "id": "left_posterior_lateral_segment_of_liver_ii",
      "role": "sujet",
-     "nom_fr": "Segment postérolatéral gauche du foie (II)",
+     "nom_fr": "Segment latéro-supérieur (II)",
      "name_en": "Left posterior lateral segment of liver (II)",
      "system": "organes",
      "file": "models/organes/left_posterior_lateral_segment_of_liver_ii.glb",
@@ -87,7 +87,7 @@
     {
      "id": "left_anterior_lateral_segment_of_liver_iii",
      "role": "sujet",
-     "nom_fr": "Segment antérolatéral gauche du foie (III)",
+     "nom_fr": "Segment latéro-inférieur (III)",
      "name_en": "Left anterior lateral segment of liver (III)",
      "system": "organes",
      "file": "models/organes/left_anterior_lateral_segment_of_liver_iii.glb",
@@ -153,7 +153,7 @@
     {
      "id": "anterior_medial_segment_of_liver_v",
      "role": "sujet",
-     "nom_fr": "Segment antéromédial droit du foie (V)",
+     "nom_fr": "Segment antéro-inférieur (V)",
      "name_en": "Anterior medial segment of liver (V)",
      "system": "organes",
      "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
@@ -186,7 +186,7 @@
     {
      "id": "anterior_lateral_segment_of_liver_vi",
      "role": "sujet",
-     "nom_fr": "Segment antérolatéral droit (VI)",
+     "nom_fr": "Segment postéro-inférieur (VI)",
      "name_en": "Anterior lateral segment of liver (VI)",
      "system": "organes",
      "file": "models/organes/anterior_lateral_segment_of_liver_vi.glb",
@@ -219,7 +219,7 @@
     {
      "id": "posterior_lateral_segment_of_liver_vii",
      "role": "sujet",
-     "nom_fr": "Segment postérolatéral droit (VII)",
+     "nom_fr": "Segment postéro-supérieur (VII)",
      "name_en": "Posterior lateral segment of liver (VII)",
      "system": "organes",
      "file": "models/organes/posterior_lateral_segment_of_liver_vii.glb",
@@ -252,7 +252,7 @@
     {
      "id": "posterior_medial_segment_of_liver_viii",
      "role": "sujet",
-     "nom_fr": "Segment postéromédial droit du foie (VIII)",
+     "nom_fr": "Segment antéro-supérieur (VIII)",
      "name_en": "Posterior medial segment of liver (VIII)",
      "system": "organes",
      "file": "models/organes/posterior_medial_segment_of_liver_viii.glb",
@@ -346,7 +346,7 @@
     },
     {
      "id": "gallbladder",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Vésicule biliaire",
      "name_en": "Gallbladder",
      "system": "organes",
@@ -377,7 +377,7 @@
     },
     {
      "id": "inferior_vena_cava_abdominal_part",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Veine cave inférieure (partie abdominale)",
      "name_en": "Inferior vena cava (abdominal part)",
      "system": "veines",
@@ -405,11 +405,38 @@
        27.1
       ]
      }
+    },
+    {
+     "id": "rep_main_portal_fissure",
+     "role": "rapports",
+     "nom_fr": "Fissure porte principale",
+     "name_en": "Main portal fissure",
+     "system": "reperes",
+     "file": "models-reperes/main_portal_fissure.glb"
+    },
+    {
+     "id": "rep_right_portal_fissure_right",
+     "role": "rapports",
+     "nom_fr": "Incisure portale droite",
+     "name_en": "Right portal fissure",
+     "system": "reperes",
+     "file": "models-reperes/right_portal_fissure_right.glb"
+    },
+    {
+     "id": "rep_umbilical_fissure",
+     "role": "rapports",
+     "nom_fr": "Fissure ombillicale",
+     "name_en": "Umbilical fissure",
+     "system": "reperes",
+     "file": "models-reperes/umbilical_fissure.glb"
     }
    ],
    "manquants": [
     "BONNE NOUVELLE à contre-pied : les 8 segments de Couinaud EXISTENT comme 8 maillages séparés et nommés (I à VIII)",
-    "MAIS : les pédicules glissoniens segmentaires (branches portes par segment) ne sont pas individualisés — la veine porte est un maillage unique ; les plans de scissure sont virtuels → le schéma de la segmentation (pédicules + scissures) reste nécessaire en regard"
+    "MAIS : les pédicules glissoniens segmentaires (branches portes par segment) ne sont pas individualisés — la veine porte est un maillage unique ; les plans de scissure sont virtuels (pas de plans 3D), seuls existent les marqueurs-repères des fissures rep_main_portal_fissure, rep_right_portal_fissure_right et rep_umbilical_fissure, ajoutés en rapports → le schéma de la segmentation (pédicules + scissures) reste nécessaire en regard. Contradiction planche ↔ cours : la planche écrit « Segment médial supérieur (IV b) » et « Segment médial inférieur (IV a) », à l'inverse du cours Q26 (« segment médial supérieur (IVa ou IX) », « segment médial inférieur (IVb) ») et du diagramme (nœud seg4 : IVa supérieur / IVb inférieur) — le build suit le cours, pas la planche",
+    "Processus caudé : aucun maillage au manifeste (seul existe le marqueur rep_caudate_lobe, marqueur du lobe caudé) — non représenté en 3D",
+    "Lobe caudé : parties droite et gauche non individualisées — le segment I (caudé) est un maillage unique",
+    "Segments IVa et IVb : non séparés en 3D (maillage unique left_medial_segment_of_liver_iv) — déclarés seulement dans la description du nœud seg4 du diagramme, pas dans les manquants de la figure"
    ],
    "espaces": []
   },
@@ -418,7 +445,7 @@
    "titre_fr": "Retour veineux du foie (segmentation sus-hépatique)",
    "titre_en": "Venous return of the liver (suprahepatic segmentation)",
    "classe": "[3D]",
-   "vue": "posterieure",
+   "vue": "inferieure",
    "diagram": null,
    "systemes": [
     "veines",
@@ -490,7 +517,7 @@
     {
      "id": "posterior_segment_of_liver_i",
      "role": "sujet",
-     "nom_fr": "Segment postérieur du foie (I)",
+     "nom_fr": "Segment caudé (I)",
      "name_en": "Posterior segment of liver (I)",
      "system": "organes",
      "file": "models/organes/posterior_segment_of_liver_i.glb",
@@ -556,7 +583,7 @@
     {
      "id": "anterior_medial_segment_of_liver_v",
      "role": "sujet",
-     "nom_fr": "Segment antéromédial droit du foie (V)",
+     "nom_fr": "Segment antéro-inférieur (V)",
      "name_en": "Anterior medial segment of liver (V)",
      "system": "organes",
      "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
@@ -589,7 +616,7 @@
     {
      "id": "posterior_medial_segment_of_liver_viii",
      "role": "sujet",
-     "nom_fr": "Segment postéromédial droit du foie (VIII)",
+     "nom_fr": "Segment antéro-supérieur (VIII)",
      "name_en": "Posterior medial segment of liver (VIII)",
      "system": "organes",
      "file": "models/organes/posterior_medial_segment_of_liver_viii.glb",
@@ -620,8 +647,40 @@
      "fiche_fr": "Segment VIII — segment antéro-supérieur du secteur antérieur droit. Vascularisation porte : branche antérieure de la branche droite. C'est le seul segment visible uniquement sur la face diaphragmatique du foie (cours Q26). Drainage sus-hépatique par les veines cheminant dans les scissures principale et droite."
     },
     {
+     "id": "left_posterior_lateral_segment_of_liver_ii",
+     "role": "sujet",
+     "nom_fr": "Segment latéro-supérieur (II)",
+     "name_en": "Left posterior lateral segment of liver (II)",
+     "system": "organes",
+     "file": "models/organes/left_posterior_lateral_segment_of_liver_ii.glb"
+    },
+    {
+     "id": "left_anterior_lateral_segment_of_liver_iii",
+     "role": "sujet",
+     "nom_fr": "Segment latéro-inférieur (III)",
+     "name_en": "Left anterior lateral segment of liver (III)",
+     "system": "organes",
+     "file": "models/organes/left_anterior_lateral_segment_of_liver_iii.glb"
+    },
+    {
+     "id": "anterior_lateral_segment_of_liver_vi",
+     "role": "sujet",
+     "nom_fr": "Segment postéro-inférieur (VI)",
+     "name_en": "Anterior lateral segment of liver (VI)",
+     "system": "organes",
+     "file": "models/organes/anterior_lateral_segment_of_liver_vi.glb"
+    },
+    {
+     "id": "posterior_lateral_segment_of_liver_vii",
+     "role": "sujet",
+     "nom_fr": "Segment postéro-supérieur (VII)",
+     "name_en": "Posterior lateral segment of liver (VII)",
+     "system": "organes",
+     "file": "models/organes/posterior_lateral_segment_of_liver_vii.glb"
+    },
+    {
      "id": "gallbladder",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Vésicule biliaire",
      "name_en": "Gallbladder",
      "system": "organes",
@@ -652,7 +711,12 @@
     }
    ],
    "manquants": [
-    "Les 3 veines sus-hépatiques (droite, moyenne, gauche) : UN SEUL maillage groupé 'hepatic_veins' — elles ne sont PAS séparables, donc la segmentation sus-hépatique de la figure ne peut pas être isolée veine par veine"
+    "Les 3 veines sus-hépatiques (droite, moyenne, gauche) : UN SEUL maillage groupé 'hepatic_veins' — elles ne sont PAS séparables, donc la segmentation sus-hépatique de la figure ne peut pas être isolée veine par veine",
+    "Canal latéral droit : absent du manifeste (aucun maillage — seul bile_duct générique et le marqueur rep_extrahepatic_bile_ducts existent)",
+    "Canal paramédian droit : absent du manifeste (aucun maillage — seul bile_duct générique et le marqueur rep_extrahepatic_bile_ducts existent)",
+    "Canal hépatique gauche : absent du manifeste (aucun maillage distinct)",
+    "Canal hépatique droit : absent du manifeste (aucun maillage distinct)",
+    "Ligament rond prolongeant le récessus de Rex : aucun maillage (seuls les marqueurs rep_fissure_for_ligamentum_teres et rep_notch_for_ligamentum_teres existent)"
    ],
    "espaces": []
   }

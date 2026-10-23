@@ -10,18 +10,56 @@
  ],
  "structures": [
   {
-   "id": "tendinous_arch_of_levator_ani_right",
-   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "id": "prostate",
+   "nom_fr": "Prostate",
    "role": "sujet",
    "figures": [
+    98,
     99
    ]
   },
   {
-   "id": "tendinous_arch_of_levator_ani_left",
-   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "id": "urethra",
+   "nom_fr": "Urètre",
    "role": "sujet",
    "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "ejaculatory_duct_right",
+   "nom_fr": "Canal éjaculateur",
+   "role": "sujet",
+   "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "ejaculatory_duct_left",
+   "nom_fr": "Canal éjaculateur",
+   "role": "sujet",
+   "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "seminal_gland_right",
+   "nom_fr": "Vésicules séminales",
+   "role": "sujet",
+   "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Vésicules séminales",
+   "role": "sujet",
+   "figures": [
+    98,
     99
    ]
   },
@@ -42,36 +80,34 @@
    ]
   },
   {
-   "id": "ejaculatory_duct_right",
-   "nom_fr": "Conduit éjaculateur",
+   "id": "rectum",
+   "nom_fr": "Rectum",
    "role": "sujet",
    "figures": [
-    98
-   ]
-  },
-  {
-   "id": "ejaculatory_duct_left",
-   "nom_fr": "Conduit éjaculateur",
-   "role": "sujet",
-   "figures": [
-    98
-   ]
-  },
-  {
-   "id": "seminal_gland_right",
-   "nom_fr": "Glande séminale",
-   "role": "sujet",
-   "figures": [
-    98,
     99
    ]
   },
   {
-   "id": "seminal_gland_left",
-   "nom_fr": "Glande séminale",
+   "id": "urinary_bladder",
+   "nom_fr": "Vessie urinaire",
    "role": "sujet",
    "figures": [
-    98,
+    99
+   ]
+  },
+  {
+   "id": "tendinous_arch_of_levator_ani_right",
+   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "role": "sujet",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "tendinous_arch_of_levator_ani_left",
+   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "role": "sujet",
+   "figures": [
     99
    ]
   },
@@ -92,59 +128,67 @@
    ]
   },
   {
-   "id": "prostate",
-   "nom_fr": "Prostate",
-   "role": "sujet",
-   "figures": [
-    98,
-    99
-   ]
-  },
-  {
-   "id": "rectum",
-   "nom_fr": "Rectum",
-   "role": "sujet",
+   "id": "pubic_symphysis",
+   "role": "rapports",
+   "nom_fr": "Symphyse pubienne",
+   "name_en": "Pubic symphysis",
+   "system": "articulations",
+   "file": "models/articulations/pubic_symphysis.glb",
    "figures": [
     99
    ]
   },
   {
-   "id": "sacrum",
-   "nom_fr": "Sacrum",
-   "role": "sujet",
+   "id": "pubococcygeus_muscle_right",
+   "role": "rapports",
+   "nom_fr": "Muscle pubococcygien",
+   "name_en": "Right pubococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/pubococcygeus_muscle_right.glb",
    "figures": [
     99
    ]
   },
   {
-   "id": "urethra",
-   "nom_fr": "Urètre",
-   "role": "sujet",
-   "figures": [
-    98
-   ]
-  },
-  {
-   "id": "urinary_bladder",
-   "nom_fr": "Vessie urinaire",
-   "role": "sujet",
-   "figures": [
-    98,
-    99
-   ]
-  },
-  {
-   "id": "ureter_right",
-   "nom_fr": "Uretère",
-   "role": "contexte",
+   "id": "pubococcygeus_muscle_left",
+   "role": "rapports",
+   "nom_fr": "Muscle pubococcygien",
+   "name_en": "Left pubococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/pubococcygeus_muscle_left.glb",
    "figures": [
     99
    ]
   },
   {
-   "id": "ureter_left",
-   "nom_fr": "Uretère",
-   "role": "contexte",
+   "id": "iliococcygeus_muscle_right",
+   "role": "rapports",
+   "nom_fr": "Muscle iliococcygien",
+   "name_en": "Right iliococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/iliococcygeus_muscle_right.glb",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "iliococcygeus_muscle_left",
+   "role": "rapports",
+   "nom_fr": "Muscle iliococcygien",
+   "name_en": "Left iliococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/iliococcygeus_muscle_left.glb",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "corpus_spongiosum_of_penis",
+   "role": "rapports",
+   "nom_fr": "Corps spongieux du pénis",
+   "name_en": "Corpus spongiosum of penis",
+   "system": "organes",
+   "file": "models/organes/corpus_spongiosum_of_penis.glb",
    "figures": [
     99
    ]
@@ -188,33 +232,28 @@
      "role": "sujet"
     },
     {
-     "id": "urinary_bladder",
-     "nom_fr": "Vessie urinaire",
-     "role": "sujet"
-    },
-    {
      "id": "urethra",
      "nom_fr": "Urètre",
      "role": "sujet"
     },
     {
      "id": "ejaculatory_duct_right",
-     "nom_fr": "Conduit éjaculateur",
+     "nom_fr": "Canal éjaculateur",
      "role": "sujet"
     },
     {
      "id": "ejaculatory_duct_left",
-     "nom_fr": "Conduit éjaculateur",
+     "nom_fr": "Canal éjaculateur",
      "role": "sujet"
     },
     {
      "id": "seminal_gland_right",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
      "id": "seminal_gland_left",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
@@ -226,15 +265,12 @@
      "id": "ductus_deferens_left",
      "nom_fr": "Canal déférent",
      "role": "sujet"
-    },
-    {
-     "id": "rectum",
-     "nom_fr": "Rectum",
-     "role": "contexte"
     }
    ],
    "manquants": [
-    "Lobes prostatiques et zones de McNeal : non séparés (prostate = 1 maillage) ; l'urètre est un maillage unique (pas de segment prostatique individualisé)"
+    "Lobes prostatiques et zones de McNeal : non séparés (prostate = 1 maillage) ; l'urètre est un maillage unique (pas de segment prostatique individualisé)",
+    "Veru montanum : ABSENT du manifeste — aucun maillage",
+    "Utricalue prostatique : ABSENT du manifeste — aucun maillage"
    ]
   },
   "99": {
@@ -291,34 +327,96 @@
      "role": "sujet"
     },
     {
-     "id": "sacrum",
-     "nom_fr": "Sacrum",
-     "role": "sujet"
+     "id": "urethra",
+     "role": "sujet",
+     "nom_fr": "Urètre",
+     "name_en": "Urethra",
+     "system": "organes",
+     "file": "models/organes/urethra.glb"
+    },
+    {
+     "id": "ejaculatory_duct_right",
+     "role": "sujet",
+     "nom_fr": "Canal éjaculateur",
+     "name_en": "Right ejaculatory duct",
+     "system": "organes",
+     "file": "models/organes/ejaculatory_duct_right.glb"
+    },
+    {
+     "id": "ejaculatory_duct_left",
+     "role": "sujet",
+     "nom_fr": "Canal éjaculateur",
+     "name_en": "Left ejaculatory duct",
+     "system": "organes",
+     "file": "models/organes/ejaculatory_duct_left.glb"
     },
     {
      "id": "seminal_gland_right",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "contexte"
     },
     {
      "id": "seminal_gland_left",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "contexte"
     },
     {
-     "id": "ureter_right",
-     "nom_fr": "Uretère",
-     "role": "contexte"
+     "id": "pubic_symphysis",
+     "role": "contexte",
+     "nom_fr": "Symphyse pubienne",
+     "name_en": "Pubic symphysis",
+     "system": "articulations",
+     "file": "models/articulations/pubic_symphysis.glb"
     },
     {
-     "id": "ureter_left",
-     "nom_fr": "Uretère",
-     "role": "contexte"
+     "id": "pubococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Right pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_right.glb"
+    },
+    {
+     "id": "pubococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Left pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_left.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Right iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_right.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Left iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_left.glb"
+    },
+    {
+     "id": "corpus_spongiosum_of_penis",
+     "role": "contexte",
+     "nom_fr": "Corps spongieux du pénis",
+     "name_en": "Corpus spongiosum of penis",
+     "system": "organes",
+     "file": "models/organes/corpus_spongiosum_of_penis.glb"
     }
    ],
    "manquants": [
     "Plexus veineux prostatique (de Santorini) : ABSENT du manifeste",
-    "Muscle élévateur de l'anus : absent (seule l'arcade tendineuse) ; fascia de Denonvilliers : ABSENT"
+    "Fascia de Denonvilliers : ABSENT du manifeste — aucun maillage",
+    "Lame intervésico-prostatique : ABSENTE du manifeste — aucun maillage",
+    "Lame pré-prostatique : ABSENTE du manifeste — aucun maillage",
+    "Diaphragme uro-génital : ABSENT du manifeste — aucun maillage",
+    "Sphincter strié : ABSENT du manifeste — aucun maillage",
+    "Urètre prostatique et urètre membraneux : non individualisés — l'urètre est un maillage unique (urethra)"
    ],
    "espace": "Fascia recto-prostatique (de Denonvilliers)"
   }
@@ -353,8 +451,15 @@
  ],
  "manquants": [
   "Lobes prostatiques et zones de McNeal : non séparés (prostate = 1 maillage) ; l'urètre est un maillage unique (pas de segment prostatique individualisé)",
+  "Veru montanum : ABSENT du manifeste — aucun maillage",
+  "Utricalue prostatique : ABSENT du manifeste — aucun maillage",
   "Plexus veineux prostatique (de Santorini) : ABSENT du manifeste",
-  "Muscle élévateur de l'anus : absent (seule l'arcade tendineuse) ; fascia de Denonvilliers : ABSENT"
+  "Fascia de Denonvilliers : ABSENT du manifeste — aucun maillage",
+  "Lame intervésico-prostatique : ABSENTE du manifeste — aucun maillage",
+  "Lame pré-prostatique : ABSENTE du manifeste — aucun maillage",
+  "Diaphragme uro-génital : ABSENT du manifeste — aucun maillage",
+  "Sphincter strié : ABSENT du manifeste — aucun maillage",
+  "Urètre prostatique et urètre membraneux : non individualisés — l'urètre est un maillage unique (urethra)"
  ],
  "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
 }

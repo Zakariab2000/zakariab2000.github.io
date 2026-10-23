@@ -11,30 +11,6 @@
  ],
  "structures": [
   {
-   "id": "external_iliac_artery_right",
-   "nom_fr": "Artère iliaque externe",
-   "role": "sujet",
-   "figures": [
-    97
-   ]
-  },
-  {
-   "id": "right_testicular_artery",
-   "nom_fr": "Artère testiculaire droite",
-   "role": "sujet",
-   "figures": [
-    96
-   ]
-  },
-  {
-   "id": "inferior_epigastric_artery_right",
-   "nom_fr": "Artère épigastrique inférieure",
-   "role": "sujet",
-   "figures": [
-    97
-   ]
-  },
-  {
    "id": "ductus_deferens_right",
    "nom_fr": "Canal déférent",
    "role": "sujet",
@@ -57,8 +33,7 @@
    "nom_fr": "Epididyme",
    "role": "sujet",
    "figures": [
-    95,
-    96
+    95
    ]
   },
   {
@@ -70,37 +45,11 @@
    ]
   },
   {
-   "id": "seminal_gland_right",
-   "nom_fr": "Glande séminale",
-   "role": "sujet",
-   "figures": [
-    95,
-    97
-   ]
-  },
-  {
-   "id": "seminal_gland_left",
-   "nom_fr": "Glande séminale",
-   "role": "sujet",
-   "figures": [
-    95
-   ]
-  },
-  {
-   "id": "prostate",
-   "nom_fr": "Prostate",
-   "role": "sujet",
-   "figures": [
-    97
-   ]
-  },
-  {
    "id": "testis_right",
    "nom_fr": "Testicule",
    "role": "sujet",
    "figures": [
-    95,
-    96
+    95
    ]
   },
   {
@@ -109,39 +58,6 @@
    "role": "sujet",
    "figures": [
     95
-   ]
-  },
-  {
-   "id": "ureter_right",
-   "nom_fr": "Uretère",
-   "role": "sujet",
-   "figures": [
-    95,
-    97
-   ]
-  },
-  {
-   "id": "ureter_left",
-   "nom_fr": "Uretère",
-   "role": "sujet",
-   "figures": [
-    95
-   ]
-  },
-  {
-   "id": "external_iliac_vein_right",
-   "nom_fr": "Veine iliaque externe",
-   "role": "sujet",
-   "figures": [
-    97
-   ]
-  },
-  {
-   "id": "left_testicular_vein",
-   "nom_fr": "Veine testiculaire gauche",
-   "role": "sujet",
-   "figures": [
-    96
    ]
   },
   {
@@ -154,26 +70,121 @@
    ]
   },
   {
-   "id": "inguinal_ligament_right",
-   "nom_fr": "Ligament inguinal",
-   "role": "contexte",
+   "id": "seminal_gland_right",
+   "nom_fr": "Vésicules séminales",
+   "role": "sujet",
    "figures": [
     95,
+    97
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Vésicules séminales",
+   "role": "sujet",
+   "figures": [
+    95
+   ]
+  },
+  {
+   "id": "ejaculatory_duct_right",
+   "role": "sujet",
+   "nom_fr": "Canal éjaculateur",
+   "name_en": "Right ejaculatory duct",
+   "system": "organes",
+   "file": "models/organes/ejaculatory_duct_right.glb",
+   "figures": [
+    95,
+    97
+   ]
+  },
+  {
+   "id": "ejaculatory_duct_left",
+   "role": "sujet",
+   "nom_fr": "Canal éjaculateur",
+   "name_en": "Left ejaculatory duct",
+   "system": "organes",
+   "file": "models/organes/ejaculatory_duct_left.glb",
+   "figures": [
+    95
+   ]
+  },
+  {
+   "id": "inguinal_ligament_right",
+   "nom_fr": "Ligament inguinal",
+   "role": "rapports",
+   "figures": [
+    95,
+    97
+   ]
+  },
+  {
+   "id": "right_testicular_artery",
+   "nom_fr": "Artère testiculaire droite",
+   "role": "sujet",
+   "figures": [
+    96,
+    97
+   ]
+  },
+  {
+   "id": "genitofemoral_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf génitofémoral",
+   "name_en": "Right genitofemoral nerve",
+   "system": "nerfs",
+   "file": "models/nerfs/genitofemoral_nerve_right.glb",
+   "figures": [
     96
    ]
   },
   {
-   "id": "hip_bone_right",
-   "nom_fr": "Os coxal",
-   "role": "contexte",
+   "id": "ureter_right",
+   "nom_fr": "Uretère",
+   "role": "sujet",
    "figures": [
     97
    ]
   },
   {
-   "id": "rectum",
-   "nom_fr": "Rectum",
-   "role": "contexte",
+   "id": "external_iliac_artery_right",
+   "nom_fr": "Artère iliaque externe",
+   "role": "sujet",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "external_iliac_vein_right",
+   "nom_fr": "Veine iliaque externe",
+   "role": "sujet",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "prostate",
+   "nom_fr": "Prostate",
+   "role": "sujet",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "rapports",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "right_testicular_vein",
+   "role": "rapports",
+   "nom_fr": "Veine testiculaire droite",
+   "name_en": "Right testicular vein",
+   "system": "veines",
+   "file": "models/veines/right_testicular_vein.glb",
    "figures": [
     97
    ]
@@ -247,33 +258,34 @@
      "role": "sujet"
     },
     {
-     "id": "ureter_right",
-     "nom_fr": "Uretère",
-     "role": "sujet"
-    },
-    {
-     "id": "ureter_left",
-     "nom_fr": "Uretère",
-     "role": "sujet"
-    },
-    {
      "id": "seminal_gland_right",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
      "id": "seminal_gland_left",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
+    },
+    {
+     "id": "ejaculatory_duct_right",
+     "role": "sujet",
+     "nom_fr": "Canal éjaculateur",
+     "name_en": "Right ejaculatory duct",
+     "system": "organes",
+     "file": "models/organes/ejaculatory_duct_right.glb"
+    },
+    {
+     "id": "ejaculatory_duct_left",
+     "role": "sujet",
+     "nom_fr": "Canal éjaculateur",
+     "name_en": "Left ejaculatory duct",
+     "system": "organes",
+     "file": "models/organes/ejaculatory_duct_left.glb"
     },
     {
      "id": "inguinal_ligament_right",
      "nom_fr": "Ligament inguinal",
-     "role": "contexte"
-    },
-    {
-     "id": "prostate",
-     "nom_fr": "Prostate",
      "role": "contexte"
     }
    ],
@@ -308,34 +320,21 @@
      "role": "sujet"
     },
     {
-     "id": "left_testicular_vein",
-     "nom_fr": "Veine testiculaire gauche",
-     "role": "sujet"
-    },
-    {
-     "id": "epididymis_right",
-     "nom_fr": "Epididyme",
-     "role": "sujet"
-    },
-    {
-     "id": "testis_right",
-     "nom_fr": "Testicule",
-     "role": "sujet"
-    },
-    {
-     "id": "inguinal_ligament_right",
-     "nom_fr": "Ligament inguinal",
-     "role": "contexte"
-    },
-    {
-     "id": "inferior_epigastric_artery_right",
-     "nom_fr": "Artère épigastrique inférieure",
-     "role": "contexte"
+     "id": "genitofemoral_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf génitofémoral",
+     "name_en": "Right genitofemoral nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/genitofemoral_nerve_right.glb"
     }
    ],
    "manquants": [
     "Plexus pampiniforme (l'élément veineux principal du cordon) : ABSENT — seule la veine testiculaire existe",
-    "Muscle crémastère et tuniques du cordon : ABSENTS"
+    "Muscle crémastère et tuniques du cordon : ABSENTS",
+    "Artère déférentielle : ABSENTE du manifeste — aucun maillage",
+    "Artère crémastérique : ABSENTE du manifeste — aucun maillage",
+    "Nerf ilio-inguinal : ABSENT du manifeste — aucun maillage",
+    "Vestige du processus vaginal : ABSENT du manifeste — aucun maillage"
    ]
   },
   "97": {
@@ -383,7 +382,7 @@
     },
     {
      "id": "seminal_gland_right",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
@@ -392,9 +391,12 @@
      "role": "sujet"
     },
     {
-     "id": "inferior_epigastric_artery_right",
-     "nom_fr": "Artère épigastrique inférieure",
-     "role": "sujet"
+     "id": "ejaculatory_duct_right",
+     "role": "sujet",
+     "nom_fr": "Canal éjaculateur",
+     "name_en": "Right ejaculatory duct",
+     "system": "organes",
+     "file": "models/organes/ejaculatory_duct_right.glb"
     },
     {
      "id": "hip_bone_right",
@@ -402,19 +404,49 @@
      "role": "contexte"
     },
     {
-     "id": "rectum",
-     "nom_fr": "Rectum",
-     "role": "contexte"
+     "id": "inguinal_ligament_right",
+     "role": "contexte",
+     "nom_fr": "Ligament inguinal",
+     "name_en": "Right inguinal ligament",
+     "system": "muscles",
+     "file": "models/muscles/inguinal_ligament_right.glb"
+    },
+    {
+     "id": "right_testicular_artery",
+     "role": "contexte",
+     "nom_fr": "Artère testiculaire droite",
+     "name_en": "Right testicular artery",
+     "system": "arteres",
+     "file": "models/arteres/right_testicular_artery.glb"
+    },
+    {
+     "id": "right_testicular_vein",
+     "role": "contexte",
+     "nom_fr": "Veine testiculaire droite",
+     "name_en": "Right testicular vein",
+     "system": "veines",
+     "file": "models/veines/right_testicular_vein.glb"
     }
    ],
-   "manquants": []
+   "manquants": [
+    "Artère ombilicale : ABSENTE du manifeste — aucun maillage",
+    "Ouraque : ABSENT du manifeste — aucun maillage",
+    "Orifice profond du canal inguinal : ABSENT du manifeste — aucun maillage"
+   ]
   }
  },
  "diagrammes": [],
  "espaces": [],
  "manquants": [
   "Plexus pampiniforme (l'élément veineux principal du cordon) : ABSENT — seule la veine testiculaire existe",
-  "Muscle crémastère et tuniques du cordon : ABSENTS"
+  "Muscle crémastère et tuniques du cordon : ABSENTS",
+  "Artère déférentielle : ABSENTE du manifeste — aucun maillage",
+  "Artère crémastérique : ABSENTE du manifeste — aucun maillage",
+  "Nerf ilio-inguinal : ABSENT du manifeste — aucun maillage",
+  "Vestige du processus vaginal : ABSENT du manifeste — aucun maillage",
+  "Artère ombilicale : ABSENTE du manifeste — aucun maillage",
+  "Ouraque : ABSENT du manifeste — aucun maillage",
+  "Orifice profond du canal inguinal : ABSENT du manifeste — aucun maillage"
  ],
  "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
 }

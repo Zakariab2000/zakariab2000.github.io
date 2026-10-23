@@ -128,6 +128,22 @@
      }
     },
     {
+     "id": "infrapatellar_branch_of_saphenous_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Branche infrapatellaire du nerf saphène",
+     "name_en": "Right infrapatellar branch of saphenous nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/infrapatellar_branch_of_saphenous_nerve_right.glb"
+    },
+    {
+     "id": "medial_crural_cutaneous_branches_of_saphenous_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Branches cutanées crurales médiales du nerf saphène",
+     "name_en": "Right medial crural cutaneous branches of saphenous nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/medial_crural_cutaneous_branches_of_saphenous_nerve_right.glb"
+    },
+    {
      "id": "psoas_major_right",
      "role": "contexte",
      "nom_fr": "Grand psoas",
@@ -226,7 +242,7 @@
     {
      "id": "sartorius_muscle_right",
      "role": "contexte",
-     "nom_fr": "Muscle sartorius",
+     "nom_fr": "Muscle couturier",
      "name_en": "Right sartorius muscle",
      "name_la": "Musculus sartorius",
      "systeme": "muscles",
@@ -254,13 +270,95 @@
        84.6
       ]
      }
+    },
+    {
+     "id": "lateral_femoral_cutaneous_nerve_right",
+     "role": "contexte",
+     "nom_fr": "Nerf cutané fémoral latéral",
+     "name_en": "Right lateral femoral cutaneous nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/lateral_femoral_cutaneous_nerve_right.glb"
+    },
+    {
+     "id": "obturator_nerve_right",
+     "role": "contexte",
+     "nom_fr": "Nerf obturateur",
+     "name_en": "Right obturator nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/obturator_nerve_right.glb"
+    },
+    {
+     "id": "rep_lumbosacral_plexus",
+     "role": "contexte",
+     "nom_fr": "Plexus lombosacral",
+     "name_en": "Lumbosacral plexus",
+     "system": "reperes",
+     "file": "models-reperes/lumbosacral_plexus.glb"
+    },
+    {
+     "id": "iliacus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliaque",
+     "name_en": "Right iliacus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliacus_muscle_right.glb"
+    },
+    {
+     "id": "pectineus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle pectiné",
+     "name_en": "Right pectineus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pectineus_muscle_right.glb"
+    },
+    {
+     "id": "rectus_femoris_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle droit fémoral",
+     "name_en": "Right rectus femoris muscle",
+     "system": "muscles",
+     "file": "models/muscles/rectus_femoris_muscle_right.glb"
+    },
+    {
+     "id": "vastus_intermedius_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle vaste intermédiaire",
+     "name_en": "Right vastus intermedius muscle",
+     "system": "muscles",
+     "file": "models/muscles/vastus_intermedius_muscle_right.glb"
+    },
+    {
+     "id": "vastus_medialis_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle vaste médial",
+     "name_en": "Right vastus medialis muscle",
+     "system": "muscles",
+     "file": "models/muscles/vastus_medialis_muscle_right.glb"
+    },
+    {
+     "id": "vastus_lateralis_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle vaste latéral",
+     "name_en": "Right vastus lateralis muscle",
+     "system": "muscles",
+     "file": "models/muscles/vastus_lateralis_muscle_right.glb"
+    },
+    {
+     "id": "articularis_genus_muscle_origine_right",
+     "role": "contexte",
+     "nom_fr": "Origine : Muscle articulaire du genou",
+     "name_en": "Origin of right articularis genus muscle",
+     "system": "insertions",
+     "file": "models-insertions/articularis_genus_muscle_origine_right.glb"
     }
    ],
    "diagram": null,
    "espaces": [],
    "manquants": [
     "Branches musculaires du nerf fémoral : ABSENTES comme entrées (seules existent les branches cutanées antérieures et le nerf saphène)",
-    "Racines L2-L4 : représentées seulement par le repère du plexus lombal"
+    "Racines L2-L4 : représentées seulement par le repère du plexus lombal",
+    "Rameau articulaire (coxo-fémoral) : ABSENT (aucune géométrie de rameau articulaire au manifeste)",
+    "Muscle articulaire du genou : ABSENT comme maillage (seule son insertion, articularis_genus_muscle_origine_right, existe et est incluse en rapport)"
    ]
   }
  ],

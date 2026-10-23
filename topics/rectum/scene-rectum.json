@@ -11,24 +11,240 @@
  ],
  "structures": [
   {
-   "id": "tendinous_arch_of_levator_ani_right",
-   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "id": "rectum",
+   "nom_fr": "Rectum",
+   "role": "sujet",
+   "figures": [
+    92,
+    93,
+    94
+   ]
+  },
+  {
+   "id": "sigmoid_colon",
+   "nom_fr": "Côlon sigmoïde",
+   "role": "sujet",
+   "figures": [
+    92,
+    93,
+    94
+   ]
+  },
+  {
+   "id": "pubococcygeus_muscle_right",
+   "role": "rapports",
+   "nom_fr": "Muscle pubococcygien",
+   "name_en": "Right pubococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/pubococcygeus_muscle_right.glb",
+   "figures": [
+    92,
+    93
+   ]
+  },
+  {
+   "id": "pubococcygeus_muscle_left",
+   "role": "rapports",
+   "nom_fr": "Muscle pubococcygien",
+   "name_en": "Left pubococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/pubococcygeus_muscle_left.glb",
+   "figures": [
+    92,
+    93
+   ]
+  },
+  {
+   "id": "iliococcygeus_muscle_right",
+   "role": "rapports",
+   "nom_fr": "Muscle iliococcygien",
+   "name_en": "Right iliococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/iliococcygeus_muscle_right.glb",
+   "figures": [
+    92,
+    93
+   ]
+  },
+  {
+   "id": "iliococcygeus_muscle_left",
+   "role": "rapports",
+   "nom_fr": "Muscle iliococcygien",
+   "name_en": "Left iliococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/iliococcygeus_muscle_left.glb",
+   "figures": [
+    92,
+    93
+   ]
+  },
+  {
+   "id": "prostate",
+   "nom_fr": "Prostate",
    "role": "sujet",
    "figures": [
     93
    ]
   },
   {
-   "id": "tendinous_arch_of_levator_ani_left",
-   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "id": "seminal_gland_right",
+   "nom_fr": "Vésicules séminales",
    "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Vésicules séminales",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "urinary_bladder",
+   "nom_fr": "Vessie urinaire",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "rapports",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "hip_bone_left",
+   "nom_fr": "Os coxal",
+   "role": "rapports",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "sacrum",
+   "nom_fr": "Sacrum",
+   "role": "rapports",
+   "figures": [
+    93,
+    94
+   ]
+  },
+  {
+   "id": "uterus_fundus",
+   "role": "rapports",
+   "nom_fr": "Fond de l'utérus",
+   "name_en": "Fundus of uterus",
+   "system": "organes",
+   "file": "models/organes/uterus_fundus.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "uterus_body",
+   "role": "rapports",
+   "nom_fr": "Corps de l'utérus",
+   "name_en": "Body of uterus",
+   "system": "organes",
+   "file": "models/organes/uterus_body.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "uterus_cervix",
+   "role": "rapports",
+   "nom_fr": "Col de l'utérus",
+   "name_en": "Cervix of uterus",
+   "system": "organes",
+   "file": "models/organes/uterus_cervix.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "vagina",
+   "role": "rapports",
+   "nom_fr": "Vagin",
+   "name_en": "Vagina",
+   "system": "organes",
+   "file": "models/organes/vagina.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "urethra",
+   "role": "rapports",
+   "nom_fr": "Urètre",
+   "name_en": "Urethra",
+   "system": "organes",
+   "file": "models/organes/urethra.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "jejunum",
+   "role": "rapports",
+   "nom_fr": "Jéjunum",
+   "name_en": "Jejunum",
+   "system": "organes",
+   "file": "models/organes/jejunum.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "proximal_part_of_ileum",
+   "role": "rapports",
+   "nom_fr": "Partie proximale de l'iléon",
+   "name_en": "Proximal part of ileum",
+   "system": "organes",
+   "file": "models/organes/proximal_part_of_ileum.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "middle_part_of_ileum",
+   "role": "rapports",
+   "nom_fr": "Partie moyenne de l'iléon",
+   "name_en": "Middle part of ileum",
+   "system": "organes",
+   "file": "models/organes/middle_part_of_ileum.glb",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "distal_part_of_ileum",
+   "role": "rapports",
+   "nom_fr": "Partie terminale de l'iléon",
+   "name_en": "Distal part of ileum",
+   "system": "organes",
+   "file": "models/organes/distal_part_of_ileum.glb",
    "figures": [
     93
    ]
   },
   {
    "id": "superior_anorectal_artery",
-   "nom_fr": "Artère anorectale supérieure",
+   "nom_fr": "Artère rectale supérieure",
+   "role": "sujet",
+   "figures": [
+    94
+   ]
+  },
+  {
+   "id": "inferior_mesenteric_artery",
+   "nom_fr": "Artère mésentérique inférieure",
    "role": "sujet",
    "figures": [
     94
@@ -51,14 +267,6 @@
    ]
   },
   {
-   "id": "inferior_mesenteric_artery",
-   "nom_fr": "Artère mésentérique inférieure",
-   "role": "sujet",
-   "figures": [
-    94
-   ]
-  },
-  {
    "id": "internal_pudendal_artery_right",
    "nom_fr": "Artère pudendale interne",
    "role": "sujet",
@@ -75,80 +283,69 @@
    ]
   },
   {
-   "id": "sigmoid_colon",
-   "nom_fr": "Côlon sigmoïde",
+   "id": "abdominal_aorta",
    "role": "sujet",
+   "nom_fr": "Aorte abdominale",
+   "name_en": "Abdominal aorta",
+   "system": "arteres",
+   "file": "models/arteres/abdominal_aorta.glb",
    "figures": [
-    92,
-    93,
     94
    ]
   },
   {
-   "id": "seminal_gland_right",
-   "nom_fr": "Glande séminale",
+   "id": "common_iliac_artery_right",
    "role": "sujet",
+   "nom_fr": "Artère iliaque commune",
+   "name_en": "Right common iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/common_iliac_artery_right.glb",
    "figures": [
-    93
-   ]
-  },
-  {
-   "id": "seminal_gland_left",
-   "nom_fr": "Glande séminale",
-   "role": "sujet",
-   "figures": [
-    93
-   ]
-  },
-  {
-   "id": "prostate",
-   "nom_fr": "Prostate",
-   "role": "sujet",
-   "figures": [
-    93
-   ]
-  },
-  {
-   "id": "rectum",
-   "nom_fr": "Rectum",
-   "role": "sujet",
-   "figures": [
-    92,
-    93,
     94
    ]
   },
   {
-   "id": "sacrum",
-   "nom_fr": "Sacrum",
+   "id": "common_iliac_artery_left",
    "role": "sujet",
+   "nom_fr": "Artère iliaque commune",
+   "name_en": "Left common iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/common_iliac_artery_left.glb",
    "figures": [
-    93,
     94
    ]
   },
   {
-   "id": "urinary_bladder",
-   "nom_fr": "Vessie urinaire",
+   "id": "external_iliac_artery_right",
    "role": "sujet",
+   "nom_fr": "Artère iliaque externe",
+   "name_en": "Right external iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/external_iliac_artery_right.glb",
    "figures": [
-    93
+    94
    ]
   },
   {
-   "id": "hip_bone_right",
-   "nom_fr": "Os coxal",
-   "role": "contexte",
+   "id": "external_iliac_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère iliaque externe",
+   "name_en": "Left external iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/external_iliac_artery_left.glb",
    "figures": [
-    93
+    94
    ]
   },
   {
-   "id": "hip_bone_left",
-   "nom_fr": "Os coxal",
-   "role": "contexte",
+   "id": "left_colic_artery",
+   "role": "sujet",
+   "nom_fr": "Artère colique gauche",
+   "name_en": "Left colic artery",
+   "system": "arteres",
+   "file": "models/arteres/left_colic_artery.glb",
    "figures": [
-    93
+    94
    ]
   }
  ],
@@ -169,7 +366,7 @@
   "92": {
    "titre_fr": "Configuration extérieure et intérieure du rectum",
    "classe": "3D+D",
-   "vue": "posterieure",
+   "vue": "laterale",
    "camera": {
     "vue": "posterieure",
     "position": [
@@ -195,14 +392,36 @@
      "role": "sujet"
     },
     {
-     "id": "urinary_bladder",
-     "nom_fr": "Vessie urinaire",
-     "role": "contexte"
+     "id": "pubococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Right pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_right.glb"
     },
     {
-     "id": "sacrum",
-     "nom_fr": "Sacrum",
-     "role": "contexte"
+     "id": "pubococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Left pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_left.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Right iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_right.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Left iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_left.glb"
     }
    ],
    "manquants": [
@@ -238,38 +457,23 @@
      "role": "sujet"
     },
     {
-     "id": "sacrum",
-     "nom_fr": "Sacrum",
-     "role": "sujet"
-    },
-    {
      "id": "prostate",
      "nom_fr": "Prostate",
      "role": "sujet"
     },
     {
      "id": "seminal_gland_right",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
      "id": "seminal_gland_left",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
      "id": "urinary_bladder",
      "nom_fr": "Vessie urinaire",
-     "role": "sujet"
-    },
-    {
-     "id": "tendinous_arch_of_levator_ani_right",
-     "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
-     "role": "sujet"
-    },
-    {
-     "id": "tendinous_arch_of_levator_ani_left",
-     "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
      "role": "sujet"
     },
     {
@@ -286,18 +490,130 @@
      "id": "sigmoid_colon",
      "nom_fr": "Côlon sigmoïde",
      "role": "contexte"
+    },
+    {
+     "id": "sacrum",
+     "nom_fr": "Sacrum",
+     "role": "contexte"
+    },
+    {
+     "id": "uterus_fundus",
+     "role": "contexte",
+     "nom_fr": "Fond de l'utérus",
+     "name_en": "Fundus of uterus",
+     "system": "organes",
+     "file": "models/organes/uterus_fundus.glb"
+    },
+    {
+     "id": "uterus_body",
+     "role": "contexte",
+     "nom_fr": "Corps de l'utérus",
+     "name_en": "Body of uterus",
+     "system": "organes",
+     "file": "models/organes/uterus_body.glb"
+    },
+    {
+     "id": "uterus_cervix",
+     "role": "contexte",
+     "nom_fr": "Col de l'utérus",
+     "name_en": "Cervix of uterus",
+     "system": "organes",
+     "file": "models/organes/uterus_cervix.glb"
+    },
+    {
+     "id": "vagina",
+     "role": "contexte",
+     "nom_fr": "Vagin",
+     "name_en": "Vagina",
+     "system": "organes",
+     "file": "models/organes/vagina.glb"
+    },
+    {
+     "id": "pubococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Right pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_right.glb"
+    },
+    {
+     "id": "pubococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Left pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_left.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Right iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_right.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Left iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_left.glb"
+    },
+    {
+     "id": "urethra",
+     "role": "contexte",
+     "nom_fr": "Urètre",
+     "name_en": "Urethra",
+     "system": "organes",
+     "file": "models/organes/urethra.glb"
+    },
+    {
+     "id": "jejunum",
+     "role": "contexte",
+     "nom_fr": "Jéjunum",
+     "name_en": "Jejunum",
+     "system": "organes",
+     "file": "models/organes/jejunum.glb"
+    },
+    {
+     "id": "proximal_part_of_ileum",
+     "role": "contexte",
+     "nom_fr": "Partie proximale de l'iléon",
+     "name_en": "Proximal part of ileum",
+     "system": "organes",
+     "file": "models/organes/proximal_part_of_ileum.glb"
+    },
+    {
+     "id": "middle_part_of_ileum",
+     "role": "contexte",
+     "nom_fr": "Partie moyenne de l'iléon",
+     "name_en": "Middle part of ileum",
+     "system": "organes",
+     "file": "models/organes/middle_part_of_ileum.glb"
+    },
+    {
+     "id": "distal_part_of_ileum",
+     "role": "contexte",
+     "nom_fr": "Partie terminale de l'iléon",
+     "name_en": "Distal part of ileum",
+     "system": "organes",
+     "file": "models/organes/distal_part_of_ileum.glb"
     }
    ],
    "manquants": [
-    "Côté FEMME : utérus/vagin ABSENTS (rapports antérieurs féminins impossibles)",
-    "Muscle élévateur de l'anus : seul son arcade tendineuse existe — le muscle lui-même est ABSENT ; fascia recto-prostatique (Denonvilliers) : ABSENT"
+    "Fascia recto-prostatique (Denonvilliers) : ABSENT du manifeste — aucun maillage",
+    "Fascia de Halban : ABSENT du manifeste — aucun maillage",
+    "Fascia recto-vaginal : ABSENT du manifeste — aucun maillage",
+    "Noyau fibreux central du périnée (NFCP) : ABSENT du manifeste — aucun maillage",
+    "Cul-de-sac recto-vésical de Douglas (homme) : ABSENT du manifeste — aucun espace recto-vésical n'existe"
    ],
    "espace": "Fascia recto-prostatique (de Denonvilliers)"
   },
   "94": {
    "titre_fr": "Vascularisation artérielle du rectum",
    "classe": "3D",
-   "vue": "posterieure",
+   "vue": "anterieure",
    "camera": {
     "vue": "posterieure",
     "position": [
@@ -314,7 +630,7 @@
    "structures": [
     {
      "id": "superior_anorectal_artery",
-     "nom_fr": "Artère anorectale supérieure",
+     "nom_fr": "Artère rectale supérieure",
      "role": "sujet"
     },
     {
@@ -348,6 +664,54 @@
      "role": "sujet"
     },
     {
+     "id": "abdominal_aorta",
+     "role": "sujet",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb"
+    },
+    {
+     "id": "common_iliac_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque commune",
+     "name_en": "Right common iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/common_iliac_artery_right.glb"
+    },
+    {
+     "id": "common_iliac_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque commune",
+     "name_en": "Left common iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/common_iliac_artery_left.glb"
+    },
+    {
+     "id": "external_iliac_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Right external iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/external_iliac_artery_right.glb"
+    },
+    {
+     "id": "external_iliac_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Left external iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/external_iliac_artery_left.glb"
+    },
+    {
+     "id": "left_colic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère colique gauche",
+     "name_en": "Left colic artery",
+     "system": "arteres",
+     "file": "models/arteres/left_colic_artery.glb"
+    },
+    {
      "id": "sigmoid_colon",
      "nom_fr": "Côlon sigmoïde",
      "role": "contexte"
@@ -360,7 +724,8 @@
    ],
    "manquants": [
     "Artère rectale MOYENNE (issue de l'iliaque interne) : ABSENTE du manifeste",
-    "Artère rectale INFÉRIEURE (issue de la pudendale interne) : ABSENTE — 2 des 3 sources artérielles de la figure n'ont pas de maillage ; seule l'anorectale supérieure existe nommément"
+    "Artère rectale INFÉRIEURE (issue de la pudendale interne) : ABSENTE — 2 des 3 sources artérielles de la figure n'ont pas de maillage ; seule l'anorectale supérieure existe nommément",
+    "Artère colique moyenne gauche : ABSENTE du manifeste — aucun maillage (middle_colic_artery = artère colique moyenne de la mésentérique supérieure, autre vaisseau)"
    ]
   }
  },
@@ -401,10 +766,14 @@
  ],
  "manquants": [
   "Valvules de Houston, ampoule rectale, colonnes et sinus de Morgagni : NON modélisés — le rectum est un maillage unique, son intérieur est un schéma en regard",
-  "Côté FEMME : utérus/vagin ABSENTS (rapports antérieurs féminins impossibles)",
-  "Muscle élévateur de l'anus : seul son arcade tendineuse existe — le muscle lui-même est ABSENT ; fascia recto-prostatique (Denonvilliers) : ABSENT",
+  "Fascia recto-prostatique (Denonvilliers) : ABSENT du manifeste — aucun maillage",
+  "Fascia de Halban : ABSENT du manifeste — aucun maillage",
+  "Fascia recto-vaginal : ABSENT du manifeste — aucun maillage",
+  "Noyau fibreux central du périnée (NFCP) : ABSENT du manifeste — aucun maillage",
+  "Cul-de-sac recto-vésical de Douglas (homme) : ABSENT du manifeste — aucun espace recto-vésical n'existe",
   "Artère rectale MOYENNE (issue de l'iliaque interne) : ABSENTE du manifeste",
-  "Artère rectale INFÉRIEURE (issue de la pudendale interne) : ABSENTE — 2 des 3 sources artérielles de la figure n'ont pas de maillage ; seule l'anorectale supérieure existe nommément"
+  "Artère rectale INFÉRIEURE (issue de la pudendale interne) : ABSENTE — 2 des 3 sources artérielles de la figure n'ont pas de maillage ; seule l'anorectale supérieure existe nommément",
+  "Artère colique moyenne gauche : ABSENTE du manifeste — aucun maillage (middle_colic_artery = artère colique moyenne de la mésentérique supérieure, autre vaisseau)"
  ],
  "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
 }

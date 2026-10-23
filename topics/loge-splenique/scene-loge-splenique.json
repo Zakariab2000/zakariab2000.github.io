@@ -238,8 +238,16 @@
      }
     },
     {
+     "id": "transverse_colon",
+     "role": "sujet",
+     "nom_fr": "Côlon transverse",
+     "name_en": "Transverse colon",
+     "system": "organes",
+     "file": "models/organes/transverse_colon.glb"
+    },
+    {
      "id": "pleura",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Plèvre",
      "name_en": "Pleura",
      "system": "organes",
@@ -270,7 +278,7 @@
     },
     {
      "id": "suprarenal_gland_left",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Glande surrénale",
      "name_en": "Left suprarenal gland",
      "system": "organes",
@@ -298,10 +306,27 @@
        18.9
       ]
      }
+    },
+    {
+     "id": "mesocolon",
+     "role": "rapports",
+     "nom_fr": "Mésocôlon",
+     "name_en": "Mesocolon",
+     "system": "organes",
+     "file": "models/organes/mesocolon.glb"
+    },
+    {
+     "id": "ninth_rib_left",
+     "role": "rapports",
+     "nom_fr": "Neuvième côte",
+     "name_en": "Left ninth rib",
+     "system": "squelette",
+     "file": "models/squelette/ninth_rib_left.glb"
     }
    ],
    "manquants": [
-    "Ligaments gastro-splénique et spléno-rénal (phrénico-splénique) : ABSENTS du manifeste — le 'contenant' péritonéal de la loge n'existe que par les organes voisins"
+    "Ligaments gastro-splénique et spléno-rénal (phrénico-splénique) : ABSENTS du manifeste — le 'contenant' péritonéal de la loge n'existe que par les organes voisins",
+    "Vaisseaux gastriques courts : aucun maillage au manifeste (ni artères ni veines courtes) — absents en tant que tels ; seul leur ligament (gastro-splénique) est déclaré absent, pas les vaisseaux eux-mêmes"
    ],
    "espaces": [
     {
@@ -318,7 +343,8 @@
      ],
      "type": "volume schématique",
      "desc_fr": "Espace péritonéal de l'étage sus-mésocolique, profondément situé dans l'hypochondre gauche entre les 9e et 11e espaces intercostaux, complètement fermé par le péritoine sauf au niveau de l'angle antéro-interne : coupole diaphragmatique gauche en haut et en dehors, rein gauche et queue du pancréas en arrière, grande courbure de l'estomac en dedans à travers les épiploons gastro-splénique et pancréatico-splénique, grill costal en avant. Il contient la rate (spleen, au centre du bounding). Limite inférieure du cours — l'angle colique gauche — absente de cette scène (elle figure dans la fig. 82) et ligaments de la loge non modélisés (audit) : la loge n'est donc délimitée ici que par ses organes voisins.",
-     "desc_en": "Peritoneal space of the supra-mesocolic compartment, deeply placed in the left hypochondrium between the 9th and 11th intercostal spaces, completely closed by peritoneum except at its antero-medial angle: left diaphragmatic cupola above and laterally, left kidney and tail of the pancreas behind, greater curvature of the stomach medially through the gastrosplenic and pancreaticosplenic omenta, costal margin in front. It contains the spleen (spleen, at the centre of the bounding set). The lower limit named by the course — the left colic angle — is absent from this scene (it appears in fig. 82) and the ligaments of the compartment are not modelled (audit): the compartment is therefore bounded here only by its neighbouring organs."
+     "desc_en": "Peritoneal space of the supra-mesocolic compartment, deeply placed in the left hypochondrium between the 9th and 11th intercostal spaces, completely closed by peritoneum except at its antero-medial angle: left diaphragmatic cupola above and laterally, left kidney and tail of the pancreas behind, greater curvature of the stomach medially through the gastrosplenic and pancreaticosplenic omenta, costal margin in front. It contains the spleen (spleen, at the centre of the bounding set). The lower limit named by the course — the left colic angle — is absent from this scene (it appears in fig. 82) and the ligaments of the compartment are not modelled (audit): the compartment is therefore bounded here only by its neighbouring organs.",
+     "note_fr": "Volume schématique — espace sans maillage source, délimité par les structures voisines de la figure."
     }
    ]
   },
@@ -429,8 +455,16 @@
      }
     },
     {
+     "id": "left_gastro_omental_vein",
+     "role": "sujet",
+     "nom_fr": "Veine gastro-omentale gauche",
+     "name_en": "Left gastro-omental vein",
+     "system": "veines",
+     "file": "models/veines/left_gastro_omental_vein.glb"
+    },
+    {
      "id": "stomach",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Estomac",
      "name_en": "Stomach",
      "system": "organes",
@@ -461,7 +495,7 @@
     },
     {
      "id": "diaphragm",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Diaphragme",
      "name_en": "Diaphragm",
      "system": "muscles",
@@ -489,10 +523,93 @@
        157.7
       ]
      }
+    },
+    {
+     "id": "rep_hilum_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Hile de la rate",
+     "name_en": "Hilum of spleen",
+     "system": "reperes",
+     "file": "models-reperes/hilum_of_spleen.glb"
+    },
+    {
+     "id": "rep_superior_border_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Bord supérieur de la rate",
+     "name_en": "Superior border of spleen",
+     "system": "reperes",
+     "file": "models-reperes/superior_border_of_spleen.glb"
+    },
+    {
+     "id": "rep_inferior_border_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Bord inférieur de la rate",
+     "name_en": "Inferior border of spleen",
+     "system": "reperes",
+     "file": "models-reperes/inferior_border_of_spleen.glb"
+    },
+    {
+     "id": "rep_visceral_surface_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Face viscérale de la rate",
+     "name_en": "Visceral surface of spleen",
+     "system": "reperes",
+     "file": "models-reperes/visceral_surface_of_spleen.glb"
+    },
+    {
+     "id": "rep_diaphragmatic_surface_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Face diaphragmatique de la rate",
+     "name_en": "Diaphragmatic surface of spleen",
+     "system": "reperes",
+     "file": "models-reperes/diaphragmatic_surface_of_spleen.glb"
+    },
+    {
+     "id": "rep_gastric_impression_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Face gastrique de la rate",
+     "name_en": "Gastric impression of spleen",
+     "system": "reperes",
+     "file": "models-reperes/gastric_impression_of_spleen.glb"
+    },
+    {
+     "id": "rep_renal_impression_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Face rénale de la rate",
+     "name_en": "Renal impression of spleen",
+     "system": "reperes",
+     "file": "models-reperes/renal_impression_of_spleen.glb"
+    },
+    {
+     "id": "rep_colic_impression_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Surface colique de la rate",
+     "name_en": "Colic impression of spleen",
+     "system": "reperes",
+     "file": "models-reperes/colic_impression_of_spleen.glb"
+    },
+    {
+     "id": "rep_anterior_extremity_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Extrémité antérieure de la rate",
+     "name_en": "Anterior extremity of spleen",
+     "system": "reperes",
+     "file": "models-reperes/anterior_extremity_of_spleen.glb"
+    },
+    {
+     "id": "rep_posterior_extremity_of_spleen",
+     "role": "rapports",
+     "nom_fr": "Extrémité postérieure de la rate",
+     "name_en": "Posterior extremity of spleen",
+     "system": "reperes",
+     "file": "models-reperes/posterior_extremity_of_spleen.glb"
     }
    ],
    "manquants": [
-    "Faces, bords et hile de la rate : lisibles sur le maillage unique 'spleen' (système lymphatique dans le manifeste), pas d'entrées séparées"
+    "Ligament gastro-splénique : ABSENT du manifeste — non déclaré dans cette figure (il l'est en fig. 80/82, pas en 81)",
+    "Ligament spléno-rénal : ABSENT du manifeste — non déclaré dans cette figure (il l'est en fig. 80/82, pas en 81)",
+    "Vaisseaux gastriques courts : ABSENTS du manifeste — non déclarés dans cette figure",
+    "Artère gastro-épiploïque gauche : ABSENTE du manifeste (seule la veine left_gastro_omental_vein existe, ajoutée en sujet)"
    ],
    "espaces": []
   },
@@ -501,7 +618,7 @@
    "titre_fr": "Rapports péritonéaux et viscéraux de la rate",
    "titre_en": "Peritoneal and visceral relations of the spleen",
    "classe": "[3D]",
-   "vue": "anterieure",
+   "vue": "superieure",
    "diagram": null,
    "systemes": [
     "organes",
@@ -634,163 +751,16 @@
      }
     },
     {
-     "id": "suprarenal_gland_left",
+     "id": "lesser_omentum",
      "role": "sujet",
-     "nom_fr": "Glande surrénale",
-     "name_en": "Left suprarenal gland",
+     "nom_fr": "Petit omentum",
+     "name_en": "Lesser omentum",
      "system": "organes",
-     "file": "models/organes/suprarenal_gland_left.glb",
-     "couleur": "#caa6d9",
-     "bounds": {
-      "min": [
-       26.5,
-       1071.0,
-       67.1
-      ],
-      "max": [
-       73.9,
-       1116.1,
-       86.0
-      ],
-      "center": [
-       50.2,
-       1093.5,
-       76.6
-      ],
-      "size": [
-       47.3,
-       45.1,
-       18.9
-      ]
-     }
-    },
-    {
-     "id": "diaphragm",
-     "role": "sujet",
-     "nom_fr": "Diaphragme",
-     "name_en": "Diaphragm",
-     "system": "muscles",
-     "file": "models/muscles/diaphragm.glb",
-     "couleur": "#b03a2e",
-     "bounds": {
-      "min": [
-       -123.9,
-       974.6,
-       37.1
-      ],
-      "max": [
-       122.4,
-       1195.7,
-       194.8
-      ],
-      "center": [
-       -0.7,
-       1085.1,
-       115.9
-      ],
-      "size": [
-       246.3,
-       221.1,
-       157.7
-      ]
-     }
-    },
-    {
-     "id": "descending_colon",
-     "role": "sujet",
-     "nom_fr": "Côlon descendant",
-     "name_en": "Descending colon",
-     "system": "organes",
-     "file": "models/organes/descending_colon.glb",
-     "couleur": "#d9a583",
-     "bounds": {
-      "min": [
-       -18.2,
-       802.6,
-       45.5
-      ],
-      "max": [
-       112.0,
-       1067.3,
-       133.5
-      ],
-      "center": [
-       46.9,
-       934.9,
-       89.5
-      ],
-      "size": [
-       130.2,
-       264.7,
-       88.0
-      ]
-     }
-    },
-    {
-     "id": "transverse_colon",
-     "role": "sujet",
-     "nom_fr": "Côlon transverse",
-     "name_en": "Transverse colon",
-     "system": "organes",
-     "file": "models/organes/transverse_colon.glb",
-     "couleur": "#d9a583",
-     "bounds": {
-      "min": [
-       -86.0,
-       999.2,
-       105.6
-      ],
-      "max": [
-       97.1,
-       1068.0,
-       176.3
-      ],
-      "center": [
-       5.5,
-       1033.6,
-       141.0
-      ],
-      "size": [
-       183.1,
-       68.7,
-       70.7
-      ]
-     }
-    },
-    {
-     "id": "pleura",
-     "role": "rapport",
-     "nom_fr": "Plèvre",
-     "name_en": "Pleura",
-     "system": "organes",
-     "file": "models/organes/pleura.glb",
-     "couleur": "#c97b84",
-     "bounds": {
-      "min": [
-       -130.1,
-       1101.5,
-       20.6
-      ],
-      "max": [
-       128.3,
-       1366.7,
-       197.4
-      ],
-      "center": [
-       -0.9,
-       1234.1,
-       109.0
-      ],
-      "size": [
-       258.5,
-       265.2,
-       176.7
-      ]
-     }
+     "file": "models/organes/lesser_omentum.glb"
     },
     {
      "id": "splenic_artery",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère splénique",
      "name_en": "Splenic artery",
      "system": "arteres",
@@ -821,9 +791,19 @@
     }
    ],
    "manquants": [
-    "Rapports PÉRITONÉAUX (ligaments gastro-splénique, spléno-rénal, phréno-colique) : ABSENTS (voir Fig 80) — seuls les rapports viscéraux sont montrables en 3D"
+    "Rapports PÉRITONÉAUX (ligaments gastro-splénique, spléno-rénal, phréno-colique) : ABSENTS (voir Fig 80) — seuls les rapports viscéraux sont montrables en 3D",
+    "Épiploon pancréatico-splénique : aucun maillage au manifeste — jamais nommé dans les déclarés (spléno-rénal ≠ pancréatico-splénique dans Q28)",
+    "Péritoine : aucun maillage de péritoine au manifeste — non représenté (trait du schéma axial)"
    ],
-   "espaces": []
+   "espaces": [
+    {
+     "key": "bourse_omentale",
+     "nom_fr": "Bourse omentale (arrière-cavité des épiploons)",
+     "name_en": "Omental bursa (lesser sac)",
+     "couleur": "#ffd43b",
+     "note_fr": "Volume schématique — espace sans maillage source, délimité par les structures voisines de la figure."
+    }
+   ]
   },
   {
    "numero": 83,
@@ -963,8 +943,40 @@
      }
     },
     {
+     "id": "hepatic_portal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb"
+    },
+    {
+     "id": "common_hepatic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère hépatique commune",
+     "name_en": "Common hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/common_hepatic_artery.glb"
+    },
+    {
+     "id": "left_gastric_artery",
+     "role": "sujet",
+     "nom_fr": "Artère gastrique gauche",
+     "name_en": "Left gastric artery",
+     "system": "arteres",
+     "file": "models/arteres/left_gastric_artery.glb"
+    },
+    {
+     "id": "abdominal_aorta",
+     "role": "sujet",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb"
+    },
+    {
      "id": "pancreas",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Pancréas",
      "name_en": "Pancreas",
      "system": "organes",
@@ -995,7 +1007,7 @@
     },
     {
      "id": "stomach",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Estomac",
      "name_en": "Stomach",
      "system": "organes",
@@ -1027,7 +1039,7 @@
    ],
    "manquants": [
     "Artères gastriques courtes : ABSENTES ; artère gastro-omentale gauche : ABSENTE — les branches terminales spléniques de la figure sont incomplètes",
-    "Branches pancréatiques de la splénique (dorsale, grande pancréatique) : non individualisées"
+    "Branches pancréatiques de la splénique (dorsale, grande pancréatique, artère de la queue du pancréas) : non individualisées"
    ],
    "espaces": []
   }

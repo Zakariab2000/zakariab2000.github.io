@@ -93,6 +93,14 @@
      ]
     },
     {
+     "id": "brachial_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère brachiale",
+     "name_en": "Right brachial artery",
+     "system": "arteres",
+     "file": "models/arteres/brachial_artery_right.glb"
+    },
+    {
      "id": "axillary_artery_right",
      "nom_fr": "Artère axillaire",
      "name_en": "Right axillary artery",
@@ -132,7 +140,7 @@
     },
     {
      "id": "anterior_axillary_nodes_right",
-     "nom_fr": "Lymphonoeuds axillaires antérieurs",
+     "nom_fr": "Groupe mammaire externe",
      "name_en": "Right anterior axillary nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -244,27 +252,16 @@
      ]
     },
     {
-     "id": "left_subclavian_vein",
-     "nom_fr": "Veine sous-clavière gauche",
-     "name_en": "Left subclavian vein",
-     "systeme": "veines",
-     "couleur": "#5b7fb4",
-     "fichier": "models/veines/left_subclavian_vein.glb",
+     "id": "right_subclavian_vein",
      "role": "contexte",
-     "centre": [
-      57.7,
-      1341.6,
-      110.6
-     ],
-     "taille": [
-      70.2,
-      20.5,
-      23.8
-     ]
+     "nom_fr": "Veine sous-clavière droite",
+     "name_en": "Right subclavian vein",
+     "system": "veines",
+     "file": "models/veines/right_subclavian_vein.glb"
     },
     {
      "id": "anterior_axillary_nodes_right",
-     "nom_fr": "Lymphonoeuds axillaires antérieurs",
+     "nom_fr": "Groupe mammaire externe",
      "name_en": "Right anterior axillary nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -280,13 +277,28 @@
       44.1,
       23.3
      ]
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_thoracic_veins_right",
+     "role": "contexte",
+     "nom_fr": "Veines thoraciques internes",
+     "name_en": "Right internal thoracic veins",
+     "system": "veines",
+     "file": "models/veines/internal_thoracic_veins_right.glb"
     }
    ],
    "diagramme": "sein_veineux",
    "espaces": [],
    "manquants": [
     "GLANDE MAMMAIRE : ABSENTE (voir Fig 48)",
-    "Veine thoracique interne : ABSENTE du manifeste",
     "Veine thoraco-épigastrique : non retrouvée"
    ]
   },
@@ -302,7 +314,7 @@
    "structures": [
     {
      "id": "anterior_axillary_nodes_right",
-     "nom_fr": "Lymphonoeuds axillaires antérieurs",
+     "nom_fr": "Groupe mammaire externe",
      "name_en": "Right anterior axillary nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -340,7 +352,7 @@
     },
     {
      "id": "lateral_axillary_nodes_right",
-     "nom_fr": "Lymphonoeuds axillaires latéraux",
+     "nom_fr": "Groupe ganglionnaire brachial",
      "name_en": "Right lateral axillary nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -359,7 +371,7 @@
     },
     {
      "id": "central_axillary_nodes_right",
-     "nom_fr": "Lymphonoeuds axillaires centraux",
+     "nom_fr": "Groupe intermédiaire",
      "name_en": "Right central axillary nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -378,7 +390,7 @@
     },
     {
      "id": "apical_axillary_nodes_right",
-     "nom_fr": "Lymphonoeuds axillaires apicaux",
+     "nom_fr": "Groupe sous-claviculaire",
      "name_en": "Right apical axillary nodes",
      "systeme": "lymphatique",
      "couleur": "#7fae5c",
@@ -451,13 +463,81 @@
       139.7,
       89.3
      ]
+    },
+    {
+     "id": "interpectoral_nodes_right",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds interpectoraux",
+     "name_en": "Right interpectoral nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/interpectoral_nodes_right.glb"
+    },
+    {
+     "id": "infraclavicular_nodes_right",
+     "role": "contexte",
+     "nom_fr": "Lymphonoeuds infraclaviculaires",
+     "name_en": "Right infraclavicular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/infraclavicular_nodes_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "right_subclavian_vein",
+     "role": "contexte",
+     "nom_fr": "Veine sous-clavière droite",
+     "name_en": "Right subclavian vein",
+     "system": "veines",
+     "file": "models/veines/right_subclavian_vein.glb"
+    },
+    {
+     "id": "right_brachiocephalic_vein",
+     "role": "contexte",
+     "nom_fr": "Veine brachiocéphalique droite",
+     "name_en": "Right brachiocephalic vein",
+     "system": "veines",
+     "file": "models/veines/right_brachiocephalic_vein.glb"
+    },
+    {
+     "id": "brachiocephalic_trunk",
+     "role": "contexte",
+     "nom_fr": "Tronc brachiocéphalique",
+     "name_en": "Brachiocephalic trunk",
+     "system": "arteres",
+     "file": "models/arteres/brachiocephalic_trunk.glb"
+    },
+    {
+     "id": "axillary_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère axillaire",
+     "name_en": "Right axillary artery",
+     "system": "arteres",
+     "file": "models/arteres/axillary_artery_right.glb"
+    },
+    {
+     "id": "pectoralis_major_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle grand pectoral",
+     "name_en": "Right pectoralis major muscle",
+     "system": "muscles",
+     "file": "models/muscles/pectoralis_major_muscle_right.glb"
     }
    ],
    "diagramme": "sein_lymph",
    "espaces": [],
    "manquants": [
     "GLANDE MAMMAIRE : ABSENTE (voir Fig 48) — les nœuds existent tous, mais le territoire drainé n'a pas de maillage",
-    "Les trajets de drainage (plexus sous-aréolaire de Sappey, voies parasternales) sont schématiques par nature → schéma en regard"
+    "Les trajets de drainage (plexus sous-aréolaire de Sappey, voies parasternales) sont schématiques par nature → schéma en regard",
+    "Nœuds lymphatiques cervicaux profonds inférieurs : ABSENTS du manifeste — aucun maillage dédié (le drainage apical les rejoint via le tronc sous-clavier, au diagramme)",
+    "Conduit lymphatique droit : ABSENT du manifeste — aucun maillage (l'angle veineux droit est schématisé au diagramme)",
+    "Tronc sympathique sous-clavier (légende) : ABSENT du manifeste — à ne pas confondre avec le tronc sous-clavier LYMPHATIQUE du diagramme",
+    "Collecteurs rejoignant le sein gauche et les lymphatiques abdominaux : trajets schématiques, aucun maillage"
    ]
   }
  ],
@@ -1154,8 +1234,8 @@
      "sub_en": "veins",
      "lvl": "courant",
      "note": {
-      "fr": "Veine thoracique interne absente du manifeste (audit fig. 49) — schéma seul",
-      "en": "Internal thoracic vein absent from the manifest (audit fig. 49) — diagram only"
+      "en": "Internal thoracic vein: PRESENT in the manifest (internal_thoracic_veins_right/_left) and wired as a 3D rapport in this figure — the node schematizes it.",
+      "fr": "Veine thoracique interne : PRÉSENTE au manifeste (internal_thoracic_veins_right/_left) et câblée en rapport 3D de cette figure — le nœud la schématise en regard."
      },
      "desc": {
       "fr": "Courant interne (médial) des veines profondes : les veines mammaires internes se jettent dans le tronc veineux brachio-céphalique (TVBC) (cours, Q18).",
@@ -1401,8 +1481,8 @@
      "sub_en": "",
      "lvl": "tronc",
      "desc": {
-      "fr": "Tronc collecteur formé par les efférents du groupe apical, vers l'angle veineux jugulo-sous-clavier.",
-      "en": "Collecting trunk formed by the efferents of the apical group, towards the jugulo-subclavian venous angle."
+      "en": "LYMPHATIC collecting trunk formed by the efferents of the apical group, toward the jugulo-subclavian venous angle. Not to be confused with the sympathetic subclavian trunk of the legend (absent from the manifest, declared missing).",
+      "fr": "Tronc collecteur LYMPHATIQUE formé par les efférents du groupe apical, vers l'angle veineux jugulo-sous-clavier. À ne pas confondre avec le tronc sympathique sous-clavier de la légende (absent du manifeste, déclaré en manquants)."
      }
     },
     {

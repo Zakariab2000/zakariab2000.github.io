@@ -74,120 +74,6 @@
      ]
     },
     {
-     "id": "scalenus_anterior_muscle_right",
-     "nom_fr": "Muscle scalène antérieur",
-     "name_en": "Right scalenus anterior muscle",
-     "systeme": "muscles",
-     "couleur": "#b03a2e",
-     "fichier": "models/muscles/scalenus_anterior_muscle_right.glb",
-     "role": "sujet",
-     "centre": [
-      -37.4,
-      1386.7,
-      99.1
-     ],
-     "taille": [
-      33.7,
-      83.3,
-      17.7
-     ]
-    },
-    {
-     "id": "scalenus_anterior_muscle_left",
-     "nom_fr": "Muscle scalène antérieur",
-     "name_en": "Left scalenus anterior muscle",
-     "systeme": "muscles",
-     "couleur": "#b03a2e",
-     "fichier": "models/muscles/scalenus_anterior_muscle_left.glb",
-     "role": "sujet",
-     "centre": [
-      36.8,
-      1386.7,
-      99.1
-     ],
-     "taille": [
-      33.7,
-      83.3,
-      17.7
-     ]
-    },
-    {
-     "id": "sympathetic_trunk_right",
-     "nom_fr": "Tronc sympathique",
-     "name_en": "Right sympathetic trunk",
-     "systeme": "nerfs",
-     "couleur": "#d9a441",
-     "fichier": "models/nerfs/sympathetic_trunk_right.glb",
-     "role": "sujet",
-     "centre": [
-      -14.7,
-      1252.5,
-      73.0
-     ],
-     "taille": [
-      19.8,
-      373.1,
-      63.7
-     ]
-    },
-    {
-     "id": "sympathetic_trunk_left",
-     "nom_fr": "Tronc sympathique",
-     "name_en": "Left sympathetic trunk",
-     "systeme": "nerfs",
-     "couleur": "#d9a441",
-     "fichier": "models/nerfs/sympathetic_trunk_left.glb",
-     "role": "sujet",
-     "centre": [
-      14.1,
-      1252.5,
-      73.0
-     ],
-     "taille": [
-      19.8,
-      373.1,
-      63.7
-     ]
-    },
-    {
-     "id": "vertebral_artery_right",
-     "nom_fr": "Artère vertébrale",
-     "name_en": "Right vertebral artery",
-     "systeme": "arteres",
-     "couleur": "#cf5346",
-     "fichier": "models/arteres/vertebral_artery_right.glb",
-     "role": "sujet",
-     "centre": [
-      -20.6,
-      1434.6,
-      85.4
-     ],
-     "taille": [
-      42.4,
-      159.8,
-      28.5
-     ]
-    },
-    {
-     "id": "vertebral_artery_left",
-     "nom_fr": "Artère vertébrale",
-     "name_en": "Left vertebral artery",
-     "systeme": "arteres",
-     "couleur": "#cf5346",
-     "fichier": "models/arteres/vertebral_artery_left.glb",
-     "role": "sujet",
-     "centre": [
-      20.0,
-      1434.6,
-      85.4
-     ],
-     "taille": [
-      42.4,
-      159.8,
-      28.5
-     ]
-    },
-    {
      "id": "first_rib_right",
      "nom_fr": "Première côte",
      "name_en": "Right first rib",
@@ -281,36 +167,217 @@
       105.9,
       36.6
      ]
+    },
+    {
+     "id": "scalenus_anterior_muscle_right",
+     "nom_fr": "Muscle scalène antérieur",
+     "name_en": "Right scalenus anterior muscle",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/scalenus_anterior_muscle_right.glb",
+     "role": "contexte",
+     "centre": [
+      -37.4,
+      1386.7,
+      99.1
+     ],
+     "taille": [
+      33.7,
+      83.3,
+      17.7
+     ]
+    },
+    {
+     "id": "scalenus_anterior_muscle_left",
+     "nom_fr": "Muscle scalène antérieur",
+     "name_en": "Left scalenus anterior muscle",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/scalenus_anterior_muscle_left.glb",
+     "role": "contexte",
+     "centre": [
+      36.8,
+      1386.7,
+      99.1
+     ],
+     "taille": [
+      33.7,
+      83.3,
+      17.7
+     ]
+    },
+    {
+     "id": "sympathetic_trunk_right",
+     "nom_fr": "Tronc sympathique",
+     "name_en": "Right sympathetic trunk",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/sympathetic_trunk_right.glb",
+     "role": "contexte",
+     "centre": [
+      -14.7,
+      1252.5,
+      73.0
+     ],
+     "taille": [
+      19.8,
+      373.1,
+      63.7
+     ]
+    },
+    {
+     "id": "sympathetic_trunk_left",
+     "nom_fr": "Tronc sympathique",
+     "name_en": "Left sympathetic trunk",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/sympathetic_trunk_left.glb",
+     "role": "contexte",
+     "centre": [
+      14.1,
+      1252.5,
+      73.0
+     ],
+     "taille": [
+      19.8,
+      373.1,
+      63.7
+     ]
+    },
+    {
+     "id": "vertebral_artery_right",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Right vertebral artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/vertebral_artery_right.glb",
+     "role": "contexte",
+     "centre": [
+      -20.6,
+      1434.6,
+      85.4
+     ],
+     "taille": [
+      42.4,
+      159.8,
+      28.5
+     ]
+    },
+    {
+     "id": "vertebral_artery_left",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Left vertebral artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/vertebral_artery_left.glb",
+     "role": "contexte",
+     "centre": [
+      20.0,
+      1434.6,
+      85.4
+     ],
+     "taille": [
+      42.4,
+      159.8,
+      28.5
+     ]
+    },
+    {
+     "id": "right_subclavian_vein",
+     "role": "contexte",
+     "nom_fr": "Veine sous-clavière droite",
+     "name_en": "Right subclavian vein",
+     "system": "veines",
+     "file": "models/veines/right_subclavian_vein.glb"
+    },
+    {
+     "id": "left_subclavian_vein",
+     "role": "contexte",
+     "nom_fr": "Veine sous-clavière gauche",
+     "name_en": "Left subclavian vein",
+     "system": "veines",
+     "file": "models/veines/left_subclavian_vein.glb"
+    },
+    {
+     "id": "second_rib_right",
+     "role": "contexte",
+     "nom_fr": "Deuxième côte",
+     "name_en": "Right second rib",
+     "system": "squelette",
+     "file": "models/squelette/second_rib_right.glb"
+    },
+    {
+     "id": "second_rib_left",
+     "role": "contexte",
+     "nom_fr": "Deuxième côte",
+     "name_en": "Left second rib",
+     "system": "squelette",
+     "file": "models/squelette/second_rib_left.glb"
+    },
+    {
+     "id": "oesophagus",
+     "role": "contexte",
+     "nom_fr": "Oesophage",
+     "name_en": "Oesophagus",
+     "system": "organes",
+     "file": "models/organes/oesophagus.glb"
+    },
+    {
+     "id": "right_common_carotid_artery",
+     "role": "contexte",
+     "nom_fr": "Artère carotide commune droite",
+     "name_en": "Right common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/right_common_carotid_artery.glb"
+    },
+    {
+     "id": "left_common_carotid_artery",
+     "role": "contexte",
+     "nom_fr": "Artère carotide commune gauche",
+     "name_en": "Left common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/left_common_carotid_artery.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_left",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Left internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_left.glb"
+    },
+    {
+     "id": "manubrium_of_sternum",
+     "role": "contexte",
+     "nom_fr": "Manubrium sternal",
+     "name_en": "Manubrium of sternum",
+     "system": "squelette",
+     "file": "models/squelette/manubrium_of_sternum.glb"
+    },
+    {
+     "id": "rep_superior_thoracic_aperture",
+     "role": "contexte",
+     "nom_fr": "Ouverture thoracique supérieure",
+     "name_en": "Superior thoracic aperture",
+     "system": "reperes",
+     "file": "models-reperes/superior_thoracic_aperture.glb"
     }
    ],
    "diagramme": null,
-   "espaces": [
-    {
-     "id": "cavite_pleurale_droite",
-     "nom_fr": "Cavité pleurale droite",
-     "couleur": "#ffa62b",
-     "fichier": "modeles-espaces/cavite_pleurale_droite.glb",
-     "bornes": [
-      "pleura",
-      "right_lung"
-     ],
-     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
-    },
-    {
-     "id": "cavite_pleurale_gauche",
-     "nom_fr": "Cavité pleurale gauche",
-     "couleur": "#2ec4b6",
-     "fichier": "modeles-espaces/cavite_pleurale_gauche.glb",
-     "bornes": [
-      "pleura",
-      "left_lung"
-     ],
-     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
-    }
-   ],
+   "espaces": [],
    "manquants": [
     "Canal thoracique (rapport supérieur gauche) et conduit lymphatique droit : ABSENTS du manifeste",
-    "Fascia sus-pleural (membrane de Sibson) : ABSENT"
+    "Fascia sus-pleural (membrane de Sibson) : ABSENT",
+    "1ère vertèbre thoracique (T1) : aucun maillage dédié — seuls des repères vertébraux génériques existent",
+    "Ganglion stellaire (cervico-thoracique) : ABSENT du manifeste — le tronc sympathique câblé en rapport en marque le territoire, sans ganglion individualisé"
    ]
   },
   {
@@ -569,33 +636,186 @@
       221.1,
       157.7
      ]
+    },
+    {
+     "id": "pulmonary_trunk",
+     "role": "contexte",
+     "nom_fr": "Tronc pulmonaire",
+     "name_en": "Pulmonary trunk",
+     "system": "arteres",
+     "file": "models/arteres/pulmonary_trunk.glb"
+    },
+    {
+     "id": "right_pulmonary_artery",
+     "role": "contexte",
+     "nom_fr": "Artère pulmonaire droite",
+     "name_en": "Right pulmonary artery",
+     "system": "arteres",
+     "file": "models/arteres/right_pulmonary_artery.glb"
+    },
+    {
+     "id": "left_pulmonary_artery",
+     "role": "contexte",
+     "nom_fr": "Artère pulmonaire gauche",
+     "name_en": "Left pulmonary artery",
+     "system": "arteres",
+     "file": "models/arteres/left_pulmonary_artery.glb"
+    },
+    {
+     "id": "right_superior_pulmonary_vein",
+     "role": "contexte",
+     "nom_fr": "Veine pulmonaire supérieure droite",
+     "name_en": "Right superior pulmonary vein",
+     "system": "veines",
+     "file": "models/veines/right_superior_pulmonary_vein.glb"
+    },
+    {
+     "id": "right_inferior_pulmonary_vein",
+     "role": "contexte",
+     "nom_fr": "Veine pulmonaire inférieure droite",
+     "name_en": "Right inferior pulmonary vein",
+     "system": "veines",
+     "file": "models/veines/right_inferior_pulmonary_vein.glb"
+    },
+    {
+     "id": "left_superior_pulmonary_vein",
+     "role": "contexte",
+     "nom_fr": "Veine pulmonaire supérieure gauche",
+     "name_en": "Left superior pulmonary vein",
+     "system": "veines",
+     "file": "models/veines/left_superior_pulmonary_vein.glb"
+    },
+    {
+     "id": "left_inferior_pulmonary_vein",
+     "role": "contexte",
+     "nom_fr": "Veine pulmonaire inférieure gauche",
+     "name_en": "Left inferior pulmonary vein",
+     "system": "veines",
+     "file": "models/veines/left_inferior_pulmonary_vein.glb"
+    },
+    {
+     "id": "right_main_bronchus",
+     "role": "contexte",
+     "nom_fr": "Bronche principale droite",
+     "name_en": "Right main bronchus",
+     "system": "organes",
+     "file": "models/organes/right_main_bronchus.glb"
+    },
+    {
+     "id": "left_main_bronchus",
+     "role": "contexte",
+     "nom_fr": "Bronche principale gauche",
+     "name_en": "Left main bronchus",
+     "system": "organes",
+     "file": "models/organes/left_main_bronchus.glb"
+    },
+    {
+     "id": "right_superior_lobar_bronchus",
+     "role": "contexte",
+     "nom_fr": "Bronche lobaire supérieure droite",
+     "name_en": "Right superior lobar bronchus",
+     "system": "organes",
+     "file": "models/organes/right_superior_lobar_bronchus.glb"
+    },
+    {
+     "id": "left_superior_lobar_bronchus",
+     "role": "contexte",
+     "nom_fr": "Bronche lobaire supérieure gauche",
+     "name_en": "Left superior lobar bronchus",
+     "system": "organes",
+     "file": "models/organes/left_superior_lobar_bronchus.glb"
+    },
+    {
+     "id": "inferior_vena_cava_thoracic_part",
+     "role": "contexte",
+     "nom_fr": "Veine cave inférieure (partie thoracique)",
+     "name_en": "Inferior vena cava (thoracic part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_thoracic_part.glb"
+    },
+    {
+     "id": "left_brachiocephalic_vein",
+     "role": "contexte",
+     "nom_fr": "Veine brachiocéphalique gauche",
+     "name_en": "Left brachiocephalic vein",
+     "system": "veines",
+     "file": "models/veines/left_brachiocephalic_vein.glb"
+    },
+    {
+     "id": "right_brachiocephalic_vein",
+     "role": "contexte",
+     "nom_fr": "Veine brachiocéphalique droite",
+     "name_en": "Right brachiocephalic vein",
+     "system": "veines",
+     "file": "models/veines/right_brachiocephalic_vein.glb"
+    },
+    {
+     "id": "right_subclavian_artery",
+     "role": "contexte",
+     "nom_fr": "Artère subclavière droite",
+     "name_en": "Right subclavian artery",
+     "system": "arteres",
+     "file": "models/arteres/right_subclavian_artery.glb"
+    },
+    {
+     "id": "left_subclavian_artery",
+     "role": "contexte",
+     "nom_fr": "Artère subclavière gauche",
+     "name_en": "Left subclavian artery",
+     "system": "arteres",
+     "file": "models/arteres/left_subclavian_artery.glb"
+    },
+    {
+     "id": "right_subclavian_vein",
+     "role": "contexte",
+     "nom_fr": "Veine sous-clavière droite",
+     "name_en": "Right subclavian vein",
+     "system": "veines",
+     "file": "models/veines/right_subclavian_vein.glb"
+    },
+    {
+     "id": "first_rib_right",
+     "role": "contexte",
+     "nom_fr": "Première côte",
+     "name_en": "Right first rib",
+     "system": "squelette",
+     "file": "models/squelette/first_rib_right.glb"
+    },
+    {
+     "id": "first_rib_left",
+     "role": "contexte",
+     "nom_fr": "Première côte",
+     "name_en": "Left first rib",
+     "system": "squelette",
+     "file": "models/squelette/first_rib_left.glb"
+    },
+    {
+     "id": "aortic_arch",
+     "role": "contexte",
+     "nom_fr": "Arc aortique",
+     "name_en": "Aortic arch",
+     "system": "arteres",
+     "file": "models/arteres/aortic_arch.glb"
+    },
+    {
+     "id": "right_ventricle",
+     "role": "contexte",
+     "nom_fr": "Ventricule droit",
+     "name_en": "Right ventricle",
+     "system": "organes",
+     "file": "models/organes/right_ventricle.glb"
+    },
+    {
+     "id": "left_ventricle",
+     "role": "contexte",
+     "nom_fr": "Ventricule gauche",
+     "name_en": "Left ventricle",
+     "system": "organes",
+     "file": "models/organes/left_ventricle.glb"
     }
    ],
    "diagramme": null,
-   "espaces": [
-    {
-     "id": "cavite_pleurale_droite",
-     "nom_fr": "Cavité pleurale droite",
-     "couleur": "#ffa62b",
-     "fichier": "modeles-espaces/cavite_pleurale_droite.glb",
-     "bornes": [
-      "pleura",
-      "right_lung"
-     ],
-     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
-    },
-    {
-     "id": "cavite_pleurale_gauche",
-     "nom_fr": "Cavité pleurale gauche",
-     "couleur": "#2ec4b6",
-     "fichier": "modeles-espaces/cavite_pleurale_gauche.glb",
-     "bornes": [
-      "pleura",
-      "left_lung"
-     ],
-     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
-    }
-   ],
+   "espaces": [],
    "manquants": [
     "Nerf phrénique (rapport médiastinal majeur des deux poumons) : ABSENT du manifeste",
     "Péricarde : ABSENT ; canal thoracique : ABSENT"

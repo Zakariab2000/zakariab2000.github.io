@@ -174,39 +174,32 @@
      }
     },
     {
-     "id": "spleen",
+     "id": "bile_duct",
      "role": "sujet",
-     "nom_fr": "Rate",
-     "name_en": "Spleen",
-     "system": "lymphatique",
-     "file": "models/lymphatique/spleen.glb",
-     "couleur": "#7fae5c",
-     "bounds": {
-      "min": [
-       54.3,
-       1059.2,
-       51.2
-      ],
-      "max": [
-       111.6,
-       1129.8,
-       140.5
-      ],
-      "center": [
-       83.0,
-       1094.5,
-       95.9
-      ],
-      "size": [
-       57.2,
-       70.6,
-       89.3
-      ]
-     }
+     "nom_fr": "Canal cholédoque",
+     "name_en": "Bile duct",
+     "system": "organes",
+     "file": "models/organes/bile_duct.glb"
+    },
+    {
+     "id": "right_gastro_omental_vein",
+     "role": "sujet",
+     "nom_fr": "Veine gastro-omentale droite",
+     "name_en": "Right gastro-omental vein",
+     "system": "veines",
+     "file": "models/veines/right_gastro_omental_vein.glb"
+    },
+    {
+     "id": "right_colic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine colique droite",
+     "name_en": "Right colic vein",
+     "system": "veines",
+     "file": "models/veines/right_colic_vein.glb"
     },
     {
      "id": "duodenum",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Duodénum",
      "name_en": "Duodenum",
      "system": "organes",
@@ -238,7 +231,9 @@
    ],
    "manquants": [
     "Veine cystique, veines gastriques gauche (coronaire) et droite, veines para-ombilicales (affluents accessoires de la figure) : ABSENTES du manifeste",
-    "La CONSTITUTION (confluence des 3 racines derrière le col du pancréas, variantes) est un schéma par nature → schéma en regard ; les 4 vaisseaux principaux, eux, existent en 3D"
+    "La CONSTITUTION (confluence des 3 racines derrière le col du pancréas, variantes) est un schéma par nature → schéma en regard ; les 4 vaisseaux principaux, eux, existent en 3D",
+    "Arcade pancréatico-duodénale antérieure : aucun maillage d'arcade veineuse au manifeste — absente, non représentée",
+    "Angle duodéno-jéjunal : aucun maillage distinct au manifeste — absent, non représenté"
    ],
    "espaces": []
   },
@@ -379,7 +374,7 @@
     },
     {
      "id": "left_gastric_artery",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère gastrique gauche",
      "name_en": "Left gastric artery",
      "system": "arteres",
@@ -410,7 +405,7 @@
     },
     {
      "id": "splenic_artery",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère splénique",
      "name_en": "Splenic artery",
      "system": "arteres",
@@ -441,7 +436,7 @@
     },
     {
      "id": "duodenum",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Duodénum",
      "name_en": "Duodenum",
      "system": "organes",
@@ -472,7 +467,7 @@
     },
     {
      "id": "hepatic_portal_vein",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Veine porte du foie",
      "name_en": "Hepatic portal vein",
      "system": "veines",
@@ -504,7 +499,9 @@
    ],
    "manquants": [
     "Artères hépatiques droite et gauche (division terminale de l'hépatique propre) : ABSENTES du manifeste",
-    "Artère cystique : ABSENTE ; artère gastrique droite (souvent issue de l'hépatique) : ABSENTE"
+    "Artère cystique : ABSENTE ; artère gastrique droite (souvent issue de l'hépatique) : ABSENTE",
+    "Artère pancréatique (branche de la gastro-duodénale) : aucun maillage au manifeste — absente, non représentée (seules les artères pancréatico-duodénales antéro-inférieure et inférieure existent, autres artères)",
+    "Artère gastro-épiploïque droite : aucun maillage au manifeste (aucune artère gastro-omentale au manifeste, seules les veines existent) — absente, non représentée"
    ],
    "espaces": []
   },
@@ -553,7 +550,7 @@
     {
      "id": "bile_duct",
      "role": "sujet",
-     "nom_fr": "Canal biliaire",
+     "nom_fr": "Canal cholédoque",
      "name_en": "Bile duct",
      "system": "organes",
      "file": "models/organes/bile_duct.glb",
@@ -582,39 +579,8 @@
      }
     },
     {
-     "id": "cystic_node",
-     "role": "sujet",
-     "nom_fr": "Lymphonoeud cystique",
-     "name_en": "Cystic node",
-     "system": "lymphatique",
-     "file": "models/lymphatique/cystic_node.glb",
-     "couleur": "#7fae5c",
-     "bounds": {
-      "min": [
-       -24.1,
-       1090.7,
-       135.0
-      ],
-      "max": [
-       -21.6,
-       1093.3,
-       137.4
-      ],
-      "center": [
-       -22.9,
-       1092.0,
-       136.2
-      ],
-      "size": [
-       2.5,
-       2.6,
-       2.4
-      ]
-     }
-    },
-    {
      "id": "left_medial_segment_of_liver_iv",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Segment médial gauche du foie (IV)",
      "name_en": "Left medial segment of liver (IV)",
      "system": "organes",
@@ -647,8 +613,8 @@
     },
     {
      "id": "anterior_medial_segment_of_liver_v",
-     "role": "rapport",
-     "nom_fr": "Segment antéromédial droit du foie (V)",
+     "role": "rapports",
+     "nom_fr": "Segment antéro-inférieur (V)",
      "name_en": "Anterior medial segment of liver (V)",
      "system": "organes",
      "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
@@ -680,7 +646,7 @@
     },
     {
      "id": "duodenum",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Duodénum",
      "name_en": "Duodenum",
      "system": "organes",
@@ -711,7 +677,7 @@
     },
     {
      "id": "proper_hepatic_artery",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère hépatique propre",
      "name_en": "Proper hepatic artery",
      "system": "arteres",
@@ -825,7 +791,7 @@
     {
      "id": "bile_duct",
      "role": "sujet",
-     "nom_fr": "Canal biliaire",
+     "nom_fr": "Canal cholédoque",
      "name_en": "Bile duct",
      "system": "organes",
      "file": "models/organes/bile_duct.glb",
@@ -850,68 +816,6 @@
        44.4,
        73.8,
        11.2
-      ]
-     }
-    },
-    {
-     "id": "inferior_vena_cava_abdominal_part",
-     "role": "sujet",
-     "nom_fr": "Veine cave inférieure (partie abdominale)",
-     "name_en": "Inferior vena cava (abdominal part)",
-     "system": "veines",
-     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
-     "couleur": "#5b7fb4",
-     "bounds": {
-      "min": [
-       -18.7,
-       962.9,
-       105.3
-      ],
-      "max": [
-       -0.5,
-       1106.8,
-       132.4
-      ],
-      "center": [
-       -9.6,
-       1034.8,
-       118.9
-      ],
-      "size": [
-       18.2,
-       143.8,
-       27.1
-      ]
-     }
-    },
-    {
-     "id": "duodenum",
-     "role": "sujet",
-     "nom_fr": "Duodénum",
-     "name_en": "Duodenum",
-     "system": "organes",
-     "file": "models/organes/duodenum.glb",
-     "couleur": "#d9a583",
-     "bounds": {
-      "min": [
-       -64.8,
-       977.2,
-       105.4
-      ],
-      "max": [
-       31.5,
-       1076.1,
-       153.9
-      ],
-      "center": [
-       -16.7,
-       1026.7,
-       129.6
-      ],
-      "size": [
-       96.2,
-       98.9,
-       48.5
       ]
      }
     },
@@ -947,69 +851,25 @@
      }
     },
     {
-     "id": "pancreas",
-     "role": "rapport",
-     "nom_fr": "Pancréas",
-     "name_en": "Pancreas",
+     "id": "stomach",
+     "role": "sujet",
+     "nom_fr": "Estomac",
+     "name_en": "Stomach",
      "system": "organes",
-     "file": "models/organes/pancreas.glb",
-     "couleur": "#d9a583",
-     "bounds": {
-      "min": [
-       -45.0,
-       1011.7,
-       95.2
-      ],
-      "max": [
-       71.1,
-       1085.8,
-       145.3
-      ],
-      "center": [
-       13.1,
-       1048.7,
-       120.2
-      ],
-      "size": [
-       116.1,
-       74.1,
-       50.1
-      ]
-     }
+     "file": "models/organes/stomach.glb"
     },
     {
-     "id": "abdominal_aorta",
-     "role": "rapport",
-     "nom_fr": "Aorte abdominale",
-     "name_en": "Abdominal aorta",
+     "id": "left_gastric_artery",
+     "role": "sujet",
+     "nom_fr": "Artère gastrique gauche",
+     "name_en": "Left gastric artery",
      "system": "arteres",
-     "file": "models/arteres/abdominal_aorta.glb",
-     "couleur": "#cf5346",
-     "bounds": {
-      "min": [
-       -4.0,
-       960.9,
-       82.0
-      ],
-      "max": [
-       18.5,
-       1143.8,
-       138.0
-      ],
-      "center": [
-       7.2,
-       1052.4,
-       110.0
-      ],
-      "size": [
-       22.5,
-       182.9,
-       56.0
-      ]
-     }
+     "file": "models/arteres/left_gastric_artery.glb"
     }
    ],
-   "manquants": [],
+   "manquants": [
+    "Pars vasculosa du petit omentum : pas de maillage distinct au manifeste (partie épaisse du petit omentum — lesser_omentum présent en sujet)"
+   ],
    "espaces": []
   },
   {
@@ -1090,7 +950,7 @@
     {
      "id": "bile_duct",
      "role": "sujet",
-     "nom_fr": "Canal biliaire",
+     "nom_fr": "Canal cholédoque",
      "name_en": "Bile duct",
      "system": "organes",
      "file": "models/organes/bile_duct.glb",
@@ -1181,37 +1041,6 @@
      }
     },
     {
-     "id": "kidney_right",
-     "role": "sujet",
-     "nom_fr": "Rein droit",
-     "name_en": "Right kidney",
-     "system": "organes",
-     "file": "models/organes/kidney_right.glb",
-     "couleur": "#7a3b2e",
-     "bounds": {
-      "min": [
-       -87.6,
-       966.8,
-       64.7
-      ],
-      "max": [
-       -30.4,
-       1071.2,
-       111.9
-      ],
-      "center": [
-       -59.0,
-       1019.0,
-       88.3
-      ],
-      "size": [
-       57.1,
-       104.4,
-       47.2
-      ]
-     }
-    },
-    {
      "id": "duodenum",
      "role": "sujet",
      "nom_fr": "Duodénum",
@@ -1274,8 +1103,40 @@
      }
     },
     {
+     "id": "gallbladder",
+     "role": "sujet",
+     "nom_fr": "Vésicule biliaire",
+     "name_en": "Gallbladder",
+     "system": "organes",
+     "file": "models/organes/gallbladder.glb"
+    },
+    {
+     "id": "common_hepatic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère hépatique commune",
+     "name_en": "Common hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/common_hepatic_artery.glb"
+    },
+    {
+     "id": "left_gastric_artery",
+     "role": "sujet",
+     "nom_fr": "Artère gastrique gauche",
+     "name_en": "Left gastric artery",
+     "system": "arteres",
+     "file": "models/arteres/left_gastric_artery.glb"
+    },
+    {
+     "id": "gastroduodenal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère gastroduodénale",
+     "name_en": "Gastroduodenal artery",
+     "system": "arteres",
+     "file": "models/arteres/gastroduodenal_artery.glb"
+    },
+    {
      "id": "lesser_omentum",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Petit omentum",
      "name_en": "Lesser omentum",
      "system": "organes",
@@ -1306,7 +1167,7 @@
     },
     {
      "id": "left_medial_segment_of_liver_iv",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Segment médial gauche du foie (IV)",
      "name_en": "Left medial segment of liver (IV)",
      "system": "organes",
@@ -1339,7 +1200,14 @@
     }
    ],
    "manquants": [
-    "Foramen épiploïque (de Winslow) et arrière-cavité des épiploons : espaces ABSENTS du manifeste"
+    "Foramen épiploïque (de Winslow) et arrière-cavité des épiploons : espaces ABSENTS du manifeste",
+    "Artère hépatique droite : aucun maillage au manifeste — absente (déclarée en fig. 76, pas ici)",
+    "Artère cystique : aucun maillage au manifeste — absente, non représentée dans cette figure",
+    "Conduit cystique : aucun maillage au manifeste — absent, non représenté dans cette figure",
+    "Conduit biliaire commun : pas de maillage distinct — confondu dans le maillage unique bile_duct, sans déclaration ; la distinction des 2 segments étiquetés (cholédoque / biliaire commun) n'est déclarée nulle part",
+    "Triangle hépato-cystique (de Calot) : aucun maillage ni espace au manifeste — absent, non représenté",
+    "Artère gastrique droite : aucun maillage d'artère au manifeste (seuls les right_gastric_nodes existent) — absente",
+    "Artère supra-duodénale : aucun maillage au manifeste — absente, non représentée"
    ],
    "espaces": []
   }

@@ -111,8 +111,24 @@
      "system": "cerveau"
     },
     {
+     "id": "occipital_pole_right",
+     "role": "sujet",
+     "nom_fr": "Pôle occipital",
+     "name_en": "Right occipital pole",
+     "system": "cerveau",
+     "file": "models/cerveau/occipital_pole_right.glb"
+    },
+    {
+     "id": "temporal_pole_right",
+     "role": "sujet",
+     "nom_fr": "Pôle temporal",
+     "name_en": "Right temporal pole",
+     "system": "cerveau",
+     "file": "models/cerveau/temporal_pole_right.glb"
+    },
+    {
      "id": "circular_sulcus_of_insula_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/circular_sulcus_of_insula_right.glb",
      "nom_fr": "Sillon circulaire de l'insula",
      "name_en": "Right circular sulcus of insula",
@@ -122,7 +138,7 @@
     },
     {
      "id": "opercular_part_of_inferior_frontal_gyrus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/opercular_part_of_inferior_frontal_gyrus_right.glb",
      "nom_fr": "Partie operculaire du gyrus frontal inférieur",
      "name_en": "Right opercular part of inferior frontal gyrus",
@@ -132,13 +148,133 @@
     },
     {
      "id": "triangular_part_of_inferior_frontal_gyrus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/triangular_part_of_inferior_frontal_gyrus_right.glb",
      "nom_fr": "Partie triangulaire du gyrus frontal inférieur",
      "name_en": "Right triangular part of inferior frontal gyrus",
      "name_la": "Pars triangularis gyri frontalis inferioris",
      "couleur": "#cf9bb4",
      "system": "cerveau"
+    },
+    {
+     "id": "orbital_part_of_inferior_frontal_gyrus_right",
+     "role": "rapports",
+     "nom_fr": "Right orbital part of  inferior frontal gyrus",
+     "name_en": "Right orbital part of  inferior frontal gyrus",
+     "system": "cerveau",
+     "file": "models/cerveau/orbital_part_of_inferior_frontal_gyrus_right.glb"
+    },
+    {
+     "id": "central_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon central",
+     "name_en": "Right central sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/central_sulcus_right.glb"
+    },
+    {
+     "id": "precentral_sulcus_superior_part_right",
+     "role": "rapports",
+     "nom_fr": "Right precentral sulcus (Superior part)*",
+     "name_en": "Right precentral sulcus (Superior part)*",
+     "system": "cerveau",
+     "file": "models/cerveau/precentral_sulcus_superior_part_right.glb"
+    },
+    {
+     "id": "postcentral_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon postcentral",
+     "name_en": "Right postcentral sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/postcentral_sulcus_right.glb"
+    },
+    {
+     "id": "intraparietal_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon intrapariétal",
+     "name_en": "Right intraparietal sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/intraparietal_sulcus_right.glb"
+    },
+    {
+     "id": "parieto_occipital_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon pariéto-occipital",
+     "name_en": "Right parieto-occipital sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/parieto_occipital_sulcus_right.glb"
+    },
+    {
+     "id": "calcarine_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon calcarin",
+     "name_en": "Right calcarine sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/calcarine_sulcus_right.glb"
+    },
+    {
+     "id": "superior_frontal_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon frontal supérieur",
+     "name_en": "Right superior frontal sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/superior_frontal_sulcus_right.glb"
+    },
+    {
+     "id": "inferior_frontal_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon frontal inférieur",
+     "name_en": "Right inferior frontal sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/inferior_frontal_sulcus_right.glb"
+    },
+    {
+     "id": "superior_temporal_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon temporal supérieur",
+     "name_en": "Right superior temporal sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/superior_temporal_sulcus_right.glb"
+    },
+    {
+     "id": "inferior_temporal_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon temporal inférieur",
+     "name_en": "Right inferior temporal sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/inferior_temporal_sulcus_right.glb"
+    },
+    {
+     "id": "transverse_occipital_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon occipital transverse",
+     "name_en": "Right transverse occipital sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/transverse_occipital_sulcus_right.glb"
+    },
+    {
+     "id": "insula_subcentral_gyrus_and_ant_and_post_sulci_right",
+     "role": "rapports",
+     "nom_fr": "Cortex insulaire",
+     "name_en": "Right insula (Subcentral gyrus and ant. and post. sulci*)",
+     "system": "cerveau",
+     "file": "models/cerveau/insula_subcentral_gyrus_and_ant_and_post_sulci_right.glb"
+    },
+    {
+     "id": "precentral_sulcus_inferior_part_right",
+     "role": "rapports",
+     "nom_fr": "Right precentral sulcus (inferior part)*",
+     "name_en": "Right precentral sulcus (inferior part)*",
+     "system": "cerveau",
+     "file": "models/cerveau/precentral_sulcus_inferior_part_right.glb"
+    },
+    {
+     "id": "lunate_sulcus_right",
+     "role": "rapports",
+     "nom_fr": "Sillon lunaire",
+     "name_en": "Right lunate sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/lunate_sulcus_right.glb"
     }
    ],
    "camera": {
@@ -164,7 +300,18 @@
    "frame_ids": null,
    "diagram": null,
    "manquants": [
-    "L'hémisphère n'existe pas comme coque unique : il est composé des maillages de gyri séparés (suffisant pour la figure, mais les sillons sont les espaces entre gyri, pas des maillages)"
+    "L'hémisphère n'existe pas comme coque unique : il est composé des maillages de gyri séparés (suffisant pour la figure)",
+    "Sillon latéral de Sylvius",
+    "Rameau antérieur du sillon latéral de Sylvius",
+    "Rameau ascendant du sillon latéral de Sylvius",
+    "Rameau postérieur du sillon latéral de Sylvius",
+    "Sillon temporal moyen",
+    "Incisure pré-occipitale",
+    "Pôle frontal",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Lobe occipital"
    ]
   },
   {
@@ -197,7 +344,7 @@
      "id": "paracentral_gyrus_and_sulcus_right",
      "role": "sujet",
      "file": "models/cerveau/paracentral_gyrus_and_sulcus_right.glb",
-     "nom_fr": "Right paracentral gyrus and sulcus*",
+     "nom_fr": "Gyrus paracentral et sillon paracentral",
      "name_en": "Right paracentral gyrus and sulcus*",
      "name_la": null,
      "couleur": "#cf9bb4",
@@ -254,8 +401,40 @@
      "system": "cerveau"
     },
     {
+     "id": "collateral_sulcus_right",
+     "role": "sujet",
+     "nom_fr": "Scissure collatérale",
+     "name_en": "Right collateral sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/collateral_sulcus_right.glb"
+    },
+    {
+     "id": "occipitotemporal_sulcus_lateral_part_right",
+     "role": "sujet",
+     "nom_fr": "Sillon occipitotemporal",
+     "name_en": "Right occipitotemporal sulcus (Lateral part*)",
+     "system": "cerveau",
+     "file": "models/cerveau/occipitotemporal_sulcus_lateral_part_right.glb"
+    },
+    {
+     "id": "parieto_occipital_sulcus_right",
+     "role": "sujet",
+     "nom_fr": "Sillon pariéto-occipital",
+     "name_en": "Right parieto-occipital sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/parieto_occipital_sulcus_right.glb"
+    },
+    {
+     "id": "calcarine_sulcus_right",
+     "role": "sujet",
+     "nom_fr": "Sillon calcarin",
+     "name_en": "Right calcarine sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/calcarine_sulcus_right.glb"
+    },
+    {
      "id": "thalamus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/thalamus_right.glb",
      "nom_fr": "Thalamus",
      "name_en": "Right thalamus",
@@ -265,7 +444,7 @@
     },
     {
      "id": "hippocampus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/hippocampus_right.glb",
      "nom_fr": "Hippocampe",
      "name_en": "Right hippocampus",
@@ -275,13 +454,21 @@
     },
     {
      "id": "anterior_commissure",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/anterior_commissure.glb",
      "nom_fr": "Commissure antérieure",
      "name_en": "Anterior commissure",
      "name_la": "Commissura anterior",
      "couleur": "#cf9bb4",
      "system": "cerveau"
+    },
+    {
+     "id": "optic_nerve_ii_right",
+     "role": "rapports",
+     "nom_fr": "Nerf optique (II)",
+     "name_en": "Right optic nerve (II)",
+     "system": "nerfs",
+     "file": "models/nerfs/optic_nerve_ii_right.glb"
     }
    ],
    "camera": {
@@ -306,7 +493,18 @@
    },
    "frame_ids": null,
    "diagram": null,
-   "manquants": []
+   "manquants": [
+    "Faisceau mamillo-thalamique",
+    "Corps mamillaire",
+    "Uncus",
+    "Tractus olfactif",
+    "Sillon rhinal",
+    "Fimbria de l'hippocampe",
+    "Gyrus dentatus",
+    "Corps calleux : les parties distinguées par la légende (Genou, Rostrum, Tronc, Splénium) ne sont pas individualisées — un seul maillage",
+    "Fornix : les parties distinguées par la légende (Pilier, Corps, Colonne) ne sont pas individualisées — un seul maillage",
+    "Isthme du gyrus du cingulum : aucune entrée dédiée au manifeste — approximé par la partie postéro-ventrale du gyrus du cingulum"
+   ]
   },
   {
    "numero": 11,
@@ -375,8 +573,152 @@
      "system": "cerveau"
     },
     {
+     "id": "optic_chiasm_right",
+     "role": "sujet",
+     "nom_fr": "Chiasma optique",
+     "name_en": "Right optic chiasm",
+     "system": "cerveau",
+     "file": "models/cerveau/optic_chiasm_right.glb"
+    },
+    {
+     "id": "optic_chiasm_left",
+     "role": "sujet",
+     "nom_fr": "Chiasma optique",
+     "name_en": "Left optic chiasm",
+     "system": "cerveau",
+     "file": "models/cerveau/optic_chiasm_left.glb"
+    },
+    {
+     "id": "optic_nerve_ii_right",
+     "role": "sujet",
+     "nom_fr": "Nerf optique (II)",
+     "name_en": "Right optic nerve (II)",
+     "system": "nerfs",
+     "file": "models/nerfs/optic_nerve_ii_right.glb"
+    },
+    {
+     "id": "optic_tract_right",
+     "role": "sujet",
+     "nom_fr": "Tractus optique",
+     "name_en": "Right optic tract",
+     "system": "cerveau",
+     "file": "models/cerveau/optic_tract_right.glb"
+    },
+    {
+     "id": "lateral_geniculate_body_right",
+     "role": "sujet",
+     "nom_fr": "Corps géniculé latéral",
+     "name_en": "Right lateral geniculate body",
+     "system": "cerveau",
+     "file": "models/cerveau/lateral_geniculate_body_right.glb"
+    },
+    {
+     "id": "medial_geniculate_body_right",
+     "role": "sujet",
+     "nom_fr": "Corps géniculé médial",
+     "name_en": "Right medial geniculate body",
+     "system": "cerveau",
+     "file": "models/cerveau/medial_geniculate_body_right.glb"
+    },
+    {
+     "id": "red_nucleus_right",
+     "role": "sujet",
+     "nom_fr": "Noyau rouge",
+     "name_en": "Right red nucleus",
+     "system": "cerveau",
+     "file": "models/cerveau/red_nucleus_right.glb"
+    },
+    {
+     "id": "superior_colliculus_right",
+     "role": "sujet",
+     "nom_fr": "Colliculus supérieur",
+     "name_en": "Right superior colliculus",
+     "system": "cerveau",
+     "file": "models/cerveau/superior_colliculus_right.glb"
+    },
+    {
+     "id": "aqueduct_of_midbrain",
+     "role": "sujet",
+     "nom_fr": "Aqueduc du mésencéphale",
+     "name_en": "Aqueduct of midbrain",
+     "system": "cerveau",
+     "file": "models/cerveau/aqueduct_of_midbrain.glb"
+    },
+    {
+     "id": "rep_hypophysis",
+     "role": "sujet",
+     "nom_fr": "Hypophyse",
+     "name_en": "Hypophysis",
+     "system": "reperes",
+     "file": "models-reperes/hypophysis.glb"
+    },
+    {
+     "id": "rep_cerebral_peduncle",
+     "role": "sujet",
+     "nom_fr": "Pédoncule cérébral",
+     "name_en": "Cerebral peduncle",
+     "system": "reperes",
+     "file": "models-reperes/cerebral_peduncle.glb"
+    },
+    {
+     "id": "corpus_callosum",
+     "role": "sujet",
+     "nom_fr": "Corps calleux",
+     "name_en": "Corpus callosum",
+     "system": "cerveau",
+     "file": "models/cerveau/corpus_callosum.glb"
+    },
+    {
+     "id": "olfactory_sulcus_right",
+     "role": "sujet",
+     "nom_fr": "Sillon olfactif",
+     "name_en": "Right olfactory sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/olfactory_sulcus_right.glb"
+    },
+    {
+     "id": "collateral_sulcus_right",
+     "role": "sujet",
+     "nom_fr": "Scissure collatérale",
+     "name_en": "Right collateral sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/collateral_sulcus_right.glb"
+    },
+    {
+     "id": "calcarine_sulcus_right",
+     "role": "sujet",
+     "nom_fr": "Sillon calcarin",
+     "name_en": "Right calcarine sulcus",
+     "system": "cerveau",
+     "file": "models/cerveau/calcarine_sulcus_right.glb"
+    },
+    {
+     "id": "occipitotemporal_sulcus_lateral_part_right",
+     "role": "sujet",
+     "nom_fr": "Sillon occipitotemporal",
+     "name_en": "Right occipitotemporal sulcus (Lateral part*)",
+     "system": "cerveau",
+     "file": "models/cerveau/occipitotemporal_sulcus_lateral_part_right.glb"
+    },
+    {
+     "id": "occipital_pole_right",
+     "role": "sujet",
+     "nom_fr": "Pôle occipital",
+     "name_en": "Right occipital pole",
+     "system": "cerveau",
+     "file": "models/cerveau/occipital_pole_right.glb"
+    },
+    {
+     "id": "cuneus_right",
+     "role": "sujet",
+     "nom_fr": "Cuneus",
+     "name_en": "Right cuneus",
+     "system": "cerveau",
+     "file": "models/cerveau/cuneus_right.glb"
+    },
+    {
      "id": "hippocampus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/hippocampus_right.glb",
      "nom_fr": "Hippocampe",
      "name_en": "Right hippocampus",
@@ -386,7 +728,7 @@
     },
     {
      "id": "fornix_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/fornix_right.glb",
      "nom_fr": "Fornix",
      "name_en": "Right fornix",
@@ -418,7 +760,17 @@
    "frame_ids": null,
    "diagram": null,
    "manquants": [
-    "Bulbe olfactif / bandelette olfactive : non vérifiés comme entrées distinctes dans le manifeste"
+    "Bulbe olfactif / bandelette olfactive : non vérifiés comme entrées distinctes dans le manifeste",
+    "Corps mamillaire",
+    "Tuber cinéréum",
+    "Substance noire",
+    "Pulvinar",
+    "Lame terminale",
+    "Substance perforée antérieure",
+    "Substance perforée postérieure",
+    "Uncus",
+    "Sillon rhinal",
+    "Tronc cérébral sectionné"
    ]
   },
   {
@@ -519,7 +871,7 @@
     },
     {
      "id": "superior_temporal_gyrus_lateral_part_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/superior_temporal_gyrus_lateral_part_right.glb",
      "nom_fr": "Gyrus temporal supérieur",
      "name_en": "Right superior temporal gyrus (Lateral part)",
@@ -529,7 +881,7 @@
     },
     {
      "id": "inferior_temporal_gyrus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/inferior_temporal_gyrus_right.glb",
      "nom_fr": "Gyrus temporal inférieur",
      "name_en": "Right inferior temporal gyrus",

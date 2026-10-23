@@ -24,7 +24,7 @@
      "id": "motor_nucleus_of_facial_nerve_right",
      "role": "sujet",
      "file": "models/cerveau/motor_nucleus_of_facial_nerve_right.glb",
-     "nom_fr": "Noyau moteur du nef facial",
+     "nom_fr": "Noyau moteur du nerf facial",
      "name_en": "Right motor nucleus of facial nerve",
      "name_la": "Nucleus nervi facialis",
      "couleur": "#cf9bb4",
@@ -61,8 +61,16 @@
      "system": "cerveau"
     },
     {
+     "id": "nucleus_of_abducens_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Noyau du nerf abducens",
+     "name_en": "Right nucleus of abducens nerve",
+     "system": "cerveau",
+     "file": "models/cerveau/nucleus_of_abducens_nerve_right.glb"
+    },
+    {
      "id": "medulla_oblongata_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/medulla_oblongata_right.glb",
      "nom_fr": "Moëlle allongée",
      "name_en": "Right medulla oblongata",
@@ -72,7 +80,7 @@
     },
     {
      "id": "midbrain_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/midbrain_right.glb",
      "nom_fr": "Mésencéphale",
      "name_en": "Right midbrain",
@@ -113,7 +121,8 @@
    "manquants": [
     "Noyau spinal du trijumeau (3e relais des fibres du VII) : non individualisé dans le manifeste",
     "Origine apparente (sillon bulbo-pontique / angle ponto-cérébelleux) : repère anatomique sans maillage dédié",
-    "Le détail noyaux → fibres → émergence est un schéma ; la 3D fournit nerf + noyaux moteur/salivaire/solitaire + tronc cérébral"
+    "Le détail noyaux → fibres → émergence est un schéma ; la 3D fournit nerf + noyaux moteur/salivaire/solitaire + tronc cérébral",
+    "Ganglion ptérygoïdo-palatin"
    ]
   },
   {
@@ -143,24 +152,38 @@
      "system": "squelette"
     },
     {
-     "id": "chorda_tympani_right",
-     "role": "sujet",
-     "file": "models/nerfs/chorda_tympani_right.glb",
-     "nom_fr": "Corde du tympan",
-     "name_en": "Right chorda tympani",
-     "name_la": "Chorda tympani",
-     "couleur": "#d9a441",
-     "system": "nerfs"
-    },
-    {
      "id": "parotid_gland_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/organes/parotid_gland_right.glb",
      "nom_fr": "Glande parotide",
      "name_en": "Right parotid gland",
      "name_la": "Glandula parotidea",
      "couleur": "#d9a583",
      "system": "organes"
+    },
+    {
+     "id": "auditory_tube_right",
+     "role": "rapports",
+     "nom_fr": "Trompe auditive",
+     "name_en": "Right auditory tube",
+     "system": "cerveau",
+     "file": "models/cerveau/auditory_tube_right.glb"
+    },
+    {
+     "id": "rep_middle_ear",
+     "role": "rapports",
+     "nom_fr": "Oreille moyenne",
+     "name_en": "Middle ear",
+     "system": "reperes",
+     "file": "models-reperes/middle_ear.glb"
+    },
+    {
+     "id": "rep_external_ear",
+     "role": "rapports",
+     "nom_fr": "External ear'",
+     "name_en": "External ear'",
+     "system": "reperes",
+     "file": "models-reperes/external_ear.glb"
     }
    ],
    "camera": {
@@ -188,7 +211,11 @@
    "manquants": [
     "Le nerf facial = UN seul maillage par côté : les segments labyrinthique, tympanique et mastoïdien du canal facial NE sont PAS décomposés",
     "Canal facial (aqueduc de Fallope) : pas de maillage ; foramen stylo-mastoïdien : absent des repères",
-    "La segmentation intra-pétreuse de la figure = schéma en regard de la scène 3D os temporal + nerf"
+    "La segmentation intra-pétreuse de la figure = schéma en regard de la scène 3D os temporal + nerf",
+    "B - Caisse du tympan",
+    "C - Antre mastoïdien",
+    "D - Canal carotidien",
+    "Oreille interne"
    ]
   },
   {
@@ -229,7 +256,7 @@
     },
     {
      "id": "stapes_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/squelette/stapes_right.glb",
      "nom_fr": "Etrier",
      "name_en": "Right stapes",
@@ -239,7 +266,7 @@
     },
     {
      "id": "incus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/squelette/incus_right.glb",
      "nom_fr": "Enclume",
      "name_en": "Right incus",
@@ -249,13 +276,61 @@
     },
     {
      "id": "malleus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/squelette/malleus_right.glb",
      "nom_fr": "Marteau",
      "name_en": "Right malleus",
      "name_la": "Malleus",
      "couleur": "#e8dcc3",
      "system": "squelette"
+    },
+    {
+     "id": "lingual_nerve_right",
+     "role": "rapports",
+     "nom_fr": "Nerf lingual",
+     "name_en": "Right lingual nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/lingual_nerve_right.glb"
+    },
+    {
+     "id": "tongue",
+     "role": "rapports",
+     "nom_fr": "Langue",
+     "name_en": "Tongue",
+     "system": "organes",
+     "file": "models/organes/tongue.glb"
+    },
+    {
+     "id": "submandibular_gland_right",
+     "role": "rapports",
+     "nom_fr": "Glande submandibulaire",
+     "name_en": "Right submandibular gland",
+     "system": "organes",
+     "file": "models/organes/submandibular_gland_right.glb"
+    },
+    {
+     "id": "sublingual_gland_right",
+     "role": "rapports",
+     "nom_fr": "Glande sublinguale",
+     "name_en": "Right sublingual gland",
+     "system": "organes",
+     "file": "models/organes/sublingual_gland_right.glb"
+    },
+    {
+     "id": "internal_carotid_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère carotide interne",
+     "name_en": "Right internal carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/internal_carotid_artery_right.glb"
+    },
+    {
+     "id": "rep_middle_ear",
+     "role": "rapports",
+     "nom_fr": "Oreille moyenne",
+     "name_en": "Middle ear",
+     "system": "reperes",
+     "file": "models-reperes/middle_ear.glb"
     }
    ],
    "camera": {
@@ -283,7 +358,19 @@
    "manquants": [
     "Nerf grand pétreux (rameau intra-pétreux n°1 du cours) : ABSENT du manifeste",
     "Nerf du muscle de l'étrier : ABSENT",
-    "Ganglion géniculé : non individualisé ; le nerf intra-pétreux reste un maillage unique → schéma des rameaux en regard"
+    "Ganglion géniculé : non individualisé ; le nerf intra-pétreux reste un maillage unique → schéma des rameaux en regard",
+    "N. petit pétreux",
+    "Rameau du N. petit pétreux",
+    "Ganglion otique",
+    "Ganglion sus-mandibulaire",
+    "Ganglion sub-lingual",
+    "Ganglion ptérygoïdo-palatin",
+    "Foramen rond",
+    "N. tympanique (IX)",
+    "Rameau sensitif du conduit auditif externe",
+    "Espace rétro-styloidien",
+    "N. du ventre postérieur du muscle digastrique",
+    "N. du muscle stylo-hyoidien"
    ]
   },
   {
@@ -313,24 +400,78 @@
      "system": "organes"
     },
     {
+     "id": "zygomaticus_major_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle grand zygomatique",
+     "name_en": "Right zygomaticus major muscle",
+     "system": "muscles",
+     "file": "models/muscles/zygomaticus_major_muscle_right.glb"
+    },
+    {
+     "id": "zygomaticus_minor_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle petit zygomatique",
+     "name_en": "Right zygomaticus minor muscle",
+     "system": "muscles",
+     "file": "models/muscles/zygomaticus_minor_muscle_right.glb"
+    },
+    {
+     "id": "risorius_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle risorius",
+     "name_en": "Right risorius muscle",
+     "system": "muscles",
+     "file": "models/muscles/risorius_muscle_right.glb"
+    },
+    {
+     "id": "orbicularis_oris_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle orbiculaire de la bouche",
+     "name_en": "Right orbicularis oris muscle",
+     "system": "muscles",
+     "file": "models/muscles/orbicularis_oris_muscle_right.glb"
+    },
+    {
+     "id": "depressor_labii_inferioris_right",
+     "role": "sujet",
+     "nom_fr": "Muscle abaisseur de la lèvre inférieure",
+     "name_en": "Right depressor labii inferioris",
+     "system": "muscles",
+     "file": "models/muscles/depressor_labii_inferioris_right.glb"
+    },
+    {
+     "id": "levator_labii_superioris_right",
+     "role": "sujet",
+     "nom_fr": "Muscle élévateur de la lèvre supérieure",
+     "name_en": "Right levator labii superioris",
+     "system": "muscles",
+     "file": "models/muscles/levator_labii_superioris_right.glb"
+    },
+    {
+     "id": "frontalis_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle frontal",
+     "name_en": "Right frontalis muscle",
+     "system": "muscles",
+     "file": "models/muscles/frontalis_muscle_right.glb"
+    },
+    {
+     "id": "platysma_right",
+     "role": "sujet",
+     "nom_fr": "Platysma",
+     "name_en": "Right platysma",
+     "system": "muscles",
+     "file": "models/muscles/platysma_right.glb"
+    },
+    {
      "id": "external_carotid_artery_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/arteres/external_carotid_artery_right.glb",
      "nom_fr": "Artère carotide externe",
      "name_en": "Right external carotid artery",
      "name_la": "Carotis externa",
      "couleur": "#cf5346",
      "system": "arteres"
-    },
-    {
-     "id": "deep_part_of_masseter_right",
-     "role": "rapport",
-     "file": "models/muscles/deep_part_of_masseter_right.glb",
-     "nom_fr": "Partie profonde du muscle masséter",
-     "name_en": "Right deep part of masseter",
-     "name_la": "Pars profunda masseteris",
-     "couleur": "#b03a2e",
-     "system": "muscles"
     }
    ],
    "camera": {
@@ -356,7 +497,7 @@
    "frame_ids": null,
    "diagram": "facial_branches",
    "manquants": [
-    "Les 5 branches terminales (temporale, zygomatique, buccale, marginale mandibulaire, cervicale) et le plexus intra-parotidien : NON individualisés — le nerf facial est un maillage unique, sa division parotidienne n'existe pas en géométrie → schéma des branches en regard"
+    "Branches terminales du VII : le cours et la légende nomment 2 branches terminales (temporo-faciale et cervico-faciale), dont le diagramme découpe les rameaux en 8 (temporal, frontal, palpébral, sous-orbitaire, buccal supérieur, buccal inférieur, mentonnier, cervical) ; la taxonomie classique en 5 branches (temporale, zygomatique, buccale, marginale mandibulaire, cervicale) est une autre nomenclature du même plexus — aucun rameau n'est individualisé : le nerf facial est un maillage unique et le plexus intra-parotidien n'existe pas en géométrie → schéma des branches en regard"
    ]
   }
  ]

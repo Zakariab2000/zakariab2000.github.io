@@ -1,214 +1,346 @@
 {
- "titre_fr": "Nerf facial intra-pétreux — portions, rapports et rameaux",
- "titre_en": "Intrapetrous facial nerve — parts, relations and branches",
+ "titre_fr": "Rapports du nerf facial intra-pétreux",
+ "titre_en": "Relations of the intrapetrous facial nerve",
  "w": 720,
- "h": 900,
+ "h": 1330,
  "levels": {
-  "portion": {
-   "c": "#58d68d",
-   "fr": "Portions de l'aqueduc de Fallope",
-   "en": "Parts of the Fallopian canal"
+  "seg": {
+   "c": "#5e35b1",
+   "fr": "Segment / portion",
+   "en": "Segment / portion"
   },
-  "rapport": {
-   "c": "#4fc3f7",
+  "rap": {
+   "c": "#6d4c41",
    "fr": "Rapports",
    "en": "Relations"
   },
-  "rameau": {
-   "c": "#f0a13c",
-   "fr": "Rameaux intra-pétreux",
-   "en": "Intrapetrous branches"
+  "gangl": {
+   "c": "#00838f",
+   "fr": "Ganglion / relais",
+   "en": "Ganglion / relay"
   },
-  "jalon": {
-   "c": "#b388ff",
-   "fr": "Jalons",
-   "en": "Landmarks"
+  "term": {
+   "c": "#2e7d32",
+   "fr": "Terminaison",
+   "en": "Termination"
   }
  },
  "nodes": [
   {
    "id": "cai",
-   "x": 170,
-   "y": 90,
-   "w": 270,
-   "label": "Conduit auditif interne",
-   "sub": "VII + VII bis : orifice antéro-supérieur",
-   "lvl": "portion",
+   "x": 180,
+   "y": 100,
+   "w": 280,
+   "label": "Conduit auditif interne (CAI)",
+   "sub": "orifice antéro-supérieur pour VII et VII bis",
+   "label_en": "Internal auditory canal (IAC)",
+   "sub_en": "anterosuperior orifice for VII and VII bis",
+   "lvl": "seg",
    "desc": {
-    "fr": "Arrivé au fond du conduit auditif interne, le nerf facial pénètre dans l'aqueduc de Fallope (canal facial). Le VII et le VII bis s'engagent dans l'orifice antéro-supérieur de la lame osseuse du fond du CAI. Le nerf intra-pétreux est UN seul maillage dans le manifeste : sa segmentation est schématique (audit).",
-    "en": "At the fundus of the internal acoustic meatus, the facial nerve enters the Fallopian canal (facial canal). VII and VII bis enter through the anterosuperior opening of the bony lamina. The intrapetrous nerve is a SINGLE mesh in the manifest: its segmentation is diagrammatic (audit)."
+    "fr": "Au fond du CAI, le nerf facial et les branches du nerf auditif (VIII) aboutissent sur une petite lame osseuse percée de 5 orifices : le VII et le VII bis s'engagent dans l'orifice antéro-supérieur, chaque branche du VIII empruntant un orifice différent.",
+    "en": "At the fundus of the IAC, the facial nerve and the branches of the auditory nerve (VIII) reach a small bony lamina pierced by 5 orifices: VII and VII bis enter the anterosuperior orifice, each branch of VIII taking a different orifice."
    }
   },
   {
    "id": "cai_rapports",
-   "x": 480,
-   "y": 90,
+   "x": 520,
+   "y": 100,
    "w": 300,
    "label": "Rapports dans le CAI",
-   "sub": "artère auditive interne en avant",
-   "lvl": "rapport",
+   "sub": "artère auditive interne en avant du VII",
+   "label_en": "Relations within the IAC",
+   "sub_en": "internal auditory artery in front of VII",
+   "lvl": "rap",
    "desc": {
-    "fr": "Dans le CAI : l'artère auditive interne se place en avant du VII et du VII bis, entourée par 2 ou 3 veines satellites qui gagnent le sinus pétreux inférieur ; les branches du nerf auditif VIII occupent les autres orifices de la lame du fond.",
-    "en": "In the IAM: the internal auditory artery lies in front of VII and VII bis, surrounded by 2 or 3 satellite veins draining to the inferior petrosal sinus; the branches of the auditory nerve VIII occupy the other openings of the fundus lamina."
+    "fr": "L'artère auditive interne se place en avant du VII et du VII bis, entourée par 2 ou 3 veines satellites qui gagnent le sinus pétreux inférieur.",
+    "en": "The internal auditory artery lies in front of VII and VII bis, surrounded by 2 or 3 satellite veins that drain to the inferior petrosal sinus."
    }
   },
   {
    "id": "labyrinthique",
-   "x": 170,
-   "y": 215,
-   "w": 270,
+   "x": 180,
+   "y": 275,
+   "w": 280,
    "label": "Portion labyrinthique",
-   "sub": "de l'orifice de Fallope au genou",
-   "lvl": "portion",
+   "sub": "de l'orifice de l'aqueduc de Fallope au genou",
+   "label_en": "Labyrinthine portion",
+   "sub_en": "from the Fallopian orifice to the genu",
+   "lvl": "seg",
    "desc": {
-    "fr": "Portion labyrinthique : horizontale, perpendiculaire à l'axe du rocher, oblique en avant et en dehors ; elle commence à l'orifice de l'aqueduc de Fallope et aboutit au genou du nerf facial.",
-    "en": "Labyrinthine part: horizontal, perpendicular to the petrous axis, obliquely forwards and laterally; from the opening of the Fallopian canal to the genou of the facial nerve."
+    "fr": "Première portion de l'aqueduc de Fallope : horizontale, perpendiculaire à l'axe du rocher, de l'orifice de l'aqueduc au genou du nerf facial.",
+    "en": "First portion of the Fallopian canal: horizontal, perpendicular to the petrous axis, from the canal orifice to the genu of the facial nerve."
    }
   },
   {
    "id": "lab_rapports",
-   "x": 480,
-   "y": 215,
+   "x": 520,
+   "y": 275,
    "w": 300,
-   "label": "Rapports — labyrinthique",
-   "sub": "cochlée en avant · vestibule en arrière",
-   "lvl": "rapport",
+   "label": "Rapports — portion labyrinthique",
+   "sub": "cochlée en avant et en dedans, vestibule en arrière et en dehors",
+   "label_en": "Relations — labyrinthine portion",
+   "sub_en": "cochlea in front and medially, vestibule behind and laterally",
+   "lvl": "rap",
    "desc": {
-    "fr": "Rapports de la portion labyrinthique dans l'aqueduc de Fallope : en avant et en dedans, la cochlée ; en arrière et en dehors, le vestibule.",
-    "en": "Relations of the labyrinthine part within the Fallopian canal: anteromedially, the cochlea; posterolaterally, the vestibule."
+    "fr": "Dans l'aqueduc de Fallope, la portion labyrinthique répond : en avant et en dedans à la cochlée ; en arrière et en dehors au vestibule.",
+    "en": "Within the Fallopian canal, the labyrinthine portion relates: in front and medially to the cochlea; behind and laterally to the vestibule."
    }
   },
   {
    "id": "genou",
-   "x": 170,
-   "y": 340,
-   "w": 270,
-   "label": "Genou · ganglion géniculé",
-   "sub": "le VII bis s'y termine",
-   "lvl": "jalon",
+   "x": 180,
+   "y": 450,
+   "w": 280,
+   "label": "Genou du nerf facial",
+   "sub": "ganglion géniculé en avant",
+   "label_en": "Genu of the facial nerve",
+   "sub_en": "geniculate ganglion in front",
+   "lvl": "gangl",
    "desc": {
-    "fr": "Au genou, le trajet change de direction (baïonnette). Le ganglion géniculé, situé en avant au niveau du genou, reçoit la terminaison du VII bis : les deux nerfs s'y unissent. Le ganglion n'est pas individualisé dans le manifeste (audit).",
-    "en": "At the genou the course changes direction (bayonet). The geniculate ganglion, lying anteriorly at the genou, receives the termination of VII bis: the two nerves unite there. The ganglion is not individualised in the manifest (audit)."
-   }
-  },
-  {
-   "id": "grand_petreux",
-   "x": 480,
-   "y": 340,
-   "w": 300,
-   "label": "Nerf grand pétreux",
-   "sub": "rameau n° 1 — glande lacrymale",
-   "lvl": "rameau",
-   "desc": {
-    "fr": "Nerf grand pétreux (rameau intra-pétreux n° 1 du cours) : né au niveau du ganglion géniculé, il véhicule les fibres végétatives du noyau lacrymo-muco-nasal vers la glande lacrymale et les muqueuses nasales. ABSENT du manifeste (audit) — schéma uniquement. Clinique : sa lésion (ou une lésion du VII en amont) donne un œil sec.",
-    "en": "Greater petrosal nerve (intrapetrous branch no. 1 of the course): arising at the geniculate ganglion, it carries vegetative fibres from the lacrimo-muco-nasal nucleus to the lacrimal gland and nasal mucosae. ABSENT from the manifest (audit) — diagram only. Clinical: its lesion (or a VII lesion above it) causes a dry eye."
+    "fr": "Le genou marque la jonction entre les portions labyrinthique et tympanique ; le ganglion géniculé se place en avant de lui, et c'est là que le VII bis se termine et s'unit au VII.",
+    "en": "The genu marks the junction between the labyrinthine and tympanic portions; the geniculate ganglion lies in front of it, and this is where VII bis ends and unites with VII."
    }
   },
   {
    "id": "tympanique",
-   "x": 170,
-   "y": 465,
-   "w": 270,
+   "x": 180,
+   "y": 615,
+   "w": 280,
    "label": "Portion tympanique",
-   "sub": "du genou au coude",
-   "lvl": "portion",
+   "sub": "du genou au coude, le long de la caisse du tympan",
+   "label_en": "Tympanic portion",
+   "sub_en": "from the genu to the elbow, along the tympanic cavity",
+   "lvl": "seg",
    "desc": {
-    "fr": "Portion tympanique : transversale, parallèle à l'axe du rocher, oblique en arrière et en dehors, du genou au coude du nerf facial. Elle longe la paroi médiale de la caisse du tympan — dans la scène 3D, les osselets (marteau, enclume, étrier) sont ses repères voisins.",
-    "en": "Tympanic part: transverse, parallel to the petrous axis, obliquely backwards and laterally, from the genou to the elbow of the facial nerve. It runs along the medial wall of the tympanic cavity — in the 3D scene the ossicles (malleus, incus, stapes) are its neighbouring landmarks."
+    "fr": "Deuxième portion de l'aqueduc de Fallope : transversale, parallèle à l'axe du rocher, elle longe la caisse du tympan du genou au coude.",
+    "en": "Second portion of the Fallopian canal: transverse, parallel to the petrous axis, it runs along the tympanic cavity from the genu to the elbow."
    }
   },
   {
    "id": "tymp_rapports",
-   "x": 480,
-   "y": 465,
+   "x": 520,
+   "y": 615,
    "w": 300,
-   "label": "Rapports — tympanique",
-   "sub": "caisse du tympan en dehors",
-   "lvl": "rapport",
+   "label": "Rapports — portion tympanique",
+   "sub": "caisse du tympan, fenêtres ovale et ronde, CSC latéral",
+   "label_en": "Relations — tympanic portion",
+   "sub_en": "tympanic cavity, oval and round windows, lateral SCC",
+   "lvl": "rap",
    "desc": {
-    "fr": "Rapports de la portion tympanique : au niveau du genou, le ganglion géniculé en avant ; en dedans, le vestibule ; en dehors, la partie supérieure de la caisse du tympan ; en haut, l'ampoule du canal semi-circulaire latéral ; en bas, la paroi médiale de la caisse du tympan (fenêtre ovale, fenêtre ronde, muscle du marteau).",
-    "en": "Relations of the tympanic part: at the genou, the geniculate ganglion anteriorly; medially, the vestibule; laterally, the upper part of the tympanic cavity; above, the ampulla of the lateral semicircular canal; below, the medial wall of the tympanic cavity (oval window, round window, tensor tympani)."
+    "fr": "La portion tympanique répond : en dedans au vestibule ; en dehors à la partie supérieure de la caisse du tympan ; en haut à l'ampoule du canal semi-circulaire latéral ; en bas à la paroi médiale de la caisse (fenêtre ovale, fenêtre ronde et muscle du marteau).",
+    "en": "The tympanic portion relates: medially to the vestibule; laterally to the upper part of the tympanic cavity; above to the ampulla of the lateral semicircular canal; below to the medial wall of the cavity (oval window, round window and tensor tympani muscle)."
    }
   },
   {
    "id": "mastoidienne",
-   "x": 170,
-   "y": 590,
-   "w": 270,
+   "x": 180,
+   "y": 790,
+   "w": 280,
    "label": "Portion mastoïdienne",
    "sub": "du coude au trou stylo-mastoïdien",
-   "lvl": "portion",
+   "label_en": "Mastoid portion",
+   "sub_en": "from the elbow to the stylomastoid foramen",
+   "lvl": "seg",
    "desc": {
-    "fr": "Portion mastoïdienne : verticale, perpendiculaire à l'axe du rocher ; elle descend du coude du nerf facial et aboutit au trou stylo-mastoïdien, par où le nerf sort du crâne. Elle donne les 2 derniers rameaux intra-pétreux : le nerf du muscle de l'étrier et la corde du tympan.",
-    "en": "Mastoid part: vertical, perpendicular to the petrous axis; it descends from the elbow of the facial nerve to the stylomastoid foramen, through which the nerve leaves the skull. It gives the last 2 intrapetrous branches: the nerve to stapedius and the chorda tympani."
+    "fr": "Troisième portion de l'aqueduc de Fallope : verticale, perpendiculaire à l'axe du rocher, du coude au trou stylo-mastoïdien. Au niveau du coude : le canal semi-circulaire latéral en dedans, l'aditus ad antrum en dehors.",
+    "en": "Third portion of the Fallopian canal: vertical, perpendicular to the petrous axis, from the elbow to the stylomastoid foramen. At the elbow: the lateral semicircular canal medially, the aditus ad antrum laterally."
    }
   },
   {
    "id": "masto_rapports",
-   "x": 480,
-   "y": 590,
+   "x": 520,
+   "y": 790,
    "w": 300,
-   "label": "Rapports — mastoïdienne",
-   "sub": "cellules mastoïdiennes · sinus latéral",
-   "lvl": "rapport",
+   "label": "Rapports — portion mastoïdienne",
+   "sub": "aditus, cellules mastoïdiennes, sinus latéral, muscle de l'étrier",
+   "label_en": "Relations — mastoid portion",
+   "sub_en": "aditus, mastoid cells, lateral sinus, stapedius",
+   "lvl": "rap",
    "desc": {
-    "fr": "Rapports de la portion mastoïdienne : au niveau du coude, le canal semi-circulaire latéral en dedans et l'additus ad antrum en dehors ; en dedans (de haut en bas), le labyrinthe osseux et la fosse jugulaire ; en dehors, l'additus ad antrum et les cellules mastoïdiennes ; en avant, la paroi postérieure du CAE et de la caisse (pyramide et muscle de l'étrier) ; en arrière, le sinus latéral et l'antre mastoïdien.",
-    "en": "Relations of the mastoid part: at the elbow, the lateral semicircular canal medially and the aditus ad antrum laterally; medially (top to bottom), the bony labyrinth and the jugular fossa; laterally, the aditus ad antrum and mastoid cells; anteriorly, the posterior wall of the EAM and tympanic cavity (pyramid and stapedius); posteriorly, the lateral sinus and mastoid antrum."
-   }
-  },
-  {
-   "id": "etrier",
-   "x": 480,
-   "y": 715,
-   "w": 300,
-   "label": "Nerf du muscle de l'étrier",
-   "sub": "rameau de la portion mastoïdienne",
-   "lvl": "rameau",
-   "desc": {
-    "fr": "Nerf du muscle de l'étrier : rameau moteur né de la portion mastoïdienne, pour le muscle de l'étrier (stapédien), qui amortit les vibrations de la chaîne ossiculaire. ABSENT du manifeste (audit) — schéma uniquement. Clinique : sa lésion donne une hyperacousie (intolérance aux sons forts).",
-    "en": "Nerve to the stapedius muscle: motor branch of the mastoid part, for the stapedius, which dampens ossicular vibrations. ABSENT from the manifest (audit) — diagram only. Clinical: its lesion causes hyperacusis (intolerance to loud sounds)."
-   }
-  },
-  {
-   "id": "corde",
-   "x": 480,
-   "y": 800,
-   "w": 300,
-   "label": "Corde du tympan",
-   "sub": "goût des 2/3 ant. de la langue",
-   "lvl": "rameau",
-   "desc": {
-    "fr": "Corde du tympan : dernier rameau intra-pétreux, né de la portion mastoïdienne ; elle traverse la caisse du tympan et véhicule la gustation des 2/3 antérieurs de la langue (VII bis) et les fibres salivaires pour les glandes submandibulaire et sublinguale. Contrairement aux autres rameaux, elle EXISTE en 3D dans le manifeste (chorda_tympani) et apparaît dans la scène de la figure 17.",
-    "en": "Chorda tympani: last intrapetrous branch, from the mastoid part; it crosses the tympanic cavity and carries taste from the anterior 2/3 of the tongue (VII bis) and salivary fibres for the submandibular and sublingual glands. Unlike the other branches, it EXISTS in 3D in the manifest (chorda_tympani) and appears in the figure 17 scene."
+    "fr": "La portion mastoïdienne répond : en dedans au labyrinthe osseux puis à la fosse jugulaire ; en dehors à l'aditus ad antrum et aux cellules mastoïdiennes ; en avant à la paroi postérieure du conduit auditif externe et de la caisse, où se trouvent la pyramide et le muscle de l'étrier ; en arrière au sinus latéral et à l'artère mastoïdienne.",
+    "en": "The mastoid portion relates: medially to the bony labyrinth then the jugular fossa; laterally to the aditus ad antrum and the mastoid cells; in front to the posterior wall of the external auditory canal and tympanic cavity, where the pyramid and stapedius muscle lie; behind to the lateral sinus and the mastoid artery."
    }
   },
   {
    "id": "sortie",
-   "x": 170,
-   "y": 715,
-   "w": 270,
+   "x": 180,
+   "y": 940,
+   "w": 280,
    "label": "Trou stylo-mastoïdien",
-   "sub": "sortie du crâne → loge parotidienne",
-   "lvl": "jalon",
+   "sub": "sortie du crâne — début du segment extra-crânien",
+   "label_en": "Stylomastoid foramen",
+   "sub_en": "exit from the skull — start of the extracranial segment",
+   "lvl": "term",
    "desc": {
-    "fr": "Le nerf facial quitte l'aqueduc de Fallope et le crâne par le trou stylo-mastoïdien, puis pénètre dans la loge parotidienne (segment extra-crânien, fig. 18).",
-    "en": "The facial nerve leaves the Fallopian canal and the skull through the stylomastoid foramen, then enters the parotid compartment (extrapetrous segment, fig. 18)."
+    "fr": "Le nerf facial quitte l'aqueduc de Fallope et le crâne par le trou stylo-mastoïdien, pour gagner la loge parotidienne.",
+    "en": "The facial nerve leaves the Fallopian canal and the skull through the stylomastoid foramen, to reach the parotid compartment."
+   }
+  },
+  {
+   "id": "n_petit_petreux",
+   "x": 520,
+   "y": 450,
+   "w": 300,
+   "label": "N. petit pétreux",
+   "sub": "branche du genou — via le ganglion géniculé",
+   "label_en": "Lesser petrosal nerve",
+   "sub_en": "branch of the genu — via the geniculate ganglion",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Nerf petit pétreux : né au niveau du genou (ganglion géniculé), il quitte le rocher vers le ganglion otique. Aucune géométrie — également déclaré manquant dans la scène.",
+    "en": "Lesser petrosal nerve: arising at the genu (geniculate ganglion), it leaves the petrous bone towards the otic ganglion. No geometry — also declared missing in the scene."
+   }
+  },
+  {
+   "id": "rameau_petit_petreux",
+   "x": 180,
+   "y": 1060,
+   "w": 280,
+   "label": "Rameau du N. petit pétreux",
+   "sub": "vers le ganglion otique",
+   "label_en": "Branch of the lesser petrosal nerve",
+   "sub_en": "to the otic ganglion",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Rameau du nerf petit pétreux gagnant le ganglion otique (relais parasympathique de la parotide). Aucune géométrie.",
+    "en": "Branch of the lesser petrosal nerve reaching the otic ganglion (parasympathetic relay of the parotid gland). No geometry."
+   }
+  },
+  {
+   "id": "ganglion_otique",
+   "x": 520,
+   "y": 1060,
+   "w": 300,
+   "label": "Ganglion otique",
+   "sub": "relais parasympathique — parotide",
+   "label_en": "Otic ganglion",
+   "sub_en": "parasympathetic relay — parotid",
+   "lvl": "gangl",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Ganglion otique : relais des fibres parasympathiques du petit pétreux vers la glande parotide. Aucune géométrie — également déclaré manquant dans la scène.",
+    "en": "Otic ganglion: relay of the lesser petrosal parasympathetic fibres to the parotid gland. No geometry — also declared missing in the scene."
+   }
+  },
+  {
+   "id": "n_lingual",
+   "x": 120,
+   "y": 1150,
+   "w": 200,
+   "label": "N. lingual",
+   "sub": "rejoint par la corde du tympan",
+   "label_en": "Lingual nerve",
+   "sub_en": "joined by the chorda tympani",
+   "lvl": "rap",
+   "desc": {
+    "fr": "Nerf lingual (V3) : la corde du tympan le rejoint ; il porte alors les fibres gustatives et parasympathiques vers la langue et les glandes. Le nerf est ajouté en rapports dans la scène.",
+    "en": "Lingual nerve (V3): the chorda tympani joins it; it then carries gustatory and parasympathetic fibres to the tongue and glands. The nerve is added as context in the scene."
+   }
+  },
+  {
+   "id": "langue",
+   "x": 300,
+   "y": 1150,
+   "w": 160,
+   "label": "Langue",
+   "sub": "territoire gustatif du VII bis",
+   "label_en": "Tongue",
+   "sub_en": "gustatory territory of VII bis",
+   "lvl": "term",
+   "desc": {
+    "fr": "Langue : territoire des fibres gustatives (2/3 antérieurs) véhiculées par la corde du tympan et le nerf lingual.",
+    "en": "Tongue: territory of the gustatory fibres (anterior 2/3) carried by the chorda tympani and the lingual nerve."
+   }
+  },
+  {
+   "id": "gg_sus_mandibulaire",
+   "x": 480,
+   "y": 1150,
+   "w": 190,
+   "label": "Ganglion sus-mandibulaire",
+   "sub": "relais — glande sus-mandibulaire",
+   "label_en": "Submandibular ganglion",
+   "sub_en": "relay — submandibular gland",
+   "lvl": "gangl",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Ganglion sus-mandibulaire (submandibulaire) : relais parasympathique suspendu au nerf lingual, vers la glande sus-mandibulaire. Aucune géométrie.",
+    "en": "Submandibular ganglion: parasympathetic relay suspended from the lingual nerve, to the submandibular gland. No geometry."
+   }
+  },
+  {
+   "id": "glande_sus_mandibulaire",
+   "x": 200,
+   "y": 1245,
+   "w": 220,
+   "label": "Glande sus-mandibulaire",
+   "sub": "glande salivaire — ajoutée en rapports 3D",
+   "label_en": "Submandibular gland",
+   "sub_en": "salivary gland — added as 3D context",
+   "lvl": "term",
+   "desc": {
+    "fr": "Glande sus-mandibulaire (submandibulaire) : cible des fibres parasympathiques relayées au ganglion sus-mandibulaire ; ajoutée en rapports dans la scène.",
+    "en": "Submandibular gland: target of the parasympathetic fibres relayed in the submandibular ganglion; added as context in the scene."
+   }
+  },
+  {
+   "id": "gg_sublingual",
+   "x": 400,
+   "y": 1245,
+   "w": 190,
+   "label": "Ganglion sub-lingual",
+   "sub": "relais — glande sub-linguale",
+   "label_en": "Sublingual ganglion",
+   "sub_en": "relay — sublingual gland",
+   "lvl": "gangl",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Ganglion sub-lingual : relais parasympathique vers la glande sub-linguale. Aucune géométrie.",
+    "en": "Sublingual ganglion: parasympathetic relay to the sublingual gland. No geometry."
+   }
+  },
+  {
+   "id": "glande_sublinguale",
+   "x": 580,
+   "y": 1245,
+   "w": 220,
+   "label": "Glande sub-linguale",
+   "sub": "glande salivaire — ajoutée en rapports 3D",
+   "label_en": "Sublingual gland",
+   "sub_en": "salivary gland — added as 3D context",
+   "lvl": "term",
+   "desc": {
+    "fr": "Glande sub-linguale : cible des fibres relayées au ganglion sub-lingual ; ajoutée en rapports dans la scène.",
+    "en": "Sublingual gland: target of the fibres relayed in the sublingual ganglion; added as context in the scene."
    }
   }
  ],
  "edges": [
   [
    "cai",
-   "labyrinthique"
-  ],
-  [
-   "cai",
    "cai_rapports",
    1
   ],
   [
-   "labyrinthique",
-   "genou"
+   "cai",
+   "labyrinthique"
   ],
   [
    "labyrinthique",
@@ -216,8 +348,8 @@
    1
   ],
   [
-   "genou",
-   "grand_petreux"
+   "labyrinthique",
+   "genou"
   ],
   [
    "genou",
@@ -225,12 +357,12 @@
   ],
   [
    "tympanique",
-   "mastoidienne"
+   "tymp_rapports",
+   1
   ],
   [
    "tympanique",
-   "tymp_rapports",
-   1
+   "mastoidienne"
   ],
   [
    "mastoidienne",
@@ -239,15 +371,46 @@
   ],
   [
    "mastoidienne",
-   "etrier"
-  ],
-  [
-   "mastoidienne",
-   "corde"
-  ],
-  [
-   "mastoidienne",
    "sortie"
+  ],
+  [
+   "genou",
+   "n_petit_petreux"
+  ],
+  [
+   "n_petit_petreux",
+   "rameau_petit_petreux"
+  ],
+  [
+   "rameau_petit_petreux",
+   "ganglion_otique"
+  ],
+  [
+   "mastoidienne",
+   "n_lingual",
+   1
+  ],
+  [
+   "n_lingual",
+   "langue",
+   1
+  ],
+  [
+   "n_lingual",
+   "gg_sus_mandibulaire"
+  ],
+  [
+   "gg_sus_mandibulaire",
+   "glande_sus_mandibulaire"
+  ],
+  [
+   "n_lingual",
+   "gg_sublingual",
+   1
+  ],
+  [
+   "gg_sublingual",
+   "glande_sublinguale"
   ]
  ]
 }

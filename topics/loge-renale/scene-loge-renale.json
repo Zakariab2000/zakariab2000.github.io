@@ -13,28 +13,178 @@
  ],
  "structures": [
   {
-   "id": "abdominal_aorta",
-   "nom_fr": "Aorte abdominale",
-   "role": "sujet",
-   "figures": [
-    89
-   ]
-  },
-  {
-   "id": "inferior_suprarenal_artery_right",
-   "nom_fr": "Artère surrénale inférieure",
+   "id": "kidney_right",
+   "nom_fr": "Rein droit",
    "role": "sujet",
    "figures": [
     85,
     86,
     87,
+    88,
+    89
+   ]
+  },
+  {
+   "id": "psoas_major_right",
+   "nom_fr": "Grand psoas",
+   "role": "sujet",
+   "figures": [
+    85,
+    89
+   ]
+  },
+  {
+   "id": "transversus_abdominis_muscle_right",
+   "nom_fr": "Muscle transverse de l'abdomen",
+   "role": "sujet",
+   "figures": [
+    85
+   ]
+  },
+  {
+   "id": "quadratus_lumborum_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle carré des lombes",
+   "name_en": "Right quadratus lumborum muscle",
+   "system": "muscles",
+   "file": "models/muscles/quadratus_lumborum_muscle_right.glb",
+   "figures": [
+    85,
+    89
+   ]
+  },
+  {
+   "id": "transversalis_fascia",
+   "role": "sujet",
+   "nom_fr": "Fascia transversalis",
+   "name_en": "Transversalis fascia",
+   "system": "fascias",
+   "file": "models/muscles/transversalis_fascia.glb",
+   "figures": [
+    85,
+    89
+   ]
+  },
+  {
+   "id": "external_abdominal_oblique_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle oblique externe de l'abdomen",
+   "name_en": "Right external abdominal oblique muscle",
+   "system": "muscles",
+   "file": "models/muscles/external_abdominal_oblique_muscle_right.glb",
+   "figures": [
+    85,
+    89
+   ]
+  },
+  {
+   "id": "internal_abdominal_oblique_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle oblique interne de l'abdomen",
+   "name_en": "Right internal abdominal oblique muscle",
+   "system": "muscles",
+   "file": "models/muscles/internal_abdominal_oblique_muscle_right.glb",
+   "figures": [
+    85,
+    89
+   ]
+  },
+  {
+   "id": "diaphragm",
+   "nom_fr": "Diaphragme",
+   "role": "rapports",
+   "figures": [
+    85
+   ]
+  },
+  {
+   "id": "suprarenal_gland_right",
+   "nom_fr": "Glande surrénale",
+   "role": "sujet",
+   "figures": [
+    85,
     88
    ]
   },
   {
-   "id": "inferior_suprarenal_artery_left",
-   "nom_fr": "Artère surrénale inférieure",
+   "id": "inferior_vena_cava_abdominal_part",
+   "nom_fr": "Veine cave inférieure (partie abdominale)",
    "role": "sujet",
+   "figures": [
+    85,
+    88,
+    89
+   ]
+  },
+  {
+   "id": "kidney_left",
+   "nom_fr": "Rein gauche",
+   "role": "sujet",
+   "figures": [
+    86,
+    88,
+    89
+   ]
+  },
+  {
+   "id": "ureter_right",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    86,
+    87
+   ]
+  },
+  {
+   "id": "ureter_left",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "right_renal_vein",
+   "role": "sujet",
+   "nom_fr": "Veine rénale droite",
+   "name_en": "Right renal vein",
+   "system": "veines",
+   "file": "models/veines/right_renal_vein.glb",
+   "figures": [
+    86,
+    88
+   ]
+  },
+  {
+   "id": "left_renal_vein",
+   "nom_fr": "Veine rénale gauche",
+   "role": "sujet",
+   "figures": [
+    86,
+    88,
+    89
+   ]
+  },
+  {
+   "id": "left_renal_artery",
+   "role": "sujet",
+   "nom_fr": "Artère rénale gauche",
+   "name_en": "Left renal artery",
+   "system": "arteres",
+   "file": "models/arteres/left_renal_artery.glb",
+   "figures": [
+    86,
+    88,
+    89
+   ]
+  },
+  {
+   "id": "right_renal_artery",
+   "role": "sujet",
+   "nom_fr": "Artère rénale droite",
+   "name_en": "Right renal artery",
+   "system": "arteres",
+   "file": "models/arteres/right_renal_artery.glb",
    "figures": [
     86,
     88
@@ -44,6 +194,101 @@
    "id": "renal_pelvis_right",
    "nom_fr": "Bassinet/ pelvis rénal",
    "role": "sujet",
+   "figures": [
+    86,
+    87
+   ]
+  },
+  {
+   "id": "vertebra_t11",
+   "role": "rapports",
+   "nom_fr": "Vertèbre T11",
+   "name_en": "Vertebra T11",
+   "system": "squelette",
+   "file": "models/squelette/vertebra_t11.glb",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "vertebra_t12",
+   "role": "rapports",
+   "nom_fr": "Vertèbre T12",
+   "name_en": "Vertebra T12",
+   "system": "squelette",
+   "file": "models/squelette/vertebra_t12.glb",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "vertebra_l1",
+   "role": "rapports",
+   "nom_fr": "Vertèbre L1",
+   "name_en": "Vertebra L1",
+   "system": "squelette",
+   "file": "models/squelette/vertebra_l1.glb",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "vertebra_l2",
+   "nom_fr": "Vertèbre L2",
+   "role": "rapports",
+   "figures": [
+    86,
+    89
+   ]
+  },
+  {
+   "id": "vertebra_l3",
+   "role": "rapports",
+   "nom_fr": "Vertèbre L3",
+   "name_en": "Vertebra L3",
+   "system": "squelette",
+   "file": "models/squelette/vertebra_l3.glb",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "rapports",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "hip_bone_left",
+   "role": "rapports",
+   "nom_fr": "Os coxal",
+   "name_en": "Left hip bone",
+   "system": "squelette",
+   "file": "models/squelette/hip_bone_left.glb",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "intrarenal_arteries_of_right_kidney",
+   "role": "rapports",
+   "nom_fr": "Artères intrarénales du rein droit",
+   "name_en": "Intrarenal arteries of right kidney",
+   "system": "arteres",
+   "file": "models/arteres/intrarenal_arteries_of_right_kidney.glb",
+   "figures": [
+    87
+   ]
+  },
+  {
+   "id": "intrarenal_veins_of_right_kidney",
+   "role": "rapports",
+   "nom_fr": "Veines intrarénales du rein droit",
+   "name_en": "Intrarenal veins of right kidney",
+   "system": "veines",
+   "file": "models/veines/intrarenal_veins_of_right_kidney.glb",
    "figures": [
     87
    ]
@@ -81,6 +326,100 @@
    ]
   },
   {
+   "id": "inferior_suprarenal_artery_right",
+   "nom_fr": "Artère surrénale inférieure",
+   "role": "sujet",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "inferior_suprarenal_artery_left",
+   "nom_fr": "Artère surrénale inférieure",
+   "role": "sujet",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "suprarenal_gland_left",
+   "nom_fr": "Glande surrénale",
+   "role": "sujet",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "left_testicular_artery",
+   "role": "sujet",
+   "nom_fr": "Artère testiculaire gauche",
+   "name_en": "Left testicular artery",
+   "system": "arteres",
+   "file": "models/arteres/left_testicular_artery.glb",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "left_testicular_vein",
+   "role": "sujet",
+   "nom_fr": "Veine testiculaire gauche",
+   "name_en": "Left testicular vein",
+   "system": "veines",
+   "file": "models/veines/left_testicular_vein.glb",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "coeliac_trunk",
+   "role": "sujet",
+   "nom_fr": "Tronc coeliaque",
+   "name_en": "Coeliac trunk",
+   "system": "arteres",
+   "file": "models/arteres/coeliac_trunk.glb",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "superior_mesenteric_artery",
+   "role": "sujet",
+   "nom_fr": "Artère mésentérique supérieure",
+   "name_en": "Superior mesenteric artery",
+   "system": "arteres",
+   "file": "models/arteres/superior_mesenteric_artery.glb",
+   "figures": [
+    88,
+    89
+   ]
+  },
+  {
+   "id": "abdominal_aorta",
+   "nom_fr": "Aorte abdominale",
+   "role": "sujet",
+   "figures": [
+    88,
+    89
+   ]
+  },
+  {
+   "id": "inferior_phrenic_artery",
+   "nom_fr": "Artère phrénique inférieure",
+   "role": "rapports",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "duodenum",
+   "nom_fr": "Duodénum",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
    "id": "ascending_colon",
    "nom_fr": "Côlon ascendant",
    "role": "sujet",
@@ -97,58 +436,6 @@
    ]
   },
   {
-   "id": "transverse_colon",
-   "nom_fr": "Côlon transverse",
-   "role": "sujet",
-   "figures": [
-    89
-   ]
-  },
-  {
-   "id": "diaphragm",
-   "nom_fr": "Diaphragme",
-   "role": "sujet",
-   "figures": [
-    85
-   ]
-  },
-  {
-   "id": "duodenum",
-   "nom_fr": "Duodénum",
-   "role": "sujet",
-   "figures": [
-    89
-   ]
-  },
-  {
-   "id": "suprarenal_gland_right",
-   "nom_fr": "Glande surrénale",
-   "role": "sujet",
-   "figures": [
-    85,
-    86,
-    88
-   ]
-  },
-  {
-   "id": "suprarenal_gland_left",
-   "nom_fr": "Glande surrénale",
-   "role": "sujet",
-   "figures": [
-    86,
-    88
-   ]
-  },
-  {
-   "id": "psoas_major_right",
-   "nom_fr": "Grand psoas",
-   "role": "sujet",
-   "figures": [
-    85,
-    89
-   ]
-  },
-  {
    "id": "psoas_major_left",
    "nom_fr": "Grand psoas",
    "role": "sujet",
@@ -157,123 +444,77 @@
    ]
   },
   {
-   "id": "transversus_abdominis_muscle_right",
-   "nom_fr": "Muscle transverse de l'abdomen",
+   "id": "quadratus_lumborum_muscle_left",
    "role": "sujet",
-   "figures": [
-    85
-   ]
-  },
-  {
-   "id": "pancreas",
-   "nom_fr": "Pancréas",
-   "role": "sujet",
+   "nom_fr": "Muscle carré des lombes",
+   "name_en": "Left quadratus lumborum muscle",
+   "system": "muscles",
+   "file": "models/muscles/quadratus_lumborum_muscle_left.glb",
    "figures": [
     89
    ]
   },
   {
-   "id": "kidney_right",
-   "nom_fr": "Rein droit",
+   "id": "superior_mesenteric_vein",
    "role": "sujet",
-   "figures": [
-    85,
-    86,
-    87,
-    88,
-    89
-   ]
-  },
-  {
-   "id": "kidney_left",
-   "nom_fr": "Rein gauche",
-   "role": "sujet",
-   "figures": [
-    86,
-    88,
-    89
-   ]
-  },
-  {
-   "id": "ureter_right",
-   "nom_fr": "Uretère",
-   "role": "sujet",
-   "figures": [
-    86,
-    87
-   ]
-  },
-  {
-   "id": "ureter_left",
-   "nom_fr": "Uretère",
-   "role": "sujet",
-   "figures": [
-    86
-   ]
-  },
-  {
-   "id": "inferior_vena_cava_abdominal_part",
-   "nom_fr": "Veine cave inférieure (partie abdominale)",
-   "role": "sujet",
+   "nom_fr": "Veine mésentérique supérieure",
+   "name_en": "Superior mesenteric vein",
+   "system": "veines",
+   "file": "models/veines/superior_mesenteric_vein.glb",
    "figures": [
     89
    ]
   },
   {
-   "id": "left_renal_vein",
-   "nom_fr": "Veine rénale gauche",
+   "id": "external_abdominal_oblique_muscle_left",
    "role": "sujet",
+   "nom_fr": "Muscle oblique externe de l'abdomen",
+   "name_en": "Left external abdominal oblique muscle",
+   "system": "muscles",
+   "file": "models/muscles/external_abdominal_oblique_muscle_left.glb",
    "figures": [
-    86,
-    88
+    89
    ]
   },
   {
-   "id": "inferior_phrenic_artery",
-   "nom_fr": "Artère phrénique inférieure",
-   "role": "contexte",
+   "id": "internal_abdominal_oblique_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle oblique interne de l'abdomen",
+   "name_en": "Left internal abdominal oblique muscle",
+   "system": "muscles",
+   "file": "models/muscles/internal_abdominal_oblique_muscle_left.glb",
    "figures": [
-    88
+    89
    ]
   },
   {
-   "id": "hip_bone_right",
-   "nom_fr": "Os coxal",
-   "role": "contexte",
+   "id": "latissimus_dorsi_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle grand dorsal",
+   "name_en": "Right latissimus dorsi muscle",
+   "system": "muscles",
+   "file": "models/muscles/latissimus_dorsi_muscle_right.glb",
    "figures": [
-    85
+    89
    ]
   },
   {
-   "id": "spleen",
-   "nom_fr": "Rate",
-   "role": "contexte",
+   "id": "latissimus_dorsi_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle grand dorsal",
+   "name_en": "Left latissimus dorsi muscle",
+   "system": "muscles",
+   "file": "models/muscles/latissimus_dorsi_muscle_left.glb",
    "figures": [
     89
    ]
   },
   {
    "id": "anterior_medial_segment_of_liver_v",
-   "nom_fr": "Segment antéromédial droit du foie (V)",
-   "role": "contexte",
+   "nom_fr": "Segment antéro-inférieur (V)",
+   "role": "rapports",
    "figures": [
     89
-   ]
-  },
-  {
-   "id": "vertebra_l2",
-   "nom_fr": "Vertèbre L2",
-   "role": "contexte",
-   "figures": [
-    89
-   ]
-  },
-  {
-   "id": "pleura",
-   "nom_fr": "Plèvre",
-   "role": "ghost",
-   "figures": [
-    85
    ]
   }
  ],
@@ -295,7 +536,7 @@
   "85": {
    "titre_fr": "Parois de la loge rénale",
    "classe": "3D",
-   "vue": "posterieure",
+   "vue": "superieure",
    "camera": {
     "vue": "posterieure",
     "position": [
@@ -317,16 +558,6 @@
      "role": "sujet"
     },
     {
-     "id": "suprarenal_gland_right",
-     "nom_fr": "Glande surrénale",
-     "role": "sujet"
-    },
-    {
-     "id": "diaphragm",
-     "nom_fr": "Diaphragme",
-     "role": "sujet"
-    },
-    {
      "id": "psoas_major_right",
      "nom_fr": "Grand psoas",
      "role": "sujet"
@@ -337,24 +568,61 @@
      "role": "sujet"
     },
     {
-     "id": "inferior_suprarenal_artery_right",
-     "nom_fr": "Artère surrénale inférieure",
-     "role": "sujet"
+     "id": "quadratus_lumborum_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle carré des lombes",
+     "name_en": "Right quadratus lumborum muscle",
+     "system": "muscles",
+     "file": "models/muscles/quadratus_lumborum_muscle_right.glb"
     },
     {
-     "id": "hip_bone_right",
-     "nom_fr": "Os coxal",
+     "id": "transversalis_fascia",
+     "role": "sujet",
+     "nom_fr": "Fascia transversalis",
+     "name_en": "Transversalis fascia",
+     "system": "fascias",
+     "file": "models/muscles/transversalis_fascia.glb"
+    },
+    {
+     "id": "external_abdominal_oblique_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle oblique externe de l'abdomen",
+     "name_en": "Right external abdominal oblique muscle",
+     "system": "muscles",
+     "file": "models/muscles/external_abdominal_oblique_muscle_right.glb"
+    },
+    {
+     "id": "internal_abdominal_oblique_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle oblique interne de l'abdomen",
+     "name_en": "Right internal abdominal oblique muscle",
+     "system": "muscles",
+     "file": "models/muscles/internal_abdominal_oblique_muscle_right.glb"
+    },
+    {
+     "id": "diaphragm",
+     "nom_fr": "Diaphragme",
      "role": "contexte"
     },
     {
-     "id": "pleura",
-     "nom_fr": "Plèvre",
-     "role": "ghost"
+     "id": "suprarenal_gland_right",
+     "nom_fr": "Glande surrénale",
+     "role": "contexte"
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "contexte",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb"
     }
    ],
    "manquants": [
     "Fascia rénal (de Gerota) : ABSENT du manifeste — la paroi propre de la loge n'a pas de maillage",
-    "Muscle carré des lombes (quadratus lumborum, paroi postérieure) : ABSENT ; péritoine : ABSENT"
+    "Péritoine : ABSENT du manifeste — seul le repère rep_peritoneum existe, pas de maillage d'organe",
+    "Graisse péri-rénale : ABSENTE du manifeste — aucun maillage",
+    "Graisse para-rénale : ABSENTE du manifeste — aucun maillage"
    ],
    "espace": "Fascia rénal (de Gerota) — loge rénale"
   },
@@ -397,14 +665,12 @@
      "role": "sujet"
     },
     {
-     "id": "inferior_suprarenal_artery_right",
-     "nom_fr": "Artère surrénale inférieure",
-     "role": "sujet"
-    },
-    {
-     "id": "inferior_suprarenal_artery_left",
-     "nom_fr": "Artère surrénale inférieure",
-     "role": "sujet"
+     "id": "right_renal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine rénale droite",
+     "name_en": "Right renal vein",
+     "system": "veines",
+     "file": "models/veines/right_renal_vein.glb"
     },
     {
      "id": "left_renal_vein",
@@ -412,27 +678,90 @@
      "role": "sujet"
     },
     {
-     "id": "suprarenal_gland_right",
-     "nom_fr": "Glande surrénale",
-     "role": "sujet"
+     "id": "left_renal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère rénale gauche",
+     "name_en": "Left renal artery",
+     "system": "arteres",
+     "file": "models/arteres/left_renal_artery.glb"
     },
     {
-     "id": "suprarenal_gland_left",
-     "nom_fr": "Glande surrénale",
-     "role": "sujet"
+     "id": "right_renal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère rénale droite",
+     "name_en": "Right renal artery",
+     "system": "arteres",
+     "file": "models/arteres/right_renal_artery.glb"
     },
     {
-     "id": "abdominal_aorta",
-     "nom_fr": "Aorte abdominale",
-     "role": "contexte"
+     "id": "renal_pelvis_right",
+     "role": "sujet",
+     "nom_fr": "Bassinet/ pelvis rénal",
+     "name_en": "Right renal pelvis",
+     "system": "organes",
+     "file": "models/organes/renal_pelvis_right.glb"
     },
     {
-     "id": "inferior_vena_cava_abdominal_part",
-     "nom_fr": "Veine cave inférieure (partie abdominale)",
-     "role": "contexte"
+     "id": "vertebra_t11",
+     "role": "contexte",
+     "nom_fr": "Vertèbre T11",
+     "name_en": "Vertebra T11",
+     "system": "squelette",
+     "file": "models/squelette/vertebra_t11.glb"
+    },
+    {
+     "id": "vertebra_t12",
+     "role": "contexte",
+     "nom_fr": "Vertèbre T12",
+     "name_en": "Vertebra T12",
+     "system": "squelette",
+     "file": "models/squelette/vertebra_t12.glb"
+    },
+    {
+     "id": "vertebra_l1",
+     "role": "contexte",
+     "nom_fr": "Vertèbre L1",
+     "name_en": "Vertebra L1",
+     "system": "squelette",
+     "file": "models/squelette/vertebra_l1.glb"
+    },
+    {
+     "id": "vertebra_l2",
+     "role": "contexte",
+     "nom_fr": "Vertèbre L2",
+     "name_en": "Vertebra L2",
+     "system": "squelette",
+     "file": "models/squelette/vertebra_l2.glb"
+    },
+    {
+     "id": "vertebra_l3",
+     "role": "contexte",
+     "nom_fr": "Vertèbre L3",
+     "name_en": "Vertebra L3",
+     "system": "squelette",
+     "file": "models/squelette/vertebra_l3.glb"
+    },
+    {
+     "id": "hip_bone_right",
+     "role": "contexte",
+     "nom_fr": "Os coxal",
+     "name_en": "Right hip bone",
+     "system": "squelette",
+     "file": "models/squelette/hip_bone_right.glb"
+    },
+    {
+     "id": "hip_bone_left",
+     "role": "contexte",
+     "nom_fr": "Os coxal",
+     "name_en": "Left hip bone",
+     "system": "squelette",
+     "file": "models/squelette/hip_bone_left.glb"
     }
    ],
-   "manquants": []
+   "manquants": [
+    "Capsule fibreuse : ABSENTE du manifeste — aucun maillage",
+    "Veinules étoilées visibles à travers la capsule : ABSENTES du manifeste — aucun maillage"
+   ]
   },
   "87": {
    "titre_fr": "Configuration intérieure du rein",
@@ -468,9 +797,20 @@
      "role": "contexte"
     },
     {
-     "id": "inferior_suprarenal_artery_right",
-     "nom_fr": "Artère surrénale inférieure",
-     "role": "contexte"
+     "id": "intrarenal_arteries_of_right_kidney",
+     "role": "contexte",
+     "nom_fr": "Artères intrarénales du rein droit",
+     "name_en": "Intrarenal arteries of right kidney",
+     "system": "arteres",
+     "file": "models/arteres/intrarenal_arteries_of_right_kidney.glb"
+    },
+    {
+     "id": "intrarenal_veins_of_right_kidney",
+     "role": "contexte",
+     "nom_fr": "Veines intrarénales du rein droit",
+     "name_en": "Intrarenal veins of right kidney",
+     "system": "veines",
+     "file": "models/veines/intrarenal_veins_of_right_kidney.glb"
     }
    ],
    "manquants": [
@@ -502,16 +842,6 @@
    },
    "structures": [
     {
-     "id": "inferior_suprarenal_artery_right",
-     "nom_fr": "Artère surrénale inférieure",
-     "role": "sujet"
-    },
-    {
-     "id": "inferior_suprarenal_artery_left",
-     "nom_fr": "Artère surrénale inférieure",
-     "role": "sujet"
-    },
-    {
      "id": "left_renal_vein",
      "nom_fr": "Veine rénale gauche",
      "role": "sujet"
@@ -537,6 +867,16 @@
      "role": "sujet"
     },
     {
+     "id": "inferior_suprarenal_artery_right",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_suprarenal_artery_left",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "sujet"
+    },
+    {
      "id": "suprarenal_gland_right",
      "nom_fr": "Glande surrénale",
      "role": "sujet"
@@ -557,6 +897,62 @@
      "role": "sujet"
     },
     {
+     "id": "left_renal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère rénale gauche",
+     "name_en": "Left renal artery",
+     "system": "arteres",
+     "file": "models/arteres/left_renal_artery.glb"
+    },
+    {
+     "id": "right_renal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère rénale droite",
+     "name_en": "Right renal artery",
+     "system": "arteres",
+     "file": "models/arteres/right_renal_artery.glb"
+    },
+    {
+     "id": "right_renal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine rénale droite",
+     "name_en": "Right renal vein",
+     "system": "veines",
+     "file": "models/veines/right_renal_vein.glb"
+    },
+    {
+     "id": "left_testicular_artery",
+     "role": "sujet",
+     "nom_fr": "Artère testiculaire gauche",
+     "name_en": "Left testicular artery",
+     "system": "arteres",
+     "file": "models/arteres/left_testicular_artery.glb"
+    },
+    {
+     "id": "left_testicular_vein",
+     "role": "sujet",
+     "nom_fr": "Veine testiculaire gauche",
+     "name_en": "Left testicular vein",
+     "system": "veines",
+     "file": "models/veines/left_testicular_vein.glb"
+    },
+    {
+     "id": "coeliac_trunk",
+     "role": "sujet",
+     "nom_fr": "Tronc coeliaque",
+     "name_en": "Coeliac trunk",
+     "system": "arteres",
+     "file": "models/arteres/coeliac_trunk.glb"
+    },
+    {
+     "id": "superior_mesenteric_artery",
+     "role": "sujet",
+     "nom_fr": "Artère mésentérique supérieure",
+     "name_en": "Superior mesenteric artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_mesenteric_artery.glb"
+    },
+    {
      "id": "abdominal_aorta",
      "nom_fr": "Aorte abdominale",
      "role": "contexte"
@@ -574,7 +970,9 @@
    ],
    "manquants": [
     "Artères surrénales SUPÉRIEURE et MOYENNE : ABSENTES (seule l'artère surrénale inférieure, issue de la rénale, existe)",
-    "Veines surrénales : non individualisées"
+    "Veines surrénales : non individualisées",
+    "Branche urétérique de l'artère rénale (droite et gauche) : ABSENTE du manifeste — aucun maillage",
+    "Veine phrénique inférieure gauche : ABSENTE du manifeste — aucun maillage (seule la veine phrénique supérieure droite existe, autre vaisseau)"
    ]
   },
   "89": {
@@ -611,16 +1009,6 @@
      "role": "sujet"
     },
     {
-     "id": "pancreas",
-     "nom_fr": "Pancréas",
-     "role": "sujet"
-    },
-    {
-     "id": "transverse_colon",
-     "nom_fr": "Côlon transverse",
-     "role": "sujet"
-    },
-    {
      "id": "ascending_colon",
      "nom_fr": "Côlon ascendant",
      "role": "sujet"
@@ -651,13 +1039,112 @@
      "role": "sujet"
     },
     {
-     "id": "anterior_medial_segment_of_liver_v",
-     "nom_fr": "Segment antéromédial droit du foie (V)",
-     "role": "contexte"
+     "id": "quadratus_lumborum_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle carré des lombes",
+     "name_en": "Right quadratus lumborum muscle",
+     "system": "muscles",
+     "file": "models/muscles/quadratus_lumborum_muscle_right.glb"
     },
     {
-     "id": "spleen",
-     "nom_fr": "Rate",
+     "id": "quadratus_lumborum_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle carré des lombes",
+     "name_en": "Left quadratus lumborum muscle",
+     "system": "muscles",
+     "file": "models/muscles/quadratus_lumborum_muscle_left.glb"
+    },
+    {
+     "id": "transversalis_fascia",
+     "role": "sujet",
+     "nom_fr": "Fascia transversalis",
+     "name_en": "Transversalis fascia",
+     "system": "fascias",
+     "file": "models/muscles/transversalis_fascia.glb"
+    },
+    {
+     "id": "left_renal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère rénale gauche",
+     "name_en": "Left renal artery",
+     "system": "arteres",
+     "file": "models/arteres/left_renal_artery.glb"
+    },
+    {
+     "id": "left_renal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine rénale gauche",
+     "name_en": "Left renal vein",
+     "system": "veines",
+     "file": "models/veines/left_renal_vein.glb"
+    },
+    {
+     "id": "superior_mesenteric_artery",
+     "role": "sujet",
+     "nom_fr": "Artère mésentérique supérieure",
+     "name_en": "Superior mesenteric artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_mesenteric_artery.glb"
+    },
+    {
+     "id": "superior_mesenteric_vein",
+     "role": "sujet",
+     "nom_fr": "Veine mésentérique supérieure",
+     "name_en": "Superior mesenteric vein",
+     "system": "veines",
+     "file": "models/veines/superior_mesenteric_vein.glb"
+    },
+    {
+     "id": "external_abdominal_oblique_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle oblique externe de l'abdomen",
+     "name_en": "Right external abdominal oblique muscle",
+     "system": "muscles",
+     "file": "models/muscles/external_abdominal_oblique_muscle_right.glb"
+    },
+    {
+     "id": "external_abdominal_oblique_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle oblique externe de l'abdomen",
+     "name_en": "Left external abdominal oblique muscle",
+     "system": "muscles",
+     "file": "models/muscles/external_abdominal_oblique_muscle_left.glb"
+    },
+    {
+     "id": "internal_abdominal_oblique_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle oblique interne de l'abdomen",
+     "name_en": "Right internal abdominal oblique muscle",
+     "system": "muscles",
+     "file": "models/muscles/internal_abdominal_oblique_muscle_right.glb"
+    },
+    {
+     "id": "internal_abdominal_oblique_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle oblique interne de l'abdomen",
+     "name_en": "Left internal abdominal oblique muscle",
+     "system": "muscles",
+     "file": "models/muscles/internal_abdominal_oblique_muscle_left.glb"
+    },
+    {
+     "id": "latissimus_dorsi_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle grand dorsal",
+     "name_en": "Right latissimus dorsi muscle",
+     "system": "muscles",
+     "file": "models/muscles/latissimus_dorsi_muscle_right.glb"
+    },
+    {
+     "id": "latissimus_dorsi_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle grand dorsal",
+     "name_en": "Left latissimus dorsi muscle",
+     "system": "muscles",
+     "file": "models/muscles/latissimus_dorsi_muscle_left.glb"
+    },
+    {
+     "id": "anterior_medial_segment_of_liver_v",
+     "nom_fr": "Segment antéro-inférieur (V)",
      "role": "contexte"
     },
     {
@@ -667,7 +1154,15 @@
     }
    ],
    "manquants": [
-    "Muscle carré des lombes : ABSENT (voir Fig 85) ; péritoine : ABSENT"
+    "Péritoine : ABSENT du manifeste — seul le repère rep_peritoneum existe, pas de maillage d'organe",
+    "Lames antérieure et postérieure du fascia rénal : ABSENTES du manifeste — aucun maillage",
+    "Capsule fibreuse du rein : ABSENTE du manifeste — aucun maillage",
+    "Graisse péri-rénale : ABSENTE du manifeste — aucun maillage",
+    "Graisse para-rénale : ABSENTE du manifeste — aucun maillage",
+    "Angle colique droit : ABSENT du manifeste — aucun maillage d'angle",
+    "Angle duodéno-jéjunal : ABSENT du manifeste — aucun maillage d'angle",
+    "Muscle érecteur du rachis : ABSENT comme maillage — seuls les repères d'origine erector_spinae_origine_right/left existent",
+    "Piliers du diaphragme : non individualisés au manifeste — aucun id de pilier"
    ]
   }
  },
@@ -708,12 +1203,23 @@
  ],
  "manquants": [
   "Fascia rénal (de Gerota) : ABSENT du manifeste — la paroi propre de la loge n'a pas de maillage",
-  "Muscle carré des lombes (quadratus lumborum, paroi postérieure) : ABSENT ; péritoine : ABSENT",
+  "Péritoine : ABSENT du manifeste — seul le repère rep_peritoneum existe, pas de maillage d'organe",
+  "Graisse péri-rénale : ABSENTE du manifeste — aucun maillage",
+  "Graisse para-rénale : ABSENTE du manifeste — aucun maillage",
+  "Capsule fibreuse : ABSENTE du manifeste — aucun maillage",
+  "Veinules étoilées visibles à travers la capsule : ABSENTES du manifeste — aucun maillage",
   "Cortex rénal : ABSENT ; médulla / pyramides de Malpighi : ABSENTES ; papilles rénales : ABSENTES ; calices mineurs et majeurs : ABSENTS",
   "Seul le bassinet (renal_pelvis) existe comme structure interne → la configuration intérieure de la figure est un schéma de coupe en regard du rein 3D",
   "Artères surrénales SUPÉRIEURE et MOYENNE : ABSENTES (seule l'artère surrénale inférieure, issue de la rénale, existe)",
   "Veines surrénales : non individualisées",
-  "Muscle carré des lombes : ABSENT (voir Fig 85) ; péritoine : ABSENT"
+  "Branche urétérique de l'artère rénale (droite et gauche) : ABSENTE du manifeste — aucun maillage",
+  "Veine phrénique inférieure gauche : ABSENTE du manifeste — aucun maillage (seule la veine phrénique supérieure droite existe, autre vaisseau)",
+  "Lames antérieure et postérieure du fascia rénal : ABSENTES du manifeste — aucun maillage",
+  "Capsule fibreuse du rein : ABSENTE du manifeste — aucun maillage",
+  "Angle colique droit : ABSENT du manifeste — aucun maillage d'angle",
+  "Angle duodéno-jéjunal : ABSENT du manifeste — aucun maillage d'angle",
+  "Muscle érecteur du rachis : ABSENT comme maillage — seuls les repères d'origine erector_spinae_origine_right/left existent",
+  "Piliers du diaphragme : non individualisés au manifeste — aucun id de pilier"
  ],
  "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
 }
