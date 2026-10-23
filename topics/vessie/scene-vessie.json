@@ -10,51 +10,11 @@
  ],
  "structures": [
   {
-   "id": "ductus_deferens_right",
-   "nom_fr": "Canal déférent",
-   "role": "sujet",
-   "figures": [
-    91
-   ]
-  },
-  {
-   "id": "ductus_deferens_left",
-   "nom_fr": "Canal déférent",
-   "role": "sujet",
-   "figures": [
-    91
-   ]
-  },
-  {
-   "id": "seminal_gland_right",
-   "nom_fr": "Glande séminale",
-   "role": "sujet",
-   "figures": [
-    91
-   ]
-  },
-  {
-   "id": "seminal_gland_left",
-   "nom_fr": "Glande séminale",
-   "role": "sujet",
-   "figures": [
-    91
-   ]
-  },
-  {
-   "id": "prostate",
-   "nom_fr": "Prostate",
+   "id": "urinary_bladder",
+   "nom_fr": "Vessie urinaire",
    "role": "sujet",
    "figures": [
     90,
-    91
-   ]
-  },
-  {
-   "id": "rectum",
-   "nom_fr": "Rectum",
-   "role": "sujet",
-   "figures": [
     91
    ]
   },
@@ -77,18 +37,45 @@
    ]
   },
   {
-   "id": "urinary_bladder",
-   "nom_fr": "Vessie urinaire",
-   "role": "sujet",
+   "id": "pubic_symphysis",
+   "role": "rapports",
+   "nom_fr": "Symphyse pubienne",
+   "name_en": "Pubic symphysis",
+   "system": "articulations",
+   "file": "models/articulations/pubic_symphysis.glb",
    "figures": [
     90,
     91
    ]
   },
   {
-   "id": "sigmoid_colon",
-   "nom_fr": "Côlon sigmoïde",
-   "role": "contexte",
+   "id": "prostate",
+   "nom_fr": "Prostate",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "seminal_gland_right",
+   "nom_fr": "Vésicules séminales",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Vésicules séminales",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "rectum",
+   "nom_fr": "Rectum",
+   "role": "sujet",
    "figures": [
     91
    ]
@@ -96,7 +83,7 @@
   {
    "id": "hip_bone_right",
    "nom_fr": "Os coxal",
-   "role": "contexte",
+   "role": "rapports",
    "figures": [
     91
    ]
@@ -104,7 +91,392 @@
   {
    "id": "hip_bone_left",
    "nom_fr": "Os coxal",
-   "role": "contexte",
+   "role": "rapports",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterus_fundus",
+   "role": "rapports",
+   "nom_fr": "Fond de l'utérus",
+   "name_en": "Fundus of uterus",
+   "system": "organes",
+   "file": "models/organes/uterus_fundus.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterus_body",
+   "role": "rapports",
+   "nom_fr": "Corps de l'utérus",
+   "name_en": "Body of uterus",
+   "system": "organes",
+   "file": "models/organes/uterus_body.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterus_cervix",
+   "role": "rapports",
+   "nom_fr": "Col de l'utérus",
+   "name_en": "Cervix of uterus",
+   "system": "organes",
+   "file": "models/organes/uterus_cervix.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "vagina",
+   "role": "rapports",
+   "nom_fr": "Vagin",
+   "name_en": "Vagina",
+   "system": "organes",
+   "file": "models/organes/vagina.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "ovary_right",
+   "role": "rapports",
+   "nom_fr": "Ovaire droit",
+   "name_en": "Right ovary",
+   "system": "organes",
+   "file": "models/organes/ovary_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "ovary_left",
+   "role": "rapports",
+   "nom_fr": "Ovaire gauche",
+   "name_en": "Left ovary",
+   "system": "organes",
+   "file": "models/organes/ovary_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterine_tube_right",
+   "role": "rapports",
+   "nom_fr": "Trompe de Fallope droite",
+   "name_en": "Right uterine tube",
+   "system": "organes",
+   "file": "models/organes/uterine_tube_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterine_tube_left",
+   "role": "rapports",
+   "nom_fr": "Trompe de Fallope gauche",
+   "name_en": "Left uterine tube",
+   "system": "organes",
+   "file": "models/organes/uterine_tube_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "broad_ligament",
+   "role": "rapports",
+   "nom_fr": "Ligament large de l'utérus",
+   "name_en": "Broad ligament of uterus",
+   "system": "fascias",
+   "file": "models/fascias/broad_ligament.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterosacral_ligament_right",
+   "role": "rapports",
+   "nom_fr": "Ligament utéro-sacral droit",
+   "name_en": "Right uterosacral ligament",
+   "system": "ligaments",
+   "file": "models/ligaments/uterosacral_ligament_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterosacral_ligament_left",
+   "role": "rapports",
+   "nom_fr": "Ligament utéro-sacral gauche",
+   "name_en": "Left uterosacral ligament",
+   "system": "ligaments",
+   "file": "models/ligaments/uterosacral_ligament_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "suspensory_ligament_ovary_right",
+   "role": "rapports",
+   "nom_fr": "Ligament suspenseur de l'ovaire droit",
+   "name_en": "Right suspensory ligament of ovary",
+   "system": "ligaments",
+   "file": "models/ligaments/suspensory_ligament_ovary_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "suspensory_ligament_ovary_left",
+   "role": "rapports",
+   "nom_fr": "Ligament suspenseur de l'ovaire gauche",
+   "name_en": "Left suspensory ligament of ovary",
+   "system": "ligaments",
+   "file": "models/ligaments/suspensory_ligament_ovary_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "round_ligament_uterus_right",
+   "role": "rapports",
+   "nom_fr": "Ligament rond de l'utérus droit",
+   "name_en": "Right round ligament of uterus",
+   "system": "ligaments",
+   "file": "models/ligaments/round_ligament_uterus_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "round_ligament_uterus_left",
+   "role": "rapports",
+   "nom_fr": "Ligament rond de l'utérus gauche",
+   "name_en": "Left round ligament of uterus",
+   "system": "ligaments",
+   "file": "models/ligaments/round_ligament_uterus_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "ovarian_ligament_right",
+   "role": "rapports",
+   "nom_fr": "Ligament utéro-ovarien droit",
+   "name_en": "Right ovarian ligament",
+   "system": "ligaments",
+   "file": "models/ligaments/ovarian_ligament_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "ovarian_ligament_left",
+   "role": "rapports",
+   "nom_fr": "Ligament utéro-ovarien gauche",
+   "name_en": "Left ovarian ligament",
+   "system": "ligaments",
+   "file": "models/ligaments/ovarian_ligament_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "urinary_bladder_female",
+   "role": "rapports",
+   "nom_fr": "Vessie urinaire (femme)",
+   "name_en": "Urinary bladder (female)",
+   "system": "organes",
+   "file": "models/organes/urinary_bladder_female.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "pelvis_female",
+   "role": "rapports",
+   "nom_fr": "Bassin (femme)",
+   "name_en": "Female pelvis",
+   "system": "squelette",
+   "file": "models/squelette/pelvis_female.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "uterovesical_pouch",
+   "role": "rapports",
+   "nom_fr": "Cul-de-sac vésico-utérin",
+   "name_en": "Uterovesical pouch",
+   "system": "fascias",
+   "file": "models/fascias/uterovesical_pouch.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "espace_douglas",
+   "role": "rapports",
+   "nom_fr": "Cul-de-sac de Douglas (recto-utérin)",
+   "name_en": "Rectouterine pouch (pouch of Douglas)",
+   "system": "fascias",
+   "file": "models/fascias/espace_douglas.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "espace_vesico_uterin",
+   "role": "rapports",
+   "nom_fr": "Cul-de-sac vésico-utérin",
+   "name_en": "Vesicouterine pouch",
+   "system": "fascias",
+   "file": "models/fascias/espace_vesico_uterin.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "pubococcygeus_muscle_right",
+   "role": "rapports",
+   "nom_fr": "Muscle pubococcygien",
+   "name_en": "Right pubococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/pubococcygeus_muscle_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "pubococcygeus_muscle_left",
+   "role": "rapports",
+   "nom_fr": "Muscle pubococcygien",
+   "name_en": "Left pubococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/pubococcygeus_muscle_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "iliococcygeus_muscle_right",
+   "role": "rapports",
+   "nom_fr": "Muscle iliococcygien",
+   "name_en": "Right iliococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/iliococcygeus_muscle_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "iliococcygeus_muscle_left",
+   "role": "rapports",
+   "nom_fr": "Muscle iliococcygien",
+   "name_en": "Left iliococcygeus muscle",
+   "system": "muscles",
+   "file": "models/muscles/iliococcygeus_muscle_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "external_anal_sphincter_right",
+   "role": "rapports",
+   "nom_fr": "Sphincter anal externe",
+   "name_en": "Right external anal sphincter",
+   "system": "muscles",
+   "file": "models/muscles/external_anal_sphincter_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "external_anal_sphincter_left",
+   "role": "rapports",
+   "nom_fr": "Sphincter anal externe",
+   "name_en": "Left external anal sphincter",
+   "system": "muscles",
+   "file": "models/muscles/external_anal_sphincter_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "corpus_cavernosum_of_penis",
+   "role": "rapports",
+   "nom_fr": "Corps caverneux du pénis",
+   "name_en": "Corpus cavernosum of penis",
+   "system": "organes",
+   "file": "models/organes/corpus_cavernosum_of_penis.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "corpus_spongiosum_of_penis",
+   "role": "rapports",
+   "nom_fr": "Corps spongieux du pénis",
+   "name_en": "Corpus spongiosum of penis",
+   "system": "organes",
+   "file": "models/organes/corpus_spongiosum_of_penis.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "glans_penis",
+   "role": "rapports",
+   "nom_fr": "Gland du pénis",
+   "name_en": "Glans penis",
+   "system": "organes",
+   "file": "models/organes/glans_penis.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "external_iliac_artery_right",
+   "role": "rapports",
+   "nom_fr": "Artère iliaque externe",
+   "name_en": "Right external iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/external_iliac_artery_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "external_iliac_artery_left",
+   "role": "rapports",
+   "nom_fr": "Artère iliaque externe",
+   "name_en": "Left external iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/external_iliac_artery_left.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "external_iliac_vein_right",
+   "role": "rapports",
+   "nom_fr": "Veine iliaque externe",
+   "name_en": "Right external iliac vein",
+   "system": "veines",
+   "file": "models/veines/external_iliac_vein_right.glb",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "external_iliac_vein_left",
+   "role": "rapports",
+   "nom_fr": "Veine iliaque externe",
+   "name_en": "Left external iliac vein",
+   "system": "veines",
+   "file": "models/veines/external_iliac_vein_left.glb",
    "figures": [
     91
    ]
@@ -158,28 +530,17 @@
      "role": "sujet"
     },
     {
-     "id": "prostate",
-     "nom_fr": "Prostate",
-     "role": "sujet"
-    },
-    {
-     "id": "rectum",
-     "nom_fr": "Rectum",
-     "role": "contexte"
-    },
-    {
-     "id": "ductus_deferens_right",
-     "nom_fr": "Canal déférent",
-     "role": "contexte"
-    },
-    {
-     "id": "ductus_deferens_left",
-     "nom_fr": "Canal déférent",
-     "role": "contexte"
+     "id": "pubic_symphysis",
+     "role": "contexte",
+     "nom_fr": "Symphyse pubienne",
+     "name_en": "Pubic symphysis",
+     "system": "articulations",
+     "file": "models/articulations/pubic_symphysis.glb"
     }
    ],
    "manquants": [
-    "Trigone vésical : ABSENT ; orifices urétéraux et col vésical : non individualisés — la vessie est UN seul maillage, sa configuration intérieure (qui fait la moitié du titre) n'a aucune géométrie → schéma de l'intérieur en regard"
+    "Trigone vésical : ABSENT ; orifices urétéraux et col vésical : non individualisés — la vessie est UN seul maillage, sa configuration intérieure (qui fait la moitié du titre) n'a aucune géométrie → schéma de l'intérieur en regard",
+    "Ouraque : ABSENT du manifeste — aucun maillage"
    ],
    "diagramme": {
     "fichier": "diagramme-vessie.svg",
@@ -217,12 +578,12 @@
     },
     {
      "id": "seminal_gland_right",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
      "id": "seminal_gland_left",
-     "nom_fr": "Glande séminale",
+     "nom_fr": "Vésicules séminales",
      "role": "sujet"
     },
     {
@@ -241,16 +602,6 @@
      "role": "sujet"
     },
     {
-     "id": "ductus_deferens_right",
-     "nom_fr": "Canal déférent",
-     "role": "sujet"
-    },
-    {
-     "id": "ductus_deferens_left",
-     "nom_fr": "Canal déférent",
-     "role": "sujet"
-    },
-    {
      "id": "hip_bone_right",
      "nom_fr": "Os coxal",
      "role": "contexte"
@@ -261,14 +612,325 @@
      "role": "contexte"
     },
     {
-     "id": "sigmoid_colon",
-     "nom_fr": "Côlon sigmoïde",
-     "role": "contexte"
+     "id": "uterus_fundus",
+     "role": "contexte",
+     "nom_fr": "Fond de l'utérus",
+     "name_en": "Fundus of uterus",
+     "system": "organes",
+     "file": "models/organes/uterus_fundus.glb"
+    },
+    {
+     "id": "uterus_body",
+     "role": "contexte",
+     "nom_fr": "Corps de l'utérus",
+     "name_en": "Body of uterus",
+     "system": "organes",
+     "file": "models/organes/uterus_body.glb"
+    },
+    {
+     "id": "uterus_cervix",
+     "role": "contexte",
+     "nom_fr": "Col de l'utérus",
+     "name_en": "Cervix of uterus",
+     "system": "organes",
+     "file": "models/organes/uterus_cervix.glb"
+    },
+    {
+     "id": "vagina",
+     "role": "contexte",
+     "nom_fr": "Vagin",
+     "name_en": "Vagina",
+     "system": "organes",
+     "file": "models/organes/vagina.glb"
+    },
+    {
+     "id": "ovary_right",
+     "role": "contexte",
+     "nom_fr": "Ovaire droit",
+     "name_en": "Right ovary",
+     "system": "organes",
+     "file": "models/organes/ovary_right.glb"
+    },
+    {
+     "id": "ovary_left",
+     "role": "contexte",
+     "nom_fr": "Ovaire gauche",
+     "name_en": "Left ovary",
+     "system": "organes",
+     "file": "models/organes/ovary_left.glb"
+    },
+    {
+     "id": "uterine_tube_right",
+     "role": "contexte",
+     "nom_fr": "Trompe de Fallope droite",
+     "name_en": "Right uterine tube",
+     "system": "organes",
+     "file": "models/organes/uterine_tube_right.glb"
+    },
+    {
+     "id": "uterine_tube_left",
+     "role": "contexte",
+     "nom_fr": "Trompe de Fallope gauche",
+     "name_en": "Left uterine tube",
+     "system": "organes",
+     "file": "models/organes/uterine_tube_left.glb"
+    },
+    {
+     "id": "broad_ligament",
+     "role": "contexte",
+     "nom_fr": "Ligament large de l'utérus",
+     "name_en": "Broad ligament of uterus",
+     "system": "fascias",
+     "file": "models/fascias/broad_ligament.glb"
+    },
+    {
+     "id": "uterosacral_ligament_right",
+     "role": "contexte",
+     "nom_fr": "Ligament utéro-sacral droit",
+     "name_en": "Right uterosacral ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/uterosacral_ligament_right.glb"
+    },
+    {
+     "id": "uterosacral_ligament_left",
+     "role": "contexte",
+     "nom_fr": "Ligament utéro-sacral gauche",
+     "name_en": "Left uterosacral ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/uterosacral_ligament_left.glb"
+    },
+    {
+     "id": "suspensory_ligament_ovary_right",
+     "role": "contexte",
+     "nom_fr": "Ligament suspenseur de l'ovaire droit",
+     "name_en": "Right suspensory ligament of ovary",
+     "system": "ligaments",
+     "file": "models/ligaments/suspensory_ligament_ovary_right.glb"
+    },
+    {
+     "id": "suspensory_ligament_ovary_left",
+     "role": "contexte",
+     "nom_fr": "Ligament suspenseur de l'ovaire gauche",
+     "name_en": "Left suspensory ligament of ovary",
+     "system": "ligaments",
+     "file": "models/ligaments/suspensory_ligament_ovary_left.glb"
+    },
+    {
+     "id": "round_ligament_uterus_right",
+     "role": "contexte",
+     "nom_fr": "Ligament rond de l'utérus droit",
+     "name_en": "Right round ligament of uterus",
+     "system": "ligaments",
+     "file": "models/ligaments/round_ligament_uterus_left.glb"
+    },
+    {
+     "id": "round_ligament_uterus_left",
+     "role": "contexte",
+     "nom_fr": "Ligament rond de l'utérus gauche",
+     "name_en": "Left round ligament of uterus",
+     "system": "ligaments",
+     "file": "models/ligaments/round_ligament_uterus_right.glb"
+    },
+    {
+     "id": "ovarian_ligament_right",
+     "role": "contexte",
+     "nom_fr": "Ligament utéro-ovarien droit",
+     "name_en": "Right ovarian ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/ovarian_ligament_right.glb"
+    },
+    {
+     "id": "ovarian_ligament_left",
+     "role": "contexte",
+     "nom_fr": "Ligament utéro-ovarien gauche",
+     "name_en": "Left ovarian ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/ovarian_ligament_left.glb"
+    },
+    {
+     "id": "urinary_bladder_female",
+     "role": "contexte",
+     "nom_fr": "Vessie urinaire (femme)",
+     "name_en": "Urinary bladder (female)",
+     "system": "organes",
+     "file": "models/organes/urinary_bladder_female.glb"
+    },
+    {
+     "id": "pelvis_female",
+     "role": "contexte",
+     "nom_fr": "Bassin (femme)",
+     "name_en": "Female pelvis",
+     "system": "squelette",
+     "file": "models/squelette/pelvis_female.glb"
+    },
+    {
+     "id": "uterovesical_pouch",
+     "role": "contexte",
+     "nom_fr": "Cul-de-sac vésico-utérin",
+     "name_en": "Uterovesical pouch",
+     "system": "fascias",
+     "file": "models/fascias/uterovesical_pouch.glb"
+    },
+    {
+     "id": "espace_douglas",
+     "role": "contexte",
+     "nom_fr": "Cul-de-sac de Douglas (recto-utérin)",
+     "name_en": "Rectouterine pouch (pouch of Douglas)",
+     "system": "fascias",
+     "file": "models/fascias/espace_douglas.glb"
+    },
+    {
+     "id": "espace_vesico_uterin",
+     "role": "contexte",
+     "nom_fr": "Cul-de-sac vésico-utérin",
+     "name_en": "Vesicouterine pouch",
+     "system": "fascias",
+     "file": "models/fascias/espace_vesico_uterin.glb"
+    },
+    {
+     "id": "pubic_symphysis",
+     "role": "contexte",
+     "nom_fr": "Symphyse pubienne",
+     "name_en": "Pubic symphysis",
+     "system": "articulations",
+     "file": "models/articulations/pubic_symphysis.glb"
+    },
+    {
+     "id": "pubococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Right pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_right.glb"
+    },
+    {
+     "id": "pubococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle pubococcygien",
+     "name_en": "Left pubococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/pubococcygeus_muscle_left.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Right iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_right.glb"
+    },
+    {
+     "id": "iliococcygeus_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle iliococcygien",
+     "name_en": "Left iliococcygeus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliococcygeus_muscle_left.glb"
+    },
+    {
+     "id": "external_anal_sphincter_right",
+     "role": "contexte",
+     "nom_fr": "Sphincter anal externe",
+     "name_en": "Right external anal sphincter",
+     "system": "muscles",
+     "file": "models/muscles/external_anal_sphincter_right.glb"
+    },
+    {
+     "id": "external_anal_sphincter_left",
+     "role": "contexte",
+     "nom_fr": "Sphincter anal externe",
+     "name_en": "Left external anal sphincter",
+     "system": "muscles",
+     "file": "models/muscles/external_anal_sphincter_left.glb"
+    },
+    {
+     "id": "corpus_cavernosum_of_penis",
+     "role": "contexte",
+     "nom_fr": "Corps caverneux du pénis",
+     "name_en": "Corpus cavernosum of penis",
+     "system": "organes",
+     "file": "models/organes/corpus_cavernosum_of_penis.glb"
+    },
+    {
+     "id": "corpus_spongiosum_of_penis",
+     "role": "contexte",
+     "nom_fr": "Corps spongieux du pénis",
+     "name_en": "Corpus spongiosum of penis",
+     "system": "organes",
+     "file": "models/organes/corpus_spongiosum_of_penis.glb"
+    },
+    {
+     "id": "glans_penis",
+     "role": "contexte",
+     "nom_fr": "Gland du pénis",
+     "name_en": "Glans penis",
+     "system": "organes",
+     "file": "models/organes/glans_penis.glb"
+    },
+    {
+     "id": "external_iliac_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Right external iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/external_iliac_artery_right.glb"
+    },
+    {
+     "id": "external_iliac_artery_left",
+     "role": "contexte",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Left external iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/external_iliac_artery_left.glb"
+    },
+    {
+     "id": "external_iliac_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine iliaque externe",
+     "name_en": "Right external iliac vein",
+     "system": "veines",
+     "file": "models/veines/external_iliac_vein_right.glb"
+    },
+    {
+     "id": "external_iliac_vein_left",
+     "role": "contexte",
+     "nom_fr": "Veine iliaque externe",
+     "name_en": "Left external iliac vein",
+     "system": "veines",
+     "file": "models/veines/external_iliac_vein_left.glb"
     }
    ],
    "manquants": [
-    "Côté FEMME impossible en 3D : utérus et vagin ABSENTS du manifeste (voir Figs 100-103) — seuls les rapports masculins sont montrables",
-    "Péritoine vésical et cul-de-sac vésico-rectal : espaces absents"
+    "Cul-de-sac recto-vésical : ABSENT du manifeste — aucun volume recto-vésical n'existe",
+    "Fascia recto-prostatique de Denonvilliers : ABSENT du manifeste — aucun maillage",
+    "Ouraque : ABSENT du manifeste — aucun maillage",
+    "Canal anal : ABSENT du manifeste — aucun maillage propre",
+    "Anus : ABSENT du manifeste — aucun maillage propre",
+    "Muscle transverse profond du périnée : ABSENT du manifeste — aucun maillage",
+    "Ligament arqué du pubis : ABSENT du manifeste — aucun maillage",
+    "Veine dorsale profonde du clitoris : ABSENTE du manifeste — aucun maillage",
+    "Pilier du clitoris : ABSENT du manifeste — aucun maillage",
+    "Ostium externe de l'urètre : ABSENT du manifeste — aucun maillage",
+    "Petite lèvre : ABSENTE du manifeste — aucun maillage",
+    "Grande lèvre : ABSENTE du manifeste — aucun maillage",
+    "Fornix du vagin : ABSENT du manifeste — aucun maillage (les ids fornix_right/left du manifeste sont le fornix cérébral)",
+    "Introït vaginal : ABSENT du manifeste — aucun maillage",
+    "Ligament fundiforme du pénis : ABSENT du manifeste — aucun maillage",
+    "Ligament suspenseur du pénis : ABSENT du manifeste — aucun maillage",
+    "Ligament transverse du périnée : ABSENT du manifeste — aucun maillage",
+    "Espace superficiel du périnée : ABSENT du manifeste — aucun maillage",
+    "Fascia superficial du pénis (dartos) : ABSENT du manifeste — aucun maillage",
+    "Fascia profond du pénis : ABSENT du manifeste — aucun maillage",
+    "Prépuce : ABSENT du manifeste — aucun maillage",
+    "Fascia vésical : ABSENT du manifeste — aucun maillage",
+    "Muscle sphincter de l'urètre : ABSENT du manifeste — aucun maillage",
+    "Glande de Cowper : ABSENTE du manifeste — aucun maillage",
+    "Centre tendineux du périnée : ABSENT du manifeste — aucun maillage",
+    "Muscle bulbo-spongieux : ABSENT du manifeste — aucun maillage",
+    "Fascia de Gallaudet (profonde) : ABSENT du manifeste — aucun maillage",
+    "Fascia de Colles (superficielle) : ABSENT du manifeste — aucun maillage",
+    "Septum du scrotum : ABSENT du manifeste — aucun maillage",
+    "Fosse naviculaire : ABSENTE du manifeste — aucun maillage"
    ],
    "espace": "Cul-de-sac vésico-rectal (péritoine)"
   }
@@ -310,8 +972,36 @@
  ],
  "manquants": [
   "Trigone vésical : ABSENT ; orifices urétéraux et col vésical : non individualisés — la vessie est UN seul maillage, sa configuration intérieure (qui fait la moitié du titre) n'a aucune géométrie → schéma de l'intérieur en regard",
-  "Côté FEMME impossible en 3D : utérus et vagin ABSENTS du manifeste (voir Figs 100-103) — seuls les rapports masculins sont montrables",
-  "Péritoine vésical et cul-de-sac vésico-rectal : espaces absents"
+  "Ouraque : ABSENT du manifeste — aucun maillage",
+  "Cul-de-sac recto-vésical : ABSENT du manifeste — aucun volume recto-vésical n'existe",
+  "Fascia recto-prostatique de Denonvilliers : ABSENT du manifeste — aucun maillage",
+  "Canal anal : ABSENT du manifeste — aucun maillage propre",
+  "Anus : ABSENT du manifeste — aucun maillage propre",
+  "Muscle transverse profond du périnée : ABSENT du manifeste — aucun maillage",
+  "Ligament arqué du pubis : ABSENT du manifeste — aucun maillage",
+  "Veine dorsale profonde du clitoris : ABSENTE du manifeste — aucun maillage",
+  "Pilier du clitoris : ABSENT du manifeste — aucun maillage",
+  "Ostium externe de l'urètre : ABSENT du manifeste — aucun maillage",
+  "Petite lèvre : ABSENTE du manifeste — aucun maillage",
+  "Grande lèvre : ABSENTE du manifeste — aucun maillage",
+  "Fornix du vagin : ABSENT du manifeste — aucun maillage (les ids fornix_right/left du manifeste sont le fornix cérébral)",
+  "Introït vaginal : ABSENT du manifeste — aucun maillage",
+  "Ligament fundiforme du pénis : ABSENT du manifeste — aucun maillage",
+  "Ligament suspenseur du pénis : ABSENT du manifeste — aucun maillage",
+  "Ligament transverse du périnée : ABSENT du manifeste — aucun maillage",
+  "Espace superficiel du périnée : ABSENT du manifeste — aucun maillage",
+  "Fascia superficial du pénis (dartos) : ABSENT du manifeste — aucun maillage",
+  "Fascia profond du pénis : ABSENT du manifeste — aucun maillage",
+  "Prépuce : ABSENT du manifeste — aucun maillage",
+  "Fascia vésical : ABSENT du manifeste — aucun maillage",
+  "Muscle sphincter de l'urètre : ABSENT du manifeste — aucun maillage",
+  "Glande de Cowper : ABSENTE du manifeste — aucun maillage",
+  "Centre tendineux du périnée : ABSENT du manifeste — aucun maillage",
+  "Muscle bulbo-spongieux : ABSENT du manifeste — aucun maillage",
+  "Fascia de Gallaudet (profonde) : ABSENT du manifeste — aucun maillage",
+  "Fascia de Colles (superficielle) : ABSENT du manifeste — aucun maillage",
+  "Septum du scrotum : ABSENT du manifeste — aucun maillage",
+  "Fosse naviculaire : ABSENTE du manifeste — aucun maillage"
  ],
  "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
 }

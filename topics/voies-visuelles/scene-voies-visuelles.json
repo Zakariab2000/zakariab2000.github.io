@@ -21,48 +21,8 @@
      "system": "cerveau"
     },
     {
-     "id": "sclera_right",
-     "role": "sujet",
-     "file": "models/cerveau/sclera_right.glb",
-     "nom_fr": "Sclère",
-     "name_en": "Right sclera",
-     "name_la": "Sclera",
-     "couleur": "#cf9bb4",
-     "system": "cerveau"
-    },
-    {
-     "id": "anterior_segment_of_eyeball_right",
-     "role": "sujet",
-     "file": "models/cerveau/anterior_segment_of_eyeball_right.glb",
-     "nom_fr": "Segment antérieur du globe occulaire",
-     "name_en": "Right anterior segment of eyeball",
-     "name_la": "Segmentum anterius bulbi oculi",
-     "couleur": "#cf9bb4",
-     "system": "cerveau"
-    },
-    {
-     "id": "posterior_segment_of_eyeball_right",
-     "role": "sujet",
-     "file": "models/cerveau/posterior_segment_of_eyeball_right.glb",
-     "nom_fr": "Segment postérieur du globe oculaire",
-     "name_en": "Right posterior segment of eyeball",
-     "name_la": "Segmentum posterius bulbi oculi",
-     "couleur": "#cf9bb4",
-     "system": "cerveau"
-    },
-    {
-     "id": "central_retinal_artery_right",
-     "role": "sujet",
-     "file": "models/arteres/central_retinal_artery_right.glb",
-     "nom_fr": "Artère centrale de la rétine",
-     "name_en": "Right central retinal artery",
-     "name_la": "Arteria centralis retinae",
-     "couleur": "#cf5346",
-     "system": "arteres"
-    },
-    {
      "id": "optic_nerve_ii_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/nerfs/optic_nerve_ii_right.glb",
      "nom_fr": "Nerf optique (II)",
      "name_en": "Right optic nerve (II)",
@@ -204,8 +164,24 @@
      "system": "cerveau"
     },
     {
+     "id": "tract_or_left",
+     "role": "sujet",
+     "nom_fr": "Radiations optiques (de Gratiolet)",
+     "name_en": "Optic radiation",
+     "system": "cerveau",
+     "file": "models/cerveau/tract_or_left.glb"
+    },
+    {
+     "id": "tract_or_right",
+     "role": "sujet",
+     "nom_fr": "Radiations optiques (de Gratiolet)",
+     "name_en": "Optic radiation",
+     "system": "cerveau",
+     "file": "models/cerveau/tract_or_right.glb"
+    },
+    {
      "id": "cuneus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/cuneus_right.glb",
      "nom_fr": "Cuneus",
      "name_en": "Right cuneus",
@@ -215,7 +191,7 @@
     },
     {
      "id": "lingual_gyrus_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/lingual_gyrus_right.glb",
      "nom_fr": "Gyrus lingual",
      "name_en": "Right lingual gyrus",
@@ -225,7 +201,7 @@
     },
     {
      "id": "retina_right",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/retina_right.glb",
      "nom_fr": "Rétine",
      "name_en": "Right retina",
@@ -235,7 +211,7 @@
     },
     {
      "id": "retina_left",
-     "role": "rapport",
+     "role": "rapports",
      "file": "models/cerveau/retina_left.glb",
      "nom_fr": "Rétine",
      "name_en": "Left retina",
@@ -267,8 +243,8 @@
    "frame_ids": null,
    "diagram": "voies_visuelles",
    "manquants": [
-    "Radiations optiques (anses de Meyer et de Baumgarten) : ABSENTES du manifeste",
-    "La logique des décussations (fibres nasales/temporales) et des déficits campimétriques est schématique → schéma en regard ; la scène 3D couvre nerf → chiasma → bandelettes → corps géniculés → cortex calcarin"
+    "Logique des décussations partielles (fibres nasales/temporales) et déficits campimétriques : schéma compagnon (batch H2)",
+    "Rétine → nerf : la rétine est un maillage-coque ; ses couches restent le schéma de la Fig 13"
    ]
   }
  ]

@@ -1,177 +1,315 @@
 {
- "titre_fr": "Nerf facial — trajet et segments (branches et clinique par segment)",
- "titre_en": "Facial nerve — course and segments (branches and clinical points per segment)",
+ "titre_fr": "Trajet et segments du nerf facial",
+ "titre_en": "Course and segments of the facial nerve",
  "w": 720,
- "h": 900,
+ "h": 1330,
  "levels": {
-  "segment": {
-   "c": "#4fc3f7",
-   "fr": "Segments du trajet",
-   "en": "Course segments"
+  "seg": {
+   "c": "#5e35b1",
+   "fr": "Segment / portion",
+   "en": "Segment / portion"
   },
-  "portion": {
-   "c": "#58d68d",
-   "fr": "Portions de l'aqueduc de Fallope",
-   "en": "Parts of the Fallopian canal"
+  "faisc": {
+   "c": "#1565c0",
+   "fr": "Faisceau / trajet",
+   "en": "Tract / course"
   },
-  "jalon": {
-   "c": "#f0a13c",
-   "fr": "Jalons anatomiques",
-   "en": "Anatomical landmarks"
+  "term": {
+   "c": "#2e7d32",
+   "fr": "Terminaison",
+   "en": "Termination"
   },
-  "clinique": {
-   "c": "#e57373",
-   "fr": "Clinique",
-   "en": "Clinical"
+  "rap": {
+   "c": "#6d4c41",
+   "fr": "Rapports",
+   "en": "Relations"
   }
  },
  "nodes": [
   {
    "id": "seg_intracranien",
-   "x": 170,
-   "y": 90,
-   "w": 270,
-   "label": "1 · Segment intra-crânien",
-   "sub": "étage postérieur de la base du crâne",
-   "lvl": "segment",
+   "x": 360,
+   "y": 105,
+   "w": 380,
+   "label": "Segment intra-crânien",
+   "sub": "étage postérieur de la base du crâne → CAI",
+   "label_en": "Intracranial segment",
+   "sub_en": "posterior level of the skull base → internal auditory canal",
+   "lvl": "seg",
    "desc": {
-    "fr": "Premier segment : dans l'étage postérieur de la base du crâne, le nerf facial décrit un trajet horizontal, oblique en avant et en dehors, du sillon bulbo-pontique jusqu'au conduit auditif interne (CAI). Il chemine dans l'angle ponto-cérébelleux, axe autour duquel s'enroulent le VII bis et le VIII. Rapports : en haut le pédoncule cérébelleux moyen, le V et le IV ; en bas l'artère cérébelleuse inférieure et les nerfs du trou déchiré postérieur (IX, X, XI). Aucune branche dans ce segment.",
-    "en": "First segment: in the posterior floor of the skull base, the facial nerve runs horizontally, obliquely forwards and laterally, from the bulbopontine sulcus to the internal acoustic meatus (IAM), through the cerebellopontine angle, an axis around which VII bis and VIII wind. Relations: above, the middle cerebellar peduncle, V and IV; below, the inferior cerebellar artery and the nerves of the jugular foramen (IX, X, XI). No branches in this segment."
+    "fr": "Premier segment : dans l'étage postérieur de la base du crâne, le nerf facial décrit un trajet horizontal, oblique en avant et en dehors, jusqu'au conduit auditif interne (CAI), en voyageant dans l'angle ponto-cérébelleux.",
+    "en": "First segment: in the posterior level of the skull base, the facial nerve follows a horizontal course, obliquely forward and outward, to the internal auditory canal (IAC), travelling through the cerebellopontine angle."
    }
   },
   {
-   "id": "cai",
-   "x": 170,
-   "y": 200,
-   "w": 270,
-   "label": "Conduit auditif interne (CAI)",
-   "sub": "porte d'entrée du segment intra-pétreux",
-   "lvl": "jalon",
+   "id": "seg_intrapetreux",
+   "x": 360,
+   "y": 265,
+   "w": 380,
+   "label": "Segment intra-pétreux",
+   "sub": "aqueduc de Fallope — trajet en baïonnette, 3 portions",
+   "label_en": "Intrapetrous segment",
+   "sub_en": "Fallopian canal — bayonet course, 3 portions",
+   "lvl": "seg",
    "desc": {
-    "fr": "Au fond du CAI, le nerf facial et les branches du nerf auditif VIII aboutissent sur une petite lame osseuse percée en 5 orifices : le VII et le VII bis s'engagent tous les deux dans l'orifice antéro-supérieur, tandis que chaque branche du VIII emprunte un orifice différent. L'artère auditive interne se place en avant du VII et du VII bis.",
-    "en": "At the fundus of the IAM, the facial nerve and the branches of the auditory nerve VIII reach a small bony lamina pierced by 5 openings: VII and VII bis both enter the anterosuperior opening, while each branch of VIII uses a different one. The internal auditory artery lies in front of VII and VII bis."
+    "fr": "Deuxième segment : arrivé au fond du CAI, le nerf facial pénètre dans l'aqueduc de Fallope, où il présente un trajet en baïonnette en 3 portions séparées par le genou et le coude du nerf facial.",
+    "en": "Second segment: on reaching the fundus of the IAC, the facial nerve enters the Fallopian canal, where it follows a bayonet course in 3 portions separated by the genu and the elbow of the facial nerve."
    }
   },
   {
    "id": "labyrinthique",
-   "x": 470,
-   "y": 200,
-   "w": 300,
-   "label": "2a · Portion labyrinthique",
-   "sub": "horizontale, perpendiculaire à l'axe du rocher",
-   "lvl": "portion",
+   "x": 130,
+   "y": 440,
+   "w": 210,
+   "label": "Portion labyrinthique",
+   "sub": "horizontale, perpendiculaire à l'axe du rocher → genou",
+   "label_en": "Labyrinthine portion",
+   "sub_en": "horizontal, perpendicular to the petrous axis → genu",
+   "lvl": "faisc",
    "desc": {
-    "fr": "Première portion de l'aqueduc de Fallope : horizontale, perpendiculaire à l'axe du rocher, oblique en avant et en dehors ; elle commence à l'orifice de l'aqueduc et aboutit au genou du nerf facial. Rapports : en avant et en dedans la cochlée ; en arrière et en dehors le vestibule. C'est le segment le plus étroit du canal — le plus vulnérable à l'œdème (paralysie faciale a frigore).",
-    "en": "First part of the Fallopian canal: horizontal, perpendicular to the petrous axis, obliquely forwards and laterally; from the canal opening to the genou (knee) of the facial nerve. Relations: anteromedially the cochlea; posterolaterally the vestibule. It is the narrowest part of the canal — the most vulnerable to oedema (Bell's palsy)."
-   }
-  },
-  {
-   "id": "genou",
-   "x": 470,
-   "y": 310,
-   "w": 300,
-   "label": "Genou du nerf facial",
-   "sub": "ganglion géniculé · nerf grand pétreux",
-   "lvl": "jalon",
-   "desc": {
-    "fr": "Le genou marque le premier coude du trajet en baïonnette. Il porte le ganglion géniculé (en avant), où le VII bis se termine et où les deux nerfs s'unissent. Branche : le nerf grand pétreux, rameau n° 1 du cours, véhicule les fibres lacrymo-muco-nasales vers la glande lacrymale. Ni le ganglion ni le grand pétreux ne sont individualisés dans le manifeste (audit) — ils n'existent qu'en schéma.",
-    "en": "The genou (knee) is the first bend of the bayonet course. It carries the geniculate ganglion (anteriorly), where VII bis ends and the two nerves unite. Branch: the greater petrosal nerve, branch no. 1 of the course, carries lacrimo-muco-nasal fibres to the lacrimal gland. Neither the ganglion nor the greater petrosal nerve is individualised in the manifest (audit) — they exist only as diagram."
+    "fr": "Portion labyrinthique : horizontale, perpendiculaire à l'axe du rocher, oblique en avant et en dehors ; elle commence à l'orifice de l'aqueduc de Fallope et aboutit au genou du nerf facial.",
+    "en": "Labyrinthine portion: horizontal, perpendicular to the axis of the petrous bone, obliquely forward and outward; it begins at the orifice of the Fallopian canal and ends at the genu of the facial nerve."
    }
   },
   {
    "id": "tympanique",
-   "x": 470,
-   "y": 420,
-   "w": 300,
-   "label": "2b · Portion tympanique",
-   "sub": "transversale, parallèle à l'axe du rocher",
-   "lvl": "portion",
+   "x": 360,
+   "y": 440,
+   "w": 210,
+   "label": "Portion tympanique",
+   "sub": "transversale, parallèle à l'axe du rocher : genou → coude",
+   "label_en": "Tympanic portion",
+   "sub_en": "transverse, parallel to the petrous axis: genu → elbow",
+   "lvl": "faisc",
    "desc": {
-    "fr": "Deuxième portion : transversale, parallèle à l'axe du rocher, oblique en arrière et en dehors, du genou au coude du nerf facial. Rapports : en dedans le vestibule ; en dehors la partie supérieure de la caisse du tympan ; en haut l'ampoule du canal semi-circulaire latéral ; en bas la paroi médiale de la caisse (fenêtre ovale, fenêtre ronde, muscle du marteau). Segment exposé lors de la chirurgie de l'oreille moyenne.",
-    "en": "Second part: transverse, parallel to the petrous axis, obliquely backwards and laterally, from the genou to the elbow of the facial nerve. Relations: medially the vestibule; laterally the upper part of the tympanic cavity; above, the ampulla of the lateral semicircular canal; below, the medial wall of the cavity (oval window, round window, tensor tympani). A segment at risk in middle-ear surgery."
+    "fr": "Portion tympanique : transversale, parallèle à l'axe du rocher, oblique en arrière et en dehors ; elle va du genou au coude du nerf facial.",
+    "en": "Tympanic portion: transverse, parallel to the axis of the petrous bone, obliquely backward and outward; it runs from the genu to the elbow of the facial nerve."
    }
   },
   {
    "id": "mastoidienne",
-   "x": 470,
-   "y": 530,
-   "w": 300,
-   "label": "2c · Portion mastoïdienne",
+   "x": 590,
+   "y": 440,
+   "w": 210,
+   "label": "Portion mastoïdienne",
    "sub": "verticale, perpendiculaire à l'axe du rocher",
-   "lvl": "portion",
+   "label_en": "Mastoid portion",
+   "sub_en": "vertical, perpendicular to the petrous axis",
+   "lvl": "faisc",
    "desc": {
-    "fr": "Troisième portion : verticale, perpendiculaire à l'axe du rocher ; elle descend du coude au trou stylo-mastoïdien. Rapports : en dedans le labyrinthe osseux puis la fosse jugulaire ; en dehors l'additus ad antrum et les cellules mastoïdiennes ; en avant la paroi postérieure du CAE et de la caisse (pyramide et muscle de l'étrier) ; en arrière le sinus latéral et l'antre mastoïdien. Branches : le nerf du muscle de l'étrier et la corde du tympan (voir le schéma intra-pétreux, fig. 17).",
-    "en": "Third part: vertical, perpendicular to the petrous axis; it descends from the elbow to the stylomastoid foramen. Relations: medially the bony labyrinth then the jugular fossa; laterally the aditus ad antrum and mastoid cells; anteriorly the posterior wall of the EAM and tympanic cavity (pyramid and stapedius); posteriorly the lateral sinus and mastoid antrum. Branches: the nerve to stapedius and the chorda tympani (see the intrapetrous diagram, fig. 17)."
+    "fr": "Portion mastoïdienne : verticale, perpendiculaire à l'axe du rocher ; elle descend depuis le coude jusqu'au trou stylo-mastoïdien.",
+    "en": "Mastoid portion: vertical, perpendicular to the axis of the petrous bone; it descends from the elbow to the stylomastoid foramen."
    }
   },
   {
    "id": "trou_sm",
-   "x": 170,
-   "y": 530,
-   "w": 270,
+   "x": 360,
+   "y": 600,
+   "r": 52,
    "label": "Trou stylo-mastoïdien",
    "sub": "sortie du crâne",
-   "lvl": "jalon",
+   "label_en": "Stylomastoid foramen",
+   "sub_en": "exit from the skull",
+   "lvl": "rap",
    "desc": {
-    "fr": "La portion mastoïdienne aboutit au trou stylo-mastoïdien, par où le nerf facial sort du crâne. Ce foramen n'est pas un repère individualisé du manifeste (audit) ; dans la scène 3D, la sortie se lit entre l'os temporal et la glande parotide.",
-    "en": "The mastoid part ends at the stylomastoid foramen, through which the facial nerve leaves the skull. This foramen is not an individualised landmark of the manifest (audit); in the 3D scene the exit is read between the temporal bone and the parotid gland."
+    "fr": "La portion mastoïdienne aboutit au trou stylo-mastoïdien, par où le nerf facial sort du crâne pour devenir extra-crânien.",
+    "en": "The mastoid portion ends at the stylomastoid foramen, through which the facial nerve leaves the skull to become extracranial."
    }
   },
   {
    "id": "seg_extracranien",
-   "x": 170,
-   "y": 650,
-   "w": 270,
-   "label": "3 · Segment extra-crânien",
-   "sub": "loge parotidienne",
-   "lvl": "segment",
-   "desc": {
-    "fr": "Troisième segment : le nerf facial redevient horizontal, oblique en avant et en dehors. Dans la loge parotidienne, il est entre le muscle stylo-hyoïdien en dedans et le ventre postérieur du muscle digastrique en dehors ; il décrit une courbe à concavité antéro-interne, en dehors de la carotide externe et de la jugulaire externe, puis traverse la glande parotide en plein parenchyme.",
-    "en": "Third segment: the facial nerve becomes horizontal again, obliquely forwards and laterally. In the parotid compartment it lies between the stylohyoid medially and the posterior belly of the digastric laterally; it curves with anteromedial concavity, lateral to the external carotid and external jugular, then crosses the parotid gland within its parenchyma."
-   }
-  },
-  {
-   "id": "division",
-   "x": 470,
-   "y": 650,
-   "w": 300,
-   "label": "Division terminale",
-   "sub": "temporo-faciale · cervico-faciale",
-   "lvl": "jalon",
-   "desc": {
-    "fr": "En plein parenchyme parotidien, le tronc se divise en 2 branches terminales : la branche temporo-faciale (supérieure) et la branche cervico-faciale (inférieure), qui se ramifient en rameaux pour tous les muscles peauciers de la face et du cou. Détail des rameaux : schéma de la figure 18. Le plan du nerf divise chirurgicalement la parotide en lobes superficiel et profond.",
-    "en": "Within the parotid parenchyma the trunk divides into 2 terminal branches: the temporofacial (upper) and cervicofacial (lower) branches, ramifying into rami for all the cutaneous muscles of face and neck. Detail of the rami: figure 18 diagram. The nerve's plane surgically divides the parotid into superficial and deep lobes."
-   }
-  },
-  {
-   "id": "clinique_seg",
    "x": 360,
-   "y": 790,
-   "w": 560,
-   "label": "Clinique des segments",
-   "sub": "fracture du rocher · chirurgie otologique et parotidienne",
-   "lvl": "clinique",
+   "y": 745,
+   "w": 380,
+   "label": "Segment extra-crânien",
+   "sub": "horizontal, oblique en avant et en dehors — loge parotidienne",
+   "label_en": "Extracranial segment",
+   "sub_en": "horizontal, obliquely forward and outward — parotid compartment",
+   "lvl": "seg",
    "desc": {
-    "fr": "Le nerf facial est très exposé aux traumatismes, à l'infection et aux tumeurs ; la connaissance de ses rapports est indispensable avant toute chirurgie otologique ou parotidienne (conclusion du cours). Le niveau de la lésion se déduit des branches perdues : atteinte au-dessus du grand pétreux = œil sec ; au-dessus du nerf de l'étrier = hyperacousie ; au-dessus de la corde du tympan = agueusie des 2/3 antérieurs de la langue ; en aval du trou stylo-mastoïdien = paralysie motrice pure.",
-    "en": "The facial nerve is highly exposed to trauma, infection and tumours; knowledge of its relations is essential before any otological or parotid surgery (course conclusion). The lesion level is deduced from the branches lost: above the greater petrosal = dry eye; above the nerve to stapedius = hyperacusis; above the chorda tympani = taste loss over the anterior 2/3 of the tongue; beyond the stylomastoid foramen = pure motor palsy."
+    "fr": "Troisième segment : le nerf facial redevient horizontal, oblique en avant et en dehors ; il traverse la glande parotide en plein parenchyme.",
+    "en": "Third segment: the facial nerve becomes horizontal again, obliquely forward and outward; it crosses the parotid gland within its parenchyma."
+   }
+  },
+  {
+   "id": "branches_terminales",
+   "x": 360,
+   "y": 905,
+   "w": 340,
+   "label": "2 branches terminales",
+   "sub": "temporo-faciale et cervico-faciale",
+   "label_en": "2 terminal branches",
+   "sub_en": "temporofacial and cervicofacial",
+   "lvl": "term",
+   "desc": {
+    "fr": "Dans la parotide, le nerf facial se divise en 2 branches terminales : la branche temporo-faciale et la branche cervico-faciale, qui innervent les muscles de la mimique.",
+    "en": "Within the parotid gland, the facial nerve divides into 2 terminal branches: the temporofacial and cervicofacial branches, which supply the muscles of facial expression."
+   }
+  },
+  {
+   "id": "rep_tube_auditif",
+   "x": 110,
+   "y": 1010,
+   "w": 170,
+   "label": "A - Tube auditif",
+   "sub": "repère de la légende",
+   "label_en": "A - Auditory tube",
+   "sub_en": "legend landmark",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "A - Tube auditif : repère anatomique de la légende, rapport de la portion intra-pétreuse correspondante — nœud de repère de schéma.",
+    "en": "A - Auditory tube: anatomical landmark of the legend, relation of the corresponding intrapetrous portion — diagram landmark node."
+   }
+  },
+  {
+   "id": "rep_caisse_tympan",
+   "x": 290,
+   "y": 1010,
+   "w": 170,
+   "label": "B - Caisse du tympan",
+   "sub": "repère de la légende",
+   "label_en": "B - Tympanic cavity",
+   "sub_en": "legend landmark",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "B - Caisse du tympan : repère anatomique de la légende, rapport de la portion intra-pétreuse correspondante — nœud de repère de schéma.",
+    "en": "B - Tympanic cavity: anatomical landmark of the legend, relation of the corresponding intrapetrous portion — diagram landmark node."
+   }
+  },
+  {
+   "id": "rep_antre_mastoidien",
+   "x": 470,
+   "y": 1010,
+   "w": 170,
+   "label": "C - Antre mastoïdien",
+   "sub": "repère de la légende",
+   "label_en": "C - Mastoid antrum",
+   "sub_en": "legend landmark",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "C - Antre mastoïdien : repère anatomique de la légende, rapport de la portion intra-pétreuse correspondante — nœud de repère de schéma.",
+    "en": "C - Mastoid antrum: anatomical landmark of the legend, relation of the corresponding intrapetrous portion — diagram landmark node."
+   }
+  },
+  {
+   "id": "rep_canal_carotidien",
+   "x": 640,
+   "y": 1010,
+   "w": 150,
+   "label": "D - Canal carotidien",
+   "sub": "repère de la légende",
+   "label_en": "D - Carotid canal",
+   "sub_en": "legend landmark",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "D - Canal carotidien : repère anatomique de la légende, rapport de la portion intra-pétreuse correspondante — nœud de repère de schéma.",
+    "en": "D - Carotid canal: anatomical landmark of the legend, relation of the corresponding intrapetrous portion — diagram landmark node."
+   }
+  },
+  {
+   "id": "oreille_interne",
+   "x": 160,
+   "y": 1100,
+   "w": 190,
+   "label": "Oreille interne",
+   "sub": "repère de la légende",
+   "label_en": "Inner ear",
+   "sub_en": "legend landmark",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Oreille interne : repère anatomique de la légende, rapport de la portion intra-pétreuse correspondante — nœud de repère de schéma.",
+    "en": "Inner ear: anatomical landmark of the legend, relation of the corresponding intrapetrous portion — diagram landmark node."
+   }
+  },
+  {
+   "id": "oreille_moyenne",
+   "x": 360,
+   "y": 1100,
+   "w": 190,
+   "label": "Oreille moyenne",
+   "sub": "repère de la légende",
+   "label_en": "Middle ear",
+   "sub_en": "legend landmark",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Oreille moyenne : repère anatomique de la légende, rapport de la portion intra-pétreuse correspondante — nœud de repère de schéma.",
+    "en": "Middle ear: anatomical landmark of the legend, relation of the corresponding intrapetrous portion — diagram landmark node."
+   }
+  },
+  {
+   "id": "oreille_externe",
+   "x": 560,
+   "y": 1100,
+   "w": 190,
+   "label": "Oreille externe",
+   "sub": "repère de la légende",
+   "label_en": "External ear",
+   "sub_en": "legend landmark",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Oreille externe : repère anatomique de la légende, rapport de la portion intra-pétreuse correspondante — nœud de repère de schéma.",
+    "en": "External ear: anatomical landmark of the legend, relation of the corresponding intrapetrous portion — diagram landmark node."
+   }
+  },
+  {
+   "id": "rep_note_portions",
+   "x": 360,
+   "y": 1200,
+   "w": 380,
+   "label": "Portions intra-pétreuses",
+   "sub": "labyrinthique · tympanique · mastoïdienne",
+   "label_en": "Intrapetrous portions",
+   "sub_en": "labyrinthine · tympanic · mastoid",
+   "lvl": "rap",
+   "note": {
+    "fr": "Schéma seul — pas de maillage 3D",
+    "en": "Diagram only — no 3D mesh"
+   },
+   "desc": {
+    "fr": "Les trois portions intra-pétreuses du VII (labyrinthique, tympanique, mastoïdienne) sont les nœuds du segment correspondant ci-dessus ; les repères A–D et les trois oreilles s'y rattachent.",
+    "en": "The three intrapetrous portions of VII (labyrinthine, tympanic, mastoid) are the nodes of the corresponding segment above; landmarks A–D and the three ears attach to them."
    }
   }
  ],
  "edges": [
   [
    "seg_intracranien",
-   "cai"
+   "seg_intrapetreux"
   ],
   [
-   "cai",
+   "seg_intrapetreux",
    "labyrinthique"
   ],
   [
    "labyrinthique",
-   "genou"
-  ],
-  [
-   "genou",
    "tympanique"
   ],
   [
@@ -188,16 +326,41 @@
   ],
   [
    "seg_extracranien",
-   "division"
+   "branches_terminales"
   ],
   [
-   "mastoidienne",
-   "clinique_seg",
+   "tympanique",
+   "rep_tube_auditif",
    1
   ],
   [
-   "division",
-   "clinique_seg",
+   "tympanique",
+   "rep_caisse_tympan",
+   1
+  ],
+  [
+   "mastoidienne",
+   "rep_antre_mastoidien",
+   1
+  ],
+  [
+   "labyrinthique",
+   "rep_canal_carotidien",
+   1
+  ],
+  [
+   "labyrinthique",
+   "oreille_interne",
+   1
+  ],
+  [
+   "tympanique",
+   "oreille_moyenne",
+   1
+  ],
+  [
+   "seg_extracranien",
+   "oreille_externe",
    1
   ]
  ]

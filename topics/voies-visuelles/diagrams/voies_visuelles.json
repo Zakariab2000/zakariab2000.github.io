@@ -1,263 +1,219 @@
 {
- "titre_fr": "Voies de conduction visuelle — schéma interactif",
- "titre_en": "Visual conduction pathways — interactive diagram",
+ "titre_fr": "Voies de conduction visuelle",
+ "titre_en": "Visual conduction pathways",
  "w": 720,
- "h": 980,
+ "h": 1020,
  "levels": {
-  "voie": {
-   "c": "#4fc3f7",
-   "fr": "Voie visuelle (3 neurones)",
-   "en": "Visual pathway (3 neurons)"
+  "recep": {
+   "c": "#8d6e63",
+   "fr": "Récepteurs",
+   "en": "Receptors"
   },
-  "faisceau": {
-   "c": "#58d68d",
-   "fr": "Faisceaux de fibres",
-   "en": "Fibre bundles"
+  "faisc": {
+   "c": "#1565c0",
+   "fr": "Faisceau / trajet",
+   "en": "Tract / course"
   },
-  "terminaison": {
-   "c": "#b388ff",
-   "fr": "Terminaisons non corticales (20 %)",
-   "en": "Non-cortical terminations (20%)"
+  "decuss": {
+   "c": "#ef6c00",
+   "fr": "Décussation",
+   "en": "Decussation"
   },
-  "clinique": {
-   "c": "#e57373",
-   "fr": "Clinique — déficits du champ visuel",
-   "en": "Clinical — visual field defects"
+  "gangl": {
+   "c": "#00838f",
+   "fr": "Ganglion / relais",
+   "en": "Ganglion / relay"
+  },
+  "cortex": {
+   "c": "#c62828",
+   "fr": "Terminaison corticale",
+   "en": "Cortical termination"
+  },
+  "note": {
+   "c": "#757575",
+   "fr": "Note du cours",
+   "en": "Course note"
   }
  },
  "nodes": [
   {
    "id": "retine",
-   "x": 115,
-   "y": 90,
-   "w": 190,
+   "x": 360,
+   "y": 170,
+   "w": 380,
    "label": "Rétine",
-   "sub": "N1 bipolaire → N2 multipolaire",
-   "lvl": "voie",
+   "sub": "origine : photorécepteurs → N1 bipolaire → N2 multipolaire",
+   "label_en": "Retina",
+   "sub_en": "origin: photoreceptors → N1 bipolar → N2 multipolar",
+   "lvl": "recep",
    "desc": {
-    "fr": "Les voies visuelles sont des voies à 3 neurones qui commencent dans l'épaisseur de la rétine : N1 = cellule bipolaire, N2 = cellule multipolaire (ganglionnaire). Au centre, chaque cône est connecté à une bipolaire puis à une multipolaire (1 pour 1) ; en périphérie, plusieurs cellules sensorielles convergent sur une bipolaire, puis plusieurs bipolaires sur une multipolaire.",
-    "en": "The visual pathways are 3-neuron pathways beginning within the retina: N1 = bipolar cell, N2 = multipolar (ganglion) cell. Centrally each cone connects to one bipolar then one multipolar cell (1-to-1); peripherally several sensory cells converge on one bipolar, then several bipolars on one multipolar cell."
+    "fr": "Les voies visuelles sont des voies à 3 neurones qui commencent dans l'épaisseur de la rétine : photorécepteurs, cellule bipolaire (N1) puis cellule multipolaire (N2). La perte d'un œil ou la section d'un nerf optique entraîne une cécité du même côté.",
+    "en": "The visual pathways are 3-neuron pathways beginning within the retina: photoreceptors, bipolar cell (N1) then multipolar cell (N2). Loss of an eye or section of an optic nerve causes blindness on the same side."
    }
   },
   {
    "id": "nerf_optique",
-   "x": 115,
-   "y": 205,
-   "w": 190,
-   "label": "Nerf optique",
-   "sub": "axones de N2 · canal optique",
-   "lvl": "voie",
-   "desc": {
-    "fr": "Les axones de N2 convergent vers la papille optique pour former le nerf optique, qui pénètre dans la boîte crânienne par le canal optique.",
-    "en": "N2 axons converge on the optic disc to form the optic nerve, which enters the cranial cavity through the optic canal."
-   }
-  },
-  {
-   "id": "def_no",
    "x": 360,
-   "y": 205,
-   "w": 230,
-   "label": "Section du nerf optique",
-   "sub": "→ cécité du même côté",
-   "lvl": "clinique",
+   "y": 290,
+   "w": 340,
+   "label": "Nerf optique",
+   "sub": "axones de N2, canal optique",
+   "label_en": "Optic nerve",
+   "sub_en": "axons of N2, optic canal",
+   "lvl": "faisc",
    "desc": {
-    "fr": "Clinique (conclusion du cours) : la perte d'un œil ou la section d'un nerf optique entraîne une cécité du même côté.",
-    "en": "Clinical (course conclusion): loss of an eye or section of an optic nerve causes blindness on the same side."
+    "fr": "Les axones de N2 convergent vers la papille optique et forment le nerf optique, qui pénètre dans la boîte crânienne par le canal optique.",
+    "en": "The axons of N2 converge toward the optic papilla and form the optic nerve, which enters the cranial cavity through the optic canal."
    }
   },
   {
    "id": "chiasma",
-   "x": 115,
-   "y": 320,
-   "w": 190,
-   "label": "Chiasma optique",
-   "sub": "au-dessus de l'hypophyse",
-   "lvl": "voie",
-   "desc": {
-    "fr": "Le nerf optique se réunit, sur la ligne médiane et au-dessus de l'hypophyse, avec son homologue controlatéral pour former le chiasma optique, d'où partent les bandelettes optiques. C'est le lieu de la décussation partielle : seules les fibres nasales croisent la ligne médiane.",
-    "en": "The optic nerve joins its contralateral counterpart on the midline, above the hypophysis, to form the optic chiasm, from which the optic tracts arise. It is the site of partial decussation: only nasal fibres cross the midline."
-   }
-  },
-  {
-   "id": "fx_nasal",
-   "x": 360,
-   "y": 285,
-   "w": 230,
-   "label": "Faisceau nasal",
-   "sub": "croise → CGL controlatéral",
-   "lvl": "faisceau",
-   "desc": {
-    "fr": "Faisceau nasal : les axones issus de la rétine nasale (périphérique) croisent la ligne médiane au niveau du chiasma et gagnent le corps genouillé latéral controlatéral — ils véhiculent le champ visuel temporal.",
-    "en": "Nasal bundle: axons from the nasal (peripheral) retina cross the midline at the chiasm and reach the contralateral lateral geniculate body — they carry the temporal visual field."
-   }
-  },
-  {
-   "id": "fx_temporal",
    "x": 360,
    "y": 360,
-   "w": 230,
-   "label": "Faisceau temporal",
-   "sub": "direct → CGL homolatéral",
-   "lvl": "faisceau",
+   "w": 380,
+   "label": "Chiasma optique",
+   "sub": "nasal croise — temporal direct — maculaire bilatéral",
+   "label_en": "Optic chiasm",
+   "sub_en": "nasal crosses — temporal direct — macular bilateral",
+   "lvl": "decuss",
    "desc": {
-    "fr": "Faisceau temporal : les axones issus de la rétine temporale empruntent le chiasma latéralement, sans croiser, et gagnent le corps genouillé latéral homolatéral — ils véhiculent le champ visuel nasal.",
-    "en": "Temporal bundle: axons from the temporal retina pass laterally through the chiasm without crossing and reach the homolateral lateral geniculate body — they carry the nasal visual field."
-   }
-  },
-  {
-   "id": "fx_maculaire",
-   "x": 360,
-   "y": 435,
-   "w": 230,
-   "label": "Faisceau maculaire",
-   "sub": "projection bilatérale",
-   "lvl": "faisceau",
-   "desc": {
-    "fr": "Les axones issus de la région maculaire forment le faisceau central ou maculaire, qui gagne après une double projection au niveau du chiasma les corps genouillés latéraux droit et gauche ; il se projette de façon bilatérale sur l'extrémité postérieure de l'aire 17.",
-    "en": "Axons from the macular region form the central (macular) bundle, which after a double projection at the chiasm reaches both lateral geniculate bodies; it projects bilaterally onto the posterior end of area 17."
-   }
-  },
-  {
-   "id": "def_chiasma",
-   "x": 600,
-   "y": 320,
-   "w": 210,
-   "label": "Lésion du chiasma",
-   "sub": "→ hémianopsie bitemporale",
-   "lvl": "clinique",
-   "desc": {
-    "fr": "Clinique (conclusion du cours) : une atteinte du chiasma (qui ne lèse que les fibres nasales croisées) entraîne une hémianopsie bitemporale — perte des deux champs visuels temporaux.",
-    "en": "Clinical (course conclusion): a chiasmal lesion (damaging only the crossing nasal fibres) causes bitemporal hemianopia — loss of both temporal visual fields."
+    "fr": "Au-dessus de l'hypophyse, les deux nerfs optiques s'unissent pour former le chiasma : le faisceau nasal croise la ligne médiane vers le corps genouillé controlatéral, le faisceau temporal gagne le corps genouillé homolatéral, et le faisceau maculaire se projette des deux côtés après une double projection. Une atteinte du chiasma entraîne une hémianopsie bitemporale.",
+    "en": "Above the hypophysis, the two optic nerves unite to form the chiasm: the nasal bundle crosses the midline to the contralateral geniculate body, the temporal bundle reaches the ipsilateral geniculate body, and the macular bundle projects to both sides after a double projection. A chiasmal lesion causes bitemporal hemianopia."
    }
   },
   {
    "id": "bandelette",
-   "x": 115,
-   "y": 435,
-   "w": 190,
+   "x": 360,
+   "y": 465,
+   "w": 360,
    "label": "Bandelette optique",
-   "sub": "chiasma → corps genouillé",
-   "lvl": "voie",
+   "sub": "du chiasma au corps genouillé latéral",
+   "label_en": "Optic tract",
+   "sub_en": "from the chiasm to the lateral geniculate body",
+   "lvl": "faisc",
    "desc": {
-    "fr": "La bandelette optique conduit les fibres du chiasma vers le corps genouillé latéral : chaque bandelette contient les fibres temporales homolatérales et les fibres nasales controlatérales, donc un hémichamp visuel complet.",
-    "en": "The optic tract carries fibres from the chiasm to the lateral geniculate body: each tract contains homolateral temporal fibres and contralateral nasal fibres, i.e. one complete visual hemifield."
+    "fr": "La bandelette optique conduit les fibres du chiasma vers le corps genouillé latéral. Sa section, et au-delà, entraîne une hémianopsie latérale homonyme : perte du champ nasal du même côté et du champ temporal du côté opposé.",
+    "en": "The optic tract carries the fibres from the chiasm to the lateral geniculate body. Its section, and beyond, causes homonymous lateral hemianopia: loss of the nasal field on the same side and of the temporal field on the opposite side."
    }
   },
   {
    "id": "cgl",
-   "x": 115,
-   "y": 550,
-   "w": 190,
-   "label": "Corps géniculé latéral",
-   "sub": "relais de N3 · 80 % visuelles",
-   "lvl": "voie",
+   "x": 195,
+   "y": 615,
+   "w": 290,
+   "label": "Corps genouillé latéral — N3",
+   "sub": "80 % : fibres visuelles",
+   "label_en": "Lateral geniculate body — N3",
+   "sub_en": "80%: visual fibres",
+   "lvl": "gangl",
    "desc": {
-    "fr": "80 % des fibres de la bandelette optique, dites fibres visuelles, font synapse au niveau du corps genouillé latéral avec les corps cellulaires du 3ᵉ neurone (N3), dont les axones constituent les radiations optiques. Les 20 % restantes ne gagnent pas le cortex occipital (fibres réflexes, végétatives, associatives).",
-    "en": "80% of optic tract fibres, the visual fibres, synapse in the lateral geniculate body with the cell bodies of the 3rd neuron (N3), whose axons form the optic radiations. The remaining 20% do not reach the occipital cortex (reflex, vegetative, associative fibres)."
+    "fr": "80 % des fibres de la bandelette, dites fibres visuelles, font synapse au niveau du corps genouillé latéral avec les corps cellulaires du troisième neurone (N3).",
+    "en": "80% of the tract's fibres, the visual fibres, synapse in the lateral geniculate body with the cell bodies of the third neuron (N3)."
    }
   },
   {
-   "id": "fibres_reflexes",
-   "x": 600,
-   "y": 505,
-   "w": 210,
-   "label": "Fibres réflexes",
-   "sub": "→ tubercule quadrijumeau ant.",
-   "lvl": "terminaison",
+   "id": "fibres20",
+   "x": 540,
+   "y": 615,
+   "w": 300,
+   "label": "Fibres non corticales",
+   "sub": "20 % : réflexes, végétatives, associatives",
+   "label_en": "Non-cortical fibres",
+   "sub_en": "20%: reflex, vegetative, associative",
+   "lvl": "note",
    "desc": {
-    "fr": "Fibres réflexes (20 %) : elles traversent le corps genouillé latéral et se terminent dans le tubercule quadrijumeau antérieur, où elles font synapse avec des neurones projetés sur le noyau du III — à l'origine des réflexes pupillaire et d'accommodation-convergence.",
-    "en": "Reflex fibres (20%): they cross the lateral geniculate body and end in the anterior quadrigeminal tubercle, synapsing with neurons projected onto the nucleus of III — origin of the pupillary and accommodation-convergence reflexes."
-   }
-  },
-  {
-   "id": "fibres_vegetatives",
-   "x": 600,
-   "y": 580,
-   "w": 210,
-   "label": "Fibres végétatives",
-   "sub": "→ hypothalamus",
-   "lvl": "terminaison",
-   "desc": {
-    "fr": "Fibres végétatives (20 %) : elles font synapse au niveau du corps genouillé latéral pour aller se terminer au niveau de l'hypothalamus.",
-    "en": "Vegetative fibres (20%): they synapse at the lateral geniculate body and end in the hypothalamus."
-   }
-  },
-  {
-   "id": "fibres_associatives",
-   "x": 600,
-   "y": 655,
-   "w": 210,
-   "label": "Fibres associatives",
-   "sub": "→ pulvinar",
-   "lvl": "terminaison",
-   "desc": {
-    "fr": "Fibres associatives (20 %) : elles font synapse au niveau du corps genouillé latéral et vont se terminer au niveau d'un noyau thalamique appelé le pulvinar.",
-    "en": "Associative fibres (20%): they synapse at the lateral geniculate body and end in a thalamic nucleus called the pulvinar."
+    "fr": "Les 20 % de fibres restantes ne gagnent pas le cortex occipital ; elles se classent en 3 groupes : réflexes, végétatives et associatives.",
+    "en": "The remaining 20% of fibres do not reach the occipital cortex; they fall into 3 groups: reflex, vegetative and associative."
    }
   },
   {
    "id": "radiations",
-   "x": 115,
-   "y": 665,
-   "w": 190,
+   "x": 195,
+   "y": 770,
+   "w": 290,
    "label": "Radiations optiques",
-   "sub": "axones de N3 · 2 faisceaux",
-   "lvl": "voie",
+   "sub": "sup. pariétales / inf. temporales",
+   "label_en": "Optic radiations",
+   "sub_en": "superior parietal / inferior temporal",
+   "lvl": "faisc",
    "desc": {
-    "fr": "Les axones de N3 constituent les radiations optiques, qui gagnent le cortex occipital selon 2 faisceaux : un supérieur dit pariétal et un inférieur dit temporal. (Les radiations ne sont pas modélisées en 3D dans le manifeste — d'où ce schéma.)",
-    "en": "N3 axons form the optic radiations, reaching the occipital cortex in 2 bundles: a superior (parietal) and an inferior (temporal) one. (The radiations are not modelled in 3D in the manifest — hence this diagram.)"
-   }
-  },
-  {
-   "id": "fx_sup",
-   "x": 600,
-   "y": 745,
-   "w": 210,
-   "label": "Faisceau supérieur",
-   "sub": "pariétal → lèvre sup. calcarine",
-   "lvl": "faisceau",
-   "desc": {
-    "fr": "Faisceau supérieur dit pariétal des radiations optiques : il gagne la lèvre supérieure de la scissure calcarine (cuneus) — il véhicule le champ visuel inférieur.",
-    "en": "Superior (parietal) bundle of the optic radiations: reaches the upper lip of the calcarine fissure (cuneus) — it carries the inferior visual field."
-   }
-  },
-  {
-   "id": "fx_inf",
-   "x": 600,
-   "y": 820,
-   "w": 210,
-   "label": "Faisceau inférieur",
-   "sub": "temporal → lèvre inf. calcarine",
-   "lvl": "faisceau",
-   "desc": {
-    "fr": "Faisceau inférieur dit temporal des radiations optiques : il gagne la lèvre inférieure de la scissure calcarine (gyrus lingual) — il véhicule le champ visuel supérieur.",
-    "en": "Inferior (temporal) bundle of the optic radiations: reaches the lower lip of the calcarine fissure (lingual gyrus) — it carries the superior visual field."
-   }
-  },
-  {
-   "id": "def_post",
-   "x": 600,
-   "y": 905,
-   "w": 220,
-   "label": "Lésion rétro-chiasmatique",
-   "sub": "→ hémianopsie latérale homonyme",
-   "lvl": "clinique",
-   "desc": {
-    "fr": "Clinique (conclusion du cours) : une section de la bandelette optique et au-delà entraîne une disparition du champ visuel nasal du même côté et du champ visuel temporal du côté opposé = hémianopsie latérale homonyme.",
-    "en": "Clinical (course conclusion): a lesion of the optic tract and beyond causes loss of the nasal visual field on the same side and of the temporal field on the opposite side = homonymous lateral hemianopia."
+    "fr": "Les axones de N3 constituent les radiations optiques, en 2 faisceaux : un supérieur dit pariétal, vers la lèvre supérieure de la scissure calcarine, et un inférieur dit temporal, vers la lèvre inférieure.",
+    "en": "The axons of N3 form the optic radiations, in 2 bundles: a superior, parietal one, to the upper lip of the calcarine fissure, and an inferior, temporal one, to the lower lip."
    }
   },
   {
    "id": "aire17",
-   "x": 115,
-   "y": 800,
-   "w": 190,
-   "label": "Aire 17 — calcarine",
-   "sub": "cortex visuel primaire",
-   "lvl": "voie",
+   "x": 195,
+   "y": 920,
+   "w": 290,
+   "label": "Aire visuelle 17 — scissure calcarine",
+   "sub": "somatotopie précise ; macula en bilatéral, en arrière",
+   "label_en": "Visual area 17 — calcarine fissure",
+   "sub_en": "precise retinotopy; macula bilateral, posteriorly",
+   "lvl": "cortex",
    "desc": {
-    "fr": "La projection au niveau de l'aire 17 (lèvres de la scissure calcarine) se fait selon une somatotopie (rétinotopie) très précise ; le faisceau maculaire se projette de façon bilatérale sur l'extrémité postérieure de l'aire 17.",
-    "en": "Projection onto area 17 (lips of the calcarine fissure) follows a very precise somatotopy (retinotopy); the macular bundle projects bilaterally onto the posterior end of area 17."
+    "fr": "La projection sur l'aire 17 se fait selon une somatotopie (rétinotopie) très précise ; le faisceau maculaire se projette de façon bilatérale sur l'extrémité postérieure de l'aire 17.",
+    "en": "Projection onto area 17 follows a very precise somatotopy (retinotopy); the macular bundle projects bilaterally onto the posterior extremity of area 17."
+   }
+  },
+  {
+   "id": "reflexes",
+   "x": 420,
+   "y": 790,
+   "w": 140,
+   "label": "Fibres réflexes",
+   "sub": "tubercule quadrijumeau ant. → noyau du III",
+   "label_en": "Reflex fibres",
+   "sub_en": "anterior quadrigeminal tubercle → nucleus of III",
+   "lvl": "note",
+   "desc": {
+    "fr": "Les fibres réflexes traversent le corps genouillé latéral et se terminent dans le tubercule quadrijumeau antérieur, dont les neurones se projettent sur le noyau du III : origine des réflexes pupillaire et d'accommodation-convergence.",
+    "en": "The reflex fibres cross the lateral geniculate body and end in the anterior quadrigeminal tubercle, whose neurons project onto the nucleus of III: origin of the pupillary and accommodation-convergence reflexes."
+   }
+  },
+  {
+   "id": "vegetatives",
+   "x": 570,
+   "y": 790,
+   "w": 140,
+   "label": "Fibres végétatives",
+   "sub": "synapse au CGL → hypothalamus",
+   "label_en": "Vegetative fibres",
+   "sub_en": "synapse in the LGB → hypothalamus",
+   "lvl": "note",
+   "desc": {
+    "fr": "Les fibres végétatives font synapse au niveau du corps genouillé latéral pour aller se terminer au niveau de l'hypothalamus.",
+    "en": "The vegetative fibres synapse in the lateral geniculate body and then end in the hypothalamus."
+   }
+  },
+  {
+   "id": "associatives",
+   "x": 480,
+   "y": 930,
+   "w": 170,
+   "label": "Fibres associatives",
+   "sub": "synapse au CGL → pulvinar (thalamus)",
+   "label_en": "Associative fibres",
+   "sub_en": "synapse in the LGB → pulvinar (thalamus)",
+   "lvl": "note",
+   "desc": {
+    "fr": "Les fibres associatives font synapse au niveau du corps genouillé latéral et se terminent au niveau d'un noyau thalamique appelé le pulvinar.",
+    "en": "The associative fibres synapse in the lateral geniculate body and end in a thalamic nucleus called the pulvinar."
+   }
+  },
+  {
+   "id": "champs_visuels",
+   "x": 360,
+   "y": 60,
+   "w": 340,
+   "label": "Champs visuels",
+   "sub": "premier élément du schéma",
+   "label_en": "Visual fields",
+   "sub_en": "first element of the scheme",
+   "lvl": "recep",
+   "desc": {
+    "fr": "Champs visuels : le champ temporal se projette sur la rétine nasale, le champ nasal sur la rétine temporale — premier élément du schéma de la planche, en tête de la chaîne visuelle.",
+    "en": "Visual fields: the temporal field projects onto the nasal retina, the nasal field onto the temporal retina — first element of the plate's scheme, at the head of the visual chain."
    }
   }
  ],
@@ -271,37 +227,7 @@
    "chiasma"
   ],
   [
-   "nerf_optique",
-   "def_no",
-   1
-  ],
-  [
    "chiasma",
-   "fx_nasal"
-  ],
-  [
-   "chiasma",
-   "fx_temporal"
-  ],
-  [
-   "chiasma",
-   "fx_maculaire"
-  ],
-  [
-   "chiasma",
-   "def_chiasma",
-   1
-  ],
-  [
-   "fx_nasal",
-   "bandelette"
-  ],
-  [
-   "fx_temporal",
-   "bandelette"
-  ],
-  [
-   "fx_maculaire",
    "bandelette"
   ],
   [
@@ -310,7 +236,7 @@
   ],
   [
    "bandelette",
-   "def_post",
+   "fibres20",
    1
   ],
   [
@@ -318,35 +244,24 @@
    "radiations"
   ],
   [
-   "cgl",
-   "fibres_reflexes",
-   1
-  ],
-  [
-   "cgl",
-   "fibres_vegetatives",
-   1
-  ],
-  [
-   "cgl",
-   "fibres_associatives",
-   1
-  ],
-  [
    "radiations",
-   "fx_sup"
-  ],
-  [
-   "radiations",
-   "fx_inf"
-  ],
-  [
-   "fx_sup",
    "aire17"
   ],
   [
-   "fx_inf",
-   "aire17"
+   "fibres20",
+   "reflexes"
+  ],
+  [
+   "fibres20",
+   "vegetatives"
+  ],
+  [
+   "fibres20",
+   "associatives"
+  ],
+  [
+   "champs_visuels",
+   "retine"
   ]
  ]
 }

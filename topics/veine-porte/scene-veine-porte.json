@@ -205,8 +205,24 @@
      }
     },
     {
+     "id": "middle_colic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine colique moyenne",
+     "name_en": "Middle colic vein",
+     "system": "veines",
+     "file": "models/veines/middle_colic_vein.glb"
+    },
+    {
+     "id": "right_colic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine colique droite",
+     "name_en": "Right colic vein",
+     "system": "veines",
+     "file": "models/veines/right_colic_vein.glb"
+    },
+    {
      "id": "duodenum",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Duodénum",
      "name_en": "Duodenum",
      "system": "organes",
@@ -237,8 +253,8 @@
     },
     {
      "id": "posterior_segment_of_liver_i",
-     "role": "rapport",
-     "nom_fr": "Segment postérieur du foie (I)",
+     "role": "rapports",
+     "nom_fr": "Segment caudé (I)",
      "name_en": "Posterior segment of liver (I)",
      "system": "organes",
      "file": "models/organes/posterior_segment_of_liver_i.glb",
@@ -267,10 +283,68 @@
      },
      "couleur_presentation": "#c0563b",
      "fiche_fr": "Segment I (caudé) — segment dorsal, situé en arrière du tronc de la veine porte ; il constitue à lui seul le lobe caudé (lobe de Spiegel). Vascularisation porte variable : branche droite, branche gauche ou les deux. Drainage sus-hépatique propre : les veines dorsales se jettent directement dans la veine cave inférieure (secteur dorsal) — c'est le seul point où les 2 segmentations se superposent."
+    },
+    {
+     "id": "left_posterior_lateral_segment_of_liver_ii",
+     "role": "rapports",
+     "nom_fr": "Segment latéro-supérieur (II)",
+     "name_en": "Left posterior lateral segment of liver (II)",
+     "system": "organes",
+     "file": "models/organes/left_posterior_lateral_segment_of_liver_ii.glb"
+    },
+    {
+     "id": "left_anterior_lateral_segment_of_liver_iii",
+     "role": "rapports",
+     "nom_fr": "Segment latéro-inférieur (III)",
+     "name_en": "Left anterior lateral segment of liver (III)",
+     "system": "organes",
+     "file": "models/organes/left_anterior_lateral_segment_of_liver_iii.glb"
+    },
+    {
+     "id": "left_medial_segment_of_liver_iv",
+     "role": "rapports",
+     "nom_fr": "Segment médial gauche du foie (IV)",
+     "name_en": "Left medial segment of liver (IV)",
+     "system": "organes",
+     "file": "models/organes/left_medial_segment_of_liver_iv.glb"
+    },
+    {
+     "id": "anterior_medial_segment_of_liver_v",
+     "role": "rapports",
+     "nom_fr": "Segment antéro-inférieur (V)",
+     "name_en": "Anterior medial segment of liver (V)",
+     "system": "organes",
+     "file": "models/organes/anterior_medial_segment_of_liver_v.glb"
+    },
+    {
+     "id": "anterior_lateral_segment_of_liver_vi",
+     "role": "rapports",
+     "nom_fr": "Segment postéro-inférieur (VI)",
+     "name_en": "Anterior lateral segment of liver (VI)",
+     "system": "organes",
+     "file": "models/organes/anterior_lateral_segment_of_liver_vi.glb"
+    },
+    {
+     "id": "posterior_lateral_segment_of_liver_vii",
+     "role": "rapports",
+     "nom_fr": "Segment postéro-supérieur (VII)",
+     "name_en": "Posterior lateral segment of liver (VII)",
+     "system": "organes",
+     "file": "models/organes/posterior_lateral_segment_of_liver_vii.glb"
+    },
+    {
+     "id": "posterior_medial_segment_of_liver_viii",
+     "role": "rapports",
+     "nom_fr": "Segment antéro-supérieur (VIII)",
+     "name_en": "Posterior medial segment of liver (VIII)",
+     "system": "organes",
+     "file": "models/organes/posterior_medial_segment_of_liver_viii.glb"
     }
    ],
    "manquants": [
-    "Même périmètre que la Fig 75 (constitution) : veine cystique, veines gastriques et para-ombilicales absentes ; la constitution rétro-pancréatique se lit mieux en schéma en regard"
+    "Veines para-ombilicales : absentes du manifeste ; veine cystique et veines gastriques : pas de maillage 3D, mais portées « schéma seul » par le diagramme porte (nœuds vcyst, vgast_g, vgast_d) ; la constitution rétro-pancréatique se lit mieux en schéma en regard",
+    "Veines jéjunale et iléale : aucun maillage au manifeste — absentes, non représentées",
+    "Veine iléocolique : aucune veine de ce nom au manifeste (seules l'artère ileocolic_artery et les ileocolic_nodes existent) — absente, non représentée"
    ],
    "espaces": []
   },
@@ -315,37 +389,6 @@
        8.7,
        51.5,
        5.3
-      ]
-     }
-    },
-    {
-     "id": "inferior_vena_cava_abdominal_part",
-     "role": "sujet",
-     "nom_fr": "Veine cave inférieure (partie abdominale)",
-     "name_en": "Inferior vena cava (abdominal part)",
-     "system": "veines",
-     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
-     "couleur": "#5b7fb4",
-     "bounds": {
-      "min": [
-       -18.7,
-       962.9,
-       105.3
-      ],
-      "max": [
-       -0.5,
-       1106.8,
-       132.4
-      ],
-      "center": [
-       -9.6,
-       1034.8,
-       118.9
-      ],
-      "size": [
-       18.2,
-       143.8,
-       27.1
       ]
      }
     },
@@ -445,7 +488,7 @@
     {
      "id": "bile_duct",
      "role": "sujet",
-     "nom_fr": "Canal biliaire",
+     "nom_fr": "Canal cholédoque",
      "name_en": "Bile duct",
      "system": "organes",
      "file": "models/organes/bile_duct.glb",
@@ -505,39 +548,32 @@
      }
     },
     {
-     "id": "kidney_right",
-     "role": "rapport",
-     "nom_fr": "Rein droit",
-     "name_en": "Right kidney",
+     "id": "gallbladder",
+     "role": "sujet",
+     "nom_fr": "Vésicule biliaire",
+     "name_en": "Gallbladder",
      "system": "organes",
-     "file": "models/organes/kidney_right.glb",
-     "couleur": "#7a3b2e",
-     "bounds": {
-      "min": [
-       -87.6,
-       966.8,
-       64.7
-      ],
-      "max": [
-       -30.4,
-       1071.2,
-       111.9
-      ],
-      "center": [
-       -59.0,
-       1019.0,
-       88.3
-      ],
-      "size": [
-       57.1,
-       104.4,
-       47.2
-      ]
-     }
+     "file": "models/organes/gallbladder.glb"
+    },
+    {
+     "id": "splenic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine splénique",
+     "name_en": "Splenic vein",
+     "system": "veines",
+     "file": "models/veines/splenic_vein.glb"
+    },
+    {
+     "id": "superior_mesenteric_vein",
+     "role": "sujet",
+     "nom_fr": "Veine mésentérique supérieure",
+     "name_en": "Superior mesenteric vein",
+     "system": "veines",
+     "file": "models/veines/superior_mesenteric_vein.glb"
     },
     {
      "id": "left_medial_segment_of_liver_iv",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Segment médial gauche du foie (IV)",
      "name_en": "Left medial segment of liver (IV)",
      "system": "organes",
@@ -570,7 +606,7 @@
     },
     {
      "id": "lesser_omentum",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Petit omentum",
      "name_en": "Lesser omentum",
      "system": "organes",
@@ -598,9 +634,108 @@
        60.1
       ]
      }
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "rapports",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -18.7,
+       962.9,
+       105.3
+      ],
+      "max": [
+       -0.5,
+       1106.8,
+       132.4
+      ],
+      "center": [
+       -9.6,
+       1034.8,
+       118.9
+      ],
+      "size": [
+       18.2,
+       143.8,
+       27.1
+      ]
+     }
+    },
+    {
+     "id": "spleen",
+     "role": "rapports",
+     "nom_fr": "Rate",
+     "name_en": "Spleen",
+     "system": "lymphatique",
+     "file": "models/lymphatique/spleen.glb"
+    },
+    {
+     "id": "posterior_segment_of_liver_i",
+     "role": "rapports",
+     "nom_fr": "Segment caudé (I)",
+     "name_en": "Posterior segment of liver (I)",
+     "system": "organes",
+     "file": "models/organes/posterior_segment_of_liver_i.glb"
+    },
+    {
+     "id": "left_posterior_lateral_segment_of_liver_ii",
+     "role": "rapports",
+     "nom_fr": "Segment latéro-supérieur (II)",
+     "name_en": "Left posterior lateral segment of liver (II)",
+     "system": "organes",
+     "file": "models/organes/left_posterior_lateral_segment_of_liver_ii.glb"
+    },
+    {
+     "id": "left_anterior_lateral_segment_of_liver_iii",
+     "role": "rapports",
+     "nom_fr": "Segment latéro-inférieur (III)",
+     "name_en": "Left anterior lateral segment of liver (III)",
+     "system": "organes",
+     "file": "models/organes/left_anterior_lateral_segment_of_liver_iii.glb"
+    },
+    {
+     "id": "anterior_medial_segment_of_liver_v",
+     "role": "rapports",
+     "nom_fr": "Segment antéro-inférieur (V)",
+     "name_en": "Anterior medial segment of liver (V)",
+     "system": "organes",
+     "file": "models/organes/anterior_medial_segment_of_liver_v.glb"
+    },
+    {
+     "id": "anterior_lateral_segment_of_liver_vi",
+     "role": "rapports",
+     "nom_fr": "Segment postéro-inférieur (VI)",
+     "name_en": "Anterior lateral segment of liver (VI)",
+     "system": "organes",
+     "file": "models/organes/anterior_lateral_segment_of_liver_vi.glb"
+    },
+    {
+     "id": "posterior_lateral_segment_of_liver_vii",
+     "role": "rapports",
+     "nom_fr": "Segment postéro-supérieur (VII)",
+     "name_en": "Posterior lateral segment of liver (VII)",
+     "system": "organes",
+     "file": "models/organes/posterior_lateral_segment_of_liver_vii.glb"
+    },
+    {
+     "id": "posterior_medial_segment_of_liver_viii",
+     "role": "rapports",
+     "nom_fr": "Segment antéro-supérieur (VIII)",
+     "name_en": "Posterior medial segment of liver (VIII)",
+     "system": "organes",
+     "file": "models/organes/posterior_medial_segment_of_liver_viii.glb"
     }
    ],
-   "manquants": [],
+   "manquants": [
+    "Veine gastrique gauche : aucun maillage veineux au manifeste — absente, et aucun diagramme pour cette figure pour la porter",
+    "Veine gastrique droite : aucun maillage veineux au manifeste — absente, et aucun diagramme pour cette figure pour la porter",
+    "Canal hépatique commun : pas de maillage distinct — le même bile_duct doit couvrir les 2 segments étiquetés (cholédoque / hépatique commun), non déclaré"
+   ],
    "espaces": []
   }
  ],

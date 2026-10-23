@@ -37,7 +37,7 @@
     {
      "id": "sartorius_muscle_right",
      "role": "sujet",
-     "nom_fr": "Muscle sartorius",
+     "nom_fr": "Muscle couturier",
      "name_en": "Right sartorius muscle",
      "name_la": "Musculus sartorius",
      "systeme": "muscles",
@@ -323,6 +323,22 @@
      }
     },
     {
+     "id": "iliopsoas_fascia_right",
+     "role": "sujet",
+     "nom_fr": "Fascia iliopsoas",
+     "name_en": "Right iliopsoas fascia",
+     "system": "fascias",
+     "file": "models/muscles/iliopsoas_fascia_right.glb"
+    },
+    {
+     "id": "iliopectineal_arch_right",
+     "role": "sujet",
+     "nom_fr": "Arcade iliopectinée",
+     "name_en": "Right iliopectineal arch",
+     "system": "muscles",
+     "file": "models/muscles/iliopectineal_arch_right.glb"
+    },
+    {
      "id": "pectineus_muscle_right",
      "role": "contexte",
      "nom_fr": "Muscle pectiné",
@@ -385,11 +401,40 @@
        111.9
       ]
      }
+    },
+    {
+     "id": "iliacus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliaque",
+     "name_en": "Right iliacus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliacus_muscle_right.glb"
+    },
+    {
+     "id": "psoas_major_right",
+     "role": "contexte",
+     "nom_fr": "Grand psoas",
+     "name_en": "Right psoas major",
+     "system": "muscles",
+     "file": "models/muscles/psoas_major_right.glb"
     }
    ],
    "diagram": null,
-   "espaces": [],
-   "manquants": []
+   "espaces": [
+    {
+     "key": "anneau-crural",
+     "nom_fr": "Anneau crural (lacune vasculaire)",
+     "name_en": "Femoral ring (vascular lacuna)",
+     "couleur": "#f2b134",
+     "note_fr": "Volume schématique — espace sans maillage source, délimité par les structures voisines de la figure."
+    }
+   ],
+   "manquants": [
+    "Tendon du muscle petit psoas : ABSENT (aucune géométrie du petit psoas au manifeste)",
+    "Ligament pectiné : ABSENT du manifeste",
+    "Ligament lacunaire (de Gimbernat) : ABSENT ; gaine fémorale : ABSENTE",
+    "Hiatus saphène : ABSENT (aucune géométrie de l'ouverture du fascia lata)"
+   ]
   },
   {
    "numero": 40,
@@ -640,6 +685,14 @@
      }
     },
     {
+     "id": "perforating_femoral_arteries_right",
+     "role": "sujet",
+     "nom_fr": "Artères fémorales perforantes",
+     "name_en": "Right perforating femoral arteries",
+     "system": "arteres",
+     "file": "models/arteres/perforating_femoral_arteries_right.glb"
+    },
+    {
      "id": "external_iliac_artery_right",
      "role": "contexte",
      "nom_fr": "Artère iliaque externe",
@@ -673,7 +726,7 @@
     },
     {
      "id": "femur_right",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Fémur",
      "name_en": "Right femur",
      "name_la": "Os femoris",
@@ -702,13 +755,102 @@
        73.3
       ]
      }
+    },
+    {
+     "id": "abdominal_aorta",
+     "role": "contexte",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb"
+    },
+    {
+     "id": "common_iliac_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère iliaque commune",
+     "name_en": "Right common iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/common_iliac_artery_right.glb"
+    },
+    {
+     "id": "internal_iliac_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère iliaque interne",
+     "name_en": "Right internal iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/internal_iliac_artery_right.glb"
+    },
+    {
+     "id": "median_sacral_artery",
+     "role": "contexte",
+     "nom_fr": "Artère sacrale médiane",
+     "name_en": "Median sacral artery",
+     "system": "arteres",
+     "file": "models/arteres/median_sacral_artery.glb"
+    },
+    {
+     "id": "lumbar_arteries_right",
+     "role": "contexte",
+     "nom_fr": "Artères lombaires",
+     "name_en": "Right lumbar arteries",
+     "system": "arteres",
+     "file": "models/arteres/lumbar_arteries_right.glb"
+    },
+    {
+     "id": "iliolumbar_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère iliolombaire",
+     "name_en": "Right iliolumbar artery",
+     "system": "arteres",
+     "file": "models/arteres/iliolumbar_artery_right.glb"
+    },
+    {
+     "id": "superior_gluteal_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère glutéale supérieure",
+     "name_en": "Right superior gluteal artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_gluteal_artery_right.glb"
+    },
+    {
+     "id": "inferior_gluteal_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère glutéale inférieure",
+     "name_en": "Right inferior gluteal artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_gluteal_artery_right.glb"
+    },
+    {
+     "id": "inferior_epigastric_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère épigastrique inférieure",
+     "name_en": "Right inferior epigastric artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_epigastric_artery_right.glb"
+    },
+    {
+     "id": "obturator_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère obturatrice",
+     "name_en": "Right obturator artery",
+     "system": "arteres",
+     "file": "models/arteres/obturator_artery_right.glb"
+    },
+    {
+     "id": "internal_pudendal_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère pudendale interne",
+     "name_en": "Right internal pudendal artery",
+     "system": "arteres",
+     "file": "models/arteres/internal_pudendal_artery_right.glb"
     }
    ],
    "diagram": null,
    "espaces": [],
    "manquants": [
     "Artère circonflexe iliaque superficielle : ABSENTE du manifeste",
-    "Artère descendante du genou (rameau terminal classique) : ABSENTE"
+    "Artère descendante du genou (rameau terminal classique) : ABSENTE",
+    "Artère circonflexe iliaque profonde : ABSENTE du manifeste (aucune géométrie dédiée ; seul le tronc iliaque externe parent est présent en rapport)"
    ]
   },
   {
@@ -836,38 +978,6 @@
      }
     },
     {
-     "id": "femoral_nerve_right",
-     "role": "sujet",
-     "nom_fr": "Nerf fémoral",
-     "name_en": "Right femoral nerve",
-     "name_la": "Nervus femoralis",
-     "systeme": "nerfs",
-     "couleur": "#d9a441",
-     "file": "models/nerfs/femoral_nerve_right.glb",
-     "bounds": {
-      "min": [
-       -87.2,
-       558.4,
-       72.5
-      ],
-      "max": [
-       -11.4,
-       1033.5,
-       141.0
-      ],
-      "center": [
-       -49.3,
-       796.0,
-       106.7
-      ],
-      "size": [
-       75.9,
-       475.1,
-       68.5
-      ]
-     }
-    },
-    {
      "id": "medial_lacunar_node_right",
      "role": "sujet",
      "nom_fr": "Lymphonoeud lacunaire médial",
@@ -964,38 +1074,6 @@
      }
     },
     {
-     "id": "pectineus_muscle_right",
-     "role": "sujet",
-     "nom_fr": "Muscle pectiné",
-     "name_en": "Right pectineus muscle",
-     "name_la": "Musculus pectineus",
-     "systeme": "muscles",
-     "couleur": "#b03a2e",
-     "file": "models/muscles/pectineus_muscle_right.glb",
-     "bounds": {
-      "min": [
-       -97.1,
-       663.9,
-       95.7
-      ],
-      "max": [
-       -15.8,
-       795.9,
-       152.6
-      ],
-      "center": [
-       -56.5,
-       729.9,
-       124.1
-      ],
-      "size": [
-       81.3,
-       132.0,
-       56.9
-      ]
-     }
-    },
-    {
      "id": "psoas_major_right",
      "role": "contexte",
      "nom_fr": "Grand psoas",
@@ -1029,7 +1107,7 @@
     },
     {
      "id": "hip_bone_right",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Os coxal",
      "name_en": "Right hip bone",
      "name_la": "Os coxae",
@@ -1090,6 +1168,94 @@
        35.1
       ]
      }
+    },
+    {
+     "id": "femoral_nerve_right",
+     "role": "contexte",
+     "nom_fr": "Nerf fémoral",
+     "name_en": "Right femoral nerve",
+     "name_la": "Nervus femoralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/femoral_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -87.2,
+       558.4,
+       72.5
+      ],
+      "max": [
+       -11.4,
+       1033.5,
+       141.0
+      ],
+      "center": [
+       -49.3,
+       796.0,
+       106.7
+      ],
+      "size": [
+       75.9,
+       475.1,
+       68.5
+      ]
+     }
+    },
+    {
+     "id": "pectineus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle pectiné",
+     "name_en": "Right pectineus muscle",
+     "name_la": "Musculus pectineus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/pectineus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -97.1,
+       663.9,
+       95.7
+      ],
+      "max": [
+       -15.8,
+       795.9,
+       152.6
+      ],
+      "center": [
+       -56.5,
+       729.9,
+       124.1
+      ],
+      "size": [
+       81.3,
+       132.0,
+       56.9
+      ]
+     }
+    },
+    {
+     "id": "lateral_femoral_cutaneous_nerve_right",
+     "role": "contexte",
+     "nom_fr": "Nerf cutané fémoral latéral",
+     "name_en": "Right lateral femoral cutaneous nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/lateral_femoral_cutaneous_nerve_right.glb"
+    },
+    {
+     "id": "iliacus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliaque",
+     "name_en": "Right iliacus muscle",
+     "system": "muscles",
+     "file": "models/muscles/iliacus_muscle_right.glb"
+    },
+    {
+     "id": "iliopectineal_arch_right",
+     "role": "contexte",
+     "nom_fr": "Arcade iliopectinée",
+     "name_en": "Right iliopectineal arch",
+     "system": "muscles",
+     "file": "models/muscles/iliopectineal_arch_right.glb"
     }
    ],
    "diagram": null,
@@ -1113,12 +1279,13 @@
       "lateral_lacunar_node_right"
      ],
      "type": "espace",
-     "note": "volume schématique délimité par les structures voisines — aucun maillage source"
+     "note": "volume schématique délimité par les structures voisines — aucun maillage source",
+     "note_fr": "Volume schématique — espace sans maillage source, délimité par les structures voisines de la figure."
     }
    ],
    "manquants": [
-    "Anneau crural, lacune vasculaire et lacune musculaire : ce sont des ESPACES — aucun maillage dédié",
-    "Ligament lacunaire (de Gimbernat) : ABSENT ; gaine fémorale : ABSENTE"
+    "Ligament lacunaire (de Gimbernat) : ABSENT ; gaine fémorale : ABSENTE",
+    "Nerf fémoral : passe en dehors de l'anneau crural, dans la lacune musculaire, séparé de l'anneau par l'arcade ilio-pectinée — il ne traverse pas l'anneau crural"
    ]
   }
  ],
