@@ -221,6 +221,22 @@
        31.3
       ]
      }
+    },
+    {
+     "id": "posterior_cruciate_ligament_right",
+     "role": "contexte",
+     "nom_fr": "Ligament croisé postérieur",
+     "name_en": "Right posterior cruciate ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/posterior_cruciate_ligament_right.glb"
+    },
+    {
+     "id": "anterior_cruciate_ligament_right",
+     "role": "contexte",
+     "nom_fr": "Ligament croisé antérieur",
+     "name_en": "Right anterior cruciate ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/anterior_cruciate_ligament_right.glb"
     }
    ],
    "diagram": null,
@@ -669,12 +685,63 @@
        5.5
       ]
      }
+    },
+    {
+     "id": "fibula_right",
+     "role": "contexte",
+     "nom_fr": "Fibula",
+     "name_en": "Right fibula",
+     "system": "squelette",
+     "file": "models/squelette/fibula_right.glb"
+    },
+    {
+     "id": "infrapatellar_fat_pad_right",
+     "role": "contexte",
+     "nom_fr": "Coussinet adipeux infrapatellaire",
+     "name_en": "Right infrapatellar fat pad",
+     "system": "articulations",
+     "file": "models/articulations/infrapatellar_fat_pad_right.glb"
+    },
+    {
+     "id": "suprapatellar_bursa_right",
+     "role": "contexte",
+     "nom_fr": "Bourse suprapatellaire",
+     "name_en": "Right suprapatellar bursa",
+     "system": "fascias",
+     "file": "models/muscles/suprapatellar_bursa_right.glb"
+    },
+    {
+     "id": "deep_infrapatellar_bursa_right",
+     "role": "contexte",
+     "nom_fr": "Bourse infrapatellaire profonde",
+     "name_en": "Right deep infrapatellar bursa",
+     "system": "fascias",
+     "file": "models/muscles/deep_infrapatellar_bursa_right.glb"
+    },
+    {
+     "id": "subcutaneous_infrapatellar_bursa_right",
+     "role": "contexte",
+     "nom_fr": "Bourse sous-cutanée infrapatellaire",
+     "name_en": "Right subcutaneous infrapatellar bursa",
+     "system": "fascias",
+     "file": "models/muscles/subcutaneous_infrapatellar_bursa_right.glb"
+    },
+    {
+     "id": "subcutaneous_prepatellar_bursa_right",
+     "role": "contexte",
+     "nom_fr": "Bourse prépatellaire sous-cutanée",
+     "name_en": "Right subcutaneous prepatellar bursa",
+     "system": "fascias",
+     "file": "models/muscles/subcutaneous_prepatellar_bursa_right.glb"
     }
    ],
    "diagram": null,
    "espaces": [],
    "manquants": [
-    "Ligament patellaire (rotulien) : AUCUN maillage dans le système 'ligaments' — seuls ses repères d'insertion (origine/terminaison, système insertions) existent"
+    "Ligament patellaire (rotulien) : AUCUN maillage dans le système 'ligaments' — seuls ses repères d'insertion (origine/terminaison, système insertions) existent",
+    "Cartilages articulaires : ABSENTS du manifeste (aucune géométrie de cartilage articulaire)",
+    "Membrane synoviale du genou : ABSENTE du manifeste (aucune synoviale de genou)",
+    "Cavité articulaire du genou : ABSENTE (espace sans géométrie ni espace dédié déclaré pour cette figure)"
    ],
    "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
   },
@@ -961,6 +1028,94 @@
      }
     },
     {
+     "id": "suprapatellar_bursa_right",
+     "role": "sujet",
+     "nom_fr": "Bourse suprapatellaire",
+     "name_en": "Right suprapatellar bursa",
+     "system": "fascias",
+     "file": "models/muscles/suprapatellar_bursa_right.glb"
+    },
+    {
+     "id": "deep_infrapatellar_bursa_right",
+     "role": "sujet",
+     "nom_fr": "Bourse infrapatellaire profonde",
+     "name_en": "Right deep infrapatellar bursa",
+     "system": "fascias",
+     "file": "models/muscles/deep_infrapatellar_bursa_right.glb"
+    },
+    {
+     "id": "subcutaneous_infrapatellar_bursa_right",
+     "role": "sujet",
+     "nom_fr": "Bourse sous-cutanée infrapatellaire",
+     "name_en": "Right subcutaneous infrapatellar bursa",
+     "system": "fascias",
+     "file": "models/muscles/subcutaneous_infrapatellar_bursa_right.glb"
+    },
+    {
+     "id": "infrapatellar_fat_pad_right",
+     "role": "sujet",
+     "nom_fr": "Coussinet adipeux infrapatellaire",
+     "name_en": "Right infrapatellar fat pad",
+     "system": "articulations",
+     "file": "models/articulations/infrapatellar_fat_pad_right.glb"
+    },
+    {
+     "id": "iliotibial_tract_right",
+     "role": "sujet",
+     "nom_fr": "Tractus iliotibial",
+     "name_en": "Right iliotibial tract",
+     "system": "fascias",
+     "file": "models/muscles/iliotibial_tract_right.glb"
+    },
+    {
+     "id": "fibular_collateral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament collatéral fibulaire",
+     "name_en": "Right fibular collateral ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/fibular_collateral_ligament_right.glb"
+    },
+    {
+     "id": "superficial_part_of_tibial_collateral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Partie superficielle du ligament collatéral tibial",
+     "name_en": "Right superficial part of tibial collateral ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/superficial_part_of_tibial_collateral_ligament_right.glb"
+    },
+    {
+     "id": "deep_part_of_tibial_collateral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Partie profonde du ligament collatéral tibial",
+     "name_en": "Right deep part of tibial collateral ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/deep_part_of_tibial_collateral_ligament_right.glb"
+    },
+    {
+     "id": "semitendinosus_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle semitendineux",
+     "name_en": "Right semitendinosus muscle",
+     "system": "muscles",
+     "file": "models/muscles/semitendinosus_muscle_right.glb"
+    },
+    {
+     "id": "gracilis_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle gracile",
+     "name_en": "Right gracilis muscle",
+     "system": "muscles",
+     "file": "models/muscles/gracilis_muscle_right.glb"
+    },
+    {
+     "id": "sartorius_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle couturier",
+     "name_en": "Right sartorius muscle",
+     "system": "muscles",
+     "file": "models/muscles/sartorius_muscle_right.glb"
+    },
+    {
      "id": "femur_right",
      "role": "contexte",
      "nom_fr": "Fémur",
@@ -1023,12 +1178,21 @@
        63.9
       ]
      }
+    },
+    {
+     "id": "quadriceps_femoris_muscle_terminaison_right",
+     "role": "contexte",
+     "nom_fr": "Terminaison : Muscle quadriceps fémoral",
+     "name_en": "Insertion of right quadriceps femoris muscle",
+     "system": "insertions",
+     "file": "models-insertions/quadriceps_femoris_muscle_terminaison_right.glb"
     }
    ],
    "diagram": null,
    "espaces": [],
    "manquants": [
-    "Ligament patellaire : pas de maillage dédié (voir Fig 43) — le rapport antérieur principal n'existe que par ses insertions"
+    "Ligament patellaire : pas de maillage dédié (voir Fig 43) — le rapport antérieur principal n'existe que par ses insertions",
+    "Tendon du quadriceps : ABSENT (aucun maillage tendineux ; seule la terminaison du muscle quadriceps fémoral, incluse en rapport, existe)"
    ]
   },
   {
@@ -1444,8 +1608,32 @@
      }
     },
     {
+     "id": "plantaris_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle plantaire",
+     "name_en": "Right plantaris muscle",
+     "system": "muscles",
+     "file": "models/muscles/plantaris_muscle_right.glb"
+    },
+    {
+     "id": "popliteus_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle poplité",
+     "name_en": "Right popliteus muscle",
+     "system": "muscles",
+     "file": "models/muscles/popliteus_muscle_right.glb"
+    },
+    {
+     "id": "adductor_magnus_right",
+     "role": "sujet",
+     "nom_fr": "Grand adducteur",
+     "name_en": "Right adductor magnus",
+     "system": "muscles",
+     "file": "models/muscles/adductor_magnus_right.glb"
+    },
+    {
      "id": "femur_right",
-     "role": "ghost",
+     "role": "rapports",
      "nom_fr": "Fémur",
      "name_en": "Right femur",
      "name_la": "Os femoris",
@@ -1477,7 +1665,7 @@
     },
     {
      "id": "tibia_right",
-     "role": "ghost",
+     "role": "rapports",
      "nom_fr": "Tibia",
      "name_en": "Right tibia",
      "name_la": "Tibia",
@@ -1506,6 +1694,30 @@
        63.9
       ]
      }
+    },
+    {
+     "id": "femoral_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "system": "arteres",
+     "file": "models/arteres/femoral_artery_right.glb"
+    },
+    {
+     "id": "femoral_vein_right",
+     "role": "rapports",
+     "nom_fr": "Veine fémorale",
+     "name_en": "Right femoral vein",
+     "system": "veines",
+     "file": "models/veines/femoral_vein_right.glb"
+    },
+    {
+     "id": "sciatic_nerve_right",
+     "role": "rapports",
+     "nom_fr": "Nerf sciatique",
+     "name_en": "Right sciatic nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/sciatic_nerve_right.glb"
     }
    ],
    "diagram": null,
@@ -1531,11 +1743,14 @@
       "popliteal_vein_right"
      ],
      "type": "espace",
-     "note": "volume schématique délimité par les structures voisines — aucun maillage source"
+     "note": "volume schématique délimité par les structures voisines — aucun maillage source",
+     "note_fr": "Volume schématique — espace sans maillage source, délimité par les structures voisines de la figure."
     }
    ],
    "manquants": [
-    "Muscle plantaire (plantaris) : non retrouvé comme entrée distincte"
+    "Hiatus du muscle grand adducteur : ABSENT (passage sans géométrie ni espace déclaré)",
+    "Chefs médial et latéral du gastrocnémien : non individualisés (maillage unique du gastrocnémien)",
+    "Chefs long et court du biceps fémoral : non séparés (maillage unique du biceps fémoral)"
    ],
    "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
   },
@@ -1728,7 +1943,7 @@
     {
      "id": "middle_genicular_artery_right",
      "role": "sujet",
-     "nom_fr": "Artère médiane du genou",
+     "nom_fr": "Artère articulaire moyenne",
      "name_en": "Right middle genicular artery",
      "name_la": null,
      "systeme": "arteres",
@@ -1787,38 +2002,6 @@
        27.6,
        165.1,
        55.3
-      ]
-     }
-    },
-    {
-     "id": "genicular_veins_right",
-     "role": "sujet",
-     "nom_fr": "Veines du genou",
-     "name_en": "Right genicular veins",
-     "name_la": "Venae geniculares",
-     "systeme": "veines",
-     "couleur": "#5b7fb4",
-     "file": "models/veines/genicular_veins_right.glb",
-     "bounds": {
-      "min": [
-       -119.3,
-       296.4,
-       34.3
-      ],
-      "max": [
-       -36.1,
-       462.0,
-       115.5
-      ],
-      "center": [
-       -77.7,
-       379.2,
-       74.9
-      ],
-      "size": [
-       83.2,
-       165.6,
-       81.3
       ]
      }
     },
@@ -1951,6 +2134,38 @@
      }
     },
     {
+     "id": "anterior_tibial_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère tibiale antérieure",
+     "name_en": "Right anterior tibial artery",
+     "system": "arteres",
+     "file": "models/arteres/anterior_tibial_artery_right.glb"
+    },
+    {
+     "id": "posterior_tibial_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère tibiale postérieure",
+     "name_en": "Right posterior tibial artery",
+     "system": "arteres",
+     "file": "models/arteres/posterior_tibial_artery_right.glb"
+    },
+    {
+     "id": "fibular_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère fibulaire",
+     "name_en": "Right fibular artery",
+     "system": "arteres",
+     "file": "models/arteres/fibular_artery_right.glb"
+    },
+    {
+     "id": "small_saphenous_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine petite saphène",
+     "name_en": "Right small saphenous vein",
+     "system": "veines",
+     "file": "models/veines/small_saphenous_vein_right.glb"
+    },
+    {
      "id": "femur_right",
      "role": "contexte",
      "nom_fr": "Fémur",
@@ -2045,13 +2260,73 @@
        83.0
       ]
      }
+    },
+    {
+     "id": "genicular_veins_right",
+     "role": "contexte",
+     "nom_fr": "Veines du genou",
+     "name_en": "Right genicular veins",
+     "name_la": "Venae geniculares",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/genicular_veins_right.glb",
+     "bounds": {
+      "min": [
+       -119.3,
+       296.4,
+       34.3
+      ],
+      "max": [
+       -36.1,
+       462.0,
+       115.5
+      ],
+      "center": [
+       -77.7,
+       379.2,
+       74.9
+      ],
+      "size": [
+       83.2,
+       165.6,
+       81.3
+      ]
+     }
+    },
+    {
+     "id": "sciatic_nerve_right",
+     "role": "contexte",
+     "nom_fr": "Nerf sciatique",
+     "name_en": "Right sciatic nerve",
+     "system": "nerfs",
+     "file": "models/nerfs/sciatic_nerve_right.glb"
+    },
+    {
+     "id": "interosseous_membrane_of_leg_right",
+     "role": "contexte",
+     "nom_fr": "Membrane interosseuse de la jambe",
+     "name_en": "Right interosseous membrane of leg",
+     "system": "articulations",
+     "file": "models/articulations/interosseous_membrane_of_leg_right.glb"
+    },
+    {
+     "id": "adductor_magnus_right",
+     "role": "contexte",
+     "nom_fr": "Grand adducteur",
+     "name_en": "Right adductor magnus",
+     "system": "muscles",
+     "file": "models/muscles/adductor_magnus_right.glb"
     }
    ],
    "diagram": null,
    "espaces": [],
    "manquants": [
     "Artères surales (branches du tronc poplité pour les gastrocnémiens) : ABSENTES du manifeste",
-    "Branches articulaires/musculaires du nerf tibial : non individualisées"
+    "Branches articulaires/musculaires du nerf tibial : non individualisées",
+    "Artère récurrente tibiale : ABSENTE du manifeste",
+    "Artère récurrente fibulaire : ABSENTE du manifeste",
+    "Arcade du grand adducteur : ABSENTE (aucun maillage de hiatus adducteur)",
+    "Arcade du soléaire : ABSENTE (aucun maillage)"
    ],
    "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
   }

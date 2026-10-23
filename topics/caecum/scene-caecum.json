@@ -30,7 +30,7 @@
     111
    ],
    "file": "models/organes/vermiform_appendix.glb",
-   "nom_fr": "Appendice vermiforme",
+   "nom_fr": "Appendice vermiculaire",
    "name_en": "Vermiform appendix",
    "couleur": "#c97b84",
    "system": "organes",
@@ -70,7 +70,7 @@
     111
    ],
    "file": "models/organes/ileocecal_junction.glb",
-   "nom_fr": "Ileocecal junction",
+   "nom_fr": "Jonction iléo-cæcale",
    "name_en": "Ileocecal junction",
    "couleur": "#c97b84",
    "system": "organes",
@@ -146,10 +146,11 @@
    "id": "distal_part_of_ileum",
    "role": "sujet",
    "figures": [
-    110
+    110,
+    111
    ],
    "file": "models/organes/distal_part_of_ileum.glb",
-   "nom_fr": "Partie distale de l'iléon",
+   "nom_fr": "Partie terminale de l'iléon",
    "name_en": "Distal part of ileum",
    "couleur": "#c9a06c",
    "system": "organes",
@@ -187,9 +188,10 @@
   },
   {
    "id": "meso_appendix",
-   "role": "contexte",
+   "role": "sujet",
    "figures": [
-    110
+    110,
+    111
    ],
    "file": "models/organes/meso_appendix.glb",
    "nom_fr": "Méso-appendice",
@@ -226,6 +228,84 @@
    "role_par_figure": {
     "110": "contexte",
     "111": "sujet"
+   }
+  },
+  {
+   "id": "kidney_right",
+   "role": "rapports",
+   "figures": [
+    110
+   ],
+   "file": "models/organes/kidney_right.glb",
+   "nom_fr": "Rein droit",
+   "name_en": "Right kidney",
+   "couleur": "#7a3b2e",
+   "system": "organes",
+   "center": [
+    -59.0,
+    1019.0,
+    88.3
+   ],
+   "bounds": {
+    "min": [
+     -87.6,
+     966.8,
+     64.7
+    ],
+    "max": [
+     -30.4,
+     1071.2,
+     111.9
+    ],
+    "center": [
+     -59.0,
+     1019.0,
+     88.3
+    ],
+    "size": [
+     57.1,
+     104.4,
+     47.2
+    ]
+   }
+  },
+  {
+   "id": "kidney_left",
+   "role": "rapports",
+   "figures": [
+    110
+   ],
+   "file": "models/organes/kidney_left.glb",
+   "nom_fr": "Rein gauche",
+   "name_en": "Left kidney",
+   "couleur": "#7a3b2e",
+   "system": "organes",
+   "center": [
+    61.6,
+    1037.5,
+    79.9
+   ],
+   "bounds": {
+    "min": [
+     32.8,
+     984.5,
+     59.6
+    ],
+    "max": [
+     90.4,
+     1090.4,
+     100.2
+    ],
+    "center": [
+     61.6,
+     1037.5,
+     79.9
+    ],
+    "size": [
+     57.5,
+     105.9,
+     40.6
+    ]
    }
   },
   {
@@ -344,208 +424,6 @@
      74.8
     ]
    }
-  },
-  {
-   "id": "kidney_right",
-   "role": "ghost",
-   "figures": [
-    110,
-    111
-   ],
-   "file": "models/organes/kidney_right.glb",
-   "nom_fr": "Rein droit",
-   "name_en": "Right kidney",
-   "couleur": "#7a3b2e",
-   "system": "organes",
-   "center": [
-    -59.0,
-    1019.0,
-    88.3
-   ],
-   "bounds": {
-    "min": [
-     -87.6,
-     966.8,
-     64.7
-    ],
-    "max": [
-     -30.4,
-     1071.2,
-     111.9
-    ],
-    "center": [
-     -59.0,
-     1019.0,
-     88.3
-    ],
-    "size": [
-     57.1,
-     104.4,
-     47.2
-    ]
-   }
-  },
-  {
-   "id": "kidney_left",
-   "role": "ghost",
-   "figures": [
-    110,
-    111
-   ],
-   "file": "models/organes/kidney_left.glb",
-   "nom_fr": "Rein gauche",
-   "name_en": "Left kidney",
-   "couleur": "#7a3b2e",
-   "system": "organes",
-   "center": [
-    61.6,
-    1037.5,
-    79.9
-   ],
-   "bounds": {
-    "min": [
-     32.8,
-     984.5,
-     59.6
-    ],
-    "max": [
-     90.4,
-     1090.4,
-     100.2
-    ],
-    "center": [
-     61.6,
-     1037.5,
-     79.9
-    ],
-    "size": [
-     57.5,
-     105.9,
-     40.6
-    ]
-   }
-  },
-  {
-   "id": "ileocolic_artery",
-   "role": "contexte",
-   "figures": [
-    110,
-    111
-   ],
-   "file": "models/arteres/ileocolic_artery.glb",
-   "nom_fr": "Artère iléocolique",
-   "name_en": "Ileocolic artery",
-   "couleur": "#cf5346",
-   "system": "arteres",
-   "center": [
-    -18.7,
-    975.5,
-    136.7
-   ],
-   "bounds": {
-    "min": [
-     -31.2,
-     961.3,
-     130.3
-    ],
-    "max": [
-     -6.2,
-     989.6,
-     143.1
-    ],
-    "center": [
-     -18.7,
-     975.5,
-     136.7
-    ],
-    "size": [
-     25.0,
-     28.3,
-     12.8
-    ]
-   },
-   "hors_audit": true
-  },
-  {
-   "id": "appendicular_artery",
-   "role": "contexte",
-   "figures": [
-    110,
-    111
-   ],
-   "file": "models/arteres/appendicular_artery.glb",
-   "nom_fr": "Artère appendiculaire",
-   "name_en": "Appendicular artery",
-   "couleur": "#cf5346",
-   "system": "arteres",
-   "center": [
-    -38.4,
-    912.2,
-    107.0
-   ],
-   "bounds": {
-    "min": [
-     -55.1,
-     879.4,
-     89.5
-    ],
-    "max": [
-     -21.8,
-     945.1,
-     124.5
-    ],
-    "center": [
-     -38.4,
-     912.2,
-     107.0
-    ],
-    "size": [
-     33.3,
-     65.7,
-     34.9
-    ]
-   },
-   "hors_audit": true
-  },
-  {
-   "id": "right_colic_artery",
-   "role": "contexte",
-   "figures": [
-    111
-   ],
-   "file": "models/arteres/right_colic_artery.glb",
-   "nom_fr": "Artère colique droite",
-   "name_en": "Right colic artery",
-   "couleur": "#cf5346",
-   "system": "arteres",
-   "center": [
-    -37.6,
-    1007.8,
-    133.9
-   ],
-   "bounds": {
-    "min": [
-     -67.9,
-     992.8,
-     119.4
-    ],
-    "max": [
-     -7.3,
-     1022.9,
-     148.5
-    ],
-    "center": [
-     -37.6,
-     1007.8,
-     133.9
-    ],
-    "size": [
-     60.7,
-     30.1,
-     29.1
-    ]
-   },
-   "hors_audit": true
   }
  ],
  "camera": {

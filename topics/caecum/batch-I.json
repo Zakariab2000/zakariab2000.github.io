@@ -199,21 +199,6 @@
      }
     },
     {
-     "id": "app_souscaecale",
-     "x": 600,
-     "y": 408,
-     "w": 210,
-     "label": "Sous-cæcale",
-     "sub": "sous le fond du cæcum",
-     "label_en": "Subcaecal",
-     "sub_en": "below the caecal fundus",
-     "lvl": "appendice",
-     "desc": {
-      "fr": "Appendice situé sous le cæcum, descendant depuis sa base au-dessous du corps cæcal.",
-      "en": "Appendix lying below the caecum, descending from its base beneath the caecal body."
-     }
-    },
-    {
      "id": "app_precaecale",
      "x": 120,
      "y": 498,
@@ -229,21 +214,6 @@
      }
     },
     {
-     "id": "app_preileale",
-     "x": 360,
-     "y": 498,
-     "w": 210,
-     "label": "Pré-iléale",
-     "sub": "en avant de l'iléon terminal",
-     "label_en": "Pre-ileal",
-     "sub_en": "in front of the terminal ileum",
-     "lvl": "appendice",
-     "desc": {
-      "fr": "Appendice passant en avant de l'iléon terminal avant de se diriger vers le pelvis ou la fosse iliaque.",
-      "en": "Appendix passing in front of the terminal ileum before heading towards the pelvis or iliac fossa."
-     }
-    },
-    {
      "id": "app_retroileale",
      "x": 600,
      "y": 498,
@@ -256,21 +226,6 @@
      "desc": {
       "fr": "Variante citée par le cours (rétro-iléal) : appendice situé en arrière de l'iléon terminal, donc masqué par l'anse iléale en vue antérieure.",
       "en": "Variant cited in the course (retro-ileal): appendix lying behind the terminal ileum, therefore hidden by the ileal loop in anterior view."
-     }
-    },
-    {
-     "id": "app_pelvienne",
-     "x": 180,
-     "y": 588,
-     "w": 230,
-     "label": "Pelvienne (appendice)",
-     "sub": "descente dans le pelvis",
-     "label_en": "Pelvic (appendix)",
-     "sub_en": "descent into the pelvis",
-     "lvl": "appendice",
-     "desc": {
-      "fr": "Appendice descendant dans le pelvis. Une appendicite peut y donner des signes pelviens et prêter à confusion diagnostique avec les organes pelviens.",
-      "en": "Appendix descending into the pelvis. Appendicitis here may give pelvic signs and be diagnostically confused with pelvic organs."
      }
     },
     {
@@ -293,14 +248,14 @@
      "x": 180,
      "y": 688,
      "w": 230,
-     "label": "Point de McBurney",
+     "label": "Point de McBurney — ligne spino-ombilicale",
      "sub": "projection de la base appendiculaire",
      "label_en": "McBurney's point",
      "sub_en": "projection of the appendiceal base",
      "lvl": "clinique",
      "desc": {
-      "fr": "Repère chirurgical cutané de la face antérieure : au niveau de la peau siège le point de McBurney, décrit dans le cours comme la projection de la base appendiculaire. Il n'a de valeur que dans la position normale.",
-      "en": "Surgical surface landmark of the anterior aspect: at skin level lies McBurney's point, described in the course as the projection of the appendiceal base. It is only valid in the normal position."
+      "fr": "Repère chirurgical cutané de la face antérieure : au niveau de la peau siège le point de McBurney, décrit dans le cours comme la projection de la base appendiculaire. Il n'a de valeur que dans la position normale. — sur la ligne spino-ombilicale (ligne joignant l'épine iliaque antéro-supérieure à l'ombilic).",
+      "en": "Surgical surface landmark of the anterior aspect: at skin level lies McBurney's point, described in the course as the projection of the appendiceal base. It is only valid in the normal position. — on the spino-umbilical line (line joining the anterior superior iliac spine to the umbilicus)."
      }
     },
     {
@@ -374,23 +329,11 @@
     ],
     [
      "app_hub",
-     "app_souscaecale"
-    ],
-    [
-     "app_hub",
      "app_precaecale"
     ],
     [
      "app_hub",
-     "app_preileale"
-    ],
-    [
-     "app_hub",
      "app_retroileale"
-    ],
-    [
-     "app_hub",
-     "app_pelvienne"
     ],
     [
      "app_hub",
@@ -414,11 +357,6 @@
      "clin_atypique"
     ],
     [
-     "app_pelvienne",
-     "clin_atypique",
-     1
-    ],
-    [
      "app_mesocoeliaque",
      "clin_atypique",
      1
@@ -438,7 +376,7 @@
    "titre_fr": "Configuration du cæcum — externe et interne",
    "titre_en": "Configuration of the caecum — external and internal",
    "w": 720,
-   "h": 840,
+   "h": 950,
    "levels": {
     "hub": {
      "c": "#374151",
@@ -693,21 +631,6 @@
      }
     },
     {
-     "id": "artere_appendiculaire",
-     "x": 180,
-     "y": 782,
-     "w": 230,
-     "label": "Artère appendiculaire",
-     "sub": "dans le méso-appendice",
-     "label_en": "Appendicular artery",
-     "sub_en": "within the meso-appendix",
-     "lvl": "appendice",
-     "desc": {
-      "fr": "L'artère appendiculaire chemine dans le méso-appendice jusqu'à l'appendice. Elle n'est pas individualisée comme maillage propre dans l'audit : elle est montrée en schéma, contenue dans le méso-appendice.",
-      "en": "The appendicular artery runs within the meso-appendix to the appendix. It is not individualized as its own mesh in the audit: it is shown diagrammatically, contained in the meso-appendix."
-     }
-    },
-    {
      "id": "tuniques",
      "x": 540,
      "y": 782,
@@ -720,6 +643,44 @@
      "desc": {
       "fr": "Le cæcum comprend 4 tuniques : séreuse, musculeuse (2 couches de fibres), sous-muqueuse et muqueuse, riche en follicules lymphoïdes au niveau de l'appendice (plaque de Peyer du cours).",
       "en": "The caecum has 4 coats: serosa, muscularis (2 fibre layers), submucosa and mucosa, rich in lymphoid follicles at the appendix (the course's Peyer's patch)."
+     }
+    },
+    {
+     "id": "angle_ileocaecal",
+     "x": 180,
+     "y": 782,
+     "w": 230,
+     "label": "Angle iléo-cæcal",
+     "sub": "jonction de l'iléon et du cæcum",
+     "label_en": "Ileocaecal angle",
+     "sub_en": "junction of ileum and caecum",
+     "lvl": "interne",
+     "note": {
+      "fr": "Schéma seul — pas de maillage 3D",
+      "en": "Diagram only — no 3D mesh"
+     },
+     "desc": {
+      "fr": "Angle iléo-cæcal : jonction entre l'iléon terminal et le cæcum, au niveau de l'orifice iléo-cæcal — nommé par la légende de la figure.",
+      "en": "Ileocaecal angle: junction of the terminal ileum and the caecum, at the ileocaecal orifice — named in the figure's legend."
+     }
+    },
+    {
+     "id": "frein_valvule",
+     "x": 360,
+     "y": 885,
+     "w": 300,
+     "label": "Frein de la valvule iléo-cæcale",
+     "sub": "repli péritonéal de la valvule",
+     "label_en": "Frenulum of the ileocaecal valve",
+     "sub_en": "peritoneal fold of the valve",
+     "lvl": "interne",
+     "note": {
+      "fr": "Schéma seul — pas de maillage 3D",
+      "en": "Diagram only — no 3D mesh"
+     },
+     "desc": {
+      "fr": "Freins (supérieur et inférieur) de la valvule iléo-cæcale : replis péritonéaux prolongeant la valvule — nommés par la légende de la figure, sans maillage propre.",
+      "en": "Frenula (superior and inferior) of the ileocaecal valve: peritoneal folds extending the valve — named in the figure's legend, no mesh of their own."
      }
     }
    ],
@@ -798,10 +759,6 @@
      "meso_appendice"
     ],
     [
-     "meso_appendice",
-     "artere_appendiculaire"
-    ],
-    [
      "cae_hub",
      "tuniques",
      1
@@ -809,6 +766,20 @@
     [
      "appendice",
      "tuniques",
+     1
+    ],
+    [
+     "ileon",
+     "angle_ileocaecal"
+    ],
+    [
+     "orifice_ileocaecal",
+     "angle_ileocaecal",
+     1
+    ],
+    [
+     "orifice_ileocaecal",
+     "frein_valvule",
      1
     ]
    ]

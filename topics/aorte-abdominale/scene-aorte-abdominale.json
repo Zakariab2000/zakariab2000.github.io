@@ -142,68 +142,6 @@
      }
     },
     {
-     "id": "inferior_suprarenal_artery_right",
-     "role": "sujet",
-     "nom_fr": "Artère surrénale inférieure",
-     "name_en": "Right inferior suprarenal artery",
-     "system": "arteres",
-     "file": "models/arteres/inferior_suprarenal_artery_right.glb",
-     "couleur": "#cf5346",
-     "bounds": {
-      "min": [
-       -56.0,
-       1038.4,
-       82.5
-      ],
-      "max": [
-       -29.1,
-       1092.1,
-       104.7
-      ],
-      "center": [
-       -42.5,
-       1065.3,
-       93.6
-      ],
-      "size": [
-       26.9,
-       53.6,
-       22.2
-      ]
-     }
-    },
-    {
-     "id": "inferior_suprarenal_artery_left",
-     "role": "sujet",
-     "nom_fr": "Artère surrénale inférieure",
-     "name_en": "Left inferior suprarenal artery",
-     "system": "arteres",
-     "file": "models/arteres/inferior_suprarenal_artery_left.glb",
-     "couleur": "#cf5346",
-     "bounds": {
-      "min": [
-       21.3,
-       1047.8,
-       71.0
-      ],
-      "max": [
-       70.1,
-       1111.0,
-       107.7
-      ],
-      "center": [
-       45.7,
-       1079.4,
-       89.3
-      ],
-      "size": [
-       48.8,
-       63.2,
-       36.6
-      ]
-     }
-    },
-    {
      "id": "right_testicular_artery",
      "role": "sujet",
      "nom_fr": "Artère testiculaire droite",
@@ -576,39 +514,24 @@
      }
     },
     {
-     "id": "inferior_vena_cava_abdominal_part",
-     "role": "rapport",
-     "nom_fr": "Veine cave inférieure (partie abdominale)",
-     "name_en": "Inferior vena cava (abdominal part)",
-     "system": "veines",
-     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
-     "couleur": "#5b7fb4",
-     "bounds": {
-      "min": [
-       -18.7,
-       962.9,
-       105.3
-      ],
-      "max": [
-       -0.5,
-       1106.8,
-       132.4
-      ],
-      "center": [
-       -9.6,
-       1034.8,
-       118.9
-      ],
-      "size": [
-       18.2,
-       143.8,
-       27.1
-      ]
-     }
+     "id": "left_renal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère rénale gauche",
+     "name_en": "Left renal artery",
+     "system": "arteres",
+     "file": "models/arteres/left_renal_artery.glb"
+    },
+    {
+     "id": "right_renal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère rénale droite",
+     "name_en": "Right renal artery",
+     "system": "arteres",
+     "file": "models/arteres/right_renal_artery.glb"
     },
     {
      "id": "kidney_right",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Rein droit",
      "name_en": "Right kidney",
      "system": "organes",
@@ -639,7 +562,7 @@
     },
     {
      "id": "kidney_left",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Rein gauche",
      "name_en": "Left kidney",
      "system": "organes",
@@ -667,10 +590,85 @@
        40.6
       ]
      }
+    },
+    {
+     "id": "suprarenal_gland_left",
+     "role": "rapports",
+     "nom_fr": "Glande surrénale",
+     "name_en": "Left suprarenal gland",
+     "system": "organes",
+     "file": "models/organes/suprarenal_gland_left.glb"
+    },
+    {
+     "id": "suprarenal_gland_right",
+     "role": "rapports",
+     "nom_fr": "Glande surrénale",
+     "name_en": "Right suprarenal gland",
+     "system": "organes",
+     "file": "models/organes/suprarenal_gland_right.glb"
+    },
+    {
+     "id": "diaphragm",
+     "role": "rapports",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "system": "muscles",
+     "file": "models/muscles/diaphragm.glb"
+    },
+    {
+     "id": "psoas_major_left",
+     "role": "rapports",
+     "nom_fr": "Grand psoas",
+     "name_en": "Left psoas major",
+     "system": "muscles",
+     "file": "models/muscles/psoas_major_left.glb"
+    },
+    {
+     "id": "psoas_major_right",
+     "role": "rapports",
+     "nom_fr": "Grand psoas",
+     "name_en": "Right psoas major",
+     "system": "muscles",
+     "file": "models/muscles/psoas_major_right.glb"
+    },
+    {
+     "id": "quadratus_lumborum_muscle_left",
+     "role": "rapports",
+     "nom_fr": "Muscle carré des lombes",
+     "name_en": "Left quadratus lumborum muscle",
+     "system": "muscles",
+     "file": "models/muscles/quadratus_lumborum_muscle_left.glb"
+    },
+    {
+     "id": "quadratus_lumborum_muscle_right",
+     "role": "rapports",
+     "nom_fr": "Muscle carré des lombes",
+     "name_en": "Right quadratus lumborum muscle",
+     "system": "muscles",
+     "file": "models/muscles/quadratus_lumborum_muscle_right.glb"
+    },
+    {
+     "id": "ureter_left",
+     "role": "rapports",
+     "nom_fr": "Uretère",
+     "name_en": "Left ureter",
+     "system": "organes",
+     "file": "models/organes/ureter_left.glb"
+    },
+    {
+     "id": "ureter_right",
+     "role": "rapports",
+     "nom_fr": "Uretère",
+     "name_en": "Right ureter",
+     "system": "organes",
+     "file": "models/organes/ureter_right.glb"
     }
    ],
    "manquants": [
-    "Artères ovariennes (équivalent femme) : absentes (seules les testiculaires existent, modèle masculin)"
+    "Artères ovariennes (équivalent femme) : absentes (seules les testiculaires existent, modèle masculin)",
+    "Artère surrénale moyenne : aucun maillage au manifeste (seule l'artère surrénale inférieure existe) — absente, non représentée",
+    "Orifice oesophagien : ouverture du diaphragme sans maillage d'orifice au manifeste (oesophagus existe, pas l'orifice) — non représenté",
+    "Hiatus aortique : ouverture du diaphragme sans maillage d'orifice au manifeste — non représenté"
    ],
    "espaces": []
   }

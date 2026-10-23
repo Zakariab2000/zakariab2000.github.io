@@ -12,7 +12,7 @@
    "titre_en": "Branches of the internal iliac (hypogastric) artery",
    "classe": "[3D]",
    "vue": "antero-laterale",
-   "diagram": null,
+   "diagram": "hypogastrique",
    "systemes": [
     "arteres",
     "squelette"
@@ -515,8 +515,24 @@
      }
     },
     {
+     "id": "uterine_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère utérine gauche",
+     "name_en": "Left uterine artery",
+     "system": "arteres",
+     "file": "models/arteres/uterine_artery_left.glb"
+    },
+    {
+     "id": "uterine_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère utérine droite",
+     "name_en": "Right uterine artery",
+     "system": "arteres",
+     "file": "models/arteres/uterine_artery_right.glb"
+    },
+    {
      "id": "common_iliac_artery_right",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère iliaque commune",
      "name_en": "Right common iliac artery",
      "system": "arteres",
@@ -547,7 +563,7 @@
     },
     {
      "id": "common_iliac_artery_left",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère iliaque commune",
      "name_en": "Left common iliac artery",
      "system": "arteres",
@@ -578,7 +594,7 @@
     },
     {
      "id": "external_iliac_artery_right",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère iliaque externe",
      "name_en": "Right external iliac artery",
      "system": "arteres",
@@ -609,7 +625,7 @@
     },
     {
      "id": "external_iliac_artery_left",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère iliaque externe",
      "name_en": "Left external iliac artery",
      "system": "arteres",
@@ -640,7 +656,7 @@
     },
     {
      "id": "sacrum",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Sacrum",
      "name_en": "Sacrum",
      "system": "squelette",
@@ -671,7 +687,7 @@
     },
     {
      "id": "median_sacral_artery",
-     "role": "rapport",
+     "role": "rapports",
      "nom_fr": "Artère sacrale médiane",
      "name_en": "Median sacral artery",
      "system": "arteres",
@@ -699,11 +715,116 @@
        91.6
       ]
      }
+    },
+    {
+     "id": "inferior_epigastric_artery_left",
+     "role": "rapports",
+     "nom_fr": "Artère épigastrique inférieure",
+     "name_en": "Left inferior epigastric artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_epigastric_artery_left.glb"
+    },
+    {
+     "id": "inferior_epigastric_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère épigastrique inférieure",
+     "name_en": "Right inferior epigastric artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_epigastric_artery_right.glb"
+    },
+    {
+     "id": "femoral_artery_left",
+     "role": "rapports",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Left femoral artery",
+     "system": "arteres",
+     "file": "models/arteres/femoral_artery_left.glb"
+    },
+    {
+     "id": "femoral_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "system": "arteres",
+     "file": "models/arteres/femoral_artery_right.glb"
+    },
+    {
+     "id": "abdominal_aorta",
+     "role": "rapports",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb"
+    },
+    {
+     "id": "piriformis_muscle_left",
+     "role": "rapports",
+     "nom_fr": "Muscle piriforme",
+     "name_en": "Left piriformis muscle",
+     "system": "muscles",
+     "file": "models/muscles/piriformis_muscle_left.glb"
+    },
+    {
+     "id": "piriformis_muscle_right",
+     "role": "rapports",
+     "nom_fr": "Muscle piriforme",
+     "name_en": "Right piriformis muscle",
+     "system": "muscles",
+     "file": "models/muscles/piriformis_muscle_right.glb"
+    },
+    {
+     "id": "obturator_internus_left",
+     "role": "rapports",
+     "nom_fr": "Obturateur interne",
+     "name_en": "Left obturator internus",
+     "system": "muscles",
+     "file": "models/muscles/obturator_internus_left.glb"
+    },
+    {
+     "id": "obturator_internus_right",
+     "role": "rapports",
+     "nom_fr": "Obturateur interne",
+     "name_en": "Right obturator internus",
+     "system": "muscles",
+     "file": "models/muscles/obturator_internus_right.glb"
+    },
+    {
+     "id": "sacrospinous_ligament_left",
+     "role": "rapports",
+     "nom_fr": "Ligament sacro-épineux",
+     "name_en": "Left sacrospinous ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/sacrospinous_ligament_left.glb"
+    },
+    {
+     "id": "sacrospinous_ligament_right",
+     "role": "rapports",
+     "nom_fr": "Ligament sacro-épineux",
+     "name_en": "Right sacrospinous ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/sacrospinous_ligament_right.glb"
+    },
+    {
+     "id": "sacrotuberous_ligament_left",
+     "role": "rapports",
+     "nom_fr": "Ligament sacrotubéral",
+     "name_en": "Left sacrotuberous ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/sacrotuberous_ligament_left.glb"
+    },
+    {
+     "id": "sacrotuberous_ligament_right",
+     "role": "rapports",
+     "nom_fr": "Ligament sacrotubéral",
+     "name_en": "Right sacrotuberous ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/sacrotuberous_ligament_right.glb"
     }
    ],
    "manquants": [
     "Artère ombilicale : ABSENTE ; artères vésicales supérieure et inférieure : ABSENTES ; artère rectale moyenne : ABSENTE ; artère sacrale latérale : ABSENTE (seuls ses nœuds et veines existent)",
-    "Chez la femme : artères utérine et vaginale absentes (voir Fig 103)"
+    "Chez la femme : artère vaginale absente (voir Fig 103) — l'artère utérine, elle, EXISTE au manifeste (uterine_artery_left, uterine_artery_right, HuBMAP) et est présente en sujet",
+    "Artère circonflexe iliaque profonde : aucune artère de ce nom au manifeste — absente, non représentée"
    ],
    "espaces": []
   }

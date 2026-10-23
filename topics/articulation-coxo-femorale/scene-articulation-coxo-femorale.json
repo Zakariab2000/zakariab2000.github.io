@@ -127,6 +127,14 @@
      }
     },
     {
+     "id": "transverse_acetabular_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament acétabulaire transverse",
+     "name_en": "Right transverse acetabular ligament",
+     "system": "ligaments",
+     "file": "models/ligaments/transverse_acetabular_ligament_right.glb"
+    },
+    {
      "id": "rep_acetabular_fossa_right",
      "role": "contexte",
      "nom_fr": "Fosse acétabulaire",
@@ -189,6 +197,30 @@
        0.5
       ]
      }
+    },
+    {
+     "id": "rep_acetabular_notch_right",
+     "role": "contexte",
+     "nom_fr": "Incisure acétabulaire",
+     "name_en": "Right acetabular notch",
+     "system": "reperes",
+     "file": "models-reperes/acetabular_notch_right.glb"
+    },
+    {
+     "id": "rep_lunate_surface_right",
+     "role": "contexte",
+     "nom_fr": "Surface semilunaire",
+     "name_en": "Right lunate surface",
+     "system": "reperes",
+     "file": "models-reperes/lunate_surface_right.glb"
+    },
+    {
+     "id": "gluteus_medius_muscle_terminaison_right",
+     "role": "contexte",
+     "nom_fr": "Terminaison : Muscle moyen fessier",
+     "name_en": "Insertion of right gluteus medius muscle",
+     "system": "insertions",
+     "file": "models-insertions/gluteus_medius_muscle_terminaison_right.glb"
     }
    ],
    "diagram": null,
@@ -353,7 +385,7 @@
     {
      "id": "ligament_of_head_of_femur_right",
      "role": "sujet",
-     "nom_fr": "Ligament de la tête du fémur",
+     "nom_fr": "Ligament rond",
      "name_en": "Right ligament of head of femur",
      "name_la": "Ligamentum capitis femoris",
      "systeme": "ligaments",
@@ -448,7 +480,7 @@
     },
     {
      "id": "hip_bone_right",
-     "role": "ghost",
+     "role": "rapports",
      "nom_fr": "Os coxal",
      "name_en": "Right hip bone",
      "name_la": "Os coxae",
@@ -480,7 +512,7 @@
     },
     {
      "id": "femur_right",
-     "role": "ghost",
+     "role": "rapports",
      "nom_fr": "Fémur",
      "name_en": "Right femur",
      "name_la": "Os femoris",
@@ -509,11 +541,31 @@
        73.3
       ]
      }
+    },
+    {
+     "id": "obturator_artery_right",
+     "role": "rapports",
+     "nom_fr": "Artère obturatrice",
+     "name_en": "Right obturator artery",
+     "system": "arteres",
+     "file": "models/arteres/obturator_artery_right.glb"
+    },
+    {
+     "id": "obturator_membrane_right",
+     "role": "rapports",
+     "nom_fr": "Membrane obturatrice",
+     "name_en": "Right obturator membrane",
+     "system": "articulations",
+     "file": "models/articulations/obturator_membrane_right.glb"
     }
    ],
    "diagram": null,
    "espaces": [],
-   "manquants": [],
+   "manquants": [
+    "Branche acétabulaire de l'artère obturatrice : NON individualisée",
+    "Artère du ligament rond : NON individualisée",
+    "Manchon synovial autour du ligament rond : ABSENT (aucune géométrie de synoviale de hanche au manifeste)"
+   ],
    "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
   },
   {
@@ -521,7 +573,7 @@
    "titre_fr": "Vascularisation artérielle de l'articulation coxo-fémorale",
    "titre_en": "Arterial supply of the hip (coxofemoral) joint",
    "classe": "3D",
-   "vue": "anterieure",
+   "vue": "posterieure",
    "vue_audit": "antérieure",
    "camera": {
     "vue": "anterieure",
@@ -702,6 +754,22 @@
      }
     },
     {
+     "id": "femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "system": "arteres",
+     "file": "models/arteres/femoral_artery_right.glb"
+    },
+    {
+     "id": "perforating_femoral_arteries_right",
+     "role": "sujet",
+     "nom_fr": "Artères fémorales perforantes",
+     "name_en": "Right perforating femoral arteries",
+     "system": "arteres",
+     "file": "models/arteres/perforating_femoral_arteries_right.glb"
+    },
+    {
      "id": "deep_femoral_artery_right",
      "role": "contexte",
      "nom_fr": "Artère fémorale profonde",
@@ -735,7 +803,7 @@
     },
     {
      "id": "femur_right",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Fémur",
      "name_en": "Right femur",
      "name_la": "Os femoris",
@@ -767,7 +835,7 @@
     },
     {
      "id": "hip_bone_right",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Os coxal",
      "name_en": "Right hip bone",
      "name_la": "Os coxae",
@@ -796,6 +864,14 @@
        135.1
       ]
      }
+    },
+    {
+     "id": "piriformis_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle piriforme",
+     "name_en": "Right piriformis muscle",
+     "system": "muscles",
+     "file": "models/muscles/piriformis_muscle_right.glb"
     }
    ],
    "diagram": null,
@@ -833,102 +909,6 @@
     "articulations"
    ],
    "structures": [
-    {
-     "id": "femoral_artery_right",
-     "role": "sujet",
-     "nom_fr": "Artère fémorale",
-     "name_en": "Right femoral artery",
-     "name_la": "Arteria femoralis",
-     "systeme": "arteres",
-     "couleur": "#cf5346",
-     "file": "models/arteres/femoral_artery_right.glb",
-     "bounds": {
-      "min": [
-       -76.3,
-       489.4,
-       82.7
-      ],
-      "max": [
-       -44.8,
-       829.6,
-       148.0
-      ],
-      "center": [
-       -60.6,
-       659.5,
-       115.4
-      ],
-      "size": [
-       31.5,
-       340.3,
-       65.4
-      ]
-     }
-    },
-    {
-     "id": "femoral_vein_right",
-     "role": "sujet",
-     "nom_fr": "Veine fémorale",
-     "name_en": "Right femoral vein",
-     "name_la": "Vena femoralis",
-     "systeme": "veines",
-     "couleur": "#5b7fb4",
-     "file": "models/veines/femoral_vein_right.glb",
-     "bounds": {
-      "min": [
-       -74.0,
-       494.8,
-       81.7
-      ],
-      "max": [
-       -35.2,
-       816.8,
-       148.6
-      ],
-      "center": [
-       -54.6,
-       655.8,
-       115.1
-      ],
-      "size": [
-       38.8,
-       322.0,
-       66.8
-      ]
-     }
-    },
-    {
-     "id": "femoral_nerve_right",
-     "role": "sujet",
-     "nom_fr": "Nerf fémoral",
-     "name_en": "Right femoral nerve",
-     "name_la": "Nervus femoralis",
-     "systeme": "nerfs",
-     "couleur": "#d9a441",
-     "file": "models/nerfs/femoral_nerve_right.glb",
-     "bounds": {
-      "min": [
-       -87.2,
-       558.4,
-       72.5
-      ],
-      "max": [
-       -11.4,
-       1033.5,
-       141.0
-      ],
-      "center": [
-       -49.3,
-       796.0,
-       106.7
-      ],
-      "size": [
-       75.9,
-       475.1,
-       68.5
-      ]
-     }
-    },
     {
      "id": "psoas_major_right",
      "role": "sujet",
@@ -996,7 +976,7 @@
     {
      "id": "sartorius_muscle_right",
      "role": "sujet",
-     "nom_fr": "Muscle sartorius",
+     "nom_fr": "Muscle couturier",
      "name_en": "Right sartorius muscle",
      "name_la": "Musculus sartorius",
      "systeme": "muscles",
@@ -1058,40 +1038,40 @@
      }
     },
     {
-     "id": "articular_capsule_of_hip_joint_right",
+     "id": "gluteus_medius_muscle_right",
      "role": "sujet",
-     "nom_fr": "Capsule articulaire de l'articulation de la hanche",
-     "name_en": "Right articular capsule of hip joint",
-     "name_la": "Capsula articularis coxae",
-     "systeme": "articulations",
-     "couleur": "#a9bd8f",
-     "file": "models/articulations/articular_capsule_of_hip_joint_right.glb",
-     "bounds": {
-      "min": [
-       -118.7,
-       741.3,
-       67.6
-      ],
-      "max": [
-       -65.6,
-       820.4,
-       121.4
-      ],
-      "center": [
-       -92.2,
-       780.8,
-       94.5
-      ],
-      "size": [
-       53.1,
-       79.1,
-       53.8
-      ]
-     }
+     "nom_fr": "Muscle moyen fessier",
+     "name_en": "Right gluteus medius muscle",
+     "system": "muscles",
+     "file": "models/muscles/gluteus_medius_muscle_right.glb"
+    },
+    {
+     "id": "inguinal_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament inguinal",
+     "name_en": "Right inguinal ligament",
+     "system": "muscles",
+     "file": "models/muscles/inguinal_ligament_right.glb"
+    },
+    {
+     "id": "tensor_fasciae_latae_right",
+     "role": "sujet",
+     "nom_fr": "Muscle tenseur du fascia lata",
+     "name_en": "Right tensor fasciae latae",
+     "system": "muscles",
+     "file": "models/muscles/tensor_fasciae_latae_right.glb"
+    },
+    {
+     "id": "adductor_longus_right",
+     "role": "sujet",
+     "nom_fr": "Long adducteur",
+     "name_en": "Right adductor longus",
+     "system": "muscles",
+     "file": "models/muscles/adductor_longus_right.glb"
     },
     {
      "id": "hip_bone_right",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Os coxal",
      "name_en": "Right hip bone",
      "name_la": "Os coxae",
@@ -1123,7 +1103,7 @@
     },
     {
      "id": "femur_right",
-     "role": "ghost",
+     "role": "contexte",
      "nom_fr": "Fémur",
      "name_en": "Right femur",
      "name_la": "Os femoris",
@@ -1182,6 +1162,134 @@
        55.1,
        232.9,
        81.0
+      ]
+     }
+    },
+    {
+     "id": "femoral_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "name_la": "Arteria femoralis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.3,
+       489.4,
+       82.7
+      ],
+      "max": [
+       -44.8,
+       829.6,
+       148.0
+      ],
+      "center": [
+       -60.6,
+       659.5,
+       115.4
+      ],
+      "size": [
+       31.5,
+       340.3,
+       65.4
+      ]
+     }
+    },
+    {
+     "id": "femoral_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine fémorale",
+     "name_en": "Right femoral vein",
+     "name_la": "Vena femoralis",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/femoral_vein_right.glb",
+     "bounds": {
+      "min": [
+       -74.0,
+       494.8,
+       81.7
+      ],
+      "max": [
+       -35.2,
+       816.8,
+       148.6
+      ],
+      "center": [
+       -54.6,
+       655.8,
+       115.1
+      ],
+      "size": [
+       38.8,
+       322.0,
+       66.8
+      ]
+     }
+    },
+    {
+     "id": "femoral_nerve_right",
+     "role": "contexte",
+     "nom_fr": "Nerf fémoral",
+     "name_en": "Right femoral nerve",
+     "name_la": "Nervus femoralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/femoral_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -87.2,
+       558.4,
+       72.5
+      ],
+      "max": [
+       -11.4,
+       1033.5,
+       141.0
+      ],
+      "center": [
+       -49.3,
+       796.0,
+       106.7
+      ],
+      "size": [
+       75.9,
+       475.1,
+       68.5
+      ]
+     }
+    },
+    {
+     "id": "articular_capsule_of_hip_joint_right",
+     "role": "contexte",
+     "nom_fr": "Capsule articulaire de l'articulation de la hanche",
+     "name_en": "Right articular capsule of hip joint",
+     "name_la": "Capsula articularis coxae",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/articular_capsule_of_hip_joint_right.glb",
+     "bounds": {
+      "min": [
+       -118.7,
+       741.3,
+       67.6
+      ],
+      "max": [
+       -65.6,
+       820.4,
+       121.4
+      ],
+      "center": [
+       -92.2,
+       780.8,
+       94.5
+      ],
+      "size": [
+       53.1,
+       79.1,
+       53.8
       ]
      }
     }
