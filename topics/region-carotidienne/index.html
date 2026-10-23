@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Batch G — Aperçu scènes du cou (staging)</title>
+<style>
+  :root{ --bg:#101014; --panel:#1b1b22; --panel2:#24242e; --txt:#f2efe9; --mut:#9a97a3; --acc:#c9a227; }
+  *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body{ margin:0; height:100%; background:var(--bg); color:var(--txt);
+    font-family:-apple-system,'Segoe UI',Roboto,sans-serif; overflow:hidden; }
+  #cv{ position:fixed; inset:0; }
+  header{ position:fixed; top:0; left:0; right:0; padding:10px 12px 6px; z-index:5;
+    background:linear-gradient(180deg, rgba(16,16,20,.92), rgba(16,16,20,0)); pointer-events:none; }
+  header h1{ font-size:16px; margin:0; font-weight:700; }
+  header .sub{ font-size:11px; color:var(--mut); margin-top:1px; }
+  #figs{ position:fixed; top:56px; left:0; right:0; display:flex; gap:6px; padding:4px 12px;
+    overflow-x:auto; z-index:5; scrollbar-width:none; }
+  #figs::-webkit-scrollbar{ display:none; }
+  .chip{ flex:0 0 auto; border:1px solid #3a3a46; background:var(--panel); color:var(--txt);
+    border-radius:999px; padding:6px 11px; font-size:12px; cursor:pointer; }
+  .chip.on{ background:var(--acc); color:#17130a; border-color:var(--acc); font-weight:700; }
+  #espaces{ position:fixed; top:104px; right:10px; z-index:6; display:flex; flex-direction:column; gap:6px;
+    max-width:46vw; }
+  #espaces .titre{ font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--mut);
+    text-align:right; margin-bottom:1px; }
+  .ecard{ display:flex; align-items:center; gap:7px; background:rgba(27,27,34,.92); border:1px solid #3a3a46;
+    border-radius:10px; padding:7px 9px; font-size:11.5px; cursor:pointer; color:var(--txt); text-align:left; }
+  .ecard .dot{ width:11px; height:11px; border-radius:50%; flex:0 0 auto; border:1px solid rgba(255,255,255,.35); }
+  .ecard.on{ border-color:var(--ec,#fff); box-shadow:0 0 0 1px var(--ec,#fff) inset; font-weight:700; }
+  #vues{ position:fixed; left:10px; top:104px; z-index:6; display:flex; flex-direction:column; gap:6px; }
+  .vbtn{ background:rgba(27,27,34,.92); border:1px solid #3a3a46; color:var(--txt); border-radius:10px;
+    padding:7px 9px; font-size:11.5px; cursor:pointer; text-align:left; }
+  .vbtn.on{ border-color:var(--acc); color:var(--acc); font-weight:700; }
+  #fiche{ position:fixed; left:0; right:0; bottom:0; z-index:7; background:var(--panel);
+    border-top:1px solid #33333f; border-radius:14px 14px 0 0; padding:12px 14px 16px;
+    transform:translateY(calc(100% - 46px)); transition:transform .25s; }
+  #fiche.open{ transform:translateY(0); }
+  #fiche .grip{ width:36px; height:4px; border-radius:2px; background:#454552; margin:0 auto 8px; }
+  #fiche h2{ font-size:15px; margin:0 0 2px; }
+  #fiche .meta{ font-size:11.5px; color:var(--mut); }
+  #fiche p{ font-size:13px; line-height:1.45; margin:7px 0 0; }
+  #fiche .manq{ font-size:12px; color:#e8b4b8; margin-top:7px; line-height:1.45; }
+  #diags{ position:fixed; left:10px; bottom:56px; z-index:6; display:flex; flex-direction:column; gap:6px; }
+  .dbtn{ background:rgba(36,36,46,.95); border:1px solid var(--acc); color:var(--acc); border-radius:10px;
+    padding:7px 9px; font-size:11.5px; text-decoration:none; max-width:52vw; }
+  #load{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; z-index:9;
+    background:var(--bg); font-size:13px; color:var(--mut); }
+</style>
+</head>
+<body>
+<div id="load">Chargement de la scène…</div>
+<canvas id="cv"></canvas>
+<header><h1 id="titre"></h1><div class="sub" id="sous"></div></header>
+<div id="figs"></div>
+<div id="vues"></div>
+<div id="espaces"><div class="titre">Espaces — touchez pour colorer</div></div>
+<div id="diags"></div>
+<div id="fiche"><div class="grip"></div><h2 id="f-nom">Touchez une structure</h2>
+  <div class="meta" id="f-meta">Scène du cours — Batch G (cou)</div><p id="f-desc"></p><div class="manq" id="f-manq"></div></div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "../../assets/three/three.module.js",
+  "three/addons/": "../../assets/three/addons/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const BASE = '../../';
+const qs = new URLSearchParams(location.search);
+const sceneFile = qs.get('scene') || 'scene-region-carotidienne.json';
+window.__batchG = { loaded: 0, expected: -1, errors: [], espacesOn: [] };
+
+const [manifest, sceneData] = await Promise.all([
+  fetch(BASE + 'manifest.json').then(r => r.json()),
+  fetch(sceneFile).then(r => r.json())
+]);
+const MAN = {}; manifest.forEach(e => MAN[e.id] = e);
+
+const canvas = document.getElementById('cv');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x101014);
+const camera = new THREE.PerspectiveCamera(42, innerWidth / innerHeight, 2, 30000);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+scene.add(new THREE.AmbientLight(0xffffff, 0.85));
+const d1 = new THREE.DirectionalLight(0xffffff, 1.6); d1.position.set(300, 600, 800); scene.add(d1);
+const d2 = new THREE.DirectionalLight(0xbfd4ff, 0.55); d2.position.set(-500, 200, -600); scene.add(d2);
+
+document.getElementById('titre').textContent = sceneData.titre_fr;
+document.getElementById('sous').textContent =
+  `Sujet n°${sceneData.topic} · Partie ${sceneData.partie} · Figs ${sceneData.figures.map(f => f.numero).join(', ')}`;
+
+// ---- structures
+const loader = new GLTFLoader();
+const meshes = {};   // id -> {group, role, entry}
+const ROLE_OP = { sujet: 1.0, contexte: 0.5, ghost: 0.14 };
+
+async function loadStructure(entry) {
+  try {
+    const gltf = await loader.loadAsync(BASE + entry.file);
+    const g = gltf.scene;
+    const col = new THREE.Color(entry.couleur || '#cccccc');
+    g.traverse(o => {
+      if (o.isMesh) {
+        o.material = new THREE.MeshStandardMaterial({ color: col, roughness: 0.62, metalness: 0.05 });
+        o.userData.sid = entry.id;
+      }
+    });
+    g.visible = false;
+    scene.add(g);
+    meshes[entry.id] = { group: g, entry };
+    window.__batchG.loaded++;
+  } catch (e) {
+    window.__batchG.errors.push(entry.id + ' : ' + e.message);
+  }
+}
+window.__batchG.expected = sceneData.structures.length;
+await Promise.all(sceneData.structures.map(s => loadStructure(MAN[s.id])));
+// bornes d'espaces hors union (ex. vague pour le sujet 37) : bornes lues dans le manifeste seul.
+
+// ---- cadrage
+function boundsOf(ids) {
+  const b = new THREE.Box3();
+  ids.forEach(id => { const e = MAN[id]; if (!e) return;
+    b.expandByPoint(new THREE.Vector3(...e.bounds.min));
+    b.expandByPoint(new THREE.Vector3(...e.bounds.max)); });
+  return b;
+}
+const VUES = {
+  'anterieure':      new THREE.Vector3(0, 0.12, 1),
+  'posterieure':     new THREE.Vector3(0, 0.12, -1),
+  'antero-laterale': new THREE.Vector3(0.75, 0.22, 0.85),
+  'laterale':        new THREE.Vector3(1, 0.1, 0)
+};
+function frame(ids, vue) {
+  const b = boundsOf(ids); if (b.isEmpty()) return;
+  const c = b.getCenter(new THREE.Vector3()), s = b.getSize(new THREE.Vector3());
+  const r = Math.max(s.x, s.y, s.z) * 0.62;
+  const dist = r / Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * 1.12;
+  const dir = (VUES[vue] || VUES['anterieure']).clone().normalize();
+  controls.target.copy(c);
+  camera.position.copy(c).addScaledVector(dir, dist);
+  controls.update();
+}
+
+// ---- figures
+let curFig = sceneData.figures[0];
+const figsEl = document.getElementById('figs');
+sceneData.figures.forEach(f => {
+  const b = document.createElement('button');
+  b.className = 'chip' + (f === curFig ? ' on' : '');
+  b.textContent = `Fig ${f.numero} — ${f.titre_fr}`;
+  b.onclick = () => { setFigure(f); [...figsEl.children].forEach(c => c.classList.remove('on')); b.classList.add('on'); };
+  figsEl.appendChild(b);
+});
+function setFigure(f) {
+  curFig = f;
+  const roles = {}; f.structures.forEach(s => roles[s.id] = s.role);
+  Object.entries(meshes).forEach(([id, m]) => {
+    const role = roles[id];
+    m.group.visible = !!role;
+    if (role) m.group.traverse(o => { if (o.isMesh) {
+      // Les fascias sont des nappes corps-entier : toujours translucides pour
+      // laisser voir les structures qu'ils engainent (rôle sujet conservé).
+      const isFascia = m.entry.system === 'fascias';
+      o.material.transparent = role !== 'sujet' || isFascia;
+      o.material.opacity = isFascia ? Math.min(ROLE_OP[role], 0.35) : ROLE_OP[role];
+      o.material.depthWrite = role === 'sujet' && !isFascia;
+    }});
+  });
+  buildVues(f);
+  frameFor(f, f.vue);
+  showFiche(`Fig ${f.numero} — ${f.titre_fr}`, f.titre_en,
+    'Touchez une structure pour son nom. Les éléments translucides sont les rapports (contexte / fantôme).',
+    (f.manquants || []).join(' · '));
+}
+
+// ---- vues
+const vuesEl = document.getElementById('vues');
+function frameFor(f, vue) {
+  // Cadrage resserré sur la région : hors nappes fasciales et hors nerfs
+  // (les bornes du vague débordent tête/thorax et écraseraient la vue).
+  const ids = f.structures.filter(s => !['fascias', 'nerfs'].includes(MAN[s.id].system)).map(s => s.id);
+  frame(ids.length ? ids : f.structures.map(s => s.id), vue);
+}
+function buildVues(f) {
+  vuesEl.innerHTML = '';
+  (f.vues || [f.vue]).forEach(v => {
+    const b = document.createElement('button');
+    b.className = 'vbtn' + (v === f.vue ? ' on' : '');
+    b.textContent = { 'anterieure': 'Vue antérieure', 'posterieure': 'Vue postérieure',
+                       'antero-laterale': 'Vue antéro-latérale', 'laterale': 'Vue latérale' }[v] || v;
+    b.onclick = () => { frameFor(curFig, v);
+      [...vuesEl.children].forEach(c => c.classList.remove('on')); b.classList.add('on'); };
+    vuesEl.appendChild(b);
+  });
+}
+
+// ---- espaces (règle : carte au coin → volume coloré délimité par les bornes)
+const espEl = document.getElementById('espaces');
+const espGroups = {};
+function sideOf(id) { return id.endsWith('_right') ? 'd' : id.endsWith('_left') ? 'g' : 'm'; }
+function buildEspace(esp) {
+  const grp = new THREE.Group();
+  // Volume SCHÉMATIQUE : bornes = structures voisines, mais le volume est
+  // intersecté avec le bloc anatomique du sujet (structures hors nerfs —
+  // dont les bornes débordent loin de la région — et hors fascias-nappes).
+  const clampIds = sceneData.structures
+    .filter(s => !['nerfs', 'fascias'].includes(MAN[s.id].system)).map(s => s.id);
+  const clamp = boundsOf(clampIds);
+  const bySide = {};
+  esp.bornes.forEach(id => { (bySide[sideOf(id)] = bySide[sideOf(id)] || []).push(id); });
+  Object.values(bySide).forEach(ids => {
+    const b = boundsOf(ids); if (b.isEmpty()) return;
+    b.intersect(clamp); if (b.isEmpty()) return;
+    const c = b.getCenter(new THREE.Vector3()), s = b.getSize(new THREE.Vector3());
+    const geo = new THREE.SphereGeometry(1, 40, 28);
+    const mat = new THREE.MeshStandardMaterial({ color: esp.couleur, transparent: true, opacity: 0.34,
+      roughness: 0.35, depthWrite: false, emissive: new THREE.Color(esp.couleur), emissiveIntensity: 0.25 });
+    const m = new THREE.Mesh(geo, mat);
+    m.position.copy(c);
+    m.scale.set(Math.max(s.x / 2 * 1.04, 6), Math.max(s.y / 2 * 1.04, 6), Math.max(s.z / 2 * 1.04, 6));
+    grp.add(m);
+  });
+  grp.visible = false; scene.add(grp);
+  return grp;
+}
+(sceneData.espaces || []).forEach(esp => {
+  espGroups[esp.key] = buildEspace(esp);
+  const card = document.createElement('button');
+  card.className = 'ecard'; card.style.setProperty('--ec', esp.couleur);
+  card.innerHTML = `<span class="dot" style="background:${esp.couleur}"></span><span>${esp.nom_fr}</span>`;
+  card.onclick = () => toggleEspace(esp, card);
+  espEl.appendChild(card);
+  esp._card = card;
+});
+function toggleEspace(esp, card) {
+  const g = espGroups[esp.key]; if (!g) return;
+  g.visible = !g.visible;
+  card.classList.toggle('on', g.visible);
+  window.__batchG.espacesOn = Object.entries(espGroups).filter(([, v]) => v.visible).map(([k]) => k);
+  if (g.visible) showFiche(esp.nom_fr + ' — espace', esp.nom_en, esp.desc_fr + ' (Volume schématique, pas un maillage source.)', '');
+}
+(qs.get('espaces') || '').split(',').filter(Boolean).forEach(k => {
+  const esp = (sceneData.espaces || []).find(e => e.key === k);
+  if (esp) toggleEspace(esp, esp._card);
+});
+
+// ---- schémas liés
+const dg = document.getElementById('diags');
+(sceneData.diagrammes || []).forEach(d => {
+  const a = document.createElement('a');
+  a.className = 'dbtn'; a.href = d.fichier;
+  a.textContent = `Schéma : ${d.titre_fr} (Fig ${d.figures.join(', ')})`;
+  dg.appendChild(a);
+});
+
+// ---- fiche + picking
+function showFiche(nom, en, desc, manq) {
+  document.getElementById('f-nom').textContent = nom;
+  document.getElementById('f-meta').textContent = en || '';
+  document.getElementById('f-desc').textContent = desc || '';
+  document.getElementById('f-manq').textContent = manq ? '⚠ ' + manq : '';
+  document.getElementById('fiche').classList.add('open');
+}
+let selected = null;
+const ray = new THREE.Raycaster(), ptr = new THREE.Vector2();
+canvas.addEventListener('pointerdown', e => { canvas._px = e.clientX; canvas._py = e.clientY; });
+canvas.addEventListener('pointerup', e => {
+  if (Math.hypot(e.clientX - canvas._px, e.clientY - canvas._py) > 6) return;
+  ptr.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+  ray.setFromCamera(ptr, camera);
+  const hits = ray.intersectObjects(scene.children, true).filter(h => h.object.userData.sid);
+  if (selected) { selected.material.emissive = new THREE.Color(0x000000); selected = null; }
+  if (!hits.length) return;
+  const mesh = hits[0].object, id = mesh.userData.sid, e2 = MAN[id];
+  mesh.material.emissive = new THREE.Color(0x665511);
+  selected = mesh;
+  const fs = curFig.structures.find(s => s.id === id);
+  showFiche(e2.nom_fr, e2.name_en,
+    `Système : ${e2.system} · Rôle dans la figure ${curFig.numero} : ${fs ? fs.role : '—'}`, '');
+});
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+
+const wantFig = parseInt(qs.get('fig') || '0', 10);
+if (wantFig) { const f = sceneData.figures.find(x => x.numero === wantFig); if (f) {
+  setFigure(f); [...figsEl.children].forEach((c, i) => c.classList.toggle('on', sceneData.figures[i] === f));
+} } else setFigure(curFig);
+document.getElementById('load').style.display = 'none';
+
+(function loop() { requestAnimationFrame(loop); controls.update(); renderer.render(scene, camera); })();
+</script>
+</body>
+</html>

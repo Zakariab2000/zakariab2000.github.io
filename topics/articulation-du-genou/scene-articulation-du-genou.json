@@ -1,0 +1,3376 @@
+{
+ "batch": "B",
+ "partie": "II",
+ "sujet": "articulation-du-genou",
+ "titre_fr": "Articulation du genou",
+ "titre_en": "Knee joint",
+ "figures": [
+  {
+   "numero": 42,
+   "titre_fr": "Surfaces articulaires du genou",
+   "titre_en": "Articular surfaces of the knee joint",
+   "classe": "3D",
+   "vue": "superieure",
+   "vue_audit": "supérieure (plateau tibial) puis antérieure",
+   "camera": {
+    "vue": "superieure",
+    "position": [
+     -74.8,
+     732.4,
+     278.8
+    ],
+    "target": [
+     -74.8,
+     371.0,
+     80.0
+    ]
+   },
+   "systemes": [
+    "squelette",
+    "articulations"
+   ],
+   "structures": [
+    {
+     "id": "femur_right",
+     "role": "sujet",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "tibia_right",
+     "role": "sujet",
+     "nom_fr": "Tibia",
+     "name_en": "Right tibia",
+     "name_la": "Tibia",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/tibia_right.glb",
+     "bounds": {
+      "min": [
+       -114.0,
+       2.2,
+       40.9
+      ],
+      "max": [
+       -37.0,
+       362.2,
+       104.8
+      ],
+      "center": [
+       -75.5,
+       182.2,
+       72.8
+      ],
+      "size": [
+       77.1,
+       359.9,
+       63.9
+      ]
+     }
+    },
+    {
+     "id": "patella_right",
+     "role": "sujet",
+     "nom_fr": "Patella",
+     "name_en": "Right patella",
+     "name_la": "Patella",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/patella_right.glb",
+     "bounds": {
+      "min": [
+       -104.5,
+       352.7,
+       96.2
+      ],
+      "max": [
+       -62.0,
+       393.9,
+       117.5
+      ],
+      "center": [
+       -83.2,
+       373.3,
+       106.8
+      ],
+      "size": [
+       42.4,
+       41.1,
+       21.4
+      ]
+     }
+    },
+    {
+     "id": "medial_meniscus_right",
+     "role": "sujet",
+     "nom_fr": "Ménisque médial",
+     "name_en": "Right medial meniscus",
+     "name_la": "Meniscus medialis",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/medial_meniscus_right.glb",
+     "bounds": {
+      "min": [
+       -66.5,
+       348.1,
+       42.5
+      ],
+      "max": [
+       -41.1,
+       363.1,
+       84.4
+      ],
+      "center": [
+       -53.8,
+       355.6,
+       63.4
+      ],
+      "size": [
+       25.4,
+       15.0,
+       42.0
+      ]
+     }
+    },
+    {
+     "id": "lateral_meniscus_right",
+     "role": "sujet",
+     "nom_fr": "Ménisque latéral",
+     "name_en": "Right lateral meniscus",
+     "name_la": "Meniscus lateralis",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/lateral_meniscus_right.glb",
+     "bounds": {
+      "min": [
+       -108.4,
+       353.2,
+       54.3
+      ],
+      "max": [
+       -75.2,
+       368.6,
+       90.6
+      ],
+      "center": [
+       -91.8,
+       360.9,
+       72.4
+      ],
+      "size": [
+       33.2,
+       15.4,
+       36.4
+      ]
+     }
+    },
+    {
+     "id": "fibula_right",
+     "role": "contexte",
+     "nom_fr": "Fibula",
+     "name_en": "Right fibula",
+     "name_la": "Fibula",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/fibula_right.glb",
+     "bounds": {
+      "min": [
+       -122.9,
+       -17.9,
+       44.0
+      ],
+      "max": [
+       -87.4,
+       346.6,
+       75.2
+      ],
+      "center": [
+       -105.1,
+       164.4,
+       59.6
+      ],
+      "size": [
+       35.6,
+       364.5,
+       31.3
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [],
+   "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
+  },
+  {
+   "numero": 43,
+   "titre_fr": "Ligaments de l'articulation du genou",
+   "titre_en": "Ligaments of the knee joint",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure puis intercondylienne",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -74.8,
+     396.3,
+     385.0
+    ],
+    "target": [
+     -74.8,
+     364.4,
+     66.5
+    ]
+   },
+   "systemes": [
+    "ligaments",
+    "articulations",
+    "squelette"
+   ],
+   "structures": [
+    {
+     "id": "anterior_cruciate_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament croisé antérieur",
+     "name_en": "Right anterior cruciate ligament",
+     "name_la": "Ligamentum cruciatum anterius",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/anterior_cruciate_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -86.8,
+       355.8,
+       56.5
+      ],
+      "max": [
+       -66.0,
+       385.7,
+       79.6
+      ],
+      "center": [
+       -76.4,
+       370.7,
+       68.1
+      ],
+      "size": [
+       20.8,
+       29.9,
+       23.1
+      ]
+     }
+    },
+    {
+     "id": "posterior_cruciate_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament croisé postérieur",
+     "name_en": "Right posterior cruciate ligament",
+     "name_la": "Ligamentum decussatum posterius",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/posterior_cruciate_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -83.3,
+       343.2,
+       48.4
+      ],
+      "max": [
+       -60.4,
+       381.3,
+       65.9
+      ],
+      "center": [
+       -71.9,
+       362.3,
+       57.2
+      ],
+      "size": [
+       22.9,
+       38.1,
+       17.5
+      ]
+     }
+    },
+    {
+     "id": "superficial_part_of_tibial_collateral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Partie superficielle du ligament collatéral tibial",
+     "name_en": "Right superficial part of tibial collateral ligament",
+     "name_la": "Pars superficialis ligamenti collateralis tibialis",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/superficial_part_of_tibial_collateral_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -64.3,
+       321.4,
+       66.7
+      ],
+      "max": [
+       -32.0,
+       383.6,
+       88.0
+      ],
+      "center": [
+       -48.1,
+       352.5,
+       77.4
+      ],
+      "size": [
+       32.3,
+       62.3,
+       21.2
+      ]
+     }
+    },
+    {
+     "id": "deep_part_of_tibial_collateral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Partie profonde du ligament collatéral tibial",
+     "name_en": "Right deep part of tibial collateral ligament",
+     "name_la": "Pars profunda ligamenti collateralis tibialis",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/deep_part_of_tibial_collateral_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -66.0,
+       320.3,
+       63.4
+      ],
+      "max": [
+       -32.6,
+       383.5,
+       87.7
+      ],
+      "center": [
+       -49.3,
+       351.9,
+       75.6
+      ],
+      "size": [
+       33.4,
+       63.1,
+       24.3
+      ]
+     }
+    },
+    {
+     "id": "fibular_collateral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament collatéral fibulaire",
+     "name_en": "Right fibular collateral ligament",
+     "name_la": "Ligamentum collaterale fibulare",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/fibular_collateral_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -118.5,
+       336.1,
+       58.9
+      ],
+      "max": [
+       -109.8,
+       388.9,
+       66.6
+      ],
+      "center": [
+       -114.1,
+       362.5,
+       62.7
+      ],
+      "size": [
+       8.6,
+       52.8,
+       7.7
+      ]
+     }
+    },
+    {
+     "id": "articular_capsule_of_knee_joint_right",
+     "role": "sujet",
+     "nom_fr": "Capsule articulaire du genou",
+     "name_en": "Right articular capsule of knee joint",
+     "name_la": "Capsula articularis genus",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/articular_capsule_of_knee_joint_right.glb",
+     "bounds": {
+      "min": [
+       -113.3,
+       341.5,
+       39.9
+      ],
+      "max": [
+       -36.0,
+       427.8,
+       111.4
+      ],
+      "center": [
+       -74.6,
+       384.6,
+       75.6
+      ],
+      "size": [
+       77.3,
+       86.4,
+       71.5
+      ]
+     }
+    },
+    {
+     "id": "medial_meniscus_right",
+     "role": "sujet",
+     "nom_fr": "Ménisque médial",
+     "name_en": "Right medial meniscus",
+     "name_la": "Meniscus medialis",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/medial_meniscus_right.glb",
+     "bounds": {
+      "min": [
+       -66.5,
+       348.1,
+       42.5
+      ],
+      "max": [
+       -41.1,
+       363.1,
+       84.4
+      ],
+      "center": [
+       -53.8,
+       355.6,
+       63.4
+      ],
+      "size": [
+       25.4,
+       15.0,
+       42.0
+      ]
+     }
+    },
+    {
+     "id": "lateral_meniscus_right",
+     "role": "sujet",
+     "nom_fr": "Ménisque latéral",
+     "name_en": "Right lateral meniscus",
+     "name_la": "Meniscus lateralis",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/lateral_meniscus_right.glb",
+     "bounds": {
+      "min": [
+       -108.4,
+       353.2,
+       54.3
+      ],
+      "max": [
+       -75.2,
+       368.6,
+       90.6
+      ],
+      "center": [
+       -91.8,
+       360.9,
+       72.4
+      ],
+      "size": [
+       33.2,
+       15.4,
+       36.4
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "contexte",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "tibia_right",
+     "role": "contexte",
+     "nom_fr": "Tibia",
+     "name_en": "Right tibia",
+     "name_la": "Tibia",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/tibia_right.glb",
+     "bounds": {
+      "min": [
+       -114.0,
+       2.2,
+       40.9
+      ],
+      "max": [
+       -37.0,
+       362.2,
+       104.8
+      ],
+      "center": [
+       -75.5,
+       182.2,
+       72.8
+      ],
+      "size": [
+       77.1,
+       359.9,
+       63.9
+      ]
+     }
+    },
+    {
+     "id": "patella_right",
+     "role": "contexte",
+     "nom_fr": "Patella",
+     "name_en": "Right patella",
+     "name_la": "Patella",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/patella_right.glb",
+     "bounds": {
+      "min": [
+       -104.5,
+       352.7,
+       96.2
+      ],
+      "max": [
+       -62.0,
+       393.9,
+       117.5
+      ],
+      "center": [
+       -83.2,
+       373.3,
+       106.8
+      ],
+      "size": [
+       42.4,
+       41.1,
+       21.4
+      ]
+     }
+    },
+    {
+     "id": "patellar_ligament_origine_right",
+     "role": "contexte",
+     "nom_fr": "Origine : Ligament patellaire",
+     "name_en": "Origin of right patellar ligament",
+     "name_la": null,
+     "systeme": "insertions",
+     "couleur": "#c0392b",
+     "file": "models-insertions/patellar_ligament_origine_right.glb",
+     "bounds": {
+      "min": [
+       -98.6,
+       352.3,
+       101.9
+      ],
+      "max": [
+       -70.1,
+       361.7,
+       108.8
+      ],
+      "center": [
+       -84.4,
+       357.0,
+       105.3
+      ],
+      "size": [
+       28.5,
+       9.4,
+       6.9
+      ]
+     }
+    },
+    {
+     "id": "patellar_ligament_terminaison_right",
+     "role": "contexte",
+     "nom_fr": "Terminaison : Ligament patellaire",
+     "name_en": "Insertion of right patellar ligament",
+     "name_la": null,
+     "systeme": "insertions",
+     "couleur": "#2471a3",
+     "file": "models-insertions/patellar_ligament_terminaison_right.glb",
+     "bounds": {
+      "min": [
+       -91.4,
+       300.3,
+       99.6
+      ],
+      "max": [
+       -70.3,
+       337.0,
+       105.1
+      ],
+      "center": [
+       -80.8,
+       318.7,
+       102.4
+      ],
+      "size": [
+       21.1,
+       36.7,
+       5.5
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [
+    "Ligament patellaire (rotulien) : AUCUN maillage dans le système 'ligaments' — seuls ses repères d'insertion (origine/terminaison, système insertions) existent"
+   ],
+   "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
+  },
+  {
+   "numero": 44,
+   "titre_fr": "Rapports antérieurs de l'articulation du genou",
+   "titre_en": "Anterior relations of the knee joint",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -94.0,
+     584.6,
+     1696.7
+    ],
+    "target": [
+     -94.0,
+     424.8,
+     98.8
+    ]
+   },
+   "systemes": [
+    "muscles",
+    "squelette",
+    "fascias"
+   ],
+   "structures": [
+    {
+     "id": "rectus_femoris_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle droit fémoral",
+     "name_en": "Right rectus femoris muscle",
+     "name_la": "Musculus rectus femoris",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/rectus_femoris_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -146.0,
+       299.1,
+       91.5
+      ],
+      "max": [
+       -65.8,
+       847.4,
+       156.6
+      ],
+      "center": [
+       -105.9,
+       573.3,
+       124.0
+      ],
+      "size": [
+       80.2,
+       548.3,
+       65.1
+      ]
+     }
+    },
+    {
+     "id": "vastus_lateralis_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle vaste latéral",
+     "name_en": "Right vastus lateralis muscle",
+     "name_la": "Musculus vastus lateralis",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/vastus_lateralis_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -156.5,
+       312.3,
+       66.4
+      ],
+      "max": [
+       -83.7,
+       772.2,
+       140.8
+      ],
+      "center": [
+       -120.1,
+       542.3,
+       103.6
+      ],
+      "size": [
+       72.7,
+       459.9,
+       74.4
+      ]
+     }
+    },
+    {
+     "id": "vastus_medialis_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle vaste médial",
+     "name_en": "Right vastus medialis muscle",
+     "name_la": "Musculus vastus medialis",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/vastus_medialis_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -103.7,
+       313.6,
+       81.7
+      ],
+      "max": [
+       -33.3,
+       723.8,
+       146.0
+      ],
+      "center": [
+       -68.5,
+       518.7,
+       113.8
+      ],
+      "size": [
+       70.3,
+       410.1,
+       64.3
+      ]
+     }
+    },
+    {
+     "id": "vastus_intermedius_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle vaste intermédiaire",
+     "name_en": "Right vastus intermedius muscle",
+     "name_la": "Musculus vastus intermedius",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/vastus_intermedius_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -131.0,
+       327.3,
+       90.9
+      ],
+      "max": [
+       -75.4,
+       738.0,
+       135.7
+      ],
+      "center": [
+       -103.2,
+       532.7,
+       113.3
+      ],
+      "size": [
+       55.6,
+       410.6,
+       44.8
+      ]
+     }
+    },
+    {
+     "id": "patella_right",
+     "role": "sujet",
+     "nom_fr": "Patella",
+     "name_en": "Right patella",
+     "name_la": "Patella",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/patella_right.glb",
+     "bounds": {
+      "min": [
+       -104.5,
+       352.7,
+       96.2
+      ],
+      "max": [
+       -62.0,
+       393.9,
+       117.5
+      ],
+      "center": [
+       -83.2,
+       373.3,
+       106.8
+      ],
+      "size": [
+       42.4,
+       41.1,
+       21.4
+      ]
+     }
+    },
+    {
+     "id": "subcutaneous_prepatellar_bursa_right",
+     "role": "sujet",
+     "nom_fr": "Bourse prépatellaire sous-cutanée",
+     "name_en": "Right subcutaneous prepatellar bursa",
+     "name_la": "Bursa subcutanea prepatellaris",
+     "systeme": "fascias",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/subcutaneous_prepatellar_bursa_right.glb",
+     "bounds": {
+      "min": [
+       -92.6,
+       360.9,
+       113.5
+      ],
+      "max": [
+       -74.9,
+       379.2,
+       119.0
+      ],
+      "center": [
+       -83.8,
+       370.0,
+       116.3
+      ],
+      "size": [
+       17.7,
+       18.3,
+       5.5
+      ]
+     }
+    },
+    {
+     "id": "lateral_patellar_retinaculum_right",
+     "role": "sujet",
+     "nom_fr": "Rétinaculum patellaire latéral",
+     "name_en": "Right lateral patellar retinaculum",
+     "name_la": "Retinaculum laterale patellae",
+     "systeme": "fascias",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/lateral_patellar_retinaculum_right.glb",
+     "bounds": {
+      "min": [
+       -114.4,
+       364.3,
+       63.3
+      ],
+      "max": [
+       -100.7,
+       387.3,
+       109.3
+      ],
+      "center": [
+       -107.5,
+       375.8,
+       86.3
+      ],
+      "size": [
+       13.6,
+       23.0,
+       46.0
+      ]
+     }
+    },
+    {
+     "id": "medial_patellar_retinaculum_right",
+     "role": "sujet",
+     "nom_fr": "Rétinaculum patellaire médial",
+     "name_en": "Right medial patellar retinaculum",
+     "name_la": "Retinaculum mediale patellae",
+     "systeme": "fascias",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/medial_patellar_retinaculum_right.glb",
+     "bounds": {
+      "min": [
+       -63.8,
+       370.2,
+       67.7
+      ],
+      "max": [
+       -31.6,
+       384.0,
+       110.7
+      ],
+      "center": [
+       -47.7,
+       377.1,
+       89.2
+      ],
+      "size": [
+       32.2,
+       13.7,
+       43.0
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "contexte",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "tibia_right",
+     "role": "contexte",
+     "nom_fr": "Tibia",
+     "name_en": "Right tibia",
+     "name_la": "Tibia",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/tibia_right.glb",
+     "bounds": {
+      "min": [
+       -114.0,
+       2.2,
+       40.9
+      ],
+      "max": [
+       -37.0,
+       362.2,
+       104.8
+      ],
+      "center": [
+       -75.5,
+       182.2,
+       72.8
+      ],
+      "size": [
+       77.1,
+       359.9,
+       63.9
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [
+    "Ligament patellaire : pas de maillage dédié (voir Fig 43) — le rapport antérieur principal n'existe que par ses insertions"
+   ]
+  },
+  {
+   "numero": 45,
+   "titre_fr": "Muscles, vaisseaux et nerfs de la fosse poplitée",
+   "titre_en": "Muscles, vessels and nerves of the popliteal fossa",
+   "classe": "3D",
+   "vue": "posterieure",
+   "vue_audit": "postérieure",
+   "camera": {
+    "vue": "posterieure",
+    "position": [
+     -77.0,
+     448.8,
+     -436.9
+    ],
+    "target": [
+     -77.0,
+     398.9,
+     62.7
+    ]
+   },
+   "systemes": [
+    "muscles",
+    "arteres",
+    "veines",
+    "nerfs",
+    "lymphatique"
+   ],
+   "structures": [
+    {
+     "id": "biceps_femoris_right",
+     "role": "sujet",
+     "nom_fr": "Biceps fémoral droit",
+     "name_en": "Right biceps femoris",
+     "name_la": null,
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/biceps_femoris_right.glb",
+     "bounds": {
+      "min": [
+       -126.3,
+       323.5,
+       28.1
+      ],
+      "max": [
+       -49.5,
+       751.3,
+       86.7
+      ],
+      "center": [
+       -87.9,
+       537.4,
+       57.4
+      ],
+      "size": [
+       76.9,
+       427.7,
+       58.6
+      ]
+     }
+    },
+    {
+     "id": "semitendinosus_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle semitendineux",
+     "name_en": "Right semitendinosus muscle",
+     "name_la": "Musculus semitendinosus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/semitendinosus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -67.8,
+       280.0,
+       29.1
+      ],
+      "max": [
+       -32.5,
+       742.5,
+       83.8
+      ],
+      "center": [
+       -50.1,
+       511.2,
+       56.4
+      ],
+      "size": [
+       35.4,
+       462.5,
+       54.7
+      ]
+     }
+    },
+    {
+     "id": "semimembranosus_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle semimembraneux",
+     "name_en": "Right semimembranosus muscle",
+     "name_la": "Musculus semimembranosus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/semimembranosus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -77.7,
+       314.1,
+       35.0
+      ],
+      "max": [
+       -15.0,
+       734.1,
+       86.8
+      ],
+      "center": [
+       -46.4,
+       524.1,
+       60.9
+      ],
+      "size": [
+       62.6,
+       420.0,
+       51.8
+      ]
+     }
+    },
+    {
+     "id": "gastrocnemius_right",
+     "role": "sujet",
+     "nom_fr": "Gastrocnémien droit",
+     "name_en": "Right gastrocnemius",
+     "name_la": null,
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/gastrocnemius_right.glb",
+     "bounds": {
+      "min": [
+       -132.5,
+       134.2,
+       0.1
+      ],
+      "max": [
+       -34.4,
+       435.5,
+       83.0
+      ],
+      "center": [
+       -83.5,
+       284.9,
+       41.5
+      ],
+      "size": [
+       98.1,
+       301.3,
+       83.0
+      ]
+     }
+    },
+    {
+     "id": "popliteal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère poplitée",
+     "name_en": "Right popliteal artery",
+     "name_la": "Arteria poplitea",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/popliteal_artery_right.glb",
+     "bounds": {
+      "min": [
+       -94.3,
+       302.3,
+       35.6
+      ],
+      "max": [
+       -59.8,
+       495.4,
+       89.8
+      ],
+      "center": [
+       -77.0,
+       398.8,
+       62.7
+      ],
+      "size": [
+       34.5,
+       193.0,
+       54.2
+      ]
+     }
+    },
+    {
+     "id": "popliteal_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine poplitée",
+     "name_en": "Right popliteal vein",
+     "name_la": "Vena poplitea",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/popliteal_vein_right.glb",
+     "bounds": {
+      "min": [
+       -92.4,
+       336.4,
+       33.9
+      ],
+      "max": [
+       -64.8,
+       501.5,
+       89.2
+      ],
+      "center": [
+       -78.6,
+       419.0,
+       61.6
+      ],
+      "size": [
+       27.6,
+       165.1,
+       55.3
+      ]
+     }
+    },
+    {
+     "id": "tibial_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf tibial",
+     "name_en": "Right tibial nerve",
+     "name_la": "Nervus tibialis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/tibial_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -94.7,
+       -15.6,
+       38.1
+      ],
+      "max": [
+       -55.6,
+       470.1,
+       64.5
+      ],
+      "center": [
+       -75.2,
+       227.3,
+       51.3
+      ],
+      "size": [
+       39.1,
+       485.6,
+       26.4
+      ]
+     }
+    },
+    {
+     "id": "common_fibular_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fibulaire commun",
+     "name_en": "Right common fibular nerve",
+     "name_la": "Nervus fibularis communis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/common_fibular_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -121.3,
+       313.7,
+       42.1
+      ],
+      "max": [
+       -75.0,
+       469.8,
+       63.1
+      ],
+      "center": [
+       -98.2,
+       391.8,
+       52.6
+      ],
+      "size": [
+       46.3,
+       156.1,
+       21.0
+      ]
+     }
+    },
+    {
+     "id": "small_saphenous_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine petite saphène",
+     "name_en": "Right small saphenous vein",
+     "name_la": "Vena saphena parva",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/small_saphenous_vein_right.glb",
+     "bounds": {
+      "min": [
+       -106.6,
+       -39.1,
+       2.2
+      ],
+      "max": [
+       -72.1,
+       419.8,
+       73.0
+      ],
+      "center": [
+       -89.4,
+       190.3,
+       37.6
+      ],
+      "size": [
+       34.5,
+       458.9,
+       70.8
+      ]
+     }
+    },
+    {
+     "id": "deep_popliteal_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds poplités profonds",
+     "name_en": "Right deep popliteal nodes",
+     "name_la": "Nodi poplitei profundi",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "file": "models/lymphatique/deep_popliteal_nodes_right.glb",
+     "bounds": {
+      "min": [
+       -76.4,
+       418.4,
+       62.4
+      ],
+      "max": [
+       -72.2,
+       428.8,
+       66.6
+      ],
+      "center": [
+       -74.3,
+       423.6,
+       64.5
+      ],
+      "size": [
+       4.2,
+       10.5,
+       4.2
+      ]
+     }
+    },
+    {
+     "id": "superficial_popliteal_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds poplités superficiels",
+     "name_en": "Right superficial popliteal nodes",
+     "name_la": "Nodi poplitei superficiales",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "file": "models/lymphatique/superficial_popliteal_nodes_right.glb",
+     "bounds": {
+      "min": [
+       -79.7,
+       414.3,
+       48.9
+      ],
+      "max": [
+       -70.5,
+       424.2,
+       56.3
+      ],
+      "center": [
+       -75.1,
+       419.2,
+       52.6
+      ],
+      "size": [
+       9.2,
+       9.9,
+       7.5
+      ]
+     }
+    },
+    {
+     "id": "popliteal_fascia_right",
+     "role": "sujet",
+     "nom_fr": "Fascia poplité",
+     "name_en": "Right popliteal fascia",
+     "name_la": "Fascia poplitea",
+     "systeme": "fascias",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/popliteal_fascia_right.glb",
+     "bounds": {
+      "min": [
+       -109.7,
+       373.3,
+       24.7
+      ],
+      "max": [
+       -39.5,
+       470.6,
+       43.9
+      ],
+      "center": [
+       -74.6,
+       421.9,
+       34.3
+      ],
+      "size": [
+       70.2,
+       97.3,
+       19.1
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "ghost",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "tibia_right",
+     "role": "ghost",
+     "nom_fr": "Tibia",
+     "name_en": "Right tibia",
+     "name_la": "Tibia",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/tibia_right.glb",
+     "bounds": {
+      "min": [
+       -114.0,
+       2.2,
+       40.9
+      ],
+      "max": [
+       -37.0,
+       362.2,
+       104.8
+      ],
+      "center": [
+       -75.5,
+       182.2,
+       72.8
+      ],
+      "size": [
+       77.1,
+       359.9,
+       63.9
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [
+    {
+     "key": "fosse-poplitee",
+     "nom_fr": "Fosse poplitée",
+     "name_en": "Popliteal fossa",
+     "couleur": "#9b5de5",
+     "bornes": [
+      "biceps_femoris_right",
+      "semitendinosus_muscle_right",
+      "semimembranosus_muscle_right",
+      "gastrocnemius_right",
+      "popliteal_fascia_right",
+      "femur_right",
+      "tibia_right"
+     ],
+     "desc_fr": "Losange postérieur du genou limité par le biceps fémoral en haut et en dehors, les muscles semi-tendineux et semi-membraneux en haut et en dedans et les gastrocnémiens en bas, fermé en arrière par le fascia poplité.",
+     "desc_en": "Diamond-shaped space behind the knee bounded by biceps femoris superolaterally, semitendinosus and semimembranosus superomedially and gastrocnemius inferiorly, roofed posteriorly by the popliteal fascia.",
+     "contenu": [
+      "popliteal_artery_right",
+      "popliteal_vein_right"
+     ],
+     "type": "espace",
+     "note": "volume schématique délimité par les structures voisines — aucun maillage source"
+    }
+   ],
+   "manquants": [
+    "Muscle plantaire (plantaris) : non retrouvé comme entrée distincte"
+   ],
+   "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
+  },
+  {
+   "numero": 46,
+   "titre_fr": "Branches des vaisseaux et nerfs poplités",
+   "titre_en": "Branches of the popliteal vessels and nerves",
+   "classe": "3D",
+   "vue": "posterieure",
+   "vue_audit": "postérieure",
+   "camera": {
+    "vue": "posterieure",
+    "position": [
+     -77.0,
+     448.8,
+     -436.9
+    ],
+    "target": [
+     -77.0,
+     398.9,
+     62.7
+    ]
+   },
+   "systemes": [
+    "arteres",
+    "veines",
+    "nerfs"
+   ],
+   "structures": [
+    {
+     "id": "popliteal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère poplitée",
+     "name_en": "Right popliteal artery",
+     "name_la": "Arteria poplitea",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/popliteal_artery_right.glb",
+     "bounds": {
+      "min": [
+       -94.3,
+       302.3,
+       35.6
+      ],
+      "max": [
+       -59.8,
+       495.4,
+       89.8
+      ],
+      "center": [
+       -77.0,
+       398.8,
+       62.7
+      ],
+      "size": [
+       34.5,
+       193.0,
+       54.2
+      ]
+     }
+    },
+    {
+     "id": "superior_medial_genicular_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère supérieure médiale du genou",
+     "name_en": "Right superior medial genicular artery",
+     "name_la": "Arteria superior medialis genus",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/superior_medial_genicular_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.6,
+       354.4,
+       64.4
+      ],
+      "max": [
+       -40.9,
+       499.6,
+       113.4
+      ],
+      "center": [
+       -58.8,
+       427.0,
+       88.9
+      ],
+      "size": [
+       35.7,
+       145.2,
+       49.1
+      ]
+     }
+    },
+    {
+     "id": "superior_lateral_genicular_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère supérieure latérale du genou",
+     "name_en": "Right superior lateral genicular artery",
+     "name_la": "Arteria superior lateralis genus",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/superior_lateral_genicular_artery_right.glb",
+     "bounds": {
+      "min": [
+       -117.8,
+       408.0,
+       66.6
+      ],
+      "max": [
+       -71.1,
+       457.9,
+       104.2
+      ],
+      "center": [
+       -94.4,
+       433.0,
+       85.4
+      ],
+      "size": [
+       46.7,
+       49.9,
+       37.6
+      ]
+     }
+    },
+    {
+     "id": "inferior_medial_genicular_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère inféromédiale du genou",
+     "name_en": "Right inferior medial genicular artery",
+     "name_la": "Arteria inferior medialis genus",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/inferior_medial_genicular_artery_right.glb",
+     "bounds": {
+      "min": [
+       -73.5,
+       342.3,
+       37.7
+      ],
+      "max": [
+       -35.9,
+       369.6,
+       108.4
+      ],
+      "center": [
+       -54.7,
+       355.9,
+       73.1
+      ],
+      "size": [
+       37.6,
+       27.3,
+       70.6
+      ]
+     }
+    },
+    {
+     "id": "inferior_lateral_genicular_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère inférolatérale du genou",
+     "name_en": "Right inferior lateral genicular artery",
+     "name_la": "Arteria inferior lateralis genus",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/inferior_lateral_genicular_artery_right.glb",
+     "bounds": {
+      "min": [
+       -116.4,
+       357.9,
+       37.2
+      ],
+      "max": [
+       -73.4,
+       384.9,
+       103.7
+      ],
+      "center": [
+       -94.9,
+       371.4,
+       70.4
+      ],
+      "size": [
+       43.0,
+       27.0,
+       66.5
+      ]
+     }
+    },
+    {
+     "id": "middle_genicular_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère médiane du genou",
+     "name_en": "Right middle genicular artery",
+     "name_la": null,
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/middle_genicular_artery_right.glb",
+     "bounds": {
+      "min": [
+       -101.4,
+       392.4,
+       42.2
+      ],
+      "max": [
+       -49.1,
+       418.2,
+       58.7
+      ],
+      "center": [
+       -75.2,
+       405.3,
+       50.5
+      ],
+      "size": [
+       52.2,
+       25.8,
+       16.5
+      ]
+     },
+     "nom_fr_corrige": "manifeste en anglais (« à vérifier ») — traduit selon la terminologie des artères géniculées voisines"
+    },
+    {
+     "id": "popliteal_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine poplitée",
+     "name_en": "Right popliteal vein",
+     "name_la": "Vena poplitea",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/popliteal_vein_right.glb",
+     "bounds": {
+      "min": [
+       -92.4,
+       336.4,
+       33.9
+      ],
+      "max": [
+       -64.8,
+       501.5,
+       89.2
+      ],
+      "center": [
+       -78.6,
+       419.0,
+       61.6
+      ],
+      "size": [
+       27.6,
+       165.1,
+       55.3
+      ]
+     }
+    },
+    {
+     "id": "genicular_veins_right",
+     "role": "sujet",
+     "nom_fr": "Veines du genou",
+     "name_en": "Right genicular veins",
+     "name_la": "Venae geniculares",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/genicular_veins_right.glb",
+     "bounds": {
+      "min": [
+       -119.3,
+       296.4,
+       34.3
+      ],
+      "max": [
+       -36.1,
+       462.0,
+       115.5
+      ],
+      "center": [
+       -77.7,
+       379.2,
+       74.9
+      ],
+      "size": [
+       83.2,
+       165.6,
+       81.3
+      ]
+     }
+    },
+    {
+     "id": "tibial_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf tibial",
+     "name_en": "Right tibial nerve",
+     "name_la": "Nervus tibialis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/tibial_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -94.7,
+       -15.6,
+       38.1
+      ],
+      "max": [
+       -55.6,
+       470.1,
+       64.5
+      ],
+      "center": [
+       -75.2,
+       227.3,
+       51.3
+      ],
+      "size": [
+       39.1,
+       485.6,
+       26.4
+      ]
+     }
+    },
+    {
+     "id": "common_fibular_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fibulaire commun",
+     "name_en": "Right common fibular nerve",
+     "name_la": "Nervus fibularis communis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/common_fibular_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -121.3,
+       313.7,
+       42.1
+      ],
+      "max": [
+       -75.0,
+       469.8,
+       63.1
+      ],
+      "center": [
+       -98.2,
+       391.8,
+       52.6
+      ],
+      "size": [
+       46.3,
+       156.1,
+       21.0
+      ]
+     }
+    },
+    {
+     "id": "medial_sural_cutaneous_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf cutané sural médial",
+     "name_en": "Right medial sural cutaneous nerve",
+     "name_la": "Nervus cutaneus medialis surae",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/medial_sural_cutaneous_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -76.0,
+       338.9,
+       14.6
+      ],
+      "max": [
+       -69.2,
+       469.9,
+       63.1
+      ],
+      "center": [
+       -72.6,
+       404.4,
+       38.8
+      ],
+      "size": [
+       6.8,
+       131.0,
+       48.5
+      ]
+     }
+    },
+    {
+     "id": "sural_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf sural",
+     "name_en": "Right sural nerve",
+     "name_la": "Nervus suralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/sural_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -142.5,
+       -60.3,
+       3.5
+      ],
+      "max": [
+       -69.4,
+       339.2,
+       174.5
+      ],
+      "center": [
+       -106.0,
+       139.4,
+       89.0
+      ],
+      "size": [
+       73.2,
+       399.5,
+       171.0
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "contexte",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "tibia_right",
+     "role": "contexte",
+     "nom_fr": "Tibia",
+     "name_en": "Right tibia",
+     "name_la": "Tibia",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/tibia_right.glb",
+     "bounds": {
+      "min": [
+       -114.0,
+       2.2,
+       40.9
+      ],
+      "max": [
+       -37.0,
+       362.2,
+       104.8
+      ],
+      "center": [
+       -75.5,
+       182.2,
+       72.8
+      ],
+      "size": [
+       77.1,
+       359.9,
+       63.9
+      ]
+     }
+    },
+    {
+     "id": "gastrocnemius_right",
+     "role": "contexte",
+     "nom_fr": "Gastrocnémien droit",
+     "name_en": "Right gastrocnemius",
+     "name_la": null,
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/gastrocnemius_right.glb",
+     "bounds": {
+      "min": [
+       -132.5,
+       134.2,
+       0.1
+      ],
+      "max": [
+       -34.4,
+       435.5,
+       83.0
+      ],
+      "center": [
+       -83.5,
+       284.9,
+       41.5
+      ],
+      "size": [
+       98.1,
+       301.3,
+       83.0
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [
+    "Artères surales (branches du tronc poplité pour les gastrocnémiens) : ABSENTES du manifeste",
+    "Branches articulaires/musculaires du nerf tibial : non individualisées"
+   ],
+   "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
+  }
+ ],
+ "structures_toutes": [
+  {
+   "id": "inferior_lateral_genicular_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère inférolatérale du genou",
+   "name_en": "Right inferior lateral genicular artery",
+   "name_la": "Arteria inferior lateralis genus",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/inferior_lateral_genicular_artery_right.glb",
+   "bounds": {
+    "min": [
+     -116.4,
+     357.9,
+     37.2
+    ],
+    "max": [
+     -73.4,
+     384.9,
+     103.7
+    ],
+    "center": [
+     -94.9,
+     371.4,
+     70.4
+    ],
+    "size": [
+     43.0,
+     27.0,
+     66.5
+    ]
+   }
+  },
+  {
+   "id": "inferior_medial_genicular_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère inféromédiale du genou",
+   "name_en": "Right inferior medial genicular artery",
+   "name_la": "Arteria inferior medialis genus",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/inferior_medial_genicular_artery_right.glb",
+   "bounds": {
+    "min": [
+     -73.5,
+     342.3,
+     37.7
+    ],
+    "max": [
+     -35.9,
+     369.6,
+     108.4
+    ],
+    "center": [
+     -54.7,
+     355.9,
+     73.1
+    ],
+    "size": [
+     37.6,
+     27.3,
+     70.6
+    ]
+   }
+  },
+  {
+   "id": "middle_genicular_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère médiane du genou",
+   "name_en": "Right middle genicular artery",
+   "name_la": null,
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/middle_genicular_artery_right.glb",
+   "bounds": {
+    "min": [
+     -101.4,
+     392.4,
+     42.2
+    ],
+    "max": [
+     -49.1,
+     418.2,
+     58.7
+    ],
+    "center": [
+     -75.2,
+     405.3,
+     50.5
+    ],
+    "size": [
+     52.2,
+     25.8,
+     16.5
+    ]
+   },
+   "nom_fr_corrige": "manifeste en anglais (« à vérifier ») — traduit selon la terminologie des artères géniculées voisines"
+  },
+  {
+   "id": "popliteal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère poplitée",
+   "name_en": "Right popliteal artery",
+   "name_la": "Arteria poplitea",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/popliteal_artery_right.glb",
+   "bounds": {
+    "min": [
+     -94.3,
+     302.3,
+     35.6
+    ],
+    "max": [
+     -59.8,
+     495.4,
+     89.8
+    ],
+    "center": [
+     -77.0,
+     398.8,
+     62.7
+    ],
+    "size": [
+     34.5,
+     193.0,
+     54.2
+    ]
+   }
+  },
+  {
+   "id": "superior_lateral_genicular_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère supérieure latérale du genou",
+   "name_en": "Right superior lateral genicular artery",
+   "name_la": "Arteria superior lateralis genus",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/superior_lateral_genicular_artery_right.glb",
+   "bounds": {
+    "min": [
+     -117.8,
+     408.0,
+     66.6
+    ],
+    "max": [
+     -71.1,
+     457.9,
+     104.2
+    ],
+    "center": [
+     -94.4,
+     433.0,
+     85.4
+    ],
+    "size": [
+     46.7,
+     49.9,
+     37.6
+    ]
+   }
+  },
+  {
+   "id": "superior_medial_genicular_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère supérieure médiale du genou",
+   "name_en": "Right superior medial genicular artery",
+   "name_la": "Arteria superior medialis genus",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/superior_medial_genicular_artery_right.glb",
+   "bounds": {
+    "min": [
+     -76.6,
+     354.4,
+     64.4
+    ],
+    "max": [
+     -40.9,
+     499.6,
+     113.4
+    ],
+    "center": [
+     -58.8,
+     427.0,
+     88.9
+    ],
+    "size": [
+     35.7,
+     145.2,
+     49.1
+    ]
+   }
+  },
+  {
+   "id": "biceps_femoris_right",
+   "role": "sujet",
+   "nom_fr": "Biceps fémoral droit",
+   "name_en": "Right biceps femoris",
+   "name_la": null,
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/biceps_femoris_right.glb",
+   "bounds": {
+    "min": [
+     -126.3,
+     323.5,
+     28.1
+    ],
+    "max": [
+     -49.5,
+     751.3,
+     86.7
+    ],
+    "center": [
+     -87.9,
+     537.4,
+     57.4
+    ],
+    "size": [
+     76.9,
+     427.7,
+     58.6
+    ]
+   }
+  },
+  {
+   "id": "subcutaneous_prepatellar_bursa_right",
+   "role": "sujet",
+   "nom_fr": "Bourse prépatellaire sous-cutanée",
+   "name_en": "Right subcutaneous prepatellar bursa",
+   "name_la": "Bursa subcutanea prepatellaris",
+   "systeme": "fascias",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/subcutaneous_prepatellar_bursa_right.glb",
+   "bounds": {
+    "min": [
+     -92.6,
+     360.9,
+     113.5
+    ],
+    "max": [
+     -74.9,
+     379.2,
+     119.0
+    ],
+    "center": [
+     -83.8,
+     370.0,
+     116.3
+    ],
+    "size": [
+     17.7,
+     18.3,
+     5.5
+    ]
+   }
+  },
+  {
+   "id": "articular_capsule_of_knee_joint_right",
+   "role": "sujet",
+   "nom_fr": "Capsule articulaire du genou",
+   "name_en": "Right articular capsule of knee joint",
+   "name_la": "Capsula articularis genus",
+   "systeme": "articulations",
+   "couleur": "#a9bd8f",
+   "file": "models/articulations/articular_capsule_of_knee_joint_right.glb",
+   "bounds": {
+    "min": [
+     -113.3,
+     341.5,
+     39.9
+    ],
+    "max": [
+     -36.0,
+     427.8,
+     111.4
+    ],
+    "center": [
+     -74.6,
+     384.6,
+     75.6
+    ],
+    "size": [
+     77.3,
+     86.4,
+     71.5
+    ]
+   }
+  },
+  {
+   "id": "popliteal_fascia_right",
+   "role": "sujet",
+   "nom_fr": "Fascia poplité",
+   "name_en": "Right popliteal fascia",
+   "name_la": "Fascia poplitea",
+   "systeme": "fascias",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/popliteal_fascia_right.glb",
+   "bounds": {
+    "min": [
+     -109.7,
+     373.3,
+     24.7
+    ],
+    "max": [
+     -39.5,
+     470.6,
+     43.9
+    ],
+    "center": [
+     -74.6,
+     421.9,
+     34.3
+    ],
+    "size": [
+     70.2,
+     97.3,
+     19.1
+    ]
+   }
+  },
+  {
+   "id": "femur_right",
+   "role": "sujet",
+   "nom_fr": "Fémur",
+   "name_en": "Right femur",
+   "name_la": "Os femoris",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/femur_right.glb",
+   "bounds": {
+    "min": [
+     -146.2,
+     358.8,
+     44.3
+    ],
+    "max": [
+     -31.7,
+     815.8,
+     117.6
+    ],
+    "center": [
+     -88.9,
+     587.3,
+     80.9
+    ],
+    "size": [
+     114.5,
+     456.9,
+     73.3
+    ]
+   }
+  },
+  {
+   "id": "gastrocnemius_right",
+   "role": "sujet",
+   "nom_fr": "Gastrocnémien droit",
+   "name_en": "Right gastrocnemius",
+   "name_la": null,
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/gastrocnemius_right.glb",
+   "bounds": {
+    "min": [
+     -132.5,
+     134.2,
+     0.1
+    ],
+    "max": [
+     -34.4,
+     435.5,
+     83.0
+    ],
+    "center": [
+     -83.5,
+     284.9,
+     41.5
+    ],
+    "size": [
+     98.1,
+     301.3,
+     83.0
+    ]
+   }
+  },
+  {
+   "id": "fibular_collateral_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Ligament collatéral fibulaire",
+   "name_en": "Right fibular collateral ligament",
+   "name_la": "Ligamentum collaterale fibulare",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/fibular_collateral_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -118.5,
+     336.1,
+     58.9
+    ],
+    "max": [
+     -109.8,
+     388.9,
+     66.6
+    ],
+    "center": [
+     -114.1,
+     362.5,
+     62.7
+    ],
+    "size": [
+     8.6,
+     52.8,
+     7.7
+    ]
+   }
+  },
+  {
+   "id": "anterior_cruciate_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Ligament croisé antérieur",
+   "name_en": "Right anterior cruciate ligament",
+   "name_la": "Ligamentum cruciatum anterius",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/anterior_cruciate_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -86.8,
+     355.8,
+     56.5
+    ],
+    "max": [
+     -66.0,
+     385.7,
+     79.6
+    ],
+    "center": [
+     -76.4,
+     370.7,
+     68.1
+    ],
+    "size": [
+     20.8,
+     29.9,
+     23.1
+    ]
+   }
+  },
+  {
+   "id": "posterior_cruciate_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Ligament croisé postérieur",
+   "name_en": "Right posterior cruciate ligament",
+   "name_la": "Ligamentum decussatum posterius",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/posterior_cruciate_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -83.3,
+     343.2,
+     48.4
+    ],
+    "max": [
+     -60.4,
+     381.3,
+     65.9
+    ],
+    "center": [
+     -71.9,
+     362.3,
+     57.2
+    ],
+    "size": [
+     22.9,
+     38.1,
+     17.5
+    ]
+   }
+  },
+  {
+   "id": "deep_popliteal_nodes_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds poplités profonds",
+   "name_en": "Right deep popliteal nodes",
+   "name_la": "Nodi poplitei profundi",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "file": "models/lymphatique/deep_popliteal_nodes_right.glb",
+   "bounds": {
+    "min": [
+     -76.4,
+     418.4,
+     62.4
+    ],
+    "max": [
+     -72.2,
+     428.8,
+     66.6
+    ],
+    "center": [
+     -74.3,
+     423.6,
+     64.5
+    ],
+    "size": [
+     4.2,
+     10.5,
+     4.2
+    ]
+   }
+  },
+  {
+   "id": "superficial_popliteal_nodes_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds poplités superficiels",
+   "name_en": "Right superficial popliteal nodes",
+   "name_la": "Nodi poplitei superficiales",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "file": "models/lymphatique/superficial_popliteal_nodes_right.glb",
+   "bounds": {
+    "min": [
+     -79.7,
+     414.3,
+     48.9
+    ],
+    "max": [
+     -70.5,
+     424.2,
+     56.3
+    ],
+    "center": [
+     -75.1,
+     419.2,
+     52.6
+    ],
+    "size": [
+     9.2,
+     9.9,
+     7.5
+    ]
+   }
+  },
+  {
+   "id": "rectus_femoris_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle droit fémoral",
+   "name_en": "Right rectus femoris muscle",
+   "name_la": "Musculus rectus femoris",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/rectus_femoris_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -146.0,
+     299.1,
+     91.5
+    ],
+    "max": [
+     -65.8,
+     847.4,
+     156.6
+    ],
+    "center": [
+     -105.9,
+     573.3,
+     124.0
+    ],
+    "size": [
+     80.2,
+     548.3,
+     65.1
+    ]
+   }
+  },
+  {
+   "id": "semimembranosus_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle semimembraneux",
+   "name_en": "Right semimembranosus muscle",
+   "name_la": "Musculus semimembranosus",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/semimembranosus_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -77.7,
+     314.1,
+     35.0
+    ],
+    "max": [
+     -15.0,
+     734.1,
+     86.8
+    ],
+    "center": [
+     -46.4,
+     524.1,
+     60.9
+    ],
+    "size": [
+     62.6,
+     420.0,
+     51.8
+    ]
+   }
+  },
+  {
+   "id": "semitendinosus_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle semitendineux",
+   "name_en": "Right semitendinosus muscle",
+   "name_la": "Musculus semitendinosus",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/semitendinosus_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -67.8,
+     280.0,
+     29.1
+    ],
+    "max": [
+     -32.5,
+     742.5,
+     83.8
+    ],
+    "center": [
+     -50.1,
+     511.2,
+     56.4
+    ],
+    "size": [
+     35.4,
+     462.5,
+     54.7
+    ]
+   }
+  },
+  {
+   "id": "vastus_intermedius_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle vaste intermédiaire",
+   "name_en": "Right vastus intermedius muscle",
+   "name_la": "Musculus vastus intermedius",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/vastus_intermedius_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -131.0,
+     327.3,
+     90.9
+    ],
+    "max": [
+     -75.4,
+     738.0,
+     135.7
+    ],
+    "center": [
+     -103.2,
+     532.7,
+     113.3
+    ],
+    "size": [
+     55.6,
+     410.6,
+     44.8
+    ]
+   }
+  },
+  {
+   "id": "vastus_lateralis_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle vaste latéral",
+   "name_en": "Right vastus lateralis muscle",
+   "name_la": "Musculus vastus lateralis",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/vastus_lateralis_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -156.5,
+     312.3,
+     66.4
+    ],
+    "max": [
+     -83.7,
+     772.2,
+     140.8
+    ],
+    "center": [
+     -120.1,
+     542.3,
+     103.6
+    ],
+    "size": [
+     72.7,
+     459.9,
+     74.4
+    ]
+   }
+  },
+  {
+   "id": "vastus_medialis_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle vaste médial",
+   "name_en": "Right vastus medialis muscle",
+   "name_la": "Musculus vastus medialis",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/vastus_medialis_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -103.7,
+     313.6,
+     81.7
+    ],
+    "max": [
+     -33.3,
+     723.8,
+     146.0
+    ],
+    "center": [
+     -68.5,
+     518.7,
+     113.8
+    ],
+    "size": [
+     70.3,
+     410.1,
+     64.3
+    ]
+   }
+  },
+  {
+   "id": "lateral_meniscus_right",
+   "role": "sujet",
+   "nom_fr": "Ménisque latéral",
+   "name_en": "Right lateral meniscus",
+   "name_la": "Meniscus lateralis",
+   "systeme": "articulations",
+   "couleur": "#a9bd8f",
+   "file": "models/articulations/lateral_meniscus_right.glb",
+   "bounds": {
+    "min": [
+     -108.4,
+     353.2,
+     54.3
+    ],
+    "max": [
+     -75.2,
+     368.6,
+     90.6
+    ],
+    "center": [
+     -91.8,
+     360.9,
+     72.4
+    ],
+    "size": [
+     33.2,
+     15.4,
+     36.4
+    ]
+   }
+  },
+  {
+   "id": "medial_meniscus_right",
+   "role": "sujet",
+   "nom_fr": "Ménisque médial",
+   "name_en": "Right medial meniscus",
+   "name_la": "Meniscus medialis",
+   "systeme": "articulations",
+   "couleur": "#a9bd8f",
+   "file": "models/articulations/medial_meniscus_right.glb",
+   "bounds": {
+    "min": [
+     -66.5,
+     348.1,
+     42.5
+    ],
+    "max": [
+     -41.1,
+     363.1,
+     84.4
+    ],
+    "center": [
+     -53.8,
+     355.6,
+     63.4
+    ],
+    "size": [
+     25.4,
+     15.0,
+     42.0
+    ]
+   }
+  },
+  {
+   "id": "medial_sural_cutaneous_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf cutané sural médial",
+   "name_en": "Right medial sural cutaneous nerve",
+   "name_la": "Nervus cutaneus medialis surae",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/medial_sural_cutaneous_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -76.0,
+     338.9,
+     14.6
+    ],
+    "max": [
+     -69.2,
+     469.9,
+     63.1
+    ],
+    "center": [
+     -72.6,
+     404.4,
+     38.8
+    ],
+    "size": [
+     6.8,
+     131.0,
+     48.5
+    ]
+   }
+  },
+  {
+   "id": "common_fibular_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf fibulaire commun",
+   "name_en": "Right common fibular nerve",
+   "name_la": "Nervus fibularis communis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/common_fibular_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -121.3,
+     313.7,
+     42.1
+    ],
+    "max": [
+     -75.0,
+     469.8,
+     63.1
+    ],
+    "center": [
+     -98.2,
+     391.8,
+     52.6
+    ],
+    "size": [
+     46.3,
+     156.1,
+     21.0
+    ]
+   }
+  },
+  {
+   "id": "sural_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf sural",
+   "name_en": "Right sural nerve",
+   "name_la": "Nervus suralis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/sural_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -142.5,
+     -60.3,
+     3.5
+    ],
+    "max": [
+     -69.4,
+     339.2,
+     174.5
+    ],
+    "center": [
+     -106.0,
+     139.4,
+     89.0
+    ],
+    "size": [
+     73.2,
+     399.5,
+     171.0
+    ]
+   }
+  },
+  {
+   "id": "tibial_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf tibial",
+   "name_en": "Right tibial nerve",
+   "name_la": "Nervus tibialis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/tibial_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -94.7,
+     -15.6,
+     38.1
+    ],
+    "max": [
+     -55.6,
+     470.1,
+     64.5
+    ],
+    "center": [
+     -75.2,
+     227.3,
+     51.3
+    ],
+    "size": [
+     39.1,
+     485.6,
+     26.4
+    ]
+   }
+  },
+  {
+   "id": "deep_part_of_tibial_collateral_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Partie profonde du ligament collatéral tibial",
+   "name_en": "Right deep part of tibial collateral ligament",
+   "name_la": "Pars profunda ligamenti collateralis tibialis",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/deep_part_of_tibial_collateral_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -66.0,
+     320.3,
+     63.4
+    ],
+    "max": [
+     -32.6,
+     383.5,
+     87.7
+    ],
+    "center": [
+     -49.3,
+     351.9,
+     75.6
+    ],
+    "size": [
+     33.4,
+     63.1,
+     24.3
+    ]
+   }
+  },
+  {
+   "id": "superficial_part_of_tibial_collateral_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Partie superficielle du ligament collatéral tibial",
+   "name_en": "Right superficial part of tibial collateral ligament",
+   "name_la": "Pars superficialis ligamenti collateralis tibialis",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/superficial_part_of_tibial_collateral_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -64.3,
+     321.4,
+     66.7
+    ],
+    "max": [
+     -32.0,
+     383.6,
+     88.0
+    ],
+    "center": [
+     -48.1,
+     352.5,
+     77.4
+    ],
+    "size": [
+     32.3,
+     62.3,
+     21.2
+    ]
+   }
+  },
+  {
+   "id": "patella_right",
+   "role": "sujet",
+   "nom_fr": "Patella",
+   "name_en": "Right patella",
+   "name_la": "Patella",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/patella_right.glb",
+   "bounds": {
+    "min": [
+     -104.5,
+     352.7,
+     96.2
+    ],
+    "max": [
+     -62.0,
+     393.9,
+     117.5
+    ],
+    "center": [
+     -83.2,
+     373.3,
+     106.8
+    ],
+    "size": [
+     42.4,
+     41.1,
+     21.4
+    ]
+   }
+  },
+  {
+   "id": "lateral_patellar_retinaculum_right",
+   "role": "sujet",
+   "nom_fr": "Rétinaculum patellaire latéral",
+   "name_en": "Right lateral patellar retinaculum",
+   "name_la": "Retinaculum laterale patellae",
+   "systeme": "fascias",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/lateral_patellar_retinaculum_right.glb",
+   "bounds": {
+    "min": [
+     -114.4,
+     364.3,
+     63.3
+    ],
+    "max": [
+     -100.7,
+     387.3,
+     109.3
+    ],
+    "center": [
+     -107.5,
+     375.8,
+     86.3
+    ],
+    "size": [
+     13.6,
+     23.0,
+     46.0
+    ]
+   }
+  },
+  {
+   "id": "medial_patellar_retinaculum_right",
+   "role": "sujet",
+   "nom_fr": "Rétinaculum patellaire médial",
+   "name_en": "Right medial patellar retinaculum",
+   "name_la": "Retinaculum mediale patellae",
+   "systeme": "fascias",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/medial_patellar_retinaculum_right.glb",
+   "bounds": {
+    "min": [
+     -63.8,
+     370.2,
+     67.7
+    ],
+    "max": [
+     -31.6,
+     384.0,
+     110.7
+    ],
+    "center": [
+     -47.7,
+     377.1,
+     89.2
+    ],
+    "size": [
+     32.2,
+     13.7,
+     43.0
+    ]
+   }
+  },
+  {
+   "id": "tibia_right",
+   "role": "sujet",
+   "nom_fr": "Tibia",
+   "name_en": "Right tibia",
+   "name_la": "Tibia",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/tibia_right.glb",
+   "bounds": {
+    "min": [
+     -114.0,
+     2.2,
+     40.9
+    ],
+    "max": [
+     -37.0,
+     362.2,
+     104.8
+    ],
+    "center": [
+     -75.5,
+     182.2,
+     72.8
+    ],
+    "size": [
+     77.1,
+     359.9,
+     63.9
+    ]
+   }
+  },
+  {
+   "id": "small_saphenous_vein_right",
+   "role": "sujet",
+   "nom_fr": "Veine petite saphène",
+   "name_en": "Right small saphenous vein",
+   "name_la": "Vena saphena parva",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "file": "models/veines/small_saphenous_vein_right.glb",
+   "bounds": {
+    "min": [
+     -106.6,
+     -39.1,
+     2.2
+    ],
+    "max": [
+     -72.1,
+     419.8,
+     73.0
+    ],
+    "center": [
+     -89.4,
+     190.3,
+     37.6
+    ],
+    "size": [
+     34.5,
+     458.9,
+     70.8
+    ]
+   }
+  },
+  {
+   "id": "popliteal_vein_right",
+   "role": "sujet",
+   "nom_fr": "Veine poplitée",
+   "name_en": "Right popliteal vein",
+   "name_la": "Vena poplitea",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "file": "models/veines/popliteal_vein_right.glb",
+   "bounds": {
+    "min": [
+     -92.4,
+     336.4,
+     33.9
+    ],
+    "max": [
+     -64.8,
+     501.5,
+     89.2
+    ],
+    "center": [
+     -78.6,
+     419.0,
+     61.6
+    ],
+    "size": [
+     27.6,
+     165.1,
+     55.3
+    ]
+   }
+  },
+  {
+   "id": "genicular_veins_right",
+   "role": "sujet",
+   "nom_fr": "Veines du genou",
+   "name_en": "Right genicular veins",
+   "name_la": "Venae geniculares",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "file": "models/veines/genicular_veins_right.glb",
+   "bounds": {
+    "min": [
+     -119.3,
+     296.4,
+     34.3
+    ],
+    "max": [
+     -36.1,
+     462.0,
+     115.5
+    ],
+    "center": [
+     -77.7,
+     379.2,
+     74.9
+    ],
+    "size": [
+     83.2,
+     165.6,
+     81.3
+    ]
+   }
+  },
+  {
+   "id": "fibula_right",
+   "role": "contexte",
+   "nom_fr": "Fibula",
+   "name_en": "Right fibula",
+   "name_la": "Fibula",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/fibula_right.glb",
+   "bounds": {
+    "min": [
+     -122.9,
+     -17.9,
+     44.0
+    ],
+    "max": [
+     -87.4,
+     346.6,
+     75.2
+    ],
+    "center": [
+     -105.1,
+     164.4,
+     59.6
+    ],
+    "size": [
+     35.6,
+     364.5,
+     31.3
+    ]
+   }
+  },
+  {
+   "id": "patellar_ligament_origine_right",
+   "role": "contexte",
+   "nom_fr": "Origine : Ligament patellaire",
+   "name_en": "Origin of right patellar ligament",
+   "name_la": null,
+   "systeme": "insertions",
+   "couleur": "#c0392b",
+   "file": "models-insertions/patellar_ligament_origine_right.glb",
+   "bounds": {
+    "min": [
+     -98.6,
+     352.3,
+     101.9
+    ],
+    "max": [
+     -70.1,
+     361.7,
+     108.8
+    ],
+    "center": [
+     -84.4,
+     357.0,
+     105.3
+    ],
+    "size": [
+     28.5,
+     9.4,
+     6.9
+    ]
+   }
+  },
+  {
+   "id": "patellar_ligament_terminaison_right",
+   "role": "contexte",
+   "nom_fr": "Terminaison : Ligament patellaire",
+   "name_en": "Insertion of right patellar ligament",
+   "name_la": null,
+   "systeme": "insertions",
+   "couleur": "#2471a3",
+   "file": "models-insertions/patellar_ligament_terminaison_right.glb",
+   "bounds": {
+    "min": [
+     -91.4,
+     300.3,
+     99.6
+    ],
+    "max": [
+     -70.3,
+     337.0,
+     105.1
+    ],
+    "center": [
+     -80.8,
+     318.7,
+     102.4
+    ],
+    "size": [
+     21.1,
+     36.7,
+     5.5
+    ]
+   }
+  }
+ ],
+ "diagrams": {},
+ "source": "data/FIGURES-AUDIT.json + proto-schemas/manifest.json + schemas-scenes/batch-B.json"
+}

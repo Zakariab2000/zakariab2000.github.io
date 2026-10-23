@@ -1,0 +1,360 @@
+{
+ "sujet": "loge-prostatique",
+ "titre_fr": "La loge prostatique",
+ "partie": "V",
+ "numero_sujet": 34,
+ "classe": "3D",
+ "figures": [
+  98,
+  99
+ ],
+ "structures": [
+  {
+   "id": "tendinous_arch_of_levator_ani_right",
+   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "role": "sujet",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "tendinous_arch_of_levator_ani_left",
+   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "role": "sujet",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "ductus_deferens_right",
+   "nom_fr": "Canal déférent",
+   "role": "sujet",
+   "figures": [
+    98
+   ]
+  },
+  {
+   "id": "ductus_deferens_left",
+   "nom_fr": "Canal déférent",
+   "role": "sujet",
+   "figures": [
+    98
+   ]
+  },
+  {
+   "id": "ejaculatory_duct_right",
+   "nom_fr": "Conduit éjaculateur",
+   "role": "sujet",
+   "figures": [
+    98
+   ]
+  },
+  {
+   "id": "ejaculatory_duct_left",
+   "nom_fr": "Conduit éjaculateur",
+   "role": "sujet",
+   "figures": [
+    98
+   ]
+  },
+  {
+   "id": "seminal_gland_right",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "sujet",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "hip_bone_left",
+   "nom_fr": "Os coxal",
+   "role": "sujet",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "prostate",
+   "nom_fr": "Prostate",
+   "role": "sujet",
+   "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "rectum",
+   "nom_fr": "Rectum",
+   "role": "sujet",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "sacrum",
+   "nom_fr": "Sacrum",
+   "role": "sujet",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "urethra",
+   "nom_fr": "Urètre",
+   "role": "sujet",
+   "figures": [
+    98
+   ]
+  },
+  {
+   "id": "urinary_bladder",
+   "nom_fr": "Vessie urinaire",
+   "role": "sujet",
+   "figures": [
+    98,
+    99
+   ]
+  },
+  {
+   "id": "ureter_right",
+   "nom_fr": "Uretère",
+   "role": "contexte",
+   "figures": [
+    99
+   ]
+  },
+  {
+   "id": "ureter_left",
+   "nom_fr": "Uretère",
+   "role": "contexte",
+   "figures": [
+    99
+   ]
+  }
+ ],
+ "camera": {
+  "vue": "anterieure",
+  "position": [
+   -0.3,
+   805.4,
+   463.0
+  ],
+  "target": [
+   -0.3,
+   768.8,
+   96.9
+  ]
+ },
+ "par_figure": {
+  "98": {
+   "titre_fr": "Configuration de la prostate",
+   "classe": "3D",
+   "vue": "anterieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -0.3,
+     805.4,
+     463.0
+    ],
+    "target": [
+     -0.3,
+     768.8,
+     96.9
+    ]
+   },
+   "structures": [
+    {
+     "id": "prostate",
+     "nom_fr": "Prostate",
+     "role": "sujet"
+    },
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "sujet"
+    },
+    {
+     "id": "urethra",
+     "nom_fr": "Urètre",
+     "role": "sujet"
+    },
+    {
+     "id": "ejaculatory_duct_right",
+     "nom_fr": "Conduit éjaculateur",
+     "role": "sujet"
+    },
+    {
+     "id": "ejaculatory_duct_left",
+     "nom_fr": "Conduit éjaculateur",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_right",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_left",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "ductus_deferens_right",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "ductus_deferens_left",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Lobes prostatiques et zones de McNeal : non séparés (prostate = 1 maillage) ; l'urètre est un maillage unique (pas de segment prostatique individualisé)"
+   ]
+  },
+  "99": {
+   "titre_fr": "Rapports de la loge prostatique",
+   "classe": "3D",
+   "vue": "laterale",
+   "camera": {
+    "vue": "laterale",
+    "position": [
+     -540.1,
+     939.7,
+     179.4
+    ],
+    "target": [
+     -0.3,
+     885.8,
+     82.2
+    ]
+   },
+   "structures": [
+    {
+     "id": "prostate",
+     "nom_fr": "Prostate",
+     "role": "sujet"
+    },
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "sujet"
+    },
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "sujet"
+    },
+    {
+     "id": "tendinous_arch_of_levator_ani_right",
+     "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+     "role": "sujet"
+    },
+    {
+     "id": "tendinous_arch_of_levator_ani_left",
+     "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+     "role": "sujet"
+    },
+    {
+     "id": "hip_bone_right",
+     "nom_fr": "Os coxal",
+     "role": "sujet"
+    },
+    {
+     "id": "hip_bone_left",
+     "nom_fr": "Os coxal",
+     "role": "sujet"
+    },
+    {
+     "id": "sacrum",
+     "nom_fr": "Sacrum",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_right",
+     "nom_fr": "Glande séminale",
+     "role": "contexte"
+    },
+    {
+     "id": "seminal_gland_left",
+     "nom_fr": "Glande séminale",
+     "role": "contexte"
+    },
+    {
+     "id": "ureter_right",
+     "nom_fr": "Uretère",
+     "role": "contexte"
+    },
+    {
+     "id": "ureter_left",
+     "nom_fr": "Uretère",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Plexus veineux prostatique (de Santorini) : ABSENT du manifeste",
+    "Muscle élévateur de l'anus : absent (seule l'arcade tendineuse) ; fascia de Denonvilliers : ABSENT"
+   ],
+   "espace": "Fascia recto-prostatique (de Denonvilliers)"
+  }
+ },
+ "diagrammes": [],
+ "espaces": [
+  {
+   "nom_fr": "Fascia recto-prostatique (de Denonvilliers)",
+   "type": "fascia",
+   "bornes": [
+    "prostate",
+    "rectum"
+   ],
+   "couleur": "#f4978e",
+   "opacite": 0.5,
+   "volume": {
+    "forme": "lame",
+    "centre": [
+     2.1,
+     751.9,
+     71.9
+    ],
+    "rayons": [
+     17,
+     13,
+     3.2
+    ]
+   },
+   "note": "Lame fibreuse sans maillage : volume schématique (lame verticale) tendu entre la face postérieure de la prostate et la face antérieure du rectum.",
+   "figure": 99
+  }
+ ],
+ "manquants": [
+  "Lobes prostatiques et zones de McNeal : non séparés (prostate = 1 maillage) ; l'urètre est un maillage unique (pas de segment prostatique individualisé)",
+  "Plexus veineux prostatique (de Santorini) : ABSENT du manifeste",
+  "Muscle élévateur de l'anus : absent (seule l'arcade tendineuse) ; fascia de Denonvilliers : ABSENT"
+ ],
+ "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
+}

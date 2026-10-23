@@ -1,0 +1,1155 @@
+{
+ "sujet": "diaphragme",
+ "titre_fr": "Le diaphragme",
+ "titre_en": "The diaphragm",
+ "partie": "III",
+ "numero_topic": 21,
+ "batch": "F",
+ "figures": [
+  {
+   "numero": 56,
+   "titre_fr": "Constitution du diaphragme",
+   "titre_en": "Constitution of the diaphragm",
+   "classe": "3D",
+   "camera": {
+    "vue": "inferieure",
+    "preset_audit": "inférieure puis supérieure"
+   },
+   "structures": [
+    {
+     "id": "diaphragm",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/diaphragm.glb",
+     "role": "sujet",
+     "centre": [
+      -0.7,
+      1085.1,
+      115.9
+     ],
+     "taille": [
+      246.3,
+      221.1,
+      157.7
+     ]
+    },
+    {
+     "id": "diaphragmatic_fascia",
+     "nom_fr": "Fascia diaphragmique",
+     "name_en": "Diaphragmatic fascia",
+     "systeme": "fascias",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/diaphragmatic_fascia.glb",
+     "role": "sujet",
+     "centre": [
+      -0.8,
+      1091.9,
+      117.2
+     ],
+     "taille": [
+      231.5,
+      194.9,
+      149.6
+     ]
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "role": "contexte",
+     "centre": [
+      -9.6,
+      1034.8,
+      118.9
+     ],
+     "taille": [
+      18.2,
+      143.8,
+      27.1
+     ]
+    },
+    {
+     "id": "oesophagus",
+     "nom_fr": "Oesophage",
+     "name_en": "Oesophagus",
+     "systeme": "organes",
+     "couleur": "#d9a583",
+     "fichier": "models/organes/oesophagus.glb",
+     "role": "contexte",
+     "centre": [
+      4.3,
+      1268.7,
+      92.8
+     ],
+     "taille": [
+      26.9,
+      283.0,
+      48.9
+     ]
+    },
+    {
+     "id": "abdominal_aorta",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/abdominal_aorta.glb",
+     "role": "contexte",
+     "centre": [
+      7.2,
+      1052.4,
+      110.0
+     ],
+     "taille": [
+      22.5,
+      182.9,
+      56.0
+     ]
+    },
+    {
+     "id": "kidney_right",
+     "nom_fr": "Rein droit",
+     "name_en": "Right kidney",
+     "systeme": "organes",
+     "couleur": "#7a3b2e",
+     "fichier": "models/organes/kidney_right.glb",
+     "role": "contexte",
+     "centre": [
+      -59.0,
+      1019.0,
+      88.3
+     ],
+     "taille": [
+      57.1,
+      104.4,
+      47.2
+     ]
+    },
+    {
+     "id": "kidney_left",
+     "nom_fr": "Rein gauche",
+     "name_en": "Left kidney",
+     "systeme": "organes",
+     "couleur": "#7a3b2e",
+     "fichier": "models/organes/kidney_left.glb",
+     "role": "contexte",
+     "centre": [
+      61.6,
+      1037.5,
+      79.9
+     ],
+     "taille": [
+      57.5,
+      105.9,
+      40.6
+     ]
+    }
+   ],
+   "diagramme": null,
+   "espaces": [],
+   "manquants": [
+    "Le diaphragme = UN seul maillage : tendon central (centre phrénique), piliers droit/gauche, feuillets et arcades NE sont PAS individualisés",
+    "Orifices (cave en T8, œsophagien en T10, aortique en T12) : aucun repère dédié dans le manifeste"
+   ]
+  },
+  {
+   "numero": 57,
+   "titre_fr": "Vascularisation artérielle du diaphragme",
+   "titre_en": "Arterial supply of the diaphragm",
+   "classe": "3D",
+   "camera": {
+    "vue": "inferieure",
+    "preset_audit": "inférieure"
+   },
+   "structures": [
+    {
+     "id": "superior_phrenic_arteries",
+     "nom_fr": "Artères phréniques supérieures",
+     "name_en": "Superior phrenic arteries",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/superior_phrenic_arteries.glb",
+     "role": "sujet",
+     "centre": [
+      -69.2,
+      1125.1,
+      103.9
+     ],
+     "taille": [
+      94.3,
+      147.3,
+      91.4
+     ]
+    },
+    {
+     "id": "inferior_phrenic_artery",
+     "nom_fr": "Artère phrénique inférieure",
+     "name_en": "Inferior phrenic artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/inferior_phrenic_artery.glb",
+     "role": "sujet",
+     "centre": [
+      -39.2,
+      1143.0,
+      125.4
+     ],
+     "taille": [
+      87.3,
+      111.3,
+      94.2
+     ]
+    },
+    {
+     "id": "musculophrenic_artery_right",
+     "nom_fr": "Artère musculophrénique",
+     "name_en": "Right musculophrenic artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/musculophrenic_artery_right.glb",
+     "role": "sujet",
+     "centre": [
+      -63.3,
+      1093.5,
+      148.5
+     ],
+     "taille": [
+      97.9,
+      179.6,
+      98.5
+     ]
+    },
+    {
+     "id": "musculophrenic_artery_left",
+     "nom_fr": "Artère musculophrénique",
+     "name_en": "Left musculophrenic artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/musculophrenic_artery_left.glb",
+     "role": "sujet",
+     "centre": [
+      62.7,
+      1093.5,
+      148.5
+     ],
+     "taille": [
+      97.9,
+      179.6,
+      98.5
+     ]
+    },
+    {
+     "id": "internal_thoracic_artery_right",
+     "nom_fr": "Artère thoracique interne",
+     "name_en": "Right internal thoracic artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/internal_thoracic_artery_right.glb",
+     "role": "sujet",
+     "centre": [
+      -28.2,
+      1269.4,
+      147.0
+     ],
+     "taille": [
+      28.3,
+      173.6,
+      97.6
+     ]
+    },
+    {
+     "id": "internal_thoracic_artery_left",
+     "nom_fr": "Artère thoracique interne",
+     "name_en": "Left internal thoracic artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/internal_thoracic_artery_left.glb",
+     "role": "sujet",
+     "centre": [
+      27.6,
+      1269.4,
+      147.0
+     ],
+     "taille": [
+      28.3,
+      173.6,
+      97.6
+     ]
+    },
+    {
+     "id": "diaphragm",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/diaphragm.glb",
+     "role": "sujet",
+     "centre": [
+      -0.7,
+      1085.1,
+      115.9
+     ],
+     "taille": [
+      246.3,
+      221.1,
+      157.7
+     ]
+    },
+    {
+     "id": "abdominal_aorta",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/abdominal_aorta.glb",
+     "role": "contexte",
+     "centre": [
+      7.2,
+      1052.4,
+      110.0
+     ],
+     "taille": [
+      22.5,
+      182.9,
+      56.0
+     ]
+    },
+    {
+     "id": "supreme_intercostal_artery_right",
+     "nom_fr": "Artère intercostale suprême",
+     "name_en": "Right supreme intercostal artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/supreme_intercostal_artery_right.glb",
+     "role": "contexte",
+     "centre": [
+      -47.5,
+      1354.9,
+      86.2
+     ],
+     "taille": [
+      5.9,
+      2.7,
+      8.4
+     ]
+    },
+    {
+     "id": "supreme_intercostal_artery_left",
+     "nom_fr": "Artère intercostale suprême",
+     "name_en": "Left supreme intercostal artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/supreme_intercostal_artery_left.glb",
+     "role": "contexte",
+     "centre": [
+      46.9,
+      1354.9,
+      86.2
+     ],
+     "taille": [
+      5.9,
+      2.7,
+      8.4
+     ]
+    }
+   ],
+   "diagramme": null,
+   "espaces": [],
+   "manquants": [
+    "Artère péricardiacophrénique (branche de la thoracique interne, classique du cours) : ABSENTE du manifeste"
+   ]
+  },
+  {
+   "numero": 58,
+   "titre_fr": "Lymphatiques (A) et nerfs (B) du diaphragme",
+   "titre_en": "Lymphatics (A) and nerves (B) of the diaphragm",
+   "classe": "3D+D",
+   "camera": {
+    "vue": "superieure",
+    "preset_audit": "supérieure"
+   },
+   "structures": [
+    {
+     "id": "superior_diaphragmatic_nodes",
+     "nom_fr": "Lymphonoeuds diaphragmatiques supérieurs",
+     "name_en": "Superior diaphragmatic nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/superior_diaphragmatic_nodes.glb",
+     "role": "sujet",
+     "centre": [
+      -6.6,
+      1171.5,
+      112.1
+     ],
+     "taille": [
+      48.0,
+      19.6,
+      39.3
+     ]
+    },
+    {
+     "id": "inferior_diaphragmatic_nodes",
+     "nom_fr": "Lymphonoeuds phréniques inférieurs",
+     "name_en": "Inferior diaphragmatic nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/inferior_diaphragmatic_nodes.glb",
+     "role": "sujet",
+     "centre": [
+      -6.1,
+      1171.9,
+      117.6
+     ],
+     "taille": [
+      49.0,
+      20.5,
+      36.0
+     ]
+    },
+    {
+     "id": "diaphragm",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/diaphragm.glb",
+     "role": "sujet",
+     "centre": [
+      -0.7,
+      1085.1,
+      115.9
+     ],
+     "taille": [
+      246.3,
+      221.1,
+      157.7
+     ]
+    },
+    {
+     "id": "sympathetic_trunk_right",
+     "nom_fr": "Tronc sympathique",
+     "name_en": "Right sympathetic trunk",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/sympathetic_trunk_right.glb",
+     "role": "contexte",
+     "centre": [
+      -14.7,
+      1252.5,
+      73.0
+     ],
+     "taille": [
+      19.8,
+      373.1,
+      63.7
+     ]
+    },
+    {
+     "id": "sympathetic_trunk_left",
+     "nom_fr": "Tronc sympathique",
+     "name_en": "Left sympathetic trunk",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/sympathetic_trunk_left.glb",
+     "role": "contexte",
+     "centre": [
+      14.1,
+      1252.5,
+      73.0
+     ],
+     "taille": [
+      19.8,
+      373.1,
+      63.7
+     ]
+    },
+    {
+     "id": "vagus_nerve_x_right",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Right vagus nerve (X)",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/vagus_nerve_x_right.glb",
+     "role": "contexte",
+     "centre": [
+      19.8,
+      1274.4,
+      98.5
+     ],
+     "taille": [
+      97.1,
+      473.5,
+      83.2
+     ]
+    },
+    {
+     "id": "vagus_nerve_x_left",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Left vagus nerve (X)",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/vagus_nerve_x_left.glb",
+     "role": "contexte",
+     "centre": [
+      14.7,
+      1395.7,
+      94.6
+     ],
+     "taille": [
+      26.8,
+      231.0,
+      69.4
+     ]
+    }
+   ],
+   "diagramme": "diaphragme_lymph_nerfs",
+   "espaces": [],
+   "manquants": [
+    "Nerf phrénique : ABSENT du manifeste — toute la partie B de la figure (nerfs) n'a pas de maillage ; seuls les lymphatiques (A) existent → schéma du trajet phrénique en regard"
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "diaphragm",
+   "nom_fr": "Diaphragme",
+   "name_en": "Diaphragm",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "fichier": "models/muscles/diaphragm.glb",
+   "role": "sujet",
+   "centre": [
+    -0.7,
+    1085.1,
+    115.9
+   ],
+   "taille": [
+    246.3,
+    221.1,
+    157.7
+   ]
+  },
+  {
+   "id": "diaphragmatic_fascia",
+   "nom_fr": "Fascia diaphragmique",
+   "name_en": "Diaphragmatic fascia",
+   "systeme": "fascias",
+   "couleur": "#b03a2e",
+   "fichier": "models/muscles/diaphragmatic_fascia.glb",
+   "role": "sujet",
+   "centre": [
+    -0.8,
+    1091.9,
+    117.2
+   ],
+   "taille": [
+    231.5,
+    194.9,
+    149.6
+   ]
+  },
+  {
+   "id": "inferior_vena_cava_abdominal_part",
+   "nom_fr": "Veine cave inférieure (partie abdominale)",
+   "name_en": "Inferior vena cava (abdominal part)",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/inferior_vena_cava_abdominal_part.glb",
+   "role": "contexte",
+   "centre": [
+    -9.6,
+    1034.8,
+    118.9
+   ],
+   "taille": [
+    18.2,
+    143.8,
+    27.1
+   ]
+  },
+  {
+   "id": "oesophagus",
+   "nom_fr": "Oesophage",
+   "name_en": "Oesophagus",
+   "systeme": "organes",
+   "couleur": "#d9a583",
+   "fichier": "models/organes/oesophagus.glb",
+   "role": "contexte",
+   "centre": [
+    4.3,
+    1268.7,
+    92.8
+   ],
+   "taille": [
+    26.9,
+    283.0,
+    48.9
+   ]
+  },
+  {
+   "id": "abdominal_aorta",
+   "nom_fr": "Aorte abdominale",
+   "name_en": "Abdominal aorta",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/abdominal_aorta.glb",
+   "role": "contexte",
+   "centre": [
+    7.2,
+    1052.4,
+    110.0
+   ],
+   "taille": [
+    22.5,
+    182.9,
+    56.0
+   ]
+  },
+  {
+   "id": "kidney_right",
+   "nom_fr": "Rein droit",
+   "name_en": "Right kidney",
+   "systeme": "organes",
+   "couleur": "#7a3b2e",
+   "fichier": "models/organes/kidney_right.glb",
+   "role": "contexte",
+   "centre": [
+    -59.0,
+    1019.0,
+    88.3
+   ],
+   "taille": [
+    57.1,
+    104.4,
+    47.2
+   ]
+  },
+  {
+   "id": "kidney_left",
+   "nom_fr": "Rein gauche",
+   "name_en": "Left kidney",
+   "systeme": "organes",
+   "couleur": "#7a3b2e",
+   "fichier": "models/organes/kidney_left.glb",
+   "role": "contexte",
+   "centre": [
+    61.6,
+    1037.5,
+    79.9
+   ],
+   "taille": [
+    57.5,
+    105.9,
+    40.6
+   ]
+  },
+  {
+   "id": "superior_phrenic_arteries",
+   "nom_fr": "Artères phréniques supérieures",
+   "name_en": "Superior phrenic arteries",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/superior_phrenic_arteries.glb",
+   "role": "sujet",
+   "centre": [
+    -69.2,
+    1125.1,
+    103.9
+   ],
+   "taille": [
+    94.3,
+    147.3,
+    91.4
+   ]
+  },
+  {
+   "id": "inferior_phrenic_artery",
+   "nom_fr": "Artère phrénique inférieure",
+   "name_en": "Inferior phrenic artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/inferior_phrenic_artery.glb",
+   "role": "sujet",
+   "centre": [
+    -39.2,
+    1143.0,
+    125.4
+   ],
+   "taille": [
+    87.3,
+    111.3,
+    94.2
+   ]
+  },
+  {
+   "id": "musculophrenic_artery_right",
+   "nom_fr": "Artère musculophrénique",
+   "name_en": "Right musculophrenic artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/musculophrenic_artery_right.glb",
+   "role": "sujet",
+   "centre": [
+    -63.3,
+    1093.5,
+    148.5
+   ],
+   "taille": [
+    97.9,
+    179.6,
+    98.5
+   ]
+  },
+  {
+   "id": "musculophrenic_artery_left",
+   "nom_fr": "Artère musculophrénique",
+   "name_en": "Left musculophrenic artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/musculophrenic_artery_left.glb",
+   "role": "sujet",
+   "centre": [
+    62.7,
+    1093.5,
+    148.5
+   ],
+   "taille": [
+    97.9,
+    179.6,
+    98.5
+   ]
+  },
+  {
+   "id": "internal_thoracic_artery_right",
+   "nom_fr": "Artère thoracique interne",
+   "name_en": "Right internal thoracic artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/internal_thoracic_artery_right.glb",
+   "role": "sujet",
+   "centre": [
+    -28.2,
+    1269.4,
+    147.0
+   ],
+   "taille": [
+    28.3,
+    173.6,
+    97.6
+   ]
+  },
+  {
+   "id": "internal_thoracic_artery_left",
+   "nom_fr": "Artère thoracique interne",
+   "name_en": "Left internal thoracic artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/internal_thoracic_artery_left.glb",
+   "role": "sujet",
+   "centre": [
+    27.6,
+    1269.4,
+    147.0
+   ],
+   "taille": [
+    28.3,
+    173.6,
+    97.6
+   ]
+  },
+  {
+   "id": "supreme_intercostal_artery_right",
+   "nom_fr": "Artère intercostale suprême",
+   "name_en": "Right supreme intercostal artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/supreme_intercostal_artery_right.glb",
+   "role": "contexte",
+   "centre": [
+    -47.5,
+    1354.9,
+    86.2
+   ],
+   "taille": [
+    5.9,
+    2.7,
+    8.4
+   ]
+  },
+  {
+   "id": "supreme_intercostal_artery_left",
+   "nom_fr": "Artère intercostale suprême",
+   "name_en": "Left supreme intercostal artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/supreme_intercostal_artery_left.glb",
+   "role": "contexte",
+   "centre": [
+    46.9,
+    1354.9,
+    86.2
+   ],
+   "taille": [
+    5.9,
+    2.7,
+    8.4
+   ]
+  },
+  {
+   "id": "superior_diaphragmatic_nodes",
+   "nom_fr": "Lymphonoeuds diaphragmatiques supérieurs",
+   "name_en": "Superior diaphragmatic nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/superior_diaphragmatic_nodes.glb",
+   "role": "sujet",
+   "centre": [
+    -6.6,
+    1171.5,
+    112.1
+   ],
+   "taille": [
+    48.0,
+    19.6,
+    39.3
+   ]
+  },
+  {
+   "id": "inferior_diaphragmatic_nodes",
+   "nom_fr": "Lymphonoeuds phréniques inférieurs",
+   "name_en": "Inferior diaphragmatic nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/inferior_diaphragmatic_nodes.glb",
+   "role": "sujet",
+   "centre": [
+    -6.1,
+    1171.9,
+    117.6
+   ],
+   "taille": [
+    49.0,
+    20.5,
+    36.0
+   ]
+  },
+  {
+   "id": "sympathetic_trunk_right",
+   "nom_fr": "Tronc sympathique",
+   "name_en": "Right sympathetic trunk",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/sympathetic_trunk_right.glb",
+   "role": "contexte",
+   "centre": [
+    -14.7,
+    1252.5,
+    73.0
+   ],
+   "taille": [
+    19.8,
+    373.1,
+    63.7
+   ]
+  },
+  {
+   "id": "sympathetic_trunk_left",
+   "nom_fr": "Tronc sympathique",
+   "name_en": "Left sympathetic trunk",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/sympathetic_trunk_left.glb",
+   "role": "contexte",
+   "centre": [
+    14.1,
+    1252.5,
+    73.0
+   ],
+   "taille": [
+    19.8,
+    373.1,
+    63.7
+   ]
+  },
+  {
+   "id": "vagus_nerve_x_right",
+   "nom_fr": "Nerf vague (X)",
+   "name_en": "Right vagus nerve (X)",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/vagus_nerve_x_right.glb",
+   "role": "contexte",
+   "centre": [
+    19.8,
+    1274.4,
+    98.5
+   ],
+   "taille": [
+    97.1,
+    473.5,
+    83.2
+   ]
+  },
+  {
+   "id": "vagus_nerve_x_left",
+   "nom_fr": "Nerf vague (X)",
+   "name_en": "Left vagus nerve (X)",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/vagus_nerve_x_left.glb",
+   "role": "contexte",
+   "centre": [
+    14.7,
+    1395.7,
+    94.6
+   ],
+   "taille": [
+    26.8,
+    231.0,
+    69.4
+   ]
+  }
+ ],
+ "diagrammes": {
+  "diaphragme_lymph_nerfs": {
+   "titre_fr": "Lymphatiques (A) et nerfs (B) du diaphragme — schéma interactif",
+   "titre_en": "Lymphatics (A) and nerves (B) of the diaphragm — interactive diagram",
+   "w": 720,
+   "h": 920,
+   "levels": {
+    "lymph": {
+     "c": "#4fae4a",
+     "fr": "A — Lymphatiques",
+     "en": "A — Lymphatics"
+    },
+    "moteur": {
+     "c": "#f0a13c",
+     "fr": "B — Nerf phrénique (moteur)",
+     "en": "B — Phrenic nerve (motor)"
+    },
+    "sensitif": {
+     "c": "#9db1cc",
+     "fr": "B — Intercostaux inférieurs",
+     "en": "B — Lower intercostal nerves"
+    },
+    "sympathique": {
+     "c": "#b388ff",
+     "fr": "B — Sympathique",
+     "en": "B — Sympathetic"
+    }
+   },
+   "nodes": [
+    {
+     "id": "diaph",
+     "x": 360,
+     "y": 90,
+     "w": 180,
+     "label": "Diaphragme",
+     "sub": "territoire drainé et innervé",
+     "label_en": "Diaphragm",
+     "sub_en": "drained and innervated territory",
+     "lvl": "lymph",
+     "desc": {
+      "fr": "Territoire commun des parties A et B. Dans le manifeste, le diaphragme est un seul maillage : centre tendineux, piliers et folioles ne sont pas individualisés (audit figs 56/58).",
+      "en": "Common territory of parts A and B. In the manifest, the diaphragm is a single mesh: central tendon, crura and leaflets are not individually modelled (audit figs 56/58)."
+     }
+    },
+    {
+     "id": "juxtaphr",
+     "x": 360,
+     "y": 230,
+     "w": 230,
+     "label": "Ganglions diaphragmatiques",
+     "sub": "juxta-phréniques",
+     "label_en": "Diaphragmatic nodes",
+     "sub_en": "juxtaphrenic",
+     "lvl": "lymph",
+     "desc": {
+      "fr": "Premier relais du drainage diaphragmatique : les ganglions diaphragmatiques juxta-phréniques (cours, Q21). Correspond aux nœuds diaphragmatiques supérieurs et inférieurs présents dans la scène 3D (audit fig. 58).",
+      "en": "First relay of diaphragmatic drainage: the juxtaphrenic diaphragmatic nodes (course, Q21). Corresponds to the superior and inferior diaphragmatic nodes present in the 3D scene (audit fig. 58)."
+     }
+    },
+    {
+     "id": "mediast_post",
+     "x": 140,
+     "y": 380,
+     "w": 200,
+     "label": "Ganglions médiastinaux",
+     "sub": "postérieurs",
+     "label_en": "Mediastinal nodes",
+     "sub_en": "posterior",
+     "lvl": "lymph",
+     "desc": {
+      "fr": "Ganglions médiastinaux postérieurs, situés autour de l'œsophage et de l'aorte : deuxième voie de drainage du diaphragme (cours, Q21).",
+      "en": "Posterior mediastinal nodes, around the oesophagus and the aorta: second drainage route of the diaphragm (course, Q21)."
+     }
+    },
+    {
+     "id": "sousdiaph",
+     "x": 580,
+     "y": 380,
+     "w": 210,
+     "label": "Ganglions",
+     "sub": "sous-diaphragmatiques",
+     "label_en": "Nodes",
+     "sub_en": "subdiaphragmatic",
+     "lvl": "lymph",
+     "desc": {
+      "fr": "Ganglions sous-diaphragmatiques des chaînes diaphragmatiques inférieures et juxta-aortique : troisième voie de drainage du diaphragme (cours, Q21).",
+      "en": "Subdiaphragmatic nodes of the inferior diaphragmatic and juxta-aortic chains: third drainage route of the diaphragm (course, Q21)."
+     }
+    },
+    {
+     "id": "plex_cerv",
+     "x": 130,
+     "y": 540,
+     "w": 190,
+     "label": "Plexus cervical",
+     "sub": "profond",
+     "label_en": "Cervical plexus",
+     "sub_en": "deep",
+     "lvl": "moteur",
+     "desc": {
+      "fr": "Origine des 2 nerfs phréniques, droit et gauche : ils proviennent du plexus cervical profond et traversent la base du cou vers le thorax (cours, Q21).",
+      "en": "Origin of the 2 phrenic nerves, right and left: they arise from the deep cervical plexus and cross the root of the neck into the thorax (course, Q21)."
+     }
+    },
+    {
+     "id": "phren",
+     "x": 360,
+     "y": 540,
+     "w": 170,
+     "label": "Nerf phrénique",
+     "sub": "droit et gauche",
+     "label_en": "Phrenic nerve",
+     "sub_en": "right and left",
+     "lvl": "moteur",
+     "note": {
+      "fr": "Pas de maillage 3D — schéma seul (audit fig. 58)",
+      "en": "No 3D mesh — diagram only (audit fig. 58)"
+     },
+     "desc": {
+      "fr": "Innervation motrice du diaphragme : il aborde le muscle par sa face supérieure et se divise en 3 branches. Il contient également des fibres sympathiques (cours, Q21). Absent du manifeste : schéma seul (audit fig. 58).",
+      "en": "Motor supply of the diaphragm: it reaches the muscle through its superior surface and divides into 3 branches. It also carries sympathetic fibres (course, Q21). Absent from the manifest: diagram only (audit fig. 58)."
+     }
+    },
+    {
+     "id": "br_ant",
+     "x": 140,
+     "y": 690,
+     "w": 180,
+     "label": "Branche antérieure",
+     "sub": "du phrénique",
+     "label_en": "Anterior branch",
+     "sub_en": "of phrenic nerve",
+     "lvl": "moteur",
+     "desc": {
+      "fr": "Branche antérieure du nerf phrénique : destinée aux portions costale et sternale du diaphragme (cours, Q21).",
+      "en": "Anterior branch of the phrenic nerve: supplies the costal and sternal parts of the diaphragm (course, Q21)."
+     }
+    },
+    {
+     "id": "br_lat",
+     "x": 360,
+     "y": 690,
+     "w": 170,
+     "label": "Branche latérale",
+     "sub": "du phrénique",
+     "label_en": "Lateral branch",
+     "sub_en": "of phrenic nerve",
+     "lvl": "moteur",
+     "desc": {
+      "fr": "Branche latérale du nerf phrénique : destinée à la portion costale du diaphragme (cours, Q21) — territoire périphérique que complètent les nerfs intercostaux inférieurs (arête en pointillés).",
+      "en": "Lateral branch of the phrenic nerve: supplies the costal part of the diaphragm (course, Q21) — the peripheral territory supplemented by the lower intercostal nerves (dashed edge)."
+     }
+    },
+    {
+     "id": "br_post",
+     "x": 580,
+     "y": 690,
+     "w": 180,
+     "label": "Branche postérieure",
+     "sub": "du phrénique",
+     "label_en": "Posterior branch",
+     "sub_en": "of phrenic nerve",
+     "lvl": "moteur",
+     "desc": {
+      "fr": "Branche postérieure du nerf phrénique : destinée aux piliers du diaphragme (cours, Q21).",
+      "en": "Posterior branch of the phrenic nerve: supplies the crura of the diaphragm (course, Q21)."
+     }
+    },
+    {
+     "id": "intercost",
+     "x": 180,
+     "y": 830,
+     "w": 210,
+     "label": "Nerfs intercostaux",
+     "sub": "inférieurs",
+     "label_en": "Intercostal nerves",
+     "sub_en": "lower",
+     "lvl": "sensitif",
+     "desc": {
+      "fr": "Innervation sensitive de la périphérie costale du diaphragme, en complément de la branche latérale du phrénique. Non cités dans le texte du cours Q21, qui ne retient que le phrénique et le sympathique — inclusion demandée par le cahier des charges, voir notes.",
+      "en": "Sensory supply of the costal periphery of the diaphragm, supplementing the lateral branch of the phrenic nerve. Not named in the course text Q21, which retains only the phrenic nerve and the sympathetic — included as required by the task brief, see notes."
+     }
+    },
+    {
+     "id": "plex_diaph_inf",
+     "x": 520,
+     "y": 830,
+     "w": 240,
+     "label": "Plexus diaphragmatique",
+     "sub": "inférieur",
+     "label_en": "Diaphragmatic plexus",
+     "sub_en": "inferior",
+     "lvl": "sympathique",
+     "desc": {
+      "fr": "Composante sympathique du diaphragme : le plexus diaphragmatique inférieur naît du ganglion semi-lunaire et est satellite de l'artère diaphragmatique inférieure (cours, Q21).",
+      "en": "Sympathetic component of the diaphragm: the inferior diaphragmatic plexus arises from the semilunar (coeliac) ganglion and accompanies the inferior diaphragmatic artery (course, Q21)."
+     }
+    }
+   ],
+   "edges": [
+    [
+     "diaph",
+     "juxtaphr"
+    ],
+    [
+     "diaph",
+     "mediast_post"
+    ],
+    [
+     "diaph",
+     "sousdiaph"
+    ],
+    [
+     "plex_cerv",
+     "phren"
+    ],
+    [
+     "phren",
+     "br_ant"
+    ],
+    [
+     "phren",
+     "br_lat"
+    ],
+    [
+     "phren",
+     "br_post"
+    ],
+    [
+     "br_lat",
+     "intercost",
+     1
+    ]
+   ]
+  }
+ }
+}

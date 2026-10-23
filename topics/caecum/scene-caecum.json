@@ -1,0 +1,607 @@
+{
+ "sujet": "caecum-appendice",
+ "numero_sujet_audit": 38,
+ "partie": "VII",
+ "titre_fr": "Le cæcum et l'appendice vermiculaire",
+ "titre_en": "The caecum and vermiform appendix",
+ "source_cours": "Q38 « Le caecum : Configurations et rapports » (Partie VII, p. 61)",
+ "figures": [
+  {
+   "numero": 110,
+   "titre_fr": "Variations de situation du cæcum et de l'appendice vermiculaire",
+   "titre_en": "Variations in position of the caecum and vermiform appendix",
+   "classe": "3D+D",
+   "diagram": "caecum_variations"
+  },
+  {
+   "numero": 111,
+   "titre_fr": "Configuration du cæcum",
+   "titre_en": "Configuration of the caecum",
+   "classe": "3D+D",
+   "diagram": "caecum_configuration"
+  }
+ ],
+ "structures": [
+  {
+   "id": "vermiform_appendix",
+   "role": "sujet",
+   "figures": [
+    110,
+    111
+   ],
+   "file": "models/organes/vermiform_appendix.glb",
+   "nom_fr": "Appendice vermiforme",
+   "name_en": "Vermiform appendix",
+   "couleur": "#c97b84",
+   "system": "organes",
+   "center": [
+    -53.0,
+    881.2,
+    102.9
+   ],
+   "bounds": {
+    "min": [
+     -87.2,
+     872.1,
+     84.6
+    ],
+    "max": [
+     -18.8,
+     890.3,
+     121.3
+    ],
+    "center": [
+     -53.0,
+     881.2,
+     102.9
+    ],
+    "size": [
+     68.3,
+     18.2,
+     36.6
+    ]
+   }
+  },
+  {
+   "id": "ileocecal_junction",
+   "role": "sujet",
+   "figures": [
+    110,
+    111
+   ],
+   "file": "models/organes/ileocecal_junction.glb",
+   "nom_fr": "Ileocecal junction",
+   "name_en": "Ileocecal junction",
+   "couleur": "#c97b84",
+   "system": "organes",
+   "center": [
+    -65.6,
+    896.7,
+    124.2
+   ],
+   "bounds": {
+    "min": [
+     -79.8,
+     870.1,
+     107.2
+    ],
+    "max": [
+     -51.4,
+     923.3,
+     141.3
+    ],
+    "center": [
+     -65.6,
+     896.7,
+     124.2
+    ],
+    "size": [
+     28.5,
+     53.2,
+     34.1
+    ]
+   }
+  },
+  {
+   "id": "ascending_colon",
+   "role": "sujet",
+   "figures": [
+    110,
+    111
+   ],
+   "file": "models/organes/ascending_colon.glb",
+   "nom_fr": "Côlon ascendant",
+   "name_en": "Ascending colon",
+   "couleur": "#d9a583",
+   "system": "organes",
+   "center": [
+    -86.8,
+    950.5,
+    114.0
+   ],
+   "bounds": {
+    "min": [
+     -112.1,
+     853.8,
+     87.7
+    ],
+    "max": [
+     -61.5,
+     1047.2,
+     140.4
+    ],
+    "center": [
+     -86.8,
+     950.5,
+     114.0
+    ],
+    "size": [
+     50.6,
+     193.4,
+     52.7
+    ]
+   }
+  },
+  {
+   "id": "distal_part_of_ileum",
+   "role": "sujet",
+   "figures": [
+    110
+   ],
+   "file": "models/organes/distal_part_of_ileum.glb",
+   "nom_fr": "Partie distale de l'iléon",
+   "name_en": "Distal part of ileum",
+   "couleur": "#c9a06c",
+   "system": "organes",
+   "center": [
+    -11.6,
+    845.4,
+    141.4
+   ],
+   "bounds": {
+    "min": [
+     -79.9,
+     805.3,
+     120.0
+    ],
+    "max": [
+     56.7,
+     885.5,
+     162.8
+    ],
+    "center": [
+     -11.6,
+     845.4,
+     141.4
+    ],
+    "size": [
+     136.6,
+     80.2,
+     42.9
+    ]
+   },
+   "role_par_figure": {
+    "110": "sujet",
+    "111": "contexte"
+   }
+  },
+  {
+   "id": "meso_appendix",
+   "role": "contexte",
+   "figures": [
+    110
+   ],
+   "file": "models/organes/meso_appendix.glb",
+   "nom_fr": "Méso-appendice",
+   "name_en": "Meso-appendix",
+   "couleur": "#c97b84",
+   "system": "organes",
+   "center": [
+    -46.7,
+    900.6,
+    103.4
+   ],
+   "bounds": {
+    "min": [
+     -71.1,
+     878.5,
+     87.9
+    ],
+    "max": [
+     -22.4,
+     922.7,
+     118.8
+    ],
+    "center": [
+     -46.7,
+     900.6,
+     103.4
+    ],
+    "size": [
+     48.7,
+     44.2,
+     30.9
+    ]
+   },
+   "role_par_figure": {
+    "110": "contexte",
+    "111": "sujet"
+   }
+  },
+  {
+   "id": "free_taenia",
+   "role": "sujet",
+   "figures": [
+    111
+   ],
+   "file": "models/organes/free_taenia.glb",
+   "nom_fr": "Ténia libre",
+   "name_en": "Free taenia",
+   "couleur": "#c97b84",
+   "system": "organes",
+   "center": [
+    1.7,
+    951.4,
+    105.4
+   ],
+   "bounds": {
+    "min": [
+     -72.6,
+     849.8,
+     61.3
+    ],
+    "max": [
+     75.9,
+     1053.0,
+     149.5
+    ],
+    "center": [
+     1.7,
+     951.4,
+     105.4
+    ],
+    "size": [
+     148.5,
+     203.2,
+     88.2
+    ]
+   }
+  },
+  {
+   "id": "mesocolic_taenia",
+   "role": "sujet",
+   "figures": [
+    111
+   ],
+   "file": "models/organes/mesocolic_taenia.glb",
+   "nom_fr": "Ténia mésocolique",
+   "name_en": "Mesocolic taenia",
+   "couleur": "#c97b84",
+   "system": "organes",
+   "center": [
+    -2.5,
+    940.7,
+    112.8
+   ],
+   "bounds": {
+    "min": [
+     -113.2,
+     816.2,
+     48.4
+    ],
+    "max": [
+     108.1,
+     1065.2,
+     177.3
+    ],
+    "center": [
+     -2.5,
+     940.7,
+     112.8
+    ],
+    "size": [
+     221.3,
+     249.0,
+     128.9
+    ]
+   }
+  },
+  {
+   "id": "omental_taenia",
+   "role": "sujet",
+   "figures": [
+    111
+   ],
+   "file": "models/organes/omental_taenia.glb",
+   "nom_fr": "Ténia omental",
+   "name_en": "Omental taenia",
+   "couleur": "#c97b84",
+   "system": "organes",
+   "center": [
+    7.7,
+    914.5,
+    118.7
+   ],
+   "bounds": {
+    "min": [
+     -80.8,
+     812.0,
+     81.3
+    ],
+    "max": [
+     96.3,
+     1017.0,
+     156.1
+    ],
+    "center": [
+     7.7,
+     914.5,
+     118.7
+    ],
+    "size": [
+     177.1,
+     205.0,
+     74.8
+    ]
+   }
+  },
+  {
+   "id": "kidney_right",
+   "role": "ghost",
+   "figures": [
+    110,
+    111
+   ],
+   "file": "models/organes/kidney_right.glb",
+   "nom_fr": "Rein droit",
+   "name_en": "Right kidney",
+   "couleur": "#7a3b2e",
+   "system": "organes",
+   "center": [
+    -59.0,
+    1019.0,
+    88.3
+   ],
+   "bounds": {
+    "min": [
+     -87.6,
+     966.8,
+     64.7
+    ],
+    "max": [
+     -30.4,
+     1071.2,
+     111.9
+    ],
+    "center": [
+     -59.0,
+     1019.0,
+     88.3
+    ],
+    "size": [
+     57.1,
+     104.4,
+     47.2
+    ]
+   }
+  },
+  {
+   "id": "kidney_left",
+   "role": "ghost",
+   "figures": [
+    110,
+    111
+   ],
+   "file": "models/organes/kidney_left.glb",
+   "nom_fr": "Rein gauche",
+   "name_en": "Left kidney",
+   "couleur": "#7a3b2e",
+   "system": "organes",
+   "center": [
+    61.6,
+    1037.5,
+    79.9
+   ],
+   "bounds": {
+    "min": [
+     32.8,
+     984.5,
+     59.6
+    ],
+    "max": [
+     90.4,
+     1090.4,
+     100.2
+    ],
+    "center": [
+     61.6,
+     1037.5,
+     79.9
+    ],
+    "size": [
+     57.5,
+     105.9,
+     40.6
+    ]
+   }
+  },
+  {
+   "id": "ileocolic_artery",
+   "role": "contexte",
+   "figures": [
+    110,
+    111
+   ],
+   "file": "models/arteres/ileocolic_artery.glb",
+   "nom_fr": "Artère iléocolique",
+   "name_en": "Ileocolic artery",
+   "couleur": "#cf5346",
+   "system": "arteres",
+   "center": [
+    -18.7,
+    975.5,
+    136.7
+   ],
+   "bounds": {
+    "min": [
+     -31.2,
+     961.3,
+     130.3
+    ],
+    "max": [
+     -6.2,
+     989.6,
+     143.1
+    ],
+    "center": [
+     -18.7,
+     975.5,
+     136.7
+    ],
+    "size": [
+     25.0,
+     28.3,
+     12.8
+    ]
+   },
+   "hors_audit": true
+  },
+  {
+   "id": "appendicular_artery",
+   "role": "contexte",
+   "figures": [
+    110,
+    111
+   ],
+   "file": "models/arteres/appendicular_artery.glb",
+   "nom_fr": "Artère appendiculaire",
+   "name_en": "Appendicular artery",
+   "couleur": "#cf5346",
+   "system": "arteres",
+   "center": [
+    -38.4,
+    912.2,
+    107.0
+   ],
+   "bounds": {
+    "min": [
+     -55.1,
+     879.4,
+     89.5
+    ],
+    "max": [
+     -21.8,
+     945.1,
+     124.5
+    ],
+    "center": [
+     -38.4,
+     912.2,
+     107.0
+    ],
+    "size": [
+     33.3,
+     65.7,
+     34.9
+    ]
+   },
+   "hors_audit": true
+  },
+  {
+   "id": "right_colic_artery",
+   "role": "contexte",
+   "figures": [
+    111
+   ],
+   "file": "models/arteres/right_colic_artery.glb",
+   "nom_fr": "Artère colique droite",
+   "name_en": "Right colic artery",
+   "couleur": "#cf5346",
+   "system": "arteres",
+   "center": [
+    -37.6,
+    1007.8,
+    133.9
+   ],
+   "bounds": {
+    "min": [
+     -67.9,
+     992.8,
+     119.4
+    ],
+    "max": [
+     -7.3,
+     1022.9,
+     148.5
+    ],
+    "center": [
+     -37.6,
+     1007.8,
+     133.9
+    ],
+    "size": [
+     60.7,
+     30.1,
+     29.1
+    ]
+   },
+   "hors_audit": true
+  }
+ ],
+ "camera": {
+  "vue": "anterieure",
+  "target": [
+   -42,
+   925,
+   118
+  ],
+  "position": [
+   -10,
+   945,
+   470
+  ],
+  "note": "Vue antérieure (preset audit) ; cadre sur la fosse iliaque droite, jonction iléo-cæcale au centre."
+ },
+ "espaces": [
+  {
+   "id": "fossette_ileocaecale",
+   "nom_fr": "Fossette iléo-cæcale (récessus iléo-cæcal)",
+   "name_en": "Ileocecal fossa (ileocecal recess)",
+   "bornes": [
+    "distal_part_of_ileum",
+    "ileocecal_junction",
+    "meso_appendix",
+    "vermiform_appendix"
+   ],
+   "statut": "Volume schématique (règle ESPACES) — récessus péritonéal sans maillage ; NON listé dans l'audit FIGURES-AUDIT pour ce sujet, ajouté sur instruction du brief Batch I, à valider par le coordinateur.",
+   "position_volume": [
+    -74,
+    912,
+    128
+   ],
+   "echelle_volume": [
+    26,
+    20,
+    14
+   ],
+   "note_fr": "Dépression péritonéale à l'angle iléo-cæcal, entre l'iléon terminal, la jonction iléo-cæcale et le méso-appendice. Carte d'angle : toucher → volume coloré."
+  }
+ ],
+ "lacunes": [
+  "CÆCUM NON INDIVIDUALISÉ : aucune entrée dédiée au manifeste — le corps du cæcum n'existe pas comme maillage propre ; il est porté par ileocecal_junction + ascending_colon (audit Fig 110/111). Aucune géométrie inventée.",
+  "Valvule iléo-cæcale (de Bauhin) et frein de la valvule : non modélisés — la configuration interne reste portée par le schéma caecum_configuration (audit Fig 111).",
+  "Les variations de situation (sous-hépatique, épigastrique, pré-lombaire, pelvienne, fosse iliaque gauche) sont une série de schémas par nature → schéma caecum_variations ; la scène 3D montre la position standard (fosse iliaque droite)."
+ ],
+ "groupes_optionnels": [
+  {
+   "id": "vascularisation",
+   "titre_fr": "Vascularisation (artère iléocolique et branches)",
+   "structures": [
+    "ileocolic_artery",
+    "appendicular_artery",
+    "right_colic_artery"
+   ],
+   "note": "Maillages présents au manifeste avec noms FR ; absents de la liste d'audit du sujet 38 — affichables en contexte, signalés hors_audit."
+  }
+ ]
+}

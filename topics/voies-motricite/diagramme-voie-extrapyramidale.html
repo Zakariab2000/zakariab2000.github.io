@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figure 6 — Voies de la motricité involontaire (voie extrapyramidale) · Schéma interactif</title>
+<style>
+:root{--sans:-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 800px at 60% 20%,#0b1526,#060b14);color:#e8eef7;font-family:var(--sans);padding:14px 12px 26px}
+header{max-width:680px;margin:0 auto 6px}
+.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#f0a13c;font-weight:700}
+h1{font-size:19px;line-height:1.3;margin:3px 0 2px}
+.sub{font-size:12.5px;color:#9db1cc}
+.hint{max-width:680px;margin:8px auto;font-size:12.5px;color:#9db1cc}
+#wrap{max-width:680px;margin:0 auto}
+#schemasvg{display:block;width:100%;height:auto}
+.pnode{cursor:pointer}
+.pnode rect{stroke-width:1.5;transition:opacity .2s}
+.pnode text{fill:#e8eef7;font-size:11px;text-anchor:middle;pointer-events:none;font-family:var(--sans)}
+.pnode.dim,.pedge.dim{opacity:.1}
+.pnode.lit rect{stroke:#fff;stroke-width:2.5}
+.pnode.lit circle{stroke:#fff;stroke-width:2.5}
+.pedge{fill:none;stroke:#5b7ba6;stroke-width:1.6}
+.pedge.dash{stroke-dasharray:5 4}
+.pedge.lit{stroke:#f0b429;stroke-width:3}
+#schemacap{margin:10px auto;padding:10px 12px;max-width:680px;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:10px;font-size:13.5px;line-height:1.5;min-height:58px}
+#schemalegend{display:flex;flex-wrap:wrap;gap:6px 12px;max-width:680px;margin:0 auto;font-size:11px;color:#9db1cc}
+#schemalegend .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.fiche{max-width:680px;margin:16px auto 0;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+.fiche h2{font-size:14px;margin-bottom:8px;color:#f0a13c}
+.fiche dl div{margin-bottom:8px}
+.fiche dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9db1cc;font-weight:700}
+.fiche dd{font-size:13.5px;line-height:1.55;margin-top:2px}
+.note{max-width:680px;margin:12px auto 0;font-size:11.5px;color:#7e93b5;line-height:1.5}
+</style></head><body>
+<header><div class="kicker">Atlas 3D · Sujets du cours · Schéma interactif</div>
+<h1>Figure 6 — Voies de la motricité involontaire (voie extrapyramidale)</h1>
+<div class="sub">[3D+D] : scène 3D de contexte + schéma interactif — schéma de la voie (le trajet n'existe pas comme maillage 3D continu : voir la scène 3D associée pour les structures qui existent)</div></header>
+<p class="hint">Touchez un nœud : tout son trajet (en amont et en aval) s'illumine et sa fiche s'affiche. Touchez le fond pour tout réafficher.</p>
+<div id="wrap"><svg id="schemasvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="schemacap"></div>
+<div id="schemalegend"></div>
+<section class="fiche"><h2>Fiche de la voie</h2><dl>
+<div><dt>Origine</dt><dd>Aires corticales extrapyramidales : frontales (6, 8, 46, 10), pariétales (3, 1, 2 et 5, 7), temporales (22) et occipitales (17, 19) ; noyaux gris centraux (néostriatum = noyau caudé + putamen ; paléostriatum = pallidum et noyaux sous-thalamiques) et noyaux gris du tronc cérébral.</dd></div>
+<div><dt>Relais</dt><dd>Boucle cortico-strio-thalamo-corticale : cortex → néostriatum → pallidum → noyau latéro-ventral antérieur du thalamus → cortex préfrontal. Le pallidum, voie de sortie des noyaux gris centraux, se projette par le faisceau lenticulaire (supérieur) et l'anse lenticulaire (inférieure). Seconde projection corticale : faisceau cortico-pontin → noyaux du pont → néocervelet par les pédoncules cérébelleux moyens.</dd></div>
+<div><dt>Décussation</dt><dd>Pas de décussation unique : voie polysynaptique, relativement lente, à relais sous-corticaux et du tronc cérébral multiples (locus niger, noyau rouge, substance réticulée, olive bulbaire, noyaux vestibulaires, tubercules quadrijumeaux).</dd></div>
+<div><dt>Terminaison</dt><dd>Motoneurones γ de la corne antérieure de la moelle, par les faisceaux réticulo-spinal, tecto-spinal, rubro-spinal, olivo-spinal et vestibulo-spinal : régulation permanente du tonus musculaire (repos, posture, marche).</dd></div>
+<div><dt>Clinique</dt><dd>Les troubles extrapyramidaux classiques cités par le cours (Q2) : maladie de Parkinson, syndrome athétosique et syndrome choréique.</dd></div>
+</dl></section>
+<p class="note">Source du schéma : texte du programme FMPR (partie I) — aucun relais inventé. Limites 3D vérifiées à l'audit : Noyau rouge, substance noire, noyau sous-thalamique : non individualisés dans le manifeste (seuls caudé/putamen/pallidum existent parmi les noyaux gris centraux) Les boucles cortico-striato-thalamiques sont par nature schématiques → schéma requis ; les tractus descendants existent dans la moelle seulement</p>
+<script>
+const D = {"titre_fr": "Voie extrapyramidale (motricité involontaire)", "titre_en": "Extrapyramidal pathway (involuntary motor system)", "w": 720, "h": 1080, "levels": {"cortex": {"c": "#c62828", "fr": "Terminaison corticale", "en": "Cortical termination"}, "gangl": {"c": "#00838f", "fr": "Ganglion / relais", "en": "Ganglion / relay"}, "faisc": {"c": "#1565c0", "fr": "Faisceau / trajet", "en": "Tract / course"}, "noyau": {"c": "#3949ab", "fr": "Noyau d'origine", "en": "Nucleus of origin"}, "term": {"c": "#2e7d32", "fr": "Terminaison", "en": "Termination"}, "note": {"c": "#757575", "fr": "Note du cours", "en": "Course note"}}, "nodes": [{"id": "aires", "x": 320, "y": 90, "w": 380, "label": "Aires corticales extrapyramidales", "sub": "frontales 6, 8, 46, 10 — pariétales 3,1,2 et 5,7 — temporale 22 — occipitales 17, 19", "label_en": "Extrapyramidal cortical areas", "sub_en": "frontal 6, 8, 46, 10 — parietal 3,1,2 and 5,7 — temporal 22 — occipital 17, 19", "lvl": "cortex", "desc": {"fr": "Origines corticales de la voie extrapyramidale : aires frontales (6, 8, 46, 10), pariétales (3, 1, 2 et 5, 7), temporale (22) et occipitales (17, 19). La voie est lente et polysynaptique ; elle programme l'acte moteur et régule tonus et posture.", "en": "Cortical origins of the extrapyramidal pathway: frontal areas (6, 8, 46, 10), parietal (3, 1, 2 and 5, 7), temporal (22) and occipital (17, 19). The pathway is slow and polysynaptic; it programmes the motor act and regulates tone and posture."}}, {"id": "neostriatum", "x": 330, "y": 245, "w": 270, "label": "Néo-striatum", "sub": "noyau caudé + putamen", "label_en": "Neostriatum", "sub_en": "caudate nucleus + putamen", "lvl": "gangl", "desc": {"fr": "Le néo-striatum, formé par le noyau caudé et le putamen (partie latérale du noyau lenticulaire), reçoit la première projection du cortex extrapyramidal et transmet le message vers le pallidum.", "en": "The neostriatum, formed by the caudate nucleus and putamen (lateral part of the lentiform nucleus), receives the first cortical projection and relays the message to the pallidum."}}, {"id": "pallidum", "x": 335, "y": 395, "w": 280, "label": "Pallidum (paléo-striatum)", "sub": "partie médiale du noyau lenticulaire — voie de sortie", "label_en": "Pallidum (paleostriatum)", "sub_en": "medial part of the lentiform nucleus — output station", "lvl": "gangl", "desc": {"fr": "Le pallidum (partie médiale du noyau lenticulaire, avec les noyaux sous-thalamiques : zone incertaine et corps de Luys) est la voie de sortie des noyaux gris centraux.", "en": "The pallidum (medial part of the lentiform nucleus, with the subthalamic nuclei: zona incerta and Luys' body) is the output station of the basal ganglia."}}, {"id": "thalamus_lva", "x": 110, "y": 395, "w": 150, "label": "Thalamus — noyau latéro-ventral antérieur", "sub": "relais de la boucle vers le cortex préfrontal", "label_en": "Thalamus — anteroventral lateral nucleus", "sub_en": "loop relay to the prefrontal cortex", "lvl": "gangl", "desc": {"fr": "Le noyau latéro-ventral antérieur du thalamus reçoit la projection pallidale et renvoie le message vers le cortex préfrontal : c'est le relais thalamique de la boucle cortico-strio-thalamo-corticale.", "en": "The anteroventral lateral nucleus of the thalamus receives the pallidal projection and sends the message back to the prefrontal cortex: it is the thalamic relay of the cortico-strio-thalamo-cortical loop."}}, {"id": "sorties_pallidum", "x": 340, "y": 545, "w": 320, "label": "Sorties du pallidum", "sub": "faisceau lenticulaire (sup.) + anse lenticulaire (inf.)", "label_en": "Pallidal outputs", "sub_en": "lenticular fasciculus (sup.) + ansa lenticularis (inf.)", "lvl": "faisc", "desc": {"fr": "Le pallidum se projette par deux faisceaux : le faisceau lenticulaire supérieur, vers le thalamus et les noyaux sous-thalamiques ; et l'anse lenticulaire inférieure, vers les noyaux mésencéphaliques, en particulier le locus niger et le noyau rouge.", "en": "The pallidum projects through two bundles: the superior lenticular fasciculus, to the thalamus and subthalamic nuclei; and the inferior ansa lenticularis, to the midbrain nuclei, in particular the substantia nigra and the red nucleus."}}, {"id": "pont_cervelet", "x": 580, "y": 245, "w": 210, "label": "Noyaux du pont → néo-cervelet", "sub": "faisceau cortico-pontin, pédoncules cérébelleux moyens", "label_en": "Pontine nuclei → neocerebellum", "sub_en": "corticopontine tract, middle cerebellar peduncles", "lvl": "note", "desc": {"fr": "Deuxième projection corticale : le faisceau cortico-pontin gagne les noyaux du pont, qui se projettent sur le néo-cervelet à travers les pédoncules cérébelleux moyens.", "en": "Second cortical projection: the corticopontine tract reaches the pontine nuclei, which project to the neocerebellum through the middle cerebellar peduncles."}}, {"id": "noyaux_tronc", "x": 340, "y": 705, "w": 360, "label": "Noyaux du tronc cérébral", "sub": "locus niger, noyau rouge, réticulée, olive bulbaire, vestibulaires, tubercules quadrijumeaux", "label_en": "Brainstem nuclei", "sub_en": "substantia nigra, red nucleus, reticular formation, inferior olive, vestibular nuclei, quadrigeminal tubercles", "lvl": "noyau", "desc": {"fr": "Noyaux gris du tronc : au mésencéphale, les tubercules quadrijumeaux, le locus niger, le noyau rouge et la substance réticulée ; au pont, les noyaux du pont et la réticulée ; au bulbe, l'olive bulbaire, les noyaux vestibulaires et la réticulée.", "en": "Brainstem grey nuclei: in the midbrain, the quadrigeminal tubercles, substantia nigra, red nucleus and reticular formation; in the pons, the pontine nuclei and reticular formation; in the medulla, the inferior olive, vestibular nuclei and reticular formation."}}, {"id": "faisceaux_desc", "x": 340, "y": 865, "w": 360, "label": "Faisceaux descendants du tronc", "sub": "rubro-, tecto-, réticulo-, vestibulo-, olivo-spinaux", "label_en": "Descending brainstem tracts", "sub_en": "rubro-, tecto-, reticulo-, vestibulo-, olivospinal", "lvl": "faisc", "desc": {"fr": "Chaque noyau du tronc se projette vers la moelle par son faisceau : réticulo-spinal (substance réticulée), tecto-spinal (tubercules quadrijumeaux), rubro-spinal (noyau rouge), olivo-spinal (olive bulbaire) et vestibulo-spinal (noyaux vestibulaires).", "en": "Each brainstem nucleus projects to the cord through its own tract: reticulospinal (reticular formation), tectospinal (quadrigeminal tubercles), rubrospinal (red nucleus), olivospinal (inferior olive) and vestibulospinal (vestibular nuclei)."}}, {"id": "motoneurones_gamma", "x": 340, "y": 1005, "w": 360, "label": "Motoneurones γ — corne antérieure", "sub": "régulation permanente du tonus musculaire", "label_en": "Gamma motor neurons — anterior horn", "sub_en": "continuous regulation of muscle tone", "lvl": "term", "desc": {"fr": "La projection des noyaux du tronc se fait vers les motoneurones γ de la corne antérieure de la moelle, qui régulent le tonus musculaire en permanence (repos, posture, marche). Troubles classiques : maladie de Parkinson, syndromes athétosique et choréique.", "en": "The brainstem nuclei project onto the gamma motor neurons of the anterior horn, which regulate muscle tone continuously (rest, posture, gait). Classic disorders: Parkinson's disease, athetotic and choreic syndromes."}}], "edges": [["aires", "neostriatum"], ["aires", "pont_cervelet", 1], ["neostriatum", "pallidum"], ["pallidum", "thalamus_lva", 1], ["thalamus_lva", "aires", 1], ["pallidum", "sorties_pallidum"], ["sorties_pallidum", "noyaux_tronc"], ["noyaux_tronc", "faisceaux_desc"], ["faisceaux_desc", "motoneurones_gamma"]]};
+const lang = 'fr';
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('schemasvg');
+function edgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return 'M ' + x1 + ' ' + a.y + ' C ' + (x1+dx) + ' ' + a.y + ', ' + (x2-dx) + ' ' + b.y + ', ' + x2 + ' ' + b.y;
+}
+const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+svg.setAttribute('viewBox', '0 0 ' + D.w + ' ' + D.h);
+D.edges.forEach(function(e){
+  const p = document.createElementNS(NS, 'path');
+  p.setAttribute('d', edgePath(byId[e[0]], byId[e[1]]));
+  p.setAttribute('class', 'pedge' + (e[2] ? ' dash' : ''));
+  p.dataset.from = e[0]; p.dataset.to = e[1];
+  svg.appendChild(p);
+});
+D.nodes.forEach(function(n){
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+  const col = D.levels[n.lvl].c;
+  if (n.r){
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+    c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+    g.appendChild(c);
+    const tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+    tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+    tx.textContent = n.label; g.appendChild(tx);
+  } else {
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+    r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+    r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+    g.appendChild(r);
+    const t1 = document.createElementNS(NS, 'text');
+    t1.setAttribute('x', n.x); t1.setAttribute('y', n.sub ? n.y - 2 : n.y + 4);
+    t1.textContent = n.label; g.appendChild(t1);
+    if (n.sub){
+      const t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+      t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+      t2.textContent = n.sub; g.appendChild(t2);
+    }
+    if (n.note){
+      const t3 = document.createElementNS(NS, 'text');
+      t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+      t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+      t3.textContent = n.note.fr; g.appendChild(t3);
+    }
+  }
+  g.addEventListener('click', function(ev){ ev.stopPropagation(); trace(n.id); });
+  svg.appendChild(g);
+});
+const leg = document.getElementById('schemalegend');
+Object.values(D.levels).forEach(function(l){
+  const s = document.createElement('span');
+  s.innerHTML = '<span class="sw" style="background:' + l.c + '"></span>' + l.fr;
+  leg.appendChild(s);
+});
+function chain(id){
+  const down = {}, up = {};
+  D.edges.forEach(function(e){ (down[e[0]] = down[e[0]] || []).push(e[1]); (up[e[1]] = up[e[1]] || []).push(e[0]); });
+  const set = new Set([id]);
+  let stack = [id];
+  while (stack.length){ const c = stack.pop(); (down[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  stack = [id];
+  while (stack.length){ const c = stack.pop(); (up[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  return set;
+}
+function trace(id){
+  const set = chain(id);
+  svg.querySelectorAll('.pnode').forEach(function(g){
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  svg.querySelectorAll('.pedge').forEach(function(p){
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const node = byId[id];
+  document.getElementById('schemacap').textContent = node.desc.fr;
+}
+function reset(){
+  svg.querySelectorAll('.pnode,.pedge').forEach(function(el){ el.classList.remove('lit', 'dim'); });
+  document.getElementById('schemacap').textContent = 'Touchez un nœud du schéma pour illuminer son trajet complet et lire sa fiche.';
+}
+svg.addEventListener('click', reset);
+reset();
+window.__h1test = { trace: trace, reset: reset,
+  lit: function(){ return [...svg.querySelectorAll('.pnode.lit')].map(g=>g.dataset.id); } };
+</script><a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body></html>

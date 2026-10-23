@@ -1,0 +1,495 @@
+{
+ "batch": "B",
+ "partie": "II",
+ "sujet": "nerf-crural",
+ "titre_fr": "Nerf crural (nerf fémoral)",
+ "titre_en": "Femoral (crural) nerve",
+ "figures": [
+  {
+   "numero": 33,
+   "titre_fr": "Nerf crural : origine, trajet et terminaison",
+   "titre_en": "Femoral (crural) nerve: origin, course and termination",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -65.5,
+     759.7,
+     2092.4
+    ],
+    "target": [
+     -65.5,
+     559.9,
+     93.9
+    ]
+   },
+   "systemes": [
+    "nerfs",
+    "muscles",
+    "arteres"
+   ],
+   "structures": [
+    {
+     "id": "femoral_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fémoral",
+     "name_en": "Right femoral nerve",
+     "name_la": "Nervus femoralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/femoral_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -87.2,
+       558.4,
+       72.5
+      ],
+      "max": [
+       -11.4,
+       1033.5,
+       141.0
+      ],
+      "center": [
+       -49.3,
+       796.0,
+       106.7
+      ],
+      "size": [
+       75.9,
+       475.1,
+       68.5
+      ]
+     }
+    },
+    {
+     "id": "anterior_cutaneous_branches_of_femoral_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Branches cutanées antérieures du nerf fémoral",
+     "name_en": "Right anterior cutaneous branches of femoral nerve",
+     "name_la": "Rami cutanei anteriores nervi femoralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/anterior_cutaneous_branches_of_femoral_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -62.6,
+       430.1,
+       122.3
+      ],
+      "max": [
+       -48.8,
+       793.1,
+       139.2
+      ],
+      "center": [
+       -55.7,
+       611.6,
+       130.7
+      ],
+      "size": [
+       13.8,
+       363.0,
+       17.0
+      ]
+     }
+    },
+    {
+     "id": "saphenous_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf saphène",
+     "name_en": "Right saphenous nerve",
+     "name_la": "Nervus saphenus",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/saphenous_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -72.1,
+       31.3,
+       1.0
+      ],
+      "max": [
+       -30.7,
+       793.2,
+       144.7
+      ],
+      "center": [
+       -51.4,
+       412.2,
+       72.9
+      ],
+      "size": [
+       41.4,
+       761.9,
+       143.7
+      ]
+     }
+    },
+    {
+     "id": "psoas_major_right",
+     "role": "contexte",
+     "nom_fr": "Grand psoas",
+     "name_en": "Right psoas major",
+     "name_la": "Psoas major",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/psoas_major_right.glb",
+     "bounds": {
+      "min": [
+       -106.4,
+       706.4,
+       61.5
+      ],
+      "max": [
+       -8.3,
+       1088.4,
+       134.8
+      ],
+      "center": [
+       -57.4,
+       897.4,
+       98.1
+      ],
+      "size": [
+       98.1,
+       382.0,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "femoral_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "name_la": "Arteria femoralis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.3,
+       489.4,
+       82.7
+      ],
+      "max": [
+       -44.8,
+       829.6,
+       148.0
+      ],
+      "center": [
+       -60.6,
+       659.5,
+       115.4
+      ],
+      "size": [
+       31.5,
+       340.3,
+       65.4
+      ]
+     }
+    },
+    {
+     "id": "rep_lumbar_plexus",
+     "role": "contexte",
+     "nom_fr": "Plexus lombal",
+     "name_en": "Lumbar plexus",
+     "name_la": "Plexus lumbalis",
+     "systeme": "reperes",
+     "couleur": "#dd8a2e",
+     "file": "models-reperes/lumbar_plexus.glb",
+     "bounds": {
+      "min": [
+       -41.0,
+       958.1,
+       113.6
+      ],
+      "max": [
+       -39.6,
+       959.9,
+       186.8
+      ],
+      "center": [
+       -40.3,
+       959.0,
+       150.2
+      ],
+      "size": [
+       1.5,
+       1.8,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "sartorius_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle sartorius",
+     "name_en": "Right sartorius muscle",
+     "name_la": "Musculus sartorius",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/sartorius_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -122.6,
+       277.3,
+       69.4
+      ],
+      "max": [
+       -21.2,
+       879.8,
+       154.0
+      ],
+      "center": [
+       -71.9,
+       578.5,
+       111.7
+      ],
+      "size": [
+       101.4,
+       602.5,
+       84.6
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [
+    "Branches musculaires du nerf fémoral : ABSENTES comme entrées (seules existent les branches cutanées antérieures et le nerf saphène)",
+    "Racines L2-L4 : représentées seulement par le repère du plexus lombal"
+   ]
+  }
+ ],
+ "structures_toutes": [
+  {
+   "id": "anterior_cutaneous_branches_of_femoral_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Branches cutanées antérieures du nerf fémoral",
+   "name_en": "Right anterior cutaneous branches of femoral nerve",
+   "name_la": "Rami cutanei anteriores nervi femoralis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/anterior_cutaneous_branches_of_femoral_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -62.6,
+     430.1,
+     122.3
+    ],
+    "max": [
+     -48.8,
+     793.1,
+     139.2
+    ],
+    "center": [
+     -55.7,
+     611.6,
+     130.7
+    ],
+    "size": [
+     13.8,
+     363.0,
+     17.0
+    ]
+   }
+  },
+  {
+   "id": "femoral_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf fémoral",
+   "name_en": "Right femoral nerve",
+   "name_la": "Nervus femoralis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/femoral_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -87.2,
+     558.4,
+     72.5
+    ],
+    "max": [
+     -11.4,
+     1033.5,
+     141.0
+    ],
+    "center": [
+     -49.3,
+     796.0,
+     106.7
+    ],
+    "size": [
+     75.9,
+     475.1,
+     68.5
+    ]
+   }
+  },
+  {
+   "id": "saphenous_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf saphène",
+   "name_en": "Right saphenous nerve",
+   "name_la": "Nervus saphenus",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/saphenous_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -72.1,
+     31.3,
+     1.0
+    ],
+    "max": [
+     -30.7,
+     793.2,
+     144.7
+    ],
+    "center": [
+     -51.4,
+     412.2,
+     72.9
+    ],
+    "size": [
+     41.4,
+     761.9,
+     143.7
+    ]
+   }
+  },
+  {
+   "id": "femoral_artery_right",
+   "role": "contexte",
+   "nom_fr": "Artère fémorale",
+   "name_en": "Right femoral artery",
+   "name_la": "Arteria femoralis",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -76.3,
+     489.4,
+     82.7
+    ],
+    "max": [
+     -44.8,
+     829.6,
+     148.0
+    ],
+    "center": [
+     -60.6,
+     659.5,
+     115.4
+    ],
+    "size": [
+     31.5,
+     340.3,
+     65.4
+    ]
+   }
+  },
+  {
+   "id": "psoas_major_right",
+   "role": "contexte",
+   "nom_fr": "Grand psoas",
+   "name_en": "Right psoas major",
+   "name_la": "Psoas major",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/psoas_major_right.glb",
+   "bounds": {
+    "min": [
+     -106.4,
+     706.4,
+     61.5
+    ],
+    "max": [
+     -8.3,
+     1088.4,
+     134.8
+    ],
+    "center": [
+     -57.4,
+     897.4,
+     98.1
+    ],
+    "size": [
+     98.1,
+     382.0,
+     73.3
+    ]
+   }
+  },
+  {
+   "id": "sartorius_muscle_right",
+   "role": "contexte",
+   "nom_fr": "Muscle sartorius",
+   "name_en": "Right sartorius muscle",
+   "name_la": "Musculus sartorius",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/sartorius_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -122.6,
+     277.3,
+     69.4
+    ],
+    "max": [
+     -21.2,
+     879.8,
+     154.0
+    ],
+    "center": [
+     -71.9,
+     578.5,
+     111.7
+    ],
+    "size": [
+     101.4,
+     602.5,
+     84.6
+    ]
+   }
+  },
+  {
+   "id": "rep_lumbar_plexus",
+   "role": "contexte",
+   "nom_fr": "Plexus lombal",
+   "name_en": "Lumbar plexus",
+   "name_la": "Plexus lumbalis",
+   "systeme": "reperes",
+   "couleur": "#dd8a2e",
+   "file": "models-reperes/lumbar_plexus.glb",
+   "bounds": {
+    "min": [
+     -41.0,
+     958.1,
+     113.6
+    ],
+    "max": [
+     -39.6,
+     959.9,
+     186.8
+    ],
+    "center": [
+     -40.3,
+     959.0,
+     150.2
+    ],
+    "size": [
+     1.5,
+     1.8,
+     73.3
+    ]
+   }
+  }
+ ],
+ "diagrams": {},
+ "source": "data/FIGURES-AUDIT.json + proto-schemas/manifest.json + schemas-scenes/batch-B.json"
+}

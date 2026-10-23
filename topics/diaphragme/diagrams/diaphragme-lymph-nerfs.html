@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lymphatiques (A) et nerfs (B) du diaphragme — schéma interactif — Fig 58 · Batch F (staging)</title>
+<style>
+body{margin:0;background:#14161a;color:#e8e4da;font-family:system-ui,sans-serif}
+header{padding:14px 16px 6px}header h1{font-size:19px;margin:0 0 2px}
+header p{margin:0;font-size:12.5px;opacity:.65}
+.legend{display:flex;flex-wrap:wrap;gap:6px;padding:8px 16px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;background:#1d2026;
+ border:1px solid #34383f;border-radius:20px;padding:4px 10px}
+.chip i{width:10px;height:10px;border-radius:50%;display:inline-block}
+main{display:flex;gap:12px;padding:4px 12px 16px;align-items:flex-start}
+#svgwrap{flex:1 1 auto;min-width:0}svg{width:100%;height:auto;display:block}
+#fiche{flex:0 0 300px;background:#1d2026;border:1px solid #34383f;border-radius:12px;
+ padding:14px;position:sticky;top:10px}
+#fiche h2{font-size:16px;margin:0 0 2px}#fiche .en{font-size:12px;opacity:.6;font-style:italic;margin:0 0 8px}
+#fiche .desc{font-size:13.5px;line-height:1.5;margin:0}
+#fiche .notebox{margin-top:10px;font-size:12px;background:#2a2118;border:1px solid #8a6d2f;
+ border-radius:8px;padding:8px 10px;color:#f2cf8a}
+#fiche .lvl{display:inline-block;font-size:11px;border-radius:12px;padding:2px 9px;margin-bottom:8px;color:#14161a;font-weight:600}
+#reset{margin-top:12px;background:#2a2e36;color:#e8e4da;border:1px solid #4a4f59;border-radius:6px;padding:6px 12px;cursor:pointer}
+@media(max-width:760px){main{flex-direction:column}#fiche{flex:none;width:auto;align-self:stretch;position:static}}
+.node{cursor:pointer}.node rect{transition:opacity .15s}
+.n-label{fill:#e8e4da;font-size:13.5px;font-weight:600;text-anchor:middle;pointer-events:none}
+.n-sub{fill:#b9bec8;font-size:11px;font-style:italic;text-anchor:middle;pointer-events:none}
+.pt-label{fill:#e8e4da;font-size:11.5px;font-weight:600;text-anchor:middle;pointer-events:none}
+.badge{fill:#f2cf8a;stroke:#14161a;stroke-width:1}
+.edge{stroke:#7d8590;stroke-width:1.6}
+.edge.dashed{stroke-dasharray:6 5}
+svg.dim .node{opacity:.32}svg.dim .edge{opacity:.18}
+svg.dim .node.sel,svg.dim .node.nbr{opacity:1}
+svg.dim .edge.hl{opacity:1;stroke:#ffd166;stroke-width:2.8}
+.node.sel rect{stroke:#fff;stroke-width:2.8}
+.node.nbr rect{stroke-width:2.4}
+</style>
+</head>
+<body>
+<header>
+<h1>Fig 58 — Lymphatiques (A) et nerfs (B) du diaphragme — schéma interactif</h1>
+<p>Lymphatics (A) and nerves (B) of the diaphragm — interactive diagram · Schéma interactif : touchez un élément pour sa fiche.
+Les éléments en pointillés n'ont pas de maillage 3D (schéma seul).</p>
+</header>
+<div class="legend"><span class="chip"><i style="background:#4fae4a"></i>A — Lymphatiques</span><span class="chip"><i style="background:#f0a13c"></i>B — Nerf phrénique (moteur)</span><span class="chip"><i style="background:#9db1cc"></i>B — Intercostaux inférieurs</span><span class="chip"><i style="background:#b388ff"></i>B — Sympathique</span></div>
+<main>
+<div id="svgwrap">
+<svg viewBox="0 0 720 920" role="img" aria-label="Lymphatiques (A) et nerfs (B) du diaphragme — schéma interactif">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+<path d="M0,0 L7,3 L0,6 Z" fill="#9aa3ad"/></marker></defs>
+<line x1="360" y1="90" x2="360" y2="230" class="edge" data-a="diaph" data-b="juxtaphr" marker-end="url(#arr)"/><line x1="360" y1="90" x2="140" y2="380" class="edge" data-a="diaph" data-b="mediast_post" marker-end="url(#arr)"/><line x1="360" y1="90" x2="580" y2="380" class="edge" data-a="diaph" data-b="sousdiaph" marker-end="url(#arr)"/><line x1="130" y1="540" x2="360" y2="540" class="edge" data-a="plex_cerv" data-b="phren" marker-end="url(#arr)"/><line x1="360" y1="540" x2="140" y2="690" class="edge" data-a="phren" data-b="br_ant" marker-end="url(#arr)"/><line x1="360" y1="540" x2="360" y2="690" class="edge" data-a="phren" data-b="br_lat" marker-end="url(#arr)"/><line x1="360" y1="540" x2="580" y2="690" class="edge" data-a="phren" data-b="br_post" marker-end="url(#arr)"/><line x1="360" y1="690" x2="180" y2="830" class="edge dashed" data-a="br_lat" data-b="intercost" marker-end="url(#arr)"/>
+<g class="node" data-id="diaph" tabindex="0" role="button"><rect x="270.0" y="65.5" width="180" height="49" rx="10" fill="#203424" stroke="#4fae4a" stroke-width="1.6"/><text x="360" y="85.5" class="n-label">Diaphragme</text><text x="360" y="102.5" class="n-sub">territoire drainé et innervé</text></g><g class="node" data-id="juxtaphr" tabindex="0" role="button"><rect x="245.0" y="205.5" width="230" height="49" rx="10" fill="#203424" stroke="#4fae4a" stroke-width="1.6"/><text x="360" y="225.5" class="n-label">Ganglions diaphragmatiques</text><text x="360" y="242.5" class="n-sub">juxta-phréniques</text></g><g class="node" data-id="mediast_post" tabindex="0" role="button"><rect x="40.0" y="355.5" width="200" height="49" rx="10" fill="#203424" stroke="#4fae4a" stroke-width="1.6"/><text x="140" y="375.5" class="n-label">Ganglions médiastinaux</text><text x="140" y="392.5" class="n-sub">postérieurs</text></g><g class="node" data-id="sousdiaph" tabindex="0" role="button"><rect x="475.0" y="355.5" width="210" height="49" rx="10" fill="#203424" stroke="#4fae4a" stroke-width="1.6"/><text x="580" y="375.5" class="n-label">Ganglions</text><text x="580" y="392.5" class="n-sub">sous-diaphragmatiques</text></g><g class="node" data-id="plex_cerv" tabindex="0" role="button"><rect x="35.0" y="515.5" width="190" height="49" rx="10" fill="#403221" stroke="#f0a13c" stroke-width="1.6"/><text x="130" y="535.5" class="n-label">Plexus cervical</text><text x="130" y="552.5" class="n-sub">profond</text></g><g class="node" data-id="phren" tabindex="0" role="button" data-note="1"><rect x="275.0" y="515.5" width="170" height="49" rx="10" fill="#403221" stroke="#f0a13c" stroke-width="1.6" stroke-dasharray="5 4"/><text x="360" y="535.5" class="n-label">Nerf phrénique</text><text x="360" y="552.5" class="n-sub">droit et gauche</text><circle cx="436.0" cy="524.5" r="4.5" class="badge"/></g><g class="node" data-id="br_ant" tabindex="0" role="button"><rect x="50.0" y="665.5" width="180" height="49" rx="10" fill="#403221" stroke="#f0a13c" stroke-width="1.6"/><text x="140" y="685.5" class="n-label">Branche antérieure</text><text x="140" y="702.5" class="n-sub">du phrénique</text></g><g class="node" data-id="br_lat" tabindex="0" role="button"><rect x="275.0" y="665.5" width="170" height="49" rx="10" fill="#403221" stroke="#f0a13c" stroke-width="1.6"/><text x="360" y="685.5" class="n-label">Branche latérale</text><text x="360" y="702.5" class="n-sub">du phrénique</text></g><g class="node" data-id="br_post" tabindex="0" role="button"><rect x="490.0" y="665.5" width="180" height="49" rx="10" fill="#403221" stroke="#f0a13c" stroke-width="1.6"/><text x="580" y="685.5" class="n-label">Branche postérieure</text><text x="580" y="702.5" class="n-sub">du phrénique</text></g><g class="node" data-id="intercost" tabindex="0" role="button"><rect x="75.0" y="805.5" width="210" height="49" rx="10" fill="#2f353e" stroke="#9db1cc" stroke-width="1.6"/><text x="180" y="825.5" class="n-label">Nerfs intercostaux</text><text x="180" y="842.5" class="n-sub">inférieurs</text></g><g class="node" data-id="plex_diaph_inf" tabindex="0" role="button"><rect x="400.0" y="805.5" width="240" height="49" rx="10" fill="#342d48" stroke="#b388ff" stroke-width="1.6"/><text x="520" y="825.5" class="n-label">Plexus diaphragmatique</text><text x="520" y="842.5" class="n-sub">inférieur</text></g>
+</svg>
+</div>
+<aside id="fiche"><div id="fiche-body"><p class="desc">Touchez un élément du schéma pour afficher sa fiche.</p></div>
+<button id="reset">↺ Réinitialiser</button></aside>
+</main>
+<script>window.__NODES__ = {"diaph": {"id": "diaph", "x": 360, "y": 90, "w": 180, "label": "Diaphragme", "sub": "territoire drainé et innervé", "label_en": "Diaphragm", "sub_en": "drained and innervated territory", "lvl": "lymph", "desc": {"fr": "Territoire commun des parties A et B. Dans le manifeste, le diaphragme est un seul maillage : centre tendineux, piliers et folioles ne sont pas individualisés (audit figs 56/58).", "en": "Common territory of parts A and B. In the manifest, the diaphragm is a single mesh: central tendon, crura and leaflets are not individually modelled (audit figs 56/58)."}, "__c": "#4fae4a", "__lvlfr": "A — Lymphatiques"}, "juxtaphr": {"id": "juxtaphr", "x": 360, "y": 230, "w": 230, "label": "Ganglions diaphragmatiques", "sub": "juxta-phréniques", "label_en": "Diaphragmatic nodes", "sub_en": "juxtaphrenic", "lvl": "lymph", "desc": {"fr": "Premier relais du drainage diaphragmatique : les ganglions diaphragmatiques juxta-phréniques (cours, Q21). Correspond aux nœuds diaphragmatiques supérieurs et inférieurs présents dans la scène 3D (audit fig. 58).", "en": "First relay of diaphragmatic drainage: the juxtaphrenic diaphragmatic nodes (course, Q21). Corresponds to the superior and inferior diaphragmatic nodes present in the 3D scene (audit fig. 58)."}, "__c": "#4fae4a", "__lvlfr": "A — Lymphatiques"}, "mediast_post": {"id": "mediast_post", "x": 140, "y": 380, "w": 200, "label": "Ganglions médiastinaux", "sub": "postérieurs", "label_en": "Mediastinal nodes", "sub_en": "posterior", "lvl": "lymph", "desc": {"fr": "Ganglions médiastinaux postérieurs, situés autour de l'œsophage et de l'aorte : deuxième voie de drainage du diaphragme (cours, Q21).", "en": "Posterior mediastinal nodes, around the oesophagus and the aorta: second drainage route of the diaphragm (course, Q21)."}, "__c": "#4fae4a", "__lvlfr": "A — Lymphatiques"}, "sousdiaph": {"id": "sousdiaph", "x": 580, "y": 380, "w": 210, "label": "Ganglions", "sub": "sous-diaphragmatiques", "label_en": "Nodes", "sub_en": "subdiaphragmatic", "lvl": "lymph", "desc": {"fr": "Ganglions sous-diaphragmatiques des chaînes diaphragmatiques inférieures et juxta-aortique : troisième voie de drainage du diaphragme (cours, Q21).", "en": "Subdiaphragmatic nodes of the inferior diaphragmatic and juxta-aortic chains: third drainage route of the diaphragm (course, Q21)."}, "__c": "#4fae4a", "__lvlfr": "A — Lymphatiques"}, "plex_cerv": {"id": "plex_cerv", "x": 130, "y": 540, "w": 190, "label": "Plexus cervical", "sub": "profond", "label_en": "Cervical plexus", "sub_en": "deep", "lvl": "moteur", "desc": {"fr": "Origine des 2 nerfs phréniques, droit et gauche : ils proviennent du plexus cervical profond et traversent la base du cou vers le thorax (cours, Q21).", "en": "Origin of the 2 phrenic nerves, right and left: they arise from the deep cervical plexus and cross the root of the neck into the thorax (course, Q21)."}, "__c": "#f0a13c", "__lvlfr": "B — Nerf phrénique (moteur)"}, "phren": {"id": "phren", "x": 360, "y": 540, "w": 170, "label": "Nerf phrénique", "sub": "droit et gauche", "label_en": "Phrenic nerve", "sub_en": "right and left", "lvl": "moteur", "note": {"fr": "Pas de maillage 3D — schéma seul (audit fig. 58)", "en": "No 3D mesh — diagram only (audit fig. 58)"}, "desc": {"fr": "Innervation motrice du diaphragme : il aborde le muscle par sa face supérieure et se divise en 3 branches. Il contient également des fibres sympathiques (cours, Q21). Absent du manifeste : schéma seul (audit fig. 58).", "en": "Motor supply of the diaphragm: it reaches the muscle through its superior surface and divides into 3 branches. It also carries sympathetic fibres (course, Q21). Absent from the manifest: diagram only (audit fig. 58)."}, "__c": "#f0a13c", "__lvlfr": "B — Nerf phrénique (moteur)"}, "br_ant": {"id": "br_ant", "x": 140, "y": 690, "w": 180, "label": "Branche antérieure", "sub": "du phrénique", "label_en": "Anterior branch", "sub_en": "of phrenic nerve", "lvl": "moteur", "desc": {"fr": "Branche antérieure du nerf phrénique : destinée aux portions costale et sternale du diaphragme (cours, Q21).", "en": "Anterior branch of the phrenic nerve: supplies the costal and sternal parts of the diaphragm (course, Q21)."}, "__c": "#f0a13c", "__lvlfr": "B — Nerf phrénique (moteur)"}, "br_lat": {"id": "br_lat", "x": 360, "y": 690, "w": 170, "label": "Branche latérale", "sub": "du phrénique", "label_en": "Lateral branch", "sub_en": "of phrenic nerve", "lvl": "moteur", "desc": {"fr": "Branche latérale du nerf phrénique : destinée à la portion costale du diaphragme (cours, Q21) — territoire périphérique que complètent les nerfs intercostaux inférieurs (arête en pointillés).", "en": "Lateral branch of the phrenic nerve: supplies the costal part of the diaphragm (course, Q21) — the peripheral territory supplemented by the lower intercostal nerves (dashed edge)."}, "__c": "#f0a13c", "__lvlfr": "B — Nerf phrénique (moteur)"}, "br_post": {"id": "br_post", "x": 580, "y": 690, "w": 180, "label": "Branche postérieure", "sub": "du phrénique", "label_en": "Posterior branch", "sub_en": "of phrenic nerve", "lvl": "moteur", "desc": {"fr": "Branche postérieure du nerf phrénique : destinée aux piliers du diaphragme (cours, Q21).", "en": "Posterior branch of the phrenic nerve: supplies the crura of the diaphragm (course, Q21)."}, "__c": "#f0a13c", "__lvlfr": "B — Nerf phrénique (moteur)"}, "intercost": {"id": "intercost", "x": 180, "y": 830, "w": 210, "label": "Nerfs intercostaux", "sub": "inférieurs", "label_en": "Intercostal nerves", "sub_en": "lower", "lvl": "sensitif", "desc": {"fr": "Innervation sensitive de la périphérie costale du diaphragme, en complément de la branche latérale du phrénique. Non cités dans le texte du cours Q21, qui ne retient que le phrénique et le sympathique — inclusion demandée par le cahier des charges, voir notes.", "en": "Sensory supply of the costal periphery of the diaphragm, supplementing the lateral branch of the phrenic nerve. Not named in the course text Q21, which retains only the phrenic nerve and the sympathetic — included as required by the task brief, see notes."}, "__c": "#9db1cc", "__lvlfr": "B — Intercostaux inférieurs"}, "plex_diaph_inf": {"id": "plex_diaph_inf", "x": 520, "y": 830, "w": 240, "label": "Plexus diaphragmatique", "sub": "inférieur", "label_en": "Diaphragmatic plexus", "sub_en": "inferior", "lvl": "sympathique", "desc": {"fr": "Composante sympathique du diaphragme : le plexus diaphragmatique inférieur naît du ganglion semi-lunaire et est satellite de l'artère diaphragmatique inférieure (cours, Q21).", "en": "Sympathetic component of the diaphragm: the inferior diaphragmatic plexus arises from the semilunar (coeliac) ganglion and accompanies the inferior diaphragmatic artery (course, Q21)."}, "__c": "#b388ff", "__lvlfr": "B — Sympathique"}};</script>
+<script>
+const NODES = window.__NODES__;
+const svg = document.querySelector('svg');
+const fiche = document.getElementById('fiche-body');
+const byId = {}; document.querySelectorAll('.node').forEach(g => byId[g.dataset.id] = g);
+const adj = {};
+document.querySelectorAll('.edge').forEach(e => {
+  (adj[e.dataset.a] = adj[e.dataset.a] || []).push(e);
+  (adj[e.dataset.b] = adj[e.dataset.b] || []).push(e);
+});
+function clearSel(){
+  svg.classList.remove('dim');
+  document.querySelectorAll('.sel,.nbr,.hl').forEach(el => el.classList.remove('sel','nbr','hl'));
+  fiche.innerHTML = '<p class="desc">Touchez un élément du schéma pour afficher sa fiche.</p>';
+  window.__selected = null;
+}
+function select(id){
+  clearSel();
+  const n = NODES[id]; if(!n) return;
+  svg.classList.add('dim');
+  byId[id].classList.add('sel');
+  (adj[id] || []).forEach(e => {
+    e.classList.add('hl');
+    const other = e.dataset.a === id ? e.dataset.b : e.dataset.a;
+    if (byId[other]) byId[other].classList.add('nbr');
+  });
+  let h = '<span class="lvl" style="background:' + n.__c + '">' + n.__lvlfr + '</span>'
+        + '<h2>' + n.label + (n.sub ? ' <small>(' + n.sub + ')</small>' : '') + '</h2>'
+        + '<p class="en">' + (n.label_en || '') + (n.sub_en ? ' — ' + n.sub_en : '') + '</p>'
+        + '<p class="desc">' + ((n.desc && n.desc.fr) || '') + '</p>';
+  if (n.note) h += '<div class="notebox">◐ ' + (n.note.fr || n.note) + '</div>';
+  fiche.innerHTML = h;
+  window.__selected = id;
+}
+document.querySelectorAll('.node').forEach(g => {
+  g.addEventListener('click', ev => { ev.stopPropagation(); select(g.dataset.id); });
+  g.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(g.dataset.id); } });
+});
+svg.addEventListener('click', clearSel);
+document.getElementById('reset').addEventListener('click', clearSel);
+window.__select = select; window.__clearSel = clearSel;
+</script>
+<a href="../../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

@@ -1,0 +1,2641 @@
+[
+ {
+  "id": "abdominal_aorta",
+  "file": "models/arteres/abdominal_aorta.glb",
+  "name_en": "Abdominal aorta",
+  "name_la": "Aorta abdominalis",
+  "nom_fr": "Aorte abdominale",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": null,
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Abdominal aorta"
+  ],
+  "n_fragments": 1,
+  "faces": 826,
+  "faces_source": 826,
+  "size_bytes": 21380,
+  "bounds": {
+   "min": [
+    -4.0,
+    960.9,
+    82.0
+   ],
+   "max": [
+    18.5,
+    1143.8,
+    138.0
+   ],
+   "center": [
+    7.2,
+    1052.4,
+    110.0
+   ],
+   "size": [
+    22.5,
+    182.9,
+    56.0
+   ]
+  }
+ },
+ {
+  "id": "anterior_branch_of_renal_artery_left",
+  "file": "models/arteres/anterior_branch_of_renal_artery_left.glb",
+  "name_en": "Left anterior branch of renal artery",
+  "name_la": "Ramus anterior arteriae renalis",
+  "nom_fr": "Branche antérieure de l'artère rénale",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "left",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Anterior branch of renal artery.l"
+  ],
+  "n_fragments": 1,
+  "faces": 353,
+  "faces_source": 353,
+  "size_bytes": 9992,
+  "bounds": {
+   "min": [
+    27.6,
+    1044.7,
+    84.1
+   ],
+   "max": [
+    60.0,
+    1060.7,
+    108.6
+   ],
+   "center": [
+    43.8,
+    1052.7,
+    96.3
+   ],
+   "size": [
+    32.4,
+    16.0,
+    24.6
+   ]
+  }
+ },
+ {
+  "id": "anterior_branch_of_renal_artery_right",
+  "file": "models/arteres/anterior_branch_of_renal_artery_right.glb",
+  "name_en": "Right anterior branch of renal artery",
+  "name_la": "Ramus anterior arteriae renalis",
+  "nom_fr": "Branche antérieure de l'artère rénale",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Anterior branch of renal artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 472,
+  "faces_source": 472,
+  "size_bytes": 12884,
+  "bounds": {
+   "min": [
+    -52.8,
+    1034.7,
+    94.5
+   ],
+   "max": [
+    -29.3,
+    1044.1,
+    107.0
+   ],
+   "center": [
+    -41.1,
+    1039.4,
+    100.8
+   ],
+   "size": [
+    23.5,
+    9.4,
+    12.4
+   ]
+  }
+ },
+ {
+  "id": "anterior_medial_segment_of_liver_v",
+  "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
+  "name_en": "Anterior medial segment of liver (V)",
+  "name_la": "Segmentum anterius mediale dextrum hepatis (V)",
+  "nom_fr": "Segment antéromédial droit du foie (V)",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#9a5a44",
+  "source": "zanatomy",
+  "fjs": [
+   "Anterior medial segment of liver (V)"
+  ],
+  "n_fragments": 1,
+  "faces": 3538,
+  "faces_source": 3538,
+  "size_bytes": 86288,
+  "bounds": {
+   "min": [
+    -102.1,
+    1044.3,
+    110.0
+   ],
+   "max": [
+    -27.5,
+    1118.0,
+    188.5
+   ],
+   "center": [
+    -64.8,
+    1081.1,
+    149.3
+   ],
+   "size": [
+    74.6,
+    73.7,
+    78.4
+   ]
+  },
+  "parent": "liver",
+  "parent_en": "Liver",
+  "parent_fr": "Foie",
+  "parent_la": "Hepar"
+ },
+ {
+  "id": "ascending_colon",
+  "file": "models/organes/ascending_colon.glb",
+  "name_en": "Ascending colon",
+  "name_la": "Colon ascendens",
+  "nom_fr": "Côlon ascendant",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#d9a583",
+  "source": "zanatomy",
+  "fjs": [
+   "Ascending colon"
+  ],
+  "n_fragments": 1,
+  "faces": 10000,
+  "faces_source": 17512,
+  "size_bytes": 241324,
+  "bounds": {
+   "min": [
+    -112.1,
+    853.8,
+    87.7
+   ],
+   "max": [
+    -61.5,
+    1047.2,
+    140.4
+   ],
+   "center": [
+    -86.8,
+    950.5,
+    114.0
+   ],
+   "size": [
+    50.6,
+    193.4,
+    52.7
+   ]
+  }
+ },
+ {
+  "id": "descending_colon",
+  "file": "models/organes/descending_colon.glb",
+  "name_en": "Descending colon",
+  "name_la": "Colon descendens",
+  "nom_fr": "Côlon descendant",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#d9a583",
+  "source": "zanatomy",
+  "fjs": [
+   "Descending colon"
+  ],
+  "n_fragments": 1,
+  "faces": 9998,
+  "faces_source": 24744,
+  "size_bytes": 241232,
+  "bounds": {
+   "min": [
+    -18.2,
+    802.6,
+    45.5
+   ],
+   "max": [
+    112.0,
+    1067.3,
+    133.5
+   ],
+   "center": [
+    46.9,
+    934.9,
+    89.5
+   ],
+   "size": [
+    130.2,
+    264.7,
+    88.0
+   ]
+  }
+ },
+ {
+  "id": "diaphragm",
+  "file": "models/muscles/diaphragm.glb",
+  "name_en": "Diaphragm",
+  "name_la": "Diaphragma",
+  "nom_fr": "Diaphragme",
+  "confiance_fr": "sûr",
+  "system": "muscles",
+  "detail": "Thoracic part of muscular system",
+  "side": null,
+  "couleur": "#b03a2e",
+  "source": "zanatomy",
+  "fjs": [
+   "Diaphragm"
+  ],
+  "n_fragments": 1,
+  "faces": 10000,
+  "faces_source": 38868,
+  "size_bytes": 241236,
+  "bounds": {
+   "min": [
+    -123.9,
+    974.6,
+    37.1
+   ],
+   "max": [
+    122.4,
+    1195.7,
+    194.8
+   ],
+   "center": [
+    -0.7,
+    1085.1,
+    115.9
+   ],
+   "size": [
+    246.3,
+    221.1,
+    157.7
+   ]
+  }
+ },
+ {
+  "id": "ductus_deferens_left",
+  "file": "models/organes/ductus_deferens_left.glb",
+  "name_en": "Left ductus deferens",
+  "name_la": "Ductus deferens",
+  "nom_fr": "Canal déférent",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "left",
+  "couleur": "#c97b84",
+  "source": "zanatomy",
+  "fjs": [
+   "Ductus deferens.l"
+  ],
+  "n_fragments": 1,
+  "faces": 4896,
+  "faces_source": 4896,
+  "size_bytes": 119072,
+  "bounds": {
+   "min": [
+    16.8,
+    663.6,
+    68.3
+   ],
+   "max": [
+    54.9,
+    823.6,
+    153.7
+   ],
+   "center": [
+    35.8,
+    743.6,
+    111.0
+   ],
+   "size": [
+    38.1,
+    160.0,
+    85.5
+   ]
+  }
+ },
+ {
+  "id": "ductus_deferens_right",
+  "file": "models/organes/ductus_deferens_right.glb",
+  "name_en": "Right ductus deferens",
+  "name_la": "Ductus deferens",
+  "nom_fr": "Canal déférent",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "right",
+  "couleur": "#c97b84",
+  "source": "zanatomy",
+  "fjs": [
+   "Ductus deferens.r"
+  ],
+  "n_fragments": 1,
+  "faces": 4896,
+  "faces_source": 4896,
+  "size_bytes": 119072,
+  "bounds": {
+   "min": [
+    -55.5,
+    663.6,
+    68.3
+   ],
+   "max": [
+    -17.4,
+    823.6,
+    153.7
+   ],
+   "center": [
+    -36.4,
+    743.6,
+    111.0
+   ],
+   "size": [
+    38.1,
+    160.0,
+    85.5
+   ]
+  }
+ },
+ {
+  "id": "duodenum",
+  "file": "models/organes/duodenum.glb",
+  "name_en": "Duodenum",
+  "name_la": "Duodenum",
+  "nom_fr": "Duodénum",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#d9a583",
+  "source": "zanatomy",
+  "fjs": [
+   "Duodenum"
+  ],
+  "n_fragments": 1,
+  "faces": 1750,
+  "faces_source": 1750,
+  "size_bytes": 43564,
+  "bounds": {
+   "min": [
+    -64.8,
+    977.2,
+    105.4
+   ],
+   "max": [
+    31.5,
+    1076.1,
+    153.9
+   ],
+   "center": [
+    -16.7,
+    1026.7,
+    129.6
+   ],
+   "size": [
+    96.2,
+    98.9,
+    48.5
+   ]
+  }
+ },
+ {
+  "id": "ejaculatory_duct_left",
+  "file": "models/organes/ejaculatory_duct_left.glb",
+  "name_en": "Left ejaculatory duct",
+  "name_la": "Ductus ejaculatorius",
+  "nom_fr": "Conduit éjaculateur",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "left",
+  "couleur": "#c97b84",
+  "source": "zanatomy",
+  "fjs": [
+   "Ejaculatory duct.l"
+  ],
+  "n_fragments": 1,
+  "faces": 864,
+  "faces_source": 864,
+  "size_bytes": 22296,
+  "bounds": {
+   "min": [
+    -1.0,
+    754.9,
+    66.0
+   ],
+   "max": [
+    7.9,
+    769.8,
+    83.6
+   ],
+   "center": [
+    3.5,
+    762.3,
+    74.8
+   ],
+   "size": [
+    8.9,
+    15.0,
+    17.7
+   ]
+  }
+ },
+ {
+  "id": "ejaculatory_duct_right",
+  "file": "models/organes/ejaculatory_duct_right.glb",
+  "name_en": "Right ejaculatory duct",
+  "name_la": "Ductus ejaculatorius",
+  "nom_fr": "Conduit éjaculateur",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "right",
+  "couleur": "#c97b84",
+  "source": "zanatomy",
+  "fjs": [
+   "Ejaculatory duct.r"
+  ],
+  "n_fragments": 1,
+  "faces": 864,
+  "faces_source": 864,
+  "size_bytes": 22296,
+  "bounds": {
+   "min": [
+    -8.5,
+    754.9,
+    66.0
+   ],
+   "max": [
+    0.4,
+    769.8,
+    83.6
+   ],
+   "center": [
+    -4.1,
+    762.3,
+    74.8
+   ],
+   "size": [
+    8.9,
+    15.0,
+    17.7
+   ]
+  }
+ },
+ {
+  "id": "epididymis_left",
+  "file": "models/organes/epididymis_left.glb",
+  "name_en": "Left epididymis",
+  "name_la": "Epididymis",
+  "nom_fr": "Epididyme",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "left",
+  "couleur": "#c97b84",
+  "source": "zanatomy",
+  "fjs": [
+   "Epididymis.l"
+  ],
+  "n_fragments": 1,
+  "faces": 432,
+  "faces_source": 432,
+  "size_bytes": 11688,
+  "bounds": {
+   "min": [
+    16.3,
+    668.2,
+    141.5
+   ],
+   "max": [
+    25.1,
+    693.1,
+    159.4
+   ],
+   "center": [
+    20.7,
+    680.6,
+    150.4
+   ],
+   "size": [
+    8.8,
+    24.9,
+    18.0
+   ]
+  },
+  "parent": "testis_l",
+  "parent_fr": "Testicule",
+  "parent_en": "Testis"
+ },
+ {
+  "id": "epididymis_right",
+  "file": "models/organes/epididymis_right.glb",
+  "name_en": "Right epididymis",
+  "name_la": "Epididymis",
+  "nom_fr": "Epididyme",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "right",
+  "couleur": "#c97b84",
+  "source": "zanatomy",
+  "fjs": [
+   "Epididymis.r"
+  ],
+  "n_fragments": 1,
+  "faces": 432,
+  "faces_source": 432,
+  "size_bytes": 11688,
+  "bounds": {
+   "min": [
+    -25.7,
+    668.2,
+    141.5
+   ],
+   "max": [
+    -16.9,
+    693.1,
+    159.4
+   ],
+   "center": [
+    -21.3,
+    680.6,
+    150.4
+   ],
+   "size": [
+    8.8,
+    24.9,
+    18.0
+   ]
+  },
+  "parent": "testis_r",
+  "parent_fr": "Testicule",
+  "parent_en": "Testis"
+ },
+ {
+  "id": "external_iliac_artery_right",
+  "file": "models/arteres/external_iliac_artery_right.glb",
+  "name_en": "Right external iliac artery",
+  "name_la": "Arteria iliaca externa",
+  "nom_fr": "Artère iliaque externe",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "External iliac artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 354,
+  "faces_source": 354,
+  "size_bytes": 10056,
+  "bounds": {
+   "min": [
+    -58.1,
+    823.0,
+    95.6
+   ],
+   "max": [
+    -23.8,
+    919.0,
+    130.8
+   ],
+   "center": [
+    -41.0,
+    871.0,
+    113.2
+   ],
+   "size": [
+    34.4,
+    96.0,
+    35.1
+   ]
+  }
+ },
+ {
+  "id": "external_iliac_vein_right",
+  "file": "models/veines/external_iliac_vein_right.glb",
+  "name_en": "Right external iliac vein",
+  "name_la": "Vena iliaca externa",
+  "nom_fr": "Veine iliaque externe",
+  "confiance_fr": "sûr",
+  "system": "veines",
+  "detail": "Venous system",
+  "side": "right",
+  "couleur": "#5b7fb4",
+  "source": "zanatomy",
+  "fjs": [
+   "External iliac vein.r"
+  ],
+  "n_fragments": 1,
+  "faces": 236,
+  "faces_source": 236,
+  "size_bytes": 7220,
+  "bounds": {
+   "min": [
+    -48.9,
+    812.9,
+    98.6
+   ],
+   "max": [
+    -12.0,
+    916.2,
+    142.1
+   ],
+   "center": [
+    -30.4,
+    864.6,
+    120.4
+   ],
+   "size": [
+    36.9,
+    103.2,
+    43.6
+   ]
+  }
+ },
+ {
+  "id": "hip_bone_left",
+  "file": "models/squelette/hip_bone_left.glb",
+  "name_en": "Left hip bone",
+  "name_la": "Os coxae",
+  "nom_fr": "Os coxal",
+  "confiance_fr": "sûr",
+  "system": "squelette",
+  "detail": "Bones of lower limb",
+  "side": "left",
+  "couleur": "#e8dcc3",
+  "source": "zanatomy",
+  "fjs": [
+   "External abdominal oblique muscle.o4l",
+   "External abdominal oblique muscle.o5l",
+   "Hip bone.l",
+   "Internal abdominal oblique muscle.o3l"
+  ],
+  "n_fragments": 4,
+  "faces": 9204,
+  "faces_source": 9204,
+  "size_bytes": 222320,
+  "bounds": {
+   "min": [
+    2.6,
+    728.3,
+    18.5
+   ],
+   "max": [
+    132.2,
+    944.5,
+    153.6
+   ],
+   "center": [
+    67.4,
+    836.4,
+    86.1
+   ],
+   "size": [
+    129.6,
+    216.2,
+    135.1
+   ]
+  }
+ },
+ {
+  "id": "hip_bone_right",
+  "file": "models/squelette/hip_bone_right.glb",
+  "name_en": "Right hip bone",
+  "name_la": "Os coxae",
+  "nom_fr": "Os coxal",
+  "confiance_fr": "sûr",
+  "system": "squelette",
+  "detail": "Bones of lower limb",
+  "side": "right",
+  "couleur": "#e8dcc3",
+  "source": "zanatomy",
+  "fjs": [
+   "External abdominal oblique muscle.o4r",
+   "External abdominal oblique muscle.o5r",
+   "Hip bone.r",
+   "Internal abdominal oblique muscle.o3r"
+  ],
+  "n_fragments": 4,
+  "faces": 9204,
+  "faces_source": 9204,
+  "size_bytes": 222324,
+  "bounds": {
+   "min": [
+    -132.8,
+    728.3,
+    18.5
+   ],
+   "max": [
+    -3.2,
+    944.5,
+    153.6
+   ],
+   "center": [
+    -68.0,
+    836.4,
+    86.1
+   ],
+   "size": [
+    129.6,
+    216.2,
+    135.1
+   ]
+  }
+ },
+ {
+  "id": "inferior_epigastric_artery_right",
+  "file": "models/arteres/inferior_epigastric_artery_right.glb",
+  "name_en": "Right inferior epigastric artery",
+  "name_la": "Arteria epigastrica inferior",
+  "nom_fr": "Artère épigastrique inférieure",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Inferior epigastric artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 1180,
+  "faces_source": 1180,
+  "size_bytes": 29836,
+  "bounds": {
+   "min": [
+    -53.8,
+    834.8,
+    108.1
+   ],
+   "max": [
+    -24.8,
+    1023.3,
+    190.3
+   ],
+   "center": [
+    -39.3,
+    929.1,
+    149.2
+   ],
+   "size": [
+    29.0,
+    188.5,
+    82.2
+   ]
+  }
+ },
+ {
+  "id": "inferior_mesenteric_artery",
+  "file": "models/arteres/inferior_mesenteric_artery.glb",
+  "name_en": "Inferior mesenteric artery",
+  "name_la": "Arteria mesenterica inferior",
+  "nom_fr": "Artère mésentérique inférieure",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": null,
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Inferior mesenteric artery"
+  ],
+  "n_fragments": 1,
+  "faces": 708,
+  "faces_source": 708,
+  "size_bytes": 18552,
+  "bounds": {
+   "min": [
+    3.9,
+    906.0,
+    114.6
+   ],
+   "max": [
+    18.0,
+    993.9,
+    135.9
+   ],
+   "center": [
+    10.9,
+    950.0,
+    125.2
+   ],
+   "size": [
+    14.1,
+    87.9,
+    21.3
+   ]
+  }
+ },
+ {
+  "id": "inferior_phrenic_artery",
+  "file": "models/arteres/inferior_phrenic_artery.glb",
+  "name_en": "Inferior phrenic artery",
+  "name_la": "Arteria phrenica inferior",
+  "nom_fr": "Artère phrénique inférieure",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": null,
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Inferior phrenic artery"
+  ],
+  "n_fragments": 1,
+  "faces": 1653,
+  "faces_source": 1653,
+  "size_bytes": 41196,
+  "bounds": {
+   "min": [
+    -82.8,
+    1087.3,
+    78.3
+   ],
+   "max": [
+    4.5,
+    1198.6,
+    172.5
+   ],
+   "center": [
+    -39.2,
+    1143.0,
+    125.4
+   ],
+   "size": [
+    87.3,
+    111.3,
+    94.2
+   ]
+  }
+ },
+ {
+  "id": "inferior_suprarenal_artery_left",
+  "file": "models/arteres/inferior_suprarenal_artery_left.glb",
+  "name_en": "Left inferior suprarenal artery",
+  "name_la": "Arteria suprarenalis inferior",
+  "nom_fr": "Artère surrénale inférieure",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "left",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Inferior suprarenal artery.l"
+  ],
+  "n_fragments": 1,
+  "faces": 2006,
+  "faces_source": 2006,
+  "size_bytes": 50836,
+  "bounds": {
+   "min": [
+    21.3,
+    1047.8,
+    71.0
+   ],
+   "max": [
+    70.1,
+    1111.0,
+    107.7
+   ],
+   "center": [
+    45.7,
+    1079.4,
+    89.3
+   ],
+   "size": [
+    48.8,
+    63.2,
+    36.6
+   ]
+  }
+ },
+ {
+  "id": "inferior_suprarenal_artery_right",
+  "file": "models/arteres/inferior_suprarenal_artery_right.glb",
+  "name_en": "Right inferior suprarenal artery",
+  "name_la": "Arteria suprarenalis inferior",
+  "nom_fr": "Artère surrénale inférieure",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Inferior suprarenal artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 1652,
+  "faces_source": 1652,
+  "size_bytes": 41908,
+  "bounds": {
+   "min": [
+    -56.0,
+    1038.4,
+    82.5
+   ],
+   "max": [
+    -29.1,
+    1092.1,
+    104.7
+   ],
+   "center": [
+    -42.5,
+    1065.3,
+    93.6
+   ],
+   "size": [
+    26.9,
+    53.6,
+    22.2
+   ]
+  }
+ },
+ {
+  "id": "inferior_vena_cava_abdominal_part",
+  "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+  "name_en": "Inferior vena cava (abdominal part)",
+  "name_la": "Vena cava inferior (pars abdominis)",
+  "nom_fr": "Veine cave inférieure (partie abdominale)",
+  "confiance_fr": "sûr",
+  "system": "veines",
+  "detail": "Venous system",
+  "side": null,
+  "couleur": "#5b7fb4",
+  "source": "zanatomy",
+  "fjs": [
+   "Inferior vena cava (abdominal part)"
+  ],
+  "n_fragments": 1,
+  "faces": 236,
+  "faces_source": 236,
+  "size_bytes": 7220,
+  "bounds": {
+   "min": [
+    -18.7,
+    962.9,
+    105.3
+   ],
+   "max": [
+    -0.5,
+    1106.8,
+    132.4
+   ],
+   "center": [
+    -9.6,
+    1034.8,
+    118.9
+   ],
+   "size": [
+    18.2,
+    143.8,
+    27.1
+   ]
+  }
+ },
+ {
+  "id": "inguinal_ligament_right",
+  "file": "models/muscles/inguinal_ligament_right.glb",
+  "name_en": "Right inguinal ligament",
+  "name_la": "Ligamentum inguinale",
+  "nom_fr": "Ligament inguinal",
+  "confiance_fr": "sûr",
+  "system": "muscles",
+  "detail": "Abdominal part of muscular system",
+  "side": "right",
+  "couleur": "#b03a2e",
+  "source": "zanatomy",
+  "fjs": [
+   "Inguinal ligament.r"
+  ],
+  "n_fragments": 1,
+  "faces": 1056,
+  "faces_source": 1056,
+  "size_bytes": 26668,
+  "bounds": {
+   "min": [
+    -121.9,
+    770.7,
+    144.7
+   ],
+   "max": [
+    -19.2,
+    884.6,
+    153.4
+   ],
+   "center": [
+    -70.6,
+    827.6,
+    149.0
+   ],
+   "size": [
+    102.7,
+    113.8,
+    8.7
+   ]
+  }
+ },
+ {
+  "id": "internal_iliac_artery_left",
+  "file": "models/arteres/internal_iliac_artery_left.glb",
+  "name_en": "Left internal iliac artery",
+  "name_la": "Arteria iliaca interna",
+  "nom_fr": "Artère iliaque interne",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "left",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Internal iliac artery.l"
+  ],
+  "n_fragments": 1,
+  "faces": 236,
+  "faces_source": 236,
+  "size_bytes": 7220,
+  "bounds": {
+   "min": [
+    23.2,
+    870.9,
+    88.1
+   ],
+   "max": [
+    36.8,
+    919.0,
+    115.3
+   ],
+   "center": [
+    30.0,
+    895.0,
+    101.7
+   ],
+   "size": [
+    13.6,
+    48.2,
+    27.3
+   ]
+  }
+ },
+ {
+  "id": "internal_iliac_artery_right",
+  "file": "models/arteres/internal_iliac_artery_right.glb",
+  "name_en": "Right internal iliac artery",
+  "name_la": "Arteria iliaca interna",
+  "nom_fr": "Artère iliaque interne",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Internal iliac artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 236,
+  "faces_source": 236,
+  "size_bytes": 7224,
+  "bounds": {
+   "min": [
+    -37.4,
+    870.9,
+    88.1
+   ],
+   "max": [
+    -23.8,
+    919.0,
+    115.3
+   ],
+   "center": [
+    -30.6,
+    895.0,
+    101.7
+   ],
+   "size": [
+    13.6,
+    48.2,
+    27.3
+   ]
+  }
+ },
+ {
+  "id": "internal_pudendal_artery_left",
+  "file": "models/arteres/internal_pudendal_artery_left.glb",
+  "name_en": "Left internal pudendal artery",
+  "name_la": "Arteria pudendalis interna",
+  "nom_fr": "Artère pudendale interne",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "left",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Internal pudendal artery.l"
+  ],
+  "n_fragments": 1,
+  "faces": 3306,
+  "faces_source": 3306,
+  "size_bytes": 81196,
+  "bounds": {
+   "min": [
+    29.0,
+    745.1,
+    47.9
+   ],
+   "max": [
+    48.7,
+    857.7,
+    85.1
+   ],
+   "center": [
+    38.9,
+    801.4,
+    66.5
+   ],
+   "size": [
+    19.7,
+    112.6,
+    37.3
+   ]
+  }
+ },
+ {
+  "id": "internal_pudendal_artery_right",
+  "file": "models/arteres/internal_pudendal_artery_right.glb",
+  "name_en": "Right internal pudendal artery",
+  "name_la": "Arteria pudendalis interna",
+  "nom_fr": "Artère pudendale interne",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Internal pudendal artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 3306,
+  "faces_source": 3306,
+  "size_bytes": 81196,
+  "bounds": {
+   "min": [
+    -49.3,
+    745.1,
+    47.9
+   ],
+   "max": [
+    -29.6,
+    857.7,
+    85.1
+   ],
+   "center": [
+    -39.5,
+    801.4,
+    66.5
+   ],
+   "size": [
+    19.7,
+    112.6,
+    37.3
+   ]
+  }
+ },
+ {
+  "id": "kidney_left",
+  "file": "models/organes/kidney_left.glb",
+  "name_en": "Left kidney",
+  "nom_fr": "Rein gauche",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Urinary system",
+  "side": "left",
+  "couleur": "#7a3b2e",
+  "fjs": [
+   "FJ3145"
+  ],
+  "n_fragments": 1,
+  "faces": 2982,
+  "faces_source": 2982,
+  "size_bytes": 72896,
+  "bounds": {
+   "min": [
+    32.8,
+    984.5,
+    59.6
+   ],
+   "max": [
+    90.4,
+    1090.4,
+    100.2
+   ],
+   "center": [
+    61.6,
+    1037.5,
+    79.9
+   ],
+   "size": [
+    57.5,
+    105.9,
+    40.6
+   ]
+  },
+  "source": "bodyparts3d",
+  "name_la": "Ren",
+  "parent": "kidney_l",
+  "parent_fr": "Rein",
+  "parent_en": "Kidney"
+ },
+ {
+  "id": "kidney_right",
+  "file": "models/organes/kidney_right.glb",
+  "name_en": "Right kidney",
+  "nom_fr": "Rein droit",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Urinary system",
+  "side": "right",
+  "couleur": "#7a3b2e",
+  "fjs": [
+   "FJ3147"
+  ],
+  "n_fragments": 1,
+  "faces": 2310,
+  "faces_source": 2310,
+  "size_bytes": 56768,
+  "bounds": {
+   "min": [
+    -87.6,
+    966.8,
+    64.7
+   ],
+   "max": [
+    -30.4,
+    1071.2,
+    111.9
+   ],
+   "center": [
+    -59.0,
+    1019.0,
+    88.3
+   ],
+   "size": [
+    57.1,
+    104.4,
+    47.2
+   ]
+  },
+  "source": "bodyparts3d",
+  "name_la": "Ren",
+  "parent": "kidney_r",
+  "parent_fr": "Rein",
+  "parent_en": "Kidney"
+ },
+ {
+  "id": "left_renal_vein",
+  "file": "models/veines/left_renal_vein.glb",
+  "name_en": "Left renal vein",
+  "name_la": "Vena renalis sinistra",
+  "nom_fr": "Veine rénale gauche",
+  "confiance_fr": "sûr",
+  "system": "veines",
+  "detail": "Venous system",
+  "side": null,
+  "couleur": "#5b7fb4",
+  "source": "zanatomy",
+  "fjs": [
+   "Left renal vein"
+  ],
+  "n_fragments": 1,
+  "faces": 590,
+  "faces_source": 590,
+  "size_bytes": 15720,
+  "bounds": {
+   "min": [
+    -12.8,
+    1032.0,
+    98.5
+   ],
+   "max": [
+    27.0,
+    1045.5,
+    133.4
+   ],
+   "center": [
+    7.1,
+    1038.8,
+    116.0
+   ],
+   "size": [
+    39.7,
+    13.5,
+    34.9
+   ]
+  }
+ },
+ {
+  "id": "left_testicular_vein",
+  "file": "models/veines/left_testicular_vein.glb",
+  "name_en": "Left testicular vein",
+  "name_la": "Vena testicularis sinistra",
+  "nom_fr": "Veine testiculaire gauche",
+  "confiance_fr": "sûr",
+  "system": "veines",
+  "detail": "Venous system",
+  "side": null,
+  "couleur": "#5b7fb4",
+  "source": "zanatomy",
+  "fjs": [
+   "Left testicular vein"
+  ],
+  "n_fragments": 1,
+  "faces": 4013,
+  "faces_source": 4013,
+  "size_bytes": 97816,
+  "bounds": {
+   "min": [
+    9.4,
+    658.6,
+    82.8
+   ],
+   "max": [
+    67.7,
+    1037.4,
+    147.8
+   ],
+   "center": [
+    38.6,
+    848.0,
+    115.3
+   ],
+   "size": [
+    58.4,
+    378.8,
+    65.0
+   ]
+  }
+ },
+ {
+  "id": "pancreas",
+  "file": "models/organes/pancreas.glb",
+  "name_en": "Pancreas",
+  "name_la": "Pancreas",
+  "nom_fr": "Pancréas",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#d9a583",
+  "source": "zanatomy",
+  "fjs": [
+   "Pancreas"
+  ],
+  "n_fragments": 1,
+  "faces": 5222,
+  "faces_source": 5222,
+  "size_bytes": 126660,
+  "bounds": {
+   "min": [
+    -45.0,
+    1011.7,
+    95.2
+   ],
+   "max": [
+    71.1,
+    1085.8,
+    145.3
+   ],
+   "center": [
+    13.1,
+    1048.7,
+    120.2
+   ],
+   "size": [
+    116.1,
+    74.1,
+    50.1
+   ]
+  }
+ },
+ {
+  "id": "pleura",
+  "file": "models/organes/pleura.glb",
+  "name_en": "Pleura",
+  "name_la": "Pleura",
+  "nom_fr": "Plèvre",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Thoracic cavity",
+  "side": null,
+  "couleur": "#c97b84",
+  "source": "zanatomy",
+  "fjs": [
+   "Pleura"
+  ],
+  "n_fragments": 1,
+  "faces": 9998,
+  "faces_source": 112288,
+  "size_bytes": 241620,
+  "bounds": {
+   "min": [
+    -130.1,
+    1101.5,
+    20.6
+   ],
+   "max": [
+    128.3,
+    1366.7,
+    197.4
+   ],
+   "center": [
+    -0.9,
+    1234.1,
+    109.0
+   ],
+   "size": [
+    258.5,
+    265.2,
+    176.7
+   ]
+  }
+ },
+ {
+  "id": "posterior_branch_of_renal_artery_left",
+  "file": "models/arteres/posterior_branch_of_renal_artery_left.glb",
+  "name_en": "Left posterior branch of renal artery",
+  "name_la": "Ramus posterior arteriae renalis",
+  "nom_fr": "Branche postérieure de l'artère rénale",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "left",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Posterior branch of renal artery.l"
+  ],
+  "n_fragments": 1,
+  "faces": 354,
+  "faces_source": 354,
+  "size_bytes": 10004,
+  "bounds": {
+   "min": [
+    27.6,
+    1044.8,
+    72.1
+   ],
+   "max": [
+    55.7,
+    1051.8,
+    108.6
+   ],
+   "center": [
+    41.7,
+    1048.3,
+    90.3
+   ],
+   "size": [
+    28.1,
+    7.0,
+    36.6
+   ]
+  }
+ },
+ {
+  "id": "posterior_branch_of_renal_artery_right",
+  "file": "models/arteres/posterior_branch_of_renal_artery_right.glb",
+  "name_en": "Right posterior branch of renal artery",
+  "name_la": "Ramus posterior arteriae renalis",
+  "nom_fr": "Branche postérieure de l'artère rénale",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Posterior branch of renal artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 708,
+  "faces_source": 708,
+  "size_bytes": 18528,
+  "bounds": {
+   "min": [
+    -72.0,
+    1028.0,
+    80.5
+   ],
+   "max": [
+    -28.8,
+    1042.2,
+    106.6
+   ],
+   "center": [
+    -50.4,
+    1035.1,
+    93.6
+   ],
+   "size": [
+    43.3,
+    14.3,
+    26.1
+   ]
+  }
+ },
+ {
+  "id": "prostate",
+  "file": "models/organes/prostate.glb",
+  "name_en": "Prostate",
+  "name_la": "Prostata",
+  "nom_fr": "Prostate",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": null,
+  "couleur": "#cf8fae",
+  "source": "zanatomy",
+  "fjs": [
+   "Prostate"
+  ],
+  "n_fragments": 1,
+  "faces": 468,
+  "faces_source": 468,
+  "size_bytes": 12552,
+  "bounds": {
+   "min": [
+    -17.9,
+    740.1,
+    70.2
+   ],
+   "max": [
+    17.2,
+    763.6,
+    101.0
+   ],
+   "center": [
+    -0.4,
+    751.8,
+    85.6
+   ],
+   "size": [
+    35.1,
+    23.6,
+    30.8
+   ]
+  }
+ },
+ {
+  "id": "psoas_major_left",
+  "file": "models/muscles/psoas_major_left.glb",
+  "name_en": "Left psoas major",
+  "name_la": "Psoas major",
+  "nom_fr": "Grand psoas",
+  "confiance_fr": "sûr",
+  "system": "muscles",
+  "detail": "Muscular system of lower limb",
+  "side": "left",
+  "couleur": "#b03a2e",
+  "source": "zanatomy",
+  "fjs": [
+   "Psoas major.l"
+  ],
+  "n_fragments": 1,
+  "faces": 5474,
+  "faces_source": 5474,
+  "size_bytes": 132652,
+  "bounds": {
+   "min": [
+    7.7,
+    706.4,
+    61.5
+   ],
+   "max": [
+    105.8,
+    1088.4,
+    134.8
+   ],
+   "center": [
+    56.8,
+    897.4,
+    98.1
+   ],
+   "size": [
+    98.1,
+    382.0,
+    73.3
+   ]
+  }
+ },
+ {
+  "id": "psoas_major_right",
+  "file": "models/muscles/psoas_major_right.glb",
+  "name_en": "Right psoas major",
+  "name_la": "Psoas major",
+  "nom_fr": "Grand psoas",
+  "confiance_fr": "sûr",
+  "system": "muscles",
+  "detail": "Muscular system of lower limb",
+  "side": "right",
+  "couleur": "#b03a2e",
+  "source": "zanatomy",
+  "fjs": [
+   "Psoas major.r"
+  ],
+  "n_fragments": 1,
+  "faces": 5474,
+  "faces_source": 5474,
+  "size_bytes": 132652,
+  "bounds": {
+   "min": [
+    -106.4,
+    706.4,
+    61.5
+   ],
+   "max": [
+    -8.3,
+    1088.4,
+    134.8
+   ],
+   "center": [
+    -57.4,
+    897.4,
+    98.1
+   ],
+   "size": [
+    98.1,
+    382.0,
+    73.3
+   ]
+  }
+ },
+ {
+  "id": "rectum",
+  "file": "models/organes/rectum.glb",
+  "name_en": "Rectum",
+  "nom_fr": "Rectum",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#c9a06c",
+  "fjs": [
+   "FJ2571"
+  ],
+  "n_fragments": 1,
+  "faces": 2118,
+  "faces_source": 2118,
+  "size_bytes": 52160,
+  "bounds": {
+   "min": [
+    -26.2,
+    757.3,
+    11.3
+   ],
+   "max": [
+    35.4,
+    873.9,
+    73.6
+   ],
+   "center": [
+    4.6,
+    815.6,
+    42.4
+   ],
+   "size": [
+    61.6,
+    116.6,
+    62.3
+   ]
+  },
+  "source": "bodyparts3d",
+  "name_la": "Rectum"
+ },
+ {
+  "id": "renal_pelvis_right",
+  "file": "models/organes/renal_pelvis_right.glb",
+  "name_en": "Right renal pelvis",
+  "name_la": "Pelvis renalis",
+  "nom_fr": "Bassinet/ pelvis rénal",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Urinary system",
+  "side": "right",
+  "couleur": "#d9b36a",
+  "source": "zanatomy",
+  "fjs": [
+   "Renal pelvis.r"
+  ],
+  "n_fragments": 1,
+  "faces": 1262,
+  "faces_source": 1262,
+  "size_bytes": 31728,
+  "bounds": {
+   "min": [
+    -71.8,
+    989.7,
+    82.3
+   ],
+   "max": [
+    -29.3,
+    1064.6,
+    102.3
+   ],
+   "center": [
+    -50.6,
+    1027.1,
+    92.3
+   ],
+   "size": [
+    42.5,
+    74.9,
+    20.1
+   ]
+  },
+  "parent": "kidney_r",
+  "parent_fr": "Rein",
+  "parent_en": "Kidney"
+ },
+ {
+  "id": "right_testicular_artery",
+  "file": "models/arteres/right_testicular_artery.glb",
+  "name_en": "Right testicular artery",
+  "name_la": "Arteria testicularis dextra",
+  "nom_fr": "Artère testiculaire droite",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": "right",
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Right testicular artery.r"
+  ],
+  "n_fragments": 1,
+  "faces": 4132,
+  "faces_source": 4132,
+  "size_bytes": 100728,
+  "bounds": {
+   "min": [
+    -66.2,
+    658.6,
+    83.3
+   ],
+   "max": [
+    4.8,
+    1033.6,
+    147.8
+   ],
+   "center": [
+    -30.7,
+    846.1,
+    115.6
+   ],
+   "size": [
+    71.0,
+    374.9,
+    64.5
+   ]
+  }
+ },
+ {
+  "id": "sacrum",
+  "file": "models/squelette/sacrum.glb",
+  "name_en": "Sacrum",
+  "name_la": "Os sacrum",
+  "nom_fr": "Sacrum",
+  "confiance_fr": "sûr",
+  "system": "squelette",
+  "detail": "Vertebral column",
+  "side": null,
+  "couleur": "#e8dcc3",
+  "source": "zanatomy",
+  "fjs": [
+   "Sacrum"
+  ],
+  "n_fragments": 1,
+  "faces": 11676,
+  "faces_source": 11676,
+  "size_bytes": 280852,
+  "bounds": {
+   "min": [
+    -60.7,
+    797.1,
+    10.8
+   ],
+   "max": [
+    60.0,
+    912.8,
+    96.6
+   ],
+   "center": [
+    -0.3,
+    855.0,
+    53.7
+   ],
+   "size": [
+    120.8,
+    115.7,
+    85.8
+   ]
+  }
+ },
+ {
+  "id": "seminal_gland_left",
+  "file": "models/organes/seminal_gland_left.glb",
+  "name_en": "Left seminal gland",
+  "name_la": "Glandula seminalis",
+  "nom_fr": "Glande séminale",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "left",
+  "couleur": "#caa6d9",
+  "source": "zanatomy",
+  "fjs": [
+   "Seminal gland.l"
+  ],
+  "n_fragments": 1,
+  "faces": 360,
+  "faces_source": 360,
+  "size_bytes": 9948,
+  "bounds": {
+   "min": [
+    2.7,
+    759.4,
+    58.2
+   ],
+   "max": [
+    35.0,
+    790.2,
+    77.9
+   ],
+   "center": [
+    18.9,
+    774.8,
+    68.0
+   ],
+   "size": [
+    32.3,
+    30.7,
+    19.7
+   ]
+  }
+ },
+ {
+  "id": "seminal_gland_right",
+  "file": "models/organes/seminal_gland_right.glb",
+  "name_en": "Right seminal gland",
+  "name_la": "Glandula seminalis",
+  "nom_fr": "Glande séminale",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "right",
+  "couleur": "#caa6d9",
+  "source": "zanatomy",
+  "fjs": [
+   "Seminal gland.r"
+  ],
+  "n_fragments": 1,
+  "faces": 360,
+  "faces_source": 360,
+  "size_bytes": 9960,
+  "bounds": {
+   "min": [
+    -35.6,
+    759.4,
+    58.2
+   ],
+   "max": [
+    -3.3,
+    790.2,
+    77.9
+   ],
+   "center": [
+    -19.5,
+    774.8,
+    68.0
+   ],
+   "size": [
+    32.3,
+    30.7,
+    19.7
+   ]
+  }
+ },
+ {
+  "id": "sigmoid_colon",
+  "file": "models/organes/sigmoid_colon.glb",
+  "name_en": "Sigmoid colon",
+  "name_la": "Colon sigmoideum",
+  "nom_fr": "Côlon sigmoïde",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#d9a583",
+  "source": "zanatomy",
+  "fjs": [
+   "Sigmoid colon"
+  ],
+  "n_fragments": 1,
+  "faces": 3432,
+  "faces_source": 3432,
+  "size_bytes": 83644,
+  "bounds": {
+   "min": [
+    -26.1,
+    734.8,
+    32.6
+   ],
+   "max": [
+    34.4,
+    858.1,
+    79.0
+   ],
+   "center": [
+    4.2,
+    796.4,
+    55.8
+   ],
+   "size": [
+    60.5,
+    123.3,
+    46.4
+   ]
+  }
+ },
+ {
+  "id": "spleen",
+  "file": "models/lymphatique/spleen.glb",
+  "name_en": "Spleen",
+  "name_la": "Lien",
+  "nom_fr": "Rate",
+  "confiance_fr": "sûr",
+  "system": "lymphatique",
+  "detail": "Secondary lymphoid organs",
+  "side": null,
+  "couleur": "#7fae5c",
+  "source": "zanatomy",
+  "fjs": [
+   "Spleen"
+  ],
+  "n_fragments": 1,
+  "faces": 1330,
+  "faces_source": 1330,
+  "size_bytes": 33240,
+  "bounds": {
+   "min": [
+    54.3,
+    1059.2,
+    51.2
+   ],
+   "max": [
+    111.6,
+    1129.8,
+    140.5
+   ],
+   "center": [
+    83.0,
+    1094.5,
+    95.9
+   ],
+   "size": [
+    57.2,
+    70.6,
+    89.3
+   ]
+  }
+ },
+ {
+  "id": "superior_anorectal_artery",
+  "file": "models/arteres/superior_anorectal_artery.glb",
+  "name_en": "Superior anorectal artery",
+  "name_la": "Arteria anorectalis superior",
+  "nom_fr": "Artère anorectale supérieure",
+  "confiance_fr": "sûr",
+  "system": "arteres",
+  "detail": "Arterial system",
+  "side": null,
+  "couleur": "#cf5346",
+  "source": "zanatomy",
+  "fjs": [
+   "Superior anorectal artery"
+  ],
+  "n_fragments": 1,
+  "faces": 944,
+  "faces_source": 944,
+  "size_bytes": 24188,
+  "bounds": {
+   "min": [
+    -24.8,
+    760.3,
+    49.2
+   ],
+   "max": [
+    5.9,
+    906.8,
+    116.1
+   ],
+   "center": [
+    -9.5,
+    833.6,
+    82.6
+   ],
+   "size": [
+    30.7,
+    146.5,
+    66.9
+   ]
+  }
+ },
+ {
+  "id": "suprarenal_gland_left",
+  "file": "models/organes/suprarenal_gland_left.glb",
+  "name_en": "Left suprarenal gland",
+  "name_la": "Glandula suprarenalis",
+  "nom_fr": "Glande surrénale",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Endocrine glands",
+  "side": "left",
+  "couleur": "#caa6d9",
+  "source": "zanatomy",
+  "fjs": [
+   "Suprarenal gland.l"
+  ],
+  "n_fragments": 1,
+  "faces": 3996,
+  "faces_source": 3996,
+  "size_bytes": 97232,
+  "bounds": {
+   "min": [
+    26.5,
+    1071.0,
+    67.1
+   ],
+   "max": [
+    73.9,
+    1116.1,
+    86.0
+   ],
+   "center": [
+    50.2,
+    1093.5,
+    76.6
+   ],
+   "size": [
+    47.3,
+    45.1,
+    18.9
+   ]
+  }
+ },
+ {
+  "id": "suprarenal_gland_right",
+  "file": "models/organes/suprarenal_gland_right.glb",
+  "name_en": "Right suprarenal gland",
+  "name_la": "Glandula suprarenalis",
+  "nom_fr": "Glande surrénale",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Endocrine glands",
+  "side": "right",
+  "couleur": "#caa6d9",
+  "source": "zanatomy",
+  "fjs": [
+   "Suprarenal gland.r"
+  ],
+  "n_fragments": 1,
+  "faces": 2294,
+  "faces_source": 2294,
+  "size_bytes": 56380,
+  "bounds": {
+   "min": [
+    -61.7,
+    1053.1,
+    78.4
+   ],
+   "max": [
+    -30.4,
+    1095.6,
+    103.9
+   ],
+   "center": [
+    -46.1,
+    1074.3,
+    91.2
+   ],
+   "size": [
+    31.3,
+    42.5,
+    25.6
+   ]
+  }
+ },
+ {
+  "id": "tendinous_arch_of_levator_ani_left",
+  "file": "models/muscles/tendinous_arch_of_levator_ani_left.glb",
+  "name_en": "Left tendinous arch of levator ani",
+  "name_la": "Arcus tendineus levatoris ani",
+  "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+  "confiance_fr": "sûr",
+  "system": "muscles",
+  "detail": "Pelvic part of muscular system",
+  "side": "left",
+  "couleur": "#b03a2e",
+  "source": "zanatomy",
+  "fjs": [
+   "Tendinous arch of levator ani.l"
+  ],
+  "n_fragments": 1,
+  "faces": 750,
+  "faces_source": 750,
+  "size_bytes": 19316,
+  "bounds": {
+   "min": [
+    22.3,
+    765.5,
+    55.9
+   ],
+   "max": [
+    45.7,
+    799.7,
+    117.2
+   ],
+   "center": [
+    34.0,
+    782.6,
+    86.5
+   ],
+   "size": [
+    23.4,
+    34.3,
+    61.3
+   ]
+  }
+ },
+ {
+  "id": "tendinous_arch_of_levator_ani_right",
+  "file": "models/muscles/tendinous_arch_of_levator_ani_right.glb",
+  "name_en": "Right tendinous arch of levator ani",
+  "name_la": "Arcus tendineus levatoris ani",
+  "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+  "confiance_fr": "sûr",
+  "system": "muscles",
+  "detail": "Pelvic part of muscular system",
+  "side": "right",
+  "couleur": "#b03a2e",
+  "source": "zanatomy",
+  "fjs": [
+   "Tendinous arch of levator ani.r"
+  ],
+  "n_fragments": 1,
+  "faces": 750,
+  "faces_source": 750,
+  "size_bytes": 19320,
+  "bounds": {
+   "min": [
+    -46.3,
+    765.5,
+    55.9
+   ],
+   "max": [
+    -22.9,
+    799.7,
+    117.2
+   ],
+   "center": [
+    -34.6,
+    782.6,
+    86.5
+   ],
+   "size": [
+    23.4,
+    34.3,
+    61.3
+   ]
+  }
+ },
+ {
+  "id": "testis_left",
+  "file": "models/organes/testis_left.glb",
+  "name_en": "Left testis",
+  "name_la": "Testis",
+  "nom_fr": "Testicule",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "left",
+  "couleur": "#cf8fae",
+  "source": "zanatomy",
+  "fjs": [
+   "Testis.l"
+  ],
+  "n_fragments": 1,
+  "faces": 1356,
+  "faces_source": 1356,
+  "size_bytes": 33864,
+  "bounds": {
+   "min": [
+    9.7,
+    657.2,
+    142.1
+   ],
+   "max": [
+    30.4,
+    686.9,
+    163.4
+   ],
+   "center": [
+    20.0,
+    672.0,
+    152.7
+   ],
+   "size": [
+    20.7,
+    29.6,
+    21.3
+   ]
+  },
+  "parent": "testis_l",
+  "parent_fr": "Testicule",
+  "parent_en": "Testis"
+ },
+ {
+  "id": "testis_right",
+  "file": "models/organes/testis_right.glb",
+  "name_en": "Right testis",
+  "name_la": "Testis",
+  "nom_fr": "Testicule",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Genital systems",
+  "side": "right",
+  "couleur": "#cf8fae",
+  "source": "zanatomy",
+  "fjs": [
+   "Testis.r"
+  ],
+  "n_fragments": 1,
+  "faces": 1356,
+  "faces_source": 1356,
+  "size_bytes": 33864,
+  "bounds": {
+   "min": [
+    -31.0,
+    657.2,
+    142.1
+   ],
+   "max": [
+    -10.3,
+    686.9,
+    163.4
+   ],
+   "center": [
+    -20.6,
+    672.0,
+    152.7
+   ],
+   "size": [
+    20.7,
+    29.6,
+    21.3
+   ]
+  },
+  "parent": "testis_r",
+  "parent_fr": "Testicule",
+  "parent_en": "Testis"
+ },
+ {
+  "id": "transverse_colon",
+  "file": "models/organes/transverse_colon.glb",
+  "name_en": "Transverse colon",
+  "name_la": "Colon transversum",
+  "nom_fr": "Côlon transverse",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Digestive system",
+  "side": null,
+  "couleur": "#d9a583",
+  "source": "zanatomy",
+  "fjs": [
+   "Transverse colon"
+  ],
+  "n_fragments": 1,
+  "faces": 10000,
+  "faces_source": 16616,
+  "size_bytes": 241284,
+  "bounds": {
+   "min": [
+    -86.0,
+    999.2,
+    105.6
+   ],
+   "max": [
+    97.1,
+    1068.0,
+    176.3
+   ],
+   "center": [
+    5.5,
+    1033.6,
+    141.0
+   ],
+   "size": [
+    183.1,
+    68.7,
+    70.7
+   ]
+  }
+ },
+ {
+  "id": "transversus_abdominis_muscle_right",
+  "file": "models/muscles/transversus_abdominis_muscle_right.glb",
+  "name_en": "Right transversus abdominis muscle",
+  "name_la": "Musculus transversus abdominis",
+  "nom_fr": "Muscle transverse de l'abdomen",
+  "confiance_fr": "sûr",
+  "system": "muscles",
+  "detail": "Abdominal part of muscular system",
+  "side": "right",
+  "couleur": "#b03a2e",
+  "source": "zanatomy",
+  "fjs": [
+   "Transversus abdominis muscle.r"
+  ],
+  "n_fragments": 1,
+  "faces": 10000,
+  "faces_source": 34328,
+  "size_bytes": 241332,
+  "bounds": {
+   "min": [
+    -130.8,
+    772.3,
+    40.5
+   ],
+   "max": [
+    -3.8,
+    1195.9,
+    197.8
+   ],
+   "center": [
+    -67.3,
+    984.1,
+    119.2
+   ],
+   "size": [
+    127.0,
+    423.6,
+    157.3
+   ]
+  }
+ },
+ {
+  "id": "ureter_left",
+  "file": "models/organes/ureter_left.glb",
+  "name_en": "Left ureter",
+  "name_la": "Ureter",
+  "nom_fr": "Uretère",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Urinary system",
+  "side": "left",
+  "couleur": "#d9b36a",
+  "source": "zanatomy",
+  "fjs": [
+   "Ureter.l"
+  ],
+  "n_fragments": 1,
+  "faces": 2880,
+  "faces_source": 2880,
+  "size_bytes": 70680,
+  "bounds": {
+   "min": [
+    22.6,
+    804.6,
+    66.6
+   ],
+   "max": [
+    44.5,
+    1043.2,
+    120.1
+   ],
+   "center": [
+    33.5,
+    923.9,
+    93.4
+   ],
+   "size": [
+    21.9,
+    238.7,
+    53.6
+   ]
+  }
+ },
+ {
+  "id": "ureter_right",
+  "file": "models/organes/ureter_right.glb",
+  "name_en": "Right ureter",
+  "name_la": "Ureter",
+  "nom_fr": "Uretère",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Urinary system",
+  "side": "right",
+  "couleur": "#d9b36a",
+  "source": "zanatomy",
+  "fjs": [
+   "Ureter.r"
+  ],
+  "n_fragments": 1,
+  "faces": 3168,
+  "faces_source": 3168,
+  "size_bytes": 77596,
+  "bounds": {
+   "min": [
+    -40.4,
+    801.4,
+    72.0
+   ],
+   "max": [
+    -10.1,
+    1024.9,
+    119.2
+   ],
+   "center": [
+    -25.3,
+    913.2,
+    95.6
+   ],
+   "size": [
+    30.3,
+    223.5,
+    47.2
+   ]
+  }
+ },
+ {
+  "id": "urethra",
+  "file": "models/organes/urethra.glb",
+  "name_en": "Urethra",
+  "name_la": "Urethra",
+  "nom_fr": "Urètre",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Urinary system",
+  "side": null,
+  "couleur": "#d9b36a",
+  "source": "zanatomy",
+  "fjs": [
+   "Urethra"
+  ],
+  "n_fragments": 1,
+  "faces": 2880,
+  "faces_source": 2880,
+  "size_bytes": 70684,
+  "bounds": {
+   "min": [
+    -2.1,
+    675.6,
+    83.1
+   ],
+   "max": [
+    1.5,
+    761.9,
+    182.4
+   ],
+   "center": [
+    -0.3,
+    718.8,
+    132.8
+   ],
+   "size": [
+    3.5,
+    86.3,
+    99.3
+   ]
+  }
+ },
+ {
+  "id": "urinary_bladder",
+  "file": "models/organes/urinary_bladder.glb",
+  "name_en": "Urinary bladder",
+  "name_la": "Vesica urinaria",
+  "nom_fr": "Vessie urinaire",
+  "confiance_fr": "sûr",
+  "system": "organes",
+  "detail": "Urinary system",
+  "side": null,
+  "couleur": "#d9b36a",
+  "source": "zanatomy",
+  "fjs": [
+   "Urinary bladder"
+  ],
+  "n_fragments": 1,
+  "faces": 3036,
+  "faces_source": 3036,
+  "size_bytes": 74184,
+  "bounds": {
+   "min": [
+    -36.5,
+    760.4,
+    61.0
+   ],
+   "max": [
+    36.6,
+    812.0,
+    139.2
+   ],
+   "center": [
+    0.1,
+    786.2,
+    100.1
+   ],
+   "size": [
+    73.1,
+    51.6,
+    78.2
+   ]
+  }
+ },
+ {
+  "id": "vertebra_l2",
+  "file": "models/squelette/vertebra_l2.glb",
+  "name_en": "Vertebra L2",
+  "name_la": "Vertebra lumborum II",
+  "nom_fr": "Vertèbre L2",
+  "confiance_fr": "sûr",
+  "system": "squelette",
+  "detail": "Vertebral column",
+  "side": null,
+  "couleur": "#e8dcc3",
+  "source": "zanatomy",
+  "fjs": [
+   "Diaphragm.o2l",
+   "Diaphragm.o2r",
+   "Longissimus thoracis muscle.e1l",
+   "Longissimus thoracis muscle.e1r",
+   "Vertebra L2"
+  ],
+  "n_fragments": 5,
+  "faces": 6296,
+  "faces_source": 6296,
+  "size_bytes": 152668,
+  "bounds": {
+   "min": [
+    -41.5,
+    982.4,
+    38.2
+   ],
+   "max": [
+    40.9,
+    1032.4,
+    116.4
+   ],
+   "center": [
+    -0.3,
+    1007.4,
+    77.3
+   ],
+   "size": [
+    82.3,
+    50.0,
+    78.1
+   ]
+  }
+ }
+]

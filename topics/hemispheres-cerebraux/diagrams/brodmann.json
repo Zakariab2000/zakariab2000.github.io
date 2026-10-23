@@ -1,0 +1,348 @@
+{
+ "titre_fr": "Aires fonctionnelles corticales selon Brodmann — carte interactive",
+ "titre_en": "Cortical functional areas according to Brodmann — interactive map",
+ "w": 720,
+ "h": 1010,
+ "levels": {
+  "motrice": {
+   "c": "#f0a13c",
+   "fr": "Aires motrices",
+   "en": "Motor areas"
+  },
+  "sensitive": {
+   "c": "#4fc3f7",
+   "fr": "Aires sensitives",
+   "en": "Somatosensory areas"
+  },
+  "sensorielle": {
+   "c": "#b388ff",
+   "fr": "Aires sensorielles",
+   "en": "Sensory areas"
+  },
+  "langage": {
+   "c": "#58d68d",
+   "fr": "Aires du langage (associatives)",
+   "en": "Language areas (associative)"
+  },
+  "note": {
+   "c": "#607d8b",
+   "fr": "Repère de vue / note",
+   "en": "View marker / note"
+  }
+ },
+ "nodes": [
+  {
+   "id": "lat_title",
+   "x": 360,
+   "y": 34,
+   "w": 620,
+   "label": "FACE LATÉRALE — hémisphère droit",
+   "sub": "pôle frontal à gauche · pôle occipital à droite",
+   "lvl": "note",
+   "desc": {
+    "fr": "Carte schématique des aires du cours sur la face latérale : touchez un numéro pour son nom, son support et sa fonction. La surface corticale est subdivisée en 52 aires selon Brodmann ; seules les aires du programme sont cartographiées ici.",
+    "en": "Schematic map of the course areas on the lateral surface: tap a number for its name, support and function. The cortical surface is divided into 52 Brodmann areas; only the programme areas are mapped here."
+   }
+  },
+  {
+   "id": "a8",
+   "x": 118,
+   "y": 120,
+   "w": 96,
+   "label": "8",
+   "sub": "Oculo-motrice",
+   "lvl": "motrice",
+   "desc": {
+    "fr": "Aire 8 — aire motrice secondaire oculo-motrice, située en avant de l'aire 4 (partie postérieure des gyri frontaux supérieur et moyen) : elle commande les mouvements conjugués des yeux.",
+    "en": "Area 8 — secondary oculomotor area, in front of area 4 (posterior part of the superior and middle frontal gyri): controls conjugate eye movements."
+   }
+  },
+  {
+   "id": "a6",
+   "x": 218,
+   "y": 140,
+   "w": 96,
+   "label": "6",
+   "sub": "Psycho-motrice",
+   "lvl": "motrice",
+   "desc": {
+    "fr": "Aire 6 — aire motrice secondaire psycho-motrice, en avant de l'aire 4 : préparation et programmation du mouvement. Sa partie postérieure, sur le gyrus frontal moyen (F2), est le centre de l'expression écrite (graphie).",
+    "en": "Area 6 — secondary psychomotor area, in front of area 4: preparation and programming of movement. Its posterior part, on the middle frontal gyrus (F2), is the centre of written expression."
+   }
+  },
+  {
+   "id": "a4",
+   "x": 320,
+   "y": 165,
+   "w": 96,
+   "label": "4",
+   "sub": "Motrice primaire",
+   "lvl": "motrice",
+   "desc": {
+    "fr": "Aire 4 — aire motrice primaire somato-motrice : elle correspond à la plus grande partie du gyrus pré-central (circonvolution frontale ascendante, FA), centre de la motricité volontaire d'où naissent la majeure partie des faisceaux pyramidaux.",
+    "en": "Area 4 — primary somatomotor area: most of the precentral gyrus (ascending frontal convolution), centre of voluntary motricity where most pyramidal fibres arise."
+   }
+  },
+  {
+   "id": "a312",
+   "x": 425,
+   "y": 165,
+   "w": 110,
+   "label": "3 · 1 · 2",
+   "sub": "Sensitive primaire",
+   "lvl": "sensitive",
+   "desc": {
+    "fr": "Aires 3, 1 et 2 — aires sensitives primaires, disposées d'avant en arrière sur le gyrus post-central (circonvolution pariétale ascendante, PA), en arrière du sillon central : centre sensitif primaire (somesthésie).",
+    "en": "Areas 3, 1 and 2 — primary somatosensory areas, arranged front-to-back on the postcentral gyrus, behind the central sulcus: primary sensory centre."
+   }
+  },
+  {
+   "id": "a57",
+   "x": 505,
+   "y": 115,
+   "w": 96,
+   "label": "5 · 7",
+   "sub": "Psycho-sensitive",
+   "lvl": "sensitive",
+   "desc": {
+    "fr": "Aires 5 et 7 — aires sensitives secondaires psycho-sensitives, en arrière de l'aire sensitive primaire, sur le lobule pariétal supérieur (P1) : intégration et interprétation des sensibilités.",
+    "en": "Areas 5 and 7 — secondary psychosensory areas, behind the primary sensory area, on the superior parietal lobule: integration and interpretation of sensation."
+   }
+  },
+  {
+   "id": "a44",
+   "x": 140,
+   "y": 235,
+   "w": 96,
+   "label": "44",
+   "sub": "Broca — pied de F3",
+   "lvl": "langage",
+   "desc": {
+    "fr": "Aire 44 — sur le pied du gyrus frontal inférieur (F3, partie operculaire) : composante de l'aire de Broca, centre de l'expression orale du langage (hémisphère gauche chez le droitier).",
+    "en": "Area 44 — on the foot of the inferior frontal gyrus (F3, opercular part): part of Broca's area, centre of spoken language expression (left hemisphere in right-handers)."
+   }
+  },
+  {
+   "id": "a45",
+   "x": 215,
+   "y": 290,
+   "w": 96,
+   "label": "45",
+   "sub": "Broca — cap de F3",
+   "lvl": "langage",
+   "desc": {
+    "fr": "Aire 45 — sur le cap du gyrus frontal inférieur (F3, partie triangulaire) : avec l'aire 44, elle forme l'aire de Broca (expression orale).",
+    "en": "Area 45 — on the cap of the inferior frontal gyrus (F3, triangular part): with area 44 it forms Broca's area (spoken expression)."
+   }
+  },
+  {
+   "id": "a41",
+   "x": 315,
+   "y": 325,
+   "w": 96,
+   "label": "41",
+   "sub": "Auditive primaire",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aire 41 — aire auditive primaire ou gyrus de Heschl : zone de réception primaire des sons, située sur la partie moyenne de la circonvolution temporale supérieure (T1, gyri temporaux transverses).",
+    "en": "Area 41 — primary auditory area (Heschl's gyrus): primary sound reception zone, on the middle part of the superior temporal convolution (transverse temporal gyri)."
+   }
+  },
+  {
+   "id": "a42",
+   "x": 425,
+   "y": 350,
+   "w": 96,
+   "label": "42",
+   "sub": "Psycho-auditive",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aire 42 — aire auditive secondaire psycho-auditive : elle entoure l'aire 41 et assure l'identification des sons (gnosie auditive). Elle participe aussi à l'aire de Wernicke.",
+    "en": "Area 42 — secondary psycho-auditory area surrounding area 41: identification of sounds (auditory gnosis). It also takes part in Wernicke's area."
+   }
+  },
+  {
+   "id": "a43",
+   "x": 400,
+   "y": 265,
+   "w": 96,
+   "label": "43",
+   "sub": "Gustative",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aire 43 — aire gustative : elle occupe la partie inférieure de la circonvolution pariétale ascendante (gyrus post-central).",
+    "en": "Area 43 — gustatory area: occupies the inferior part of the ascending parietal convolution (postcentral gyrus)."
+   }
+  },
+  {
+   "id": "a22",
+   "x": 540,
+   "y": 320,
+   "w": 110,
+   "label": "22",
+   "sub": "Wernicke",
+   "lvl": "langage",
+   "desc": {
+    "fr": "Aire 22 — partie postérieure du gyrus temporal supérieur : avec l'aire 42, elle constitue l'aire de Wernicke, centre de la compréhension du langage oral (hémisphère gauche chez le droitier).",
+    "en": "Area 22 — posterior part of the superior temporal gyrus: with area 42 it forms Wernicke's area, centre of spoken language comprehension (left hemisphere in right-handers)."
+   }
+  },
+  {
+   "id": "a40",
+   "x": 520,
+   "y": 245,
+   "w": 96,
+   "label": "40",
+   "sub": "Supramarginal",
+   "lvl": "langage",
+   "desc": {
+    "fr": "Aire 40 — gyrus supra-marginal, qui coiffe la terminaison de la scissure de Sylvius (lobule pariétal inférieur, P2) : avec l'aire 39, elle intervient dans la compréhension du langage écrit (lecture).",
+    "en": "Area 40 — supramarginal gyrus, capping the end of the Sylvian fissure (inferior parietal lobule): with area 39 it serves written language comprehension (reading)."
+   }
+  },
+  {
+   "id": "a39",
+   "x": 600,
+   "y": 190,
+   "w": 96,
+   "label": "39",
+   "sub": "Angulaire",
+   "lvl": "langage",
+   "desc": {
+    "fr": "Aire 39 — gyrus angulaire, qui coiffe la terminaison du 1ᵉʳ sillon temporal (lobule pariétal inférieur, P2) : avec l'aire 40, centre de la compréhension du langage écrit.",
+    "en": "Area 39 — angular gyrus, capping the end of the 1st temporal sulcus (inferior parietal lobule): with area 40, centre of written language comprehension."
+   }
+  },
+  {
+   "id": "a1819l",
+   "x": 620,
+   "y": 395,
+   "w": 110,
+   "label": "18 · 19",
+   "sub": "Psycho-visuelles",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aires 18 et 19 — aires visuelles secondaires ou psycho-visuelles : elles entourent l'aire 17 (surtout développées sur la face médiale, autour de la scissure calcarine) et assurent l'interprétation des images.",
+    "en": "Areas 18 and 19 — secondary (psycho-visual) areas surrounding area 17 (best developed medially, around the calcarine fissure): interpretation of images."
+   }
+  },
+  {
+   "id": "med_title",
+   "x": 360,
+   "y": 556,
+   "w": 620,
+   "label": "FACE MÉDIALE — hémisphère droit",
+   "sub": "vue par la face interne : pôle frontal à droite",
+   "lvl": "note",
+   "desc": {
+    "fr": "Face médiale (plane et verticale) : on y trouve le lobe limbique (corps calleux), le lobule para-central, le précuneus, le cuneus et les lèvres de la scissure calcarine. Touchez un numéro pour le détail.",
+    "en": "Medial surface (flat and vertical): limbic lobe (corpus callosum), paracentral lobule, precuneus, cuneus and the lips of the calcarine fissure. Tap a number for details."
+   }
+  },
+  {
+   "id": "sma",
+   "x": 545,
+   "y": 640,
+   "w": 170,
+   "label": "6 méd.",
+   "sub": "Motrice supplémentaire",
+   "lvl": "motrice",
+   "desc": {
+    "fr": "Aire motrice supplémentaire — située au niveau du lobule para-central, sur la face médiale : elle prolonge en dedans l'aire motrice et participe à la programmation des mouvements complexes.",
+    "en": "Supplementary motor area — at the paracentral lobule, on the medial surface: medial extension of the motor area, involved in programming complex movements."
+   }
+  },
+  {
+   "id": "a4m",
+   "x": 350,
+   "y": 640,
+   "w": 130,
+   "label": "4 · 3-1-2",
+   "sub": "Lobule paracentral",
+   "lvl": "sensitive",
+   "desc": {
+    "fr": "Lobule para-central — prolongement interne des gyri pré-central (aire 4, motrice) et post-central (aires 3, 1, 2, sensitives), au-dessus de la scissure calloso-marginale : il contient la représentation du membre inférieur.",
+    "en": "Paracentral lobule — medial continuation of the precentral (area 4, motor) and postcentral (areas 3, 1, 2, sensory) gyri, above the callosomarginal fissure: contains the lower-limb representation."
+   }
+  },
+  {
+   "id": "a57m",
+   "x": 215,
+   "y": 650,
+   "w": 110,
+   "label": "5 · 7",
+   "sub": "Précuneus",
+   "lvl": "sensitive",
+   "desc": {
+    "fr": "Aires 5 et 7 sur la face médiale du lobe pariétal : le précuneus (lobule quadrilatère), en avant du cuneus, séparé du gyrus du cingulum par le sillon sous-pariétal.",
+    "en": "Areas 5 and 7 on the medial parietal surface: the precuneus (quadrilateral lobule), in front of the cuneus, separated from the cingulate gyrus by the subparietal sulcus."
+   }
+  },
+  {
+   "id": "a1819m",
+   "x": 225,
+   "y": 745,
+   "w": 110,
+   "label": "18 · 19",
+   "sub": "Péri-calcarines",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aires 18 et 19 — aires visuelles secondaires : elles entourent l'aire 17 de part et d'autre de la scissure calcarine (cuneus en haut, gyrus lingual en bas).",
+    "en": "Areas 18 and 19 — secondary visual areas surrounding area 17 on both sides of the calcarine fissure (cuneus above, lingual gyrus below)."
+   }
+  },
+  {
+   "id": "a17m",
+   "x": 120,
+   "y": 770,
+   "w": 96,
+   "label": "17",
+   "sub": "Calcarine",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aire 17 — aire visuelle primaire : située de part et d'autre, sur les lèvres de la scissure calcarine (face médiale du lobe occipital). C'est la terminaison des radiations optiques, avec une rétinotopie très précise.",
+    "en": "Area 17 — primary visual area: on both lips of the calcarine fissure (medial occipital surface). Termination of the optic radiations, with precise retinotopy."
+   }
+  },
+  {
+   "id": "a25",
+   "x": 560,
+   "y": 800,
+   "w": 96,
+   "label": "25",
+   "sub": "Septale",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aire 25 — aire septale, aire olfactive située sur la face médiale de l'hémisphère, au niveau du lobe limbique, sous le bec du corps calleux.",
+    "en": "Area 25 — septal area, an olfactory area on the medial surface of the hemisphere, in the limbic lobe, below the rostrum of the corpus callosum."
+   }
+  },
+  {
+   "id": "a28",
+   "x": 430,
+   "y": 880,
+   "w": 110,
+   "label": "28",
+   "sub": "Entorhinale",
+   "lvl": "sensorielle",
+   "desc": {
+    "fr": "Aire 28 — aire entorhinale, aire olfactive de la face médiale, au niveau du gyrus parahippocampique (5ᵉ circonvolution temporale, T5), en relation avec l'hippocampe.",
+    "en": "Area 28 — entorhinal area, an olfactory area of the medial surface, on the parahippocampal gyrus (T5), related to the hippocampus."
+   }
+  },
+  {
+   "id": "note52",
+   "x": 360,
+   "y": 962,
+   "w": 620,
+   "label": "52 aires selon Brodmann",
+   "sub": "seules les aires du programme FMPR sont cartographiées",
+   "lvl": "note",
+   "desc": {
+    "fr": "Le cours subdivise la surface corticale en 52 aires selon Brodmann, regroupées en aires motrices, sensitives, sensorielles et associatives (langage). Les aires associatives du langage sont fonctionnelles à gauche chez le droitier.",
+    "en": "The course divides the cortical surface into 52 Brodmann areas, grouped into motor, somatosensory, sensory and associative (language) areas. Language association areas are functional on the left in right-handers."
+   }
+  }
+ ],
+ "edges": []
+}

@@ -1,0 +1,278 @@
+{
+ "titre_fr": "Système canalaire du pancréas et voie biliaire — schéma interactif",
+ "titre_en": "Pancreatic duct system and biliary tract — interactive diagram",
+ "w": 720,
+ "h": 640,
+ "levels": {
+  "organe": {
+   "c": "#8fa5ba",
+   "fr": "Organes",
+   "en": "Organs"
+  },
+  "biliaire": {
+   "c": "#f0d429",
+   "fr": "Voie biliaire",
+   "en": "Biliary tract"
+  },
+  "pancreatique": {
+   "c": "#58d68d",
+   "fr": "Canaux pancréatiques",
+   "en": "Pancreatic ducts"
+  },
+  "jonction": {
+   "c": "#f0a13c",
+   "fr": "Confluence et papilles",
+   "en": "Confluence & papillae"
+  },
+  "duodenum": {
+   "c": "#5b8dd9",
+   "fr": "Duodénum",
+   "en": "Duodenum"
+  }
+ },
+ "nodes": [
+  {
+   "id": "foie",
+   "x": 100,
+   "y": 90,
+   "w": 170,
+   "label": "Foie",
+   "sub": "canaux hépatiques D et G",
+   "label_en": "Liver",
+   "sub_en": "right & left hepatic ducts",
+   "lvl": "organe",
+   "desc": {
+    "fr": "Le foie produit la bile, évacuée par les canaux hépatiques droit et gauche qui se réunissent au hile pour former le canal hépatique commun.",
+    "en": "The liver produces bile, drained by the right and left hepatic ducts, which join at the hilum to form the common hepatic duct."
+   }
+  },
+  {
+   "id": "vesicule",
+   "x": 100,
+   "y": 220,
+   "w": 170,
+   "label": "Vésicule biliaire",
+   "sub": "réservoir de bile",
+   "label_en": "Gallbladder",
+   "sub_en": "bile reservoir",
+   "lvl": "organe",
+   "desc": {
+    "fr": "Réservoir de la bile, la vésicule biliaire se vide par le canal cystique ; dans la scène 3D de la fig. 70, elle n'apparaît qu'en rapport.",
+    "en": "The gallbladder stores bile and empties through the cystic duct; in the 3D scene of fig. 70 it appears only as context."
+   }
+  },
+  {
+   "id": "pancreas",
+   "x": 100,
+   "y": 380,
+   "w": 170,
+   "label": "Pancréas",
+   "sub": "queue · corps · tête",
+   "label_en": "Pancreas",
+   "sub_en": "tail · body · head",
+   "lvl": "organe",
+   "desc": {
+    "fr": "Glande mixte traversée par ses canaux excréteurs : le canal principal naît dans la queue, traverse le corps et gagne la tête ; le canal accessoire draine une partie de la tête.",
+    "en": "A mixed gland traversed by its excretory ducts: the main duct arises in the tail, crosses the body and reaches the head; the accessory duct drains part of the head."
+   }
+  },
+  {
+   "id": "hepatique",
+   "x": 285,
+   "y": 90,
+   "w": 170,
+   "label": "Canal hépatique",
+   "sub": "commun",
+   "label_en": "Common hepatic duct",
+   "sub_en": "",
+   "lvl": "biliaire",
+   "desc": {
+    "fr": "Né au hile de la réunion des canaux hépatiques droit et gauche, il reçoit le canal cystique sur son bord droit et devient alors le canal cholédoque.",
+    "en": "Formed at the hilum by the junction of the right and left hepatic ducts, it receives the cystic duct on its right border and then becomes the bile duct."
+   }
+  },
+  {
+   "id": "cystique",
+   "x": 285,
+   "y": 220,
+   "w": 160,
+   "label": "Canal cystique",
+   "label_en": "Cystic duct",
+   "sub_en": "",
+   "lvl": "biliaire",
+   "desc": {
+    "fr": "Il draine la vésicule biliaire et s'abouche au canal hépatique commun : leur union forme le canal cholédoque.",
+    "en": "It drains the gallbladder and joins the common hepatic duct: their union forms the bile duct."
+   }
+  },
+  {
+   "id": "wirsung",
+   "x": 285,
+   "y": 380,
+   "w": 180,
+   "label": "Canal de Wirsung",
+   "sub": "pancréatique principal",
+   "label_en": "Wirsung duct",
+   "sub_en": "main pancreatic duct",
+   "lvl": "pancreatique",
+   "desc": {
+    "fr": "Canal pancréatique principal : il débute au niveau de la queue du pancréas, se dirige vers la tête et rejoint le canal cholédoque pour former l'ampoule hépato-pancréatique (ampoule de Vater).",
+    "en": "Main pancreatic duct: it begins in the tail of the pancreas, runs towards the head and joins the bile duct to form the hepatopancreatic ampulla (ampulla of Vater)."
+   }
+  },
+  {
+   "id": "santorini",
+   "x": 285,
+   "y": 500,
+   "w": 180,
+   "label": "Canal de Santorini",
+   "sub": "pancréatique accessoire",
+   "label_en": "Santorini duct",
+   "sub_en": "accessory pancreatic duct",
+   "lvl": "pancreatique",
+   "desc": {
+    "fr": "Canal pancréatique accessoire : il s'ouvre dans le deuxième duodénum (D2) par la petite caroncule, située à 2,5 cm au-dessus de la grande caroncule.",
+    "en": "Accessory pancreatic duct: it opens into the second part of the duodenum (D2) at the minor papilla, located 2.5 cm above the major papilla."
+   }
+  },
+  {
+   "id": "choledoque",
+   "x": 465,
+   "y": 155,
+   "w": 160,
+   "label": "Canal cholédoque",
+   "sub": "voie biliaire principale",
+   "label_en": "Bile duct",
+   "sub_en": "main biliary tract",
+   "lvl": "biliaire",
+   "desc": {
+    "fr": "Voie biliaire principale : il descend derrière le premier duodénum (D1), chemine à la face postérieure de la tête du pancréas et se termine avec le canal de Wirsung dans l'ampoule de Vater.",
+    "en": "Main bile duct: it descends behind the first part of the duodenum (D1), runs on the posterior surface of the head of the pancreas and ends with the Wirsung duct in the ampulla of Vater."
+   }
+  },
+  {
+   "id": "ampoule",
+   "x": 465,
+   "y": 330,
+   "w": 160,
+   "label": "Ampoule de Vater",
+   "sub": "hépato-pancréatique",
+   "label_en": "Ampulla of Vater",
+   "sub_en": "hepatopancreatic",
+   "lvl": "jonction",
+   "note": {
+    "fr": "schéma seul",
+    "en": "diagram only"
+   },
+   "desc": {
+    "fr": "Ampoule hépato-pancréatique : réunion du canal cholédoque et du canal de Wirsung, munie d'un sphincter (sphincter d'Oddi). Non modélisée en 3D — schéma seul.",
+    "en": "Hepatopancreatic ampulla: junction of the bile duct and the Wirsung duct, guarded by a sphincter (sphincter of Oddi). Not modelled in 3D — diagram only."
+   }
+  },
+  {
+   "id": "grande",
+   "x": 630,
+   "y": 330,
+   "w": 150,
+   "label": "Grande caroncule",
+   "sub": "papille majeure",
+   "label_en": "Major papilla",
+   "sub_en": "major duodenal papilla",
+   "lvl": "jonction",
+   "note": {
+    "fr": "schéma seul",
+    "en": "diagram only"
+   },
+   "desc": {
+    "fr": "Grande caroncule (papille duodénale majeure) : éminence de la paroi interne de D2 par laquelle l'ampoule de Vater s'ouvre dans le duodénum — repère important en chirurgie endoscopique. Non modélisée en 3D — schéma seul.",
+    "en": "Major duodenal papilla (greater caruncle): eminence of the inner wall of D2 through which the ampulla of Vater opens into the duodenum — an important landmark in endoscopic surgery. Not modelled in 3D — diagram only."
+   }
+  },
+  {
+   "id": "petite",
+   "x": 630,
+   "y": 460,
+   "w": 150,
+   "label": "Petite caroncule",
+   "sub": "papille mineure",
+   "label_en": "Minor papilla",
+   "sub_en": "minor duodenal papilla",
+   "lvl": "jonction",
+   "note": {
+    "fr": "schéma seul",
+    "en": "diagram only"
+   },
+   "desc": {
+    "fr": "Petite caroncule (papille duodénale mineure) : orifice du canal de Santorini dans D2, située à 2,5 cm au-dessus de la grande caroncule. Non modélisée en 3D — schéma seul.",
+    "en": "Minor duodenal papilla (lesser caruncle): opening of the Santorini duct into D2, located 2.5 cm above the major papilla. Not modelled in 3D — diagram only."
+   }
+  },
+  {
+   "id": "duodenum",
+   "x": 630,
+   "y": 575,
+   "w": 160,
+   "label": "Duodénum",
+   "sub": "deuxième portion (D2)",
+   "label_en": "Duodenum",
+   "sub_en": "second part (D2)",
+   "lvl": "duodenum",
+   "desc": {
+    "fr": "Deuxième duodénum (D2) : dans sa paroi interne s'abouchent le cholédoque et les canaux pancréatiques ; c'est dans D2 que bile et suc pancréatique sont déversés.",
+    "en": "Second part of the duodenum (D2): the bile duct and the pancreatic ducts open into its inner wall; bile and pancreatic juice are discharged into D2."
+   }
+  }
+ ],
+ "edges": [
+  [
+   "foie",
+   "hepatique"
+  ],
+  [
+   "vesicule",
+   "cystique"
+  ],
+  [
+   "hepatique",
+   "choledoque"
+  ],
+  [
+   "cystique",
+   "choledoque"
+  ],
+  [
+   "choledoque",
+   "ampoule"
+  ],
+  [
+   "pancreas",
+   "wirsung"
+  ],
+  [
+   "pancreas",
+   "santorini",
+   1
+  ],
+  [
+   "wirsung",
+   "ampoule"
+  ],
+  [
+   "santorini",
+   "petite"
+  ],
+  [
+   "ampoule",
+   "grande"
+  ],
+  [
+   "grande",
+   "duodenum"
+  ],
+  [
+   "petite",
+   "duodenum",
+   1
+  ]
+ ]
+}

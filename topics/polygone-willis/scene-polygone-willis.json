@@ -1,0 +1,188 @@
+{
+ "sujet": 4,
+ "partie": "I",
+ "titre_fr": "Vascularisation de l'encéphale (polygone de Willis)",
+ "titre_en": "Blood supply of the brain (circle of Willis)",
+ "figures": [
+  {
+   "numero": 8,
+   "titre_fr": "Polygone de Willis",
+   "titre_en": "Circle of Willis",
+   "classe": "3D",
+   "structures": [
+    {
+     "id": "anterior_cerebral_artery_right",
+     "role": "sujet",
+     "file": "models/arteres/anterior_cerebral_artery_right.glb",
+     "nom_fr": "Artère cérébrale antérieure",
+     "name_en": "Right anterior cerebral artery",
+     "name_la": "Arteria cerebri anterior",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "anterior_cerebral_artery_left",
+     "role": "sujet",
+     "file": "models/arteres/anterior_cerebral_artery_left.glb",
+     "nom_fr": "Artère cérébrale antérieure",
+     "name_en": "Left anterior cerebral artery",
+     "name_la": "Arteria cerebri anterior",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "anterior_communicating_artery",
+     "role": "sujet",
+     "file": "models/arteres/anterior_communicating_artery.glb",
+     "nom_fr": "Artère communiquante antérieure",
+     "name_en": "Anterior communicating artery",
+     "name_la": "Arteria communicans anterior",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "posterior_cerebral_artery_right",
+     "role": "sujet",
+     "file": "models/arteres/posterior_cerebral_artery_right.glb",
+     "nom_fr": "Artère cérébrale postérieure",
+     "name_en": "Right posterior cerebral artery",
+     "name_la": "Arteria cerebri posterior",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "posterior_cerebral_artery_left",
+     "role": "sujet",
+     "file": "models/arteres/posterior_cerebral_artery_left.glb",
+     "nom_fr": "Artère cérébrale postérieure",
+     "name_en": "Left posterior cerebral artery",
+     "name_la": "Arteria cerebri posterior",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "posterior_communicating_artery_right",
+     "role": "sujet",
+     "file": "models/arteres/posterior_communicating_artery_right.glb",
+     "nom_fr": "Artère communiquante postérieure",
+     "name_en": "Right posterior communicating artery",
+     "name_la": "Arteria communicans posterior",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "posterior_communicating_artery_left",
+     "role": "sujet",
+     "file": "models/arteres/posterior_communicating_artery_left.glb",
+     "nom_fr": "Artère communiquante postérieure",
+     "name_en": "Left posterior communicating artery",
+     "name_la": "Arteria communicans posterior",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "basilar_artery",
+     "role": "sujet",
+     "file": "models/arteres/basilar_artery.glb",
+     "nom_fr": "Artère basilaire",
+     "name_en": "Basilar artery",
+     "name_la": "Arteria basilaris",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "internal_carotid_artery_right",
+     "role": "sujet",
+     "file": "models/arteres/internal_carotid_artery_right.glb",
+     "nom_fr": "Artère carotide interne",
+     "name_en": "Right internal carotid artery",
+     "name_la": "Carotis interna",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "internal_carotid_artery_left",
+     "role": "sujet",
+     "file": "models/arteres/internal_carotid_artery_left.glb",
+     "nom_fr": "Artère carotide interne",
+     "name_en": "Left internal carotid artery",
+     "name_la": "Carotis interna",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "middle_cerebral_artery_m1_segment_right",
+     "role": "rapport",
+     "file": "models/arteres/middle_cerebral_artery_m1_segment_right.glb",
+     "nom_fr": "Artère cérébrale moyenne (Segment M1)",
+     "name_en": "Right middle cerebral artery (M1-segment)",
+     "name_la": "Arteria cerebri media (Pars M1)",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "middle_cerebral_artery_m1_segment_left",
+     "role": "rapport",
+     "file": "models/arteres/middle_cerebral_artery_m1_segment_left.glb",
+     "nom_fr": "Artère cérébrale moyenne (Segment M1)",
+     "name_en": "Left middle cerebral artery (M1-segment)",
+     "name_la": "Arteria cerebri media (Pars M1)",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "vertebral_artery_right",
+     "role": "rapport",
+     "file": "models/arteres/vertebral_artery_right.glb",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Right vertebral artery",
+     "name_la": "Arteria vertebralis",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "vertebral_artery_left",
+     "role": "rapport",
+     "file": "models/arteres/vertebral_artery_left.glb",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Left vertebral artery",
+     "name_la": "Arteria vertebralis",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    }
+   ],
+   "camera": {
+    "vue": "inferieure",
+    "target": [
+     -0.3,
+     1464.4,
+     85.2
+    ],
+    "direction": [
+     0.0,
+     -0.935,
+     0.355
+    ],
+    "up": [
+     0,
+     0,
+     1
+    ],
+    "distance": 356.9,
+    "fov": 45
+   },
+   "frame_ids": [
+    "anterior_cerebral_artery_right",
+    "anterior_cerebral_artery_left",
+    "anterior_communicating_artery",
+    "posterior_cerebral_artery_right",
+    "posterior_cerebral_artery_left",
+    "posterior_communicating_artery_right",
+    "posterior_communicating_artery_left",
+    "basilar_artery"
+   ],
+   "diagram": null,
+   "manquants": []
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batch F — Thorax (Figs 48–58) · Harness de prévisualisation (staging)</title>
+<style>
+  body { margin:0; background:#14161a; color:#e8e4da; font-family:system-ui, sans-serif; overflow:hidden; }
+  #bar { position:fixed; top:0; left:0; right:0; padding:8px 12px; background:rgba(20,22,26,.88);
+         display:flex; gap:6px; align-items:center; z-index:10; flex-wrap:wrap; }
+  #bar b { font-size:14px; margin-right:4px; }
+  button { background:#2a2e36; color:#e8e4da; border:1px solid #4a4f59; border-radius:6px;
+           padding:6px 11px; font-size:13px; cursor:pointer; }
+  button.on { background:#5b4a8a; border-color:#a58fd6; }
+  button.fig.on { background:#7a4a2e; border-color:#d69f5f; }
+  #stat { font-size:12px; opacity:.75; }
+  #scene { position:fixed; inset:0; }
+  #err { position:fixed; bottom:8px; right:8px; color:#ff8080; font-size:12px; white-space:pre-wrap; z-index:30; max-width:60vw; }
+
+  /* ===== cartes « Espaces » (coin bas-gauche) — règle utilisateur 2026-10-23 ===== */
+  #spaces { position:fixed; left:10px; bottom:10px; z-index:15; width:250px;
+            pointer-events:none; display:none; flex-direction:column; gap:6px; }
+  #spaces .sp-head { background:rgba(20,22,26,.82); border:1px solid #3a3f49;
+            border-radius:8px; padding:7px 10px; }
+  #spaces .sp-head b { font-size:13px; display:block; }
+  #spaces .sp-head span { font-size:11px; opacity:.7; }
+  .sp-card { pointer-events:auto; display:flex; align-items:center; gap:9px; text-align:left;
+            background:rgba(26,29,35,.88); border:1px solid #3a3f49; border-radius:8px;
+            padding:8px 10px; width:100%; color:#e8e4da; cursor:pointer; }
+  .sp-card .dot { flex:0 0 auto; width:14px; height:14px; border-radius:50%;
+            border:2px solid rgba(255,255,255,.35); }
+  .sp-card .nm { flex:1 1 auto; font-size:12.5px; line-height:1.25; }
+  .sp-card .nm small { display:block; font-size:10px; opacity:.6; }
+  .sp-card .st { flex:0 0 auto; font-size:11px; opacity:.55; }
+  .sp-card.on { border-color:#e8e4da; background:rgba(42,46,56,.95);
+            box-shadow:0 0 0 1px rgba(255,255,255,.25), 0 2px 10px rgba(0,0,0,.5); }
+  .sp-card.on .st { opacity:1; }
+
+  /* ===== fiche structure (bas-droite) ===== */
+  #fiche { position:fixed; right:10px; bottom:10px; z-index:15; width:290px; display:none;
+           background:rgba(26,29,35,.92); border:1px solid #3a3f49; border-radius:10px; padding:12px 14px; }
+  #fiche h2 { font-size:15px; margin:0 0 2px; }
+  #fiche .en { font-size:12px; opacity:.6; font-style:italic; margin:0 0 6px; }
+  #fiche .meta { font-size:12px; opacity:.85; margin:0; line-height:1.5; }
+  #fiche .note { font-size:11.5px; margin-top:8px; background:#2a2118; border:1px solid #8a6d2f;
+                 border-radius:8px; padding:7px 9px; color:#f2cf8a; }
+  #diag-link { position:fixed; right:10px; top:110px; z-index:14; display:none;
+               background:#7a4a2e; border-color:#d69f5f; }
+  @media (max-width:640px) {
+    #spaces { width:190px; bottom:8px; left:8px; }
+    #fiche { width:auto; left:8px; right:8px; bottom:8px; }
+    #spaces { bottom: auto; top: 118px; }
+  }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "../../assets/three/three.module.js",
+  "three/addons/": "../../assets/three/addons/"
+} }
+</script>
+</head>
+<body>
+<div id="bar">
+  <b>Batch F · Thorax</b>
+  <span id="topics"></span>
+  <span id="figs"></span>
+  <span id="stat">chargement…</span>
+</div>
+<button id="diag-link">📐 Schéma interactif de la figure</button>
+<div id="scene"></div>
+
+<div id="spaces">
+  <div class="sp-head"><b>Espaces</b>
+    <span>Touchez une carte : l'espace se crée, coloré, dans le modèle (volume schématique).</span></div>
+  <div id="sp-cards"></div>
+</div>
+
+<div id="fiche"></div>
+<div id="err"></div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const errors = [];
+window.__errors = errors;
+window.addEventListener('error', e => { errors.push(String(e.message || e.error)); showErr(); });
+function showErr(){ document.getElementById('err').textContent = errors.join('\n'); }
+
+const DIAG_FILES = { sein_arteriel: 'sein-arteriel.html', sein_veineux: 'sein-veineux.html',
+  sein_lymph: 'sein-lymphatique.html', circulation_coeur: 'circulation-coeur.html',
+  diaphragme_lymph_nerfs: 'diaphragme-lymph-nerfs.html' };
+const TOPICS = ['sein', 'coeur', 'poumons', 'diaphragme'];
+
+const container = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+container.appendChild(renderer.domElement);
+const scene3d = new THREE.Scene();
+scene3d.background = new THREE.Color(0x14161a);
+const camera = new THREE.PerspectiveCamera(40, innerWidth / innerHeight, 1, 20000);
+const controls = new OrbitControls(camera, renderer.domElement);
+scene3d.add(new THREE.HemisphereLight(0xdfe8ff, 0x33261a, 1.05));
+const d1 = new THREE.DirectionalLight(0xffffff, 1.6); d1.position.set(300, 500, 700); scene3d.add(d1);
+const d2 = new THREE.DirectionalLight(0xbfd0ff, 0.55); d2.position.set(-500, 200, -400); scene3d.add(d2);
+
+const loader = new GLTFLoader();
+const meshCache = new Map();   // id -> {group, entry}
+const spaceCache = new Map();  // espace id -> {mesh, entry}
+let scenesData = {};           // slug -> scene json
+let curTopic = null, curFig = null;
+let loadedCount = 0;
+window.__loadedCount = 0;
+
+function loadGLB(url) {
+  return new Promise((res, rej) => loader.load(url, g => res(g.scene), undefined, e => rej(e)));
+}
+
+async function getStructMesh(entry) {
+  if (meshCache.has(entry.id)) return meshCache.get(entry.id);
+  const g = await loadGLB('../../' + entry.fichier);
+  const mat = new THREE.MeshStandardMaterial({
+    color: new THREE.Color(entry.couleur || '#cccccc'),
+    roughness: 0.62, metalness: 0.05,
+    transparent: entry.role !== 'sujet',
+    opacity: entry.role === 'sujet' ? 1 : 0.35,
+    depthWrite: entry.role === 'sujet',
+  });
+  g.traverse(o => { if (o.isMesh) { o.material = mat; o.userData.sid = entry.id; } });
+  g.visible = false;
+  scene3d.add(g);
+  const rec = { group: g, entry, mat };
+  meshCache.set(entry.id, rec);
+  loadedCount++; window.__loadedCount = loadedCount;
+  return rec;
+}
+
+async function getSpaceMesh(esp) {
+  if (spaceCache.has(esp.id)) return spaceCache.get(esp.id);
+  const g = await loadGLB('./' + esp.fichier);
+  const mat = new THREE.MeshStandardMaterial({
+    color: new THREE.Color(esp.couleur), roughness: 0.35, metalness: 0.0,
+    transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false,
+  });
+  g.traverse(o => { if (o.isMesh) o.material = mat; });
+  g.visible = false;
+  scene3d.add(g);
+  const rec = { group: g, mat, on: false, target: 0 };
+  spaceCache.set(esp.id, rec);
+  return rec;
+}
+
+function frameCamera(fig) {
+  const box = new THREE.Box3();
+  fig.structures.forEach(s => {
+    if (!s.centre || !s.taille) return;
+    const c = new THREE.Vector3(...s.centre), t = new THREE.Vector3(...s.taille);
+    box.union(new THREE.Box3(c.clone().sub(t.clone().multiplyScalar(0.5)),
+                             c.clone().add(t.clone().multiplyScalar(0.5))));
+  });
+  if (box.isEmpty()) return;
+  const center = box.getCenter(new THREE.Vector3());
+  const size = box.getSize(new THREE.Vector3()).length();
+  const dist = size * 1.15 / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
+  const vue = (fig.camera && fig.camera.vue) || 'anterieure';
+  let dir = new THREE.Vector3(0, 0, 1), up = new THREE.Vector3(0, 1, 0);
+  if (vue === 'superieure') { dir = new THREE.Vector3(0, 1, 0.12).normalize(); up = new THREE.Vector3(0, 0, -1); }
+  if (vue === 'inferieure') { dir = new THREE.Vector3(0, -1, 0.12).normalize(); up = new THREE.Vector3(0, 0, -1); }
+  if (vue === 'laterale') dir = new THREE.Vector3(1, 0, 0.15).normalize();
+  camera.up.copy(up);
+  camera.position.copy(center).add(dir.multiplyScalar(dist));
+  controls.target.copy(center);
+  camera.near = Math.max(1, dist / 100); camera.far = dist * 20;
+  camera.updateProjectionMatrix();
+  controls.update();
+}
+
+function buildSpaceCards(fig) {
+  const wrap = document.getElementById('spaces');
+  const cards = document.getElementById('sp-cards');
+  cards.innerHTML = '';
+  if (!fig.espaces || !fig.espaces.length) { wrap.style.display = 'none'; return; }
+  wrap.style.display = 'flex';
+  fig.espaces.forEach(esp => {
+    const b = document.createElement('button');
+    b.className = 'sp-card'; b.id = 'sp-' + esp.id;
+    b.innerHTML = `<span class="dot" style="background:${esp.couleur}"></span>` +
+      `<span class="nm">${esp.nom_fr}<small>volume schématique — touchez pour créer</small></span>` +
+      `<span class="st">○</span>`;
+    b.addEventListener('click', () => window.__setSpace(esp.id, !(spaceCache.get(esp.id) || {}).on));
+    cards.appendChild(b);
+  });
+}
+
+window.__setSpace = async (id, on, instant) => {
+  const fig = curFig; if (!fig) return;
+  const esp = (fig.espaces || []).find(e => e.id === id); if (!esp) return;
+  const rec = await getSpaceMesh(esp);
+  rec.on = !!on; rec.target = on ? 0.55 : 0;
+  rec.group.visible = true;
+  if (instant) { rec.mat.opacity = rec.target; rec.group.visible = !!on; }
+  const card = document.getElementById('sp-' + id);
+  if (card) { card.classList.toggle('on', !!on); card.querySelector('.st').textContent = on ? '●' : '○'; }
+};
+
+async function setFigure(topicSlug, num) {
+  const sc = scenesData[topicSlug]; if (!sc) return;
+  const fig = sc.figures.find(f => f.numero === num); if (!fig) return;
+  curTopic = topicSlug; curFig = fig;
+  document.querySelectorAll('#figs button').forEach(b =>
+    b.classList.toggle('on', +b.dataset.num === num));
+  document.querySelectorAll('#topics button').forEach(b =>
+    b.classList.toggle('on', b.dataset.slug === topicSlug));
+  // masquer tout, puis charger/afficher la figure
+  meshCache.forEach(r => r.group.visible = false);
+  spaceCache.forEach(r => { r.on = false; r.target = 0; r.mat.opacity = 0; r.group.visible = false; });
+  document.getElementById('fiche').style.display = 'none';
+  const stat = document.getElementById('stat');
+  stat.textContent = `Fig ${num} — chargement…`;
+  await Promise.all(fig.structures.map(s => getStructMesh(s)));
+  fig.structures.forEach(s => { const r = meshCache.get(s.id); if (r) r.group.visible = true; });
+  buildSpaceCards(fig);
+  const dl = document.getElementById('diag-link');
+  if (fig.diagramme) {
+    dl.style.display = 'block';
+    dl.onclick = () => location.href = './diagrams/' + DIAG_FILES[fig.diagramme];
+  } else dl.style.display = 'none';
+  frameCamera(fig);
+  stat.textContent = `${sc.titre_fr} · Fig ${num} — ${fig.titre_fr} · ${fig.structures.length} structures · ${fig.classe}`;
+  window.__current = { topic: topicSlug, fig: num };
+  window.__ready = true;
+}
+
+window.__setFigure = setFigure;
+
+// ---- sélection d'une structure (fiche)
+const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();
+let downAt = 0;
+renderer.domElement.addEventListener('pointerdown', () => downAt = Date.now());
+renderer.domElement.addEventListener('pointerup', ev => {
+  if (Date.now() - downAt > 350) return;
+  ptr.x = (ev.clientX / innerWidth) * 2 - 1; ptr.y = -(ev.clientY / innerHeight) * 2 + 1;
+  ray.setFromCamera(ptr, camera);
+  const hits = ray.intersectObjects([...meshCache.values()].filter(r => r.group.visible).map(r => r.group), true);
+  const fiche = document.getElementById('fiche');
+  if (!hits.length) { fiche.style.display = 'none'; return; }
+  let o = hits[0].object; while (o && !o.userData.sid) o = o.parent;
+  if (!o) return;
+  const s = curFig.structures.find(x => x.id === o.userData.sid); if (!s) return;
+  fiche.innerHTML = `<h2>${s.nom_fr}</h2><p class="en">${s.name_en || ''}</p>` +
+    `<p class="meta">Rôle dans la figure : <b>${s.role}</b><br>Système : ${s.systeme || ''}</p>`;
+  fiche.style.display = 'block';
+});
+
+// ---- boucle de rendu (fondu des espaces)
+renderer.setAnimationLoop(() => {
+  spaceCache.forEach(r => {
+    if (!r.group.visible) return;
+    const d = r.target - r.mat.opacity;
+    if (Math.abs(d) > 0.01) r.mat.opacity += d * 0.18;
+    else { r.mat.opacity = r.target; if (!r.on) r.group.visible = false; }
+  });
+  controls.update();
+  renderer.render(scene3d, camera);
+});
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+
+// ---- barre de navigation + démarrage
+(async () => {
+  const tWrap = document.getElementById('topics');
+  TOPICS.forEach(slug => {
+    const b = document.createElement('button');
+    b.dataset.slug = slug; b.textContent = slug[0].toUpperCase() + slug.slice(1);
+    b.addEventListener('click', async () => {
+      const sc = scenesData[slug];
+      buildFigButtons(slug);
+      await setFigure(slug, sc.figures[0].numero);
+    });
+    tWrap.appendChild(b);
+  });
+  function buildFigButtons(slug) {
+    const fWrap = document.getElementById('figs'); fWrap.innerHTML = '';
+    scenesData[slug].figures.forEach(f => {
+      const b = document.createElement('button');
+      b.className = 'fig'; b.dataset.num = f.numero; b.textContent = 'Fig ' + f.numero;
+      b.addEventListener('click', () => setFigure(slug, f.numero));
+      fWrap.appendChild(b);
+    });
+  }
+  window.__buildFigButtons = buildFigButtons;
+  try {
+    for (const slug of TOPICS)
+      scenesData[slug] = await (await fetch('./scene-' + slug + '.json')).json();
+    const q = new URLSearchParams(location.search);
+    const t0 = q.get('topic') || 'diaphragme';
+    buildFigButtons(t0);
+    await setFigure(t0, +(q.get('fig') || scenesData[t0].figures[0].numero));
+    if (q.get('espaces'))
+      for (const id of q.get('espaces').split(',')) await window.__setSpace(id, true, true);
+  } catch (e) { errors.push('init: ' + e.message); showErr(); }
+})();
+</script>
+</body>
+</html>

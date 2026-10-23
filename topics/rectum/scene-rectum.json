@@ -1,0 +1,410 @@
+{
+ "sujet": "rectum",
+ "titre_fr": "Le rectum",
+ "partie": "V",
+ "numero_sujet": 32,
+ "classe": "3D+D",
+ "figures": [
+  92,
+  93,
+  94
+ ],
+ "structures": [
+  {
+   "id": "tendinous_arch_of_levator_ani_right",
+   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "tendinous_arch_of_levator_ani_left",
+   "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "superior_anorectal_artery",
+   "nom_fr": "Artère anorectale supérieure",
+   "role": "sujet",
+   "figures": [
+    94
+   ]
+  },
+  {
+   "id": "internal_iliac_artery_right",
+   "nom_fr": "Artère iliaque interne",
+   "role": "sujet",
+   "figures": [
+    94
+   ]
+  },
+  {
+   "id": "internal_iliac_artery_left",
+   "nom_fr": "Artère iliaque interne",
+   "role": "sujet",
+   "figures": [
+    94
+   ]
+  },
+  {
+   "id": "inferior_mesenteric_artery",
+   "nom_fr": "Artère mésentérique inférieure",
+   "role": "sujet",
+   "figures": [
+    94
+   ]
+  },
+  {
+   "id": "internal_pudendal_artery_right",
+   "nom_fr": "Artère pudendale interne",
+   "role": "sujet",
+   "figures": [
+    94
+   ]
+  },
+  {
+   "id": "internal_pudendal_artery_left",
+   "nom_fr": "Artère pudendale interne",
+   "role": "sujet",
+   "figures": [
+    94
+   ]
+  },
+  {
+   "id": "sigmoid_colon",
+   "nom_fr": "Côlon sigmoïde",
+   "role": "sujet",
+   "figures": [
+    92,
+    93,
+    94
+   ]
+  },
+  {
+   "id": "seminal_gland_right",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "prostate",
+   "nom_fr": "Prostate",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "rectum",
+   "nom_fr": "Rectum",
+   "role": "sujet",
+   "figures": [
+    92,
+    93,
+    94
+   ]
+  },
+  {
+   "id": "sacrum",
+   "nom_fr": "Sacrum",
+   "role": "sujet",
+   "figures": [
+    93,
+    94
+   ]
+  },
+  {
+   "id": "urinary_bladder",
+   "nom_fr": "Vessie urinaire",
+   "role": "sujet",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "contexte",
+   "figures": [
+    93
+   ]
+  },
+  {
+   "id": "hip_bone_left",
+   "nom_fr": "Os coxal",
+   "role": "contexte",
+   "figures": [
+    93
+   ]
+  }
+ ],
+ "camera": {
+  "vue": "posterieure",
+  "position": [
+   -0.4,
+   854.8,
+   -235.0
+  ],
+  "target": [
+   -0.4,
+   823.8,
+   75.0
+  ]
+ },
+ "par_figure": {
+  "92": {
+   "titre_fr": "Configuration extérieure et intérieure du rectum",
+   "classe": "3D+D",
+   "vue": "posterieure",
+   "camera": {
+    "vue": "posterieure",
+    "position": [
+     -0.4,
+     854.8,
+     -235.0
+    ],
+    "target": [
+     -0.4,
+     823.8,
+     75.0
+    ]
+   },
+   "structures": [
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "sujet"
+    },
+    {
+     "id": "sigmoid_colon",
+     "nom_fr": "Côlon sigmoïde",
+     "role": "sujet"
+    },
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "contexte"
+    },
+    {
+     "id": "sacrum",
+     "nom_fr": "Sacrum",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Valvules de Houston, ampoule rectale, colonnes et sinus de Morgagni : NON modélisés — le rectum est un maillage unique, son intérieur est un schéma en regard"
+   ],
+   "diagramme": {
+    "fichier": "diagramme-rectum.svg",
+    "titre_fr": "Schéma — configuration intérieure du rectum et du canal anal",
+    "note": "Le rectum 3D est un maillage unique : valvules de Houston, colonnes et sinus de Morgagni ne sont pas modélisés. Ce schéma interactif montre l'intérieur en regard."
+   }
+  },
+  "93": {
+   "titre_fr": "Rapports du rectum (homme et femme)",
+   "classe": "3D",
+   "vue": "laterale",
+   "camera": {
+    "vue": "laterale",
+    "position": [
+     -454.5,
+     881.8,
+     164.0
+    ],
+    "target": [
+     -0.3,
+     836.4,
+     82.2
+    ]
+   },
+   "structures": [
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "sujet"
+    },
+    {
+     "id": "sacrum",
+     "nom_fr": "Sacrum",
+     "role": "sujet"
+    },
+    {
+     "id": "prostate",
+     "nom_fr": "Prostate",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_right",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_left",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "sujet"
+    },
+    {
+     "id": "tendinous_arch_of_levator_ani_right",
+     "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+     "role": "sujet"
+    },
+    {
+     "id": "tendinous_arch_of_levator_ani_left",
+     "nom_fr": "Arcade tendineuse de l'élévateur de l'anus",
+     "role": "sujet"
+    },
+    {
+     "id": "hip_bone_right",
+     "nom_fr": "Os coxal",
+     "role": "contexte"
+    },
+    {
+     "id": "hip_bone_left",
+     "nom_fr": "Os coxal",
+     "role": "contexte"
+    },
+    {
+     "id": "sigmoid_colon",
+     "nom_fr": "Côlon sigmoïde",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Côté FEMME : utérus/vagin ABSENTS (rapports antérieurs féminins impossibles)",
+    "Muscle élévateur de l'anus : seul son arcade tendineuse existe — le muscle lui-même est ABSENT ; fascia recto-prostatique (Denonvilliers) : ABSENT"
+   ],
+   "espace": "Fascia recto-prostatique (de Denonvilliers)"
+  },
+  "94": {
+   "titre_fr": "Vascularisation artérielle du rectum",
+   "classe": "3D",
+   "vue": "posterieure",
+   "camera": {
+    "vue": "posterieure",
+    "position": [
+     -0.4,
+     909.5,
+     -377.8
+    ],
+    "target": [
+     -0.4,
+     864.3,
+     73.4
+    ]
+   },
+   "structures": [
+    {
+     "id": "superior_anorectal_artery",
+     "nom_fr": "Artère anorectale supérieure",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_mesenteric_artery",
+     "nom_fr": "Artère mésentérique inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "internal_iliac_artery_right",
+     "nom_fr": "Artère iliaque interne",
+     "role": "sujet"
+    },
+    {
+     "id": "internal_iliac_artery_left",
+     "nom_fr": "Artère iliaque interne",
+     "role": "sujet"
+    },
+    {
+     "id": "internal_pudendal_artery_right",
+     "nom_fr": "Artère pudendale interne",
+     "role": "sujet"
+    },
+    {
+     "id": "internal_pudendal_artery_left",
+     "nom_fr": "Artère pudendale interne",
+     "role": "sujet"
+    },
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "sujet"
+    },
+    {
+     "id": "sigmoid_colon",
+     "nom_fr": "Côlon sigmoïde",
+     "role": "contexte"
+    },
+    {
+     "id": "sacrum",
+     "nom_fr": "Sacrum",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Artère rectale MOYENNE (issue de l'iliaque interne) : ABSENTE du manifeste",
+    "Artère rectale INFÉRIEURE (issue de la pudendale interne) : ABSENTE — 2 des 3 sources artérielles de la figure n'ont pas de maillage ; seule l'anorectale supérieure existe nommément"
+   ]
+  }
+ },
+ "diagrammes": [
+  {
+   "fichier": "diagramme-rectum.svg",
+   "titre_fr": "Schéma — configuration intérieure du rectum et du canal anal",
+   "note": "Le rectum 3D est un maillage unique : valvules de Houston, colonnes et sinus de Morgagni ne sont pas modélisés. Ce schéma interactif montre l'intérieur en regard.",
+   "figure": 92
+  }
+ ],
+ "espaces": [
+  {
+   "nom_fr": "Fascia recto-prostatique (de Denonvilliers)",
+   "type": "fascia",
+   "bornes": [
+    "prostate",
+    "rectum"
+   ],
+   "couleur": "#f4978e",
+   "opacite": 0.5,
+   "volume": {
+    "forme": "lame",
+    "centre": [
+     2.1,
+     751.9,
+     71.9
+    ],
+    "rayons": [
+     17,
+     13,
+     3.2
+    ]
+   },
+   "note": "Lame fibreuse sans maillage : volume schématique (lame verticale) tendu entre la face postérieure de la prostate et la face antérieure du rectum.",
+   "figure": 93
+  }
+ ],
+ "manquants": [
+  "Valvules de Houston, ampoule rectale, colonnes et sinus de Morgagni : NON modélisés — le rectum est un maillage unique, son intérieur est un schéma en regard",
+  "Côté FEMME : utérus/vagin ABSENTS (rapports antérieurs féminins impossibles)",
+  "Muscle élévateur de l'anus : seul son arcade tendineuse existe — le muscle lui-même est ABSENT ; fascia recto-prostatique (Denonvilliers) : ABSENT",
+  "Artère rectale MOYENNE (issue de l'iliaque interne) : ABSENTE du manifeste",
+  "Artère rectale INFÉRIEURE (issue de la pudendale interne) : ABSENTE — 2 des 3 sources artérielles de la figure n'ont pas de maillage ; seule l'anorectale supérieure existe nommément"
+ ],
+ "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
+}

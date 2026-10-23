@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figure 5 — Voies de la motricité volontaire (voie pyramidale) · Schéma interactif</title>
+<style>
+:root{--sans:-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 800px at 60% 20%,#0b1526,#060b14);color:#e8eef7;font-family:var(--sans);padding:14px 12px 26px}
+header{max-width:680px;margin:0 auto 6px}
+.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#f0a13c;font-weight:700}
+h1{font-size:19px;line-height:1.3;margin:3px 0 2px}
+.sub{font-size:12.5px;color:#9db1cc}
+.hint{max-width:680px;margin:8px auto;font-size:12.5px;color:#9db1cc}
+#wrap{max-width:680px;margin:0 auto}
+#schemasvg{display:block;width:100%;height:auto}
+.pnode{cursor:pointer}
+.pnode rect{stroke-width:1.5;transition:opacity .2s}
+.pnode text{fill:#e8eef7;font-size:11px;text-anchor:middle;pointer-events:none;font-family:var(--sans)}
+.pnode.dim,.pedge.dim{opacity:.1}
+.pnode.lit rect{stroke:#fff;stroke-width:2.5}
+.pnode.lit circle{stroke:#fff;stroke-width:2.5}
+.pedge{fill:none;stroke:#5b7ba6;stroke-width:1.6}
+.pedge.dash{stroke-dasharray:5 4}
+.pedge.lit{stroke:#f0b429;stroke-width:3}
+#schemacap{margin:10px auto;padding:10px 12px;max-width:680px;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:10px;font-size:13.5px;line-height:1.5;min-height:58px}
+#schemalegend{display:flex;flex-wrap:wrap;gap:6px 12px;max-width:680px;margin:0 auto;font-size:11px;color:#9db1cc}
+#schemalegend .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.fiche{max-width:680px;margin:16px auto 0;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+.fiche h2{font-size:14px;margin-bottom:8px;color:#f0a13c}
+.fiche dl div{margin-bottom:8px}
+.fiche dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9db1cc;font-weight:700}
+.fiche dd{font-size:13.5px;line-height:1.55;margin-top:2px}
+.note{max-width:680px;margin:12px auto 0;font-size:11.5px;color:#7e93b5;line-height:1.5}
+</style></head><body>
+<header><div class="kicker">Atlas 3D · Sujets du cours · Schéma interactif</div>
+<h1>Figure 5 — Voies de la motricité volontaire (voie pyramidale)</h1>
+<div class="sub">[3D+D] : scène 3D de contexte + schéma interactif — schéma de la voie (le trajet n'existe pas comme maillage 3D continu : voir la scène 3D associée pour les structures qui existent)</div></header>
+<p class="hint">Touchez un nœud : tout son trajet (en amont et en aval) s'illumine et sa fiche s'affiche. Touchez le fond pour tout réafficher.</p>
+<div id="wrap"><svg id="schemasvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="schemacap"></div>
+<div id="schemalegend"></div>
+<section class="fiche"><h2>Fiche de la voie</h2><dl>
+<div><dt>Origine</dt><dd>Cellules pyramidales des aires motrices (neurone central, N1) : faisceau géniculé (cortico-nucléaire) du 1/3 inférieur de la frontale ascendante (somatotopie de la face) ; faisceau cortico-spinal des 2/3 supérieurs (homonculus de Penfield).</dd></div>
+<div><dt>Relais</dt><dd>Aucun relais synaptique : voie monosynaptique à 2 neurones. Trajet : capsule interne (genou pour le géniculé, bras postérieur pour le cortico-spinal), pied du mésencéphale en avant du locus niger, protubérance (dissociation en fascicules par les noyaux du pont), pyramide bulbaire.</dd></div>
+<div><dt>Décussation</dt><dd>Faisceau géniculé : croisement au fur et à mesure dans le tronc cérébral (contingent homolatéral pour les noyaux du III et du VII). Cortico-spinal : décussation des pyramides à l'extrémité inférieure du bulbe — 90 % des fibres forment le faisceau cortico-spinal croisé (cordon latéral controlatéral, musculature distale des membres), 10 % forment le faisceau cortico-spinal direct (musculature axiale et proximale).</dd></div>
+<div><dt>Terminaison</dt><dd>Motoneurones α de la corne antérieure de la moelle (N2, racines antérieures des nerfs rachidiens) et noyaux moteurs des nerfs crâniens : III, IV, noyau masticateur (Vm), VI, VII, noyau ambigu (IX, X, XI) et XII.</dd></div>
+<div><dt>Clinique</dt><dd>L'atteinte du faisceau pyramidal donne une hémiplégie ou une hémiparésie associée à un syndrome pyramidal ; l'atteinte du faisceau géniculé destiné au noyau du VII donne une paralysie faciale centrale, celle du noyau ou en aval une paralysie faciale périphérique (conclusion du cours, Q2).</dd></div>
+</dl></section>
+<p class="note">Source du schéma : texte du programme FMPR (partie I) — aucun relais inventé. Limites 3D vérifiées à l'audit : Capsule interne : ABSENTE du manifeste (recherche 'internal_capsule' = 0) — le segment clé cortex → tronc cérébral n'a pas de maillage Couronne rayonnante et décussation pyramidale : non modélisées Seuls les faisceaux corticospinaux intra-médullaires + cortex moteur + tronc existent → schéma du trajet complet requis</p>
+<script>
+const D = {"titre_fr": "Voie pyramidale (motricité volontaire)", "titre_en": "Pyramidal tract (voluntary motor pathway)", "w": 720, "h": 1080, "levels": {"cortex": {"c": "#c62828", "fr": "Terminaison corticale", "en": "Cortical termination"}, "faisc": {"c": "#1565c0", "fr": "Faisceau / trajet", "en": "Tract / course"}, "decuss": {"c": "#ef6c00", "fr": "Décussation", "en": "Decussation"}, "term": {"c": "#2e7d32", "fr": "Terminaison", "en": "Termination"}, "noyau": {"c": "#3949ab", "fr": "Noyau d'origine", "en": "Nucleus of origin"}}, "nodes": [{"id": "cortex_moteur", "x": 360, "y": 85, "w": 400, "label": "Cortex moteur — frontale ascendante", "sub": "cellules pyramidales, homonculus de Penfield", "label_en": "Motor cortex — ascending frontal gyrus", "sub_en": "pyramidal cells, Penfield's homunculus", "lvl": "cortex", "desc": {"fr": "Neurone central (N1) : cellules pyramidales des aires motrices de la circonvolution frontale ascendante. Le faisceau géniculé naît du tiers inférieur (somatotopie de la face), le faisceau cortico-spinal des deux tiers supérieurs.", "en": "Central neuron (N1): pyramidal cells of the motor areas of the ascending frontal gyrus. The geniculate tract arises from the lower third (facial somatotopy), the corticospinal tract from the upper two thirds."}}, {"id": "capsule_genou", "x": 180, "y": 250, "w": 280, "label": "Capsule interne — genou", "sub": "faisceau géniculé, en avant du pyramidal", "label_en": "Internal capsule — genu", "sub_en": "geniculate tract, in front of the pyramidal tract", "lvl": "faisc", "desc": {"fr": "Le faisceau géniculé (cortico-nucléaire) passe dans le genou de la capsule interne, en avant du faisceau pyramidal.", "en": "The geniculate (corticonuclear) tract passes through the genu of the internal capsule, in front of the pyramidal tract."}}, {"id": "capsule_bras", "x": 540, "y": 250, "w": 280, "label": "Capsule interne — bras postérieur", "sub": "faisceau cortico-spinal", "label_en": "Internal capsule — posterior limb", "sub_en": "corticospinal tract", "lvl": "faisc", "desc": {"fr": "Le faisceau cortico-spinal passe dans le bras postérieur de la capsule interne, en avant des radiations optiques, entre thalamus et noyau caudé en dedans et noyau lenticulaire en dehors.", "en": "The corticospinal tract passes through the posterior limb of the internal capsule, in front of the optic radiations, between the thalamus and caudate nucleus medially and the lentiform nucleus laterally."}}, {"id": "pied_gen", "x": 180, "y": 410, "w": 280, "label": "Pied du mésencéphale puis tronc", "sub": "géniculé : devant le locus niger, en dedans", "label_en": "Cerebral peduncle, then brainstem", "sub_en": "geniculate tract: in front of the substantia nigra, medially", "lvl": "faisc", "desc": {"fr": "Le faisceau géniculé s'engage dans le pied du mésencéphale juste devant le locus niger et en dedans du faisceau pyramidal, puis traverse la protubérance et le bulbe de part et d'autre de la ligne médiane jusqu'à la partie inférieure du bulbe.", "en": "The geniculate tract enters the cerebral peduncle just in front of the substantia nigra and medial to the pyramidal tract, then crosses the pons and medulla on either side of the midline down to the lower medulla."}}, {"id": "trajet_cs", "x": 540, "y": 410, "w": 280, "label": "Pédoncule, protubérance, pyramide bulbaire", "sub": "cortico-spinal : en dehors du géniculé", "label_en": "Peduncle, pons, medullary pyramid", "sub_en": "corticospinal tract: lateral to the geniculate tract", "lvl": "faisc", "desc": {"fr": "Le cortico-spinal descend dans le pied du mésencéphale en dehors du géniculé, se dissocie en fascicules entre les noyaux du pont au niveau protubérantiel, puis ses fibres se regroupent pour former la pyramide bulbaire.", "en": "The corticospinal tract descends in the cerebral peduncle lateral to the geniculate tract, splits into fascicles among the pontine nuclei in the pons, then its fibres regroup to form the medullary pyramid."}}, {"id": "noyaux_craniens", "x": 180, "y": 590, "w": 290, "label": "Noyaux moteurs des nerfs crâniens", "sub": "III, IV — Vm, VI, VII — ambigu (IX, X, XI), XII", "label_en": "Motor nuclei of the cranial nerves", "sub_en": "III, IV — Vm, VI, VII — ambiguus (IX, X, XI), XII", "lvl": "noyau", "desc": {"fr": "En traversant le tronc, les axones du géniculé croisent la ligne médiane pour se terminer sur les noyaux moteurs : III et IV au mésencéphale ; noyau masticateur (Vm), VI et VII à la protubérance ; noyau ambigu (IX, X, XI) et XII au bulbe. Un contingent homolatéral persiste pour les noyaux de l'oculomoteur et du facial.", "en": "While crossing the brainstem, geniculate axons cross the midline to end on the motor nuclei: III and IV in the midbrain; the masticatory nucleus (Vm), VI and VII in the pons; the nucleus ambiguus (IX, X, XI) and XII in the medulla. An ipsilateral contingent persists for the oculomotor and facial nuclei."}}, {"id": "decussation_pyr", "x": 540, "y": 590, "r": 52, "label": "Décussation des pyramides", "sub": "extrémité inférieure du bulbe", "label_en": "Pyramidal decussation", "sub_en": "lower end of the medulla", "lvl": "decuss", "desc": {"fr": "À l'extrémité inférieure du bulbe, le faisceau cortico-spinal se divise en deux contingents selon qu'il croise ou non la ligne médiane.", "en": "At the lower end of the medulla, the corticospinal tract splits into two contingents depending on whether it crosses the midline."}}, {"id": "nerfs_craniens", "x": 180, "y": 770, "w": 280, "label": "Fibres motrices des nerfs crâniens", "sub": "axones du 2e neurone (N2)", "label_en": "Motor fibres of the cranial nerves", "sub_en": "axons of the 2nd neuron (N2)", "lvl": "term", "desc": {"fr": "Les axones du deuxième neurone, issu des noyaux moteurs du tronc, constituent les fibres motrices des nerfs crâniens. L'atteinte du géniculé destiné au noyau du VII donne une paralysie faciale centrale ; l'atteinte du noyau ou en aval, une paralysie périphérique.", "en": "The axons of the second neuron, arising from the brainstem motor nuclei, form the motor fibres of the cranial nerves. A lesion of the geniculate fibres to the VII nucleus causes central facial palsy; a lesion of the nucleus or beyond, peripheral palsy."}}, {"id": "fcsc", "x": 440, "y": 770, "w": 230, "label": "FCSC — cortico-spinal croisé", "sub": "90 % des fibres, cordon latéral controlatéral", "label_en": "LCST — lateral corticospinal tract", "sub_en": "90% of fibres, contralateral lateral column", "lvl": "faisc", "desc": {"fr": "90 % des fibres croisent la ligne médiane (décussation des pyramides) et forment le faisceau cortico-spinal croisé, qui chemine dans le cordon latéral controlatéral ; il est destiné à la musculature distale, essentiellement des membres.", "en": "90% of fibres cross the midline (pyramidal decussation) and form the lateral corticospinal tract, which runs in the contralateral lateral column; it supplies the distal musculature, mainly of the limbs."}}, {"id": "fcsd", "x": 645, "y": 770, "w": 150, "label": "FCSD — cortico-spinal direct", "sub": "10 % des fibres, sillon médian antérieur", "label_en": "ACST — anterior corticospinal tract", "sub_en": "10% of fibres, anterior median fissure", "lvl": "faisc", "desc": {"fr": "10 % des fibres continuent le long du sillon médian antérieur et forment le faisceau cortico-spinal direct, destiné à la musculature axiale et proximale.", "en": "10% of fibres continue along the anterior median fissure and form the anterior corticospinal tract, supplying the axial and proximal musculature."}}, {"id": "corne_ant", "x": 480, "y": 960, "w": 330, "label": "Corne antérieure — motoneurones α", "sub": "N2, racines antérieures des nerfs rachidiens", "label_en": "Anterior horn — alpha motor neurons", "sub_en": "N2, anterior roots of the spinal nerves", "lvl": "term", "desc": {"fr": "Les deux faisceaux cortico-spinaux se terminent dans la corne antérieure de la moelle, sur les motoneurones α dont les axones constituent les racines antérieures des nerfs rachidiens. L'atteinte pyramidale donne hémiplégie ou hémiparésie avec syndrome pyramidal.", "en": "Both corticospinal tracts end in the anterior horn of the cord, on alpha motor neurons whose axons form the anterior roots of the spinal nerves. A pyramidal lesion causes hemiplegia or hemiparesis with a pyramidal syndrome."}}], "edges": [["cortex_moteur", "capsule_genou"], ["cortex_moteur", "capsule_bras"], ["capsule_genou", "pied_gen"], ["capsule_bras", "trajet_cs"], ["pied_gen", "noyaux_craniens"], ["trajet_cs", "decussation_pyr"], ["noyaux_craniens", "nerfs_craniens"], ["decussation_pyr", "fcsc"], ["decussation_pyr", "fcsd"], ["fcsc", "corne_ant"], ["fcsd", "corne_ant"]]};
+const lang = 'fr';
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('schemasvg');
+function edgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return 'M ' + x1 + ' ' + a.y + ' C ' + (x1+dx) + ' ' + a.y + ', ' + (x2-dx) + ' ' + b.y + ', ' + x2 + ' ' + b.y;
+}
+const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+svg.setAttribute('viewBox', '0 0 ' + D.w + ' ' + D.h);
+D.edges.forEach(function(e){
+  const p = document.createElementNS(NS, 'path');
+  p.setAttribute('d', edgePath(byId[e[0]], byId[e[1]]));
+  p.setAttribute('class', 'pedge' + (e[2] ? ' dash' : ''));
+  p.dataset.from = e[0]; p.dataset.to = e[1];
+  svg.appendChild(p);
+});
+D.nodes.forEach(function(n){
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+  const col = D.levels[n.lvl].c;
+  if (n.r){
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+    c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+    g.appendChild(c);
+    const tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+    tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+    tx.textContent = n.label; g.appendChild(tx);
+  } else {
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+    r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+    r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+    g.appendChild(r);
+    const t1 = document.createElementNS(NS, 'text');
+    t1.setAttribute('x', n.x); t1.setAttribute('y', n.sub ? n.y - 2 : n.y + 4);
+    t1.textContent = n.label; g.appendChild(t1);
+    if (n.sub){
+      const t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+      t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+      t2.textContent = n.sub; g.appendChild(t2);
+    }
+    if (n.note){
+      const t3 = document.createElementNS(NS, 'text');
+      t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+      t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+      t3.textContent = n.note.fr; g.appendChild(t3);
+    }
+  }
+  g.addEventListener('click', function(ev){ ev.stopPropagation(); trace(n.id); });
+  svg.appendChild(g);
+});
+const leg = document.getElementById('schemalegend');
+Object.values(D.levels).forEach(function(l){
+  const s = document.createElement('span');
+  s.innerHTML = '<span class="sw" style="background:' + l.c + '"></span>' + l.fr;
+  leg.appendChild(s);
+});
+function chain(id){
+  const down = {}, up = {};
+  D.edges.forEach(function(e){ (down[e[0]] = down[e[0]] || []).push(e[1]); (up[e[1]] = up[e[1]] || []).push(e[0]); });
+  const set = new Set([id]);
+  let stack = [id];
+  while (stack.length){ const c = stack.pop(); (down[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  stack = [id];
+  while (stack.length){ const c = stack.pop(); (up[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  return set;
+}
+function trace(id){
+  const set = chain(id);
+  svg.querySelectorAll('.pnode').forEach(function(g){
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  svg.querySelectorAll('.pedge').forEach(function(p){
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const node = byId[id];
+  document.getElementById('schemacap').textContent = node.desc.fr;
+}
+function reset(){
+  svg.querySelectorAll('.pnode,.pedge').forEach(function(el){ el.classList.remove('lit', 'dim'); });
+  document.getElementById('schemacap').textContent = 'Touchez un nœud du schéma pour illuminer son trajet complet et lire sa fiche.';
+}
+svg.addEventListener('click', reset);
+reset();
+window.__h1test = { trace: trace, reset: reset,
+  lit: function(){ return [...svg.querySelectorAll('.pnode.lit')].map(g=>g.dataset.id); } };
+</script><a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body></html>

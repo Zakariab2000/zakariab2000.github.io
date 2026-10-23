@@ -1,0 +1,141 @@
+{
+ "figure": 5,
+ "slug": "voie-pyramidale",
+ "titre_fr": "Voies de la motricité volontaire (voie pyramidale)",
+ "titre_en": "Voluntary motor pathways (pyramidal tract)",
+ "classe": "3D+D",
+ "diagram": "voie_pyramidale",
+ "diagram_file": "diagramme-voie-pyramidale.html",
+ "camera": {
+  "vue": "anterieure",
+  "vue_audit": "antérieure"
+ },
+ "systemes": [
+  "cerveau"
+ ],
+ "isoler": [
+  "Tractus corticospinal latéral",
+  "Gyrus précentral",
+  "Pyramide bulbaire"
+ ],
+ "structures": [
+  {
+   "id": "lateral_corticospinal_tract",
+   "role": "sujet",
+   "nom_fr": "Faisceau corticospinal latéral"
+  },
+  {
+   "id": "anterior_corticospinal_tract",
+   "role": "sujet",
+   "nom_fr": "Tractus corticospinal antérieur"
+  },
+  {
+   "id": "precentral_gyrus_right",
+   "role": "sujet",
+   "nom_fr": "Gyrus précentral"
+  },
+  {
+   "id": "pons_right",
+   "role": "sujet",
+   "nom_fr": "Pont"
+  },
+  {
+   "id": "medulla_oblongata_right",
+   "role": "sujet",
+   "nom_fr": "Moëlle allongée"
+  },
+  {
+   "id": "pyramid_of_medulla_oblongata_right",
+   "role": "sujet",
+   "nom_fr": "Pyramide de la moëlle allongée"
+  },
+  {
+   "id": "anterior_horn_of_spinal_cord",
+   "role": "sujet",
+   "nom_fr": "Corne antérieure de la moëlle épinière"
+  },
+  {
+   "id": "white_matter_of_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Substance blanche de la moëlle épinière"
+  },
+  {
+   "id": "rep_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Moëlle épinière (repère)"
+  }
+ ],
+ "manquants": [
+  "Couronne rayonnante et décussation pyramidale : non modélisées",
+  "Seuls les faisceaux corticospinaux intra-médullaires + cortex moteur + tronc existent → schéma du trajet complet requis"
+ ],
+ "fiche": {
+  "origine": "Cellules pyramidales des aires motrices (neurone central, N1) : faisceau géniculé (cortico-nucléaire) du 1/3 inférieur de la frontale ascendante (somatotopie de la face) ; faisceau cortico-spinal des 2/3 supérieurs (homonculus de Penfield).",
+  "relais": "Aucun relais synaptique : voie monosynaptique à 2 neurones. Trajet : capsule interne (genou pour le géniculé, bras postérieur pour le cortico-spinal), pied du mésencéphale en avant du locus niger, protubérance (dissociation en fascicules par les noyaux du pont), pyramide bulbaire.",
+  "decussation": "Faisceau géniculé : croisement au fur et à mesure dans le tronc cérébral (contingent homolatéral pour les noyaux du III et du VII). Cortico-spinal : décussation des pyramides à l'extrémité inférieure du bulbe — 90 % des fibres forment le faisceau cortico-spinal croisé (cordon latéral controlatéral, musculature distale des membres), 10 % forment le faisceau cortico-spinal direct (musculature axiale et proximale).",
+  "terminaison": "Motoneurones α de la corne antérieure de la moelle (N2, racines antérieures des nerfs rachidiens) et noyaux moteurs des nerfs crâniens : III, IV, noyau masticateur (Vm), VI, VII, noyau ambigu (IX, X, XI) et XII.",
+  "clinique": "L'atteinte du faisceau pyramidal donne une hémiplégie ou une hémiparésie associée à un syndrome pyramidal ; l'atteinte du faisceau géniculé destiné au noyau du VII donne une paralysie faciale centrale, celle du noyau ou en aval une paralysie faciale périphérique (conclusion du cours, Q2)."
+ },
+ "note_3d": "MISE À JOUR tractographie : la capsule interne — le segment manquant — est désormais traversée par le vrai trajet du faisceau pyramidal (et du géniculé). Le schéma reste le compagnon pour la décussation et la somatotopie.",
+ "trajets_3d": [
+  {
+   "fichier": "tract_cst_left.glb",
+   "id": "tract_cst_left",
+   "nom_fr": "Tractus cortico-spinal (faisceau pyramidal)",
+   "name_en": "Corticospinal tract",
+   "cote": "left",
+   "role": "sujet",
+   "couleur": "#ff5252",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Cortex moteur → couronne rayonnante → capsule interne → pédoncule cérébral → pont → pyramide bulbaire → jonction bulbo-médullaire",
+   "fiche_fr": "Le faisceau pyramidal, enfin visible en continu : le trajet de tractographie traverse la région de la capsule interne — le segment que l'atlas n'avait pas. En dessous de la jonction bulbo-médullaire, les rubans médullaires de l'atlas (tractus corticospinaux latéral/antérieur) prennent le relais dans la moelle."
+  },
+  {
+   "fichier": "tract_cst_right.glb",
+   "id": "tract_cst_right",
+   "nom_fr": "Tractus cortico-spinal (faisceau pyramidal)",
+   "name_en": "Corticospinal tract",
+   "cote": "right",
+   "role": "sujet",
+   "couleur": "#ff5252",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Cortex moteur → couronne rayonnante → capsule interne → pédoncule cérébral → pont → pyramide bulbaire → jonction bulbo-médullaire",
+   "fiche_fr": "Le faisceau pyramidal, enfin visible en continu : le trajet de tractographie traverse la région de la capsule interne — le segment que l'atlas n'avait pas. En dessous de la jonction bulbo-médullaire, les rubans médullaires de l'atlas (tractus corticospinaux latéral/antérieur) prennent le relais dans la moelle."
+  },
+  {
+   "fichier": "tract_cbt_left.glb",
+   "id": "tract_cbt_left",
+   "nom_fr": "Faisceau cortico-bulbaire (géniculé)",
+   "name_en": "Corticobulbar tract",
+   "cote": "left",
+   "role": "sujet",
+   "couleur": "#ff9800",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Cortex frontal inférieur (aire de la face) → genou de la capsule interne → tronc cérébral (noyaux moteurs des nerfs crâniens)",
+   "fiche_fr": "Le faisceau géniculé du cours : fibres cortico-nucléaires destinées aux noyaux moteurs du tronc cérébral (V, VII, IX–XII). Son trajet de tractographie s'arrête aux noyaux du tronc — la distribution nucléaire détaillée reste celle du schéma."
+  },
+  {
+   "fichier": "tract_cbt_right.glb",
+   "id": "tract_cbt_right",
+   "nom_fr": "Faisceau cortico-bulbaire (géniculé)",
+   "name_en": "Corticobulbar tract",
+   "cote": "right",
+   "role": "sujet",
+   "couleur": "#ff9800",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Cortex frontal inférieur (aire de la face) → genou de la capsule interne → tronc cérébral (noyaux moteurs des nerfs crâniens)",
+   "fiche_fr": "Le faisceau géniculé du cours : fibres cortico-nucléaires destinées aux noyaux moteurs du tronc cérébral (V, VII, IX–XII). Son trajet de tractographie s'arrête aux noyaux du tronc — la distribution nucléaire détaillée reste celle du schéma."
+  }
+ ],
+ "statut_segments": {
+  "reel_3d": [
+   "Trajet complet cortex → capsule interne → tronc cérébral → pyramide : tractographie HCP1065 recalée (CST)",
+   "Faisceau géniculé (cortico-bulbaire) : tractographie HCP1065 recalée",
+   "Moelle : rubans corticospinaux natifs de l'atlas"
+  ],
+  "schema_seul": [
+   "Décussation pyramidale : les streamlines de l'atlas IRM restent homolatérales jusqu'à la jonction bulbo-médullaire — le croisement (90 %) reste expliqué par le schéma",
+   "Terminaisons sur les motoneurones : schématiques"
+  ]
+ }
+}

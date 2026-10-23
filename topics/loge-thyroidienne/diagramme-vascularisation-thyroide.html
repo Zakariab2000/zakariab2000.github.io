@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schéma — Vascularisation de la thyroïde</title>
+<style>
+  :root{ --bg:#101014; --panel:#1b1b22; --txt:#f2efe9; --mut:#9a97a3; --acc:#c9a227; }
+  *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body{ margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; }
+  header{ padding:14px 14px 4px; }
+  h1{ font-size:16px; margin:0; } .sub{ font-size:11.5px; color:var(--mut); margin-top:2px; line-height:1.4; }
+  svg{ display:block; width:100%; height:auto; }
+  .zone{ cursor:pointer; }
+  .zone .hit{ fill:transparent; }
+  .zone.sel .main{ stroke:var(--acc) !important; stroke-width:5 !important; }
+  .zone.sel .fillshape{ fill:rgba(201,162,39,.35) !important; }
+  text{ fill:var(--txt); font-size:10.5px; } .lbl{ font-size:10px; fill:#cfccc4; }
+  #fiche{ margin:6px 12px 18px; background:var(--panel); border:1px solid #33333f; border-radius:12px; padding:12px 14px; }
+  #fiche h2{ font-size:15px; margin:0 0 3px; }
+  #fiche .badge{ display:inline-block; font-size:10.5px; padding:2px 8px; border-radius:999px; margin-bottom:6px; }
+  .b-schema{ background:#4a2f35; color:#f0b7bd; } .b-3d{ background:#2f4a35; color:#b7f0c2; } .b-var{ background:#3d3a26; color:#efe3a1; }
+  #fiche p{ font-size:13px; line-height:1.5; margin:0; }
+  .hint{ font-size:11px; color:var(--mut); padding:0 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Vascularisation de la thyroïde — schéma complet</h1>
+  <div class="sub">Schéma interactif — Fig 106. La scène 3D montre l'artère thyroïdienne inférieure, le tronc thyrocervical et la veine thyroïdienne supérieure. L'artère thyroïdienne <b>supérieure</b> et les veines <b>moyennes et inférieures</b> sont absentes des maillages : elles n'existent qu'ici. Touchez un vaisseau.</div>
+</header>
+<p class="hint">Rouge = artères · Bleu = veines · Pointillés = inconstant ou absent en 3D.</p>
+
+<svg viewBox="0 0 360 470" role="img" aria-label="Schéma de la vascularisation thyroïdienne">
+  <!-- carotides + jugulaires de fond -->
+  <path d="M118 40 v330 M242 40 v330" stroke="#b03a2e" stroke-width="8" opacity=".8"/>
+  <path d="M92 40 v320 M268 40 v320" stroke="#3f6fb5" stroke-width="10" opacity=".8"/>
+  <text x="76" y="30" class="lbl">V. jugulaire interne</text>
+  <text x="238" y="30" class="lbl">Carotide</text>
+  <!-- trachée -->
+  <path d="M172 130 v280 M188 130 v280 M164 160 h32 M164 190 h32 M164 220 h32 M164 250 h32 M164 280 h32" stroke="#8d8578" stroke-width="2"/>
+  <!-- thyroïde -->
+  <g class="zone" data-k="glande">
+    <path class="hit fillshape" d="M140 150 q-15 38 2 70 q9 16 22 5 q5 -5 4 -20 l0 -42 q-13 -20 -28 -13 Z"/>
+    <path class="main fillshape" d="M140 150 q-15 38 2 70 q9 16 22 5 q5 -5 4 -20 l0 -42 q-13 -20 -28 -13 Z" fill="#caa6d9" stroke="#8f6fae" stroke-width="2"/>
+    <path class="hit fillshape" d="M220 150 q15 38 -2 70 q-9 16 -22 5 q-5 -5 -4 -20 l0 -42 q13 -20 28 -13 Z"/>
+    <path class="main fillshape" d="M220 150 q15 38 -2 70 q-9 16 -22 5 q-5 -5 -4 -20 l0 -42 q13 -20 28 -13 Z" fill="#caa6d9" stroke="#8f6fae" stroke-width="2"/>
+    <rect x="166" y="196" width="28" height="11" fill="#caa6d9" stroke="#8f6fae" stroke-width="2"/>
+    <text x="146" y="138" class="lbl">Glande thyroïde</text>
+  </g>
+  <!-- artère thyroïdienne supérieure droite (absente 3D) -->
+  <g class="zone" data-k="ats">
+    <path class="hit" d="M242 92 q-34 10 -44 34 q-8 18 -4 30" stroke-width="22" fill="none"/>
+    <path class="main" d="M242 92 q-34 10 -44 34 q-8 18 -4 30" stroke="#e05b4b" stroke-width="4" fill="none" stroke-dasharray="6 4"/>
+    <text x="238" y="86" class="lbl">A. thyroïdienne supérieure ⚠</text>
+  </g>
+  <!-- artère thyroïdienne supérieure gauche -->
+  <g class="zone" data-k="ats">
+    <path class="hit" d="M118 92 q34 10 44 34 q8 18 4 30" stroke-width="22" fill="none"/>
+    <path class="main" d="M118 92 q34 10 44 34 q8 18 4 30" stroke="#e05b4b" stroke-width="4" fill="none" stroke-dasharray="6 4"/>
+  </g>
+  <!-- tronc thyrocervical + artère thyroïdienne inférieure -->
+  <g class="zone" data-k="ati">
+    <path class="hit" d="M300 400 q-40 -6 -66 -40 q-24 -32 -26 -70 M60 400 q40 -6 66 -40 q24 -32 26 -70" stroke-width="22" fill="none"/>
+    <path class="main" d="M300 400 q-40 -6 -66 -40 q-24 -32 -26 -70" stroke="#cf5346" stroke-width="4.5" fill="none"/>
+    <path class="main" d="M60 400 q40 -6 66 -40 q24 -32 26 -70" stroke="#cf5346" stroke-width="4.5" fill="none"/>
+    <text x="196" y="424" class="lbl">Tronc thyrocervical → A. thyroïdienne inférieure ✓</text>
+  </g>
+  <!-- artère thyroïdienne ima -->
+  <g class="zone" data-k="ima">
+    <path class="hit" d="M180 452 q2 -70 0 -128" stroke-width="20" fill="none"/>
+    <path class="main" d="M180 452 q2 -70 0 -128" stroke="#e05b4b" stroke-width="3" fill="none" stroke-dasharray="3 5"/>
+    <text x="188" y="446" class="lbl">A. thyroïdienne ima (inconstante)</text>
+  </g>
+  <!-- veine thyroïdienne supérieure -->
+  <g class="zone" data-k="vts">
+    <path class="hit" d="M196 168 q40 -6 66 -34 M164 168 q-40 -6 -66 -34" stroke-width="20" fill="none"/>
+    <path class="main" d="M196 168 q40 -6 66 -34" stroke="#5b8dd9" stroke-width="4" fill="none"/>
+    <path class="main" d="M164 168 q-40 -6 -66 -34" stroke="#5b8dd9" stroke-width="4" fill="none"/>
+    <text x="216" y="128" class="lbl">V. thyroïdienne supérieure ✓</text>
+  </g>
+  <!-- veine thyroïdienne moyenne (absente 3D) -->
+  <g class="zone" data-k="vtm">
+    <path class="hit" d="M198 208 q34 0 62 -8 M162 208 q-34 0 -62 -8" stroke-width="20" fill="none"/>
+    <path class="main" d="M198 208 q34 0 62 -8" stroke="#5b8dd9" stroke-width="3.5" fill="none" stroke-dasharray="6 4"/>
+    <path class="main" d="M162 208 q-34 0 -62 -8" stroke="#5b8dd9" stroke-width="3.5" fill="none" stroke-dasharray="6 4"/>
+    <text x="216" y="196" class="lbl">V. thyroïdienne moyenne ⚠</text>
+  </g>
+  <!-- veines thyroïdiennes inférieures (absentes 3D) -->
+  <g class="zone" data-k="vti">
+    <path class="hit" d="M172 236 q-6 60 2 96 M188 236 q6 60 -2 96" stroke-width="20" fill="none"/>
+    <path class="main" d="M172 236 q-6 60 2 96" stroke="#5b8dd9" stroke-width="4" fill="none" stroke-dasharray="6 4"/>
+    <path class="main" d="M188 236 q6 60 -2 96" stroke="#5b8dd9" stroke-width="4" fill="none" stroke-dasharray="6 4"/>
+    <text x="196" y="330" class="lbl">Vv. thyroïdiennes inférieures ⚠ → tronc brachio-céphalique</text>
+  </g>
+</svg>
+
+<div id="fiche"><h2>Touchez un vaisseau</h2><p>✓ = visible dans la scène 3D · ⚠ = schéma seul (absent des maillages).</p></div>
+
+<script>
+const FICHES = {
+  ats: { t: "Artère thyroïdienne supérieure", b: ["b-schema", "⚠ Schéma seul — absente du maillage 3D"],
+    p: "Première branche de l'artère carotide externe (parfois de la bifurcation). Elle descend vers le pôle supérieur de la glande, accompagnée du rameau externe du nerf laryngé supérieur. C'est le vaisseau n°1 de la Fig 106 — pourtant absent du manifeste : seule cette fiche le montre." },
+  ati: { t: "Artère thyroïdienne inférieure", b: ["b-3d", "✓ Présente en 3D dans la scène"],
+    p: "Branche du tronc thyrocervical, lui-même issu de l'artère sous-clavière. Elle vascularise la face postérieure et le pôle inférieur de la glande, les parathyroïdes, et croise le nerf laryngé récurrent (rapports variables). Visible dans la scène 3D avec le tronc thyrocervical." },
+  ima: { t: "Artère thyroïdienne ima (de Neubauer)", b: ["b-var", "Inconstante (~3–10 %) — schéma seul"],
+    p: "Artère inconstante, ascendante sur la face antérieure de la trachée, née du tronc brachio-céphalique ou de la crosse aortique. Importance chirurgicale : à repérer avant une trachéotomie." },
+  vts: { t: "Veine thyroïdienne supérieure", b: ["b-3d", "✓ Présente en 3D dans la scène"],
+    p: "Elle naît au pôle supérieur, accompagne l'artère thyroïdienne supérieure et se jette dans la veine jugulaire interne (ou le tronc thyro-linguo-facial). Seule veine thyroïdienne présente dans les maillages." },
+  vtm: { t: "Veine thyroïdienne moyenne", b: ["b-schema", "⚠ Schéma seul — absente du maillage 3D"],
+    p: "Courte veine horizontale qui draine le bord latéral de la glande directement dans la veine jugulaire interne. Repère chirurgical : elle est sectionnée tôt dans la thyroïdectomie pour mobiliser le lobe." },
+  vti: { t: "Veines thyroïdiennes inférieures", b: ["b-schema", "⚠ Schéma seul — absentes du maillage 3D"],
+    p: "Elles naissent au pôle inférieur et à l'isthme, descendent sur la face antérieure de la trachée et se jettent dans les troncs veineux brachio-céphaliques. Elles forment un plexus prétrachéal à respecter lors des trachéotomies." },
+  glande: { t: "Glande thyroïde", b: ["b-3d", "✓ Présente en 3D dans la scène"],
+    p: "Vascularisation très riche : deux artères paires (supérieure, carotide externe ; inférieure, sous-clavière via le tronc thyrocervical), parfois une ima médiane ; drainage veineux en trois étages (supérieur, moyen, inférieur) vers la jugulaire interne et les troncs brachio-céphaliques." }
+};
+const fiche = document.getElementById('fiche');
+document.querySelectorAll('.zone').forEach(z => {
+  z.addEventListener('click', () => {
+    document.querySelectorAll('.zone').forEach(x => x.classList.remove('sel'));
+    document.querySelectorAll(`.zone[data-k="${z.dataset.k}"]`).forEach(x => x.classList.add('sel'));
+    const f = FICHES[z.dataset.k]; if (!f) return;
+    fiche.innerHTML = `<h2>${f.t}</h2><span class="badge ${f.b[0]}">${f.b[1]}</span><p>${f.p}</p>`;
+    fiche.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+});
+</script>
+<a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

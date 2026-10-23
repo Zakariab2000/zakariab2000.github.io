@@ -1,0 +1,1897 @@
+{
+ "batch": "B",
+ "partie": "II",
+ "sujet": "triangle-de-scarpa",
+ "titre_fr": "Triangle de Scarpa (trigone fémoral)",
+ "titre_en": "Femoral triangle (Scarpa's triangle)",
+ "figures": [
+  {
+   "numero": 39,
+   "titre_fr": "Éléments du triangle de Scarpa",
+   "titre_en": "Elements of the femoral triangle (Scarpa's triangle)",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -78.6,
+     707.5,
+     2056.7
+    ],
+    "target": [
+     -78.6,
+     509.4,
+     74.8
+    ]
+   },
+   "systemes": [
+    "muscles",
+    "arteres",
+    "veines",
+    "nerfs",
+    "lymphatique",
+    "fascias"
+   ],
+   "structures": [
+    {
+     "id": "sartorius_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle sartorius",
+     "name_en": "Right sartorius muscle",
+     "name_la": "Musculus sartorius",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/sartorius_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -122.6,
+       277.3,
+       69.4
+      ],
+      "max": [
+       -21.2,
+       879.8,
+       154.0
+      ],
+      "center": [
+       -71.9,
+       578.5,
+       111.7
+      ],
+      "size": [
+       101.4,
+       602.5,
+       84.6
+      ]
+     }
+    },
+    {
+     "id": "adductor_longus_right",
+     "role": "sujet",
+     "nom_fr": "Long adducteur",
+     "name_en": "Right adductor longus",
+     "name_la": "Adductor longus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/adductor_longus_right.glb",
+     "bounds": {
+      "min": [
+       -93.5,
+       506.6,
+       93.5
+      ],
+      "max": [
+       -11.9,
+       772.8,
+       149.7
+      ],
+      "center": [
+       -52.7,
+       639.7,
+       121.6
+      ],
+      "size": [
+       81.6,
+       266.3,
+       56.2
+      ]
+     }
+    },
+    {
+     "id": "inguinal_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament inguinal",
+     "name_en": "Right inguinal ligament",
+     "name_la": "Ligamentum inguinale",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/inguinal_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -121.9,
+       770.7,
+       144.7
+      ],
+      "max": [
+       -19.2,
+       884.6,
+       153.4
+      ],
+      "center": [
+       -70.6,
+       827.6,
+       149.0
+      ],
+      "size": [
+       102.7,
+       113.8,
+       8.7
+      ]
+     }
+    },
+    {
+     "id": "femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "name_la": "Arteria femoralis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.3,
+       489.4,
+       82.7
+      ],
+      "max": [
+       -44.8,
+       829.6,
+       148.0
+      ],
+      "center": [
+       -60.6,
+       659.5,
+       115.4
+      ],
+      "size": [
+       31.5,
+       340.3,
+       65.4
+      ]
+     }
+    },
+    {
+     "id": "femoral_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine fémorale",
+     "name_en": "Right femoral vein",
+     "name_la": "Vena femoralis",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/femoral_vein_right.glb",
+     "bounds": {
+      "min": [
+       -74.0,
+       494.8,
+       81.7
+      ],
+      "max": [
+       -35.2,
+       816.8,
+       148.6
+      ],
+      "center": [
+       -54.6,
+       655.8,
+       115.1
+      ],
+      "size": [
+       38.8,
+       322.0,
+       66.8
+      ]
+     }
+    },
+    {
+     "id": "femoral_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fémoral",
+     "name_en": "Right femoral nerve",
+     "name_la": "Nervus femoralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/femoral_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -87.2,
+       558.4,
+       72.5
+      ],
+      "max": [
+       -11.4,
+       1033.5,
+       141.0
+      ],
+      "center": [
+       -49.3,
+       796.0,
+       106.7
+      ],
+      "size": [
+       75.9,
+       475.1,
+       68.5
+      ]
+     }
+    },
+    {
+     "id": "fascia_lata_right",
+     "role": "sujet",
+     "nom_fr": "Fascia lata",
+     "name_en": "Right fascia lata",
+     "name_la": "Fascia lata",
+     "systeme": "fascias",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/fascia_lata_right.glb",
+     "bounds": {
+      "min": [
+       -156.8,
+       359.7,
+       -7.4
+      ],
+      "max": [
+       -0.3,
+       932.7,
+       157.1
+      ],
+      "center": [
+       -78.5,
+       646.2,
+       74.9
+      ],
+      "size": [
+       156.5,
+       573.0,
+       164.5
+      ]
+     }
+    },
+    {
+     "id": "proximal_deep_inguinal_node_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud inguinal profond proximal",
+     "name_en": "Right proximal deep inguinal node",
+     "name_la": "Nodus inguinalis profundus proximalis",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "file": "models/lymphatique/proximal_deep_inguinal_node_right.glb",
+     "bounds": {
+      "min": [
+       -43.6,
+       780.7,
+       144.8
+      ],
+      "max": [
+       -41.1,
+       783.3,
+       147.3
+      ],
+      "center": [
+       -42.3,
+       782.0,
+       146.0
+      ],
+      "size": [
+       2.5,
+       2.6,
+       2.4
+      ]
+     }
+    },
+    {
+     "id": "intermediate_deep_inguinal_node_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud inguinal profond intermédiaire",
+     "name_en": "Right intermediate deep inguinal node",
+     "name_la": "Nodus inguinalis profundus intermedius",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "file": "models/lymphatique/intermediate_deep_inguinal_node_right.glb",
+     "bounds": {
+      "min": [
+       -43.9,
+       770.3,
+       149.1
+      ],
+      "max": [
+       -41.3,
+       772.8,
+       151.5
+      ],
+      "center": [
+       -42.6,
+       771.6,
+       150.3
+      ],
+      "size": [
+       2.5,
+       2.6,
+       2.4
+      ]
+     }
+    },
+    {
+     "id": "pectineus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle pectiné",
+     "name_en": "Right pectineus muscle",
+     "name_la": "Musculus pectineus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/pectineus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -97.1,
+       663.9,
+       95.7
+      ],
+      "max": [
+       -15.8,
+       795.9,
+       152.6
+      ],
+      "center": [
+       -56.5,
+       729.9,
+       124.1
+      ],
+      "size": [
+       81.3,
+       132.0,
+       56.9
+      ]
+     }
+    },
+    {
+     "id": "great_saphenous_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine grande saphène",
+     "name_en": "Right great saphenous vein",
+     "name_la": "Vena saphena magna",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/great_saphenous_vein_right.glb",
+     "bounds": {
+      "min": [
+       -70.9,
+       -14.8,
+       42.1
+      ],
+      "max": [
+       -19.2,
+       786.5,
+       154.0
+      ],
+      "center": [
+       -45.1,
+       385.8,
+       98.1
+      ],
+      "size": [
+       51.7,
+       801.3,
+       111.9
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": []
+  },
+  {
+   "numero": 40,
+   "titre_fr": "Branches de l'artère fémorale",
+   "titre_en": "Branches of the femoral artery",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -75.8,
+     800.8,
+     1331.9
+    ],
+    "target": [
+     -75.8,
+     679.5,
+     119.3
+    ]
+   },
+   "systemes": [
+    "arteres"
+   ],
+   "structures": [
+    {
+     "id": "femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "name_la": "Arteria femoralis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.3,
+       489.4,
+       82.7
+      ],
+      "max": [
+       -44.8,
+       829.6,
+       148.0
+      ],
+      "center": [
+       -60.6,
+       659.5,
+       115.4
+      ],
+      "size": [
+       31.5,
+       340.3,
+       65.4
+      ]
+     }
+    },
+    {
+     "id": "deep_femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère fémorale profonde",
+     "name_en": "Right deep femoral artery",
+     "name_la": "Arteria profunda femoris",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/deep_femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -93.3,
+       520.9,
+       71.8
+      ],
+      "max": [
+       -51.5,
+       782.1,
+       145.4
+      ],
+      "center": [
+       -72.4,
+       651.5,
+       108.6
+      ],
+      "size": [
+       41.8,
+       261.2,
+       73.6
+      ]
+     }
+    },
+    {
+     "id": "lateral_circumflex_femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère circonflexe fémorale latérale",
+     "name_en": "Right lateral circumflex femoral artery",
+     "name_la": "Arteria circumflexa lateralis femoris",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/lateral_circumflex_femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -140.6,
+       745.4,
+       65.9
+      ],
+      "max": [
+       -70.6,
+       793.3,
+       126.8
+      ],
+      "center": [
+       -105.6,
+       769.4,
+       96.3
+      ],
+      "size": [
+       70.0,
+       47.9,
+       60.9
+      ]
+     }
+    },
+    {
+     "id": "medial_circumflex_femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère circonflexe médiale de la cuisse",
+     "name_en": "Right medial circumflex femoral artery",
+     "name_la": "Arteria circumflexa medialis femoris",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/medial_circumflex_femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -105.5,
+       749.7,
+       75.9
+      ],
+      "max": [
+       -71.2,
+       795.1,
+       125.1
+      ],
+      "center": [
+       -88.3,
+       772.4,
+       100.5
+      ],
+      "size": [
+       34.3,
+       45.3,
+       49.2
+      ]
+     }
+    },
+    {
+     "id": "superficial_epigastric_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère épigastrique superficielle",
+     "name_en": "Right superficial epigastric artery",
+     "name_la": "Arteria epigastrica superficialis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/superficial_epigastric_artery_right.glb",
+     "bounds": {
+      "min": [
+       -74.0,
+       778.6,
+       142.0
+      ],
+      "max": [
+       -45.0,
+       1000.2,
+       194.3
+      ],
+      "center": [
+       -59.5,
+       889.4,
+       168.2
+      ],
+      "size": [
+       29.0,
+       221.6,
+       52.3
+      ]
+     }
+    },
+    {
+     "id": "superficial_external_pudendal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère pudendale externe superficielle",
+     "name_en": "Right superficial external pudendal artery",
+     "name_la": "Arteria pudendalis externa superficialis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/superficial_external_pudendal_artery_right.glb",
+     "bounds": {
+      "min": [
+       -52.4,
+       667.9,
+       142.6
+      ],
+      "max": [
+       -5.3,
+       785.8,
+       163.4
+      ],
+      "center": [
+       -28.9,
+       726.9,
+       153.0
+      ],
+      "size": [
+       47.1,
+       117.9,
+       20.8
+      ]
+     }
+    },
+    {
+     "id": "deep_external_pudendal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère pudendale externe profonde",
+     "name_en": "Right deep external pudendal artery",
+     "name_la": "Arteria pudendalis externa profunda",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/deep_external_pudendal_artery_right.glb",
+     "bounds": {
+      "min": [
+       -61.6,
+       754.0,
+       140.5
+      ],
+      "max": [
+       -30.1,
+       768.3,
+       149.2
+      ],
+      "center": [
+       -45.8,
+       761.2,
+       144.9
+      ],
+      "size": [
+       31.5,
+       14.3,
+       8.7
+      ]
+     }
+    },
+    {
+     "id": "external_iliac_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Right external iliac artery",
+     "name_la": "Arteria iliaca externa",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/external_iliac_artery_right.glb",
+     "bounds": {
+      "min": [
+       -58.1,
+       823.0,
+       95.6
+      ],
+      "max": [
+       -23.8,
+       919.0,
+       130.8
+      ],
+      "center": [
+       -41.0,
+       871.0,
+       113.2
+      ],
+      "size": [
+       34.4,
+       96.0,
+       35.1
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "ghost",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [
+    "Artère circonflexe iliaque superficielle : ABSENTE du manifeste",
+    "Artère descendante du genou (rameau terminal classique) : ABSENTE"
+   ]
+  },
+  {
+   "numero": 41,
+   "titre_fr": "Éléments traversant l'orifice supérieur du canal crural (anneau crural)",
+   "titre_en": "Elements traversing the upper opening of the femoral canal (femoral ring)",
+   "classe": "3D",
+   "vue": "superieure",
+   "vue_audit": "supérieure (vue du détroit supérieur)",
+   "camera": {
+    "vue": "superieure",
+    "position": [
+     -68.0,
+     1786.1,
+     634.5
+    ],
+    "target": [
+     -68.0,
+     788.9,
+     86.0
+    ]
+   },
+   "systemes": [
+    "muscles",
+    "arteres",
+    "veines",
+    "nerfs",
+    "lymphatique"
+   ],
+   "structures": [
+    {
+     "id": "inguinal_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament inguinal",
+     "name_en": "Right inguinal ligament",
+     "name_la": "Ligamentum inguinale",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/inguinal_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -121.9,
+       770.7,
+       144.7
+      ],
+      "max": [
+       -19.2,
+       884.6,
+       153.4
+      ],
+      "center": [
+       -70.6,
+       827.6,
+       149.0
+      ],
+      "size": [
+       102.7,
+       113.8,
+       8.7
+      ]
+     }
+    },
+    {
+     "id": "femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "name_la": "Arteria femoralis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.3,
+       489.4,
+       82.7
+      ],
+      "max": [
+       -44.8,
+       829.6,
+       148.0
+      ],
+      "center": [
+       -60.6,
+       659.5,
+       115.4
+      ],
+      "size": [
+       31.5,
+       340.3,
+       65.4
+      ]
+     }
+    },
+    {
+     "id": "femoral_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine fémorale",
+     "name_en": "Right femoral vein",
+     "name_la": "Vena femoralis",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/femoral_vein_right.glb",
+     "bounds": {
+      "min": [
+       -74.0,
+       494.8,
+       81.7
+      ],
+      "max": [
+       -35.2,
+       816.8,
+       148.6
+      ],
+      "center": [
+       -54.6,
+       655.8,
+       115.1
+      ],
+      "size": [
+       38.8,
+       322.0,
+       66.8
+      ]
+     }
+    },
+    {
+     "id": "femoral_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fémoral",
+     "name_en": "Right femoral nerve",
+     "name_la": "Nervus femoralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/femoral_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -87.2,
+       558.4,
+       72.5
+      ],
+      "max": [
+       -11.4,
+       1033.5,
+       141.0
+      ],
+      "center": [
+       -49.3,
+       796.0,
+       106.7
+      ],
+      "size": [
+       75.9,
+       475.1,
+       68.5
+      ]
+     }
+    },
+    {
+     "id": "medial_lacunar_node_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud lacunaire médial",
+     "name_en": "Right medial lacunar node",
+     "name_la": "Nodus lacunaris medialis",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "file": "models/lymphatique/medial_lacunar_node_right.glb",
+     "bounds": {
+      "min": [
+       -34.5,
+       780.5,
+       141.8
+      ],
+      "max": [
+       -31.9,
+       783.1,
+       144.3
+      ],
+      "center": [
+       -33.2,
+       781.8,
+       143.1
+      ],
+      "size": [
+       2.6,
+       2.6,
+       2.4
+      ]
+     }
+    },
+    {
+     "id": "intermediate_lacunar_node_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud lacunaire intermédiaire",
+     "name_en": "Right intermediate lacunar node",
+     "name_la": "Nodus lacunaris intermedius",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "file": "models/lymphatique/intermediate_lacunar_node_right.glb",
+     "bounds": {
+      "min": [
+       -41.1,
+       786.0,
+       136.1
+      ],
+      "max": [
+       -38.6,
+       788.6,
+       138.5
+      ],
+      "center": [
+       -39.8,
+       787.3,
+       137.3
+      ],
+      "size": [
+       2.6,
+       2.6,
+       2.4
+      ]
+     }
+    },
+    {
+     "id": "lateral_lacunar_node_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud lacunaire latéral",
+     "name_en": "Right lateral lacunar node",
+     "name_la": "Nodus lacunaris lateralis",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "file": "models/lymphatique/lateral_lacunar_node_right.glb",
+     "bounds": {
+      "min": [
+       -49.9,
+       788.4,
+       136.4
+      ],
+      "max": [
+       -47.3,
+       791.0,
+       138.8
+      ],
+      "center": [
+       -48.6,
+       789.7,
+       137.6
+      ],
+      "size": [
+       2.6,
+       2.6,
+       2.4
+      ]
+     }
+    },
+    {
+     "id": "pectineus_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle pectiné",
+     "name_en": "Right pectineus muscle",
+     "name_la": "Musculus pectineus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/pectineus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -97.1,
+       663.9,
+       95.7
+      ],
+      "max": [
+       -15.8,
+       795.9,
+       152.6
+      ],
+      "center": [
+       -56.5,
+       729.9,
+       124.1
+      ],
+      "size": [
+       81.3,
+       132.0,
+       56.9
+      ]
+     }
+    },
+    {
+     "id": "psoas_major_right",
+     "role": "contexte",
+     "nom_fr": "Grand psoas",
+     "name_en": "Right psoas major",
+     "name_la": "Psoas major",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/psoas_major_right.glb",
+     "bounds": {
+      "min": [
+       -106.4,
+       706.4,
+       61.5
+      ],
+      "max": [
+       -8.3,
+       1088.4,
+       134.8
+      ],
+      "center": [
+       -57.4,
+       897.4,
+       98.1
+      ],
+      "size": [
+       98.1,
+       382.0,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "hip_bone_right",
+     "role": "ghost",
+     "nom_fr": "Os coxal",
+     "name_en": "Right hip bone",
+     "name_la": "Os coxae",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/hip_bone_right.glb",
+     "bounds": {
+      "min": [
+       -132.8,
+       728.3,
+       18.5
+      ],
+      "max": [
+       -3.2,
+       944.5,
+       153.6
+      ],
+      "center": [
+       -68.0,
+       836.4,
+       86.1
+      ],
+      "size": [
+       129.6,
+       216.2,
+       135.1
+      ]
+     }
+    },
+    {
+     "id": "external_iliac_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Right external iliac artery",
+     "name_la": "Arteria iliaca externa",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/external_iliac_artery_right.glb",
+     "bounds": {
+      "min": [
+       -58.1,
+       823.0,
+       95.6
+      ],
+      "max": [
+       -23.8,
+       919.0,
+       130.8
+      ],
+      "center": [
+       -41.0,
+       871.0,
+       113.2
+      ],
+      "size": [
+       34.4,
+       96.0,
+       35.1
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [
+    {
+     "key": "anneau-crural",
+     "nom_fr": "Anneau crural (lacune vasculaire)",
+     "name_en": "Femoral ring (vascular lacuna)",
+     "couleur": "#f2b134",
+     "bornes": [
+      "inguinal_ligament_right",
+      "femoral_vein_right",
+      "pectineus_muscle_right",
+      "hip_bone_right"
+     ],
+     "desc_fr": "Orifice supérieur du canal crural, limité par le ligament inguinal en avant, l'os coxal en arrière et la veine fémorale en dehors, livrant passage aux lymphatiques profonds (nœud de Cloquet).",
+     "desc_en": "Upper opening of the femoral canal, bounded by the inguinal ligament anteriorly, the hip bone posteriorly and the femoral vein laterally, transmitting the deep lymphatics (Cloquet's node).",
+     "contenu": [
+      "medial_lacunar_node_right",
+      "intermediate_lacunar_node_right",
+      "lateral_lacunar_node_right"
+     ],
+     "type": "espace",
+     "note": "volume schématique délimité par les structures voisines — aucun maillage source"
+    }
+   ],
+   "manquants": [
+    "Anneau crural, lacune vasculaire et lacune musculaire : ce sont des ESPACES — aucun maillage dédié",
+    "Ligament lacunaire (de Gimbernat) : ABSENT ; gaine fémorale : ABSENTE"
+   ]
+  }
+ ],
+ "structures_toutes": [
+  {
+   "id": "lateral_circumflex_femoral_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère circonflexe fémorale latérale",
+   "name_en": "Right lateral circumflex femoral artery",
+   "name_la": "Arteria circumflexa lateralis femoris",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/lateral_circumflex_femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -140.6,
+     745.4,
+     65.9
+    ],
+    "max": [
+     -70.6,
+     793.3,
+     126.8
+    ],
+    "center": [
+     -105.6,
+     769.4,
+     96.3
+    ],
+    "size": [
+     70.0,
+     47.9,
+     60.9
+    ]
+   }
+  },
+  {
+   "id": "medial_circumflex_femoral_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère circonflexe médiale de la cuisse",
+   "name_en": "Right medial circumflex femoral artery",
+   "name_la": "Arteria circumflexa medialis femoris",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/medial_circumflex_femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -105.5,
+     749.7,
+     75.9
+    ],
+    "max": [
+     -71.2,
+     795.1,
+     125.1
+    ],
+    "center": [
+     -88.3,
+     772.4,
+     100.5
+    ],
+    "size": [
+     34.3,
+     45.3,
+     49.2
+    ]
+   }
+  },
+  {
+   "id": "femoral_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère fémorale",
+   "name_en": "Right femoral artery",
+   "name_la": "Arteria femoralis",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -76.3,
+     489.4,
+     82.7
+    ],
+    "max": [
+     -44.8,
+     829.6,
+     148.0
+    ],
+    "center": [
+     -60.6,
+     659.5,
+     115.4
+    ],
+    "size": [
+     31.5,
+     340.3,
+     65.4
+    ]
+   }
+  },
+  {
+   "id": "deep_femoral_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère fémorale profonde",
+   "name_en": "Right deep femoral artery",
+   "name_la": "Arteria profunda femoris",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/deep_femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -93.3,
+     520.9,
+     71.8
+    ],
+    "max": [
+     -51.5,
+     782.1,
+     145.4
+    ],
+    "center": [
+     -72.4,
+     651.5,
+     108.6
+    ],
+    "size": [
+     41.8,
+     261.2,
+     73.6
+    ]
+   }
+  },
+  {
+   "id": "deep_external_pudendal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère pudendale externe profonde",
+   "name_en": "Right deep external pudendal artery",
+   "name_la": "Arteria pudendalis externa profunda",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/deep_external_pudendal_artery_right.glb",
+   "bounds": {
+    "min": [
+     -61.6,
+     754.0,
+     140.5
+    ],
+    "max": [
+     -30.1,
+     768.3,
+     149.2
+    ],
+    "center": [
+     -45.8,
+     761.2,
+     144.9
+    ],
+    "size": [
+     31.5,
+     14.3,
+     8.7
+    ]
+   }
+  },
+  {
+   "id": "superficial_external_pudendal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère pudendale externe superficielle",
+   "name_en": "Right superficial external pudendal artery",
+   "name_la": "Arteria pudendalis externa superficialis",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/superficial_external_pudendal_artery_right.glb",
+   "bounds": {
+    "min": [
+     -52.4,
+     667.9,
+     142.6
+    ],
+    "max": [
+     -5.3,
+     785.8,
+     163.4
+    ],
+    "center": [
+     -28.9,
+     726.9,
+     153.0
+    ],
+    "size": [
+     47.1,
+     117.9,
+     20.8
+    ]
+   }
+  },
+  {
+   "id": "superficial_epigastric_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère épigastrique superficielle",
+   "name_en": "Right superficial epigastric artery",
+   "name_la": "Arteria epigastrica superficialis",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/superficial_epigastric_artery_right.glb",
+   "bounds": {
+    "min": [
+     -74.0,
+     778.6,
+     142.0
+    ],
+    "max": [
+     -45.0,
+     1000.2,
+     194.3
+    ],
+    "center": [
+     -59.5,
+     889.4,
+     168.2
+    ],
+    "size": [
+     29.0,
+     221.6,
+     52.3
+    ]
+   }
+  },
+  {
+   "id": "fascia_lata_right",
+   "role": "sujet",
+   "nom_fr": "Fascia lata",
+   "name_en": "Right fascia lata",
+   "name_la": "Fascia lata",
+   "systeme": "fascias",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/fascia_lata_right.glb",
+   "bounds": {
+    "min": [
+     -156.8,
+     359.7,
+     -7.4
+    ],
+    "max": [
+     -0.3,
+     932.7,
+     157.1
+    ],
+    "center": [
+     -78.5,
+     646.2,
+     74.9
+    ],
+    "size": [
+     156.5,
+     573.0,
+     164.5
+    ]
+   }
+  },
+  {
+   "id": "inguinal_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Ligament inguinal",
+   "name_en": "Right inguinal ligament",
+   "name_la": "Ligamentum inguinale",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/inguinal_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -121.9,
+     770.7,
+     144.7
+    ],
+    "max": [
+     -19.2,
+     884.6,
+     153.4
+    ],
+    "center": [
+     -70.6,
+     827.6,
+     149.0
+    ],
+    "size": [
+     102.7,
+     113.8,
+     8.7
+    ]
+   }
+  },
+  {
+   "id": "adductor_longus_right",
+   "role": "sujet",
+   "nom_fr": "Long adducteur",
+   "name_en": "Right adductor longus",
+   "name_la": "Adductor longus",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/adductor_longus_right.glb",
+   "bounds": {
+    "min": [
+     -93.5,
+     506.6,
+     93.5
+    ],
+    "max": [
+     -11.9,
+     772.8,
+     149.7
+    ],
+    "center": [
+     -52.7,
+     639.7,
+     121.6
+    ],
+    "size": [
+     81.6,
+     266.3,
+     56.2
+    ]
+   }
+  },
+  {
+   "id": "intermediate_deep_inguinal_node_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud inguinal profond intermédiaire",
+   "name_en": "Right intermediate deep inguinal node",
+   "name_la": "Nodus inguinalis profundus intermedius",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "file": "models/lymphatique/intermediate_deep_inguinal_node_right.glb",
+   "bounds": {
+    "min": [
+     -43.9,
+     770.3,
+     149.1
+    ],
+    "max": [
+     -41.3,
+     772.8,
+     151.5
+    ],
+    "center": [
+     -42.6,
+     771.6,
+     150.3
+    ],
+    "size": [
+     2.5,
+     2.6,
+     2.4
+    ]
+   }
+  },
+  {
+   "id": "proximal_deep_inguinal_node_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud inguinal profond proximal",
+   "name_en": "Right proximal deep inguinal node",
+   "name_la": "Nodus inguinalis profundus proximalis",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "file": "models/lymphatique/proximal_deep_inguinal_node_right.glb",
+   "bounds": {
+    "min": [
+     -43.6,
+     780.7,
+     144.8
+    ],
+    "max": [
+     -41.1,
+     783.3,
+     147.3
+    ],
+    "center": [
+     -42.3,
+     782.0,
+     146.0
+    ],
+    "size": [
+     2.5,
+     2.6,
+     2.4
+    ]
+   }
+  },
+  {
+   "id": "intermediate_lacunar_node_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud lacunaire intermédiaire",
+   "name_en": "Right intermediate lacunar node",
+   "name_la": "Nodus lacunaris intermedius",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "file": "models/lymphatique/intermediate_lacunar_node_right.glb",
+   "bounds": {
+    "min": [
+     -41.1,
+     786.0,
+     136.1
+    ],
+    "max": [
+     -38.6,
+     788.6,
+     138.5
+    ],
+    "center": [
+     -39.8,
+     787.3,
+     137.3
+    ],
+    "size": [
+     2.6,
+     2.6,
+     2.4
+    ]
+   }
+  },
+  {
+   "id": "lateral_lacunar_node_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud lacunaire latéral",
+   "name_en": "Right lateral lacunar node",
+   "name_la": "Nodus lacunaris lateralis",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "file": "models/lymphatique/lateral_lacunar_node_right.glb",
+   "bounds": {
+    "min": [
+     -49.9,
+     788.4,
+     136.4
+    ],
+    "max": [
+     -47.3,
+     791.0,
+     138.8
+    ],
+    "center": [
+     -48.6,
+     789.7,
+     137.6
+    ],
+    "size": [
+     2.6,
+     2.6,
+     2.4
+    ]
+   }
+  },
+  {
+   "id": "medial_lacunar_node_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud lacunaire médial",
+   "name_en": "Right medial lacunar node",
+   "name_la": "Nodus lacunaris medialis",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "file": "models/lymphatique/medial_lacunar_node_right.glb",
+   "bounds": {
+    "min": [
+     -34.5,
+     780.5,
+     141.8
+    ],
+    "max": [
+     -31.9,
+     783.1,
+     144.3
+    ],
+    "center": [
+     -33.2,
+     781.8,
+     143.1
+    ],
+    "size": [
+     2.6,
+     2.6,
+     2.4
+    ]
+   }
+  },
+  {
+   "id": "pectineus_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle pectiné",
+   "name_en": "Right pectineus muscle",
+   "name_la": "Musculus pectineus",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/pectineus_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -97.1,
+     663.9,
+     95.7
+    ],
+    "max": [
+     -15.8,
+     795.9,
+     152.6
+    ],
+    "center": [
+     -56.5,
+     729.9,
+     124.1
+    ],
+    "size": [
+     81.3,
+     132.0,
+     56.9
+    ]
+   }
+  },
+  {
+   "id": "sartorius_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle sartorius",
+   "name_en": "Right sartorius muscle",
+   "name_la": "Musculus sartorius",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/sartorius_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -122.6,
+     277.3,
+     69.4
+    ],
+    "max": [
+     -21.2,
+     879.8,
+     154.0
+    ],
+    "center": [
+     -71.9,
+     578.5,
+     111.7
+    ],
+    "size": [
+     101.4,
+     602.5,
+     84.6
+    ]
+   }
+  },
+  {
+   "id": "femoral_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf fémoral",
+   "name_en": "Right femoral nerve",
+   "name_la": "Nervus femoralis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/femoral_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -87.2,
+     558.4,
+     72.5
+    ],
+    "max": [
+     -11.4,
+     1033.5,
+     141.0
+    ],
+    "center": [
+     -49.3,
+     796.0,
+     106.7
+    ],
+    "size": [
+     75.9,
+     475.1,
+     68.5
+    ]
+   }
+  },
+  {
+   "id": "femoral_vein_right",
+   "role": "sujet",
+   "nom_fr": "Veine fémorale",
+   "name_en": "Right femoral vein",
+   "name_la": "Vena femoralis",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "file": "models/veines/femoral_vein_right.glb",
+   "bounds": {
+    "min": [
+     -74.0,
+     494.8,
+     81.7
+    ],
+    "max": [
+     -35.2,
+     816.8,
+     148.6
+    ],
+    "center": [
+     -54.6,
+     655.8,
+     115.1
+    ],
+    "size": [
+     38.8,
+     322.0,
+     66.8
+    ]
+   }
+  },
+  {
+   "id": "external_iliac_artery_right",
+   "role": "contexte",
+   "nom_fr": "Artère iliaque externe",
+   "name_en": "Right external iliac artery",
+   "name_la": "Arteria iliaca externa",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/external_iliac_artery_right.glb",
+   "bounds": {
+    "min": [
+     -58.1,
+     823.0,
+     95.6
+    ],
+    "max": [
+     -23.8,
+     919.0,
+     130.8
+    ],
+    "center": [
+     -41.0,
+     871.0,
+     113.2
+    ],
+    "size": [
+     34.4,
+     96.0,
+     35.1
+    ]
+   }
+  },
+  {
+   "id": "psoas_major_right",
+   "role": "contexte",
+   "nom_fr": "Grand psoas",
+   "name_en": "Right psoas major",
+   "name_la": "Psoas major",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/psoas_major_right.glb",
+   "bounds": {
+    "min": [
+     -106.4,
+     706.4,
+     61.5
+    ],
+    "max": [
+     -8.3,
+     1088.4,
+     134.8
+    ],
+    "center": [
+     -57.4,
+     897.4,
+     98.1
+    ],
+    "size": [
+     98.1,
+     382.0,
+     73.3
+    ]
+   }
+  },
+  {
+   "id": "great_saphenous_vein_right",
+   "role": "contexte",
+   "nom_fr": "Veine grande saphène",
+   "name_en": "Right great saphenous vein",
+   "name_la": "Vena saphena magna",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "file": "models/veines/great_saphenous_vein_right.glb",
+   "bounds": {
+    "min": [
+     -70.9,
+     -14.8,
+     42.1
+    ],
+    "max": [
+     -19.2,
+     786.5,
+     154.0
+    ],
+    "center": [
+     -45.1,
+     385.8,
+     98.1
+    ],
+    "size": [
+     51.7,
+     801.3,
+     111.9
+    ]
+   }
+  },
+  {
+   "id": "femur_right",
+   "role": "ghost",
+   "nom_fr": "Fémur",
+   "name_en": "Right femur",
+   "name_la": "Os femoris",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/femur_right.glb",
+   "bounds": {
+    "min": [
+     -146.2,
+     358.8,
+     44.3
+    ],
+    "max": [
+     -31.7,
+     815.8,
+     117.6
+    ],
+    "center": [
+     -88.9,
+     587.3,
+     80.9
+    ],
+    "size": [
+     114.5,
+     456.9,
+     73.3
+    ]
+   }
+  },
+  {
+   "id": "hip_bone_right",
+   "role": "ghost",
+   "nom_fr": "Os coxal",
+   "name_en": "Right hip bone",
+   "name_la": "Os coxae",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/hip_bone_right.glb",
+   "bounds": {
+    "min": [
+     -132.8,
+     728.3,
+     18.5
+    ],
+    "max": [
+     -3.2,
+     944.5,
+     153.6
+    ],
+    "center": [
+     -68.0,
+     836.4,
+     86.1
+    ],
+    "size": [
+     129.6,
+     216.2,
+     135.1
+    ]
+   }
+  }
+ ],
+ "diagrams": {},
+ "source": "data/FIGURES-AUDIT.json + proto-schemas/manifest.json + schemas-scenes/batch-B.json"
+}

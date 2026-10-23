@@ -1,0 +1,238 @@
+{
+ "titre_fr": "Organisation schématique de la rétine — les 10 couches",
+ "titre_en": "Schematic organisation of the retina — the 10 layers",
+ "w": 720,
+ "h": 1120,
+ "levels": {
+  "membrane": {
+   "c": "#b388ff",
+   "fr": "Membranes limitantes",
+   "en": "Limiting membranes"
+  },
+  "neurone": {
+   "c": "#58d68d",
+   "fr": "Couches cellulaires (neurones)",
+   "en": "Cellular layers (neurons)"
+  },
+  "synapse": {
+   "c": "#4fc3f7",
+   "fr": "Couches plexiformes (synapses)",
+   "en": "Plexiform layers (synapses)"
+  },
+  "recepteur": {
+   "c": "#f0d429",
+   "fr": "Photorécepteurs",
+   "en": "Photoreceptors"
+  },
+  "ecran": {
+   "c": "#e57373",
+   "fr": "Épithélium pigmentaire (écran)",
+   "en": "Pigment epithelium (screen)"
+  },
+  "note": {
+   "c": "#607d8b",
+   "fr": "Repères (lumière / enveloppes)",
+   "en": "Markers (light / coats)"
+  }
+ },
+ "nodes": [
+  {
+   "id": "vitre",
+   "x": 320,
+   "y": 48,
+   "w": 470,
+   "label": "VITRÉ — lumière incidente",
+   "sub": "la lumière traverse toute la rétine avant d'atteindre les récepteurs",
+   "lvl": "note",
+   "desc": {
+    "fr": "La rétine est une tunique transparente : la lumière traverse d'abord ses couches internes (du vitré vers la sclérose) et n'atteint les photorécepteurs qu'en dernier. Le signal nerveux, lui, repart en sens inverse, vers le nerf optique. Touchez la couche des photorécepteurs pour suivre le trajet du signal.",
+    "en": "The retina is transparent: light first crosses its inner layers (from the vitreous towards the sclera) and reaches the photoreceptors last. The nerve signal travels back in the opposite direction, towards the optic nerve. Tap the photoreceptor layer to follow the signal path."
+   }
+  },
+  {
+   "id": "lmi",
+   "x": 320,
+   "y": 140,
+   "w": 470,
+   "label": "10 · Membrane limitante interne",
+   "sub": "pieds des cellules de Müller, au contact du vitré",
+   "lvl": "membrane",
+   "desc": {
+    "fr": "Membrane limitante interne : couche la plus interne de la rétine, formée par les pieds étalés des cellules de Müller ; elle sépare la rétine du corps vitré.",
+    "en": "Internal limiting membrane: innermost retinal layer, formed by the expanded feet of Müller cells; it separates the retina from the vitreous body."
+   }
+  },
+  {
+   "id": "fibres",
+   "x": 320,
+   "y": 232,
+   "w": 470,
+   "label": "9 · Couche des fibres nerveuses",
+   "sub": "axones des cellules ganglionnaires → papille → nerf optique",
+   "lvl": "neurone",
+   "desc": {
+    "fr": "Couche des fibres nerveuses (fibres optiques) : les axones des cellules ganglionnaires (multipolaires) courent à la surface interne de la rétine et convergent vers la papille optique pour former le nerf optique.",
+    "en": "Nerve fibre layer: axons of the ganglion (multipolar) cells run along the inner retinal surface and converge on the optic disc to form the optic nerve."
+   }
+  },
+  {
+   "id": "nerf_optique",
+   "x": 624,
+   "y": 232,
+   "r": 17,
+   "label": "Nerf optique",
+   "lvl": "neurone",
+   "desc": {
+    "fr": "Nerf optique : formé par la convergence des axones des cellules multipolaires au niveau de la papille ; il quitte le globe par la lame criblée et gagne le chiasma par le canal optique (voir le schéma des voies visuelles).",
+    "en": "Optic nerve: formed by the convergence of multipolar-cell axons at the optic disc; it leaves the globe through the lamina cribrosa and reaches the chiasm via the optic canal (see the visual pathway diagram)."
+   }
+  },
+  {
+   "id": "ganglionnaires",
+   "x": 320,
+   "y": 324,
+   "w": 470,
+   "label": "8 · Couche des cellules ganglionnaires",
+   "sub": "cellules multipolaires — 2ᵉ neurone (N2)",
+   "lvl": "neurone",
+   "desc": {
+    "fr": "Couche des cellules ganglionnaires : corps des cellules multipolaires, 2ᵉ neurone de la voie visuelle. Au centre (macula), chaque bipolaire fait synapse avec une seule multipolaire (acuité maximale) ; en périphérie, plusieurs bipolaires convergent sur une multipolaire.",
+    "en": "Ganglion cell layer: bodies of the multipolar cells, 2nd neuron of the visual pathway. Centrally (macula) each bipolar synapses with a single multipolar cell (maximal acuity); peripherally several bipolars converge on one multipolar cell."
+   }
+  },
+  {
+   "id": "plex_interne",
+   "x": 320,
+   "y": 416,
+   "w": 470,
+   "label": "7 · Couche plexiforme interne",
+   "sub": "synapses bipolaires ↔ ganglionnaires (+ amacrines)",
+   "lvl": "synapse",
+   "desc": {
+    "fr": "Couche plexiforme interne : zone de synapses entre les axones des cellules bipolaires et les dendrites des cellules ganglionnaires, avec les cellules amacrines qui modulent la transmission.",
+    "en": "Inner plexiform layer: synaptic zone between bipolar-cell axons and ganglion-cell dendrites, with amacrine cells modulating transmission."
+   }
+  },
+  {
+   "id": "nuc_interne",
+   "x": 320,
+   "y": 508,
+   "w": 470,
+   "label": "6 · Couche nucléaire interne",
+   "sub": "corps des bipolaires — 1ᵉʳ neurone (N1) · horizontales · Müller",
+   "lvl": "neurone",
+   "desc": {
+    "fr": "Couche nucléaire interne : corps des cellules bipolaires, 1ᵉʳ neurone de la voie visuelle, entourés des cellules horizontales, amacrines et des corps des cellules de Müller (glie de soutien).",
+    "en": "Inner nuclear layer: bodies of the bipolar cells, 1st neuron of the visual pathway, together with horizontal and amacrine cells and the bodies of Müller cells (supporting glia)."
+   }
+  },
+  {
+   "id": "plex_externe",
+   "x": 320,
+   "y": 600,
+   "w": 470,
+   "label": "5 · Couche plexiforme externe",
+   "sub": "synapses photorécepteurs ↔ bipolaires (+ horizontales)",
+   "lvl": "synapse",
+   "desc": {
+    "fr": "Couche plexiforme externe : première synapse de la voie visuelle, entre les terminaisons des cônes et des bâtonnets et les dendrites des cellules bipolaires ; les cellules horizontales y assurent l'inhibition latérale.",
+    "en": "Outer plexiform layer: first synapse of the visual pathway, between cone and rod terminals and bipolar-cell dendrites; horizontal cells provide lateral inhibition."
+   }
+  },
+  {
+   "id": "nuc_externe",
+   "x": 320,
+   "y": 692,
+   "w": 470,
+   "label": "4 · Couche nucléaire externe",
+   "sub": "corps (noyaux) des cônes et des bâtonnets",
+   "lvl": "neurone",
+   "desc": {
+    "fr": "Couche nucléaire externe : elle contient les corps cellulaires (noyaux) des photorécepteurs — cônes et bâtonnets — dont les segments externes forment la couche voisine.",
+    "en": "Outer nuclear layer: contains the cell bodies (nuclei) of the photoreceptors — cones and rods — whose outer segments form the neighbouring layer."
+   }
+  },
+  {
+   "id": "lme",
+   "x": 320,
+   "y": 784,
+   "w": 470,
+   "label": "3 · Membrane limitante externe",
+   "sub": "jonctions photorécepteurs ↔ cellules de Müller",
+   "lvl": "membrane",
+   "desc": {
+    "fr": "Membrane limitante externe : ligne de jonctions entre les photorécepteurs et les prolongements des cellules de Müller ; elle sépare les corps des récepteurs de leurs segments externes.",
+    "en": "External limiting membrane: line of junctions between photoreceptors and Müller-cell processes; it separates receptor cell bodies from their outer segments."
+   }
+  },
+  {
+   "id": "photorecepteurs",
+   "x": 320,
+   "y": 876,
+   "w": 470,
+   "label": "2 · Couche des photorécepteurs",
+   "sub": "segments externes des cônes et des bâtonnets",
+   "lvl": "recepteur",
+   "desc": {
+    "fr": "Couche des cellules sensorielles (photorécepteurs), spécialisées dans la réception des rayons lumineux. Les cônes : très forte concentration au niveau de la région maculaire (macula, fovéa, tache jaune), spécialisés dans la vision diurne (vision des couleurs). Les bâtonnets : leur concentration augmente vers la rétine périphérique, spécialisés dans la vision nocturne. C'est ici que naît le signal : touchez ce nœud — le trajet du signal s'allume jusqu'au nerf optique.",
+    "en": "Photoreceptor layer (sensory cells), specialised in receiving light rays. Cones: highly concentrated in the macular region (macula, fovea), specialised in daytime (colour) vision. Rods: increasingly concentrated towards the periphery, specialised in night vision. The signal is born here: tap this node — the signal path lights up to the optic nerve."
+   }
+  },
+  {
+   "id": "pigmentaire",
+   "x": 320,
+   "y": 968,
+   "w": 470,
+   "label": "1 · Épithélium pigmentaire",
+   "sub": "écran noir au fond de l'œil",
+   "lvl": "ecran",
+   "desc": {
+    "fr": "Couche des cellules pigmentaires : elle joue le rôle d'écran sur lequel vont se réfléchir les influx lumineux vers les cellules sensorielles ; elle absorbe la lumière diffuse, nourrit les photorécepteurs et renouvelle leurs segments externes.",
+    "en": "Pigment cell layer: it acts as a screen on which light impulses are reflected back towards the sensory cells; it absorbs stray light, nourishes the photoreceptors and renews their outer segments."
+   }
+  },
+  {
+   "id": "choroide",
+   "x": 320,
+   "y": 1060,
+   "w": 470,
+   "label": "CHOROÏDE · SCLÈRE",
+   "sub": "enveloppes vasculaires et fibreuse du globe",
+   "lvl": "note",
+   "desc": {
+    "fr": "En dehors de la rétine : la choroïde (tunique vasculaire qui la nourrit) puis la sclère (tunique fibreuse protectrice du globe oculaire) — visibles dans la scène 3D de la figure 13.",
+    "en": "Outside the retina: the choroid (vascular coat that nourishes it) then the sclera (fibrous protective coat of the eyeball) — visible in the 3D scene of figure 13."
+   }
+  }
+ ],
+ "edges": [
+  [
+   "photorecepteurs",
+   "nuc_externe"
+  ],
+  [
+   "nuc_externe",
+   "plex_externe"
+  ],
+  [
+   "plex_externe",
+   "nuc_interne"
+  ],
+  [
+   "nuc_interne",
+   "plex_interne"
+  ],
+  [
+   "plex_interne",
+   "ganglionnaires"
+  ],
+  [
+   "ganglionnaires",
+   "fibres"
+  ],
+  [
+   "fibres",
+   "nerf_optique"
+  ]
+ ]
+}

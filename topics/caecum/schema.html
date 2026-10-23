@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Batch I — Schémas interactifs · Cæcum (Figs 110–111)</title>
+<style>
+  :root{ --bg:#0b1220; --panel:#101d33; --ink:#e8eef7; --mut:#9db1cc; --gold:#f0a13c; }
+  *{ box-sizing:border-box; margin:0; }
+  body{ background:var(--bg); color:var(--ink); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; padding:10px; }
+  h1{ font-size:16px; margin:2px 0 2px; }
+  .sous{ color:var(--mut); font-size:12px; margin-bottom:8px; }
+  .tabs{ display:flex; gap:8px; margin-bottom:8px; }
+  .tabs button{ flex:1; padding:10px 6px; border-radius:10px; border:1px solid #2a3c58; background:#0e1830; color:var(--ink); font-size:13px; font-weight:600; }
+  .tabs button.on{ background:#1d3a5f; border-color:var(--gold); }
+  #schemalegend{ display:flex; flex-wrap:wrap; gap:6px 14px; font-size:11px; color:var(--mut); margin:6px 0; }
+  #schemalegend .sw{ display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:5px; vertical-align:-1px; }
+  .hint{ font-size:11px; color:var(--mut); margin-bottom:6px; }
+  svg{ width:100%; height:auto; background:#0d1626; border:1px solid #22344f; border-radius:12px; touch-action:manipulation; }
+  svg text{ text-anchor:middle; font-size:12px; fill:var(--ink); font-weight:600; }
+  .pedge{ fill:none; stroke:#54749c; stroke-width:1.6; opacity:.85; }
+  .pedge.dash{ stroke-dasharray:5 4; }
+  .pnode{ cursor:pointer; }
+  .pnode rect, .pnode circle{ stroke-width:2; }
+  .pnode.dim{ opacity:.18; } .pedge.dim{ opacity:.08; }
+  .pnode.lit rect, .pnode.lit circle{ stroke:var(--gold); stroke-width:3; }
+  .pedge.lit{ stroke:var(--gold); stroke-width:2.6; opacity:1; }
+  #fiche{ margin-top:10px; background:var(--panel); border:1px solid #2a3c58; border-radius:12px; padding:12px; min-height:74px; }
+  #fiche h2{ font-size:14px; margin-bottom:4px; }
+  #fiche .sub{ color:var(--mut); font-size:12px; margin-bottom:6px; }
+  #fiche p{ font-size:13px; line-height:1.45; }
+  #fiche .vide{ color:var(--mut); font-size:13px; }
+  .err{ color:#f87171; font-size:13px; }
+</style>
+</head>
+<body>
+<h1>Schémas interactifs — Le cæcum</h1>
+<div class="sous">Batch I · Figs 110–111 · classe [3D+D] : la partie « D » (schéma) des deux figures. Données : schemas-scenes/batch-I.json (audit).</div>
+<div class="tabs">
+  <button id="tab110" class="on">Fig 110 — Variations de situation</button>
+  <button id="tab111">Fig 111 — Configuration</button>
+</div>
+<div id="schemalegend"></div>
+<div class="hint">Touchez un élément pour tracer son trajet ; touchez le fond pour tout réafficher.</div>
+<svg id="schemasvg" role="img" aria-label="Schéma interactif"></svg>
+<div id="fiche"><p class="vide">Aucun élément sélectionné — touchez un élément du schéma pour afficher sa fiche.</p></div>
+
+<script>
+const DIAG_URL = './batch-I.json';
+let DATA = null, curKey = 'caecum_variations', sel = null;
+const svg = document.getElementById('schemasvg');
+const NS = 'http://www.w3.org/2000/svg';
+
+function edgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return `M ${x1} ${a.y} C ${x1+dx} ${a.y}, ${x2-dx} ${b.y}, ${x2} ${b.y}`;
+}
+function build(D){
+  svg.setAttribute('viewBox', `0 0 ${D.w} ${D.h}`);
+  svg.innerHTML = '';
+  const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+  D.edges.forEach(([f, to, dash])=>{
+    const p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', edgePath(byId[f], byId[to]));
+    p.setAttribute('class', 'pedge' + (dash ? ' dash' : ''));
+    p.dataset.from = f; p.dataset.to = to;
+    svg.appendChild(p);
+  });
+  D.nodes.forEach(n=>{
+    const g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+    const col = D.levels[n.lvl].c;
+    if (n.r){
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+      c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+      g.appendChild(c);
+      const tx = document.createElementNS(NS, 'text');
+      tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+      tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+      tx.textContent = n.label; g.appendChild(tx);
+    } else {
+      const r = document.createElementNS(NS, 'rect');
+      r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+      r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+      r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+      g.appendChild(r);
+      const t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', n.x); t1.setAttribute('y', n.sub ? n.y - 2 : n.y + 4);
+      t1.textContent = n.label; g.appendChild(t1);
+      if (n.sub){
+        const t2 = document.createElementNS(NS, 'text');
+        t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+        t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+        t2.textContent = n.sub; g.appendChild(t2);
+      }
+      if (n.note){
+        const t3 = document.createElementNS(NS, 'text');
+        t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+        t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+        t3.textContent = n.note.fr; g.appendChild(t3);
+      }
+    }
+    g.addEventListener('click', ev=>{ ev.stopPropagation(); trace(n.id); });
+    svg.appendChild(g);
+  });
+  svg.onclick = reset;
+  const leg = document.getElementById('schemalegend'); leg.innerHTML = '';
+  Object.values(D.levels).forEach(l=>{
+    const s = document.createElement('span');
+    s.innerHTML = `<span class="sw" style="background:${l.c}"></span>${l.fr}`;
+    leg.appendChild(s);
+  });
+  reset();
+}
+function downstream(D, id){
+  const adj = {};
+  D.edges.forEach(([f, to])=>{ (adj[f] = adj[f] || []).push(to); });
+  const seen = new Set([id]); const stack = [id];
+  while (stack.length){ const cur = stack.pop(); (adj[cur] || []).forEach(n=>{ if (!seen.has(n)){ seen.add(n); stack.push(n); } }); }
+  return seen;
+}
+function trace(id){
+  const D = DATA.diagrams[curKey]; sel = id;
+  const set = downstream(D, id);
+  svg.querySelectorAll('.pnode').forEach(g=>{
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  svg.querySelectorAll('.pedge').forEach(p=>{
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const n = D.nodes.find(x=>x.id === id);
+  document.getElementById('fiche').innerHTML =
+    `<h2>${n.label}</h2>${n.sub ? `<div class="sub">${n.sub}</div>` : ''}<p>${n.desc ? n.desc.fr : ''}</p>`;
+}
+function reset(){
+  sel = null;
+  svg.querySelectorAll('.pnode,.pedge').forEach(el=>el.classList.remove('lit','dim'));
+  document.getElementById('fiche').innerHTML = '<p class="vide">Aucun élément sélectionné — touchez un élément du schéma pour afficher sa fiche.</p>';
+}
+function show(key, btn){
+  curKey = key;
+  document.getElementById('tab110').classList.toggle('on', key === 'caecum_variations');
+  document.getElementById('tab111').classList.toggle('on', key === 'caecum_configuration');
+  build(DATA.diagrams[key]);
+}
+document.getElementById('tab110').onclick = ()=>show('caecum_variations');
+document.getElementById('tab111').onclick = ()=>show('caecum_configuration');
+
+fetch(DIAG_URL).then(r=>{ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(d=>{ DATA = d; show('caecum_variations'); window.__ready = true; })
+  .catch(e=>{ document.getElementById('fiche').innerHTML = '<p class="err">Erreur de chargement du schéma : ' + e.message + '</p>'; window.__error = e.message; });
+</script>
+<a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

@@ -1,0 +1,1870 @@
+{
+ "brodmann": {
+  "titre_fr": "Aires fonctionnelles corticales selon Brodmann — carte interactive",
+  "titre_en": "Cortical functional areas according to Brodmann — interactive map",
+  "w": 720,
+  "h": 1010,
+  "levels": {
+   "motrice": {
+    "c": "#f0a13c",
+    "fr": "Aires motrices",
+    "en": "Motor areas"
+   },
+   "sensitive": {
+    "c": "#4fc3f7",
+    "fr": "Aires sensitives",
+    "en": "Somatosensory areas"
+   },
+   "sensorielle": {
+    "c": "#b388ff",
+    "fr": "Aires sensorielles",
+    "en": "Sensory areas"
+   },
+   "langage": {
+    "c": "#58d68d",
+    "fr": "Aires du langage (associatives)",
+    "en": "Language areas (associative)"
+   },
+   "note": {
+    "c": "#607d8b",
+    "fr": "Repère de vue / note",
+    "en": "View marker / note"
+   }
+  },
+  "nodes": [
+   {
+    "id": "lat_title",
+    "x": 360,
+    "y": 34,
+    "w": 620,
+    "label": "FACE LATÉRALE — hémisphère droit",
+    "sub": "pôle frontal à gauche · pôle occipital à droite",
+    "lvl": "note",
+    "desc": {
+     "fr": "Carte schématique des aires du cours sur la face latérale : touchez un numéro pour son nom, son support et sa fonction. La surface corticale est subdivisée en 52 aires selon Brodmann ; seules les aires du programme sont cartographiées ici.",
+     "en": "Schematic map of the course areas on the lateral surface: tap a number for its name, support and function. The cortical surface is divided into 52 Brodmann areas; only the programme areas are mapped here."
+    }
+   },
+   {
+    "id": "a8",
+    "x": 118,
+    "y": 120,
+    "w": 96,
+    "label": "8",
+    "sub": "Oculo-motrice",
+    "lvl": "motrice",
+    "desc": {
+     "fr": "Aire 8 — aire motrice secondaire oculo-motrice, située en avant de l'aire 4 (partie postérieure des gyri frontaux supérieur et moyen) : elle commande les mouvements conjugués des yeux.",
+     "en": "Area 8 — secondary oculomotor area, in front of area 4 (posterior part of the superior and middle frontal gyri): controls conjugate eye movements."
+    }
+   },
+   {
+    "id": "a6",
+    "x": 218,
+    "y": 140,
+    "w": 96,
+    "label": "6",
+    "sub": "Psycho-motrice",
+    "lvl": "motrice",
+    "desc": {
+     "fr": "Aire 6 — aire motrice secondaire psycho-motrice, en avant de l'aire 4 : préparation et programmation du mouvement. Sa partie postérieure, sur le gyrus frontal moyen (F2), est le centre de l'expression écrite (graphie).",
+     "en": "Area 6 — secondary psychomotor area, in front of area 4: preparation and programming of movement. Its posterior part, on the middle frontal gyrus (F2), is the centre of written expression."
+    }
+   },
+   {
+    "id": "a4",
+    "x": 320,
+    "y": 165,
+    "w": 96,
+    "label": "4",
+    "sub": "Motrice primaire",
+    "lvl": "motrice",
+    "desc": {
+     "fr": "Aire 4 — aire motrice primaire somato-motrice : elle correspond à la plus grande partie du gyrus pré-central (circonvolution frontale ascendante, FA), centre de la motricité volontaire d'où naissent la majeure partie des faisceaux pyramidaux.",
+     "en": "Area 4 — primary somatomotor area: most of the precentral gyrus (ascending frontal convolution), centre of voluntary motricity where most pyramidal fibres arise."
+    }
+   },
+   {
+    "id": "a312",
+    "x": 425,
+    "y": 165,
+    "w": 110,
+    "label": "3 · 1 · 2",
+    "sub": "Sensitive primaire",
+    "lvl": "sensitive",
+    "desc": {
+     "fr": "Aires 3, 1 et 2 — aires sensitives primaires, disposées d'avant en arrière sur le gyrus post-central (circonvolution pariétale ascendante, PA), en arrière du sillon central : centre sensitif primaire (somesthésie).",
+     "en": "Areas 3, 1 and 2 — primary somatosensory areas, arranged front-to-back on the postcentral gyrus, behind the central sulcus: primary sensory centre."
+    }
+   },
+   {
+    "id": "a57",
+    "x": 505,
+    "y": 115,
+    "w": 96,
+    "label": "5 · 7",
+    "sub": "Psycho-sensitive",
+    "lvl": "sensitive",
+    "desc": {
+     "fr": "Aires 5 et 7 — aires sensitives secondaires psycho-sensitives, en arrière de l'aire sensitive primaire, sur le lobule pariétal supérieur (P1) : intégration et interprétation des sensibilités.",
+     "en": "Areas 5 and 7 — secondary psychosensory areas, behind the primary sensory area, on the superior parietal lobule: integration and interpretation of sensation."
+    }
+   },
+   {
+    "id": "a44",
+    "x": 140,
+    "y": 235,
+    "w": 96,
+    "label": "44",
+    "sub": "Broca — pied de F3",
+    "lvl": "langage",
+    "desc": {
+     "fr": "Aire 44 — sur le pied du gyrus frontal inférieur (F3, partie operculaire) : composante de l'aire de Broca, centre de l'expression orale du langage (hémisphère gauche chez le droitier).",
+     "en": "Area 44 — on the foot of the inferior frontal gyrus (F3, opercular part): part of Broca's area, centre of spoken language expression (left hemisphere in right-handers)."
+    }
+   },
+   {
+    "id": "a45",
+    "x": 215,
+    "y": 290,
+    "w": 96,
+    "label": "45",
+    "sub": "Broca — cap de F3",
+    "lvl": "langage",
+    "desc": {
+     "fr": "Aire 45 — sur le cap du gyrus frontal inférieur (F3, partie triangulaire) : avec l'aire 44, elle forme l'aire de Broca (expression orale).",
+     "en": "Area 45 — on the cap of the inferior frontal gyrus (F3, triangular part): with area 44 it forms Broca's area (spoken expression)."
+    }
+   },
+   {
+    "id": "a41",
+    "x": 315,
+    "y": 325,
+    "w": 96,
+    "label": "41",
+    "sub": "Auditive primaire",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aire 41 — aire auditive primaire ou gyrus de Heschl : zone de réception primaire des sons, située sur la partie moyenne de la circonvolution temporale supérieure (T1, gyri temporaux transverses).",
+     "en": "Area 41 — primary auditory area (Heschl's gyrus): primary sound reception zone, on the middle part of the superior temporal convolution (transverse temporal gyri)."
+    }
+   },
+   {
+    "id": "a42",
+    "x": 425,
+    "y": 350,
+    "w": 96,
+    "label": "42",
+    "sub": "Psycho-auditive",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aire 42 — aire auditive secondaire psycho-auditive : elle entoure l'aire 41 et assure l'identification des sons (gnosie auditive). Elle participe aussi à l'aire de Wernicke.",
+     "en": "Area 42 — secondary psycho-auditory area surrounding area 41: identification of sounds (auditory gnosis). It also takes part in Wernicke's area."
+    }
+   },
+   {
+    "id": "a43",
+    "x": 400,
+    "y": 265,
+    "w": 96,
+    "label": "43",
+    "sub": "Gustative",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aire 43 — aire gustative : elle occupe la partie inférieure de la circonvolution pariétale ascendante (gyrus post-central).",
+     "en": "Area 43 — gustatory area: occupies the inferior part of the ascending parietal convolution (postcentral gyrus)."
+    }
+   },
+   {
+    "id": "a22",
+    "x": 540,
+    "y": 320,
+    "w": 110,
+    "label": "22",
+    "sub": "Wernicke",
+    "lvl": "langage",
+    "desc": {
+     "fr": "Aire 22 — partie postérieure du gyrus temporal supérieur : avec l'aire 42, elle constitue l'aire de Wernicke, centre de la compréhension du langage oral (hémisphère gauche chez le droitier).",
+     "en": "Area 22 — posterior part of the superior temporal gyrus: with area 42 it forms Wernicke's area, centre of spoken language comprehension (left hemisphere in right-handers)."
+    }
+   },
+   {
+    "id": "a40",
+    "x": 520,
+    "y": 245,
+    "w": 96,
+    "label": "40",
+    "sub": "Supramarginal",
+    "lvl": "langage",
+    "desc": {
+     "fr": "Aire 40 — gyrus supra-marginal, qui coiffe la terminaison de la scissure de Sylvius (lobule pariétal inférieur, P2) : avec l'aire 39, elle intervient dans la compréhension du langage écrit (lecture).",
+     "en": "Area 40 — supramarginal gyrus, capping the end of the Sylvian fissure (inferior parietal lobule): with area 39 it serves written language comprehension (reading)."
+    }
+   },
+   {
+    "id": "a39",
+    "x": 600,
+    "y": 190,
+    "w": 96,
+    "label": "39",
+    "sub": "Angulaire",
+    "lvl": "langage",
+    "desc": {
+     "fr": "Aire 39 — gyrus angulaire, qui coiffe la terminaison du 1ᵉʳ sillon temporal (lobule pariétal inférieur, P2) : avec l'aire 40, centre de la compréhension du langage écrit.",
+     "en": "Area 39 — angular gyrus, capping the end of the 1st temporal sulcus (inferior parietal lobule): with area 40, centre of written language comprehension."
+    }
+   },
+   {
+    "id": "a1819l",
+    "x": 620,
+    "y": 395,
+    "w": 110,
+    "label": "18 · 19",
+    "sub": "Psycho-visuelles",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aires 18 et 19 — aires visuelles secondaires ou psycho-visuelles : elles entourent l'aire 17 (surtout développées sur la face médiale, autour de la scissure calcarine) et assurent l'interprétation des images.",
+     "en": "Areas 18 and 19 — secondary (psycho-visual) areas surrounding area 17 (best developed medially, around the calcarine fissure): interpretation of images."
+    }
+   },
+   {
+    "id": "med_title",
+    "x": 360,
+    "y": 556,
+    "w": 620,
+    "label": "FACE MÉDIALE — hémisphère droit",
+    "sub": "vue par la face interne : pôle frontal à droite",
+    "lvl": "note",
+    "desc": {
+     "fr": "Face médiale (plane et verticale) : on y trouve le lobe limbique (corps calleux), le lobule para-central, le précuneus, le cuneus et les lèvres de la scissure calcarine. Touchez un numéro pour le détail.",
+     "en": "Medial surface (flat and vertical): limbic lobe (corpus callosum), paracentral lobule, precuneus, cuneus and the lips of the calcarine fissure. Tap a number for details."
+    }
+   },
+   {
+    "id": "sma",
+    "x": 545,
+    "y": 640,
+    "w": 170,
+    "label": "6 méd.",
+    "sub": "Motrice supplémentaire",
+    "lvl": "motrice",
+    "desc": {
+     "fr": "Aire motrice supplémentaire — située au niveau du lobule para-central, sur la face médiale : elle prolonge en dedans l'aire motrice et participe à la programmation des mouvements complexes.",
+     "en": "Supplementary motor area — at the paracentral lobule, on the medial surface: medial extension of the motor area, involved in programming complex movements."
+    }
+   },
+   {
+    "id": "a4m",
+    "x": 350,
+    "y": 640,
+    "w": 130,
+    "label": "4 · 3-1-2",
+    "sub": "Lobule paracentral",
+    "lvl": "sensitive",
+    "desc": {
+     "fr": "Lobule para-central — prolongement interne des gyri pré-central (aire 4, motrice) et post-central (aires 3, 1, 2, sensitives), au-dessus de la scissure calloso-marginale : il contient la représentation du membre inférieur.",
+     "en": "Paracentral lobule — medial continuation of the precentral (area 4, motor) and postcentral (areas 3, 1, 2, sensory) gyri, above the callosomarginal fissure: contains the lower-limb representation."
+    }
+   },
+   {
+    "id": "a57m",
+    "x": 215,
+    "y": 650,
+    "w": 110,
+    "label": "5 · 7",
+    "sub": "Précuneus",
+    "lvl": "sensitive",
+    "desc": {
+     "fr": "Aires 5 et 7 sur la face médiale du lobe pariétal : le précuneus (lobule quadrilatère), en avant du cuneus, séparé du gyrus du cingulum par le sillon sous-pariétal.",
+     "en": "Areas 5 and 7 on the medial parietal surface: the precuneus (quadrilateral lobule), in front of the cuneus, separated from the cingulate gyrus by the subparietal sulcus."
+    }
+   },
+   {
+    "id": "a1819m",
+    "x": 225,
+    "y": 745,
+    "w": 110,
+    "label": "18 · 19",
+    "sub": "Péri-calcarines",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aires 18 et 19 — aires visuelles secondaires : elles entourent l'aire 17 de part et d'autre de la scissure calcarine (cuneus en haut, gyrus lingual en bas).",
+     "en": "Areas 18 and 19 — secondary visual areas surrounding area 17 on both sides of the calcarine fissure (cuneus above, lingual gyrus below)."
+    }
+   },
+   {
+    "id": "a17m",
+    "x": 120,
+    "y": 770,
+    "w": 96,
+    "label": "17",
+    "sub": "Calcarine",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aire 17 — aire visuelle primaire : située de part et d'autre, sur les lèvres de la scissure calcarine (face médiale du lobe occipital). C'est la terminaison des radiations optiques, avec une rétinotopie très précise.",
+     "en": "Area 17 — primary visual area: on both lips of the calcarine fissure (medial occipital surface). Termination of the optic radiations, with precise retinotopy."
+    }
+   },
+   {
+    "id": "a25",
+    "x": 560,
+    "y": 800,
+    "w": 96,
+    "label": "25",
+    "sub": "Septale",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aire 25 — aire septale, aire olfactive située sur la face médiale de l'hémisphère, au niveau du lobe limbique, sous le bec du corps calleux.",
+     "en": "Area 25 — septal area, an olfactory area on the medial surface of the hemisphere, in the limbic lobe, below the rostrum of the corpus callosum."
+    }
+   },
+   {
+    "id": "a28",
+    "x": 430,
+    "y": 880,
+    "w": 110,
+    "label": "28",
+    "sub": "Entorhinale",
+    "lvl": "sensorielle",
+    "desc": {
+     "fr": "Aire 28 — aire entorhinale, aire olfactive de la face médiale, au niveau du gyrus parahippocampique (5ᵉ circonvolution temporale, T5), en relation avec l'hippocampe.",
+     "en": "Area 28 — entorhinal area, an olfactory area of the medial surface, on the parahippocampal gyrus (T5), related to the hippocampus."
+    }
+   },
+   {
+    "id": "note52",
+    "x": 360,
+    "y": 962,
+    "w": 620,
+    "label": "52 aires selon Brodmann",
+    "sub": "seules les aires du programme FMPR sont cartographiées",
+    "lvl": "note",
+    "desc": {
+     "fr": "Le cours subdivise la surface corticale en 52 aires selon Brodmann, regroupées en aires motrices, sensitives, sensorielles et associatives (langage). Les aires associatives du langage sont fonctionnelles à gauche chez le droitier.",
+     "en": "The course divides the cortical surface into 52 Brodmann areas, grouped into motor, somatosensory, sensory and associative (language) areas. Language association areas are functional on the left in right-handers."
+    }
+   }
+  ],
+  "edges": []
+ },
+ "retine": {
+  "titre_fr": "Organisation schématique de la rétine — les 10 couches",
+  "titre_en": "Schematic organisation of the retina — the 10 layers",
+  "w": 720,
+  "h": 1120,
+  "levels": {
+   "membrane": {
+    "c": "#b388ff",
+    "fr": "Membranes limitantes",
+    "en": "Limiting membranes"
+   },
+   "neurone": {
+    "c": "#58d68d",
+    "fr": "Couches cellulaires (neurones)",
+    "en": "Cellular layers (neurons)"
+   },
+   "synapse": {
+    "c": "#4fc3f7",
+    "fr": "Couches plexiformes (synapses)",
+    "en": "Plexiform layers (synapses)"
+   },
+   "recepteur": {
+    "c": "#f0d429",
+    "fr": "Photorécepteurs",
+    "en": "Photoreceptors"
+   },
+   "ecran": {
+    "c": "#e57373",
+    "fr": "Épithélium pigmentaire (écran)",
+    "en": "Pigment epithelium (screen)"
+   },
+   "note": {
+    "c": "#607d8b",
+    "fr": "Repères (lumière / enveloppes)",
+    "en": "Markers (light / coats)"
+   }
+  },
+  "nodes": [
+   {
+    "id": "vitre",
+    "x": 320,
+    "y": 48,
+    "w": 470,
+    "label": "VITRÉ — lumière incidente",
+    "sub": "la lumière traverse toute la rétine avant d'atteindre les récepteurs",
+    "lvl": "note",
+    "desc": {
+     "fr": "La rétine est une tunique transparente : la lumière traverse d'abord ses couches internes (du vitré vers la sclérose) et n'atteint les photorécepteurs qu'en dernier. Le signal nerveux, lui, repart en sens inverse, vers le nerf optique. Touchez la couche des photorécepteurs pour suivre le trajet du signal.",
+     "en": "The retina is transparent: light first crosses its inner layers (from the vitreous towards the sclera) and reaches the photoreceptors last. The nerve signal travels back in the opposite direction, towards the optic nerve. Tap the photoreceptor layer to follow the signal path."
+    }
+   },
+   {
+    "id": "lmi",
+    "x": 320,
+    "y": 140,
+    "w": 470,
+    "label": "10 · Membrane limitante interne",
+    "sub": "pieds des cellules de Müller, au contact du vitré",
+    "lvl": "membrane",
+    "desc": {
+     "fr": "Membrane limitante interne : couche la plus interne de la rétine, formée par les pieds étalés des cellules de Müller ; elle sépare la rétine du corps vitré.",
+     "en": "Internal limiting membrane: innermost retinal layer, formed by the expanded feet of Müller cells; it separates the retina from the vitreous body."
+    }
+   },
+   {
+    "id": "fibres",
+    "x": 320,
+    "y": 232,
+    "w": 470,
+    "label": "9 · Couche des fibres nerveuses",
+    "sub": "axones des cellules ganglionnaires → papille → nerf optique",
+    "lvl": "neurone",
+    "desc": {
+     "fr": "Couche des fibres nerveuses (fibres optiques) : les axones des cellules ganglionnaires (multipolaires) courent à la surface interne de la rétine et convergent vers la papille optique pour former le nerf optique.",
+     "en": "Nerve fibre layer: axons of the ganglion (multipolar) cells run along the inner retinal surface and converge on the optic disc to form the optic nerve."
+    }
+   },
+   {
+    "id": "nerf_optique",
+    "x": 624,
+    "y": 232,
+    "r": 17,
+    "label": "Nerf optique",
+    "lvl": "neurone",
+    "desc": {
+     "fr": "Nerf optique : formé par la convergence des axones des cellules multipolaires au niveau de la papille ; il quitte le globe par la lame criblée et gagne le chiasma par le canal optique (voir le schéma des voies visuelles).",
+     "en": "Optic nerve: formed by the convergence of multipolar-cell axons at the optic disc; it leaves the globe through the lamina cribrosa and reaches the chiasm via the optic canal (see the visual pathway diagram)."
+    }
+   },
+   {
+    "id": "ganglionnaires",
+    "x": 320,
+    "y": 324,
+    "w": 470,
+    "label": "8 · Couche des cellules ganglionnaires",
+    "sub": "cellules multipolaires — 2ᵉ neurone (N2)",
+    "lvl": "neurone",
+    "desc": {
+     "fr": "Couche des cellules ganglionnaires : corps des cellules multipolaires, 2ᵉ neurone de la voie visuelle. Au centre (macula), chaque bipolaire fait synapse avec une seule multipolaire (acuité maximale) ; en périphérie, plusieurs bipolaires convergent sur une multipolaire.",
+     "en": "Ganglion cell layer: bodies of the multipolar cells, 2nd neuron of the visual pathway. Centrally (macula) each bipolar synapses with a single multipolar cell (maximal acuity); peripherally several bipolars converge on one multipolar cell."
+    }
+   },
+   {
+    "id": "plex_interne",
+    "x": 320,
+    "y": 416,
+    "w": 470,
+    "label": "7 · Couche plexiforme interne",
+    "sub": "synapses bipolaires ↔ ganglionnaires (+ amacrines)",
+    "lvl": "synapse",
+    "desc": {
+     "fr": "Couche plexiforme interne : zone de synapses entre les axones des cellules bipolaires et les dendrites des cellules ganglionnaires, avec les cellules amacrines qui modulent la transmission.",
+     "en": "Inner plexiform layer: synaptic zone between bipolar-cell axons and ganglion-cell dendrites, with amacrine cells modulating transmission."
+    }
+   },
+   {
+    "id": "nuc_interne",
+    "x": 320,
+    "y": 508,
+    "w": 470,
+    "label": "6 · Couche nucléaire interne",
+    "sub": "corps des bipolaires — 1ᵉʳ neurone (N1) · horizontales · Müller",
+    "lvl": "neurone",
+    "desc": {
+     "fr": "Couche nucléaire interne : corps des cellules bipolaires, 1ᵉʳ neurone de la voie visuelle, entourés des cellules horizontales, amacrines et des corps des cellules de Müller (glie de soutien).",
+     "en": "Inner nuclear layer: bodies of the bipolar cells, 1st neuron of the visual pathway, together with horizontal and amacrine cells and the bodies of Müller cells (supporting glia)."
+    }
+   },
+   {
+    "id": "plex_externe",
+    "x": 320,
+    "y": 600,
+    "w": 470,
+    "label": "5 · Couche plexiforme externe",
+    "sub": "synapses photorécepteurs ↔ bipolaires (+ horizontales)",
+    "lvl": "synapse",
+    "desc": {
+     "fr": "Couche plexiforme externe : première synapse de la voie visuelle, entre les terminaisons des cônes et des bâtonnets et les dendrites des cellules bipolaires ; les cellules horizontales y assurent l'inhibition latérale.",
+     "en": "Outer plexiform layer: first synapse of the visual pathway, between cone and rod terminals and bipolar-cell dendrites; horizontal cells provide lateral inhibition."
+    }
+   },
+   {
+    "id": "nuc_externe",
+    "x": 320,
+    "y": 692,
+    "w": 470,
+    "label": "4 · Couche nucléaire externe",
+    "sub": "corps (noyaux) des cônes et des bâtonnets",
+    "lvl": "neurone",
+    "desc": {
+     "fr": "Couche nucléaire externe : elle contient les corps cellulaires (noyaux) des photorécepteurs — cônes et bâtonnets — dont les segments externes forment la couche voisine.",
+     "en": "Outer nuclear layer: contains the cell bodies (nuclei) of the photoreceptors — cones and rods — whose outer segments form the neighbouring layer."
+    }
+   },
+   {
+    "id": "lme",
+    "x": 320,
+    "y": 784,
+    "w": 470,
+    "label": "3 · Membrane limitante externe",
+    "sub": "jonctions photorécepteurs ↔ cellules de Müller",
+    "lvl": "membrane",
+    "desc": {
+     "fr": "Membrane limitante externe : ligne de jonctions entre les photorécepteurs et les prolongements des cellules de Müller ; elle sépare les corps des récepteurs de leurs segments externes.",
+     "en": "External limiting membrane: line of junctions between photoreceptors and Müller-cell processes; it separates receptor cell bodies from their outer segments."
+    }
+   },
+   {
+    "id": "photorecepteurs",
+    "x": 320,
+    "y": 876,
+    "w": 470,
+    "label": "2 · Couche des photorécepteurs",
+    "sub": "segments externes des cônes et des bâtonnets",
+    "lvl": "recepteur",
+    "desc": {
+     "fr": "Couche des cellules sensorielles (photorécepteurs), spécialisées dans la réception des rayons lumineux. Les cônes : très forte concentration au niveau de la région maculaire (macula, fovéa, tache jaune), spécialisés dans la vision diurne (vision des couleurs). Les bâtonnets : leur concentration augmente vers la rétine périphérique, spécialisés dans la vision nocturne. C'est ici que naît le signal : touchez ce nœud — le trajet du signal s'allume jusqu'au nerf optique.",
+     "en": "Photoreceptor layer (sensory cells), specialised in receiving light rays. Cones: highly concentrated in the macular region (macula, fovea), specialised in daytime (colour) vision. Rods: increasingly concentrated towards the periphery, specialised in night vision. The signal is born here: tap this node — the signal path lights up to the optic nerve."
+    }
+   },
+   {
+    "id": "pigmentaire",
+    "x": 320,
+    "y": 968,
+    "w": 470,
+    "label": "1 · Épithélium pigmentaire",
+    "sub": "écran noir au fond de l'œil",
+    "lvl": "ecran",
+    "desc": {
+     "fr": "Couche des cellules pigmentaires : elle joue le rôle d'écran sur lequel vont se réfléchir les influx lumineux vers les cellules sensorielles ; elle absorbe la lumière diffuse, nourrit les photorécepteurs et renouvelle leurs segments externes.",
+     "en": "Pigment cell layer: it acts as a screen on which light impulses are reflected back towards the sensory cells; it absorbs stray light, nourishes the photoreceptors and renews their outer segments."
+    }
+   },
+   {
+    "id": "choroide",
+    "x": 320,
+    "y": 1060,
+    "w": 470,
+    "label": "CHOROÏDE · SCLÈRE",
+    "sub": "enveloppes vasculaires et fibreuse du globe",
+    "lvl": "note",
+    "desc": {
+     "fr": "En dehors de la rétine : la choroïde (tunique vasculaire qui la nourrit) puis la sclère (tunique fibreuse protectrice du globe oculaire) — visibles dans la scène 3D de la figure 13.",
+     "en": "Outside the retina: the choroid (vascular coat that nourishes it) then the sclera (fibrous protective coat of the eyeball) — visible in the 3D scene of figure 13."
+    }
+   }
+  ],
+  "edges": [
+   [
+    "photorecepteurs",
+    "nuc_externe"
+   ],
+   [
+    "nuc_externe",
+    "plex_externe"
+   ],
+   [
+    "plex_externe",
+    "nuc_interne"
+   ],
+   [
+    "nuc_interne",
+    "plex_interne"
+   ],
+   [
+    "plex_interne",
+    "ganglionnaires"
+   ],
+   [
+    "ganglionnaires",
+    "fibres"
+   ],
+   [
+    "fibres",
+    "nerf_optique"
+   ]
+  ]
+ },
+ "voies_visuelles": {
+  "titre_fr": "Voies de conduction visuelle — schéma interactif",
+  "titre_en": "Visual conduction pathways — interactive diagram",
+  "w": 720,
+  "h": 980,
+  "levels": {
+   "voie": {
+    "c": "#4fc3f7",
+    "fr": "Voie visuelle (3 neurones)",
+    "en": "Visual pathway (3 neurons)"
+   },
+   "faisceau": {
+    "c": "#58d68d",
+    "fr": "Faisceaux de fibres",
+    "en": "Fibre bundles"
+   },
+   "terminaison": {
+    "c": "#b388ff",
+    "fr": "Terminaisons non corticales (20 %)",
+    "en": "Non-cortical terminations (20%)"
+   },
+   "clinique": {
+    "c": "#e57373",
+    "fr": "Clinique — déficits du champ visuel",
+    "en": "Clinical — visual field defects"
+   }
+  },
+  "nodes": [
+   {
+    "id": "retine",
+    "x": 115,
+    "y": 90,
+    "w": 190,
+    "label": "Rétine",
+    "sub": "N1 bipolaire → N2 multipolaire",
+    "lvl": "voie",
+    "desc": {
+     "fr": "Les voies visuelles sont des voies à 3 neurones qui commencent dans l'épaisseur de la rétine : N1 = cellule bipolaire, N2 = cellule multipolaire (ganglionnaire). Au centre, chaque cône est connecté à une bipolaire puis à une multipolaire (1 pour 1) ; en périphérie, plusieurs cellules sensorielles convergent sur une bipolaire, puis plusieurs bipolaires sur une multipolaire.",
+     "en": "The visual pathways are 3-neuron pathways beginning within the retina: N1 = bipolar cell, N2 = multipolar (ganglion) cell. Centrally each cone connects to one bipolar then one multipolar cell (1-to-1); peripherally several sensory cells converge on one bipolar, then several bipolars on one multipolar cell."
+    }
+   },
+   {
+    "id": "nerf_optique",
+    "x": 115,
+    "y": 205,
+    "w": 190,
+    "label": "Nerf optique",
+    "sub": "axones de N2 · canal optique",
+    "lvl": "voie",
+    "desc": {
+     "fr": "Les axones de N2 convergent vers la papille optique pour former le nerf optique, qui pénètre dans la boîte crânienne par le canal optique.",
+     "en": "N2 axons converge on the optic disc to form the optic nerve, which enters the cranial cavity through the optic canal."
+    }
+   },
+   {
+    "id": "def_no",
+    "x": 360,
+    "y": 205,
+    "w": 230,
+    "label": "Section du nerf optique",
+    "sub": "→ cécité du même côté",
+    "lvl": "clinique",
+    "desc": {
+     "fr": "Clinique (conclusion du cours) : la perte d'un œil ou la section d'un nerf optique entraîne une cécité du même côté.",
+     "en": "Clinical (course conclusion): loss of an eye or section of an optic nerve causes blindness on the same side."
+    }
+   },
+   {
+    "id": "chiasma",
+    "x": 115,
+    "y": 320,
+    "w": 190,
+    "label": "Chiasma optique",
+    "sub": "au-dessus de l'hypophyse",
+    "lvl": "voie",
+    "desc": {
+     "fr": "Le nerf optique se réunit, sur la ligne médiane et au-dessus de l'hypophyse, avec son homologue controlatéral pour former le chiasma optique, d'où partent les bandelettes optiques. C'est le lieu de la décussation partielle : seules les fibres nasales croisent la ligne médiane.",
+     "en": "The optic nerve joins its contralateral counterpart on the midline, above the hypophysis, to form the optic chiasm, from which the optic tracts arise. It is the site of partial decussation: only nasal fibres cross the midline."
+    }
+   },
+   {
+    "id": "fx_nasal",
+    "x": 360,
+    "y": 285,
+    "w": 230,
+    "label": "Faisceau nasal",
+    "sub": "croise → CGL controlatéral",
+    "lvl": "faisceau",
+    "desc": {
+     "fr": "Faisceau nasal : les axones issus de la rétine nasale (périphérique) croisent la ligne médiane au niveau du chiasma et gagnent le corps genouillé latéral controlatéral — ils véhiculent le champ visuel temporal.",
+     "en": "Nasal bundle: axons from the nasal (peripheral) retina cross the midline at the chiasm and reach the contralateral lateral geniculate body — they carry the temporal visual field."
+    }
+   },
+   {
+    "id": "fx_temporal",
+    "x": 360,
+    "y": 360,
+    "w": 230,
+    "label": "Faisceau temporal",
+    "sub": "direct → CGL homolatéral",
+    "lvl": "faisceau",
+    "desc": {
+     "fr": "Faisceau temporal : les axones issus de la rétine temporale empruntent le chiasma latéralement, sans croiser, et gagnent le corps genouillé latéral homolatéral — ils véhiculent le champ visuel nasal.",
+     "en": "Temporal bundle: axons from the temporal retina pass laterally through the chiasm without crossing and reach the homolateral lateral geniculate body — they carry the nasal visual field."
+    }
+   },
+   {
+    "id": "fx_maculaire",
+    "x": 360,
+    "y": 435,
+    "w": 230,
+    "label": "Faisceau maculaire",
+    "sub": "projection bilatérale",
+    "lvl": "faisceau",
+    "desc": {
+     "fr": "Les axones issus de la région maculaire forment le faisceau central ou maculaire, qui gagne après une double projection au niveau du chiasma les corps genouillés latéraux droit et gauche ; il se projette de façon bilatérale sur l'extrémité postérieure de l'aire 17.",
+     "en": "Axons from the macular region form the central (macular) bundle, which after a double projection at the chiasm reaches both lateral geniculate bodies; it projects bilaterally onto the posterior end of area 17."
+    }
+   },
+   {
+    "id": "def_chiasma",
+    "x": 600,
+    "y": 320,
+    "w": 210,
+    "label": "Lésion du chiasma",
+    "sub": "→ hémianopsie bitemporale",
+    "lvl": "clinique",
+    "desc": {
+     "fr": "Clinique (conclusion du cours) : une atteinte du chiasma (qui ne lèse que les fibres nasales croisées) entraîne une hémianopsie bitemporale — perte des deux champs visuels temporaux.",
+     "en": "Clinical (course conclusion): a chiasmal lesion (damaging only the crossing nasal fibres) causes bitemporal hemianopia — loss of both temporal visual fields."
+    }
+   },
+   {
+    "id": "bandelette",
+    "x": 115,
+    "y": 435,
+    "w": 190,
+    "label": "Bandelette optique",
+    "sub": "chiasma → corps genouillé",
+    "lvl": "voie",
+    "desc": {
+     "fr": "La bandelette optique conduit les fibres du chiasma vers le corps genouillé latéral : chaque bandelette contient les fibres temporales homolatérales et les fibres nasales controlatérales, donc un hémichamp visuel complet.",
+     "en": "The optic tract carries fibres from the chiasm to the lateral geniculate body: each tract contains homolateral temporal fibres and contralateral nasal fibres, i.e. one complete visual hemifield."
+    }
+   },
+   {
+    "id": "cgl",
+    "x": 115,
+    "y": 550,
+    "w": 190,
+    "label": "Corps géniculé latéral",
+    "sub": "relais de N3 · 80 % visuelles",
+    "lvl": "voie",
+    "desc": {
+     "fr": "80 % des fibres de la bandelette optique, dites fibres visuelles, font synapse au niveau du corps genouillé latéral avec les corps cellulaires du 3ᵉ neurone (N3), dont les axones constituent les radiations optiques. Les 20 % restantes ne gagnent pas le cortex occipital (fibres réflexes, végétatives, associatives).",
+     "en": "80% of optic tract fibres, the visual fibres, synapse in the lateral geniculate body with the cell bodies of the 3rd neuron (N3), whose axons form the optic radiations. The remaining 20% do not reach the occipital cortex (reflex, vegetative, associative fibres)."
+    }
+   },
+   {
+    "id": "fibres_reflexes",
+    "x": 600,
+    "y": 505,
+    "w": 210,
+    "label": "Fibres réflexes",
+    "sub": "→ tubercule quadrijumeau ant.",
+    "lvl": "terminaison",
+    "desc": {
+     "fr": "Fibres réflexes (20 %) : elles traversent le corps genouillé latéral et se terminent dans le tubercule quadrijumeau antérieur, où elles font synapse avec des neurones projetés sur le noyau du III — à l'origine des réflexes pupillaire et d'accommodation-convergence.",
+     "en": "Reflex fibres (20%): they cross the lateral geniculate body and end in the anterior quadrigeminal tubercle, synapsing with neurons projected onto the nucleus of III — origin of the pupillary and accommodation-convergence reflexes."
+    }
+   },
+   {
+    "id": "fibres_vegetatives",
+    "x": 600,
+    "y": 580,
+    "w": 210,
+    "label": "Fibres végétatives",
+    "sub": "→ hypothalamus",
+    "lvl": "terminaison",
+    "desc": {
+     "fr": "Fibres végétatives (20 %) : elles font synapse au niveau du corps genouillé latéral pour aller se terminer au niveau de l'hypothalamus.",
+     "en": "Vegetative fibres (20%): they synapse at the lateral geniculate body and end in the hypothalamus."
+    }
+   },
+   {
+    "id": "fibres_associatives",
+    "x": 600,
+    "y": 655,
+    "w": 210,
+    "label": "Fibres associatives",
+    "sub": "→ pulvinar",
+    "lvl": "terminaison",
+    "desc": {
+     "fr": "Fibres associatives (20 %) : elles font synapse au niveau du corps genouillé latéral et vont se terminer au niveau d'un noyau thalamique appelé le pulvinar.",
+     "en": "Associative fibres (20%): they synapse at the lateral geniculate body and end in a thalamic nucleus called the pulvinar."
+    }
+   },
+   {
+    "id": "radiations",
+    "x": 115,
+    "y": 665,
+    "w": 190,
+    "label": "Radiations optiques",
+    "sub": "axones de N3 · 2 faisceaux",
+    "lvl": "voie",
+    "desc": {
+     "fr": "Les axones de N3 constituent les radiations optiques, qui gagnent le cortex occipital selon 2 faisceaux : un supérieur dit pariétal et un inférieur dit temporal. (Les radiations ne sont pas modélisées en 3D dans le manifeste — d'où ce schéma.)",
+     "en": "N3 axons form the optic radiations, reaching the occipital cortex in 2 bundles: a superior (parietal) and an inferior (temporal) one. (The radiations are not modelled in 3D in the manifest — hence this diagram.)"
+    }
+   },
+   {
+    "id": "fx_sup",
+    "x": 600,
+    "y": 745,
+    "w": 210,
+    "label": "Faisceau supérieur",
+    "sub": "pariétal → lèvre sup. calcarine",
+    "lvl": "faisceau",
+    "desc": {
+     "fr": "Faisceau supérieur dit pariétal des radiations optiques : il gagne la lèvre supérieure de la scissure calcarine (cuneus) — il véhicule le champ visuel inférieur.",
+     "en": "Superior (parietal) bundle of the optic radiations: reaches the upper lip of the calcarine fissure (cuneus) — it carries the inferior visual field."
+    }
+   },
+   {
+    "id": "fx_inf",
+    "x": 600,
+    "y": 820,
+    "w": 210,
+    "label": "Faisceau inférieur",
+    "sub": "temporal → lèvre inf. calcarine",
+    "lvl": "faisceau",
+    "desc": {
+     "fr": "Faisceau inférieur dit temporal des radiations optiques : il gagne la lèvre inférieure de la scissure calcarine (gyrus lingual) — il véhicule le champ visuel supérieur.",
+     "en": "Inferior (temporal) bundle of the optic radiations: reaches the lower lip of the calcarine fissure (lingual gyrus) — it carries the superior visual field."
+    }
+   },
+   {
+    "id": "def_post",
+    "x": 600,
+    "y": 905,
+    "w": 220,
+    "label": "Lésion rétro-chiasmatique",
+    "sub": "→ hémianopsie latérale homonyme",
+    "lvl": "clinique",
+    "desc": {
+     "fr": "Clinique (conclusion du cours) : une section de la bandelette optique et au-delà entraîne une disparition du champ visuel nasal du même côté et du champ visuel temporal du côté opposé = hémianopsie latérale homonyme.",
+     "en": "Clinical (course conclusion): a lesion of the optic tract and beyond causes loss of the nasal visual field on the same side and of the temporal field on the opposite side = homonymous lateral hemianopia."
+    }
+   },
+   {
+    "id": "aire17",
+    "x": 115,
+    "y": 800,
+    "w": 190,
+    "label": "Aire 17 — calcarine",
+    "sub": "cortex visuel primaire",
+    "lvl": "voie",
+    "desc": {
+     "fr": "La projection au niveau de l'aire 17 (lèvres de la scissure calcarine) se fait selon une somatotopie (rétinotopie) très précise ; le faisceau maculaire se projette de façon bilatérale sur l'extrémité postérieure de l'aire 17.",
+     "en": "Projection onto area 17 (lips of the calcarine fissure) follows a very precise somatotopy (retinotopy); the macular bundle projects bilaterally onto the posterior end of area 17."
+    }
+   }
+  ],
+  "edges": [
+   [
+    "retine",
+    "nerf_optique"
+   ],
+   [
+    "nerf_optique",
+    "chiasma"
+   ],
+   [
+    "nerf_optique",
+    "def_no",
+    1
+   ],
+   [
+    "chiasma",
+    "fx_nasal"
+   ],
+   [
+    "chiasma",
+    "fx_temporal"
+   ],
+   [
+    "chiasma",
+    "fx_maculaire"
+   ],
+   [
+    "chiasma",
+    "def_chiasma",
+    1
+   ],
+   [
+    "fx_nasal",
+    "bandelette"
+   ],
+   [
+    "fx_temporal",
+    "bandelette"
+   ],
+   [
+    "fx_maculaire",
+    "bandelette"
+   ],
+   [
+    "bandelette",
+    "cgl"
+   ],
+   [
+    "bandelette",
+    "def_post",
+    1
+   ],
+   [
+    "cgl",
+    "radiations"
+   ],
+   [
+    "cgl",
+    "fibres_reflexes",
+    1
+   ],
+   [
+    "cgl",
+    "fibres_vegetatives",
+    1
+   ],
+   [
+    "cgl",
+    "fibres_associatives",
+    1
+   ],
+   [
+    "radiations",
+    "fx_sup"
+   ],
+   [
+    "radiations",
+    "fx_inf"
+   ],
+   [
+    "fx_sup",
+    "aire17"
+   ],
+   [
+    "fx_inf",
+    "aire17"
+   ]
+  ]
+ },
+ "facial_origines": {
+  "titre_fr": "Nerf facial — origines réelles et origine apparente",
+  "titre_en": "Facial nerve — real origins and apparent origin",
+  "w": 720,
+  "h": 760,
+  "levels": {
+   "noyau": {
+    "c": "#f0a13c",
+    "fr": "Noyaux (origines réelles)",
+    "en": "Nuclei (real origins)"
+   },
+   "fibre": {
+    "c": "#4fc3f7",
+    "fr": "Fibres radiculaires",
+    "en": "Root fibres"
+   },
+   "racine": {
+    "c": "#58d68d",
+    "fr": "Les 2 racines : VII et VII bis",
+    "en": "The 2 roots: VII and VII bis"
+   },
+   "clinique": {
+    "c": "#e57373",
+    "fr": "Clinique",
+    "en": "Clinical"
+   },
+   "note": {
+    "c": "#607d8b",
+    "fr": "Repère",
+    "en": "Landmark"
+   }
+  },
+  "nodes": [
+   {
+    "id": "noyau_moteur",
+    "x": 150,
+    "y": 110,
+    "w": 230,
+    "label": "Noyau moteur",
+    "sub": "calotte protubérantielle antéro-latérale",
+    "lvl": "noyau",
+    "desc": {
+     "fr": "Origine réelle motrice : le noyau moteur du facial siège dans la partie antéro-latérale de la calotte protubérantielle (pont). Il commande les muscles de la mimique. Dans la scène 3D de la figure 15, ce noyau est un maillage réel du manifeste (motor_nucleus_of_facial_nerve).",
+     "en": "Motor real origin: the facial motor nucleus lies in the anterolateral part of the pontine tegmentum. It drives the mimetic muscles. In the figure 15 3D scene this nucleus is a real mesh of the manifest."
+    }
+   },
+   {
+    "id": "noyau_solitaire",
+    "x": 150,
+    "y": 215,
+    "w": 230,
+    "label": "Noyau du tractus solitaire",
+    "sub": "sensitif — bulbe, 1/3 supérieur",
+    "lvl": "noyau",
+    "desc": {
+     "fr": "Origine réelle sensitive : le noyau sensitif du facial se situe dans le bulbe, au 1/3 supérieur du noyau du tractus solitaire ; il reçoit la gustation des 2/3 antérieurs de la langue (par la corde du tympan). Troisième relais gustatif (noyau spinal du V) : non individualisé dans le manifeste — signalé par l'audit.",
+     "en": "Sensory real origin: the sensory nucleus of the facial nerve lies in the medulla, in the upper third of the nucleus of the solitary tract; it receives taste from the anterior 2/3 of the tongue (via the chorda tympani). The third taste relay (spinal trigeminal nucleus) is not individualised in the manifest — flagged by the audit."
+    }
+   },
+   {
+    "id": "noyau_lacrymo",
+    "x": 150,
+    "y": 320,
+    "w": 230,
+    "label": "Noyau lacrymo-muco-nasal",
+    "sub": "végétatif — en dehors du noyau moteur",
+    "lvl": "noyau",
+    "desc": {
+     "fr": "Noyau végétatif lacrymo-muco-nasal : situé à côté et en dehors du noyau moteur ; ses fibres parasympathiques gagnent, par le nerf grand pétreux, les glandes lacrymales et les muqueuses nasales.",
+     "en": "Lacrimo-muco-nasal vegetative nucleus: beside and lateral to the motor nucleus; its parasympathetic fibres reach, via the greater petrosal nerve, the lacrimal glands and nasal mucosae."
+    }
+   },
+   {
+    "id": "noyau_salivaire",
+    "x": 150,
+    "y": 425,
+    "w": 230,
+    "label": "Noyau salivaire supérieur",
+    "sub": "végétatif — en dedans du noyau sensitif",
+    "lvl": "noyau",
+    "desc": {
+     "fr": "Noyau salivaire supérieur : situé à côté et en dedans du noyau sensitif ; ses fibres gagnent, par la corde du tympan, les glandes salivaires submandibulaire et sublinguale. Maillage réel du manifeste (superior_salivatory_nucleus).",
+     "en": "Superior salivatory nucleus: beside and medial to the sensory nucleus; its fibres reach, via the chorda tympani, the submandibular and sublingual salivary glands. A real mesh of the manifest."
+    }
+   },
+   {
+    "id": "fibres",
+    "x": 440,
+    "y": 265,
+    "w": 210,
+    "label": "Fibres radiculaires",
+    "sub": "VII + VII bis réunis",
+    "lvl": "fibre",
+    "desc": {
+     "fr": "Le nerf facial est un nerf mixte et sensoriel (gustatif), formé par 2 racines : le VII proprement dit et le VII bis (intermédiaire de Wrisberg), dont les fibres issues des 4 noyaux se réunissent avant l'émergence.",
+     "en": "The facial nerve is a mixed and sensory (taste) nerve formed by 2 roots: VII proper and VII bis (intermediate nerve of Wrisberg), whose fibres from the 4 nuclei unite before emergence."
+    }
+   },
+   {
+    "id": "origine_apparente",
+    "x": 440,
+    "y": 420,
+    "w": 230,
+    "label": "Origine apparente",
+    "sub": "sillon bulbo-pontique",
+    "lvl": "fibre",
+    "desc": {
+     "fr": "Origine apparente : le VII, accolé en dedans du VII bis, émerge du sillon bulbo-protubérantiel (bulbo-pontique), en dehors du nerf moteur oculaire externe (VI) et en dedans du nerf vestibulo-cochléaire (VIII). Repère sans maillage dédié dans le manifeste — la scène 3D montre le nerf et le tronc cérébral.",
+     "en": "Apparent origin: VII, with VII bis medial to it, emerges from the bulbopontine sulcus, lateral to the abducens nerve (VI) and medial to the vestibulocochlear nerve (VIII). A landmark without a dedicated mesh in the manifest — the 3D scene shows the nerve and the brainstem."
+    }
+   },
+   {
+    "id": "vii",
+    "x": 180,
+    "y": 580,
+    "w": 250,
+    "label": "VII — facial proprement dit",
+    "sub": "moteur : mimique · stylo-hyoïdien · digastrique · étrier",
+    "lvl": "racine",
+    "desc": {
+     "fr": "Le VII proprement dit est exclusivement moteur : il innerve les muscles de la mimique faciale (muscles peauciers de la face et du cou), le muscle stylo-hyoïdien, le ventre postérieur du muscle digastrique et le muscle de l'étrier.",
+     "en": "VII proper is exclusively motor: it supplies the mimetic muscles (cutaneous muscles of face and neck), the stylohyoid, the posterior belly of the digastric and the stapedius muscle."
+    }
+   },
+   {
+    "id": "viibis",
+    "x": 480,
+    "y": 580,
+    "w": 250,
+    "label": "VII bis — intermédiaire de Wrisberg",
+    "sub": "sensitif · gustatif · végétatif",
+    "lvl": "racine",
+    "desc": {
+     "fr": "Le VII bis est sensitif et sensoriel : il innerve le tympan, la moitié postérieure du conduit auditif externe, le pavillon de l'oreille, et fournit l'innervation gustative de la langue en avant du V lingual. Il comprend en plus un contingent neurovégétatif pour les sécrétions lacrymales, nasales et salivaires.",
+     "en": "VII bis is sensory: it supplies the tympanum, the posterior half of the external acoustic meatus and the auricle, and provides taste innervation of the tongue in front of the lingual V. It also carries a neurovegetative contingent for lacrimal, nasal and salivary secretions."
+    }
+   },
+   {
+    "id": "angle_pc",
+    "x": 180,
+    "y": 690,
+    "w": 250,
+    "label": "Angle ponto-cérébelleux",
+    "sub": "avec le VIII, vers le CAI",
+    "lvl": "note",
+    "desc": {
+     "fr": "De son origine apparente au conduit auditif interne, le nerf facial chemine dans l'angle ponto-cérébelleux ; il représente un axe autour duquel s'enroulent le VII bis et le nerf auditif VIII. Par l'intermédiaire des méninges, il répond en avant à la face postérieure du rocher et en arrière au flocculus du cervelet.",
+     "en": "From its apparent origin to the internal acoustic meatus, the facial nerve travels through the cerebellopontine angle; it is an axis around which VII bis and the auditory nerve VIII wind. Through the meninges it relates anteriorly to the posterior surface of the petrous bone and posteriorly to the cerebellar flocculus."
+    }
+   },
+   {
+    "id": "clinique",
+    "x": 480,
+    "y": 690,
+    "w": 260,
+    "label": "Centrale ou périphérique ?",
+    "sub": "clinique du cours",
+    "lvl": "clinique",
+    "desc": {
+     "fr": "Clinique (cours des voies de la motricité) : l'atteinte du faisceau géniculé destiné au noyau du VII donne une paralysie faciale CENTRALE (territoire inférieur seul, le front est épargné) ; une atteinte au niveau du noyau du VII ou en aval donne une paralysie faciale PÉRIPHÉRIQUE (toute l'hémiface, front compris). Intérêt du sujet : paralysie faciale, fracture du rocher, chirurgie de l'oreille et de la région parotidienne.",
+     "en": "Clinical (motor pathways course): a lesion of the geniculate bundle to the VII nucleus causes a CENTRAL facial palsy (lower face only, forehead spared); a lesion at the VII nucleus or beyond causes a PERIPHERAL facial palsy (whole hemiface, forehead included). Stakes: facial palsy, petrous bone fracture, ear and parotid surgery."
+    }
+   }
+  ],
+  "edges": [
+   [
+    "noyau_moteur",
+    "fibres"
+   ],
+   [
+    "noyau_solitaire",
+    "fibres"
+   ],
+   [
+    "noyau_lacrymo",
+    "fibres"
+   ],
+   [
+    "noyau_salivaire",
+    "fibres"
+   ],
+   [
+    "fibres",
+    "origine_apparente"
+   ],
+   [
+    "origine_apparente",
+    "vii"
+   ],
+   [
+    "origine_apparente",
+    "viibis"
+   ],
+   [
+    "origine_apparente",
+    "angle_pc",
+    1
+   ],
+   [
+    "vii",
+    "clinique",
+    1
+   ]
+  ]
+ },
+ "facial_segments": {
+  "titre_fr": "Nerf facial — trajet et segments (branches et clinique par segment)",
+  "titre_en": "Facial nerve — course and segments (branches and clinical points per segment)",
+  "w": 720,
+  "h": 900,
+  "levels": {
+   "segment": {
+    "c": "#4fc3f7",
+    "fr": "Segments du trajet",
+    "en": "Course segments"
+   },
+   "portion": {
+    "c": "#58d68d",
+    "fr": "Portions de l'aqueduc de Fallope",
+    "en": "Parts of the Fallopian canal"
+   },
+   "jalon": {
+    "c": "#f0a13c",
+    "fr": "Jalons anatomiques",
+    "en": "Anatomical landmarks"
+   },
+   "clinique": {
+    "c": "#e57373",
+    "fr": "Clinique",
+    "en": "Clinical"
+   }
+  },
+  "nodes": [
+   {
+    "id": "seg_intracranien",
+    "x": 170,
+    "y": 90,
+    "w": 270,
+    "label": "1 · Segment intra-crânien",
+    "sub": "étage postérieur de la base du crâne",
+    "lvl": "segment",
+    "desc": {
+     "fr": "Premier segment : dans l'étage postérieur de la base du crâne, le nerf facial décrit un trajet horizontal, oblique en avant et en dehors, du sillon bulbo-pontique jusqu'au conduit auditif interne (CAI). Il chemine dans l'angle ponto-cérébelleux, axe autour duquel s'enroulent le VII bis et le VIII. Rapports : en haut le pédoncule cérébelleux moyen, le V et le IV ; en bas l'artère cérébelleuse inférieure et les nerfs du trou déchiré postérieur (IX, X, XI). Aucune branche dans ce segment.",
+     "en": "First segment: in the posterior floor of the skull base, the facial nerve runs horizontally, obliquely forwards and laterally, from the bulbopontine sulcus to the internal acoustic meatus (IAM), through the cerebellopontine angle, an axis around which VII bis and VIII wind. Relations: above, the middle cerebellar peduncle, V and IV; below, the inferior cerebellar artery and the nerves of the jugular foramen (IX, X, XI). No branches in this segment."
+    }
+   },
+   {
+    "id": "cai",
+    "x": 170,
+    "y": 200,
+    "w": 270,
+    "label": "Conduit auditif interne (CAI)",
+    "sub": "porte d'entrée du segment intra-pétreux",
+    "lvl": "jalon",
+    "desc": {
+     "fr": "Au fond du CAI, le nerf facial et les branches du nerf auditif VIII aboutissent sur une petite lame osseuse percée en 5 orifices : le VII et le VII bis s'engagent tous les deux dans l'orifice antéro-supérieur, tandis que chaque branche du VIII emprunte un orifice différent. L'artère auditive interne se place en avant du VII et du VII bis.",
+     "en": "At the fundus of the IAM, the facial nerve and the branches of the auditory nerve VIII reach a small bony lamina pierced by 5 openings: VII and VII bis both enter the anterosuperior opening, while each branch of VIII uses a different one. The internal auditory artery lies in front of VII and VII bis."
+    }
+   },
+   {
+    "id": "labyrinthique",
+    "x": 470,
+    "y": 200,
+    "w": 300,
+    "label": "2a · Portion labyrinthique",
+    "sub": "horizontale, perpendiculaire à l'axe du rocher",
+    "lvl": "portion",
+    "desc": {
+     "fr": "Première portion de l'aqueduc de Fallope : horizontale, perpendiculaire à l'axe du rocher, oblique en avant et en dehors ; elle commence à l'orifice de l'aqueduc et aboutit au genou du nerf facial. Rapports : en avant et en dedans la cochlée ; en arrière et en dehors le vestibule. C'est le segment le plus étroit du canal — le plus vulnérable à l'œdème (paralysie faciale a frigore).",
+     "en": "First part of the Fallopian canal: horizontal, perpendicular to the petrous axis, obliquely forwards and laterally; from the canal opening to the genou (knee) of the facial nerve. Relations: anteromedially the cochlea; posterolaterally the vestibule. It is the narrowest part of the canal — the most vulnerable to oedema (Bell's palsy)."
+    }
+   },
+   {
+    "id": "genou",
+    "x": 470,
+    "y": 310,
+    "w": 300,
+    "label": "Genou du nerf facial",
+    "sub": "ganglion géniculé · nerf grand pétreux",
+    "lvl": "jalon",
+    "desc": {
+     "fr": "Le genou marque le premier coude du trajet en baïonnette. Il porte le ganglion géniculé (en avant), où le VII bis se termine et où les deux nerfs s'unissent. Branche : le nerf grand pétreux, rameau n° 1 du cours, véhicule les fibres lacrymo-muco-nasales vers la glande lacrymale. Ni le ganglion ni le grand pétreux ne sont individualisés dans le manifeste (audit) — ils n'existent qu'en schéma.",
+     "en": "The genou (knee) is the first bend of the bayonet course. It carries the geniculate ganglion (anteriorly), where VII bis ends and the two nerves unite. Branch: the greater petrosal nerve, branch no. 1 of the course, carries lacrimo-muco-nasal fibres to the lacrimal gland. Neither the ganglion nor the greater petrosal nerve is individualised in the manifest (audit) — they exist only as diagram."
+    }
+   },
+   {
+    "id": "tympanique",
+    "x": 470,
+    "y": 420,
+    "w": 300,
+    "label": "2b · Portion tympanique",
+    "sub": "transversale, parallèle à l'axe du rocher",
+    "lvl": "portion",
+    "desc": {
+     "fr": "Deuxième portion : transversale, parallèle à l'axe du rocher, oblique en arrière et en dehors, du genou au coude du nerf facial. Rapports : en dedans le vestibule ; en dehors la partie supérieure de la caisse du tympan ; en haut l'ampoule du canal semi-circulaire latéral ; en bas la paroi médiale de la caisse (fenêtre ovale, fenêtre ronde, muscle du marteau). Segment exposé lors de la chirurgie de l'oreille moyenne.",
+     "en": "Second part: transverse, parallel to the petrous axis, obliquely backwards and laterally, from the genou to the elbow of the facial nerve. Relations: medially the vestibule; laterally the upper part of the tympanic cavity; above, the ampulla of the lateral semicircular canal; below, the medial wall of the cavity (oval window, round window, tensor tympani). A segment at risk in middle-ear surgery."
+    }
+   },
+   {
+    "id": "mastoidienne",
+    "x": 470,
+    "y": 530,
+    "w": 300,
+    "label": "2c · Portion mastoïdienne",
+    "sub": "verticale, perpendiculaire à l'axe du rocher",
+    "lvl": "portion",
+    "desc": {
+     "fr": "Troisième portion : verticale, perpendiculaire à l'axe du rocher ; elle descend du coude au trou stylo-mastoïdien. Rapports : en dedans le labyrinthe osseux puis la fosse jugulaire ; en dehors l'additus ad antrum et les cellules mastoïdiennes ; en avant la paroi postérieure du CAE et de la caisse (pyramide et muscle de l'étrier) ; en arrière le sinus latéral et l'antre mastoïdien. Branches : le nerf du muscle de l'étrier et la corde du tympan (voir le schéma intra-pétreux, fig. 17).",
+     "en": "Third part: vertical, perpendicular to the petrous axis; it descends from the elbow to the stylomastoid foramen. Relations: medially the bony labyrinth then the jugular fossa; laterally the aditus ad antrum and mastoid cells; anteriorly the posterior wall of the EAM and tympanic cavity (pyramid and stapedius); posteriorly the lateral sinus and mastoid antrum. Branches: the nerve to stapedius and the chorda tympani (see the intrapetrous diagram, fig. 17)."
+    }
+   },
+   {
+    "id": "trou_sm",
+    "x": 170,
+    "y": 530,
+    "w": 270,
+    "label": "Trou stylo-mastoïdien",
+    "sub": "sortie du crâne",
+    "lvl": "jalon",
+    "desc": {
+     "fr": "La portion mastoïdienne aboutit au trou stylo-mastoïdien, par où le nerf facial sort du crâne. Ce foramen n'est pas un repère individualisé du manifeste (audit) ; dans la scène 3D, la sortie se lit entre l'os temporal et la glande parotide.",
+     "en": "The mastoid part ends at the stylomastoid foramen, through which the facial nerve leaves the skull. This foramen is not an individualised landmark of the manifest (audit); in the 3D scene the exit is read between the temporal bone and the parotid gland."
+    }
+   },
+   {
+    "id": "seg_extracranien",
+    "x": 170,
+    "y": 650,
+    "w": 270,
+    "label": "3 · Segment extra-crânien",
+    "sub": "loge parotidienne",
+    "lvl": "segment",
+    "desc": {
+     "fr": "Troisième segment : le nerf facial redevient horizontal, oblique en avant et en dehors. Dans la loge parotidienne, il est entre le muscle stylo-hyoïdien en dedans et le ventre postérieur du muscle digastrique en dehors ; il décrit une courbe à concavité antéro-interne, en dehors de la carotide externe et de la jugulaire externe, puis traverse la glande parotide en plein parenchyme.",
+     "en": "Third segment: the facial nerve becomes horizontal again, obliquely forwards and laterally. In the parotid compartment it lies between the stylohyoid medially and the posterior belly of the digastric laterally; it curves with anteromedial concavity, lateral to the external carotid and external jugular, then crosses the parotid gland within its parenchyma."
+    }
+   },
+   {
+    "id": "division",
+    "x": 470,
+    "y": 650,
+    "w": 300,
+    "label": "Division terminale",
+    "sub": "temporo-faciale · cervico-faciale",
+    "lvl": "jalon",
+    "desc": {
+     "fr": "En plein parenchyme parotidien, le tronc se divise en 2 branches terminales : la branche temporo-faciale (supérieure) et la branche cervico-faciale (inférieure), qui se ramifient en rameaux pour tous les muscles peauciers de la face et du cou. Détail des rameaux : schéma de la figure 18. Le plan du nerf divise chirurgicalement la parotide en lobes superficiel et profond.",
+     "en": "Within the parotid parenchyma the trunk divides into 2 terminal branches: the temporofacial (upper) and cervicofacial (lower) branches, ramifying into rami for all the cutaneous muscles of face and neck. Detail of the rami: figure 18 diagram. The nerve's plane surgically divides the parotid into superficial and deep lobes."
+    }
+   },
+   {
+    "id": "clinique_seg",
+    "x": 360,
+    "y": 790,
+    "w": 560,
+    "label": "Clinique des segments",
+    "sub": "fracture du rocher · chirurgie otologique et parotidienne",
+    "lvl": "clinique",
+    "desc": {
+     "fr": "Le nerf facial est très exposé aux traumatismes, à l'infection et aux tumeurs ; la connaissance de ses rapports est indispensable avant toute chirurgie otologique ou parotidienne (conclusion du cours). Le niveau de la lésion se déduit des branches perdues : atteinte au-dessus du grand pétreux = œil sec ; au-dessus du nerf de l'étrier = hyperacousie ; au-dessus de la corde du tympan = agueusie des 2/3 antérieurs de la langue ; en aval du trou stylo-mastoïdien = paralysie motrice pure.",
+     "en": "The facial nerve is highly exposed to trauma, infection and tumours; knowledge of its relations is essential before any otological or parotid surgery (course conclusion). The lesion level is deduced from the branches lost: above the greater petrosal = dry eye; above the nerve to stapedius = hyperacusis; above the chorda tympani = taste loss over the anterior 2/3 of the tongue; beyond the stylomastoid foramen = pure motor palsy."
+    }
+   }
+  ],
+  "edges": [
+   [
+    "seg_intracranien",
+    "cai"
+   ],
+   [
+    "cai",
+    "labyrinthique"
+   ],
+   [
+    "labyrinthique",
+    "genou"
+   ],
+   [
+    "genou",
+    "tympanique"
+   ],
+   [
+    "tympanique",
+    "mastoidienne"
+   ],
+   [
+    "mastoidienne",
+    "trou_sm"
+   ],
+   [
+    "trou_sm",
+    "seg_extracranien"
+   ],
+   [
+    "seg_extracranien",
+    "division"
+   ],
+   [
+    "mastoidienne",
+    "clinique_seg",
+    1
+   ],
+   [
+    "division",
+    "clinique_seg",
+    1
+   ]
+  ]
+ },
+ "facial_intrapetreux": {
+  "titre_fr": "Nerf facial intra-pétreux — portions, rapports et rameaux",
+  "titre_en": "Intrapetrous facial nerve — parts, relations and branches",
+  "w": 720,
+  "h": 900,
+  "levels": {
+   "portion": {
+    "c": "#58d68d",
+    "fr": "Portions de l'aqueduc de Fallope",
+    "en": "Parts of the Fallopian canal"
+   },
+   "rapport": {
+    "c": "#4fc3f7",
+    "fr": "Rapports",
+    "en": "Relations"
+   },
+   "rameau": {
+    "c": "#f0a13c",
+    "fr": "Rameaux intra-pétreux",
+    "en": "Intrapetrous branches"
+   },
+   "jalon": {
+    "c": "#b388ff",
+    "fr": "Jalons",
+    "en": "Landmarks"
+   }
+  },
+  "nodes": [
+   {
+    "id": "cai",
+    "x": 170,
+    "y": 90,
+    "w": 270,
+    "label": "Conduit auditif interne",
+    "sub": "VII + VII bis : orifice antéro-supérieur",
+    "lvl": "portion",
+    "desc": {
+     "fr": "Arrivé au fond du conduit auditif interne, le nerf facial pénètre dans l'aqueduc de Fallope (canal facial). Le VII et le VII bis s'engagent dans l'orifice antéro-supérieur de la lame osseuse du fond du CAI. Le nerf intra-pétreux est UN seul maillage dans le manifeste : sa segmentation est schématique (audit).",
+     "en": "At the fundus of the internal acoustic meatus, the facial nerve enters the Fallopian canal (facial canal). VII and VII bis enter through the anterosuperior opening of the bony lamina. The intrapetrous nerve is a SINGLE mesh in the manifest: its segmentation is diagrammatic (audit)."
+    }
+   },
+   {
+    "id": "cai_rapports",
+    "x": 480,
+    "y": 90,
+    "w": 300,
+    "label": "Rapports dans le CAI",
+    "sub": "artère auditive interne en avant",
+    "lvl": "rapport",
+    "desc": {
+     "fr": "Dans le CAI : l'artère auditive interne se place en avant du VII et du VII bis, entourée par 2 ou 3 veines satellites qui gagnent le sinus pétreux inférieur ; les branches du nerf auditif VIII occupent les autres orifices de la lame du fond.",
+     "en": "In the IAM: the internal auditory artery lies in front of VII and VII bis, surrounded by 2 or 3 satellite veins draining to the inferior petrosal sinus; the branches of the auditory nerve VIII occupy the other openings of the fundus lamina."
+    }
+   },
+   {
+    "id": "labyrinthique",
+    "x": 170,
+    "y": 215,
+    "w": 270,
+    "label": "Portion labyrinthique",
+    "sub": "de l'orifice de Fallope au genou",
+    "lvl": "portion",
+    "desc": {
+     "fr": "Portion labyrinthique : horizontale, perpendiculaire à l'axe du rocher, oblique en avant et en dehors ; elle commence à l'orifice de l'aqueduc de Fallope et aboutit au genou du nerf facial.",
+     "en": "Labyrinthine part: horizontal, perpendicular to the petrous axis, obliquely forwards and laterally; from the opening of the Fallopian canal to the genou of the facial nerve."
+    }
+   },
+   {
+    "id": "lab_rapports",
+    "x": 480,
+    "y": 215,
+    "w": 300,
+    "label": "Rapports — labyrinthique",
+    "sub": "cochlée en avant · vestibule en arrière",
+    "lvl": "rapport",
+    "desc": {
+     "fr": "Rapports de la portion labyrinthique dans l'aqueduc de Fallope : en avant et en dedans, la cochlée ; en arrière et en dehors, le vestibule.",
+     "en": "Relations of the labyrinthine part within the Fallopian canal: anteromedially, the cochlea; posterolaterally, the vestibule."
+    }
+   },
+   {
+    "id": "genou",
+    "x": 170,
+    "y": 340,
+    "w": 270,
+    "label": "Genou · ganglion géniculé",
+    "sub": "le VII bis s'y termine",
+    "lvl": "jalon",
+    "desc": {
+     "fr": "Au genou, le trajet change de direction (baïonnette). Le ganglion géniculé, situé en avant au niveau du genou, reçoit la terminaison du VII bis : les deux nerfs s'y unissent. Le ganglion n'est pas individualisé dans le manifeste (audit).",
+     "en": "At the genou the course changes direction (bayonet). The geniculate ganglion, lying anteriorly at the genou, receives the termination of VII bis: the two nerves unite there. The ganglion is not individualised in the manifest (audit)."
+    }
+   },
+   {
+    "id": "grand_petreux",
+    "x": 480,
+    "y": 340,
+    "w": 300,
+    "label": "Nerf grand pétreux",
+    "sub": "rameau n° 1 — glande lacrymale",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Nerf grand pétreux (rameau intra-pétreux n° 1 du cours) : né au niveau du ganglion géniculé, il véhicule les fibres végétatives du noyau lacrymo-muco-nasal vers la glande lacrymale et les muqueuses nasales. ABSENT du manifeste (audit) — schéma uniquement. Clinique : sa lésion (ou une lésion du VII en amont) donne un œil sec.",
+     "en": "Greater petrosal nerve (intrapetrous branch no. 1 of the course): arising at the geniculate ganglion, it carries vegetative fibres from the lacrimo-muco-nasal nucleus to the lacrimal gland and nasal mucosae. ABSENT from the manifest (audit) — diagram only. Clinical: its lesion (or a VII lesion above it) causes a dry eye."
+    }
+   },
+   {
+    "id": "tympanique",
+    "x": 170,
+    "y": 465,
+    "w": 270,
+    "label": "Portion tympanique",
+    "sub": "du genou au coude",
+    "lvl": "portion",
+    "desc": {
+     "fr": "Portion tympanique : transversale, parallèle à l'axe du rocher, oblique en arrière et en dehors, du genou au coude du nerf facial. Elle longe la paroi médiale de la caisse du tympan — dans la scène 3D, les osselets (marteau, enclume, étrier) sont ses repères voisins.",
+     "en": "Tympanic part: transverse, parallel to the petrous axis, obliquely backwards and laterally, from the genou to the elbow of the facial nerve. It runs along the medial wall of the tympanic cavity — in the 3D scene the ossicles (malleus, incus, stapes) are its neighbouring landmarks."
+    }
+   },
+   {
+    "id": "tymp_rapports",
+    "x": 480,
+    "y": 465,
+    "w": 300,
+    "label": "Rapports — tympanique",
+    "sub": "caisse du tympan en dehors",
+    "lvl": "rapport",
+    "desc": {
+     "fr": "Rapports de la portion tympanique : au niveau du genou, le ganglion géniculé en avant ; en dedans, le vestibule ; en dehors, la partie supérieure de la caisse du tympan ; en haut, l'ampoule du canal semi-circulaire latéral ; en bas, la paroi médiale de la caisse du tympan (fenêtre ovale, fenêtre ronde, muscle du marteau).",
+     "en": "Relations of the tympanic part: at the genou, the geniculate ganglion anteriorly; medially, the vestibule; laterally, the upper part of the tympanic cavity; above, the ampulla of the lateral semicircular canal; below, the medial wall of the tympanic cavity (oval window, round window, tensor tympani)."
+    }
+   },
+   {
+    "id": "mastoidienne",
+    "x": 170,
+    "y": 590,
+    "w": 270,
+    "label": "Portion mastoïdienne",
+    "sub": "du coude au trou stylo-mastoïdien",
+    "lvl": "portion",
+    "desc": {
+     "fr": "Portion mastoïdienne : verticale, perpendiculaire à l'axe du rocher ; elle descend du coude du nerf facial et aboutit au trou stylo-mastoïdien, par où le nerf sort du crâne. Elle donne les 2 derniers rameaux intra-pétreux : le nerf du muscle de l'étrier et la corde du tympan.",
+     "en": "Mastoid part: vertical, perpendicular to the petrous axis; it descends from the elbow of the facial nerve to the stylomastoid foramen, through which the nerve leaves the skull. It gives the last 2 intrapetrous branches: the nerve to stapedius and the chorda tympani."
+    }
+   },
+   {
+    "id": "masto_rapports",
+    "x": 480,
+    "y": 590,
+    "w": 300,
+    "label": "Rapports — mastoïdienne",
+    "sub": "cellules mastoïdiennes · sinus latéral",
+    "lvl": "rapport",
+    "desc": {
+     "fr": "Rapports de la portion mastoïdienne : au niveau du coude, le canal semi-circulaire latéral en dedans et l'additus ad antrum en dehors ; en dedans (de haut en bas), le labyrinthe osseux et la fosse jugulaire ; en dehors, l'additus ad antrum et les cellules mastoïdiennes ; en avant, la paroi postérieure du CAE et de la caisse (pyramide et muscle de l'étrier) ; en arrière, le sinus latéral et l'antre mastoïdien.",
+     "en": "Relations of the mastoid part: at the elbow, the lateral semicircular canal medially and the aditus ad antrum laterally; medially (top to bottom), the bony labyrinth and the jugular fossa; laterally, the aditus ad antrum and mastoid cells; anteriorly, the posterior wall of the EAM and tympanic cavity (pyramid and stapedius); posteriorly, the lateral sinus and mastoid antrum."
+    }
+   },
+   {
+    "id": "etrier",
+    "x": 480,
+    "y": 715,
+    "w": 300,
+    "label": "Nerf du muscle de l'étrier",
+    "sub": "rameau de la portion mastoïdienne",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Nerf du muscle de l'étrier : rameau moteur né de la portion mastoïdienne, pour le muscle de l'étrier (stapédien), qui amortit les vibrations de la chaîne ossiculaire. ABSENT du manifeste (audit) — schéma uniquement. Clinique : sa lésion donne une hyperacousie (intolérance aux sons forts).",
+     "en": "Nerve to the stapedius muscle: motor branch of the mastoid part, for the stapedius, which dampens ossicular vibrations. ABSENT from the manifest (audit) — diagram only. Clinical: its lesion causes hyperacusis (intolerance to loud sounds)."
+    }
+   },
+   {
+    "id": "corde",
+    "x": 480,
+    "y": 800,
+    "w": 300,
+    "label": "Corde du tympan",
+    "sub": "goût des 2/3 ant. de la langue",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Corde du tympan : dernier rameau intra-pétreux, né de la portion mastoïdienne ; elle traverse la caisse du tympan et véhicule la gustation des 2/3 antérieurs de la langue (VII bis) et les fibres salivaires pour les glandes submandibulaire et sublinguale. Contrairement aux autres rameaux, elle EXISTE en 3D dans le manifeste (chorda_tympani) et apparaît dans la scène de la figure 17.",
+     "en": "Chorda tympani: last intrapetrous branch, from the mastoid part; it crosses the tympanic cavity and carries taste from the anterior 2/3 of the tongue (VII bis) and salivary fibres for the submandibular and sublingual glands. Unlike the other branches, it EXISTS in 3D in the manifest (chorda_tympani) and appears in the figure 17 scene."
+    }
+   },
+   {
+    "id": "sortie",
+    "x": 170,
+    "y": 715,
+    "w": 270,
+    "label": "Trou stylo-mastoïdien",
+    "sub": "sortie du crâne → loge parotidienne",
+    "lvl": "jalon",
+    "desc": {
+     "fr": "Le nerf facial quitte l'aqueduc de Fallope et le crâne par le trou stylo-mastoïdien, puis pénètre dans la loge parotidienne (segment extra-crânien, fig. 18).",
+     "en": "The facial nerve leaves the Fallopian canal and the skull through the stylomastoid foramen, then enters the parotid compartment (extrapetrous segment, fig. 18)."
+    }
+   }
+  ],
+  "edges": [
+   [
+    "cai",
+    "labyrinthique"
+   ],
+   [
+    "cai",
+    "cai_rapports",
+    1
+   ],
+   [
+    "labyrinthique",
+    "genou"
+   ],
+   [
+    "labyrinthique",
+    "lab_rapports",
+    1
+   ],
+   [
+    "genou",
+    "grand_petreux"
+   ],
+   [
+    "genou",
+    "tympanique"
+   ],
+   [
+    "tympanique",
+    "mastoidienne"
+   ],
+   [
+    "tympanique",
+    "tymp_rapports",
+    1
+   ],
+   [
+    "mastoidienne",
+    "masto_rapports",
+    1
+   ],
+   [
+    "mastoidienne",
+    "etrier"
+   ],
+   [
+    "mastoidienne",
+    "corde"
+   ],
+   [
+    "mastoidienne",
+    "sortie"
+   ]
+  ]
+ },
+ "facial_branches": {
+  "titre_fr": "Nerf facial extra-pétreux — branches terminales et rameaux",
+  "titre_en": "Extrapetrous facial nerve — terminal branches and rami",
+  "w": 720,
+  "h": 900,
+  "levels": {
+   "tronc": {
+    "c": "#4fc3f7",
+    "fr": "Tronc et division",
+    "en": "Trunk and division"
+   },
+   "branche": {
+    "c": "#58d68d",
+    "fr": "Branches terminales",
+    "en": "Terminal branches"
+   },
+   "rameau": {
+    "c": "#f0a13c",
+    "fr": "Rameaux moteurs",
+    "en": "Motor rami"
+   },
+   "clinique": {
+    "c": "#e57373",
+    "fr": "Clinique",
+    "en": "Clinical"
+   }
+  },
+  "nodes": [
+   {
+    "id": "tronc",
+    "x": 200,
+    "y": 90,
+    "w": 280,
+    "label": "Tronc extra-crânien",
+    "sub": "à la sortie du trou stylo-mastoïdien",
+    "lvl": "tronc",
+    "desc": {
+     "fr": "À sa sortie du trou stylo-mastoïdien, le nerf facial redevient horizontal, oblique en avant et en dehors, et décrit une courbe à concavité antéro-interne. Le tronc et sa division ne sont pas décomposés en 3D (maillage unique, audit) — ce schéma porte la division parotidienne.",
+     "en": "On leaving the stylomastoid foramen, the facial nerve becomes horizontal again, obliquely forwards and laterally, curving with anteromedial concavity. The trunk and its division are not decomposed in 3D (single mesh, audit) — this diagram carries the parotid division."
+    }
+   },
+   {
+    "id": "rapports",
+    "x": 520,
+    "y": 90,
+    "w": 280,
+    "label": "Rapports parotidiens",
+    "sub": "stylo-hyoïdien · digastrique · carotide ext.",
+    "lvl": "tronc",
+    "desc": {
+     "fr": "Dans la loge parotidienne, le nerf est entre le muscle stylo-hyoïdien en dedans et le ventre postérieur du muscle digastrique en dehors ; il chemine en dehors de la carotide externe et de la jugulaire externe, puis traverse la glande parotide en plein parenchyme — rapports retrouvés dans la scène 3D de la figure 18.",
+     "en": "In the parotid compartment the nerve lies between the stylohyoid medially and the posterior belly of the digastric laterally; it runs lateral to the external carotid artery and external jugular vein, then crosses the parotid gland within its parenchyma — relations found in the figure 18 3D scene."
+    }
+   },
+   {
+    "id": "division",
+    "x": 200,
+    "y": 215,
+    "w": 280,
+    "label": "Division terminale",
+    "sub": "en plein parenchyme parotidien",
+    "lvl": "tronc",
+    "desc": {
+     "fr": "Le nerf facial se divise, en plein parenchyme parotidien, en 2 branches terminales : la branche temporo-faciale et la branche cervico-faciale, qui s'anastomosent et se ramifient en plexus intra-parotidien pour tous les muscles peauciers.",
+     "en": "Within the parotid parenchyma the facial nerve divides into 2 terminal branches: the temporofacial and cervicofacial branches, which anastomose and ramify into an intraparotid plexus for all the cutaneous muscles."
+    }
+   },
+   {
+    "id": "temporo_faciale",
+    "x": 170,
+    "y": 350,
+    "w": 270,
+    "label": "Branche temporo-faciale",
+    "sub": "branche terminale supérieure",
+    "lvl": "branche",
+    "desc": {
+     "fr": "Branche terminale supérieure du nerf facial : elle se ramifie en rameaux temporal, frontal, palpébral, sous-orbitaire et buccal supérieur, destinés aux muscles peauciers de la moitié supérieure de la face.",
+     "en": "Upper terminal branch of the facial nerve: it ramifies into temporal, frontal, palpebral, infraorbital and upper buccal rami for the cutaneous muscles of the upper half of the face."
+    }
+   },
+   {
+    "id": "cervico_faciale",
+    "x": 490,
+    "y": 350,
+    "w": 270,
+    "label": "Branche cervico-faciale",
+    "sub": "branche terminale inférieure",
+    "lvl": "branche",
+    "desc": {
+     "fr": "Branche terminale inférieure du nerf facial : elle se ramifie en rameaux buccal inférieur, mentonnier et cervical, destinés aux muscles peauciers de la moitié inférieure de la face et au peaucier du cou.",
+     "en": "Lower terminal branch of the facial nerve: it ramifies into lower buccal, mental and cervical rami for the cutaneous muscles of the lower half of the face and the platysma."
+    }
+   },
+   {
+    "id": "temporale",
+    "x": 90,
+    "y": 490,
+    "w": 150,
+    "label": "Rameau temporal",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau temporal de la branche temporo-faciale : muscles peauciers de la région temporale et de l'oreille.",
+     "en": "Temporal ramus of the temporofacial branch: cutaneous muscles of the temporal region and ear."
+    }
+   },
+   {
+    "id": "frontale",
+    "x": 90,
+    "y": 575,
+    "w": 150,
+    "label": "Rameau frontal",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau frontal de la branche temporo-faciale : muscle frontal — c'est lui qui permet de plisser le front ; son atteinte distingue la paralysie périphérique (front atteint) de la paralysie centrale (front épargné).",
+     "en": "Frontal ramus of the temporofacial branch: frontalis muscle — it wrinkles the forehead; its involvement distinguishes peripheral palsy (forehead involved) from central palsy (forehead spared)."
+    }
+   },
+   {
+    "id": "palpebrale",
+    "x": 90,
+    "y": 660,
+    "w": 150,
+    "label": "Rameau palpébral",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau palpébral de la branche temporo-faciale : muscle orbiculaire de l'œil — il assure l'occlusion palpébrale ; son atteinte donne le signe de Charles Bell et expose la cornée.",
+     "en": "Palpebral ramus of the temporofacial branch: orbicularis oculi — it closes the eyelids; its lesion gives Bell's sign and exposes the cornea."
+    }
+   },
+   {
+    "id": "sous_orbitaire",
+    "x": 90,
+    "y": 745,
+    "w": 150,
+    "label": "Rameau sous-orbitaire",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau sous-orbitaire de la branche temporo-faciale : muscles peauciers de la région sous-orbitaire et de la lèvre supérieure.",
+     "en": "Infraorbital ramus of the temporofacial branch: cutaneous muscles of the infraorbital region and upper lip."
+    }
+   },
+   {
+    "id": "buccale_sup",
+    "x": 90,
+    "y": 818,
+    "w": 150,
+    "label": "Rameau buccal supérieur",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau buccal supérieur de la branche temporo-faciale : muscles peauciers de la partie supérieure de la région buccale (buccinateur, orbiculaire de la bouche).",
+     "en": "Upper buccal ramus of the temporofacial branch: cutaneous muscles of the upper buccal region (buccinator, orbicularis oris)."
+    }
+   },
+   {
+    "id": "buccale_inf",
+    "x": 630,
+    "y": 490,
+    "w": 150,
+    "label": "Rameau buccal inférieur",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau buccal inférieur de la branche cervico-faciale : muscles peauciers de la partie inférieure de la région buccale et de la lèvre inférieure.",
+     "en": "Lower buccal ramus of the cervicofacial branch: cutaneous muscles of the lower buccal region and lower lip."
+    }
+   },
+   {
+    "id": "mentonniere",
+    "x": 630,
+    "y": 575,
+    "w": 150,
+    "label": "Rameau mentonnier",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau mentonnier (marginal mandibulaire) de la branche cervico-faciale : muscles du menton et de la lèvre inférieure ; il chemine sous le bord inférieur de la mandibule — rameau à protéger en chirurgie sous-mandibulaire.",
+     "en": "Mental (marginal mandibular) ramus of the cervicofacial branch: muscles of the chin and lower lip; it runs below the lower border of the mandible — a ramus to protect in submandibular surgery."
+    }
+   },
+   {
+    "id": "cervicale",
+    "x": 630,
+    "y": 660,
+    "w": 150,
+    "label": "Rameau cervical",
+    "sub": "",
+    "lvl": "rameau",
+    "desc": {
+     "fr": "Rameau cervical de la branche cervico-faciale : destiné au cou, il innerve le muscle peaucier (platysma).",
+     "en": "Cervical ramus of the cervicofacial branch: destined for the neck, it supplies the platysma muscle."
+    }
+   },
+   {
+    "id": "clinique_br",
+    "x": 360,
+    "y": 872,
+    "w": 430,
+    "label": "Clinique",
+    "sub": "paralysie périphérique = tous les rameaux",
+    "lvl": "clinique",
+    "desc": {
+     "fr": "Une lésion du tronc extra-crânien (traumatisme, tumeur parotidienne, chirurgie) donne une paralysie faciale périphérique complète : tous les rameaux sont atteints, front compris — à la différence de la paralysie centrale qui épargne le territoire supérieur. La division du nerf en plein parenchyme rend la chirurgie parotidienne délicate : le plan du nerf sépare les lobes superficiel et profond de la glande.",
+     "en": "A lesion of the extrapetrous trunk (trauma, parotid tumour, surgery) causes a complete peripheral facial palsy: all rami are involved, forehead included — unlike central palsy, which spares the upper territory. The nerve dividing within the parenchyma makes parotid surgery delicate: the nerve's plane separates the gland's superficial and deep lobes."
+    }
+   }
+  ],
+  "edges": [
+   [
+    "tronc",
+    "rapports",
+    1
+   ],
+   [
+    "tronc",
+    "division"
+   ],
+   [
+    "division",
+    "temporo_faciale"
+   ],
+   [
+    "division",
+    "cervico_faciale"
+   ],
+   [
+    "temporo_faciale",
+    "temporale"
+   ],
+   [
+    "temporo_faciale",
+    "frontale"
+   ],
+   [
+    "temporo_faciale",
+    "palpebrale"
+   ],
+   [
+    "temporo_faciale",
+    "sous_orbitaire"
+   ],
+   [
+    "temporo_faciale",
+    "buccale_sup"
+   ],
+   [
+    "cervico_faciale",
+    "buccale_inf"
+   ],
+   [
+    "cervico_faciale",
+    "mentonniere"
+   ],
+   [
+    "cervico_faciale",
+    "cervicale"
+   ],
+   [
+    "division",
+    "clinique_br",
+    1
+   ]
+  ]
+ }
+}

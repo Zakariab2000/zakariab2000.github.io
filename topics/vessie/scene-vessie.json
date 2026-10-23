@@ -1,0 +1,317 @@
+{
+ "sujet": "vessie",
+ "titre_fr": "La vessie",
+ "partie": "V",
+ "numero_sujet": 31,
+ "classe": "3D+D",
+ "figures": [
+  90,
+  91
+ ],
+ "structures": [
+  {
+   "id": "ductus_deferens_right",
+   "nom_fr": "Canal déférent",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "ductus_deferens_left",
+   "nom_fr": "Canal déférent",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "seminal_gland_right",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "prostate",
+   "nom_fr": "Prostate",
+   "role": "sujet",
+   "figures": [
+    90,
+    91
+   ]
+  },
+  {
+   "id": "rectum",
+   "nom_fr": "Rectum",
+   "role": "sujet",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "ureter_right",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    90,
+    91
+   ]
+  },
+  {
+   "id": "ureter_left",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    90,
+    91
+   ]
+  },
+  {
+   "id": "urinary_bladder",
+   "nom_fr": "Vessie urinaire",
+   "role": "sujet",
+   "figures": [
+    90,
+    91
+   ]
+  },
+  {
+   "id": "sigmoid_colon",
+   "nom_fr": "Côlon sigmoïde",
+   "role": "contexte",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "contexte",
+   "figures": [
+    91
+   ]
+  },
+  {
+   "id": "hip_bone_left",
+   "nom_fr": "Os coxal",
+   "role": "contexte",
+   "figures": [
+    91
+   ]
+  }
+ ],
+ "camera": {
+  "vue": "anterieure",
+  "position": [
+   -0.3,
+   919.5,
+   743.5
+  ],
+  "target": [
+   -0.3,
+   853.4,
+   82.5
+  ]
+ },
+ "par_figure": {
+  "90": {
+   "titre_fr": "Configuration extérieure et intérieure de la vessie",
+   "classe": "3D+D",
+   "vue": "anterieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -0.3,
+     919.5,
+     743.5
+    ],
+    "target": [
+     -0.3,
+     853.4,
+     82.5
+    ]
+   },
+   "structures": [
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_right",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_left",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "prostate",
+     "nom_fr": "Prostate",
+     "role": "sujet"
+    },
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "contexte"
+    },
+    {
+     "id": "ductus_deferens_right",
+     "nom_fr": "Canal déférent",
+     "role": "contexte"
+    },
+    {
+     "id": "ductus_deferens_left",
+     "nom_fr": "Canal déférent",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Trigone vésical : ABSENT ; orifices urétéraux et col vésical : non individualisés — la vessie est UN seul maillage, sa configuration intérieure (qui fait la moitié du titre) n'a aucune géométrie → schéma de l'intérieur en regard"
+   ],
+   "diagramme": {
+    "fichier": "diagramme-vessie.svg",
+    "titre_fr": "Schéma — configuration intérieure de la vessie (trigone)",
+    "note": "La vessie 3D est un maillage unique : trigone, orifices urétéraux et col ne sont pas individualisés. Ce schéma interactif montre l'intérieur en regard."
+   }
+  },
+  "91": {
+   "titre_fr": "Rapports de la vessie (homme et femme)",
+   "classe": "3D",
+   "vue": "laterale",
+   "camera": {
+    "vue": "laterale",
+    "position": [
+     -650.9,
+     918.5,
+     199.6
+    ],
+    "target": [
+     -0.3,
+     853.4,
+     82.5
+    ]
+   },
+   "structures": [
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "sujet"
+    },
+    {
+     "id": "prostate",
+     "nom_fr": "Prostate",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_right",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_left",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_right",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_left",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "ductus_deferens_right",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "ductus_deferens_left",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "hip_bone_right",
+     "nom_fr": "Os coxal",
+     "role": "contexte"
+    },
+    {
+     "id": "hip_bone_left",
+     "nom_fr": "Os coxal",
+     "role": "contexte"
+    },
+    {
+     "id": "sigmoid_colon",
+     "nom_fr": "Côlon sigmoïde",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Côté FEMME impossible en 3D : utérus et vagin ABSENTS du manifeste (voir Figs 100-103) — seuls les rapports masculins sont montrables",
+    "Péritoine vésical et cul-de-sac vésico-rectal : espaces absents"
+   ],
+   "espace": "Cul-de-sac vésico-rectal (péritoine)"
+  }
+ },
+ "diagrammes": [
+  {
+   "fichier": "diagramme-vessie.svg",
+   "titre_fr": "Schéma — configuration intérieure de la vessie (trigone)",
+   "note": "La vessie 3D est un maillage unique : trigone, orifices urétéraux et col ne sont pas individualisés. Ce schéma interactif montre l'intérieur en regard.",
+   "figure": 90
+  }
+ ],
+ "espaces": [
+  {
+   "nom_fr": "Cul-de-sac vésico-rectal (péritoine)",
+   "type": "espace",
+   "figure": 91,
+   "bornes": [
+    "urinary_bladder",
+    "rectum"
+   ],
+   "couleur": "#64dfdf",
+   "opacite": 0.45,
+   "volume": {
+    "forme": "ellipsoide",
+    "centre": [
+     2.3,
+     778.4,
+     67.3
+    ],
+    "rayons": [
+     30.7,
+     15,
+     11
+    ]
+   },
+   "note": "Espace péritonéal sans maillage : volume schématique logé entre la base de la vessie (en avant) et le rectum (en arrière), point le plus déclive de la cavité péritonéale chez l'homme."
+  }
+ ],
+ "manquants": [
+  "Trigone vésical : ABSENT ; orifices urétéraux et col vésical : non individualisés — la vessie est UN seul maillage, sa configuration intérieure (qui fait la moitié du titre) n'a aucune géométrie → schéma de l'intérieur en regard",
+  "Côté FEMME impossible en 3D : utérus et vagin ABSENTS du manifeste (voir Figs 100-103) — seuls les rapports masculins sont montrables",
+  "Péritoine vésical et cul-de-sac vésico-rectal : espaces absents"
+ ],
+ "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
+}

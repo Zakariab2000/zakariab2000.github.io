@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 620" width="390" height="620" role="img" aria-label="Vessie — configuration intérieure">
+<defs>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+<feGaussianBlur stdDeviation="2.2" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<style>
+text{font-family:Arial,Helvetica,sans-serif}
+.title{font-size:14px;font-weight:bold;fill:#f5f0e6}
+.sub{font-size:10px;fill:#8a8f98}
+.lbl{font-size:9.5px;fill:#c9cfd8}
+.lead{stroke:#69707c;stroke-width:.8;fill:none}
+.zone{cursor:pointer}
+.zone:hover{stroke:#e8c07a;stroke-width:2.5}
+.zone.sel{stroke:#ffd166;stroke-width:3.5;filter:url(#glow)}
+.zone.sel&gt;*{stroke:#ffd166;stroke-width:2.5}
+.ftitle{font-size:13px;font-weight:bold;fill:#f5f0e6}
+.fline{font-size:11.5px;fill:#c9cfd8}
+.note{font-size:9.5px;fill:#8a8f98}
+.dec{pointer-events:none}
+</style>
+<rect x="0" y="0" width="390" height="620" fill="#101318"/>
+<text class="title" x="195" y="30" text-anchor="middle">Vessie — configuration intérieure</text>
+<text class="sub" x="195" y="48" text-anchor="middle">Schéma — Fig. 90 · Touchez une zone pour sa fiche</text>
+
+<!-- leader lines -->
+<g class="dec">
+<line class="lead" x1="104" y1="97" x2="158" y2="88"/>
+<line class="lead" x1="104" y1="157" x2="118" y2="175"/>
+<line class="lead" x1="104" y1="222" x2="148" y2="268"/>
+<line class="lead" x1="104" y1="272" x2="152" y2="275"/>
+<line class="lead" x1="104" y1="330" x2="186" y2="326"/>
+<line class="lead" x1="286" y1="117" x2="252" y2="140"/>
+<line class="lead" x1="286" y1="182" x2="252" y2="292"/>
+<line class="lead" x1="286" y1="242" x2="222" y2="296"/>
+<line class="lead" x1="286" y1="302" x2="212" y2="344"/>
+</g>
+
+<!-- urethra stub -->
+<path class="dec" fill="#d9a05b" stroke="#8c6a2f" stroke-width="1.5" d="M186,364 L204,364 L202,392 L188,392 Z"/>
+
+<!-- detrusor / outer wall -->
+<path class="zone" data-k="detrusor" fill="#b03a2e" stroke="#7b241c" stroke-width="1.5" d="M195,72 C245,72 278,108 280,168 C282,228 265,285 232,318 C220,330 212,338 210,350 L180,350 C178,338 170,330 158,318 C125,285 108,228 110,168 C112,108 145,72 195,72 Z"><title>Détrusor</title></path>
+<!-- interior / corps background -->
+<path class="dec" fill="#3e5c76" stroke="#2c4356" stroke-width="1.5" d="M195,88 C236,88 263,118 264,172 C265,224 250,272 222,298 C212,308 204,316 195,330 C186,316 178,308 168,298 C140,272 125,224 126,172 C127,118 154,88 195,88 Z"/>
+<!-- corps -->
+<ellipse class="zone" data-k="corps" cx="195" cy="172" rx="56" ry="46" fill="#466a86" stroke="#2c4356" stroke-width="1.5"><title>Corps</title></ellipse>
+<!-- base -->
+<path class="zone" data-k="base" fill="#35506a" stroke="#2c4356" stroke-width="1.5" d="M143,282 C168,312 222,312 247,282 L240,306 C216,330 174,330 150,306 Z"><title>Base (fundus)</title></path>
+<!-- apex -->
+<path class="zone" data-k="apex" fill="#cf5044" stroke="#7b241c" stroke-width="1.5" d="M148,104 C160,78 230,78 242,104 L226,114 C215,96 175,96 164,114 Z"><title>Apex</title></path>
+<!-- ureteres (oblique through wall, intramural segment visible) -->
+<g class="dec" fill="#d9b36a" stroke="#8c6a2f" stroke-width="1.5">
+<path d="M96,138 L110,132 L164,266 L150,274 Z"/>
+<path d="M294,138 L280,132 L226,266 L240,274 Z"/>
+</g>
+<!-- trigone -->
+<path class="zone" data-k="trigone" fill="#d9a05b" stroke="#8c6a2f" stroke-width="1.5" d="M155,275 L235,275 L195,325 Z"><title>Trigone vésical</title></path>
+<!-- pli interureterique -->
+<rect class="zone" data-k="pli" x="155" y="269" width="80" height="10" rx="5" fill="#e8c07a" stroke="#8c6a2f" stroke-width="1.5"><title>Pli interurétérique</title></rect>
+<!-- orifices ureteraux -->
+<g class="zone" data-k="orificeureteral" stroke="#ffd166" stroke-width="1.5" fill="#243447"><title>Orifice urétéral</title>
+<circle cx="155" cy="275" r="7"/>
+<circle cx="235" cy="275" r="7"/>
+</g>
+<!-- orifice interne de l'uretre -->
+<circle class="zone" data-k="orificeinterne" cx="195" cy="325" r="8" fill="#243447" stroke="#ffd166" stroke-width="1.5"><title>Orifice interne de l'urètre</title></circle>
+<!-- col vesical -->
+<path class="zone" data-k="col" fill="#8e2f26" stroke="#5e1f19" stroke-width="1.5" d="M179,336 L211,336 L206,368 L184,368 Z"><title>Col vésical</title></path>
+
+<!-- labels -->
+<g>
+<text class="lbl" x="104" y="100" text-anchor="end">Apex</text>
+<text class="lbl" x="104" y="160" text-anchor="end">Détrusor</text>
+<text class="lbl" x="104" y="225" text-anchor="end">Orifice urétéral</text>
+<text class="lbl" x="104" y="268" text-anchor="end">Pli inter-</text>
+<text class="lbl" x="104" y="280" text-anchor="end">urétérique</text>
+<text class="lbl" x="104" y="326" text-anchor="end">Orifice interne</text>
+<text class="lbl" x="104" y="338" text-anchor="end">de l'urètre</text>
+<text class="lbl" x="286" y="120">Corps</text>
+<text class="lbl" x="286" y="185">Base (fundus)</text>
+<text class="lbl" x="286" y="245">Trigone vésical</text>
+<text class="lbl" x="286" y="305">Col vésical</text>
+</g>
+
+<!-- fiche -->
+<rect x="14" y="430" width="362" height="112" rx="12" fill="#1a1e26"/>
+<text id="ficheTitle" class="ftitle" x="28" y="458">Fiche anatomique</text>
+<text class="fline"><tspan id="fl0" x="28" y="480">Touchez une zone du schéma pour afficher sa fiche.</tspan><tspan id="fl1" x="28" dy="17"></tspan><tspan id="fl2" x="28" dy="17"></tspan><tspan id="fl3" x="28" dy="17"></tspan></text>
+<text class="note" x="195" y="566" text-anchor="middle">La vessie 3D est un maillage unique : trigone et orifices ne sont pas</text>
+<text class="note" x="195" y="581" text-anchor="middle">individualisés — ce schéma montre l'intérieur en regard.</text>
+
+<script><![CDATA[
+var DATA={
+apex:{t:"Apex",l:["Sommet supérieur, relié à l'ombilic par le","ligament ombilical médian (reliquat de l'ouraque)."]},
+corps:{t:"Corps",l:["Partie principale de la vessie, entre apex et base."]},
+base:{t:"Base (fundus)",l:["Face postéro-inférieure ; chez l'homme, en rapport","avec vésicules séminales et rectum."]},
+col:{t:"Col vésical",l:["Orifice inférieur où naît l'urètre,","entouré du sphincter lisse."]},
+trigone:{t:"Trigone vésical",l:["Triangle lisse de la face interne de la base,","entre les 2 orifices urétéraux et l'orifice","interne de l'urètre. Muqueuse toujours adhérente."]},
+orificeureteral:{t:"Orifice urétéral",l:["Abouchement de l'uretère ; son trajet oblique","sous-muqueux joue un rôle anti-reflux."]},
+pli:{t:"Pli interurétérique",l:["Crête transversale reliant les deux orifices","urétéraux ; limite supérieure du trigone."]},
+orificeinterne:{t:"Orifice interne de l'urètre",l:["Point déclive du trigone, au col vésical :","origine de l'urètre."]},
+detrusor:{t:"Détrusor",l:["Muscle lisse de la paroi (3 couches entrelacées),","moteur de la miction."]}
+};
+var fT=document.getElementById('ficheTitle');
+var fL=[document.getElementById('fl0'),document.getElementById('fl1'),document.getElementById('fl2'),document.getElementById('fl3')];
+function select(k){
+  var d=DATA[k]; if(!d) return;
+  var zones=document.querySelectorAll('.zone');
+  for(var i=0;i<zones.length;i++){ zones[i].classList.remove('sel'); }
+  var els=document.querySelectorAll('[data-k="'+k+'"]');
+  for(var j=0;j<els.length;j++){ els[j].classList.add('sel'); }
+  fT.textContent=d.t;
+  for(var n=0;n<fL.length;n++){ fL[n].textContent=(n<d.l.length)?d.l[n]:''; }
+}
+var zs=document.querySelectorAll('.zone');
+for(var i=0;i<zs.length;i++){
+  zs[i].addEventListener('click',function(ev){ select(ev.currentTarget.getAttribute('data-k')); });
+}
+]]></script>
+</svg>

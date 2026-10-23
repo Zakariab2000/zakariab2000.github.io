@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype staging — Scène Utérus (Fig 102) · HuBMAP → espace atlas</title>
+<style>
+  body { margin:0; background:#14161a; color:#e8e4da; font-family:system-ui, sans-serif; }
+  #bar { position:fixed; top:0; left:0; right:0; padding:10px 14px; background:rgba(20,22,26,.85);
+         display:flex; gap:8px; align-items:center; z-index:10; flex-wrap:wrap; }
+  #bar b { font-size:15px; }
+  #bar span { font-size:12px; opacity:.75; }
+  button { background:#2a2e36; color:#e8e4da; border:1px solid #4a4f59; border-radius:6px;
+           padding:6px 12px; font-size:13px; cursor:pointer; }
+  button.on { background:#7a4a63; border-color:#cf8fae; }
+  #scene { position:fixed; inset:0; }
+  #err { position:fixed; bottom:8px; right:8px; color:#ff8080; font-size:12px; white-space:pre-wrap; z-index:20; }
+
+  /* ===== cartes « Espaces » (coin bas-gauche) — règle utilisateur 2026-10-23 :
+     un espace indiqué sans maillage = une carte ; au toucher, le volume coloré
+     est créé dans le modèle. Le conteneur laisse passer les gestes d'orbite,
+     seules les cartes captent le tactile. ===== */
+  #spaces { position:fixed; left:10px; bottom:10px; z-index:15; width:248px;
+            pointer-events:none; display:flex; flex-direction:column; gap:6px; }
+  #spaces .sp-head { pointer-events:none; background:rgba(20,22,26,.82); border:1px solid #3a3f49;
+            border-radius:8px; padding:7px 10px; }
+  #spaces .sp-head b { font-size:13px; display:block; }
+  #spaces .sp-head span { font-size:11px; opacity:.7; }
+  .sp-card { pointer-events:auto; display:flex; align-items:center; gap:9px; text-align:left;
+            background:rgba(26,29,35,.88); border:1px solid #3a3f49; border-radius:8px;
+            padding:8px 10px; width:100%; }
+  .sp-card .dot { flex:0 0 auto; width:14px; height:14px; border-radius:50%;
+            border:2px solid rgba(255,255,255,.35); }
+  .sp-card .nm { flex:1 1 auto; font-size:12.5px; line-height:1.25; }
+  .sp-card .nm small { display:block; font-size:10px; opacity:.6; font-style:italic; }
+  .sp-card .st { flex:0 0 auto; font-size:11px; opacity:.55; }
+  .sp-card.on { border-color:#e8e4da; background:rgba(42,46,56,.95);
+            box-shadow:0 0 0 1px rgba(255,255,255,.25), 0 2px 10px rgba(0,0,0,.5); }
+  .sp-card.on .st { opacity:1; }
+  @media (max-width:640px) {
+    #spaces { width:186px; bottom:8px; left:8px; gap:5px; }
+    #spaces .sp-head { padding:5px 8px; }
+    #spaces .sp-head b { font-size:12px; }
+    #spaces .sp-head span { font-size:10px; }
+    .sp-card { padding:6px 8px; gap:7px; }
+    .sp-card .nm { font-size:11px; }
+    .sp-card .nm small { display:none; }
+    .sp-card .dot { width:11px; height:11px; }
+  }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three/three.module.js",
+  "three/addons/": "./vendor/three/addons/"
+} }
+</script>
+</head>
+<body>
+<div id="bar">
+  <b>Scène Utérus — Fig 102 (staging)</b>
+  <span>31 structures HuBMAP HRA (CC BY 4.0) recalées dans l'espace atlas · bassin en fantôme · rectum = contexte atlas</span>
+  <button id="b-front" class="on">Vue antérieure</button>
+  <button id="b-side">Vue latérale</button>
+  <span id="stat">chargement…</span>
+</div>
+<div id="scene"></div>
+
+<!-- cartes Espaces : générées en JS depuis SPACES -->
+<div id="spaces">
+  <div class="sp-head"><b>Espaces péritonéaux</b>
+    <span>Touchez une carte : l'espace se crée, coloré, dans le modèle. Re-touchez pour l'effacer.</span></div>
+</div>
+<div id="err"></div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const errors = [];
+window.addEventListener('error', e => { errors.push(String(e.message)); showErr(); });
+function showErr(){ document.getElementById('err').textContent = errors.join('\n'); }
+
+const ENTRIES = [
+  ['pelvis_female','#ddd3b8',0.22],['urinary_bladder_female','#d9b36a',1],
+  ['uterus_fundus','#cf8fae',1],['uterus_body','#cf8fae',1],['uterus_cervix','#cf8fae',1],
+  ['uterine_tube_left','#d29bb5',1],['uterine_tube_right','#d29bb5',1],['uterine_tube_ostium','#d29bb5',1],
+  ['ovary_left','#c98ba6',1],['ovary_right','#c98ba6',1],['vagina','#cf8fae',1],
+  ['ovarian_ligament_left','#c2a15c',1],['ovarian_ligament_right','#c2a15c',1],
+  ['round_ligament_uterus_left','#c2a15c',1],['round_ligament_uterus_right','#c2a15c',1],
+  ['cardinal_ligament_left','#c2a15c',1],['cardinal_ligament_right','#c2a15c',1],
+  ['uterosacral_ligament_left','#c2a15c',1],['uterosacral_ligament_right','#c2a15c',1],
+  ['suspensory_ligament_ovary_left','#c2a15c',1],['suspensory_ligament_ovary_right','#c2a15c',1],
+  ['mesosalpinx_left','#cbb98a',0.55],['mesosalpinx_right','#cbb98a',0.55],
+  ['mesovarium_left','#cbb98a',0.55],['mesovarium_right','#cbb98a',0.55],
+  ['broad_ligament','#cbb98a',0.4],['uterovesical_pouch','#cbb98a',0.5],
+  ['uterine_artery_left','#cf5346',1],['uterine_artery_right','#cf5346',1],
+  ['uterine_vein_left','#5b7fb4',1],['uterine_vein_right','#5b7fb4',1],
+  ['rectum','#8d7466',1],
+];
+/* Espaces : volumes schématiques (pas des maillages source) — voir scene-uterus.json */
+const SPACES = [
+  ['espace_douglas','Cul-de-sac de Douglas (recto-utérin)','Excavatio rectouterina','#f4845f'],
+  ['espace_vesico_uterin','Cul-de-sac vésico-utérin','Excavatio vesicouterina','#7fd1e8'],
+  ['fosse_pararectale_left','Fosse para-rectale gauche','Fossa pararectalis','#b197fc'],
+  ['fosse_pararectale_right','Fosse para-rectale droite','Fossa pararectalis','#9775fa'],
+  ['fosse_paravesicale_left','Fosse para-vésicale gauche','Fossa paravesicalis','#8ce99a'],
+  ['fosse_paravesicale_right','Fosse para-vésicale droite','Fossa paravesicalis','#51cf66'],
+];
+const SPACE_OPACITY = 0.6;
+const CENTER = new THREE.Vector3(-0.3, 830, 95);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x14161a);
+const camera = new THREE.PerspectiveCamera(40, innerWidth/innerHeight, 1, 5000);
+const VIEWS = {
+  front: new THREE.Vector3(-0.3, 845, 525),
+  side:  new THREE.Vector3(430, 845, 95),
+};
+camera.position.copy(VIEWS.front);
+const renderer = new THREE.WebGLRenderer({ antialias:true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+document.getElementById('scene').appendChild(renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.copy(CENTER);
+scene.add(new THREE.AmbientLight(0xffffff, 0.55));
+const d1 = new THREE.DirectionalLight(0xffffff, 1.6); d1.position.set(150, 300, 400); scene.add(d1);
+const d2 = new THREE.DirectionalLight(0xbfd0ff, 0.5); d2.position.set(-300, 100, -200); scene.add(d2);
+
+const loader = new GLTFLoader();
+let loaded = 0;
+const TOTAL = ENTRIES.length + SPACES.length;
+window.__loadedCount = 0;
+function bump() {
+  loaded++; window.__loadedCount = loaded;
+  document.getElementById('stat').textContent = `${loaded}/${TOTAL} structures`;
+}
+for (const [id, color, opacity] of ENTRIES) {
+  loader.load(`./${id}.glb`, gltf => {
+    gltf.scene.traverse(o => {
+      if (o.isMesh) {
+        o.material = new THREE.MeshStandardMaterial({
+          color: new THREE.Color(color), roughness: 0.6, metalness: 0.05,
+          transparent: opacity < 1, opacity, side: THREE.DoubleSide,
+          depthWrite: opacity === 1 });
+      }
+    });
+    scene.add(gltf.scene);
+    bump();
+  }, undefined, err => { errors.push(id + ': ' + err.message); showErr(); });
+}
+
+/* ---- espaces : chargement invisible, cartes de bascule avec fondu ---- */
+const spaceObjs = {};   // id -> {group, mats:[], target:0..1}
+const panel = document.getElementById('spaces');
+for (const [id, nom, latin, color] of SPACES) {
+  const st = { mats: [], target: 0 };
+  spaceObjs[id] = st;
+  loader.load(`./${id}.glb`, gltf => {
+    gltf.scene.traverse(o => {
+      if (o.isMesh) {
+        o.material = new THREE.MeshStandardMaterial({
+          color: new THREE.Color(color), roughness: 0.35, metalness: 0.0,
+          transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false });
+        st.mats.push(o.material);
+      }
+    });
+    gltf.scene.visible = false;
+    st.group = gltf.scene;
+    scene.add(gltf.scene);
+    bump();
+  }, undefined, err => { errors.push(id + ': ' + err.message); showErr(); });
+
+  const card = document.createElement('button');
+  card.className = 'sp-card'; card.id = 'card-' + id;
+  card.innerHTML = `<span class="dot" style="background:${color}"></span>` +
+    `<span class="nm">${nom}<small>${latin} · volume schématique</small></span>` +
+    `<span class="st">＋</span>`;
+  card.addEventListener('click', () => setSpace(id, st.target < 0.5));
+  panel.appendChild(card);
+  st.card = card;
+}
+function setSpace(id, on, instant=false) {
+  const st = spaceObjs[id];
+  st.target = on ? 1 : 0;
+  if (st.group) {
+    st.group.visible = true;
+    if (instant) st.mats.forEach(m => m.opacity = on ? SPACE_OPACITY : 0);
+  }
+  st.card.classList.toggle('on', on);
+  st.card.querySelector('.st').textContent = on ? '✕' : '＋';
+}
+window.__setSpace = setSpace;
+window.__spaceState = () => Object.fromEntries(
+  Object.entries(spaceObjs).map(([k, v]) => [k, v.target]));
+
+function setView(name, btn) {
+  camera.position.copy(VIEWS[name]); controls.target.copy(CENTER); controls.update();
+  document.querySelectorAll('#bar button').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+}
+document.getElementById('b-front').onclick = e => setView('front', e.target);
+document.getElementById('b-side').onclick = e => setView('side', e.target);
+const q = new URLSearchParams(location.search);
+if (q.get('view') === 'side') setView('side', document.getElementById('b-side'));
+/* captures / liens profonds : ?spaces=espace_douglas,fosse_pararectale_left */
+const wantSpaces = (q.get('spaces') || '').split(',').filter(Boolean);
+function applyWanted() {
+  for (const id of wantSpaces) if (spaceObjs[id] && spaceObjs[id].group) setSpace(id, true, true);
+}
+setTimeout(applyWanted, 2500);
+
+renderer.setAnimationLoop(() => {
+  for (const st of Object.values(spaceObjs)) {
+    if (!st.group) continue;
+    const goal = st.target * SPACE_OPACITY;
+    let cur = st.mats.length ? st.mats[0].opacity : 0;
+    if (Math.abs(goal - cur) > 0.004) {
+      const nxt = cur + (goal - cur) * 0.14;
+      st.mats.forEach(m => m.opacity = nxt);
+      st.group.visible = nxt > 0.01;
+    } else if (st.group.visible && goal === 0) st.group.visible = false;
+  }
+  controls.update(); renderer.render(scene, camera);
+});
+addEventListener('resize', () => {
+  camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1576 @@
+{
+ "sujet": "coeur",
+ "titre_fr": "Le cœur",
+ "titre_en": "The heart",
+ "partie": "III",
+ "numero_topic": 19,
+ "batch": "F",
+ "figures": [
+  {
+   "numero": 51,
+   "titre_fr": "Valves du cœur",
+   "titre_en": "Valves of the heart",
+   "classe": "3D",
+   "camera": {
+    "vue": "superieure",
+    "preset_audit": "supérieure (vue des orifices)"
+   },
+   "structures": [
+    {
+     "id": "anterior_semilunar_leaflet_of_pulmonary_valve",
+     "nom_fr": "Valvule semilunaire antérieure de la valve pulmonaire",
+     "name_en": "Anterior semilunar leaflet of pulmonary valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/anterior_semilunar_leaflet_of_pulmonary_valve.glb",
+     "role": "sujet",
+     "centre": [
+      32.8,
+      1252.0,
+      150.1
+     ],
+     "taille": [
+      18.2,
+      17.3,
+      19.5
+     ]
+    },
+    {
+     "id": "left_semilunar_leaflet_of_pulmonary_valve",
+     "nom_fr": "Valvule semilunaire gauche de la valve pulmonaire",
+     "name_en": "Left semilunar leaflet of pulmonary valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_semilunar_leaflet_of_pulmonary_valve.glb",
+     "role": "sujet",
+     "centre": [
+      32.8,
+      1252.4,
+      135.9
+     ],
+     "taille": [
+      17.5,
+      17.2,
+      14.3
+     ]
+    },
+    {
+     "id": "right_semilunar_leaflet_of_pulmonary_valve",
+     "nom_fr": "Valvule semilunaire droite de la valve pulmonaire",
+     "name_en": "Right semilunar leaflet of pulmonary valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_semilunar_leaflet_of_pulmonary_valve.glb",
+     "role": "sujet",
+     "centre": [
+      18.7,
+      1255.7,
+      145.6
+     ],
+     "taille": [
+      19.1,
+      17.9,
+      23.3
+     ]
+    },
+    {
+     "id": "left_coronary_leaflet",
+     "nom_fr": "Valvule coronaire aortique gauche",
+     "name_en": "Left coronary leaflet",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_coronary_leaflet.glb",
+     "role": "sujet",
+     "centre": [
+      20.0,
+      1251.3,
+      120.6
+     ],
+     "taille": [
+      14.5,
+      14.1,
+      19.2
+     ]
+    },
+    {
+     "id": "right_coronary_leaflet",
+     "nom_fr": "Valvule coronaire aortique droite",
+     "name_en": "Right coronary leaflet",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_coronary_leaflet.glb",
+     "role": "sujet",
+     "centre": [
+      11.6,
+      1248.9,
+      129.4
+     ],
+     "taille": [
+      19.0,
+      16.8,
+      13.0
+     ]
+    },
+    {
+     "id": "non_coronary_leaflet",
+     "nom_fr": "Valvule non-coronaire de la valve aortique",
+     "name_en": "Non-coronary leaflet",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/non_coronary_leaflet.glb",
+     "role": "sujet",
+     "centre": [
+      9.4,
+      1248.1,
+      118.4
+     ],
+     "taille": [
+      17.0,
+      16.6,
+      18.1
+     ]
+    },
+    {
+     "id": "septal_leaflet_of_right_atrioventricular_valve",
+     "nom_fr": "Cuspide septale de la valve atrioventriculaire droite",
+     "name_en": "Septal leaflet of right atrioventricular valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/septal_leaflet_of_right_atrioventricular_valve.glb",
+     "role": "sujet",
+     "centre": [
+      12.0,
+      1222.7,
+      126.9
+     ],
+     "taille": [
+      36.6,
+      24.3,
+      23.5
+     ]
+    },
+    {
+     "id": "inferior_leaflet_of_right_atrioventricular_valve",
+     "nom_fr": "Cuspide inféfieure de la valve atrioventriculaire droite",
+     "name_en": "Inferior leaflet of right atrioventricular valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/inferior_leaflet_of_right_atrioventricular_valve.glb",
+     "role": "sujet",
+     "centre": [
+      -0.9,
+      1199.4,
+      130.7
+     ],
+     "taille": [
+      36.0,
+      28.7,
+      30.6
+     ]
+    },
+    {
+     "id": "posterior_leaflet_of_left_atrioventricular_valve",
+     "nom_fr": "Cuspide postérieure de la valve atrioventriculaire gauche",
+     "name_en": "Posterior leaflet of left atrioventricular valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/posterior_leaflet_of_left_atrioventricular_valve.glb",
+     "role": "sujet",
+     "centre": [
+      39.1,
+      1213.2,
+      106.3
+     ],
+     "taille": [
+      50.1,
+      33.4,
+      36.8
+     ]
+    },
+    {
+     "id": "anterior_papillary_muscle_of_right_ventricle",
+     "nom_fr": "Muscle papillaire antérieur du ventricule droit",
+     "name_en": "Anterior papillary muscle of right ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/anterior_papillary_muscle_of_right_ventricle.glb",
+     "role": "sujet",
+     "centre": [
+      30.4,
+      1191.0,
+      162.1
+     ],
+     "taille": [
+      35.9,
+      30.5,
+      20.9
+     ]
+    },
+    {
+     "id": "inferior_papillary_muscle_of_right_ventricle",
+     "nom_fr": "Muscle papillaire inférieur du ventricule droit",
+     "name_en": "Inferior papillary muscle of right ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/inferior_papillary_muscle_of_right_ventricle.glb",
+     "role": "sujet",
+     "centre": [
+      22.5,
+      1182.1,
+      146.8
+     ],
+     "taille": [
+      30.1,
+      15.0,
+      27.8
+     ]
+    },
+    {
+     "id": "septal_papillary_muscle_of_right_ventricle",
+     "nom_fr": "Muscle papillaire septal du ventricule droit",
+     "name_en": "Septal papillary muscle of right ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/septal_papillary_muscle_of_right_ventricle.glb",
+     "role": "sujet",
+     "centre": [
+      23.3,
+      1224.9,
+      136.9
+     ],
+     "taille": [
+      19.8,
+      28.0,
+      15.0
+     ]
+    },
+    {
+     "id": "inferior_papillary_muscle_of_left_ventricle",
+     "nom_fr": "Muscle papillaire inférieur du ventricule gauche",
+     "name_en": "Inferior papillary muscle of left ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/inferior_papillary_muscle_of_left_ventricle.glb",
+     "role": "sujet",
+     "centre": [
+      61.9,
+      1200.2,
+      127.1
+     ],
+     "taille": [
+      29.0,
+      31.3,
+      40.9
+     ]
+    },
+    {
+     "id": "right_atrium",
+     "nom_fr": "Atrium droit",
+     "name_en": "Right atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_atrium.glb",
+     "role": "contexte",
+     "centre": [
+      -14.5,
+      1229.2,
+      127.4
+     ],
+     "taille": [
+      43.9,
+      99.2,
+      69.2
+     ]
+    },
+    {
+     "id": "right_ventricle",
+     "nom_fr": "Ventricule droit",
+     "name_en": "Right ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_ventricle.glb",
+     "role": "contexte",
+     "centre": [
+      19.0,
+      1218.8,
+      144.8
+     ],
+     "taille": [
+      81.0,
+      93.0,
+      63.0
+     ]
+    },
+    {
+     "id": "left_atrium",
+     "nom_fr": "Atrium gauche",
+     "name_en": "Left atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_atrium.glb",
+     "role": "contexte",
+     "centre": [
+      20.3,
+      1234.3,
+      110.7
+     ],
+     "taille": [
+      87.8,
+      75.6,
+      81.4
+     ]
+    },
+    {
+     "id": "left_ventricle",
+     "nom_fr": "Ventricule gauche",
+     "name_en": "Left ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_ventricle.glb",
+     "role": "contexte",
+     "centre": [
+      41.4,
+      1215.2,
+      126.4
+     ],
+     "taille": [
+      78.4,
+      90.1,
+      82.1
+     ]
+    }
+   ],
+   "diagramme": null,
+   "espaces": [],
+   "manquants": [
+    "Cuspide ANTÉRIEURE de la valve tricuspide : ABSENTE (seules les cuspides septale et inférieure existent)",
+    "Cuspide antérieure (grande valve) de la mitrale : ABSENTE (seule la cuspide postérieure existe)",
+    "Cordages tendineux : ABSENTS ; muscle papillaire antérieur du ventricule gauche : non retrouvé (seul l'inférieur existe)"
+   ]
+  },
+  {
+   "numero": 52,
+   "titre_fr": "Configuration interne du cœur et sens de la circulation",
+   "titre_en": "Internal configuration of the heart and direction of circulation",
+   "classe": "3D+D",
+   "camera": {
+    "vue": "anterieure",
+    "preset_audit": "antérieure, cavités ouvertes en fondu"
+   },
+   "structures": [
+    {
+     "id": "right_atrium",
+     "nom_fr": "Atrium droit",
+     "name_en": "Right atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_atrium.glb",
+     "role": "sujet",
+     "centre": [
+      -14.5,
+      1229.2,
+      127.4
+     ],
+     "taille": [
+      43.9,
+      99.2,
+      69.2
+     ]
+    },
+    {
+     "id": "right_ventricle",
+     "nom_fr": "Ventricule droit",
+     "name_en": "Right ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_ventricle.glb",
+     "role": "sujet",
+     "centre": [
+      19.0,
+      1218.8,
+      144.8
+     ],
+     "taille": [
+      81.0,
+      93.0,
+      63.0
+     ]
+    },
+    {
+     "id": "left_atrium",
+     "nom_fr": "Atrium gauche",
+     "name_en": "Left atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_atrium.glb",
+     "role": "sujet",
+     "centre": [
+      20.3,
+      1234.3,
+      110.7
+     ],
+     "taille": [
+      87.8,
+      75.6,
+      81.4
+     ]
+    },
+    {
+     "id": "left_ventricle",
+     "nom_fr": "Ventricule gauche",
+     "name_en": "Left ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_ventricle.glb",
+     "role": "sujet",
+     "centre": [
+      41.4,
+      1215.2,
+      126.4
+     ],
+     "taille": [
+      78.4,
+      90.1,
+      82.1
+     ]
+    },
+    {
+     "id": "ascending_aorta",
+     "nom_fr": "Aorte ascendante",
+     "name_en": "Ascending aorta",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/ascending_aorta.glb",
+     "role": "sujet",
+     "centre": [
+      10.7,
+      1269.7,
+      122.8
+     ],
+     "taille": [
+      40.8,
+      55.9,
+      37.4
+     ]
+    },
+    {
+     "id": "superior_vena_cava",
+     "nom_fr": "Veine cave supérieure",
+     "name_en": "Superior vena cava",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/superior_vena_cava.glb",
+     "role": "sujet",
+     "centre": [
+      -16.3,
+      1292.9,
+      117.9
+     ],
+     "taille": [
+      24.5,
+      37.9,
+      25.4
+     ]
+    },
+    {
+     "id": "inferior_vena_cava_thoracic_part",
+     "nom_fr": "Veine cave inférieure (partie thoracique)",
+     "name_en": "Inferior vena cava (thoracic part)",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/inferior_vena_cava_thoracic_part.glb",
+     "role": "sujet",
+     "centre": [
+      -13.6,
+      1150.2,
+      115.8
+     ],
+     "taille": [
+      25.4,
+      93.3,
+      31.8
+     ]
+    },
+    {
+     "id": "coronary_sinus",
+     "nom_fr": "Sinus coronaire",
+     "name_en": "Coronary sinus",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/coronary_sinus.glb",
+     "role": "sujet",
+     "centre": [
+      21.1,
+      1206.1,
+      100.1
+     ],
+     "taille": [
+      52.1,
+      23.7,
+      33.8
+     ]
+    },
+    {
+     "id": "anterior_papillary_muscle_of_right_ventricle",
+     "nom_fr": "Muscle papillaire antérieur du ventricule droit",
+     "name_en": "Anterior papillary muscle of right ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/anterior_papillary_muscle_of_right_ventricle.glb",
+     "role": "contexte",
+     "centre": [
+      30.4,
+      1191.0,
+      162.1
+     ],
+     "taille": [
+      35.9,
+      30.5,
+      20.9
+     ]
+    },
+    {
+     "id": "septal_leaflet_of_right_atrioventricular_valve",
+     "nom_fr": "Cuspide septale de la valve atrioventriculaire droite",
+     "name_en": "Septal leaflet of right atrioventricular valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/septal_leaflet_of_right_atrioventricular_valve.glb",
+     "role": "contexte",
+     "centre": [
+      12.0,
+      1222.7,
+      126.9
+     ],
+     "taille": [
+      36.6,
+      24.3,
+      23.5
+     ]
+    },
+    {
+     "id": "posterior_leaflet_of_left_atrioventricular_valve",
+     "nom_fr": "Cuspide postérieure de la valve atrioventriculaire gauche",
+     "name_en": "Posterior leaflet of left atrioventricular valve",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/posterior_leaflet_of_left_atrioventricular_valve.glb",
+     "role": "contexte",
+     "centre": [
+      39.1,
+      1213.2,
+      106.3
+     ],
+     "taille": [
+      50.1,
+      33.4,
+      36.8
+     ]
+    }
+   ],
+   "diagramme": "circulation_coeur",
+   "espaces": [
+    {
+     "id": "cavite_pericardique",
+     "nom_fr": "Cavité péricardique",
+     "couleur": "#ef476f",
+     "fichier": "modeles-espaces/cavite_pericardique.glb",
+     "bornes": [
+      "right_atrium",
+      "right_ventricle",
+      "left_atrium",
+      "left_ventricle"
+     ],
+     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal du péricarde séreux. Le péricarde n'a AUCUN maillage dans le manifeste (audit fig. 52) : volume schématique en coque (~6 mm) autour des 4 cavités cardiaques, qui en forment la borne interne — l'épaisseur est une convention, pas une mesure."
+    }
+   ],
+   "manquants": [
+    "Péricarde : ABSENT du manifeste",
+    "Le SENS de circulation est un flux : il exige une animation/schéma de flux en regard des cavités 3D (les 4 cavités, elles, existent comme maillages séparés)",
+    "Septums interatrial/interventriculaire : pas d'entrées séparées (inclus dans les maillages des cavités)"
+   ]
+  },
+  {
+   "numero": 53,
+   "titre_fr": "Vascularisation artérielle du cœur",
+   "titre_en": "Arterial supply of the heart",
+   "classe": "3D",
+   "camera": {
+    "vue": "superieure",
+    "preset_audit": "antérieure puis inférieure"
+   },
+   "structures": [
+    {
+     "id": "left_coronary_artery",
+     "nom_fr": "Artère coronaire gauche",
+     "name_en": "Left coronary artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/left_coronary_artery.glb",
+     "role": "sujet",
+     "centre": [
+      27.8,
+      1261.3,
+      121.4
+     ],
+     "taille": [
+      15.0,
+      10.9,
+      6.7
+     ]
+    },
+    {
+     "id": "right_coronary_artery",
+     "nom_fr": "Artère coronaire droite",
+     "name_en": "Right coronary artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/right_coronary_artery.glb",
+     "role": "sujet",
+     "centre": [
+      17.1,
+      1220.7,
+      136.0
+     ],
+     "taille": [
+      79.1,
+      93.7,
+      80.5
+     ]
+    },
+    {
+     "id": "anterior_interventricular_artery",
+     "nom_fr": "Artère interventriculaire antérieure",
+     "name_en": "Anterior interventricular artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/anterior_interventricular_artery.glb",
+     "role": "sujet",
+     "centre": [
+      53.4,
+      1218.1,
+      147.9
+     ],
+     "taille": [
+      38.5,
+      82.4,
+      53.0
+     ]
+    },
+    {
+     "id": "circumflex_artery_of_heart",
+     "nom_fr": "Artère circonflexe du coeur",
+     "name_en": "Circumflex artery of heart",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/circumflex_artery_of_heart.glb",
+     "role": "sujet",
+     "centre": [
+      56.3,
+      1221.6,
+      116.4
+     ],
+     "taille": [
+      44.3,
+      75.3,
+      54.0
+     ]
+    },
+    {
+     "id": "septal_branches_of_anterior_interventricular_artery",
+     "nom_fr": "Branches septales de l'artère interventriculaire antérieure",
+     "name_en": "Septal branches of anterior interventricular artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/septal_branches_of_anterior_interventricular_artery.glb",
+     "role": "sujet",
+     "centre": [
+      48.8,
+      1222.1,
+      154.2
+     ],
+     "taille": [
+      12.1,
+      39.3,
+      30.2
+     ]
+    },
+    {
+     "id": "right_inferolateral_branch_of_right_coronary_artery",
+     "nom_fr": "Branche inférolatérale droite de l'artère coronaire droite",
+     "name_en": "Right inferolateral branch of right coronary artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/right_inferolateral_branch_of_right_coronary_artery.glb",
+     "role": "sujet",
+     "centre": [
+      47.7,
+      1181.5,
+      115.4
+     ],
+     "taille": [
+      54.9,
+      20.3,
+      49.1
+     ]
+    },
+    {
+     "id": "coronary_sinus",
+     "nom_fr": "Sinus coronaire",
+     "name_en": "Coronary sinus",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/coronary_sinus.glb",
+     "role": "sujet",
+     "centre": [
+      21.1,
+      1206.1,
+      100.1
+     ],
+     "taille": [
+      52.1,
+      23.7,
+      33.8
+     ]
+    },
+    {
+     "id": "left_ventricle",
+     "nom_fr": "Ventricule gauche",
+     "name_en": "Left ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_ventricle.glb",
+     "role": "contexte",
+     "centre": [
+      41.4,
+      1215.2,
+      126.4
+     ],
+     "taille": [
+      78.4,
+      90.1,
+      82.1
+     ]
+    },
+    {
+     "id": "right_ventricle",
+     "nom_fr": "Ventricule droit",
+     "name_en": "Right ventricle",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_ventricle.glb",
+     "role": "contexte",
+     "centre": [
+      19.0,
+      1218.8,
+      144.8
+     ],
+     "taille": [
+      81.0,
+      93.0,
+      63.0
+     ]
+    },
+    {
+     "id": "left_atrium",
+     "nom_fr": "Atrium gauche",
+     "name_en": "Left atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_atrium.glb",
+     "role": "contexte",
+     "centre": [
+      20.3,
+      1234.3,
+      110.7
+     ],
+     "taille": [
+      87.8,
+      75.6,
+      81.4
+     ]
+    },
+    {
+     "id": "right_atrium",
+     "nom_fr": "Atrium droit",
+     "name_en": "Right atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_atrium.glb",
+     "role": "contexte",
+     "centre": [
+      -14.5,
+      1229.2,
+      127.4
+     ],
+     "taille": [
+      43.9,
+      99.2,
+      69.2
+     ]
+    }
+   ],
+   "diagramme": null,
+   "espaces": [],
+   "manquants": [
+    "Artère interventriculaire postérieure (inférieure), branche terminale classique de la coronaire droite : ABSENTE du manifeste",
+    "Branches marginales droite et gauche : non individualisées"
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "anterior_semilunar_leaflet_of_pulmonary_valve",
+   "nom_fr": "Valvule semilunaire antérieure de la valve pulmonaire",
+   "name_en": "Anterior semilunar leaflet of pulmonary valve",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/anterior_semilunar_leaflet_of_pulmonary_valve.glb",
+   "role": "sujet",
+   "centre": [
+    32.8,
+    1252.0,
+    150.1
+   ],
+   "taille": [
+    18.2,
+    17.3,
+    19.5
+   ]
+  },
+  {
+   "id": "left_semilunar_leaflet_of_pulmonary_valve",
+   "nom_fr": "Valvule semilunaire gauche de la valve pulmonaire",
+   "name_en": "Left semilunar leaflet of pulmonary valve",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/left_semilunar_leaflet_of_pulmonary_valve.glb",
+   "role": "sujet",
+   "centre": [
+    32.8,
+    1252.4,
+    135.9
+   ],
+   "taille": [
+    17.5,
+    17.2,
+    14.3
+   ]
+  },
+  {
+   "id": "right_semilunar_leaflet_of_pulmonary_valve",
+   "nom_fr": "Valvule semilunaire droite de la valve pulmonaire",
+   "name_en": "Right semilunar leaflet of pulmonary valve",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/right_semilunar_leaflet_of_pulmonary_valve.glb",
+   "role": "sujet",
+   "centre": [
+    18.7,
+    1255.7,
+    145.6
+   ],
+   "taille": [
+    19.1,
+    17.9,
+    23.3
+   ]
+  },
+  {
+   "id": "left_coronary_leaflet",
+   "nom_fr": "Valvule coronaire aortique gauche",
+   "name_en": "Left coronary leaflet",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/left_coronary_leaflet.glb",
+   "role": "sujet",
+   "centre": [
+    20.0,
+    1251.3,
+    120.6
+   ],
+   "taille": [
+    14.5,
+    14.1,
+    19.2
+   ]
+  },
+  {
+   "id": "right_coronary_leaflet",
+   "nom_fr": "Valvule coronaire aortique droite",
+   "name_en": "Right coronary leaflet",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/right_coronary_leaflet.glb",
+   "role": "sujet",
+   "centre": [
+    11.6,
+    1248.9,
+    129.4
+   ],
+   "taille": [
+    19.0,
+    16.8,
+    13.0
+   ]
+  },
+  {
+   "id": "non_coronary_leaflet",
+   "nom_fr": "Valvule non-coronaire de la valve aortique",
+   "name_en": "Non-coronary leaflet",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/non_coronary_leaflet.glb",
+   "role": "sujet",
+   "centre": [
+    9.4,
+    1248.1,
+    118.4
+   ],
+   "taille": [
+    17.0,
+    16.6,
+    18.1
+   ]
+  },
+  {
+   "id": "septal_leaflet_of_right_atrioventricular_valve",
+   "nom_fr": "Cuspide septale de la valve atrioventriculaire droite",
+   "name_en": "Septal leaflet of right atrioventricular valve",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/septal_leaflet_of_right_atrioventricular_valve.glb",
+   "role": "sujet",
+   "centre": [
+    12.0,
+    1222.7,
+    126.9
+   ],
+   "taille": [
+    36.6,
+    24.3,
+    23.5
+   ]
+  },
+  {
+   "id": "inferior_leaflet_of_right_atrioventricular_valve",
+   "nom_fr": "Cuspide inféfieure de la valve atrioventriculaire droite",
+   "name_en": "Inferior leaflet of right atrioventricular valve",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/inferior_leaflet_of_right_atrioventricular_valve.glb",
+   "role": "sujet",
+   "centre": [
+    -0.9,
+    1199.4,
+    130.7
+   ],
+   "taille": [
+    36.0,
+    28.7,
+    30.6
+   ]
+  },
+  {
+   "id": "posterior_leaflet_of_left_atrioventricular_valve",
+   "nom_fr": "Cuspide postérieure de la valve atrioventriculaire gauche",
+   "name_en": "Posterior leaflet of left atrioventricular valve",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/posterior_leaflet_of_left_atrioventricular_valve.glb",
+   "role": "sujet",
+   "centre": [
+    39.1,
+    1213.2,
+    106.3
+   ],
+   "taille": [
+    50.1,
+    33.4,
+    36.8
+   ]
+  },
+  {
+   "id": "anterior_papillary_muscle_of_right_ventricle",
+   "nom_fr": "Muscle papillaire antérieur du ventricule droit",
+   "name_en": "Anterior papillary muscle of right ventricle",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/anterior_papillary_muscle_of_right_ventricle.glb",
+   "role": "sujet",
+   "centre": [
+    30.4,
+    1191.0,
+    162.1
+   ],
+   "taille": [
+    35.9,
+    30.5,
+    20.9
+   ]
+  },
+  {
+   "id": "inferior_papillary_muscle_of_right_ventricle",
+   "nom_fr": "Muscle papillaire inférieur du ventricule droit",
+   "name_en": "Inferior papillary muscle of right ventricle",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/inferior_papillary_muscle_of_right_ventricle.glb",
+   "role": "sujet",
+   "centre": [
+    22.5,
+    1182.1,
+    146.8
+   ],
+   "taille": [
+    30.1,
+    15.0,
+    27.8
+   ]
+  },
+  {
+   "id": "septal_papillary_muscle_of_right_ventricle",
+   "nom_fr": "Muscle papillaire septal du ventricule droit",
+   "name_en": "Septal papillary muscle of right ventricle",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/septal_papillary_muscle_of_right_ventricle.glb",
+   "role": "sujet",
+   "centre": [
+    23.3,
+    1224.9,
+    136.9
+   ],
+   "taille": [
+    19.8,
+    28.0,
+    15.0
+   ]
+  },
+  {
+   "id": "inferior_papillary_muscle_of_left_ventricle",
+   "nom_fr": "Muscle papillaire inférieur du ventricule gauche",
+   "name_en": "Inferior papillary muscle of left ventricle",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/inferior_papillary_muscle_of_left_ventricle.glb",
+   "role": "sujet",
+   "centre": [
+    61.9,
+    1200.2,
+    127.1
+   ],
+   "taille": [
+    29.0,
+    31.3,
+    40.9
+   ]
+  },
+  {
+   "id": "right_atrium",
+   "nom_fr": "Atrium droit",
+   "name_en": "Right atrium",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/right_atrium.glb",
+   "role": "sujet",
+   "centre": [
+    -14.5,
+    1229.2,
+    127.4
+   ],
+   "taille": [
+    43.9,
+    99.2,
+    69.2
+   ]
+  },
+  {
+   "id": "right_ventricle",
+   "nom_fr": "Ventricule droit",
+   "name_en": "Right ventricle",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/right_ventricle.glb",
+   "role": "sujet",
+   "centre": [
+    19.0,
+    1218.8,
+    144.8
+   ],
+   "taille": [
+    81.0,
+    93.0,
+    63.0
+   ]
+  },
+  {
+   "id": "left_atrium",
+   "nom_fr": "Atrium gauche",
+   "name_en": "Left atrium",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/left_atrium.glb",
+   "role": "sujet",
+   "centre": [
+    20.3,
+    1234.3,
+    110.7
+   ],
+   "taille": [
+    87.8,
+    75.6,
+    81.4
+   ]
+  },
+  {
+   "id": "left_ventricle",
+   "nom_fr": "Ventricule gauche",
+   "name_en": "Left ventricle",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/left_ventricle.glb",
+   "role": "sujet",
+   "centre": [
+    41.4,
+    1215.2,
+    126.4
+   ],
+   "taille": [
+    78.4,
+    90.1,
+    82.1
+   ]
+  },
+  {
+   "id": "ascending_aorta",
+   "nom_fr": "Aorte ascendante",
+   "name_en": "Ascending aorta",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/ascending_aorta.glb",
+   "role": "sujet",
+   "centre": [
+    10.7,
+    1269.7,
+    122.8
+   ],
+   "taille": [
+    40.8,
+    55.9,
+    37.4
+   ]
+  },
+  {
+   "id": "superior_vena_cava",
+   "nom_fr": "Veine cave supérieure",
+   "name_en": "Superior vena cava",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/superior_vena_cava.glb",
+   "role": "sujet",
+   "centre": [
+    -16.3,
+    1292.9,
+    117.9
+   ],
+   "taille": [
+    24.5,
+    37.9,
+    25.4
+   ]
+  },
+  {
+   "id": "inferior_vena_cava_thoracic_part",
+   "nom_fr": "Veine cave inférieure (partie thoracique)",
+   "name_en": "Inferior vena cava (thoracic part)",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/inferior_vena_cava_thoracic_part.glb",
+   "role": "sujet",
+   "centre": [
+    -13.6,
+    1150.2,
+    115.8
+   ],
+   "taille": [
+    25.4,
+    93.3,
+    31.8
+   ]
+  },
+  {
+   "id": "coronary_sinus",
+   "nom_fr": "Sinus coronaire",
+   "name_en": "Coronary sinus",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/coronary_sinus.glb",
+   "role": "sujet",
+   "centre": [
+    21.1,
+    1206.1,
+    100.1
+   ],
+   "taille": [
+    52.1,
+    23.7,
+    33.8
+   ]
+  },
+  {
+   "id": "left_coronary_artery",
+   "nom_fr": "Artère coronaire gauche",
+   "name_en": "Left coronary artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/left_coronary_artery.glb",
+   "role": "sujet",
+   "centre": [
+    27.8,
+    1261.3,
+    121.4
+   ],
+   "taille": [
+    15.0,
+    10.9,
+    6.7
+   ]
+  },
+  {
+   "id": "right_coronary_artery",
+   "nom_fr": "Artère coronaire droite",
+   "name_en": "Right coronary artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/right_coronary_artery.glb",
+   "role": "sujet",
+   "centre": [
+    17.1,
+    1220.7,
+    136.0
+   ],
+   "taille": [
+    79.1,
+    93.7,
+    80.5
+   ]
+  },
+  {
+   "id": "anterior_interventricular_artery",
+   "nom_fr": "Artère interventriculaire antérieure",
+   "name_en": "Anterior interventricular artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/anterior_interventricular_artery.glb",
+   "role": "sujet",
+   "centre": [
+    53.4,
+    1218.1,
+    147.9
+   ],
+   "taille": [
+    38.5,
+    82.4,
+    53.0
+   ]
+  },
+  {
+   "id": "circumflex_artery_of_heart",
+   "nom_fr": "Artère circonflexe du coeur",
+   "name_en": "Circumflex artery of heart",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/circumflex_artery_of_heart.glb",
+   "role": "sujet",
+   "centre": [
+    56.3,
+    1221.6,
+    116.4
+   ],
+   "taille": [
+    44.3,
+    75.3,
+    54.0
+   ]
+  },
+  {
+   "id": "septal_branches_of_anterior_interventricular_artery",
+   "nom_fr": "Branches septales de l'artère interventriculaire antérieure",
+   "name_en": "Septal branches of anterior interventricular artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/septal_branches_of_anterior_interventricular_artery.glb",
+   "role": "sujet",
+   "centre": [
+    48.8,
+    1222.1,
+    154.2
+   ],
+   "taille": [
+    12.1,
+    39.3,
+    30.2
+   ]
+  },
+  {
+   "id": "right_inferolateral_branch_of_right_coronary_artery",
+   "nom_fr": "Branche inférolatérale droite de l'artère coronaire droite",
+   "name_en": "Right inferolateral branch of right coronary artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/right_inferolateral_branch_of_right_coronary_artery.glb",
+   "role": "sujet",
+   "centre": [
+    47.7,
+    1181.5,
+    115.4
+   ],
+   "taille": [
+    54.9,
+    20.3,
+    49.1
+   ]
+  }
+ ],
+ "diagrammes": {
+  "circulation_coeur": {
+   "titre_fr": "Configuration interne du cœur et sens de la circulation — schéma interactif",
+   "titre_en": "Internal configuration of the heart and direction of circulation — interactive diagram",
+   "w": 720,
+   "h": 620,
+   "levels": {
+    "desoxy": {
+     "c": "#5b8dd9",
+     "fr": "Sang désoxygéné (cœur droit)",
+     "en": "Deoxygenated blood (right heart)"
+    },
+    "echange": {
+     "c": "#4fae4a",
+     "fr": "Hématose",
+     "en": "Gas exchange"
+    },
+    "oxy": {
+     "c": "#e05252",
+     "fr": "Sang oxygéné (cœur gauche)",
+     "en": "Oxygenated blood (left heart)"
+    }
+   },
+   "nodes": [
+    {
+     "id": "caves",
+     "x": 140,
+     "y": 90,
+     "w": 180,
+     "label": "Veines caves",
+     "sub": "supérieure et inférieure",
+     "label_en": "Venae cavae",
+     "sub_en": "superior and inferior",
+     "lvl": "desoxy",
+     "desc": {
+      "fr": "Retour veineux systémique : la veine cave supérieure s'ouvre à la paroi supérieure de l'oreillette droite, la veine cave inférieure à sa paroi inférieure, où s'ouvre aussi le sinus coronaire (cours, Q19). Maillages présents dans la scène 3D (audit fig. 52).",
+      "en": "Systemic venous return: the superior vena cava opens into the superior wall of the right atrium, the inferior vena cava into its inferior wall, where the coronary sinus also opens (course, Q19). Modelled in the 3D scene (audit fig. 52)."
+     }
+    },
+    {
+     "id": "od",
+     "x": 360,
+     "y": 90,
+     "w": 170,
+     "label": "Oreillette droite",
+     "sub": "atrium droit",
+     "label_en": "Right atrium",
+     "sub_en": "",
+     "lvl": "desoxy",
+     "desc": {
+      "fr": "Cavité droite recevant le sang veineux des veines caves et du sinus coronaire ; sa paroi antérieure répond à l'orifice tricuspide (cours, Q19). Maillage 3D présent (audit fig. 52).",
+      "en": "Right chamber receiving venous blood from the venae cavae and the coronary sinus; its anterior wall faces the tricuspid orifice (course, Q19). 3D mesh present (audit fig. 52)."
+     }
+    },
+    {
+     "id": "tricuspide",
+     "x": 580,
+     "y": 90,
+     "w": 170,
+     "label": "Valve tricuspide",
+     "sub": "3 valvules",
+     "label_en": "Tricuspid valve",
+     "sub_en": "3 leaflets",
+     "lvl": "desoxy",
+     "note": {
+      "fr": "Cuspide antérieure sans maillage (audit fig. 51) — feuillet schématique",
+      "en": "Anterior leaflet has no mesh (audit fig. 51) — schematic leaflet"
+     },
+     "desc": {
+      "fr": "Orifice atrio-ventriculaire droit, fermé par la valve tricuspide à 3 valvules (antérieure, inférieure et interne) selon le cours (Q19) ; le sang passe de l'oreillette droite au ventricule droit.",
+      "en": "Right atrioventricular orifice, closed by the tricuspid valve with 3 leaflets (anterior, inferior and septal) in the course (Q19); blood passes from the right atrium to the right ventricle."
+     }
+    },
+    {
+     "id": "vd",
+     "x": 580,
+     "y": 240,
+     "w": 170,
+     "label": "Ventricule droit",
+     "label_en": "Right ventricle",
+     "sub_en": "",
+     "lvl": "desoxy",
+     "desc": {
+      "fr": "Pyramide triangulaire ; sa base porte l'orifice tricuspide et l'orifice de l'artère pulmonaire, fermé par 3 valvules sigmoïdes (cours, Q19). Maillage 3D présent (audit fig. 52).",
+      "en": "Triangular pyramid; its base carries the tricuspid orifice and the orifice of the pulmonary artery, closed by 3 semilunar leaflets (course, Q19). 3D mesh present (audit fig. 52)."
+     }
+    },
+    {
+     "id": "art_pulm",
+     "x": 360,
+     "y": 240,
+     "w": 190,
+     "label": "Artère pulmonaire",
+     "sub": "tronc pulmonaire",
+     "label_en": "Pulmonary artery",
+     "sub_en": "pulmonary trunk",
+     "lvl": "desoxy",
+     "desc": {
+      "fr": "Le tronc de l'artère pulmonaire naît du ventricule droit et contient du sang veineux désoxygéné ; il se divise en 2 branches, droite et gauche, vers les hiles pulmonaires (cours, Q20).",
+      "en": "The pulmonary trunk arises from the right ventricle and carries deoxygenated venous blood; it divides into 2 branches, right and left, to the pulmonary hila (course, Q20)."
+     }
+    },
+    {
+     "id": "poumons",
+     "x": 140,
+     "y": 240,
+     "w": 170,
+     "label": "Poumons",
+     "sub": "hématose",
+     "label_en": "Lungs",
+     "sub_en": "gas exchange",
+     "lvl": "echange",
+     "desc": {
+      "fr": "Hématose : le sang désoxygéné venu des artères pulmonaires s'oxygène dans les poumons, organes destinés à assurer l'hématose (cours, Q20).",
+      "en": "Gas exchange (haematosis): deoxygenated blood from the pulmonary arteries is oxygenated in the lungs, the organs of haematosis (course, Q20)."
+     }
+    },
+    {
+     "id": "v_pulm",
+     "x": 140,
+     "y": 390,
+     "w": 190,
+     "label": "Veines pulmonaires",
+     "sub": "4 veines",
+     "label_en": "Pulmonary veins",
+     "sub_en": "4 veins",
+     "lvl": "oxy",
+     "desc": {
+      "fr": "4 veines pulmonaires (supérieure et inférieure, droites et gauches) sortent des hiles et se jettent dans l'oreillette gauche ; elles contiennent du sang oxygéné (cours, Q20).",
+      "en": "4 pulmonary veins (superior and inferior, right and left) leave the hila and drain into the left atrium; they carry oxygenated blood (course, Q20)."
+     }
+    },
+    {
+     "id": "og",
+     "x": 360,
+     "y": 390,
+     "w": 170,
+     "label": "Oreillette gauche",
+     "sub": "atrium gauche",
+     "label_en": "Left atrium",
+     "sub_en": "",
+     "lvl": "oxy",
+     "desc": {
+      "fr": "Sa paroi postérieure présente les 4 orifices des veines pulmonaires ; sa paroi antérieure répond à l'orifice mitral (cours, Q19). Maillage 3D présent (audit fig. 52).",
+      "en": "Its posterior wall carries the 4 orifices of the pulmonary veins; its anterior wall faces the mitral orifice (course, Q19). 3D mesh present (audit fig. 52)."
+     }
+    },
+    {
+     "id": "mitrale",
+     "x": 580,
+     "y": 390,
+     "w": 170,
+     "label": "Valve mitrale",
+     "sub": "2 valvules",
+     "label_en": "Mitral valve",
+     "sub_en": "2 leaflets",
+     "lvl": "oxy",
+     "note": {
+      "fr": "Grande valvule (cuspide antérieure) sans maillage (audit fig. 51) — feuillet schématique",
+      "en": "Large (anterior) leaflet has no mesh (audit fig. 51) — schematic leaflet"
+     },
+     "desc": {
+      "fr": "Orifice atrio-ventriculaire gauche, fermé par la valve mitrale à 2 valvules (grande valvule et petite valve) selon le cours (Q19) ; le sang passe de l'oreillette gauche au ventricule gauche.",
+      "en": "Left atrioventricular orifice, closed by the mitral valve with 2 leaflets (large and small leaflets) in the course (Q19); blood passes from the left atrium to the left ventricle."
+     }
+    },
+    {
+     "id": "vg",
+     "x": 580,
+     "y": 540,
+     "w": 170,
+     "label": "Ventricule gauche",
+     "label_en": "Left ventricle",
+     "sub_en": "",
+     "lvl": "oxy",
+     "desc": {
+      "fr": "Cône aplati transversalement ; sa base est occupée par l'orifice mitral et l'orifice aortique (3 valvules sigmoïdes : une non coronaire et deux coronaires) et son sommet forme la pointe du cœur (cours, Q19). Maillage 3D présent (audit fig. 52).",
+      "en": "Transversely flattened cone; its base carries the mitral orifice and the aortic orifice (3 semilunar leaflets: one non-coronary and two coronary) and its apex forms the tip of the heart (course, Q19). 3D mesh present (audit fig. 52)."
+     }
+    },
+    {
+     "id": "aorte",
+     "x": 360,
+     "y": 540,
+     "w": 170,
+     "label": "Aorte",
+     "sub": "ascendante",
+     "label_en": "Aorta",
+     "sub_en": "ascending",
+     "lvl": "oxy",
+     "desc": {
+      "fr": "L'aorte ascendante naît du ventricule gauche derrière l'orifice aortique et distribue le sang oxygéné à la circulation systémique, qui le ramène désoxygéné aux veines caves ; les artères coronaires naissent au-dessus des valvules sigmoïdes (cours, Q19). Maillage présent (audit fig. 52).",
+      "en": "The ascending aorta arises from the left ventricle behind the aortic orifice and distributes oxygenated blood to the systemic circulation, which returns it deoxygenated to the venae cavae; the coronary arteries arise above the semilunar leaflets (course, Q19). Modelled (audit fig. 52)."
+     }
+    }
+   ],
+   "edges": [
+    [
+     "caves",
+     "od"
+    ],
+    [
+     "od",
+     "tricuspide"
+    ],
+    [
+     "tricuspide",
+     "vd"
+    ],
+    [
+     "vd",
+     "art_pulm"
+    ],
+    [
+     "art_pulm",
+     "poumons"
+    ],
+    [
+     "poumons",
+     "v_pulm"
+    ],
+    [
+     "v_pulm",
+     "og"
+    ],
+    [
+     "og",
+     "mitrale"
+    ],
+    [
+     "mitrale",
+     "vg"
+    ],
+    [
+     "vg",
+     "aorte"
+    ]
+   ]
+  }
+ }
+}

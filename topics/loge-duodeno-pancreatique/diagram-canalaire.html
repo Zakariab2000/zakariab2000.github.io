@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fig. 70 — Système canalaire du pancréas · schéma interactif (Batch C staging)</title>
+<style>
+  body { margin:0; background:#14161a; color:#e8e4da; font-family:system-ui, sans-serif; }
+  #bar { position:fixed; top:0; left:0; right:0; padding:8px 12px; background:rgba(20,22,26,.9);
+         display:flex; gap:10px; align-items:center; z-index:10; flex-wrap:wrap; }
+  #bar b { font-size:14.5px; } #bar span { font-size:12px; opacity:.75; }
+  a.chip, button { background:#2a2e36; color:#e8e4da; border:1px solid #4a4f59; border-radius:6px;
+           padding:5px 10px; font-size:12.5px; cursor:pointer; text-decoration:none; }
+  #wrap { padding:64px 8px 190px; display:flex; justify-content:center; }
+  @media (max-width:640px) { #wrap { padding-top:178px; } }
+  svg { max-width:100%; height:auto; }
+  .node { cursor:pointer; }
+  .node rect { stroke-width:1.6; rx:10; }
+  .node text { fill:#e8e4da; font-size:14.5px; font-weight:600; pointer-events:none; }
+  .node .sub { font-size:11px; font-weight:400; opacity:.72; }
+  .node .badge { font-size:9.5px; font-weight:700; fill:#ffd43b; }
+  .edge { fill:none; stroke:#8fa5ba; stroke-width:2; opacity:.55; }
+  .edge.sec { stroke-dasharray:5 4; }
+  .dim { opacity:.16 !important; }
+  .hl-node rect { stroke:#fff !important; stroke-width:2.6; }
+  .hl-edge { stroke:#ffd43b !important; opacity:1 !important; stroke-width:3; }
+  #fiche { position:fixed; left:0; right:0; bottom:0; z-index:11; display:none;
+           background:rgba(26,29,35,.96); border-top:1px solid #4a4f59; padding:12px 16px; }
+  #fiche b { font-size:15px; }
+  #fiche .sub { font-size:12px; opacity:.7; }
+  #fiche p { font-size:13px; line-height:1.5; margin:6px 0 2px; max-width:760px; }
+  #fiche p.en { font-size:11.5px; opacity:.6; }
+  #legend { display:flex; gap:12px; flex-wrap:wrap; font-size:11.5px; opacity:.9; }
+  #legend i { display:inline-block; width:11px; height:11px; border-radius:3px; margin-right:4px; }
+</style>
+</head>
+<body>
+<div id="bar">
+  <a class="chip" href="./index.html?sujet=loge-duodeno-pancreatique&fig=70">← Scène 3D fig. 70</a>
+  <b>Système canalaire du pancréas et voie biliaire</b>
+  <span>Fig. 70 · schéma interactif — touchez un élément : son trajet s'illumine et sa fiche s'affiche.</span>
+  <span id="legend"></span>
+</div>
+<div id="wrap"><svg id="svg" role="img" aria-label="Schéma du système canalaire du pancréas"></svg></div>
+<div id="fiche"></div>
+
+<script>
+const SPEC = {
+ "titre_fr": "Système canalaire du pancréas et voie biliaire — schéma interactif",
+ "titre_en": "Pancreatic duct system and biliary tract — interactive diagram",
+ "w": 720,
+ "h": 640,
+ "levels": {
+  "organe": {
+   "c": "#8fa5ba",
+   "fr": "Organes",
+   "en": "Organs"
+  },
+  "biliaire": {
+   "c": "#f0d429",
+   "fr": "Voie biliaire",
+   "en": "Biliary tract"
+  },
+  "pancreatique": {
+   "c": "#58d68d",
+   "fr": "Canaux pancréatiques",
+   "en": "Pancreatic ducts"
+  },
+  "jonction": {
+   "c": "#f0a13c",
+   "fr": "Confluence et papilles",
+   "en": "Confluence & papillae"
+  },
+  "duodenum": {
+   "c": "#5b8dd9",
+   "fr": "Duodénum",
+   "en": "Duodenum"
+  }
+ },
+ "nodes": [
+  {
+   "id": "foie",
+   "x": 100,
+   "y": 90,
+   "w": 170,
+   "label": "Foie",
+   "sub": "canaux hépatiques D et G",
+   "label_en": "Liver",
+   "sub_en": "right & left hepatic ducts",
+   "lvl": "organe",
+   "desc": {
+    "fr": "Le foie produit la bile, évacuée par les canaux hépatiques droit et gauche qui se réunissent au hile pour former le canal hépatique commun.",
+    "en": "The liver produces bile, drained by the right and left hepatic ducts, which join at the hilum to form the common hepatic duct."
+   }
+  },
+  {
+   "id": "vesicule",
+   "x": 100,
+   "y": 220,
+   "w": 170,
+   "label": "Vésicule biliaire",
+   "sub": "réservoir de bile",
+   "label_en": "Gallbladder",
+   "sub_en": "bile reservoir",
+   "lvl": "organe",
+   "desc": {
+    "fr": "Réservoir de la bile, la vésicule biliaire se vide par le canal cystique ; dans la scène 3D de la fig. 70, elle n'apparaît qu'en rapport.",
+    "en": "The gallbladder stores bile and empties through the cystic duct; in the 3D scene of fig. 70 it appears only as context."
+   }
+  },
+  {
+   "id": "pancreas",
+   "x": 100,
+   "y": 380,
+   "w": 170,
+   "label": "Pancréas",
+   "sub": "queue · corps · tête",
+   "label_en": "Pancreas",
+   "sub_en": "tail · body · head",
+   "lvl": "organe",
+   "desc": {
+    "fr": "Glande mixte traversée par ses canaux excréteurs : le canal principal naît dans la queue, traverse le corps et gagne la tête ; le canal accessoire draine une partie de la tête.",
+    "en": "A mixed gland traversed by its excretory ducts: the main duct arises in the tail, crosses the body and reaches the head; the accessory duct drains part of the head."
+   }
+  },
+  {
+   "id": "hepatique",
+   "x": 285,
+   "y": 90,
+   "w": 170,
+   "label": "Canal hépatique",
+   "sub": "commun",
+   "label_en": "Common hepatic duct",
+   "sub_en": "",
+   "lvl": "biliaire",
+   "desc": {
+    "fr": "Né au hile de la réunion des canaux hépatiques droit et gauche, il reçoit le canal cystique sur son bord droit et devient alors le canal cholédoque.",
+    "en": "Formed at the hilum by the junction of the right and left hepatic ducts, it receives the cystic duct on its right border and then becomes the bile duct."
+   }
+  },
+  {
+   "id": "cystique",
+   "x": 285,
+   "y": 220,
+   "w": 160,
+   "label": "Canal cystique",
+   "label_en": "Cystic duct",
+   "sub_en": "",
+   "lvl": "biliaire",
+   "desc": {
+    "fr": "Il draine la vésicule biliaire et s'abouche au canal hépatique commun : leur union forme le canal cholédoque.",
+    "en": "It drains the gallbladder and joins the common hepatic duct: their union forms the bile duct."
+   }
+  },
+  {
+   "id": "wirsung",
+   "x": 285,
+   "y": 380,
+   "w": 180,
+   "label": "Canal de Wirsung",
+   "sub": "pancréatique principal",
+   "label_en": "Wirsung duct",
+   "sub_en": "main pancreatic duct",
+   "lvl": "pancreatique",
+   "desc": {
+    "fr": "Canal pancréatique principal : il débute au niveau de la queue du pancréas, se dirige vers la tête et rejoint le canal cholédoque pour former l'ampoule hépato-pancréatique (ampoule de Vater).",
+    "en": "Main pancreatic duct: it begins in the tail of the pancreas, runs towards the head and joins the bile duct to form the hepatopancreatic ampulla (ampulla of Vater)."
+   }
+  },
+  {
+   "id": "santorini",
+   "x": 285,
+   "y": 500,
+   "w": 180,
+   "label": "Canal de Santorini",
+   "sub": "pancréatique accessoire",
+   "label_en": "Santorini duct",
+   "sub_en": "accessory pancreatic duct",
+   "lvl": "pancreatique",
+   "desc": {
+    "fr": "Canal pancréatique accessoire : il s'ouvre dans le deuxième duodénum (D2) par la petite caroncule, située à 2,5 cm au-dessus de la grande caroncule.",
+    "en": "Accessory pancreatic duct: it opens into the second part of the duodenum (D2) at the minor papilla, located 2.5 cm above the major papilla."
+   }
+  },
+  {
+   "id": "choledoque",
+   "x": 465,
+   "y": 155,
+   "w": 160,
+   "label": "Canal cholédoque",
+   "sub": "voie biliaire principale",
+   "label_en": "Bile duct",
+   "sub_en": "main biliary tract",
+   "lvl": "biliaire",
+   "desc": {
+    "fr": "Voie biliaire principale : il descend derrière le premier duodénum (D1), chemine à la face postérieure de la tête du pancréas et se termine avec le canal de Wirsung dans l'ampoule de Vater.",
+    "en": "Main bile duct: it descends behind the first part of the duodenum (D1), runs on the posterior surface of the head of the pancreas and ends with the Wirsung duct in the ampulla of Vater."
+   }
+  },
+  {
+   "id": "ampoule",
+   "x": 465,
+   "y": 330,
+   "w": 160,
+   "label": "Ampoule de Vater",
+   "sub": "hépato-pancréatique",
+   "label_en": "Ampulla of Vater",
+   "sub_en": "hepatopancreatic",
+   "lvl": "jonction",
+   "note": {
+    "fr": "schéma seul",
+    "en": "diagram only"
+   },
+   "desc": {
+    "fr": "Ampoule hépato-pancréatique : réunion du canal cholédoque et du canal de Wirsung, munie d'un sphincter (sphincter d'Oddi). Non modélisée en 3D — schéma seul.",
+    "en": "Hepatopancreatic ampulla: junction of the bile duct and the Wirsung duct, guarded by a sphincter (sphincter of Oddi). Not modelled in 3D — diagram only."
+   }
+  },
+  {
+   "id": "grande",
+   "x": 630,
+   "y": 330,
+   "w": 150,
+   "label": "Grande caroncule",
+   "sub": "papille majeure",
+   "label_en": "Major papilla",
+   "sub_en": "major duodenal papilla",
+   "lvl": "jonction",
+   "note": {
+    "fr": "schéma seul",
+    "en": "diagram only"
+   },
+   "desc": {
+    "fr": "Grande caroncule (papille duodénale majeure) : éminence de la paroi interne de D2 par laquelle l'ampoule de Vater s'ouvre dans le duodénum — repère important en chirurgie endoscopique. Non modélisée en 3D — schéma seul.",
+    "en": "Major duodenal papilla (greater caruncle): eminence of the inner wall of D2 through which the ampulla of Vater opens into the duodenum — an important landmark in endoscopic surgery. Not modelled in 3D — diagram only."
+   }
+  },
+  {
+   "id": "petite",
+   "x": 630,
+   "y": 460,
+   "w": 150,
+   "label": "Petite caroncule",
+   "sub": "papille mineure",
+   "label_en": "Minor papilla",
+   "sub_en": "minor duodenal papilla",
+   "lvl": "jonction",
+   "note": {
+    "fr": "schéma seul",
+    "en": "diagram only"
+   },
+   "desc": {
+    "fr": "Petite caroncule (papille duodénale mineure) : orifice du canal de Santorini dans D2, située à 2,5 cm au-dessus de la grande caroncule. Non modélisée en 3D — schéma seul.",
+    "en": "Minor duodenal papilla (lesser caruncle): opening of the Santorini duct into D2, located 2.5 cm above the major papilla. Not modelled in 3D — diagram only."
+   }
+  },
+  {
+   "id": "duodenum",
+   "x": 630,
+   "y": 575,
+   "w": 160,
+   "label": "Duodénum",
+   "sub": "deuxième portion (D2)",
+   "label_en": "Duodenum",
+   "sub_en": "second part (D2)",
+   "lvl": "duodenum",
+   "desc": {
+    "fr": "Deuxième duodénum (D2) : dans sa paroi interne s'abouchent le cholédoque et les canaux pancréatiques ; c'est dans D2 que bile et suc pancréatique sont déversés.",
+    "en": "Second part of the duodenum (D2): the bile duct and the pancreatic ducts open into its inner wall; bile and pancreatic juice are discharged into D2."
+   }
+  }
+ ],
+ "edges": [
+  [
+   "foie",
+   "hepatique"
+  ],
+  [
+   "vesicule",
+   "cystique"
+  ],
+  [
+   "hepatique",
+   "choledoque"
+  ],
+  [
+   "cystique",
+   "choledoque"
+  ],
+  [
+   "choledoque",
+   "ampoule"
+  ],
+  [
+   "pancreas",
+   "wirsung"
+  ],
+  [
+   "pancreas",
+   "santorini",
+   1
+  ],
+  [
+   "wirsung",
+   "ampoule"
+  ],
+  [
+   "santorini",
+   "petite"
+  ],
+  [
+   "ampoule",
+   "grande"
+  ],
+  [
+   "grande",
+   "duodenum"
+  ],
+  [
+   "petite",
+   "duodenum",
+   1
+  ]
+ ]
+};
+const svg = document.getElementById('svg');
+const NS = 'http://www.w3.org/2000/svg';
+svg.setAttribute('viewBox', `0 0 ${SPEC.w} ${SPEC.h}`);
+svg.setAttribute('width', SPEC.w); svg.setAttribute('height', SPEC.h);
+
+const legend = document.getElementById('legend');
+for (const lv of Object.values(SPEC.levels))
+  legend.innerHTML += `<span><i style="background:${lv.c}"></i>${lv.fr}</span>`;
+
+const nodes = {}; SPEC.nodes.forEach(n => nodes[n.id] = n);
+const NODE_H = 56;
+function cx(n) { return n.x; } function cy(n) { return n.y; }
+
+/* arêtes d'abord (sous les nœuds) */
+const edgeEls = [];
+const defs = document.createElementNS(NS, 'defs');
+defs.innerHTML = `<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <path d="M0,0 L10,5 L0,10 z" fill="#8fa5ba"/></marker>
+  <marker id="arrHl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <path d="M0,0 L10,5 L0,10 z" fill="#ffd43b"/></marker>`;
+svg.appendChild(defs);
+for (const [a, b, sec] of SPEC.edges) {
+  const A = nodes[a], B = nodes[b];
+  const x1 = cx(A) + A.w / 2, y1 = cy(A), x2 = cx(B) - B.w / 2, y2 = cy(B);
+  const p = document.createElementNS(NS, 'path');
+  p.setAttribute('d', `M ${x1} ${y1} C ${x1 + 28} ${y1}, ${x2 - 28} ${y2}, ${x2} ${y2}`);
+  p.setAttribute('class', 'edge' + (sec ? ' sec' : ''));
+  p.setAttribute('marker-end', 'url(#arr)');
+  p.dataset.a = a; p.dataset.b = b;
+  svg.appendChild(p); edgeEls.push(p);
+}
+
+const nodeEls = {};
+for (const n of SPEC.nodes) {
+  const lv = SPEC.levels[n.lvl];
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'node'); g.dataset.id = n.id;
+  const r = document.createElementNS(NS, 'rect');
+  r.setAttribute('x', cx(n) - n.w / 2); r.setAttribute('y', cy(n) - NODE_H / 2);
+  r.setAttribute('width', n.w); r.setAttribute('height', NODE_H); r.setAttribute('rx', 10);
+  r.setAttribute('fill', '#22262e'); r.setAttribute('stroke', lv.c);
+  g.appendChild(r);
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', cx(n)); t.setAttribute('y', cy(n) - (n.sub ? 3 : -4));
+  t.setAttribute('text-anchor', 'middle'); t.textContent = n.label;
+  g.appendChild(t);
+  if (n.sub) {
+    const s = document.createElementNS(NS, 'text');
+    s.setAttribute('x', cx(n)); s.setAttribute('y', cy(n) + 14);
+    s.setAttribute('text-anchor', 'middle'); s.setAttribute('class', 'sub');
+    s.textContent = n.sub; g.appendChild(s);
+  }
+  if (n.note) {
+    const b = document.createElementNS(NS, 'text');
+    b.setAttribute('x', cx(n)); b.setAttribute('y', cy(n) - NODE_H / 2 - 5);
+    b.setAttribute('text-anchor', 'middle'); b.setAttribute('class', 'badge');
+    b.textContent = '⚠ ' + n.note.fr; g.appendChild(b);
+  }
+  g.addEventListener('click', ev => { ev.stopPropagation(); select(n.id); });
+  svg.appendChild(g); nodeEls[n.id] = g;
+}
+
+/* chemin complet : ancêtres + descendants via les arêtes */
+function pathSet(id) {
+  const out = new Set([id]), edgesOn = new Set();
+  const fwd = {}, bwd = {};
+  SPEC.edges.forEach(([a, b], i) => { (fwd[a] = fwd[a] || []).push(i); (bwd[b] = bwd[b] || []).push(i); });
+  const walk = (map, next) => {
+    const stack = [id];
+    while (stack.length) {
+      const cur = stack.pop();
+      for (const i of (map[cur] || [])) {
+        edgesOn.add(i);
+        const other = next(i);
+        if (!out.has(other)) { out.add(other); stack.push(other); }
+      }
+    }
+  };
+  walk(fwd, i => SPEC.edges[i][1]);
+  walk(bwd, i => SPEC.edges[i][0]);
+  return { out, edgesOn };
+}
+
+let selected = null;
+function select(id) {
+  selected = id;
+  const { out, edgesOn } = pathSet(id);
+  for (const [nid, el] of Object.entries(nodeEls)) {
+    el.classList.toggle('dim', !out.has(nid));
+    el.classList.toggle('hl-node', nid === id);
+  }
+  edgeEls.forEach((p, i) => {
+    p.classList.toggle('dim', !edgesOn.has(i));
+    p.classList.toggle('hl-edge', edgesOn.has(i));
+    p.setAttribute('marker-end', edgesOn.has(i) ? 'url(#arrHl)' : 'url(#arr)');
+  });
+  const n = nodes[id];
+  const fiche = document.getElementById('fiche');
+  fiche.innerHTML = `<b>${n.label}</b> ${n.sub ? `<span class="sub">— ${n.sub}</span>` : ''}` +
+    (n.note ? ` <span class="sub" style="color:#ffd43b">⚠ ${n.note.fr} (non modélisé en 3D)</span>` : '') +
+    `<p>${n.desc.fr}</p><p class="en">${n.desc.en}</p>` +
+    `<button onclick="resetSel()">Tout réinitialiser</button>`;
+  fiche.style.display = 'block';
+}
+function resetSel() {
+  selected = null;
+  for (const el of Object.values(nodeEls)) el.classList.remove('dim', 'hl-node');
+  edgeEls.forEach(p => { p.classList.remove('dim', 'hl-edge'); p.setAttribute('marker-end', 'url(#arr)'); });
+  document.getElementById('fiche').style.display = 'none';
+}
+svg.addEventListener('click', resetSel);
+window.__diagramTest = { select, reset: resetSel,
+  state: () => ({ selected, nodes: SPEC.nodes.length, edges: SPEC.edges.length }) };
+</script>
+<a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

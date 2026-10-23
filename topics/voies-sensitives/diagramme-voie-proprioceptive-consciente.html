@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figure 1 — Voies de la sensibilité proprioceptive consciente · Schéma interactif</title>
+<style>
+:root{--sans:-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 800px at 60% 20%,#0b1526,#060b14);color:#e8eef7;font-family:var(--sans);padding:14px 12px 26px}
+header{max-width:680px;margin:0 auto 6px}
+.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#f0a13c;font-weight:700}
+h1{font-size:19px;line-height:1.3;margin:3px 0 2px}
+.sub{font-size:12.5px;color:#9db1cc}
+.hint{max-width:680px;margin:8px auto;font-size:12.5px;color:#9db1cc}
+#wrap{max-width:680px;margin:0 auto}
+#schemasvg{display:block;width:100%;height:auto}
+.pnode{cursor:pointer}
+.pnode rect{stroke-width:1.5;transition:opacity .2s}
+.pnode text{fill:#e8eef7;font-size:11px;text-anchor:middle;pointer-events:none;font-family:var(--sans)}
+.pnode.dim,.pedge.dim{opacity:.1}
+.pnode.lit rect{stroke:#fff;stroke-width:2.5}
+.pnode.lit circle{stroke:#fff;stroke-width:2.5}
+.pedge{fill:none;stroke:#5b7ba6;stroke-width:1.6}
+.pedge.dash{stroke-dasharray:5 4}
+.pedge.lit{stroke:#f0b429;stroke-width:3}
+#schemacap{margin:10px auto;padding:10px 12px;max-width:680px;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:10px;font-size:13.5px;line-height:1.5;min-height:58px}
+#schemalegend{display:flex;flex-wrap:wrap;gap:6px 12px;max-width:680px;margin:0 auto;font-size:11px;color:#9db1cc}
+#schemalegend .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.fiche{max-width:680px;margin:16px auto 0;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+.fiche h2{font-size:14px;margin-bottom:8px;color:#f0a13c}
+.fiche dl div{margin-bottom:8px}
+.fiche dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9db1cc;font-weight:700}
+.fiche dd{font-size:13.5px;line-height:1.55;margin-top:2px}
+.note{max-width:680px;margin:12px auto 0;font-size:11.5px;color:#7e93b5;line-height:1.5}
+</style></head><body>
+<header><div class="kicker">Atlas 3D · Sujets du cours · Schéma interactif</div>
+<h1>Figure 1 — Voies de la sensibilité proprioceptive consciente</h1>
+<div class="sub">[3D+D] : scène 3D de contexte + schéma interactif — schéma de la voie (le trajet n'existe pas comme maillage 3D continu : voir la scène 3D associée pour les structures qui existent)</div></header>
+<p class="hint">Touchez un nœud : tout son trajet (en amont et en aval) s'illumine et sa fiche s'affiche. Touchez le fond pour tout réafficher.</p>
+<div id="wrap"><svg id="schemasvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="schemacap"></div>
+<div id="schemalegend"></div>
+<section class="fiche"><h2>Fiche de la voie</h2><dl>
+<div><dt>Origine</dt><dd>Récepteurs spécifiques para-articulaires (capsule articulaire, tendon, muscle, ligament). Le 1er neurone (N1) a son corps cellulaire dans le ganglion spinal ; son axone gagne le cordon postérieur homolatéral : faisceau de Goll en dedans (membre inférieur et tronc), faisceau de Burdach en dehors (membre supérieur et cou).</dd></div>
+<div><dt>Relais</dt><dd>N2 : noyaux de Goll et de Burdach (bulbe). N3 : noyau ventral postéro-latéral (VPL) du thalamus.</dd></div>
+<div><dt>Décussation</dt><dd>Au niveau du bulbe : l'axone du 2e neurone croise la ligne médiane (décussation des lemnisques) et constitue le ruban de Reil médian, placé en arrière du faisceau pyramidal, qui traverse les 3 étages du tronc cérébral.</dd></div>
+<div><dt>Terminaison</dt><dd>Cortex sensitif primaire : circonvolution pariétale ascendante, aires 3, 1 et 2, selon une somatotopie très précise. Voie rapide, profonde et discriminative, à 3 neurones.</dd></div>
+<div><dt>Clinique</dt><dd>L'atteinte du cordon postérieur donne une perte de la sensibilité profonde homolatérale à la lésion (syndrome cordonal postérieur) ; dans le syndrome de Brown-Séquard, elle s'associe à une paralysie homolatérale et à une atteinte de la sensibilité superficielle controlatérale (conclusion du cours, Q1).</dd></div>
+</dl></section>
+<p class="note">Source du schéma : texte du programme FMPR (partie I) — aucun relais inventé. Limites 3D vérifiées à l'audit : Noyaux gracile et cunéiforme (relais bulbaires du lemnisque médial) : ABSENTS du manifeste Décussation des lemnisques (bulbe) : non modélisée Le trajet complet récepteur cutané → racine postérieure → bulbe → thalamus → cortex n'existe pas comme maillage continu : seuls les faisceaux intra-médullaires (rubans Z-Anatomy couvrant la longueur de la moelle), le thalamus et le gyrus postcentral existent → le schéma de la voie est indispensable en regard</p>
+<script>
+const D = {"titre_fr": "Voie de la sensibilité proprioceptive consciente", "titre_en": "Conscious proprioceptive pathway", "w": 720, "h": 1020, "levels": {"recep": {"c": "#8d6e63", "fr": "Récepteurs", "en": "Receptors"}, "n1": {"c": "#5c6bc0", "fr": "1er neurone (N1)", "en": "1st neuron (N1)"}, "faisc": {"c": "#1565c0", "fr": "Faisceau / trajet", "en": "Tract / course"}, "n2": {"c": "#26a69a", "fr": "2e neurone (N2)", "en": "2nd neuron (N2)"}, "decuss": {"c": "#ef6c00", "fr": "Décussation", "en": "Decussation"}, "n3": {"c": "#7e57c2", "fr": "3e neurone (N3)", "en": "3rd neuron (N3)"}, "cortex": {"c": "#c62828", "fr": "Terminaison corticale", "en": "Cortical termination"}, "note": {"c": "#757575", "fr": "Note du cours", "en": "Course note"}}, "nodes": [{"id": "recepteurs", "x": 360, "y": 90, "w": 340, "label": "Récepteurs para-articulaires", "sub": "capsule, tendon, muscle, ligament", "label_en": "Para-articular receptors", "sub_en": "capsule, tendon, muscle, ligament", "lvl": "recep", "desc": {"fr": "Récepteurs spécifiques situés sur les structures para-articulaires (capsule articulaire, tendon, muscle, ligament) ; ils informent en permanence le SNC de la position des segments de membre dans l'espace.", "en": "Specific receptors on para-articular structures (joint capsule, tendon, muscle, ligament); they continuously inform the CNS of limb-segment position in space."}}, {"id": "n1_ganglion", "x": 360, "y": 225, "w": 320, "label": "N1 — Ganglion spinal", "sub": "corps cellulaire du 1er neurone", "label_en": "N1 — Spinal ganglion", "sub_en": "cell body of the 1st neuron", "lvl": "n1", "desc": {"fr": "La dendrite du premier neurone se termine au contact des récepteurs ; son corps cellulaire siège dans le ganglion spinal et son axone pénètre dans la moelle par la racine postérieure.", "en": "The first neuron's dendrite ends on the receptors; its cell body lies in the spinal ganglion and its axon enters the cord through the posterior root."}}, {"id": "goll_burdach", "x": 360, "y": 360, "w": 360, "label": "Faisceaux de Goll et de Burdach", "sub": "cordon postérieur homolatéral", "label_en": "Fasciculi of Goll and Burdach", "sub_en": "ipsilateral posterior column", "lvl": "faisc", "desc": {"fr": "Goll en dedans : fibres du membre inférieur et du tronc. Burdach en dehors : fibres du membre supérieur et du cou. La voie est rapide, profonde et discriminative, à somatotopie précise.", "en": "Goll medially: fibres from the lower limb and trunk. Burdach laterally: fibres from the upper limb and neck. A fast, deep, discriminative pathway with precise somatotopy."}}, {"id": "noyaux_bulbe", "x": 360, "y": 495, "w": 360, "label": "N2 — Noyaux de Goll et de Burdach", "sub": "relais bulbaire", "label_en": "N2 — Nuclei of Goll and Burdach", "sub_en": "medullary relay", "lvl": "n2", "desc": {"fr": "Le corps cellulaire du deuxième neurone se trouve dans les noyaux de Goll et de Burdach, au niveau du bulbe.", "en": "The second neuron's cell body lies in the nuclei of Goll and Burdach, in the medulla."}}, {"id": "decussation", "x": 360, "y": 615, "r": 52, "label": "Décussation des lemnisques", "sub": "croisement au bulbe", "label_en": "Lemniscal decussation", "sub_en": "crossing in the medulla", "lvl": "decuss", "desc": {"fr": "L'axone du deuxième neurone croise la ligne médiane au niveau du bulbe : à partir de là, la voie devient controlatérale.", "en": "The second neuron's axon crosses the midline in the medulla: from there on, the pathway is contralateral."}}, {"id": "ruban_reil", "x": 360, "y": 735, "w": 280, "label": "Ruban de Reil médian", "sub": "en arrière du faisceau pyramidal", "label_en": "Medial lemniscus (Reil)", "sub_en": "behind the pyramidal tract", "lvl": "faisc", "desc": {"fr": "Les axones croisés constituent le ruban de Reil médian, qui se place en arrière du faisceau pyramidal, traverse les 3 étages du tronc cérébral et se termine dans les noyaux thalamiques.", "en": "The crossed axons form the medial lemniscus, which lies behind the pyramidal tract, crosses the 3 levels of the brainstem and ends in the thalamic nuclei."}}, {"id": "thalamus_vpl", "x": 360, "y": 860, "w": 340, "label": "N3 — Thalamus (noyau VPL)", "sub": "noyau ventral postéro-latéral", "label_en": "N3 — Thalamus (VPL nucleus)", "sub_en": "ventral posterolateral nucleus", "lvl": "n3", "desc": {"fr": "Le corps cellulaire du troisième neurone se trouve dans le noyau ventral postéro-latéral du thalamus.", "en": "The third neuron's cell body lies in the ventral posterolateral nucleus of the thalamus."}}, {"id": "cortex_pa", "x": 360, "y": 975, "w": 360, "label": "Cortex pariétal ascendant", "sub": "aires 3, 1, 2 — somatotopie précise", "label_en": "Ascending parietal cortex", "sub_en": "areas 3, 1, 2 — precise somatotopy", "lvl": "cortex", "desc": {"fr": "L'axone du troisième neurone traverse le centre ovale et se projette sur le cortex sensitif primaire de la circonvolution pariétale ascendante (aires 3, 1 et 2), selon une somatotopie très précise.", "en": "The third neuron's axon crosses the centrum ovale and projects onto the primary sensory cortex of the ascending parietal gyrus (areas 3, 1 and 2), with very precise somatotopy."}}, {"id": "entree_craniens", "x": 115, "y": 735, "w": 190, "label": "Entrée des nerfs crâniens", "sub": "V, VII bis, IX, X", "label_en": "Cranial-nerve entry", "sub_en": "V, VII bis, IX, X", "lvl": "note", "desc": {"fr": "Pour les nerfs crâniens : corps cellulaire dans le ganglion du nerf (ganglion de Gasser pour le V) ; l'axone aboutit au noyau gélatineux de Rolando pour la racine sensitive du V, et au noyau du faisceau solitaire pour le VII bis et les racines sensitives du IX et du X — ces fibres rejoignent ensuite le ruban de Reil médian.", "en": "For cranial nerves: the cell body lies in the nerve's ganglion (Gasserian ganglion for V); the axon ends in the gelatinous nucleus of Rolando for the sensory root of V, and in the nucleus of the solitary tract for VII bis and the sensory roots of IX and X — these fibres then join the medial lemniscus."}}], "edges": [["recepteurs", "n1_ganglion"], ["n1_ganglion", "goll_burdach"], ["goll_burdach", "noyaux_bulbe"], ["noyaux_bulbe", "decussation"], ["decussation", "ruban_reil"], ["ruban_reil", "thalamus_vpl"], ["thalamus_vpl", "cortex_pa"], ["entree_craniens", "ruban_reil", 1]]};
+const lang = 'fr';
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('schemasvg');
+function edgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return 'M ' + x1 + ' ' + a.y + ' C ' + (x1+dx) + ' ' + a.y + ', ' + (x2-dx) + ' ' + b.y + ', ' + x2 + ' ' + b.y;
+}
+const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+svg.setAttribute('viewBox', '0 0 ' + D.w + ' ' + D.h);
+D.edges.forEach(function(e){
+  const p = document.createElementNS(NS, 'path');
+  p.setAttribute('d', edgePath(byId[e[0]], byId[e[1]]));
+  p.setAttribute('class', 'pedge' + (e[2] ? ' dash' : ''));
+  p.dataset.from = e[0]; p.dataset.to = e[1];
+  svg.appendChild(p);
+});
+D.nodes.forEach(function(n){
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+  const col = D.levels[n.lvl].c;
+  if (n.r){
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+    c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+    g.appendChild(c);
+    const tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+    tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+    tx.textContent = n.label; g.appendChild(tx);
+  } else {
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+    r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+    r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+    g.appendChild(r);
+    const t1 = document.createElementNS(NS, 'text');
+    t1.setAttribute('x', n.x); t1.setAttribute('y', n.sub ? n.y - 2 : n.y + 4);
+    t1.textContent = n.label; g.appendChild(t1);
+    if (n.sub){
+      const t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+      t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+      t2.textContent = n.sub; g.appendChild(t2);
+    }
+    if (n.note){
+      const t3 = document.createElementNS(NS, 'text');
+      t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+      t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+      t3.textContent = n.note.fr; g.appendChild(t3);
+    }
+  }
+  g.addEventListener('click', function(ev){ ev.stopPropagation(); trace(n.id); });
+  svg.appendChild(g);
+});
+const leg = document.getElementById('schemalegend');
+Object.values(D.levels).forEach(function(l){
+  const s = document.createElement('span');
+  s.innerHTML = '<span class="sw" style="background:' + l.c + '"></span>' + l.fr;
+  leg.appendChild(s);
+});
+function chain(id){
+  const down = {}, up = {};
+  D.edges.forEach(function(e){ (down[e[0]] = down[e[0]] || []).push(e[1]); (up[e[1]] = up[e[1]] || []).push(e[0]); });
+  const set = new Set([id]);
+  let stack = [id];
+  while (stack.length){ const c = stack.pop(); (down[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  stack = [id];
+  while (stack.length){ const c = stack.pop(); (up[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  return set;
+}
+function trace(id){
+  const set = chain(id);
+  svg.querySelectorAll('.pnode').forEach(function(g){
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  svg.querySelectorAll('.pedge').forEach(function(p){
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const node = byId[id];
+  document.getElementById('schemacap').textContent = node.desc.fr;
+}
+function reset(){
+  svg.querySelectorAll('.pnode,.pedge').forEach(function(el){ el.classList.remove('lit', 'dim'); });
+  document.getElementById('schemacap').textContent = 'Touchez un nœud du schéma pour illuminer son trajet complet et lire sa fiche.';
+}
+svg.addEventListener('click', reset);
+reset();
+window.__h1test = { trace: trace, reset: reset,
+  lit: function(){ return [...svg.querySelectorAll('.pnode.lit')].map(g=>g.dataset.id); } };
+</script><a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body></html>

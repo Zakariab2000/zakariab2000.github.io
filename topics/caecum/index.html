@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Batch I — Aperçu 3D · Cæcum et appendice (Figs 110–111)</title>
+<style>
+  :root{ --bg:#0b1220; --panel:#101d33; --ink:#e8eef7; --mut:#9db1cc; --gold:#f0a13c; --sky:#38bdf8; }
+  *{ box-sizing:border-box; margin:0; }
+  html,body{ height:100%; background:var(--bg); color:var(--ink); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; overflow:hidden; }
+  #cv{ position:fixed; inset:0; display:block; touch-action:none; }
+  header{ position:fixed; top:0; left:0; right:0; padding:10px 12px 6px; pointer-events:none; z-index:5; }
+  header h1{ font-size:15px; text-shadow:0 1px 4px #000; }
+  header .sous{ color:var(--mut); font-size:11px; text-shadow:0 1px 4px #000; }
+  .figtabs{ position:fixed; top:64px; left:12px; display:flex; gap:6px; z-index:6; }
+  .figtabs button, .chip{ padding:8px 10px; border-radius:999px; border:1px solid #2a3c58; background:rgba(14,24,48,.88); color:var(--ink); font-size:12px; font-weight:600; }
+  .figtabs button.on{ background:#1d3a5f; border-color:var(--gold); }
+  #btn-vasc{ position:fixed; top:64px; right:12px; z-index:6; }
+  #btn-vasc.on{ background:#5f1d1d; border-color:#f87171; }
+  /* ESPACES — carte d'angle (règle utilisateur) */
+  #espaces{ position:fixed; left:12px; bottom:96px; z-index:6; display:flex; flex-direction:column; gap:6px; max-width:62vw; }
+  #espaces .titre{ font-size:10px; letter-spacing:.08em; color:var(--mut); text-transform:uppercase; text-shadow:0 1px 4px #000; }
+  .espace-card{ display:flex; align-items:center; gap:8px; padding:9px 11px; border-radius:12px; border:1px solid #2a3c58; background:rgba(16,29,51,.92); color:var(--ink); font-size:12px; font-weight:600; text-align:left; }
+  .espace-card .dot{ width:12px; height:12px; border-radius:50%; background:var(--sky); flex:none; opacity:.45; }
+  .espace-card.on{ border-color:var(--sky); }
+  .espace-card.on .dot{ opacity:1; box-shadow:0 0 8px var(--sky); }
+  .espace-card small{ display:block; font-weight:400; color:var(--mut); font-size:10px; }
+  #fiche{ position:fixed; left:12px; right:12px; bottom:12px; z-index:6; background:rgba(16,29,51,.94); border:1px solid #2a3c58; border-radius:12px; padding:10px 12px; min-height:64px; }
+  #fiche h2{ font-size:14px; }
+  #fiche .en{ color:var(--mut); font-size:11px; }
+  #fiche p{ font-size:12px; line-height:1.4; margin-top:3px; }
+  #fiche .role{ display:inline-block; font-size:10px; padding:1px 7px; border-radius:999px; background:#1d3a5f; color:var(--ink); margin-left:6px; vertical-align:2px; }
+  #fiche .warn{ color:var(--gold); }
+  #etat{ position:fixed; top:110px; left:12px; z-index:5; font-size:11px; color:var(--mut); text-shadow:0 1px 4px #000; }
+  .err{ color:#f87171 !important; }
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+<header>
+  <h1>Le cæcum et l'appendice vermiculaire</h1>
+  <div class="sous">Batch I · aperçu de scène · données d'audit uniquement — ⚠ le corps du cæcum n'est pas individualisé au manifeste (voir fiche)</div>
+</header>
+<div class="figtabs">
+  <button id="fig110" class="on">Fig 110</button>
+  <button id="fig111">Fig 111</button>
+</div>
+<button id="btn-vasc" class="chip">🩸 Vascularisation</button>
+<div id="etat">Chargement…</div>
+
+<div id="espaces">
+  <div class="titre">Espaces</div>
+  <!-- cartes générées depuis scene-caecum.json (espaces[]) -->
+</div>
+
+<div id="fiche"><h2>Scène du cæcum</h2><p>Touchez une structure pour sa fiche. Touchez une carte « Espaces » pour créer / colorer l'espace correspondant.</p></div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "../../assets/three/three.module.js",
+  "three/addons/": "../../assets/three/addons/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const GLB_BASE = '../../';           // chemins du manifeste, résolus depuis le staging
+const etat = document.getElementById('etat');
+const fiche = document.getElementById('fiche');
+const erreurs = [];
+window.__errors = erreurs;
+window.addEventListener('error', e=>{ erreurs.push(String(e.message || e)); });
+
+const scene3d = new THREE.Scene();
+scene3d.background = new THREE.Color(0x0b1220);
+const camera = new THREE.PerspectiveCamera(42, innerWidth/innerHeight, 1, 5000);
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('cv'), antialias:true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+scene3d.add(new THREE.AmbientLight(0xffffff, 0.85));
+const l1 = new THREE.DirectionalLight(0xffffff, 1.6); l1.position.set(120, 300, 420); scene3d.add(l1);
+const l2 = new THREE.DirectionalLight(0xbdd3ff, 0.5); l2.position.set(-260, 120, -180); scene3d.add(l2);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+let SC = null, fig = 110, vascOn = false;
+const loaded = new Map();       // id -> {group, mats:[{m,op}], struct}
+const spaceMeshes = new Map();  // espace id -> mesh
+
+function roleDe(s){
+  return (s.role_par_figure && s.role_par_figure[String(fig)]) || (s.figures.includes(fig) ? s.role : null);
+}
+function appliquerRoles(){
+  loaded.forEach((o, id)=>{
+    const s = o.struct, role = roleDe(s);
+    const arteriel = s.system === 'arteres';
+    const visible = !!role && (!arteriel || vascOn);
+    o.group.visible = visible;
+    if (!visible) return;
+    const op = role === 'ghost' ? 0.13 : role === 'contexte' ? 0.8 : 1.0;
+    o.mats.forEach(({m})=>{ m.transparent = op < 1; m.opacity = op; m.depthWrite = op === 1; m.needsUpdate = true; });
+  });
+}
+async function charger(){
+  SC = await (await fetch('scene-caecum.json')).json();
+  const cam = SC.camera;
+  camera.position.set(...cam.position);
+  controls.target.set(...cam.target);
+  const loader = new GLTFLoader();
+  let ok = 0;
+  for (const s of SC.structures){
+    try {
+      const g = await loader.loadAsync(GLB_BASE + s.file);
+      const mats = [];
+      g.scene.traverse(o=>{
+        if (o.isMesh){
+          o.material = o.material.clone();
+          o.material.color.set(s.couleur || '#cccccc');
+          o.userData.structId = s.id;
+          mats.push({ m: o.material });
+        }
+      });
+      g.scene.userData.structId = s.id;
+      scene3d.add(g.scene);
+      loaded.set(s.id, { group: g.scene, mats, struct: s });
+      ok++;
+    } catch(e){ erreurs.push('GLB ' + s.id + ' : ' + e.message); }
+  }
+  // Espaces : cartes d'angle + volumes schématiques (créés au toucher)
+  const box = document.getElementById('espaces');
+  SC.espaces.forEach(esp=>{
+    const geo = new THREE.SphereGeometry(1, 24, 18);
+    const mat = new THREE.MeshBasicMaterial({ color: 0x38bdf8, transparent: true, opacity: 0.42, depthWrite: false });
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.position.set(...esp.position_volume);
+    mesh.scale.set(...esp.echelle_volume);
+    mesh.visible = false;
+    scene3d.add(mesh);
+    spaceMeshes.set(esp.id, mesh);
+    const b = document.createElement('button');
+    b.className = 'espace-card'; b.id = 'esp-' + esp.id;
+    b.innerHTML = `<span class="dot"></span><span>${esp.nom_fr}<small>volume schématique — toucher pour créer / colorer</small></span>`;
+    b.onclick = ()=>{
+      mesh.visible = !mesh.visible;
+      b.classList.toggle('on', mesh.visible);
+      if (mesh.visible){
+        fiche.innerHTML = `<h2>${esp.nom_fr}</h2><div class="en">${esp.name_en}</div>
+          <p>${esp.note_fr}</p><p class="warn">⚠ ${esp.statut}</p>
+          <p>Bornes : ${esp.bornes.map(id=>{ const st = SC.structures.find(x=>x.id===id); return st ? st.nom_fr : id; }).join(' · ')}</p>`;
+      }
+    };
+    box.appendChild(b);
+  });
+  appliquerRoles();
+  etat.textContent = ok + '/' + SC.structures.length + ' maillages chargés · Fig ' + fig + ' · vue antérieure';
+  window.__ready = true;
+  animate();
+}
+function animate(){ requestAnimationFrame(animate); controls.update(); renderer.render(scene3d, camera); }
+
+// Sélection d'une structure (raycast)
+const ray = new THREE.Raycaster(), ptr = new THREE.Vector2();
+let downAt = 0;
+renderer.domElement.addEventListener('pointerdown', ()=>{ downAt = Date.now(); });
+renderer.domElement.addEventListener('pointerup', e=>{
+  if (Date.now() - downAt > 350) return;
+  ptr.set((e.clientX/innerWidth)*2 - 1, -(e.clientY/innerHeight)*2 + 1);
+  ray.setFromCamera(ptr, camera);
+  const hits = ray.intersectObjects([...loaded.values()].filter(o=>o.group.visible).map(o=>o.group), true);
+  const hit = hits.find(h=>h.object.userData.structId);
+  if (!hit) return;
+  const s = SC.structures.find(x=>x.id === hit.object.userData.structId);
+  const role = roleDe(s);
+  fiche.innerHTML = `<h2>${s.nom_fr}<span class="role">${role}</span></h2><div class="en">${s.name_en} · ${s.id}</div>
+    <p>${s.id === 'ileocecal_junction' ? "Jonction iléo-cæcale : c'est ici que siège le cæcum — <span class='warn'>son corps n'est pas individualisé au manifeste</span> ; il est porté par cette jonction et le côlon ascendant." : ''}
+    ${s.hors_audit ? "<span class='warn'>⚠ Structure présente au manifeste mais non listée à l'audit pour ce sujet (groupe Vascularisation).</span>" : 'Maillage du manifeste (audit), aucune géométrie ajoutée.'}</p>`;
+});
+function setFig(n){
+  fig = n;
+  document.getElementById('fig110').classList.toggle('on', n === 110);
+  document.getElementById('fig111').classList.toggle('on', n === 111);
+  appliquerRoles();
+  etat.textContent = 'Fig ' + n + (n === 111 ? ' · configuration : ténies visibles' : ' · position standard (fosse iliaque droite)');
+}
+document.getElementById('fig110').onclick = ()=>setFig(110);
+document.getElementById('fig111').onclick = ()=>setFig(111);
+document.getElementById('btn-vasc').onclick = e=>{ vascOn = !vascOn; e.currentTarget.classList.toggle('on', vascOn); appliquerRoles(); };
+addEventListener('resize', ()=>{ camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+
+charger().catch(e=>{ erreurs.push(e.message); etat.innerHTML = '<span class="err">Erreur : ' + e.message + '</span>'; });
+</script>
+<a href="schema.html" style="position:fixed;right:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">Schémas interactifs</a></body>
+</html>

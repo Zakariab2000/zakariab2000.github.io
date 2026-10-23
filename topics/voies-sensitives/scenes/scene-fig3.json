@@ -1,0 +1,74 @@
+{
+ "figure": 3,
+ "slug": "voie-protopathique",
+ "titre_fr": "Voies de la sensibilité protopathique",
+ "titre_en": "Protopathic sensory pathways",
+ "classe": "3D+D",
+ "diagram": "voie_protopathique",
+ "diagram_file": "diagramme-voie-protopathique.html",
+ "camera": {
+  "vue": "antero-laterale",
+  "vue_audit": "antéro-latérale"
+ },
+ "systemes": [
+  "cerveau"
+ ],
+ "isoler": [
+  "Tractus spinothalamique antérieur",
+  "Thalamus"
+ ],
+ "structures": [
+  {
+   "id": "anterior_spinothalamic_tract",
+   "role": "sujet",
+   "nom_fr": "Tractus spinothalamique antérieur"
+  },
+  {
+   "id": "thalamus_right",
+   "role": "sujet",
+   "nom_fr": "Thalamus droit"
+  },
+  {
+   "id": "thalamus_left",
+   "role": "sujet",
+   "nom_fr": "Thalamus gauche"
+  },
+  {
+   "id": "postcentral_gyrus_right",
+   "role": "sujet",
+   "nom_fr": "Gyrus postcentral"
+  },
+  {
+   "id": "white_matter_of_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Substance blanche de la moëlle épinière"
+  },
+  {
+   "id": "rep_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Moëlle épinière (repère)"
+  }
+ ],
+ "manquants": [
+  "Décussation dans la commissure blanche antérieure : non modélisée",
+  "Fibres périphériques (récepteurs → racine postérieure) : pas de maillage continu → schéma de la voie requis"
+ ],
+ "fiche": {
+  "origine": "Récepteurs cutanés tactiles ; le 1er neurone (N1) a son corps cellulaire dans le ganglion spinal et son axone pénètre dans la corne postérieure de la moelle.",
+  "relais": "Noyaux de la tête de la corne postérieure, puis plusieurs interneurones (voie polysynaptique, très lente) ; en amont du cortex : substance réticulée du tronc cérébral (80 à 90 % des fibres) et noyau postérieur du thalamus (10 à 20 %).",
+  "decussation": "Dans la moelle : les axones des interneurones croisent la ligne médiane et gagnent le cordon antéro-latéral, formant le faisceau spino-thalamique ventral qui remonte le long de la moelle.",
+  "terminaison": "Projection diffuse sur tout le cortex cérébral, à partir du noyau postérieur du thalamus : tact grossier, non discriminatif (à l'opposé du tact épicritique, qui suit la voie cordonale postérieure).",
+  "clinique": "Dans la syringomyélie, le tact (dont le tact protopathique) est conservé alors que la sensibilité thermo-algésique est atteinte : c'est la dissociation syringomyélique rappelée en conclusion du cours (Q1)."
+ },
+ "note_3d": "Vérifié le 2026-10-23 : aucun atlas de tractographie ouvert ne contient le faisceau spinothalamique (trop fin, il échappe au suivi dMRI standard). Aucun trajet fabriqué : le ruban médullaire natif + le schéma portent la figure.",
+ "trajets_3d": [],
+ "statut_segments": {
+  "reel_3d": [
+   "Faisceau spinothalamique antérieur dans la moelle : ruban atlas natif (maillage existant)"
+  ],
+  "schema_seul": [
+   "Segment supra-médullaire (moelle → thalamus → cortex) : aucun faisceau spinothalamique n'existe dans les atlas de tractographie ouverts vérifiés (HCP1065 TRK + NIfTI : liste exhaustive sans STT ; TractSeg : faisceaux cérébraux/pédoncules seulement) — le schéma interactif reste le livrable pour ce segment, sans trajet inventé",
+   "Décussation commissurale : non modélisée"
+  ]
+ }
+}

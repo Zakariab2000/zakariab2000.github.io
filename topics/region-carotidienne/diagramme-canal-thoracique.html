@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schéma — Terminaison du canal thoracique</title>
+<style>
+  :root{ --bg:#101014; --panel:#1b1b22; --txt:#f2efe9; --mut:#9a97a3; --acc:#c9a227; }
+  *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body{ margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; }
+  header{ padding:14px 14px 4px; }
+  h1{ font-size:16px; margin:0; } .sub{ font-size:11.5px; color:var(--mut); margin-top:2px; line-height:1.4; }
+  svg{ display:block; width:100%; height:auto; }
+  .zone{ cursor:pointer; }
+  .zone .hit{ fill:transparent; }
+  .zone.sel .main{ stroke:var(--acc) !important; stroke-width:5.5 !important; }
+  .zone.sel .fillshape{ fill:rgba(201,162,39,.4) !important; }
+  text{ fill:var(--txt); font-size:10.5px; } .lbl{ font-size:10px; fill:#cfccc4; }
+  #fiche{ margin:6px 12px 18px; background:var(--panel); border:1px solid #33333f; border-radius:12px; padding:12px 14px; }
+  #fiche h2{ font-size:15px; margin:0 0 3px; }
+  #fiche .badge{ display:inline-block; font-size:10.5px; padding:2px 8px; border-radius:999px; margin-bottom:6px; }
+  .b-schema{ background:#4a2f35; color:#f0b7bd; } .b-3d{ background:#2f4a35; color:#b7f0c2; }
+  #fiche p{ font-size:13px; line-height:1.5; margin:0; }
+  .hint{ font-size:11px; color:var(--mut); padding:0 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Terminaison du canal thoracique</h1>
+  <div class="sub">Schéma interactif — Fig 109 (système lymphatique dans le cou). Le canal thoracique est la pièce maîtresse de la figure, mais il est <b>absent des maillages 3D</b>, comme le conduit lymphatique droit et les troncs : tout le trajet est donc schématique, en regard des chaînes ganglionnaires visibles en 3D. Touchez un élément.</div>
+</header>
+<p class="hint">Vert = lymphatiques · Bleu = veines · Vue antérieure, abdomen → cou.</p>
+
+<svg viewBox="0 0 360 480" role="img" aria-label="Schéma du canal thoracique">
+  <!-- Aorte + VCI de fond -->
+  <path d="M168 470 v-250" stroke="#b03a2e" stroke-width="9" opacity=".55"/>
+  <path d="M196 470 v-250" stroke="#3f6fb5" stroke-width="9" opacity=".55"/>
+  <text x="120" y="462" class="lbl">Aorte</text>
+  <text x="204" y="462" class="lbl">V. cave inf.</text>
+  <!-- veines du cou -->
+  <path d="M96 20 v130 M264 20 v130" stroke="#3f6fb5" stroke-width="10" opacity=".85"/>
+  <path d="M96 150 q40 26 84 26 M264 150 q-40 26 -84 26" stroke="#3f6fb5" stroke-width="9" opacity=".85"/>
+  <text x="30" y="36" class="lbl">V. jugulaire interne</text>
+  <text x="238" y="196" class="lbl">Vv. brachio-céphaliques</text>
+  <text x="252" y="140" class="lbl">V. sous-clavière</text>
+  <!-- citerne de Pecquet -->
+  <g class="zone" data-k="citerne">
+    <ellipse class="hit fillshape" cx="182" cy="428" rx="26" ry="18"/>
+    <ellipse class="main fillshape" cx="182" cy="428" rx="16" ry="11" fill="#69b56b" stroke="#3f7a3f" stroke-width="2"/>
+    <text x="216" y="432" class="lbl">Citerne de Pecquet (L1–L2)</text>
+  </g>
+  <!-- canal thoracique : monte à droite, croise à gauche en T5, crosse cervicale -->
+  <g class="zone" data-k="canal">
+    <path class="hit" d="M182 414 q10 -90 2 -160 q-4 -44 -30 -66 q-26 -22 -30 -52" stroke-width="24" fill="none"/>
+    <path class="main" d="M182 414 q10 -90 2 -160 q-4 -44 -30 -66 q-26 -22 -30 -52" stroke="#69b56b" stroke-width="5" fill="none"/>
+    <text x="216" y="300" class="lbl">Canal thoracique</text>
+    <text x="216" y="314" class="lbl">(croise à gauche en T5)</text>
+  </g>
+  <!-- crosse + terminaison angle veineux gauche -->
+  <g class="zone" data-k="angle">
+    <path class="hit" d="M124 136 q-14 -34 8 -52 q18 -14 34 -4" stroke-width="24" fill="none"/>
+    <path class="main" d="M124 136 q-14 -34 8 -52 q18 -14 34 -4" stroke="#69b56b" stroke-width="5" fill="none"/>
+    <circle cx="128" cy="140" r="7" fill="#69b56b"/>
+    <text x="8" y="86" class="lbl">Crosse du canal (C7)</text>
+    <text x="8" y="126" class="lbl">Angle veineux gauche</text>
+    <text x="8" y="140" class="lbl">(de Pirogoff) ★</text>
+  </g>
+  <!-- tronc jugulaire gauche -->
+  <g class="zone" data-k="jug">
+    <path class="hit" d="M96 60 q16 40 26 74" stroke-width="20" fill="none"/>
+    <path class="main" d="M96 60 q16 40 26 74" stroke="#69b56b" stroke-width="3.5" fill="none" stroke-dasharray="5 4"/>
+    <text x="34" y="56" class="lbl">Tronc jugulaire</text>
+  </g>
+  <!-- tronc sous-clavier gauche -->
+  <g class="zone" data-k="souscl">
+    <path class="hit" d="M52 148 q36 4 72 -6" stroke-width="20" fill="none"/>
+    <path class="main" d="M52 148 q36 4 72 -6" stroke="#69b56b" stroke-width="3.5" fill="none" stroke-dasharray="5 4"/>
+    <text x="10" y="168" class="lbl">Tronc sous-clavier</text>
+  </g>
+  <!-- conduit lymphatique droit -->
+  <g class="zone" data-k="droit">
+    <path class="hit" d="M238 128 q14 -22 6 -40" stroke-width="22" fill="none"/>
+    <path class="main" d="M238 128 q14 -22 6 -40" stroke="#69b56b" stroke-width="4.5" fill="none"/>
+    <text x="238" y="76" class="lbl">Conduit lymphatique droit</text>
+    <text x="238" y="90" class="lbl">→ angle veineux droit</text>
+  </g>
+  <!-- chaînes ganglionnaires cervicales (présentes en 3D) -->
+  <g class="zone" data-k="chaines">
+    <circle class="hit fillshape" cx="100" cy="200" r="14"/><circle class="main fillshape" cx="100" cy="200" r="6" fill="#8fce62" stroke="#5d9040" stroke-width="1.5"/>
+    <circle class="hit fillshape" cx="106" cy="228" r="14"/><circle class="main fillshape" cx="106" cy="228" r="6" fill="#8fce62" stroke="#5d9040" stroke-width="1.5"/>
+    <circle class="hit fillshape" cx="112" cy="256" r="14"/><circle class="main fillshape" cx="112" cy="256" r="6" fill="#8fce62" stroke="#5d9040" stroke-width="1.5"/>
+    <text x="8" y="290" class="lbl">Chaînes ganglionnaires ✓ (en 3D)</text>
+  </g>
+</svg>
+
+<div id="fiche"><h2>Touchez un élément</h2><p>Le canal thoracique draine la lymphe des deux membres inférieurs, de l'abdomen, du membre supérieur gauche et de la moitié gauche de la tête, du cou et du thorax.</p></div>
+
+<script>
+const FICHES = {
+  citerne: { t: "Citerne de Pecquet (cysterna chyli)", b: ["b-schema", "⚠ Schéma seul — absente du maillage 3D"],
+    p: "Dilatation fusiforme située devant L1–L2, à droite de l'aorte : elle reçoit les troncs lymphatiques intestinaux et lombaires et donne naissance au canal thoracique." },
+  canal: { t: "Canal thoracique", b: ["b-schema", "⚠ Schéma seul — absent du maillage 3D"],
+    p: "Long de ~40 cm : il naît de la citerne de Pecquet, traverse l'orifice aortique du diaphragme, monte dans le médiastin postérieur (à droite puis croise vers la gauche vers T5), pénètre dans le cou où il décrit sa crosse avant de se jeter dans l'angle veineux gauche. C'est le plus gros vaisseau lymphatique du corps." },
+  angle: { t: "Angle veineux gauche et crosse du canal", b: ["b-schema", "⚠ Schéma seul — absent du maillage 3D"],
+    p: "Au cou, le canal thoracique s'élève 3–4 cm au-dessus de la clavicule (crosse, en regard de C7), passe en avant du tronc thyrocervical et du muscle scalène antérieur, puis se termine à la jonction jugulo-sous-clavière gauche (angle de Pirogoff), souvent par plusieurs branches et avec des valvules. La chaîne ganglionnaire supraclaviculaire gauche voisine (nœud de Troisier/Virchow) peut révéler un cancer abdominal." },
+  jug: { t: "Tronc jugulaire gauche", b: ["b-schema", "⚠ Schéma seul — non modélisé"],
+    p: "Collecteur terminal des chaînes ganglionnaires cervicales profondes (le long de la veine jugulaire interne) : il rejoint le canal thoracique ou l'angle veineux gauche." },
+  souscl: { t: "Tronc sous-clavier gauche", b: ["b-schema", "⚠ Schéma seul — non modélisé"],
+    p: "Il draine le membre supérieur gauche (relayé par les nœuds axillaires) et se jette dans le canal thoracique ou dans l'angle veineux gauche." },
+  droit: { t: "Conduit lymphatique droit", b: ["b-schema", "⚠ Schéma seul — absent du maillage 3D"],
+    p: "Court conduit (~1 cm) formé par la réunion des troncs jugulaire, sous-clavier et broncho-médiastinal droits : il draine le quart supérieur droit du corps et se jette dans l'angle veineux droit." },
+  chaines: { t: "Chaînes ganglionnaires cervicales", b: ["b-3d", "✓ Présentes en 3D dans la scène Fig 109"],
+    p: "Contrairement aux conduits, les groupes ganglionnaires cervicaux (profonds latéraux, superficiels, paratrachéaux, prétrachéaux, supraclaviculaires, jugulaires) possèdent leurs maillages 3D dans la scène : ce schéma ne couvre que leurs collecteurs terminaux manquants." }
+};
+const fiche = document.getElementById('fiche');
+document.querySelectorAll('.zone').forEach(z => {
+  z.addEventListener('click', () => {
+    document.querySelectorAll('.zone').forEach(x => x.classList.remove('sel'));
+    document.querySelectorAll(`.zone[data-k="${z.dataset.k}"]`).forEach(x => x.classList.add('sel'));
+    const f = FICHES[z.dataset.k]; if (!f) return;
+    fiche.innerHTML = `<h2>${f.t}</h2><span class="badge ${f.b[0]}">${f.b[1]}</span><p>${f.p}</p>`;
+    fiche.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+});
+</script>
+<a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

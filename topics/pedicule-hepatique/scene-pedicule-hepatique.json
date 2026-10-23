@@ -1,0 +1,2082 @@
+{
+ "batch": "D",
+ "topic": 27,
+ "slug": "pedicule-hepatique",
+ "partie": "IV",
+ "titre_fr": "Le pédicule hépatique",
+ "titre_en": "The hepatic pedicle",
+ "figures": [
+  {
+   "numero": 75,
+   "titre_fr": "Constitution du système porte",
+   "titre_en": "Formation of the portal venous system",
+   "classe": "[3D+D]",
+   "vue": "anterieure",
+   "diagram": "porte",
+   "systemes": [
+    "veines",
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "hepatic_portal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -10.2,
+       1080.5,
+       125.9
+      ],
+      "max": [
+       -1.5,
+       1132.0,
+       131.2
+      ],
+      "center": [
+       -5.9,
+       1106.2,
+       128.6
+      ],
+      "size": [
+       8.7,
+       51.5,
+       5.3
+      ]
+     }
+    },
+    {
+     "id": "splenic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine splénique",
+     "name_en": "Splenic vein",
+     "system": "veines",
+     "file": "models/veines/splenic_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -6.1,
+       1077.1,
+       91.6
+      ],
+      "max": [
+       98.2,
+       1102.2,
+       137.1
+      ],
+      "center": [
+       46.0,
+       1089.6,
+       114.4
+      ],
+      "size": [
+       104.2,
+       25.2,
+       45.5
+      ]
+     }
+    },
+    {
+     "id": "superior_mesenteric_vein",
+     "role": "sujet",
+     "nom_fr": "Veine mésentérique supérieure",
+     "name_en": "Superior mesenteric vein",
+     "system": "veines",
+     "file": "models/veines/superior_mesenteric_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -61.6,
+       917.3,
+       111.8
+      ],
+      "max": [
+       2.0,
+       1081.0,
+       150.4
+      ],
+      "center": [
+       -29.8,
+       999.2,
+       131.1
+      ],
+      "size": [
+       63.6,
+       163.7,
+       38.6
+      ]
+     }
+    },
+    {
+     "id": "inferior_mesenteric_vein",
+     "role": "sujet",
+     "nom_fr": "Veine mésentérique inférieure",
+     "name_en": "Inferior mesenteric vein",
+     "system": "veines",
+     "file": "models/veines/inferior_mesenteric_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       3.6,
+       905.5,
+       113.0
+      ],
+      "max": [
+       33.3,
+       1082.1,
+       135.0
+      ],
+      "center": [
+       18.5,
+       993.8,
+       124.0
+      ],
+      "size": [
+       29.7,
+       176.7,
+       22.0
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "sujet",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "spleen",
+     "role": "sujet",
+     "nom_fr": "Rate",
+     "name_en": "Spleen",
+     "system": "lymphatique",
+     "file": "models/lymphatique/spleen.glb",
+     "couleur": "#7fae5c",
+     "bounds": {
+      "min": [
+       54.3,
+       1059.2,
+       51.2
+      ],
+      "max": [
+       111.6,
+       1129.8,
+       140.5
+      ],
+      "center": [
+       83.0,
+       1094.5,
+       95.9
+      ],
+      "size": [
+       57.2,
+       70.6,
+       89.3
+      ]
+     }
+    },
+    {
+     "id": "duodenum",
+     "role": "rapport",
+     "nom_fr": "Duodénum",
+     "name_en": "Duodenum",
+     "system": "organes",
+     "file": "models/organes/duodenum.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -64.8,
+       977.2,
+       105.4
+      ],
+      "max": [
+       31.5,
+       1076.1,
+       153.9
+      ],
+      "center": [
+       -16.7,
+       1026.7,
+       129.6
+      ],
+      "size": [
+       96.2,
+       98.9,
+       48.5
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Veine cystique, veines gastriques gauche (coronaire) et droite, veines para-ombilicales (affluents accessoires de la figure) : ABSENTES du manifeste",
+    "La CONSTITUTION (confluence des 3 racines derrière le col du pancréas, variantes) est un schéma par nature → schéma en regard ; les 4 vaisseaux principaux, eux, existent en 3D"
+   ],
+   "espaces": []
+  },
+  {
+   "numero": 76,
+   "titre_fr": "Artère hépatique commune",
+   "titre_en": "Common hepatic artery",
+   "classe": "[3D]",
+   "vue": "anterieure",
+   "diagram": null,
+   "systemes": [
+    "arteres"
+   ],
+   "structures": [
+    {
+     "id": "coeliac_trunk",
+     "role": "sujet",
+     "nom_fr": "Tronc coeliaque",
+     "name_en": "Coeliac trunk",
+     "system": "arteres",
+     "file": "models/arteres/coeliac_trunk.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       2.5,
+       1068.3,
+       111.8
+      ],
+      "max": [
+       13.3,
+       1092.8,
+       132.0
+      ],
+      "center": [
+       7.9,
+       1080.6,
+       121.9
+      ],
+      "size": [
+       10.8,
+       24.4,
+       20.2
+      ]
+     }
+    },
+    {
+     "id": "common_hepatic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère hépatique commune",
+     "name_en": "Common hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/common_hepatic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -22.4,
+       1076.7,
+       128.1
+      ],
+      "max": [
+       9.4,
+       1093.0,
+       157.9
+      ],
+      "center": [
+       -6.5,
+       1084.8,
+       143.0
+      ],
+      "size": [
+       31.8,
+       16.3,
+       29.9
+      ]
+     }
+    },
+    {
+     "id": "proper_hepatic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère hépatique propre",
+     "name_en": "Proper hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/proper_hepatic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -110.8,
+       1077.2,
+       143.1
+      ],
+      "max": [
+       -20.3,
+       1105.9,
+       169.6
+      ],
+      "center": [
+       -65.5,
+       1091.6,
+       156.4
+      ],
+      "size": [
+       90.4,
+       28.7,
+       26.5
+      ]
+     }
+    },
+    {
+     "id": "gastroduodenal_artery",
+     "role": "sujet",
+     "nom_fr": "Artère gastroduodénale",
+     "name_en": "Gastroduodenal artery",
+     "system": "arteres",
+     "file": "models/arteres/gastroduodenal_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -34.5,
+       1061.8,
+       155.4
+      ],
+      "max": [
+       -20.1,
+       1081.4,
+       183.0
+      ],
+      "center": [
+       -27.3,
+       1071.6,
+       169.2
+      ],
+      "size": [
+       14.5,
+       19.6,
+       27.6
+      ]
+     }
+    },
+    {
+     "id": "left_gastric_artery",
+     "role": "rapport",
+     "nom_fr": "Artère gastrique gauche",
+     "name_en": "Left gastric artery",
+     "system": "arteres",
+     "file": "models/arteres/left_gastric_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       3.2,
+       1086.8,
+       127.8
+      ],
+      "max": [
+       20.9,
+       1111.3,
+       153.1
+      ],
+      "center": [
+       12.1,
+       1099.1,
+       140.5
+      ],
+      "size": [
+       17.7,
+       24.5,
+       25.3
+      ]
+     }
+    },
+    {
+     "id": "splenic_artery",
+     "role": "rapport",
+     "nom_fr": "Artère splénique",
+     "name_en": "Splenic artery",
+     "system": "arteres",
+     "file": "models/arteres/splenic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       3.9,
+       1077.2,
+       83.5
+      ],
+      "max": [
+       96.9,
+       1101.8,
+       133.7
+      ],
+      "center": [
+       50.4,
+       1089.5,
+       108.6
+      ],
+      "size": [
+       93.0,
+       24.7,
+       50.2
+      ]
+     }
+    },
+    {
+     "id": "duodenum",
+     "role": "rapport",
+     "nom_fr": "Duodénum",
+     "name_en": "Duodenum",
+     "system": "organes",
+     "file": "models/organes/duodenum.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -64.8,
+       977.2,
+       105.4
+      ],
+      "max": [
+       31.5,
+       1076.1,
+       153.9
+      ],
+      "center": [
+       -16.7,
+       1026.7,
+       129.6
+      ],
+      "size": [
+       96.2,
+       98.9,
+       48.5
+      ]
+     }
+    },
+    {
+     "id": "hepatic_portal_vein",
+     "role": "rapport",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -10.2,
+       1080.5,
+       125.9
+      ],
+      "max": [
+       -1.5,
+       1132.0,
+       131.2
+      ],
+      "center": [
+       -5.9,
+       1106.2,
+       128.6
+      ],
+      "size": [
+       8.7,
+       51.5,
+       5.3
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Artères hépatiques droite et gauche (division terminale de l'hépatique propre) : ABSENTES du manifeste",
+    "Artère cystique : ABSENTE ; artère gastrique droite (souvent issue de l'hépatique) : ABSENTE"
+   ],
+   "espaces": []
+  },
+  {
+   "numero": 77,
+   "titre_fr": "Voies biliaires",
+   "titre_en": "Biliary tract",
+   "classe": "[3D+D]",
+   "vue": "anterieure",
+   "diagram": "biliaire",
+   "systemes": [
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "gallbladder",
+     "role": "sujet",
+     "nom_fr": "Vésicule biliaire",
+     "name_en": "Gallbladder",
+     "system": "organes",
+     "file": "models/organes/gallbladder.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -62.5,
+       1048.1,
+       130.2
+      ],
+      "max": [
+       -26.9,
+       1091.8,
+       175.5
+      ],
+      "center": [
+       -44.7,
+       1070.0,
+       152.8
+      ],
+      "size": [
+       35.6,
+       43.7,
+       45.3
+      ]
+     }
+    },
+    {
+     "id": "bile_duct",
+     "role": "sujet",
+     "nom_fr": "Canal biliaire",
+     "name_en": "Bile duct",
+     "system": "organes",
+     "file": "models/organes/bile_duct.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -57.7,
+       1021.9,
+       126.8
+      ],
+      "max": [
+       -13.2,
+       1095.7,
+       138.0
+      ],
+      "center": [
+       -35.5,
+       1058.8,
+       132.4
+      ],
+      "size": [
+       44.4,
+       73.8,
+       11.2
+      ]
+     }
+    },
+    {
+     "id": "cystic_node",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud cystique",
+     "name_en": "Cystic node",
+     "system": "lymphatique",
+     "file": "models/lymphatique/cystic_node.glb",
+     "couleur": "#7fae5c",
+     "bounds": {
+      "min": [
+       -24.1,
+       1090.7,
+       135.0
+      ],
+      "max": [
+       -21.6,
+       1093.3,
+       137.4
+      ],
+      "center": [
+       -22.9,
+       1092.0,
+       136.2
+      ],
+      "size": [
+       2.5,
+       2.6,
+       2.4
+      ]
+     }
+    },
+    {
+     "id": "left_medial_segment_of_liver_iv",
+     "role": "rapport",
+     "nom_fr": "Segment médial gauche du foie (IV)",
+     "name_en": "Left medial segment of liver (IV)",
+     "system": "organes",
+     "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -45.8,
+       1059.7,
+       122.7
+      ],
+      "max": [
+       10.2,
+       1186.3,
+       192.5
+      ],
+      "center": [
+       -17.8,
+       1123.0,
+       157.6
+      ],
+      "size": [
+       56.0,
+       126.5,
+       69.9
+      ]
+     },
+     "couleur_presentation": "#7fb069",
+     "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+    },
+    {
+     "id": "anterior_medial_segment_of_liver_v",
+     "role": "rapport",
+     "nom_fr": "Segment antéromédial droit du foie (V)",
+     "name_en": "Anterior medial segment of liver (V)",
+     "system": "organes",
+     "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -102.1,
+       1044.3,
+       110.0
+      ],
+      "max": [
+       -27.5,
+       1118.0,
+       188.5
+      ],
+      "center": [
+       -64.8,
+       1081.1,
+       149.3
+      ],
+      "size": [
+       74.6,
+       73.7,
+       78.4
+      ]
+     },
+     "couleur_presentation": "#4f9da6",
+     "fiche_fr": "Segment V — segment antéro-inférieur du secteur antérieur droit, au contact de la fossette cystique et de la vésicule biliaire. Vascularisation porte : branche antérieure de la branche droite. Drainage sus-hépatique par les veines des scissures principale et droite."
+    },
+    {
+     "id": "duodenum",
+     "role": "rapport",
+     "nom_fr": "Duodénum",
+     "name_en": "Duodenum",
+     "system": "organes",
+     "file": "models/organes/duodenum.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -64.8,
+       977.2,
+       105.4
+      ],
+      "max": [
+       31.5,
+       1076.1,
+       153.9
+      ],
+      "center": [
+       -16.7,
+       1026.7,
+       129.6
+      ],
+      "size": [
+       96.2,
+       98.9,
+       48.5
+      ]
+     }
+    },
+    {
+     "id": "proper_hepatic_artery",
+     "role": "rapport",
+     "nom_fr": "Artère hépatique propre",
+     "name_en": "Proper hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/proper_hepatic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -110.8,
+       1077.2,
+       143.1
+      ],
+      "max": [
+       -20.3,
+       1105.9,
+       169.6
+      ],
+      "center": [
+       -65.5,
+       1091.6,
+       156.4
+      ],
+      "size": [
+       90.4,
+       28.7,
+       26.5
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Canal cystique : ABSENT ; canaux hépatiques droit et gauche : ABSENTS ; canal hépatique commun : ABSENT",
+    "Seul existe 'bile_duct' (le conduit biliaire principal / cholédoque) + la vésicule → l'arbre biliaire complet de la figure exige le schéma en regard"
+   ],
+   "espaces": []
+  },
+  {
+   "numero": 78,
+   "titre_fr": "Coupe horizontale du pédicule hépatique (vue TDM)",
+   "titre_en": "Horizontal section of the hepatic pedicle (CT view)",
+   "classe": "[3D]",
+   "vue": "superieure",
+   "diagram": null,
+   "systemes": [
+    "veines",
+    "arteres",
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "hepatic_portal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -10.2,
+       1080.5,
+       125.9
+      ],
+      "max": [
+       -1.5,
+       1132.0,
+       131.2
+      ],
+      "center": [
+       -5.9,
+       1106.2,
+       128.6
+      ],
+      "size": [
+       8.7,
+       51.5,
+       5.3
+      ]
+     }
+    },
+    {
+     "id": "proper_hepatic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère hépatique propre",
+     "name_en": "Proper hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/proper_hepatic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -110.8,
+       1077.2,
+       143.1
+      ],
+      "max": [
+       -20.3,
+       1105.9,
+       169.6
+      ],
+      "center": [
+       -65.5,
+       1091.6,
+       156.4
+      ],
+      "size": [
+       90.4,
+       28.7,
+       26.5
+      ]
+     }
+    },
+    {
+     "id": "bile_duct",
+     "role": "sujet",
+     "nom_fr": "Canal biliaire",
+     "name_en": "Bile duct",
+     "system": "organes",
+     "file": "models/organes/bile_duct.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -57.7,
+       1021.9,
+       126.8
+      ],
+      "max": [
+       -13.2,
+       1095.7,
+       138.0
+      ],
+      "center": [
+       -35.5,
+       1058.8,
+       132.4
+      ],
+      "size": [
+       44.4,
+       73.8,
+       11.2
+      ]
+     }
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "sujet",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -18.7,
+       962.9,
+       105.3
+      ],
+      "max": [
+       -0.5,
+       1106.8,
+       132.4
+      ],
+      "center": [
+       -9.6,
+       1034.8,
+       118.9
+      ],
+      "size": [
+       18.2,
+       143.8,
+       27.1
+      ]
+     }
+    },
+    {
+     "id": "duodenum",
+     "role": "sujet",
+     "nom_fr": "Duodénum",
+     "name_en": "Duodenum",
+     "system": "organes",
+     "file": "models/organes/duodenum.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -64.8,
+       977.2,
+       105.4
+      ],
+      "max": [
+       31.5,
+       1076.1,
+       153.9
+      ],
+      "center": [
+       -16.7,
+       1026.7,
+       129.6
+      ],
+      "size": [
+       96.2,
+       98.9,
+       48.5
+      ]
+     }
+    },
+    {
+     "id": "lesser_omentum",
+     "role": "sujet",
+     "nom_fr": "Petit omentum",
+     "name_en": "Lesser omentum",
+     "system": "organes",
+     "file": "models/organes/lesser_omentum.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -34.3,
+       1074.8,
+       115.7
+      ],
+      "max": [
+       24.7,
+       1133.2,
+       175.8
+      ],
+      "center": [
+       -4.8,
+       1104.0,
+       145.7
+      ],
+      "size": [
+       58.9,
+       58.4,
+       60.1
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "rapport",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "abdominal_aorta",
+     "role": "rapport",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -4.0,
+       960.9,
+       82.0
+      ],
+      "max": [
+       18.5,
+       1143.8,
+       138.0
+      ],
+      "center": [
+       7.2,
+       1052.4,
+       110.0
+      ],
+      "size": [
+       22.5,
+       182.9,
+       56.0
+      ]
+     }
+    }
+   ],
+   "manquants": [],
+   "espaces": []
+  },
+  {
+   "numero": 79,
+   "titre_fr": "Rapports du pédicule hépatique",
+   "titre_en": "Relations of the hepatic pedicle",
+   "classe": "[3D]",
+   "vue": "anterieure",
+   "diagram": null,
+   "systemes": [
+    "veines",
+    "arteres",
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "hepatic_portal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -10.2,
+       1080.5,
+       125.9
+      ],
+      "max": [
+       -1.5,
+       1132.0,
+       131.2
+      ],
+      "center": [
+       -5.9,
+       1106.2,
+       128.6
+      ],
+      "size": [
+       8.7,
+       51.5,
+       5.3
+      ]
+     }
+    },
+    {
+     "id": "proper_hepatic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère hépatique propre",
+     "name_en": "Proper hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/proper_hepatic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -110.8,
+       1077.2,
+       143.1
+      ],
+      "max": [
+       -20.3,
+       1105.9,
+       169.6
+      ],
+      "center": [
+       -65.5,
+       1091.6,
+       156.4
+      ],
+      "size": [
+       90.4,
+       28.7,
+       26.5
+      ]
+     }
+    },
+    {
+     "id": "bile_duct",
+     "role": "sujet",
+     "nom_fr": "Canal biliaire",
+     "name_en": "Bile duct",
+     "system": "organes",
+     "file": "models/organes/bile_duct.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -57.7,
+       1021.9,
+       126.8
+      ],
+      "max": [
+       -13.2,
+       1095.7,
+       138.0
+      ],
+      "center": [
+       -35.5,
+       1058.8,
+       132.4
+      ],
+      "size": [
+       44.4,
+       73.8,
+       11.2
+      ]
+     }
+    },
+    {
+     "id": "stomach",
+     "role": "sujet",
+     "nom_fr": "Estomac",
+     "name_en": "Stomach",
+     "system": "organes",
+     "file": "models/organes/stomach.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -28.5,
+       1036.3,
+       84.5
+      ],
+      "max": [
+       103.3,
+       1162.5,
+       183.4
+      ],
+      "center": [
+       37.4,
+       1099.4,
+       134.0
+      ],
+      "size": [
+       131.8,
+       126.2,
+       98.9
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "sujet",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "kidney_right",
+     "role": "sujet",
+     "nom_fr": "Rein droit",
+     "name_en": "Right kidney",
+     "system": "organes",
+     "file": "models/organes/kidney_right.glb",
+     "couleur": "#7a3b2e",
+     "bounds": {
+      "min": [
+       -87.6,
+       966.8,
+       64.7
+      ],
+      "max": [
+       -30.4,
+       1071.2,
+       111.9
+      ],
+      "center": [
+       -59.0,
+       1019.0,
+       88.3
+      ],
+      "size": [
+       57.1,
+       104.4,
+       47.2
+      ]
+     }
+    },
+    {
+     "id": "duodenum",
+     "role": "sujet",
+     "nom_fr": "Duodénum",
+     "name_en": "Duodenum",
+     "system": "organes",
+     "file": "models/organes/duodenum.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -64.8,
+       977.2,
+       105.4
+      ],
+      "max": [
+       31.5,
+       1076.1,
+       153.9
+      ],
+      "center": [
+       -16.7,
+       1026.7,
+       129.6
+      ],
+      "size": [
+       96.2,
+       98.9,
+       48.5
+      ]
+     }
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "sujet",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -18.7,
+       962.9,
+       105.3
+      ],
+      "max": [
+       -0.5,
+       1106.8,
+       132.4
+      ],
+      "center": [
+       -9.6,
+       1034.8,
+       118.9
+      ],
+      "size": [
+       18.2,
+       143.8,
+       27.1
+      ]
+     }
+    },
+    {
+     "id": "lesser_omentum",
+     "role": "rapport",
+     "nom_fr": "Petit omentum",
+     "name_en": "Lesser omentum",
+     "system": "organes",
+     "file": "models/organes/lesser_omentum.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -34.3,
+       1074.8,
+       115.7
+      ],
+      "max": [
+       24.7,
+       1133.2,
+       175.8
+      ],
+      "center": [
+       -4.8,
+       1104.0,
+       145.7
+      ],
+      "size": [
+       58.9,
+       58.4,
+       60.1
+      ]
+     }
+    },
+    {
+     "id": "left_medial_segment_of_liver_iv",
+     "role": "rapport",
+     "nom_fr": "Segment médial gauche du foie (IV)",
+     "name_en": "Left medial segment of liver (IV)",
+     "system": "organes",
+     "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -45.8,
+       1059.7,
+       122.7
+      ],
+      "max": [
+       10.2,
+       1186.3,
+       192.5
+      ],
+      "center": [
+       -17.8,
+       1123.0,
+       157.6
+      ],
+      "size": [
+       56.0,
+       126.5,
+       69.9
+      ]
+     },
+     "couleur_presentation": "#7fb069",
+     "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+    }
+   ],
+   "manquants": [
+    "Foramen épiploïque (de Winslow) et arrière-cavité des épiploons : espaces ABSENTS du manifeste"
+   ],
+   "espaces": []
+  }
+ ],
+ "structures": [
+  {
+   "id": "hepatic_portal_vein",
+   "role": "sujet",
+   "nom_fr": "Veine porte du foie",
+   "name_en": "Hepatic portal vein",
+   "system": "veines",
+   "file": "models/veines/hepatic_portal_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -10.2,
+     1080.5,
+     125.9
+    ],
+    "max": [
+     -1.5,
+     1132.0,
+     131.2
+    ],
+    "center": [
+     -5.9,
+     1106.2,
+     128.6
+    ],
+    "size": [
+     8.7,
+     51.5,
+     5.3
+    ]
+   }
+  },
+  {
+   "id": "splenic_vein",
+   "role": "sujet",
+   "nom_fr": "Veine splénique",
+   "name_en": "Splenic vein",
+   "system": "veines",
+   "file": "models/veines/splenic_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -6.1,
+     1077.1,
+     91.6
+    ],
+    "max": [
+     98.2,
+     1102.2,
+     137.1
+    ],
+    "center": [
+     46.0,
+     1089.6,
+     114.4
+    ],
+    "size": [
+     104.2,
+     25.2,
+     45.5
+    ]
+   }
+  },
+  {
+   "id": "superior_mesenteric_vein",
+   "role": "sujet",
+   "nom_fr": "Veine mésentérique supérieure",
+   "name_en": "Superior mesenteric vein",
+   "system": "veines",
+   "file": "models/veines/superior_mesenteric_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -61.6,
+     917.3,
+     111.8
+    ],
+    "max": [
+     2.0,
+     1081.0,
+     150.4
+    ],
+    "center": [
+     -29.8,
+     999.2,
+     131.1
+    ],
+    "size": [
+     63.6,
+     163.7,
+     38.6
+    ]
+   }
+  },
+  {
+   "id": "inferior_mesenteric_vein",
+   "role": "sujet",
+   "nom_fr": "Veine mésentérique inférieure",
+   "name_en": "Inferior mesenteric vein",
+   "system": "veines",
+   "file": "models/veines/inferior_mesenteric_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     3.6,
+     905.5,
+     113.0
+    ],
+    "max": [
+     33.3,
+     1082.1,
+     135.0
+    ],
+    "center": [
+     18.5,
+     993.8,
+     124.0
+    ],
+    "size": [
+     29.7,
+     176.7,
+     22.0
+    ]
+   }
+  },
+  {
+   "id": "pancreas",
+   "role": "sujet",
+   "nom_fr": "Pancréas",
+   "name_en": "Pancreas",
+   "system": "organes",
+   "file": "models/organes/pancreas.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -45.0,
+     1011.7,
+     95.2
+    ],
+    "max": [
+     71.1,
+     1085.8,
+     145.3
+    ],
+    "center": [
+     13.1,
+     1048.7,
+     120.2
+    ],
+    "size": [
+     116.1,
+     74.1,
+     50.1
+    ]
+   }
+  },
+  {
+   "id": "spleen",
+   "role": "sujet",
+   "nom_fr": "Rate",
+   "name_en": "Spleen",
+   "system": "lymphatique",
+   "file": "models/lymphatique/spleen.glb",
+   "couleur": "#7fae5c",
+   "bounds": {
+    "min": [
+     54.3,
+     1059.2,
+     51.2
+    ],
+    "max": [
+     111.6,
+     1129.8,
+     140.5
+    ],
+    "center": [
+     83.0,
+     1094.5,
+     95.9
+    ],
+    "size": [
+     57.2,
+     70.6,
+     89.3
+    ]
+   }
+  },
+  {
+   "id": "duodenum",
+   "role": "sujet",
+   "nom_fr": "Duodénum",
+   "name_en": "Duodenum",
+   "system": "organes",
+   "file": "models/organes/duodenum.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -64.8,
+     977.2,
+     105.4
+    ],
+    "max": [
+     31.5,
+     1076.1,
+     153.9
+    ],
+    "center": [
+     -16.7,
+     1026.7,
+     129.6
+    ],
+    "size": [
+     96.2,
+     98.9,
+     48.5
+    ]
+   }
+  },
+  {
+   "id": "coeliac_trunk",
+   "role": "sujet",
+   "nom_fr": "Tronc coeliaque",
+   "name_en": "Coeliac trunk",
+   "system": "arteres",
+   "file": "models/arteres/coeliac_trunk.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     2.5,
+     1068.3,
+     111.8
+    ],
+    "max": [
+     13.3,
+     1092.8,
+     132.0
+    ],
+    "center": [
+     7.9,
+     1080.6,
+     121.9
+    ],
+    "size": [
+     10.8,
+     24.4,
+     20.2
+    ]
+   }
+  },
+  {
+   "id": "common_hepatic_artery",
+   "role": "sujet",
+   "nom_fr": "Artère hépatique commune",
+   "name_en": "Common hepatic artery",
+   "system": "arteres",
+   "file": "models/arteres/common_hepatic_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -22.4,
+     1076.7,
+     128.1
+    ],
+    "max": [
+     9.4,
+     1093.0,
+     157.9
+    ],
+    "center": [
+     -6.5,
+     1084.8,
+     143.0
+    ],
+    "size": [
+     31.8,
+     16.3,
+     29.9
+    ]
+   }
+  },
+  {
+   "id": "proper_hepatic_artery",
+   "role": "sujet",
+   "nom_fr": "Artère hépatique propre",
+   "name_en": "Proper hepatic artery",
+   "system": "arteres",
+   "file": "models/arteres/proper_hepatic_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -110.8,
+     1077.2,
+     143.1
+    ],
+    "max": [
+     -20.3,
+     1105.9,
+     169.6
+    ],
+    "center": [
+     -65.5,
+     1091.6,
+     156.4
+    ],
+    "size": [
+     90.4,
+     28.7,
+     26.5
+    ]
+   }
+  },
+  {
+   "id": "gastroduodenal_artery",
+   "role": "sujet",
+   "nom_fr": "Artère gastroduodénale",
+   "name_en": "Gastroduodenal artery",
+   "system": "arteres",
+   "file": "models/arteres/gastroduodenal_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -34.5,
+     1061.8,
+     155.4
+    ],
+    "max": [
+     -20.1,
+     1081.4,
+     183.0
+    ],
+    "center": [
+     -27.3,
+     1071.6,
+     169.2
+    ],
+    "size": [
+     14.5,
+     19.6,
+     27.6
+    ]
+   }
+  },
+  {
+   "id": "left_gastric_artery",
+   "role": "rapport",
+   "nom_fr": "Artère gastrique gauche",
+   "name_en": "Left gastric artery",
+   "system": "arteres",
+   "file": "models/arteres/left_gastric_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     3.2,
+     1086.8,
+     127.8
+    ],
+    "max": [
+     20.9,
+     1111.3,
+     153.1
+    ],
+    "center": [
+     12.1,
+     1099.1,
+     140.5
+    ],
+    "size": [
+     17.7,
+     24.5,
+     25.3
+    ]
+   }
+  },
+  {
+   "id": "splenic_artery",
+   "role": "rapport",
+   "nom_fr": "Artère splénique",
+   "name_en": "Splenic artery",
+   "system": "arteres",
+   "file": "models/arteres/splenic_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     3.9,
+     1077.2,
+     83.5
+    ],
+    "max": [
+     96.9,
+     1101.8,
+     133.7
+    ],
+    "center": [
+     50.4,
+     1089.5,
+     108.6
+    ],
+    "size": [
+     93.0,
+     24.7,
+     50.2
+    ]
+   }
+  },
+  {
+   "id": "gallbladder",
+   "role": "sujet",
+   "nom_fr": "Vésicule biliaire",
+   "name_en": "Gallbladder",
+   "system": "organes",
+   "file": "models/organes/gallbladder.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -62.5,
+     1048.1,
+     130.2
+    ],
+    "max": [
+     -26.9,
+     1091.8,
+     175.5
+    ],
+    "center": [
+     -44.7,
+     1070.0,
+     152.8
+    ],
+    "size": [
+     35.6,
+     43.7,
+     45.3
+    ]
+   }
+  },
+  {
+   "id": "bile_duct",
+   "role": "sujet",
+   "nom_fr": "Canal biliaire",
+   "name_en": "Bile duct",
+   "system": "organes",
+   "file": "models/organes/bile_duct.glb",
+   "couleur": "#c97b84",
+   "bounds": {
+    "min": [
+     -57.7,
+     1021.9,
+     126.8
+    ],
+    "max": [
+     -13.2,
+     1095.7,
+     138.0
+    ],
+    "center": [
+     -35.5,
+     1058.8,
+     132.4
+    ],
+    "size": [
+     44.4,
+     73.8,
+     11.2
+    ]
+   }
+  },
+  {
+   "id": "cystic_node",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud cystique",
+   "name_en": "Cystic node",
+   "system": "lymphatique",
+   "file": "models/lymphatique/cystic_node.glb",
+   "couleur": "#7fae5c",
+   "bounds": {
+    "min": [
+     -24.1,
+     1090.7,
+     135.0
+    ],
+    "max": [
+     -21.6,
+     1093.3,
+     137.4
+    ],
+    "center": [
+     -22.9,
+     1092.0,
+     136.2
+    ],
+    "size": [
+     2.5,
+     2.6,
+     2.4
+    ]
+   }
+  },
+  {
+   "id": "left_medial_segment_of_liver_iv",
+   "role": "rapport",
+   "nom_fr": "Segment médial gauche du foie (IV)",
+   "name_en": "Left medial segment of liver (IV)",
+   "system": "organes",
+   "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -45.8,
+     1059.7,
+     122.7
+    ],
+    "max": [
+     10.2,
+     1186.3,
+     192.5
+    ],
+    "center": [
+     -17.8,
+     1123.0,
+     157.6
+    ],
+    "size": [
+     56.0,
+     126.5,
+     69.9
+    ]
+   },
+   "couleur_presentation": "#7fb069",
+   "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+  },
+  {
+   "id": "anterior_medial_segment_of_liver_v",
+   "role": "rapport",
+   "nom_fr": "Segment antéromédial droit du foie (V)",
+   "name_en": "Anterior medial segment of liver (V)",
+   "system": "organes",
+   "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -102.1,
+     1044.3,
+     110.0
+    ],
+    "max": [
+     -27.5,
+     1118.0,
+     188.5
+    ],
+    "center": [
+     -64.8,
+     1081.1,
+     149.3
+    ],
+    "size": [
+     74.6,
+     73.7,
+     78.4
+    ]
+   },
+   "couleur_presentation": "#4f9da6",
+   "fiche_fr": "Segment V — segment antéro-inférieur du secteur antérieur droit, au contact de la fossette cystique et de la vésicule biliaire. Vascularisation porte : branche antérieure de la branche droite. Drainage sus-hépatique par les veines des scissures principale et droite."
+  },
+  {
+   "id": "inferior_vena_cava_abdominal_part",
+   "role": "sujet",
+   "nom_fr": "Veine cave inférieure (partie abdominale)",
+   "name_en": "Inferior vena cava (abdominal part)",
+   "system": "veines",
+   "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -18.7,
+     962.9,
+     105.3
+    ],
+    "max": [
+     -0.5,
+     1106.8,
+     132.4
+    ],
+    "center": [
+     -9.6,
+     1034.8,
+     118.9
+    ],
+    "size": [
+     18.2,
+     143.8,
+     27.1
+    ]
+   }
+  },
+  {
+   "id": "lesser_omentum",
+   "role": "sujet",
+   "nom_fr": "Petit omentum",
+   "name_en": "Lesser omentum",
+   "system": "organes",
+   "file": "models/organes/lesser_omentum.glb",
+   "couleur": "#c97b84",
+   "bounds": {
+    "min": [
+     -34.3,
+     1074.8,
+     115.7
+    ],
+    "max": [
+     24.7,
+     1133.2,
+     175.8
+    ],
+    "center": [
+     -4.8,
+     1104.0,
+     145.7
+    ],
+    "size": [
+     58.9,
+     58.4,
+     60.1
+    ]
+   }
+  },
+  {
+   "id": "abdominal_aorta",
+   "role": "rapport",
+   "nom_fr": "Aorte abdominale",
+   "name_en": "Abdominal aorta",
+   "system": "arteres",
+   "file": "models/arteres/abdominal_aorta.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -4.0,
+     960.9,
+     82.0
+    ],
+    "max": [
+     18.5,
+     1143.8,
+     138.0
+    ],
+    "center": [
+     7.2,
+     1052.4,
+     110.0
+    ],
+    "size": [
+     22.5,
+     182.9,
+     56.0
+    ]
+   }
+  },
+  {
+   "id": "stomach",
+   "role": "sujet",
+   "nom_fr": "Estomac",
+   "name_en": "Stomach",
+   "system": "organes",
+   "file": "models/organes/stomach.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -28.5,
+     1036.3,
+     84.5
+    ],
+    "max": [
+     103.3,
+     1162.5,
+     183.4
+    ],
+    "center": [
+     37.4,
+     1099.4,
+     134.0
+    ],
+    "size": [
+     131.8,
+     126.2,
+     98.9
+    ]
+   }
+  },
+  {
+   "id": "kidney_right",
+   "role": "sujet",
+   "nom_fr": "Rein droit",
+   "name_en": "Right kidney",
+   "system": "organes",
+   "file": "models/organes/kidney_right.glb",
+   "couleur": "#7a3b2e",
+   "bounds": {
+    "min": [
+     -87.6,
+     966.8,
+     64.7
+    ],
+    "max": [
+     -30.4,
+     1071.2,
+     111.9
+    ],
+    "center": [
+     -59.0,
+     1019.0,
+     88.3
+    ],
+    "size": [
+     57.1,
+     104.4,
+     47.2
+    ]
+   }
+  }
+ ],
+ "camera": {
+  "preset_par_figure": {
+   "75": "anterieure",
+   "76": "anterieure",
+   "77": "anterieure",
+   "78": "superieure",
+   "79": "anterieure"
+  },
+  "defaut": "anterieure"
+ },
+ "diagram": {
+  "75": "porte",
+  "77": "biliaire"
+ },
+ "espaces": [],
+ "note_integration": "Scène de staging — IDs issus de FIGURES-AUDIT.json uniquement ; GLB résolus via proto-schemas/manifest.json."
+}

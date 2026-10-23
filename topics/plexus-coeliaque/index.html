@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figure 7 — Constitution du plexus cœliaque · Schéma interactif</title>
+<style>
+:root{--sans:-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 800px at 60% 20%,#0b1526,#060b14);color:#e8eef7;font-family:var(--sans);padding:14px 12px 26px}
+header{max-width:680px;margin:0 auto 6px}
+.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#f0a13c;font-weight:700}
+h1{font-size:19px;line-height:1.3;margin:3px 0 2px}
+.sub{font-size:12.5px;color:#9db1cc}
+.hint{max-width:680px;margin:8px auto;font-size:12.5px;color:#9db1cc}
+#wrap{max-width:680px;margin:0 auto}
+#schemasvg{display:block;width:100%;height:auto}
+.pnode{cursor:pointer}
+.pnode rect{stroke-width:1.5;transition:opacity .2s}
+.pnode text{fill:#e8eef7;font-size:11px;text-anchor:middle;pointer-events:none;font-family:var(--sans)}
+.pnode.dim,.pedge.dim{opacity:.1}
+.pnode.lit rect{stroke:#fff;stroke-width:2.5}
+.pnode.lit circle{stroke:#fff;stroke-width:2.5}
+.pedge{fill:none;stroke:#5b7ba6;stroke-width:1.6}
+.pedge.dash{stroke-dasharray:5 4}
+.pedge.lit{stroke:#f0b429;stroke-width:3}
+#schemacap{margin:10px auto;padding:10px 12px;max-width:680px;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:10px;font-size:13.5px;line-height:1.5;min-height:58px}
+#schemalegend{display:flex;flex-wrap:wrap;gap:6px 12px;max-width:680px;margin:0 auto;font-size:11px;color:#9db1cc}
+#schemalegend .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.fiche{max-width:680px;margin:16px auto 0;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+.fiche h2{font-size:14px;margin-bottom:8px;color:#f0a13c}
+.fiche dl div{margin-bottom:8px}
+.fiche dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9db1cc;font-weight:700}
+.fiche dd{font-size:13.5px;line-height:1.55;margin-top:2px}
+.note{max-width:680px;margin:12px auto 0;font-size:11.5px;color:#7e93b5;line-height:1.5}
+</style></head><body>
+<header><div class="kicker">Atlas 3D · Sujets du cours · Schéma interactif</div>
+<h1>Figure 7 — Constitution du plexus cœliaque</h1>
+<div class="sub">[3D+D] : scène 3D de contexte + schéma interactif — schéma de la voie (le trajet n'existe pas comme maillage 3D continu : voir la scène 3D associée pour les structures qui existent)</div></header>
+<p class="hint">Touchez un nœud : tout son trajet (en amont et en aval) s'illumine et sa fiche s'affiche. Touchez le fond pour tout réafficher.</p>
+<div id="wrap"><svg id="schemasvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="schemacap"></div>
+<div id="schemalegend"></div>
+<section class="fiche"><h2>Fiche de la voie</h2><dl>
+<div><dt>Origine</dt><dd>Branches afférentes : nerfs grand splanchnique (6e au 9e ganglion sympathique thoracique), petit splanchnique (10e et 11e, en 3 branches), splanchnique inférieur (12e) ; fibres parasympathiques du nerf vague droit ; filets abdominaux des nerfs phréniques ; fibres sensitives viscérales gagnant la corne latérale de la moelle.</dd></div>
+<div><dt>Relais</dt><dd>Ganglions semi-lunaires (en croissant, de part et d'autre du tronc cœliaque : corps, corne latérale — terminaison du grand splanchnique — et corne médiale — terminaison du vague droit), ganglions mésentériques supérieurs et ganglions aortico-rénaux, réunis par des filets nerveux.</dd></div>
+<div><dt>Décussation</dt><dd>Sans objet : plexus végétatif prévertébral médian et bilatéral, situé dans l'espace rétro-péritonéal (région cœliaque de Luschka), autour du tronc cœliaque, en arrière de l'arrière-cavité des épiploons et du péritoine pariétal, en avant de l'aorte et des piliers du diaphragme (T12-L1).</dd></div>
+<div><dt>Terminaison</dt><dd>Branches efférentes suivant les collatérales de l'aorte abdominale : plexus diaphragmatique inférieur, plexus cœliaque propre (coronaire stomachique, hépatique, splénique), mésentérique supérieur, surrénalien, rénal, spermatique ou ovarien, mésentérique inférieur — contingent sympathique et vagal de tous les viscères abdominaux.</dd></div>
+<div><dt>Clinique</dt><dd>Intérêt thérapeutique (conclusion du cours, Q3) : section ou alcoolisation des nerfs splanchniques dans le cancer du pancréas (traitement palliatif de la douleur) ; vagotomie tronculaire dans le traitement des ulcères gastro-duodénaux (traitement curatif).</dd></div>
+</dl></section>
+<p class="note">Source du schéma : texte du programme FMPR (partie I) — aucun relais inventé. Limites 3D vérifiées à l'audit : Plexus cœliaque lui-même : AUCUN maillage (pas d'entrée 'celiac plexus') Ganglions cœliaques / semi-lunaires : ABSENTS Nerfs grand et petit splanchniques : ABSENTS Plexus rénaux, mésentérique supérieur, aortique : non modélisés → la constitution du plexus est un schéma ; la scène 3D ne fournit que le décor (aorte, tronc cœliaque, diaphragme, troncs sympathiques, vagues)</p>
+<script>
+const D = {"titre_fr": "Constitution du plexus cœliaque (plexus solaire)", "titre_en": "Constitution of the coeliac (solar) plexus", "w": 720, "h": 1020, "levels": {"aff": {"c": "#00897b", "fr": "Afférence", "en": "Afferent branch"}, "gangl": {"c": "#00838f", "fr": "Ganglion / relais", "en": "Ganglion / relay"}, "eff": {"c": "#ad1457", "fr": "Efférence / plexus secondaire", "en": "Efferent / secondary plexus"}, "note": {"c": "#757575", "fr": "Note du cours", "en": "Course note"}}, "nodes": [{"id": "grand_splanch", "x": 200, "y": 95, "w": 270, "label": "Grands splanchniques", "sub": "T6 à T9 — sympathique", "label_en": "Greater splanchnic nerves", "sub_en": "T6 to T9 — sympathetic", "lvl": "aff", "desc": {"fr": "Les nerfs grands splanchniques naissent des 6e au 9e ganglions sympathiques thoraciques et se terminent sur la corne latérale des ganglions semi-lunaires.", "en": "The greater splanchnic nerves arise from the 6th to 9th thoracic sympathetic ganglia and end on the lateral horn of the semilunar ganglia."}}, {"id": "petit_splanch", "x": 520, "y": 95, "w": 270, "label": "Petits splanchniques", "sub": "T10, T11 — sympathique, 3 branches", "label_en": "Lesser splanchnic nerves", "sub_en": "T10, T11 — sympathetic, 3 branches", "lvl": "aff", "desc": {"fr": "Les nerfs petits splanchniques naissent des 10e et 11e ganglions sympathiques thoraciques et se terminent en 3 branches destinées au corps des ganglions semi-lunaires, aux ganglions mésentériques supérieurs et aux ganglions aortico-rénaux.", "en": "The lesser splanchnic nerves arise from the 10th and 11th thoracic sympathetic ganglia and end in 3 branches to the body of the semilunar ganglia, the superior mesenteric ganglia and the aorticorenal ganglia."}}, {"id": "splanch_inf", "x": 150, "y": 235, "w": 190, "label": "Splanchniques inférieurs", "sub": "T12 — sympathique", "label_en": "Least splanchnic nerves", "sub_en": "T12 — sympathetic", "lvl": "aff", "desc": {"fr": "Les nerfs splanchniques inférieurs naissent du 12e ganglion sympathique thoracique et se jettent dans les ganglions aortico-rénaux.", "en": "The least splanchnic nerves arise from the 12th thoracic sympathetic ganglion and join the aorticorenal ganglia."}}, {"id": "vague_droit", "x": 375, "y": 235, "w": 210, "label": "Nerf vague droit (X)", "sub": "parasympathique — 2 branches", "label_en": "Right vagus nerve (X)", "sub_en": "parasympathetic — 2 branches", "lvl": "aff", "desc": {"fr": "Les fibres parasympathiques proviennent du nerf vague droit, qui se divise en 2 branches principales rejoignant les cornes médiales des ganglions semi-lunaires.", "en": "The parasympathetic fibres come from the right vagus nerve, which divides into 2 main branches joining the medial horns of the semilunar ganglia."}}, {"id": "phreniques", "x": 600, "y": 235, "w": 190, "label": "Nerfs phréniques", "sub": "filets par leurs branches abdominales", "label_en": "Phrenic nerves", "sub_en": "twigs through their abdominal branches", "lvl": "aff", "desc": {"fr": "Les nerfs phréniques envoient également, par leurs branches abdominales, des filets nerveux au plexus solaire.", "en": "The phrenic nerves also send nerve twigs to the solar plexus through their abdominal branches."}}, {"id": "gg_semilunaires", "x": 165, "y": 420, "w": 240, "label": "Ganglions semi-lunaires", "sub": "croissant à concavité sup. — de part et d'autre du tronc cœliaque", "label_en": "Semilunar ganglia", "sub_en": "crescent, concavity upward — on either side of the coeliac trunk", "lvl": "gangl", "desc": {"fr": "Ganglions en forme de croissant à concavité supérieure, situés de part et d'autre du tronc cœliaque ; ils comportent un corps, une corne latérale (arrivée des grands splanchniques) et une corne médiale (arrivée du vague droit).", "en": "Crescent-shaped ganglia with an upward concavity, lying on either side of the coeliac trunk; each has a body, a lateral horn (receiving the greater splanchnic nerves) and a medial horn (receiving the right vagus)."}}, {"id": "gg_mesent_sup", "x": 395, "y": 420, "w": 200, "label": "Ganglions mésentériques supérieurs", "sub": "de part et d'autre de l'origine de l'artère mésentérique sup.", "label_en": "Superior mesenteric ganglia", "sub_en": "on either side of the origin of the superior mesenteric artery", "lvl": "gangl", "desc": {"fr": "Ganglions situés de part et d'autre de l'origine de l'artère mésentérique supérieure, recevant une branche des petits splanchniques.", "en": "Ganglia lying on either side of the origin of the superior mesenteric artery, receiving a branch of the lesser splanchnic nerves."}}, {"id": "gg_aorticorenaux", "x": 605, "y": 420, "w": 190, "label": "Ganglions aortico-rénaux", "sub": "en avant de l'origine des artères rénales", "label_en": "Aorticorenal ganglia", "sub_en": "in front of the origin of the renal arteries", "lvl": "gangl", "desc": {"fr": "Ganglions situés en avant de l'origine des artères rénales ; ils reçoivent les petits splanchniques et les splanchniques inférieurs (T12).", "en": "Ganglia lying in front of the origin of the renal arteries; they receive the lesser splanchnic nerves and the least splanchnic nerves (T12)."}}, {"id": "plexus_propre", "x": 300, "y": 585, "w": 300, "label": "Plexus cœliaque propre", "sub": "se divise en 3 sous-plexus le long des branches du tronc cœliaque", "label_en": "Coeliac plexus proper", "sub_en": "divides into 3 sub-plexuses along the coeliac branches", "lvl": "eff", "desc": {"fr": "Les branches efférentes accompagnent toutes les branches collatérales de l'aorte abdominale et apportent le contingent sympathique et vagal aux viscères abdominaux sous forme de plexus secondaires ; le plexus cœliaque propre se divise en 3 sous-plexus.", "en": "The efferent branches follow all the collateral branches of the abdominal aorta and carry the sympathetic and vagal contingent to the abdominal viscera as secondary plexuses; the coeliac plexus proper divides into 3 sub-plexuses."}}, {"id": "diaph_inf", "x": 600, "y": 585, "w": 210, "label": "Plexus diaphragmatique inférieur", "sub": "coupole diaphragmatique", "label_en": "Inferior phrenic plexus", "sub_en": "diaphragmatic cupola", "lvl": "eff", "desc": {"fr": "Plexus secondaire destiné à la coupole diaphragmatique.", "en": "Secondary plexus supplying the diaphragmatic cupola."}}, {"id": "coronaire", "x": 105, "y": 745, "w": 170, "label": "Plexus coronaire stomachique", "sub": "estomac", "label_en": "Left gastric (coronary) plexus", "sub_en": "stomach", "lvl": "eff", "desc": {"fr": "Sous-plexus du plexus cœliaque destiné à l'estomac, le long de l'artère coronaire stomachique.", "en": "Sub-plexus of the coeliac plexus supplying the stomach, along the left gastric (coronary) artery."}}, {"id": "hepatique", "x": 285, "y": 745, "w": 170, "label": "Plexus hépatique", "sub": "foie, veine porte, voies biliaires", "label_en": "Hepatic plexus", "sub_en": "liver, portal vein, biliary tract", "lvl": "eff", "desc": {"fr": "Sous-plexus du plexus cœliaque destiné au foie, à la veine porte et aux voies biliaires.", "en": "Sub-plexus of the coeliac plexus supplying the liver, the portal vein and the biliary tract."}}, {"id": "splenique", "x": 455, "y": 745, "w": 160, "label": "Plexus splénique", "sub": "rate, pancréas, duodénum", "label_en": "Splenic plexus", "sub_en": "spleen, pancreas, duodenum", "lvl": "eff", "desc": {"fr": "Sous-plexus du plexus cœliaque destiné à la rate, au pancréas et au duodénum, le long de l'artère splénique.", "en": "Sub-plexus of the coeliac plexus supplying the spleen, pancreas and duodenum, along the splenic artery."}}, {"id": "mesent_sup_plx", "x": 100, "y": 900, "w": 160, "label": "Plexus mésentérique supérieur", "sub": "anses grêles, côlon droit, pancréas gauche", "label_en": "Superior mesenteric plexus", "sub_en": "small bowel, right colon, left pancreas", "lvl": "eff", "desc": {"fr": "Plexus secondaire destiné au pancréas gauche, aux anses grêles et au côlon droit, le long de l'artère mésentérique supérieure.", "en": "Secondary plexus supplying the left pancreas, the small-bowel loops and the right colon, along the superior mesenteric artery."}}, {"id": "surrenalien", "x": 255, "y": 900, "w": 140, "label": "Plexus surrénalien", "sub": "glandes surrénales, partie sup. des uretères", "label_en": "Suprarenal plexus", "sub_en": "suprarenal glands, upper part of the ureters", "lvl": "eff", "desc": {"fr": "Plexus secondaire destiné aux glandes surrénales et à la partie supérieure des uretères.", "en": "Secondary plexus supplying the suprarenal glands and the upper part of the ureters."}}, {"id": "renal", "x": 390, "y": 900, "w": 120, "label": "Plexus rénal", "sub": "reins", "label_en": "Renal plexus", "sub_en": "kidneys", "lvl": "eff", "desc": {"fr": "Plexus secondaire destiné aux reins, le long des artères rénales, à partir des ganglions aortico-rénaux.", "en": "Secondary plexus supplying the kidneys, along the renal arteries, from the aorticorenal ganglia."}}, {"id": "spermatique", "x": 520, "y": 900, "w": 140, "label": "Plexus spermatique / ovarien", "sub": "testicules / annexes", "label_en": "Testicular / ovarian plexus", "sub_en": "testes / adnexa", "lvl": "eff", "desc": {"fr": "Plexus secondaire destiné aux testicules chez l'homme et aux annexes chez la femme, le long des vaisseaux gonadiques.", "en": "Secondary plexus supplying the testes in the male and the adnexa in the female, along the gonadal vessels."}}, {"id": "mesent_inf", "x": 655, "y": 900, "w": 120, "label": "Plexus mésentérique inférieur", "sub": "côlon gauche, partie sup. du rectum", "label_en": "Inferior mesenteric plexus", "sub_en": "left colon, upper part of the rectum", "lvl": "eff", "desc": {"fr": "Plexus secondaire destiné au côlon gauche et à la partie supérieure du rectum, le long de l'artère mésentérique inférieure.", "en": "Secondary plexus supplying the left colon and the upper part of the rectum, along the inferior mesenteric artery."}}, {"id": "fibres_sensitives", "x": 625, "y": 745, "w": 170, "label": "Fibres sensitives viscérales", "sub": "paroi des organes → corne latérale de la moelle", "label_en": "Visceral sensory fibres", "sub_en": "organ walls → lateral horn of the cord", "lvl": "note", "desc": {"fr": "Les fibres sensitives proviennent de la paroi des différents organes, traversent les plexus ganglionnaires et se terminent au niveau de la corne latérale de la moelle épinière.", "en": "Sensory fibres arise from the walls of the various organs, cross the ganglionic plexuses and end in the lateral horn of the spinal cord."}}], "edges": [["grand_splanch", "gg_semilunaires"], ["petit_splanch", "gg_semilunaires"], ["petit_splanch", "gg_mesent_sup", 1], ["petit_splanch", "gg_aorticorenaux", 1], ["splanch_inf", "gg_aorticorenaux"], ["vague_droit", "gg_semilunaires"], ["phreniques", "gg_semilunaires", 1], ["gg_semilunaires", "plexus_propre"], ["gg_semilunaires", "diaph_inf", 1], ["plexus_propre", "coronaire"], ["plexus_propre", "hepatique"], ["plexus_propre", "splenique"], ["gg_mesent_sup", "mesent_sup_plx"], ["gg_aorticorenaux", "renal"], ["gg_aorticorenaux", "surrenalien", 1], ["gg_aorticorenaux", "spermatique", 1], ["gg_semilunaires", "mesent_inf", 1]]};
+const lang = 'fr';
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('schemasvg');
+function edgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return 'M ' + x1 + ' ' + a.y + ' C ' + (x1+dx) + ' ' + a.y + ', ' + (x2-dx) + ' ' + b.y + ', ' + x2 + ' ' + b.y;
+}
+const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+svg.setAttribute('viewBox', '0 0 ' + D.w + ' ' + D.h);
+D.edges.forEach(function(e){
+  const p = document.createElementNS(NS, 'path');
+  p.setAttribute('d', edgePath(byId[e[0]], byId[e[1]]));
+  p.setAttribute('class', 'pedge' + (e[2] ? ' dash' : ''));
+  p.dataset.from = e[0]; p.dataset.to = e[1];
+  svg.appendChild(p);
+});
+D.nodes.forEach(function(n){
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+  const col = D.levels[n.lvl].c;
+  if (n.r){
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+    c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+    g.appendChild(c);
+    const tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+    tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+    tx.textContent = n.label; g.appendChild(tx);
+  } else {
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+    r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+    r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+    g.appendChild(r);
+    const t1 = document.createElementNS(NS, 'text');
+    t1.setAttribute('x', n.x); t1.setAttribute('y', n.sub ? n.y - 2 : n.y + 4);
+    t1.textContent = n.label; g.appendChild(t1);
+    if (n.sub){
+      const t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+      t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+      t2.textContent = n.sub; g.appendChild(t2);
+    }
+    if (n.note){
+      const t3 = document.createElementNS(NS, 'text');
+      t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+      t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+      t3.textContent = n.note.fr; g.appendChild(t3);
+    }
+  }
+  g.addEventListener('click', function(ev){ ev.stopPropagation(); trace(n.id); });
+  svg.appendChild(g);
+});
+const leg = document.getElementById('schemalegend');
+Object.values(D.levels).forEach(function(l){
+  const s = document.createElement('span');
+  s.innerHTML = '<span class="sw" style="background:' + l.c + '"></span>' + l.fr;
+  leg.appendChild(s);
+});
+function chain(id){
+  const down = {}, up = {};
+  D.edges.forEach(function(e){ (down[e[0]] = down[e[0]] || []).push(e[1]); (up[e[1]] = up[e[1]] || []).push(e[0]); });
+  const set = new Set([id]);
+  let stack = [id];
+  while (stack.length){ const c = stack.pop(); (down[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  stack = [id];
+  while (stack.length){ const c = stack.pop(); (up[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  return set;
+}
+function trace(id){
+  const set = chain(id);
+  svg.querySelectorAll('.pnode').forEach(function(g){
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  svg.querySelectorAll('.pedge').forEach(function(p){
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const node = byId[id];
+  document.getElementById('schemacap').textContent = node.desc.fr;
+}
+function reset(){
+  svg.querySelectorAll('.pnode,.pedge').forEach(function(el){ el.classList.remove('lit', 'dim'); });
+  document.getElementById('schemacap').textContent = 'Touchez un nœud du schéma pour illuminer son trajet complet et lire sa fiche.';
+}
+svg.addEventListener('click', reset);
+reset();
+window.__h1test = { trace: trace, reset: reset,
+  lit: function(){ return [...svg.querySelectorAll('.pnode.lit')].map(g=>g.dataset.id); } };
+</script><a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body></html>

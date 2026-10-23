@@ -1,0 +1,556 @@
+{
+ "batch": "B",
+ "partie": "II",
+ "sujet": "nerf-sciatique",
+ "titre_fr": "Nerf sciatique",
+ "titre_en": "Sciatic nerve",
+ "figures": [
+  {
+   "numero": 34,
+   "titre_fr": "Nerf sciatique : origine, trajet et terminaison",
+   "titre_en": "Sciatic nerve: origin, course and termination",
+   "classe": "3D",
+   "vue": "posterieure",
+   "vue_audit": "postérieure (fesse → cuisse → fosse poplitée)",
+   "camera": {
+    "vue": "posterieure",
+    "position": [
+     -73.0,
+     646.0,
+     -1740.9
+    ],
+    "target": [
+     -73.0,
+     464.4,
+     74.2
+    ]
+   },
+   "systemes": [
+    "nerfs",
+    "muscles",
+    "squelette"
+   ],
+   "structures": [
+    {
+     "id": "sciatic_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf sciatique",
+     "name_en": "Right sciatic nerve",
+     "name_la": "Nervus ischiadicus",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/sciatic_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -78.7,
+       469.3,
+       32.6
+      ],
+      "max": [
+       -16.3,
+       910.1,
+       84.8
+      ],
+      "center": [
+       -47.5,
+       689.7,
+       58.7
+      ],
+      "size": [
+       62.4,
+       440.8,
+       52.2
+      ]
+     }
+    },
+    {
+     "id": "tibial_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf tibial",
+     "name_en": "Right tibial nerve",
+     "name_la": "Nervus tibialis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/tibial_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -94.7,
+       -15.6,
+       38.1
+      ],
+      "max": [
+       -55.6,
+       470.1,
+       64.5
+      ],
+      "center": [
+       -75.2,
+       227.3,
+       51.3
+      ],
+      "size": [
+       39.1,
+       485.6,
+       26.4
+      ]
+     }
+    },
+    {
+     "id": "common_fibular_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fibulaire commun",
+     "name_en": "Right common fibular nerve",
+     "name_la": "Nervus fibularis communis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/common_fibular_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -121.3,
+       313.7,
+       42.1
+      ],
+      "max": [
+       -75.0,
+       469.8,
+       63.1
+      ],
+      "center": [
+       -98.2,
+       391.8,
+       52.6
+      ],
+      "size": [
+       46.3,
+       156.1,
+       21.0
+      ]
+     }
+    },
+    {
+     "id": "piriformis_fascia_right",
+     "role": "contexte",
+     "nom_fr": "Fascia du muscle piriforme",
+     "name_en": "Right piriformis fascia",
+     "name_la": "Fascia musculi piriformis",
+     "systeme": "fascias",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/piriformis_fascia_right.glb",
+     "bounds": {
+      "min": [
+       -132.1,
+       787.0,
+       30.3
+      ],
+      "max": [
+       -23.3,
+       851.4,
+       86.4
+      ],
+      "center": [
+       -77.7,
+       819.2,
+       58.3
+      ],
+      "size": [
+       108.8,
+       64.4,
+       56.2
+      ]
+     }
+    },
+    {
+     "id": "gluteus_maximus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle grand fessier",
+     "name_en": "Right gluteus maximus muscle",
+     "name_la": "Musculus gluteus maximus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/gluteus_maximus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -144.5,
+       640.2,
+       -5.1
+      ],
+      "max": [
+       -1.6,
+       911.2,
+       86.0
+      ],
+      "center": [
+       -73.0,
+       775.7,
+       40.5
+      ],
+      "size": [
+       142.8,
+       271.0,
+       91.1
+      ]
+     }
+    },
+    {
+     "id": "rep_greater_sciatic_foramen_right",
+     "role": "contexte",
+     "nom_fr": "Grand foramen sciatique",
+     "name_en": "Right greater sciatic foramen",
+     "name_la": "Foramen ischiadicum majus",
+     "systeme": "reperes",
+     "couleur": "#dd8a2e",
+     "file": "models-reperes/greater_sciatic_foramen_right.glb",
+     "bounds": {
+      "min": [
+       -45.7,
+       823.4,
+       43.0
+      ],
+      "max": [
+       -32.5,
+       824.5,
+       54.6
+      ],
+      "center": [
+       -39.1,
+       824.0,
+       48.8
+      ],
+      "size": [
+       13.1,
+       1.1,
+       11.6
+      ]
+     }
+    },
+    {
+     "id": "biceps_femoris_right",
+     "role": "contexte",
+     "nom_fr": "Biceps fémoral droit",
+     "name_en": "Right biceps femoris",
+     "name_la": null,
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/biceps_femoris_right.glb",
+     "bounds": {
+      "min": [
+       -126.3,
+       323.5,
+       28.1
+      ],
+      "max": [
+       -49.5,
+       751.3,
+       86.7
+      ],
+      "center": [
+       -87.9,
+       537.4,
+       57.4
+      ],
+      "size": [
+       76.9,
+       427.7,
+       58.6
+      ]
+     }
+    },
+    {
+     "id": "hip_bone_right",
+     "role": "ghost",
+     "nom_fr": "Os coxal",
+     "name_en": "Right hip bone",
+     "name_la": "Os coxae",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/hip_bone_right.glb",
+     "bounds": {
+      "min": [
+       -132.8,
+       728.3,
+       18.5
+      ],
+      "max": [
+       -3.2,
+       944.5,
+       153.6
+      ],
+      "center": [
+       -68.0,
+       836.4,
+       86.1
+      ],
+      "size": [
+       129.6,
+       216.2,
+       135.1
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": []
+  }
+ ],
+ "structures_toutes": [
+  {
+   "id": "common_fibular_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf fibulaire commun",
+   "name_en": "Right common fibular nerve",
+   "name_la": "Nervus fibularis communis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/common_fibular_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -121.3,
+     313.7,
+     42.1
+    ],
+    "max": [
+     -75.0,
+     469.8,
+     63.1
+    ],
+    "center": [
+     -98.2,
+     391.8,
+     52.6
+    ],
+    "size": [
+     46.3,
+     156.1,
+     21.0
+    ]
+   }
+  },
+  {
+   "id": "sciatic_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf sciatique",
+   "name_en": "Right sciatic nerve",
+   "name_la": "Nervus ischiadicus",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/sciatic_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -78.7,
+     469.3,
+     32.6
+    ],
+    "max": [
+     -16.3,
+     910.1,
+     84.8
+    ],
+    "center": [
+     -47.5,
+     689.7,
+     58.7
+    ],
+    "size": [
+     62.4,
+     440.8,
+     52.2
+    ]
+   }
+  },
+  {
+   "id": "tibial_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf tibial",
+   "name_en": "Right tibial nerve",
+   "name_la": "Nervus tibialis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/tibial_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -94.7,
+     -15.6,
+     38.1
+    ],
+    "max": [
+     -55.6,
+     470.1,
+     64.5
+    ],
+    "center": [
+     -75.2,
+     227.3,
+     51.3
+    ],
+    "size": [
+     39.1,
+     485.6,
+     26.4
+    ]
+   }
+  },
+  {
+   "id": "biceps_femoris_right",
+   "role": "contexte",
+   "nom_fr": "Biceps fémoral droit",
+   "name_en": "Right biceps femoris",
+   "name_la": null,
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/biceps_femoris_right.glb",
+   "bounds": {
+    "min": [
+     -126.3,
+     323.5,
+     28.1
+    ],
+    "max": [
+     -49.5,
+     751.3,
+     86.7
+    ],
+    "center": [
+     -87.9,
+     537.4,
+     57.4
+    ],
+    "size": [
+     76.9,
+     427.7,
+     58.6
+    ]
+   }
+  },
+  {
+   "id": "piriformis_fascia_right",
+   "role": "contexte",
+   "nom_fr": "Fascia du muscle piriforme",
+   "name_en": "Right piriformis fascia",
+   "name_la": "Fascia musculi piriformis",
+   "systeme": "fascias",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/piriformis_fascia_right.glb",
+   "bounds": {
+    "min": [
+     -132.1,
+     787.0,
+     30.3
+    ],
+    "max": [
+     -23.3,
+     851.4,
+     86.4
+    ],
+    "center": [
+     -77.7,
+     819.2,
+     58.3
+    ],
+    "size": [
+     108.8,
+     64.4,
+     56.2
+    ]
+   }
+  },
+  {
+   "id": "rep_greater_sciatic_foramen_right",
+   "role": "contexte",
+   "nom_fr": "Grand foramen sciatique",
+   "name_en": "Right greater sciatic foramen",
+   "name_la": "Foramen ischiadicum majus",
+   "systeme": "reperes",
+   "couleur": "#dd8a2e",
+   "file": "models-reperes/greater_sciatic_foramen_right.glb",
+   "bounds": {
+    "min": [
+     -45.7,
+     823.4,
+     43.0
+    ],
+    "max": [
+     -32.5,
+     824.5,
+     54.6
+    ],
+    "center": [
+     -39.1,
+     824.0,
+     48.8
+    ],
+    "size": [
+     13.1,
+     1.1,
+     11.6
+    ]
+   }
+  },
+  {
+   "id": "gluteus_maximus_muscle_right",
+   "role": "contexte",
+   "nom_fr": "Muscle grand fessier",
+   "name_en": "Right gluteus maximus muscle",
+   "name_la": "Musculus gluteus maximus",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/gluteus_maximus_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -144.5,
+     640.2,
+     -5.1
+    ],
+    "max": [
+     -1.6,
+     911.2,
+     86.0
+    ],
+    "center": [
+     -73.0,
+     775.7,
+     40.5
+    ],
+    "size": [
+     142.8,
+     271.0,
+     91.1
+    ]
+   }
+  },
+  {
+   "id": "hip_bone_right",
+   "role": "ghost",
+   "nom_fr": "Os coxal",
+   "name_en": "Right hip bone",
+   "name_la": "Os coxae",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/hip_bone_right.glb",
+   "bounds": {
+    "min": [
+     -132.8,
+     728.3,
+     18.5
+    ],
+    "max": [
+     -3.2,
+     944.5,
+     153.6
+    ],
+    "center": [
+     -68.0,
+     836.4,
+     86.1
+    ],
+    "size": [
+     129.6,
+     216.2,
+     135.1
+    ]
+   }
+  }
+ ],
+ "diagrams": {},
+ "source": "data/FIGURES-AUDIT.json + proto-schemas/manifest.json + schemas-scenes/batch-B.json"
+}

@@ -1,0 +1,759 @@
+{
+ "batch": "G",
+ "topic": 36,
+ "partie": "VI",
+ "slug": "loge-thyroidienne",
+ "sujet": "La loge thyroïdienne",
+ "titre_fr": "La loge thyroïdienne",
+ "titre_en": "The thyroid compartment",
+ "classe": "3D",
+ "figures": [
+  {
+   "numero": 104,
+   "classe": "3D",
+   "titre_fr": "Parois de la loge thyroïdienne",
+   "titre_en": "Walls of the thyroid compartment",
+   "vue": "anterieure",
+   "structures": [
+    {
+     "id": "thyroid_gland",
+     "role": "sujet",
+     "nom_fr": "Glande thyroïde",
+     "name_en": "Thyroid gland",
+     "system": "organes",
+     "file": "models/organes/thyroid_gland.glb"
+    },
+    {
+     "id": "sternohyoid_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle sternohyoïdien",
+     "name_en": "Right sternohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternohyoid_muscle_right.glb"
+    },
+    {
+     "id": "sternohyoid_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle sternohyoïdien",
+     "name_en": "Left sternohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternohyoid_muscle_left.glb"
+    },
+    {
+     "id": "sternothyroid_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle sternothyroïdien",
+     "name_en": "Right sternothyroid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternothyroid_muscle_right.glb"
+    },
+    {
+     "id": "sternothyroid_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle sternothyroïdien",
+     "name_en": "Left sternothyroid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternothyroid_muscle_left.glb"
+    },
+    {
+     "id": "omohyoid_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle omohyoïdien",
+     "name_en": "Right omohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/omohyoid_muscle_right.glb"
+    },
+    {
+     "id": "omohyoid_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle omohyoïdien",
+     "name_en": "Left omohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/omohyoid_muscle_left.glb"
+    },
+    {
+     "id": "sternocleidomastoid_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle sternocléïdomastoïdien",
+     "name_en": "Right sternocleidomastoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternocleidomastoid_muscle_right.glb"
+    },
+    {
+     "id": "sternocleidomastoid_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle sternocléïdomastoïdien",
+     "name_en": "Left sternocleidomastoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternocleidomastoid_muscle_left.glb"
+    },
+    {
+     "id": "superficial_investing_cervical_fascia_right",
+     "role": "sujet",
+     "nom_fr": "Fascia engainant superficiel du cou",
+     "name_en": "Right superficial investing cervical fascia",
+     "system": "fascias",
+     "file": "models/muscles/superficial_investing_cervical_fascia_right.glb"
+    },
+    {
+     "id": "superficial_investing_cervical_fascia_left",
+     "role": "sujet",
+     "nom_fr": "Fascia engainant superficiel du cou",
+     "name_en": "Left superficial investing cervical fascia",
+     "system": "fascias",
+     "file": "models/muscles/superficial_investing_cervical_fascia_left.glb"
+    },
+    {
+     "id": "trachea",
+     "role": "sujet",
+     "nom_fr": "Trachée",
+     "name_en": "Trachea",
+     "system": "organes",
+     "file": "models/organes/trachea.glb"
+    },
+    {
+     "id": "left_common_carotid_artery",
+     "role": "contexte",
+     "nom_fr": "Artère carotide commune gauche",
+     "name_en": "Left common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/left_common_carotid_artery.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_left",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Left internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_left.glb"
+    },
+    {
+     "id": "clavicle_right",
+     "role": "ghost",
+     "nom_fr": "Clavicule",
+     "name_en": "Right clavicle",
+     "system": "squelette",
+     "file": "models/squelette/clavicle_right.glb"
+    },
+    {
+     "id": "clavicle_left",
+     "role": "ghost",
+     "nom_fr": "Clavicule",
+     "name_en": "Left clavicle",
+     "system": "squelette",
+     "file": "models/squelette/clavicle_left.glb"
+    }
+   ],
+   "manquants": [
+    "Lame prétrachérale du fascia cervical (paroi propre de la loge) : absente du manifeste — voir carte Espace « Loge thyroïdienne »",
+    "Gaine carotidienne : absente du manifeste — voir carte Espace « Gaine carotidienne »"
+   ]
+  },
+  {
+   "numero": 105,
+   "classe": "3D",
+   "titre_fr": "Configuration et rapports du corps thyroïdien",
+   "titre_en": "Configuration and relations of the thyroid gland",
+   "vue": "anterieure",
+   "vues": [
+    "anterieure",
+    "posterieure"
+   ],
+   "structures": [
+    {
+     "id": "thyroid_gland",
+     "role": "sujet",
+     "nom_fr": "Glande thyroïde",
+     "name_en": "Thyroid gland",
+     "system": "organes",
+     "file": "models/organes/thyroid_gland.glb"
+    },
+    {
+     "id": "superior_parathyroid_gland_right",
+     "role": "sujet",
+     "nom_fr": "Glande parathyroïde supérieure",
+     "name_en": "Right superior parathyroid gland",
+     "system": "organes",
+     "file": "models/organes/superior_parathyroid_gland_right.glb"
+    },
+    {
+     "id": "superior_parathyroid_gland_left",
+     "role": "sujet",
+     "nom_fr": "Glande parathyroïde supérieure",
+     "name_en": "Left superior parathyroid gland",
+     "system": "organes",
+     "file": "models/organes/superior_parathyroid_gland_left.glb"
+    },
+    {
+     "id": "inferior_parathyroid_gland_right",
+     "role": "sujet",
+     "nom_fr": "Glande parathyroïde inférieure",
+     "name_en": "Right inferior parathyroid gland",
+     "system": "organes",
+     "file": "models/organes/inferior_parathyroid_gland_right.glb"
+    },
+    {
+     "id": "inferior_parathyroid_gland_left",
+     "role": "sujet",
+     "nom_fr": "Glande parathyroïde inférieure",
+     "name_en": "Left inferior parathyroid gland",
+     "system": "organes",
+     "file": "models/organes/inferior_parathyroid_gland_left.glb"
+    },
+    {
+     "id": "trachea",
+     "role": "sujet",
+     "nom_fr": "Trachée",
+     "name_en": "Trachea",
+     "system": "organes",
+     "file": "models/organes/trachea.glb"
+    },
+    {
+     "id": "oesophagus",
+     "role": "sujet",
+     "nom_fr": "Oesophage",
+     "name_en": "Oesophagus",
+     "system": "organes",
+     "file": "models/organes/oesophagus.glb"
+    },
+    {
+     "id": "left_common_carotid_artery",
+     "role": "sujet",
+     "nom_fr": "Artère carotide commune gauche",
+     "name_en": "Left common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/left_common_carotid_artery.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_left",
+     "role": "sujet",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Left internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_left.glb"
+    },
+    {
+     "id": "vagus_nerve_x_right",
+     "role": "sujet",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Right vagus nerve (X)",
+     "system": "nerfs",
+     "file": "models/nerfs/vagus_nerve_x_right.glb"
+    },
+    {
+     "id": "vagus_nerve_x_left",
+     "role": "sujet",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Left vagus nerve (X)",
+     "system": "nerfs",
+     "file": "models/nerfs/vagus_nerve_x_left.glb"
+    },
+    {
+     "id": "inferior_thyroid_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère thyroïdienne inférieure",
+     "name_en": "Right inferior thyroid artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_thyroid_artery_right.glb"
+    },
+    {
+     "id": "inferior_thyroid_artery_left",
+     "role": "contexte",
+     "nom_fr": "Artère thyroïdienne inférieure",
+     "name_en": "Left inferior thyroid artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_thyroid_artery_left.glb"
+    },
+    {
+     "id": "vertebra_c6",
+     "role": "ghost",
+     "nom_fr": "Vertèbre C6",
+     "name_en": "Vertebra C6",
+     "system": "squelette",
+     "file": "models/squelette/vertebra_c6.glb"
+    }
+   ],
+   "manquants": [
+    "Nerfs laryngés récurrents (rapport postérieur majeur) : absents du manifeste — voir schéma interactif « Trajet des nerfs laryngés récurrents »",
+    "Lobe pyramidal (de Lalouette) : non individualisé dans le maillage de la glande"
+   ]
+  },
+  {
+   "numero": 106,
+   "classe": "3D",
+   "titre_fr": "Vascularisation artérielle et veineuse de la glande thyroïde",
+   "titre_en": "Arterial and venous supply of the thyroid gland",
+   "vue": "anterieure",
+   "structures": [
+    {
+     "id": "inferior_thyroid_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère thyroïdienne inférieure",
+     "name_en": "Right inferior thyroid artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_thyroid_artery_right.glb"
+    },
+    {
+     "id": "inferior_thyroid_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère thyroïdienne inférieure",
+     "name_en": "Left inferior thyroid artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_thyroid_artery_left.glb"
+    },
+    {
+     "id": "superior_thyroid_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine thyroïdienne supérieure",
+     "name_en": "Right superior thyroid vein",
+     "system": "veines",
+     "file": "models/veines/superior_thyroid_vein_right.glb"
+    },
+    {
+     "id": "superior_thyroid_vein_left",
+     "role": "sujet",
+     "nom_fr": "Veine thyroïdienne supérieure",
+     "name_en": "Left superior thyroid vein",
+     "system": "veines",
+     "file": "models/veines/superior_thyroid_vein_left.glb"
+    },
+    {
+     "id": "thyroid_gland",
+     "role": "sujet",
+     "nom_fr": "Glande thyroïde",
+     "name_en": "Thyroid gland",
+     "system": "organes",
+     "file": "models/organes/thyroid_gland.glb"
+    },
+    {
+     "id": "thyrocervical_trunk_right",
+     "role": "sujet",
+     "nom_fr": "Tronc thyrocervical",
+     "name_en": "Right thyrocervical trunk",
+     "system": "arteres",
+     "file": "models/arteres/thyrocervical_trunk_right.glb"
+    },
+    {
+     "id": "thyrocervical_trunk_left",
+     "role": "sujet",
+     "nom_fr": "Tronc thyrocervical",
+     "name_en": "Left thyrocervical trunk",
+     "system": "arteres",
+     "file": "models/arteres/thyrocervical_trunk_left.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_left",
+     "role": "sujet",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Left internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_left.glb"
+    },
+    {
+     "id": "external_carotid_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère carotide externe",
+     "name_en": "Right external carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/external_carotid_artery_right.glb"
+    },
+    {
+     "id": "external_carotid_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère carotide externe",
+     "name_en": "Left external carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/external_carotid_artery_left.glb"
+    },
+    {
+     "id": "left_common_carotid_artery",
+     "role": "contexte",
+     "nom_fr": "Artère carotide commune gauche",
+     "name_en": "Left common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/left_common_carotid_artery.glb"
+    },
+    {
+     "id": "right_common_carotid_artery",
+     "role": "contexte",
+     "nom_fr": "Artère carotide commune droite",
+     "name_en": "Right common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/right_common_carotid_artery.glb"
+    },
+    {
+     "id": "left_subclavian_vein",
+     "role": "contexte",
+     "nom_fr": "Veine sous-clavière gauche",
+     "name_en": "Left subclavian vein",
+     "system": "veines",
+     "file": "models/veines/left_subclavian_vein.glb"
+    }
+   ],
+   "manquants": [
+    "Artère thyroïdienne SUPÉRIEURE (1re branche de la carotide externe, vaisseau n°1 de la figure) : absente du manifeste — voir schéma « Vascularisation de la thyroïde »",
+    "Veines thyroïdiennes moyennes et inférieures : absentes (seule la supérieure existe) — voir schéma"
+   ]
+  }
+ ],
+ "camera": {
+  "vue": "anterieure",
+  "note": "Cadrage auto sur l'union des structures de la figure active (bornes du manifeste)."
+ },
+ "diagrammes": [
+  {
+   "fichier": "diagramme-recurrents.html",
+   "figures": [
+    105
+   ],
+   "titre_fr": "Trajet des nerfs laryngés récurrents",
+   "raison": "Nerfs laryngés récurrents absents du manifeste : trajet et rapports montrés en schéma interactif nommé."
+  },
+  {
+   "fichier": "diagramme-vascularisation-thyroide.html",
+   "figures": [
+    106
+   ],
+   "titre_fr": "Vascularisation de la thyroïde — schéma complet",
+   "raison": "Artère thyroïdienne supérieure et veines thyroïdiennes moyennes/inférieures absentes du manifeste : schéma complet avec statut 3D de chaque vaisseau."
+  }
+ ],
+ "espaces": [
+  {
+   "key": "loge-thyroidienne",
+   "nom_fr": "Loge thyroïdienne",
+   "nom_en": "Thyroid compartment",
+   "couleur": "#f2b134",
+   "bornes": [
+    "sternohyoid_muscle_right",
+    "sternohyoid_muscle_left",
+    "sternothyroid_muscle_right",
+    "sternothyroid_muscle_left",
+    "thyroid_gland",
+    "trachea"
+   ],
+   "desc_fr": "Espace viscéral du cou contenant la glande thyroïde, délimité par la lame prétrachérale du fascia cervical (absente du manifeste) et les muscles sous-hyoïdiens. Volume schématique délimité par les structures voisines.",
+   "desc_en": "Visceral neck compartment containing the thyroid gland, bounded by the pretracheal layer of cervical fascia (absent from the manifest) and the infrahyoid muscles. Schematic volume bounded by neighbouring structures."
+  },
+  {
+   "key": "gaine-carotidienne",
+   "nom_fr": "Gaine carotidienne",
+   "nom_en": "Carotid sheath",
+   "couleur": "#4fc3f7",
+   "bornes": [
+    "left_common_carotid_artery",
+    "right_common_carotid_artery",
+    "internal_jugular_vein_right",
+    "internal_jugular_vein_left"
+   ],
+   "desc_fr": "Conduit fascial du cou (absent du manifeste) engainant l'artère carotide commune, la veine jugulaire interne et le nerf vague (X). Volume schématique délimité par les structures voisines.",
+   "desc_en": "Fascial conduit of the neck (absent from the manifest) enclosing the common carotid artery, internal jugular vein and vagus nerve (X). Schematic volume bounded by neighbouring structures."
+  }
+ ],
+ "structures": [
+  {
+   "id": "left_common_carotid_artery",
+   "role": "sujet",
+   "nom_fr": "Artère carotide commune gauche",
+   "name_en": "Left common carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/left_common_carotid_artery.glb"
+  },
+  {
+   "id": "external_carotid_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère carotide externe",
+   "name_en": "Right external carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/external_carotid_artery_right.glb"
+  },
+  {
+   "id": "external_carotid_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère carotide externe",
+   "name_en": "Left external carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/external_carotid_artery_left.glb"
+  },
+  {
+   "id": "inferior_thyroid_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère thyroïdienne inférieure",
+   "name_en": "Right inferior thyroid artery",
+   "system": "arteres",
+   "file": "models/arteres/inferior_thyroid_artery_right.glb"
+  },
+  {
+   "id": "inferior_thyroid_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère thyroïdienne inférieure",
+   "name_en": "Left inferior thyroid artery",
+   "system": "arteres",
+   "file": "models/arteres/inferior_thyroid_artery_left.glb"
+  },
+  {
+   "id": "superficial_investing_cervical_fascia_right",
+   "role": "sujet",
+   "nom_fr": "Fascia engainant superficiel du cou",
+   "name_en": "Right superficial investing cervical fascia",
+   "system": "fascias",
+   "file": "models/muscles/superficial_investing_cervical_fascia_right.glb"
+  },
+  {
+   "id": "superficial_investing_cervical_fascia_left",
+   "role": "sujet",
+   "nom_fr": "Fascia engainant superficiel du cou",
+   "name_en": "Left superficial investing cervical fascia",
+   "system": "fascias",
+   "file": "models/muscles/superficial_investing_cervical_fascia_left.glb"
+  },
+  {
+   "id": "inferior_parathyroid_gland_right",
+   "role": "sujet",
+   "nom_fr": "Glande parathyroïde inférieure",
+   "name_en": "Right inferior parathyroid gland",
+   "system": "organes",
+   "file": "models/organes/inferior_parathyroid_gland_right.glb"
+  },
+  {
+   "id": "inferior_parathyroid_gland_left",
+   "role": "sujet",
+   "nom_fr": "Glande parathyroïde inférieure",
+   "name_en": "Left inferior parathyroid gland",
+   "system": "organes",
+   "file": "models/organes/inferior_parathyroid_gland_left.glb"
+  },
+  {
+   "id": "superior_parathyroid_gland_right",
+   "role": "sujet",
+   "nom_fr": "Glande parathyroïde supérieure",
+   "name_en": "Right superior parathyroid gland",
+   "system": "organes",
+   "file": "models/organes/superior_parathyroid_gland_right.glb"
+  },
+  {
+   "id": "superior_parathyroid_gland_left",
+   "role": "sujet",
+   "nom_fr": "Glande parathyroïde supérieure",
+   "name_en": "Left superior parathyroid gland",
+   "system": "organes",
+   "file": "models/organes/superior_parathyroid_gland_left.glb"
+  },
+  {
+   "id": "thyroid_gland",
+   "role": "sujet",
+   "nom_fr": "Glande thyroïde",
+   "name_en": "Thyroid gland",
+   "system": "organes",
+   "file": "models/organes/thyroid_gland.glb"
+  },
+  {
+   "id": "omohyoid_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle omohyoïdien",
+   "name_en": "Right omohyoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/omohyoid_muscle_right.glb"
+  },
+  {
+   "id": "omohyoid_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle omohyoïdien",
+   "name_en": "Left omohyoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/omohyoid_muscle_left.glb"
+  },
+  {
+   "id": "sternocleidomastoid_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle sternocléïdomastoïdien",
+   "name_en": "Right sternocleidomastoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternocleidomastoid_muscle_right.glb"
+  },
+  {
+   "id": "sternocleidomastoid_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle sternocléïdomastoïdien",
+   "name_en": "Left sternocleidomastoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternocleidomastoid_muscle_left.glb"
+  },
+  {
+   "id": "sternohyoid_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle sternohyoïdien",
+   "name_en": "Right sternohyoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternohyoid_muscle_right.glb"
+  },
+  {
+   "id": "sternohyoid_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle sternohyoïdien",
+   "name_en": "Left sternohyoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternohyoid_muscle_left.glb"
+  },
+  {
+   "id": "sternothyroid_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle sternothyroïdien",
+   "name_en": "Right sternothyroid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternothyroid_muscle_right.glb"
+  },
+  {
+   "id": "sternothyroid_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle sternothyroïdien",
+   "name_en": "Left sternothyroid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternothyroid_muscle_left.glb"
+  },
+  {
+   "id": "vagus_nerve_x_right",
+   "role": "sujet",
+   "nom_fr": "Nerf vague (X)",
+   "name_en": "Right vagus nerve (X)",
+   "system": "nerfs",
+   "file": "models/nerfs/vagus_nerve_x_right.glb"
+  },
+  {
+   "id": "vagus_nerve_x_left",
+   "role": "sujet",
+   "nom_fr": "Nerf vague (X)",
+   "name_en": "Left vagus nerve (X)",
+   "system": "nerfs",
+   "file": "models/nerfs/vagus_nerve_x_left.glb"
+  },
+  {
+   "id": "oesophagus",
+   "role": "sujet",
+   "nom_fr": "Oesophage",
+   "name_en": "Oesophagus",
+   "system": "organes",
+   "file": "models/organes/oesophagus.glb"
+  },
+  {
+   "id": "trachea",
+   "role": "sujet",
+   "nom_fr": "Trachée",
+   "name_en": "Trachea",
+   "system": "organes",
+   "file": "models/organes/trachea.glb"
+  },
+  {
+   "id": "thyrocervical_trunk_right",
+   "role": "sujet",
+   "nom_fr": "Tronc thyrocervical",
+   "name_en": "Right thyrocervical trunk",
+   "system": "arteres",
+   "file": "models/arteres/thyrocervical_trunk_right.glb"
+  },
+  {
+   "id": "thyrocervical_trunk_left",
+   "role": "sujet",
+   "nom_fr": "Tronc thyrocervical",
+   "name_en": "Left thyrocervical trunk",
+   "system": "arteres",
+   "file": "models/arteres/thyrocervical_trunk_left.glb"
+  },
+  {
+   "id": "internal_jugular_vein_right",
+   "role": "sujet",
+   "nom_fr": "Veine jugulaire interne",
+   "name_en": "Right internal jugular vein",
+   "system": "veines",
+   "file": "models/veines/internal_jugular_vein_right.glb"
+  },
+  {
+   "id": "internal_jugular_vein_left",
+   "role": "sujet",
+   "nom_fr": "Veine jugulaire interne",
+   "name_en": "Left internal jugular vein",
+   "system": "veines",
+   "file": "models/veines/internal_jugular_vein_left.glb"
+  },
+  {
+   "id": "superior_thyroid_vein_right",
+   "role": "sujet",
+   "nom_fr": "Veine thyroïdienne supérieure",
+   "name_en": "Right superior thyroid vein",
+   "system": "veines",
+   "file": "models/veines/superior_thyroid_vein_right.glb"
+  },
+  {
+   "id": "superior_thyroid_vein_left",
+   "role": "sujet",
+   "nom_fr": "Veine thyroïdienne supérieure",
+   "name_en": "Left superior thyroid vein",
+   "system": "veines",
+   "file": "models/veines/superior_thyroid_vein_left.glb"
+  },
+  {
+   "id": "right_common_carotid_artery",
+   "role": "contexte",
+   "nom_fr": "Artère carotide commune droite",
+   "name_en": "Right common carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/right_common_carotid_artery.glb"
+  },
+  {
+   "id": "left_subclavian_vein",
+   "role": "contexte",
+   "nom_fr": "Veine sous-clavière gauche",
+   "name_en": "Left subclavian vein",
+   "system": "veines",
+   "file": "models/veines/left_subclavian_vein.glb"
+  },
+  {
+   "id": "clavicle_right",
+   "role": "ghost",
+   "nom_fr": "Clavicule",
+   "name_en": "Right clavicle",
+   "system": "squelette",
+   "file": "models/squelette/clavicle_right.glb"
+  },
+  {
+   "id": "clavicle_left",
+   "role": "ghost",
+   "nom_fr": "Clavicule",
+   "name_en": "Left clavicle",
+   "system": "squelette",
+   "file": "models/squelette/clavicle_left.glb"
+  },
+  {
+   "id": "vertebra_c6",
+   "role": "ghost",
+   "nom_fr": "Vertèbre C6",
+   "name_en": "Vertebra C6",
+   "system": "squelette",
+   "file": "models/squelette/vertebra_c6.glb"
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "figure": 4,
+ "slug": "voie-thermo-algesique",
+ "titre_fr": "Voies de la sensibilité thermo-algésique",
+ "titre_en": "Thermoalgesic sensory pathways",
+ "classe": "3D+D",
+ "diagram": "voie_thermoalgesique",
+ "diagram_file": "diagramme-voie-thermo-algesique.html",
+ "camera": {
+  "vue": "laterale",
+  "vue_audit": "latérale"
+ },
+ "systemes": [
+  "cerveau"
+ ],
+ "isoler": [
+  "Tractus spinothalamique latéral",
+  "Thalamus",
+  "Gyrus postcentral"
+ ],
+ "structures": [
+  {
+   "id": "lateral_spinothalamic_tract",
+   "role": "sujet",
+   "nom_fr": "Tractus spinothalamique latéral"
+  },
+  {
+   "id": "thalamus_right",
+   "role": "sujet",
+   "nom_fr": "Thalamus droit"
+  },
+  {
+   "id": "thalamus_left",
+   "role": "sujet",
+   "nom_fr": "Thalamus gauche"
+  },
+  {
+   "id": "postcentral_gyrus_right",
+   "role": "sujet",
+   "nom_fr": "Gyrus postcentral"
+  },
+  {
+   "id": "white_matter_of_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Substance blanche de la moëlle épinière"
+  },
+  {
+   "id": "rep_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Moëlle épinière (repère)"
+  }
+ ],
+ "manquants": [
+  "Décussation commissurale : non modélisée",
+  "Trajet périphérique et relais thalamique terminal : schéma requis en regard"
+ ],
+ "fiche": {
+  "origine": "Récepteurs cutanés spécifiques au chaud, au froid et à la douleur ; le 1er neurone (N1) a son corps cellulaire dans le ganglion spinal et traverse la racine postérieure.",
+  "relais": "N2 : substance gélatineuse de Rolando (corne postérieure), où l'axone de N1 fait synapse et où siège le corps cellulaire du 2e neurone. N3 : noyau ventral postéro-latéral (VPL) du thalamus.",
+  "decussation": "Dans la moelle, en arrière de la cavité épendymaire ; les axones croisés forment le faisceau spino-thalamique dorsal (derrière le faisceau ventral), qui traverse le tronc cérébral en dehors du ruban de Reil médian.",
+  "terminaison": "Circonvolution pariétale ascendante, aires 3, 1 et 2, selon une somatotopie très précise. Voie rapide, très précise, à 3 neurones.",
+  "clinique": "Syringomyélie : atteinte de la sensibilité thermo-algésique avec conservation du tact et de la sensibilité profonde — la décussation péri-épendymaire explique cette dissociation (conclusion du cours, Q1)."
+ },
+ "note_3d": "Vérifié le 2026-10-23 : aucun atlas de tractographie ouvert ne contient le faisceau spinothalamique (trop fin, il échappe au suivi dMRI standard). Aucun trajet fabriqué : le ruban médullaire natif + le schéma portent la figure.",
+ "trajets_3d": [],
+ "statut_segments": {
+  "reel_3d": [
+   "Faisceau spinothalamique latéral dans la moelle : ruban atlas natif (maillage existant)"
+  ],
+  "schema_seul": [
+   "Segment supra-médullaire (moelle → thalamus → cortex) : aucun faisceau spinothalamique n'existe dans les atlas de tractographie ouverts vérifiés (HCP1065 TRK + NIfTI : liste exhaustive sans STT ; TractSeg : faisceaux cérébraux/pédoncules seulement) — le schéma interactif reste le livrable pour ce segment, sans trajet inventé",
+   "Décussation commissurale : non modélisée"
+  ]
+ }
+}

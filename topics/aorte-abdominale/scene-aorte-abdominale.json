@@ -1,0 +1,1340 @@
+{
+ "batch": "D",
+ "topic": 29,
+ "slug": "aorte-abdominale",
+ "partie": "IV",
+ "titre_fr": "L'aorte abdominale",
+ "titre_en": "The abdominal aorta",
+ "figures": [
+  {
+   "numero": 84,
+   "titre_fr": "Branches collatérales et terminales de l'aorte",
+   "titre_en": "Collateral and terminal branches of the abdominal aorta",
+   "classe": "[3D]",
+   "vue": "anterieure",
+   "diagram": null,
+   "systemes": [
+    "arteres"
+   ],
+   "structures": [
+    {
+     "id": "abdominal_aorta",
+     "role": "sujet",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -4.0,
+       960.9,
+       82.0
+      ],
+      "max": [
+       18.5,
+       1143.8,
+       138.0
+      ],
+      "center": [
+       7.2,
+       1052.4,
+       110.0
+      ],
+      "size": [
+       22.5,
+       182.9,
+       56.0
+      ]
+     }
+    },
+    {
+     "id": "coeliac_trunk",
+     "role": "sujet",
+     "nom_fr": "Tronc coeliaque",
+     "name_en": "Coeliac trunk",
+     "system": "arteres",
+     "file": "models/arteres/coeliac_trunk.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       2.5,
+       1068.3,
+       111.8
+      ],
+      "max": [
+       13.3,
+       1092.8,
+       132.0
+      ],
+      "center": [
+       7.9,
+       1080.6,
+       121.9
+      ],
+      "size": [
+       10.8,
+       24.4,
+       20.2
+      ]
+     }
+    },
+    {
+     "id": "superior_mesenteric_artery",
+     "role": "sujet",
+     "nom_fr": "Artère mésentérique supérieure",
+     "name_en": "Superior mesenteric artery",
+     "system": "arteres",
+     "file": "models/arteres/superior_mesenteric_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -71.4,
+       916.0,
+       113.2
+      ],
+      "max": [
+       66.6,
+       1062.4,
+       159.9
+      ],
+      "center": [
+       -2.4,
+       989.2,
+       136.5
+      ],
+      "size": [
+       137.9,
+       146.4,
+       46.7
+      ]
+     }
+    },
+    {
+     "id": "inferior_mesenteric_artery",
+     "role": "sujet",
+     "nom_fr": "Artère mésentérique inférieure",
+     "name_en": "Inferior mesenteric artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_mesenteric_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       3.9,
+       906.0,
+       114.6
+      ],
+      "max": [
+       18.0,
+       993.9,
+       135.9
+      ],
+      "center": [
+       10.9,
+       950.0,
+       125.2
+      ],
+      "size": [
+       14.1,
+       87.9,
+       21.3
+      ]
+     }
+    },
+    {
+     "id": "inferior_suprarenal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère surrénale inférieure",
+     "name_en": "Right inferior suprarenal artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_suprarenal_artery_right.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -56.0,
+       1038.4,
+       82.5
+      ],
+      "max": [
+       -29.1,
+       1092.1,
+       104.7
+      ],
+      "center": [
+       -42.5,
+       1065.3,
+       93.6
+      ],
+      "size": [
+       26.9,
+       53.6,
+       22.2
+      ]
+     }
+    },
+    {
+     "id": "inferior_suprarenal_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère surrénale inférieure",
+     "name_en": "Left inferior suprarenal artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_suprarenal_artery_left.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       21.3,
+       1047.8,
+       71.0
+      ],
+      "max": [
+       70.1,
+       1111.0,
+       107.7
+      ],
+      "center": [
+       45.7,
+       1079.4,
+       89.3
+      ],
+      "size": [
+       48.8,
+       63.2,
+       36.6
+      ]
+     }
+    },
+    {
+     "id": "right_testicular_artery",
+     "role": "sujet",
+     "nom_fr": "Artère testiculaire droite",
+     "name_en": "Right testicular artery",
+     "system": "arteres",
+     "file": "models/arteres/right_testicular_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -66.2,
+       658.6,
+       83.3
+      ],
+      "max": [
+       4.8,
+       1033.6,
+       147.8
+      ],
+      "center": [
+       -30.7,
+       846.1,
+       115.6
+      ],
+      "size": [
+       71.0,
+       374.9,
+       64.5
+      ]
+     }
+    },
+    {
+     "id": "left_testicular_artery",
+     "role": "sujet",
+     "nom_fr": "Artère testiculaire gauche",
+     "name_en": "Left testicular artery",
+     "system": "arteres",
+     "file": "models/arteres/left_testicular_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       11.5,
+       658.7,
+       83.3
+      ],
+      "max": [
+       65.6,
+       1017.7,
+       147.8
+      ],
+      "center": [
+       38.6,
+       838.2,
+       115.6
+      ],
+      "size": [
+       54.1,
+       359.0,
+       64.5
+      ]
+     }
+    },
+    {
+     "id": "inferior_phrenic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère phrénique inférieure",
+     "name_en": "Inferior phrenic artery",
+     "system": "arteres",
+     "file": "models/arteres/inferior_phrenic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -82.8,
+       1087.3,
+       78.3
+      ],
+      "max": [
+       4.5,
+       1198.6,
+       172.5
+      ],
+      "center": [
+       -39.2,
+       1143.0,
+       125.4
+      ],
+      "size": [
+       87.3,
+       111.3,
+       94.2
+      ]
+     }
+    },
+    {
+     "id": "lumbar_arteries_right",
+     "role": "sujet",
+     "nom_fr": "Artères lombaires",
+     "name_en": "Right lumbar arteries",
+     "system": "arteres",
+     "file": "models/arteres/lumbar_arteries_right.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -89.6,
+       958.1,
+       48.7
+      ],
+      "max": [
+       7.9,
+       1053.1,
+       126.2
+      ],
+      "center": [
+       -40.8,
+       1005.6,
+       87.5
+      ],
+      "size": [
+       97.5,
+       95.0,
+       77.5
+      ]
+     }
+    },
+    {
+     "id": "lumbar_arteries_left",
+     "role": "sujet",
+     "nom_fr": "Artères lombaires",
+     "name_en": "Left lumbar arteries",
+     "system": "arteres",
+     "file": "models/arteres/lumbar_arteries_left.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       2.6,
+       958.0,
+       48.6
+      ],
+      "max": [
+       89.0,
+       1053.2,
+       121.0
+      ],
+      "center": [
+       45.8,
+       1005.6,
+       84.8
+      ],
+      "size": [
+       86.5,
+       95.2,
+       72.4
+      ]
+     }
+    },
+    {
+     "id": "median_sacral_artery",
+     "role": "sujet",
+     "nom_fr": "Artère sacrale médiane",
+     "name_en": "Median sacral artery",
+     "system": "arteres",
+     "file": "models/arteres/median_sacral_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -1.3,
+       803.2,
+       28.2
+      ],
+      "max": [
+       0.7,
+       957.5,
+       119.9
+      ],
+      "center": [
+       -0.3,
+       880.4,
+       74.1
+      ],
+      "size": [
+       2.0,
+       154.3,
+       91.6
+      ]
+     }
+    },
+    {
+     "id": "common_iliac_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque commune",
+     "name_en": "Right common iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/common_iliac_artery_right.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -33.6,
+       910.7,
+       105.3
+      ],
+      "max": [
+       13.7,
+       964.8,
+       138.0
+      ],
+      "center": [
+       -9.9,
+       937.8,
+       121.6
+      ],
+      "size": [
+       47.3,
+       54.0,
+       32.7
+      ]
+     }
+    },
+    {
+     "id": "common_iliac_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque commune",
+     "name_en": "Left common iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/common_iliac_artery_left.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -3.7,
+       910.8,
+       105.3
+      ],
+      "max": [
+       33.1,
+       964.8,
+       138.0
+      ],
+      "center": [
+       14.7,
+       937.8,
+       121.6
+      ],
+      "size": [
+       36.8,
+       54.0,
+       32.7
+      ]
+     }
+    },
+    {
+     "id": "external_iliac_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Right external iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/external_iliac_artery_right.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -58.1,
+       823.0,
+       95.6
+      ],
+      "max": [
+       -23.8,
+       919.0,
+       130.8
+      ],
+      "center": [
+       -41.0,
+       871.0,
+       113.2
+      ],
+      "size": [
+       34.4,
+       96.0,
+       35.1
+      ]
+     }
+    },
+    {
+     "id": "external_iliac_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque externe",
+     "name_en": "Left external iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/external_iliac_artery_left.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       23.2,
+       823.0,
+       95.6
+      ],
+      "max": [
+       57.5,
+       919.0,
+       130.8
+      ],
+      "center": [
+       40.4,
+       871.0,
+       113.2
+      ],
+      "size": [
+       34.4,
+       96.0,
+       35.1
+      ]
+     }
+    },
+    {
+     "id": "internal_iliac_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque interne",
+     "name_en": "Right internal iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/internal_iliac_artery_right.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -37.4,
+       870.9,
+       88.1
+      ],
+      "max": [
+       -23.8,
+       919.0,
+       115.3
+      ],
+      "center": [
+       -30.6,
+       895.0,
+       101.7
+      ],
+      "size": [
+       13.6,
+       48.2,
+       27.3
+      ]
+     }
+    },
+    {
+     "id": "internal_iliac_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère iliaque interne",
+     "name_en": "Left internal iliac artery",
+     "system": "arteres",
+     "file": "models/arteres/internal_iliac_artery_left.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       23.2,
+       870.9,
+       88.1
+      ],
+      "max": [
+       36.8,
+       919.0,
+       115.3
+      ],
+      "center": [
+       30.0,
+       895.0,
+       101.7
+      ],
+      "size": [
+       13.6,
+       48.2,
+       27.3
+      ]
+     }
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "rapport",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -18.7,
+       962.9,
+       105.3
+      ],
+      "max": [
+       -0.5,
+       1106.8,
+       132.4
+      ],
+      "center": [
+       -9.6,
+       1034.8,
+       118.9
+      ],
+      "size": [
+       18.2,
+       143.8,
+       27.1
+      ]
+     }
+    },
+    {
+     "id": "kidney_right",
+     "role": "rapport",
+     "nom_fr": "Rein droit",
+     "name_en": "Right kidney",
+     "system": "organes",
+     "file": "models/organes/kidney_right.glb",
+     "couleur": "#7a3b2e",
+     "bounds": {
+      "min": [
+       -87.6,
+       966.8,
+       64.7
+      ],
+      "max": [
+       -30.4,
+       1071.2,
+       111.9
+      ],
+      "center": [
+       -59.0,
+       1019.0,
+       88.3
+      ],
+      "size": [
+       57.1,
+       104.4,
+       47.2
+      ]
+     }
+    },
+    {
+     "id": "kidney_left",
+     "role": "rapport",
+     "nom_fr": "Rein gauche",
+     "name_en": "Left kidney",
+     "system": "organes",
+     "file": "models/organes/kidney_left.glb",
+     "couleur": "#7a3b2e",
+     "bounds": {
+      "min": [
+       32.8,
+       984.5,
+       59.6
+      ],
+      "max": [
+       90.4,
+       1090.4,
+       100.2
+      ],
+      "center": [
+       61.6,
+       1037.5,
+       79.9
+      ],
+      "size": [
+       57.5,
+       105.9,
+       40.6
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Artères ovariennes (équivalent femme) : absentes (seules les testiculaires existent, modèle masculin)"
+   ],
+   "espaces": []
+  }
+ ],
+ "structures": [
+  {
+   "id": "abdominal_aorta",
+   "role": "sujet",
+   "nom_fr": "Aorte abdominale",
+   "name_en": "Abdominal aorta",
+   "system": "arteres",
+   "file": "models/arteres/abdominal_aorta.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -4.0,
+     960.9,
+     82.0
+    ],
+    "max": [
+     18.5,
+     1143.8,
+     138.0
+    ],
+    "center": [
+     7.2,
+     1052.4,
+     110.0
+    ],
+    "size": [
+     22.5,
+     182.9,
+     56.0
+    ]
+   }
+  },
+  {
+   "id": "coeliac_trunk",
+   "role": "sujet",
+   "nom_fr": "Tronc coeliaque",
+   "name_en": "Coeliac trunk",
+   "system": "arteres",
+   "file": "models/arteres/coeliac_trunk.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     2.5,
+     1068.3,
+     111.8
+    ],
+    "max": [
+     13.3,
+     1092.8,
+     132.0
+    ],
+    "center": [
+     7.9,
+     1080.6,
+     121.9
+    ],
+    "size": [
+     10.8,
+     24.4,
+     20.2
+    ]
+   }
+  },
+  {
+   "id": "superior_mesenteric_artery",
+   "role": "sujet",
+   "nom_fr": "Artère mésentérique supérieure",
+   "name_en": "Superior mesenteric artery",
+   "system": "arteres",
+   "file": "models/arteres/superior_mesenteric_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -71.4,
+     916.0,
+     113.2
+    ],
+    "max": [
+     66.6,
+     1062.4,
+     159.9
+    ],
+    "center": [
+     -2.4,
+     989.2,
+     136.5
+    ],
+    "size": [
+     137.9,
+     146.4,
+     46.7
+    ]
+   }
+  },
+  {
+   "id": "inferior_mesenteric_artery",
+   "role": "sujet",
+   "nom_fr": "Artère mésentérique inférieure",
+   "name_en": "Inferior mesenteric artery",
+   "system": "arteres",
+   "file": "models/arteres/inferior_mesenteric_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     3.9,
+     906.0,
+     114.6
+    ],
+    "max": [
+     18.0,
+     993.9,
+     135.9
+    ],
+    "center": [
+     10.9,
+     950.0,
+     125.2
+    ],
+    "size": [
+     14.1,
+     87.9,
+     21.3
+    ]
+   }
+  },
+  {
+   "id": "inferior_suprarenal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère surrénale inférieure",
+   "name_en": "Right inferior suprarenal artery",
+   "system": "arteres",
+   "file": "models/arteres/inferior_suprarenal_artery_right.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -56.0,
+     1038.4,
+     82.5
+    ],
+    "max": [
+     -29.1,
+     1092.1,
+     104.7
+    ],
+    "center": [
+     -42.5,
+     1065.3,
+     93.6
+    ],
+    "size": [
+     26.9,
+     53.6,
+     22.2
+    ]
+   }
+  },
+  {
+   "id": "inferior_suprarenal_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère surrénale inférieure",
+   "name_en": "Left inferior suprarenal artery",
+   "system": "arteres",
+   "file": "models/arteres/inferior_suprarenal_artery_left.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     21.3,
+     1047.8,
+     71.0
+    ],
+    "max": [
+     70.1,
+     1111.0,
+     107.7
+    ],
+    "center": [
+     45.7,
+     1079.4,
+     89.3
+    ],
+    "size": [
+     48.8,
+     63.2,
+     36.6
+    ]
+   }
+  },
+  {
+   "id": "right_testicular_artery",
+   "role": "sujet",
+   "nom_fr": "Artère testiculaire droite",
+   "name_en": "Right testicular artery",
+   "system": "arteres",
+   "file": "models/arteres/right_testicular_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -66.2,
+     658.6,
+     83.3
+    ],
+    "max": [
+     4.8,
+     1033.6,
+     147.8
+    ],
+    "center": [
+     -30.7,
+     846.1,
+     115.6
+    ],
+    "size": [
+     71.0,
+     374.9,
+     64.5
+    ]
+   }
+  },
+  {
+   "id": "left_testicular_artery",
+   "role": "sujet",
+   "nom_fr": "Artère testiculaire gauche",
+   "name_en": "Left testicular artery",
+   "system": "arteres",
+   "file": "models/arteres/left_testicular_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     11.5,
+     658.7,
+     83.3
+    ],
+    "max": [
+     65.6,
+     1017.7,
+     147.8
+    ],
+    "center": [
+     38.6,
+     838.2,
+     115.6
+    ],
+    "size": [
+     54.1,
+     359.0,
+     64.5
+    ]
+   }
+  },
+  {
+   "id": "inferior_phrenic_artery",
+   "role": "sujet",
+   "nom_fr": "Artère phrénique inférieure",
+   "name_en": "Inferior phrenic artery",
+   "system": "arteres",
+   "file": "models/arteres/inferior_phrenic_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -82.8,
+     1087.3,
+     78.3
+    ],
+    "max": [
+     4.5,
+     1198.6,
+     172.5
+    ],
+    "center": [
+     -39.2,
+     1143.0,
+     125.4
+    ],
+    "size": [
+     87.3,
+     111.3,
+     94.2
+    ]
+   }
+  },
+  {
+   "id": "lumbar_arteries_right",
+   "role": "sujet",
+   "nom_fr": "Artères lombaires",
+   "name_en": "Right lumbar arteries",
+   "system": "arteres",
+   "file": "models/arteres/lumbar_arteries_right.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -89.6,
+     958.1,
+     48.7
+    ],
+    "max": [
+     7.9,
+     1053.1,
+     126.2
+    ],
+    "center": [
+     -40.8,
+     1005.6,
+     87.5
+    ],
+    "size": [
+     97.5,
+     95.0,
+     77.5
+    ]
+   }
+  },
+  {
+   "id": "lumbar_arteries_left",
+   "role": "sujet",
+   "nom_fr": "Artères lombaires",
+   "name_en": "Left lumbar arteries",
+   "system": "arteres",
+   "file": "models/arteres/lumbar_arteries_left.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     2.6,
+     958.0,
+     48.6
+    ],
+    "max": [
+     89.0,
+     1053.2,
+     121.0
+    ],
+    "center": [
+     45.8,
+     1005.6,
+     84.8
+    ],
+    "size": [
+     86.5,
+     95.2,
+     72.4
+    ]
+   }
+  },
+  {
+   "id": "median_sacral_artery",
+   "role": "sujet",
+   "nom_fr": "Artère sacrale médiane",
+   "name_en": "Median sacral artery",
+   "system": "arteres",
+   "file": "models/arteres/median_sacral_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -1.3,
+     803.2,
+     28.2
+    ],
+    "max": [
+     0.7,
+     957.5,
+     119.9
+    ],
+    "center": [
+     -0.3,
+     880.4,
+     74.1
+    ],
+    "size": [
+     2.0,
+     154.3,
+     91.6
+    ]
+   }
+  },
+  {
+   "id": "common_iliac_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère iliaque commune",
+   "name_en": "Right common iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/common_iliac_artery_right.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -33.6,
+     910.7,
+     105.3
+    ],
+    "max": [
+     13.7,
+     964.8,
+     138.0
+    ],
+    "center": [
+     -9.9,
+     937.8,
+     121.6
+    ],
+    "size": [
+     47.3,
+     54.0,
+     32.7
+    ]
+   }
+  },
+  {
+   "id": "common_iliac_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère iliaque commune",
+   "name_en": "Left common iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/common_iliac_artery_left.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -3.7,
+     910.8,
+     105.3
+    ],
+    "max": [
+     33.1,
+     964.8,
+     138.0
+    ],
+    "center": [
+     14.7,
+     937.8,
+     121.6
+    ],
+    "size": [
+     36.8,
+     54.0,
+     32.7
+    ]
+   }
+  },
+  {
+   "id": "external_iliac_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère iliaque externe",
+   "name_en": "Right external iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/external_iliac_artery_right.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -58.1,
+     823.0,
+     95.6
+    ],
+    "max": [
+     -23.8,
+     919.0,
+     130.8
+    ],
+    "center": [
+     -41.0,
+     871.0,
+     113.2
+    ],
+    "size": [
+     34.4,
+     96.0,
+     35.1
+    ]
+   }
+  },
+  {
+   "id": "external_iliac_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère iliaque externe",
+   "name_en": "Left external iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/external_iliac_artery_left.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     23.2,
+     823.0,
+     95.6
+    ],
+    "max": [
+     57.5,
+     919.0,
+     130.8
+    ],
+    "center": [
+     40.4,
+     871.0,
+     113.2
+    ],
+    "size": [
+     34.4,
+     96.0,
+     35.1
+    ]
+   }
+  },
+  {
+   "id": "internal_iliac_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère iliaque interne",
+   "name_en": "Right internal iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/internal_iliac_artery_right.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -37.4,
+     870.9,
+     88.1
+    ],
+    "max": [
+     -23.8,
+     919.0,
+     115.3
+    ],
+    "center": [
+     -30.6,
+     895.0,
+     101.7
+    ],
+    "size": [
+     13.6,
+     48.2,
+     27.3
+    ]
+   }
+  },
+  {
+   "id": "internal_iliac_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère iliaque interne",
+   "name_en": "Left internal iliac artery",
+   "system": "arteres",
+   "file": "models/arteres/internal_iliac_artery_left.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     23.2,
+     870.9,
+     88.1
+    ],
+    "max": [
+     36.8,
+     919.0,
+     115.3
+    ],
+    "center": [
+     30.0,
+     895.0,
+     101.7
+    ],
+    "size": [
+     13.6,
+     48.2,
+     27.3
+    ]
+   }
+  },
+  {
+   "id": "inferior_vena_cava_abdominal_part",
+   "role": "rapport",
+   "nom_fr": "Veine cave inférieure (partie abdominale)",
+   "name_en": "Inferior vena cava (abdominal part)",
+   "system": "veines",
+   "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -18.7,
+     962.9,
+     105.3
+    ],
+    "max": [
+     -0.5,
+     1106.8,
+     132.4
+    ],
+    "center": [
+     -9.6,
+     1034.8,
+     118.9
+    ],
+    "size": [
+     18.2,
+     143.8,
+     27.1
+    ]
+   }
+  },
+  {
+   "id": "kidney_right",
+   "role": "rapport",
+   "nom_fr": "Rein droit",
+   "name_en": "Right kidney",
+   "system": "organes",
+   "file": "models/organes/kidney_right.glb",
+   "couleur": "#7a3b2e",
+   "bounds": {
+    "min": [
+     -87.6,
+     966.8,
+     64.7
+    ],
+    "max": [
+     -30.4,
+     1071.2,
+     111.9
+    ],
+    "center": [
+     -59.0,
+     1019.0,
+     88.3
+    ],
+    "size": [
+     57.1,
+     104.4,
+     47.2
+    ]
+   }
+  },
+  {
+   "id": "kidney_left",
+   "role": "rapport",
+   "nom_fr": "Rein gauche",
+   "name_en": "Left kidney",
+   "system": "organes",
+   "file": "models/organes/kidney_left.glb",
+   "couleur": "#7a3b2e",
+   "bounds": {
+    "min": [
+     32.8,
+     984.5,
+     59.6
+    ],
+    "max": [
+     90.4,
+     1090.4,
+     100.2
+    ],
+    "center": [
+     61.6,
+     1037.5,
+     79.9
+    ],
+    "size": [
+     57.5,
+     105.9,
+     40.6
+    ]
+   }
+  }
+ ],
+ "camera": {
+  "preset_par_figure": {
+   "84": "anterieure"
+  },
+  "defaut": "anterieure"
+ },
+ "diagram": null,
+ "espaces": [],
+ "note_integration": "Scène de staging — IDs issus de FIGURES-AUDIT.json uniquement ; GLB résolus via proto-schemas/manifest.json."
+}

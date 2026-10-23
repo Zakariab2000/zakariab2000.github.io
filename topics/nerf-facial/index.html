@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batch H2 — preview staging (neuro : encéphale + facial, figs 8–18)</title>
+<style>
+  :root{ --sans: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:var(--sans); background:#060b14; color:#e8eef7; }
+  /* ===== mode scène 3D ===== */
+  #scene-wrap{ position:fixed; inset:0; display:none; flex-direction:column;
+    background:radial-gradient(1200px 800px at 60% 30%,#0b1526,#060b14); }
+  #scene-wrap.open{ display:flex; }
+  #scene-head{ padding:10px 14px 4px; }
+  #scene-head .t1{ font-size:15px; font-weight:700; }
+  #scene-head .t2{ font-size:12px; color:#9db1cc; }
+  #gl{ flex:1; min-height:0; }
+  #gl canvas{ display:block; }
+  #fiche{ margin:6px 10px; padding:9px 12px; background:rgba(13,24,42,.95);
+    border:1px solid rgba(255,255,255,.12); border-radius:10px; min-height:52px; }
+  #fiche .fn{ font-size:14.5px; font-weight:700; }
+  #fiche .fe{ font-size:12px; color:#9db1cc; }
+  #fiche .fl{ font-size:12px; color:#c9a86a; font-style:italic; }
+  #fiche .role{ font-size:10px; text-transform:uppercase; letter-spacing:.06em;
+    padding:1px 6px; border-radius:6px; background:#274268; margin-left:6px; vertical-align:2px; }
+  #fiche .role.rapport{ background:#3a3f49; }
+  #chips{ display:flex; gap:6px; overflow-x:auto; padding:2px 10px 12px; }
+  .chip{ flex:0 0 auto; display:flex; align-items:center; gap:6px; background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.14); color:#e8eef7; border-radius:999px;
+    padding:5px 10px; font-size:11.5px; cursor:pointer; }
+  .chip .dot{ width:9px; height:9px; border-radius:50%; }
+  .chip.sel{ border-color:#f0b429; background:rgba(240,180,41,.12); }
+  .chip.ghost{ opacity:.55; }
+  /* ===== mode schéma (CSS repris de l'app, styles.css §schémas) ===== */
+  #schemaview{ position:fixed; inset:0; display:none; flex-direction:column;
+    background:radial-gradient(1200px 800px at 60% 30%,#0b1526,#060b14); color:#e8eef7; }
+  #schemaview.open{ display:flex; }
+  #schemahead{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px 4px; }
+  #schematitle{ font-size:16px; font-weight:700; }
+  #schemascroll{ flex:1; overflow:auto; -webkit-overflow-scrolling:touch; }
+  #schemasvg{ display:block; width:min(680px,100%); height:auto; margin:0 auto; }
+  .pnode{ cursor:pointer; }
+  .pnode rect{ stroke-width:1.5; transition:opacity .2s; }
+  .pnode text{ fill:#e8eef7; font-size:11px; text-anchor:middle; pointer-events:none; font-family:var(--sans); }
+  .pnode.dim,.pedge.dim{ opacity:.1; }
+  .pnode.lit rect{ stroke:#fff; stroke-width:2.5; }
+  .pedge{ fill:none; stroke:#5b7ba6; stroke-width:1.6; }
+  .pedge.dash{ stroke-dasharray:5 4; }
+  .pedge.lit{ stroke:#f0b429; stroke-width:3; }
+  #schemacap{ margin:8px 12px; padding:10px 12px; background:rgba(13,24,42,.95);
+    border:1px solid rgba(255,255,255,.12); border-radius:10px; font-size:13.5px; line-height:1.5; min-height:58px; }
+  #schemalegend{ display:flex; flex-wrap:wrap; gap:6px 12px; padding:0 14px 14px; font-size:11px; color:#9db1cc; }
+  #schemalegend .sw{ display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; }
+  #err{ position:fixed; top:6px; right:8px; z-index:99; color:#ff8080; font-size:11px;
+    white-space:pre-wrap; max-width:70vw; text-align:right; }
+  #home{ padding:22px 16px; display:none; }
+  #home.open{ display:block; }
+  #home a{ color:#7cc4ff; display:block; padding:5px 0; font-size:14px; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "../../assets/three/three.module.js",
+  "three/addons/": "../../assets/three/addons/"
+} }
+</script>
+</head>
+<body>
+
+<div id="home"></div>
+
+<div id="scene-wrap">
+  <div id="scene-head"><div class="t1" id="scene-title"></div><div class="t2" id="scene-sub"></div></div>
+  <div id="gl"></div>
+  <div id="fiche"><span class="fe">Touchez une structure (ou un nom ci-dessous) pour sa fiche.</span></div>
+  <div id="chips"></div>
+</div>
+
+<div id="schemaview">
+  <div id="schemahead"><div id="schematitle"></div></div>
+  <div id="schemascroll"><svg id="schemasvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <div id="schemacap">Touchez un élément du schéma pour afficher sa fiche et illuminer son trajet.</div>
+  <div id="schemalegend"></div>
+</div>
+
+<div id="err"></div>
+
+<script>
+  window.__h2 = { mode:null, ready:false, loaded:0, total:0, errors:[], tapped:null, caption:null };
+  window.addEventListener('error', e=>{ window.__h2.errors.push(String(e.message||e.error)); 
+    document.getElementById('err').textContent = window.__h2.errors.join('\n'); });
+  const _ce = console.error.bind(console);
+  console.error = (...a)=>{ window.__h2.errors.push(a.map(String).join(' ')); _ce(...a); };
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const Q = new URLSearchParams(location.search);
+const lang = 'fr';
+
+/* ================= MODE SCHÉMA — moteur repris verbatim de l'app (app.js) ================= */
+let schemaState = { key:null, sel:null };
+let DIAGRAMS = {};
+const schemaSvg = ()=>document.getElementById('schemasvg');
+function schemaNodeLabel(n){ return n.label; }
+function schemaNodeSub(n){ return n.sub || ''; }
+function schemaEdgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return `M ${x1} ${a.y} C ${x1+dx} ${a.y}, ${x2-dx} ${b.y}, ${x2} ${b.y}`;
+}
+function buildSchema(D){
+  const svg = schemaSvg();
+  const NS = 'http://www.w3.org/2000/svg';
+  svg.setAttribute('viewBox', `0 0 ${D.w} ${D.h}`);
+  svg.innerHTML = '';
+  const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+  D.edges.forEach(([f, to, dash])=>{
+    const p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', schemaEdgePath(byId[f], byId[to]));
+    p.setAttribute('class', 'pedge' + (dash ? ' dash' : ''));
+    p.dataset.from = f; p.dataset.to = to;
+    svg.appendChild(p);
+  });
+  D.nodes.forEach(n=>{
+    const g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+    const col = D.levels[n.lvl].c;
+    const label = schemaNodeLabel(n), sub = schemaNodeSub(n);
+    if (n.r){
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+      c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+      g.appendChild(c);
+      const tx = document.createElementNS(NS, 'text');
+      tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+      tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+      tx.textContent = label; g.appendChild(tx);
+    } else {
+      const r = document.createElementNS(NS, 'rect');
+      r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+      r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+      r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+      g.appendChild(r);
+      const t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', n.x); t1.setAttribute('y', sub ? n.y - 2 : n.y + 4);
+      t1.textContent = label; g.appendChild(t1);
+      if (sub){
+        const t2 = document.createElementNS(NS, 'text');
+        t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+        t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+        t2.textContent = sub; g.appendChild(t2);
+      }
+      if (n.note){
+        const t3 = document.createElementNS(NS, 'text');
+        t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+        t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+        t3.textContent = n.note.fr;
+        g.appendChild(t3);
+      }
+    }
+    g.addEventListener('click', ev=>{ ev.stopPropagation(); traceSchema(n.id); });
+    svg.appendChild(g);
+  });
+  svg.onclick = ()=>resetSchema();
+  const leg = document.getElementById('schemalegend');
+  leg.innerHTML = '';
+  Object.values(D.levels).forEach(l=>{
+    const s = document.createElement('span');
+    s.innerHTML = `<span class="sw" style="background:${l.c}"></span>${l.fr}`;
+    leg.appendChild(s);
+  });
+}
+function schemaDownstream(D, id){
+  const adj = {};
+  D.edges.forEach(([f, to])=>{ (adj[f] = adj[f] || []).push(to); });
+  const seen = new Set([id]); const stack = [id];
+  while (stack.length){ const cur = stack.pop(); (adj[cur] || []).forEach(n=>{ if (!seen.has(n)){ seen.add(n); stack.push(n); } }); }
+  return seen;
+}
+function traceSchema(id){
+  const D = DIAGRAMS[schemaState.key]; if (!D) return;
+  schemaState.sel = id;
+  const set = schemaDownstream(D, id);
+  schemaSvg().querySelectorAll('.pnode').forEach(g=>{
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  schemaSvg().querySelectorAll('.pedge').forEach(p=>{
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const node = D.nodes.find(n=>n.id===id);
+  const cap = node ? node.desc[lang] : '';
+  document.getElementById('schemacap').textContent = cap;
+  window.__h2.tapped = id; window.__h2.caption = cap;
+}
+function resetSchema(){
+  schemaState.sel = null;
+  const svg = schemaSvg(); if (!svg) return;
+  svg.querySelectorAll('.pnode').forEach(g=>g.classList.remove('lit', 'dim'));
+  svg.querySelectorAll('.pedge').forEach(p=>p.classList.remove('lit', 'dim'));
+  document.getElementById('schemacap').textContent = 'Touchez un élément du schéma pour afficher sa fiche et illuminer son trajet.';
+}
+
+/* ================= MODE SCÈNE 3D ================= */
+const pickables = [];   // {root, entry}
+let selected = null;
+function selectStructure(rec){
+  if (selected) selected.traverse(o=>{ if (o.isMesh) o.material.emissive.setHex(0x000000); });
+  selected = rec ? rec.root : null;
+  const f = document.getElementById('fiche');
+  if (!rec){ f.innerHTML = '<span class="fe">Touchez une structure (ou un nom ci-dessous) pour sa fiche.</span>'; return; }
+  rec.root.traverse(o=>{ if (o.isMesh) o.material.emissive.setHex(0x6b5518); });
+  const e = rec.entry;
+  const side = e.id.endsWith('_right') ? ' (droite)' : e.id.endsWith('_left') ? ' (gauche)' : '';
+  f.innerHTML = `<span class="fn">${(e.nom_fr||e.name_en) + side}</span><span class="role${e.role==='rapport'?' rapport':''}">${e.role==='rapport'?'rapport · fantôme':'sujet'}</span><br>` +
+    `<span class="fe">${e.name_en||''}</span>${e.name_la?` · <span class="fl">${e.name_la}</span>`:''}<br>` +
+    `<span class="fe">${e.id} · ${e.system||''}</span>`;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('sel', c.dataset.id===e.id));
+}
+async function runScene(sceneFile, figNum){
+  window.__h2.mode = 'scene';
+  const doc = await (await fetch(sceneFile)).json();
+  const fig = doc.figures.find(f=>f.numero===figNum) || doc.figures[0];
+  document.getElementById('scene-title').textContent = `Sujet ${doc.sujet} — ${doc.titre_fr}`;
+  document.getElementById('scene-sub').textContent = `Figure ${fig.numero} — ${fig.titre_fr} · vue ${fig.camera.vue} · ${fig.structures.length} structures (audit)`;
+  document.getElementById('scene-wrap').classList.add('open');
+  const holder = document.getElementById('gl');
+  const W = holder.clientWidth || 390, H = holder.clientHeight || 500;
+  const renderer = new THREE.WebGLRenderer({ antialias:true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.setSize(W, H);
+  holder.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x0a1322);
+  const cam = fig.camera;
+  const camera = new THREE.PerspectiveCamera(cam.fov, W/H, 1, 6000);
+  camera.up.set(...cam.up);
+  camera.position.set(cam.target[0] + cam.direction[0]*cam.distance,
+                      cam.target[1] + cam.direction[1]*cam.distance,
+                      cam.target[2] + cam.direction[2]*cam.distance);
+  camera.lookAt(...cam.target);
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.target.set(...cam.target);
+  controls.enableDamping = true;
+  scene.add(new THREE.HemisphereLight(0xdfe8ff, 0x30303a, 1.5));
+  const d1 = new THREE.DirectionalLight(0xffffff, 2.1); d1.position.set(300, 400, 300); scene.add(d1);
+  const d2 = new THREE.DirectionalLight(0xbfd4ff, 1.0); d2.position.set(-300, 100, -200); scene.add(d2);
+  const loader = new GLTFLoader();
+  const chips = document.getElementById('chips');
+  window.__h2.total = fig.structures.length;
+  const loads = fig.structures.map(e=>{
+    const chip = document.createElement('button');
+    chip.className = 'chip' + (e.role==='rapport' ? ' ghost' : '');
+    chip.dataset.id = e.id;
+    const side = e.id.endsWith('_right') ? ' (D)' : e.id.endsWith('_left') ? ' (G)' : '';
+    chip.innerHTML = `<span class="dot" style="background:${e.couleur||'#888'}"></span>${(e.nom_fr||e.id) + side}`;
+    chips.appendChild(chip);
+    return loader.loadAsync('../../' + e.file).then(gltf=>{
+      const root = gltf.scene;
+      const ghost = e.role === 'rapport';
+      root.traverse(o=>{ if (o.isMesh){
+        o.material = new THREE.MeshStandardMaterial({
+          color: new THREE.Color(e.couleur || '#b0a696'), roughness: .62, metalness: .04,
+          transparent: ghost, opacity: ghost ? 0.15 : 1.0, depthWrite: !ghost });
+        o.userData.sid = e.id;
+      }});
+      scene.add(root);
+      const rec = { root, entry: e };
+      pickables.push(rec);
+      chip.onclick = ()=>selectStructure(rec);
+      window.__h2.loaded++;
+    }).catch(err=>{ window.__h2.errors.push('GLB ' + e.id + ': ' + err.message); });
+  });
+  await Promise.all(loads);
+  /* cadrage : sphère englobante des structures SUJET, fov effectif
+     (min vertical/horizontal selon l'aspect) — la distance du JSON reste
+     le repli si aucun maillage sujet n'est chargé. */
+  const box = new THREE.Box3(); let hasBox = false;
+  const frameSet = fig.frame_ids ? new Set(fig.frame_ids) : null;
+  pickables.filter(p=>frameSet ? frameSet.has(p.entry.id) : p.entry.role==='sujet').forEach(p=>{
+    const b = new THREE.Box3().setFromObject(p.root);
+    if (!b.isEmpty()){ box.union(b); hasBox = true; }
+  });
+  if (hasBox){
+    const sphere = box.getBoundingSphere(new THREE.Sphere());
+    const vfov = THREE.MathUtils.degToRad(cam.fov);
+    const hfov = 2 * Math.atan(Math.tan(vfov/2) * camera.aspect);
+    const dist = sphere.radius / Math.sin(Math.min(vfov, hfov)/2) * 1.02;
+    controls.target.copy(sphere.center);
+    camera.position.set(sphere.center.x + cam.direction[0]*dist,
+                        sphere.center.y + cam.direction[1]*dist,
+                        sphere.center.z + cam.direction[2]*dist);
+    camera.lookAt(sphere.center);
+    window.__h2.frame = { center: sphere.center.toArray().map(v=>Math.round(v*10)/10),
+                          radius: Math.round(sphere.radius*10)/10, distance: Math.round(dist) };
+  }
+  const ray = new THREE.Raycaster(), ptr = new THREE.Vector2();
+  renderer.domElement.addEventListener('pointerdown', ev=>{
+    const r = renderer.domElement.getBoundingClientRect();
+    ptr.set(((ev.clientX - r.left)/r.width)*2 - 1, -((ev.clientY - r.top)/r.height)*2 + 1);
+    ray.setFromCamera(ptr, camera);
+    const meshes = [];
+    pickables.forEach(p=>p.root.traverse(o=>{ if (o.isMesh) meshes.push(o); }));
+    const hit = ray.intersectObjects(meshes, false)[0];
+    if (hit) selectStructure(pickables.find(p=>p.entry.id===hit.object.userData.sid));
+  });
+  window.__h2.scene = { doc, fig };
+  window.__h2.ready = true;
+  (function animate(){ requestAnimationFrame(animate); controls.update(); renderer.render(scene, camera); })();
+}
+
+/* ================= Routeur ================= */
+(async ()=>{
+  const sceneFile = Q.get('scene') || 'scene-nerf-facial.json', diagramKey = Q.get('diagram');
+  if (diagramKey){
+    window.__h2.mode = 'diagram';
+    DIAGRAMS = await (await fetch('diagrams/diagrams.json')).json();
+    const D = DIAGRAMS[diagramKey];
+    if (!D){ window.__h2.errors.push('diagramme inconnu: ' + diagramKey); return; }
+    schemaState.key = diagramKey;
+    document.getElementById('schematitle').textContent = D.titre_fr;
+    document.getElementById('schemaview').classList.add('open');
+    buildSchema(D); resetSchema();
+    const tap = Q.get('tap');
+    if (tap) traceSchema(tap);
+    window.__h2.ready = true;
+  } else if (sceneFile){
+    await runScene(sceneFile, parseInt(Q.get('fig') || '0', 10));
+  } else {
+    const home = document.getElementById('home'); home.classList.add('open');
+    home.innerHTML = '<h3>Batch H2 — staging</h3>' +
+      ['scene-polygone-willis.json&fig=8','scene-hemispheres.json&fig=9','scene-hemispheres.json&fig=10',
+       'scene-hemispheres.json&fig=11','scene-hemispheres.json&fig=12','scene-voies-visuelles.json&fig=13',
+       'scene-voies-visuelles.json&fig=14','scene-nerf-facial.json&fig=15','scene-nerf-facial.json&fig=16',
+       'scene-nerf-facial.json&fig=17','scene-nerf-facial.json&fig=18']
+       .map(s=>`<a href="?scene=${s}">Scène ${s}</a>`).join('') +
+      ['brodmann','retine','voies_visuelles','facial_origines','facial_segments','facial_intrapetreux','facial_branches']
+       .map(k=>`<a href="?diagram=${k}">Schéma ${k}</a>`).join('');
+    window.__h2.ready = true;
+  }
+})().catch(e=>{ window.__h2.errors.push('boot: ' + e.message); });
+</script>
+</body>
+</html>

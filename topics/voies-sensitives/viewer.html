@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Trajets 3D — tractographie (staging)</title>
+<link rel="icon" href="data:,">
+<style>
+  html,body{margin:0;height:100%;background:#0b0f14;color:#e8eef4;font-family:system-ui,'Segoe UI',Roboto,sans-serif;overflow:hidden}
+  #app{position:fixed;inset:0}
+  canvas{display:block}
+  #hud{position:fixed;top:0;left:0;right:0;padding:10px 12px;pointer-events:none;
+       background:linear-gradient(180deg,rgba(5,8,11,.88),rgba(5,8,11,0))}
+  #hud h1{font-size:16px;margin:0 0 2px 0;font-weight:700}
+  #hud .sub{font-size:12px;color:#9fb4c4;margin:0}
+  #hud .badge{display:inline-block;margin-top:5px;font-size:11px;padding:2px 8px;border-radius:20px;
+       background:#12351f;color:#7be495;border:1px solid #1f5c33}
+  #hud .badge.schema{background:#3a2c10;color:#ffd479;border-color:#6b5518}
+  #panel{position:fixed;left:0;right:0;bottom:0;padding:12px 14px calc(12px + env(safe-area-inset-bottom));
+       background:rgba(10,15,20,.93);border-top:1px solid #223140;transform:translateY(105%);
+       transition:transform .25s ease;max-height:44vh;overflow:auto}
+  #panel.open{transform:translateY(0)}
+  #panel h2{font-size:15px;margin:0 0 4px 0}
+  #panel .seg{font-size:12.5px;color:#b8c9d6;margin:0 0 6px 0;line-height:1.45}
+  #panel .fiche{font-size:13px;line-height:1.5;margin:0 0 6px 0}
+  #panel .src{font-size:10.5px;color:#7d93a5;line-height:1.4;margin:0}
+  #hint{position:fixed;bottom:12px;left:0;right:0;text-align:center;font-size:12px;color:#8ba3b5;pointer-events:none}
+  #err{position:fixed;top:40%;left:10%;right:10%;color:#ff8080;font-size:13px;display:none;white-space:pre-wrap}
+</style>
+<script type="importmap">
+{"imports":{
+  "three":"../../assets/three/three.module.js",
+  "three/addons/":"../../assets/three/addons/"
+}}
+</script>
+</head>
+<body>
+<div id="app"></div>
+<div id="hud"><h1 id="titre"></h1><p class="sub" id="sous"></p><span class="badge" id="badge"></span></div>
+<div id="hint">Touchez un trajet coloré pour sa fiche · glissez pour pivoter</div>
+<div id="panel"><h2 id="p-nom"></h2><p class="seg" id="p-seg"></p><p class="fiche" id="p-fiche"></p><p class="src" id="p-src"></p></div>
+<div id="err"></div>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const params = new URLSearchParams(location.search);
+const FIG = params.get('fig') || '5';
+const errBox = document.getElementById('err');
+window.__errors = [];
+window.addEventListener('error', e => { window.__errors.push(String(e.message)); errBox.style.display='block'; errBox.textContent += '\n' + e.message; });
+
+const VUES = { '1':[0.35,0.55,-1], '2':[0.3,0.25,-1], '3':[0.2,0.3,-1], '4':[0.2,0.3,-1],
+               '5':[0.9,0.45,-0.55], '6':[0.4,0.9,-0.4], '14':[0.25,-0.5,-1] };
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b0f14);
+const camera = new THREE.PerspectiveCamera(42, innerWidth/innerHeight, 1, 6000);
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, params.get('cap') ? 1 : 2));
+renderer.setSize(innerWidth, innerHeight);
+document.getElementById('app').appendChild(renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = false;
+function render(){ renderer.render(scene, camera); }
+controls.addEventListener('change', render);
+scene.add(new THREE.AmbientLight(0xffffff, 0.85));
+const d1 = new THREE.DirectionalLight(0xffffff, 1.6); d1.position.set(300, 700, 400); scene.add(d1);
+const d2 = new THREE.DirectionalLight(0x88aaff, 0.5); d2.position.set(-400, 200, -300); scene.add(d2);
+
+const loader = new GLTFLoader();
+const pickables = [];
+const tractById = {};
+let sceneData = null;
+
+function loadGLB(url){
+  return new Promise((res, rej) => loader.load(url, g => res(g.scene), undefined, e => rej(new Error(url + ' : ' + e.message))));
+}
+function styleMesh(root, {color=0x8fa8bd, opacity=1, emissive=0}={}){
+  root.traverse(o => { if (o.isMesh){ o.material = new THREE.MeshStandardMaterial({
+    color, transparent: opacity < 1, opacity, roughness:.55, metalness:.05,
+    emissive, emissiveIntensity: emissive ? .55 : 0, depthWrite: opacity >= 1 }); }});
+  return root;
+}
+
+async function main(){
+  const man = await (await fetch('../../data/manifest-app-base.json')).json();
+  const fileOf = {}; man.forEach(e => fileOf[e.id] = e.file);
+  sceneData = await (await fetch(`scenes/scene-fig${FIG}.json`)).json();
+  document.getElementById('titre').textContent = `Figure ${sceneData.figure} — ${sceneData.titre_fr}`;
+  const nT = sceneData.trajets_3d.length;
+  document.getElementById('sous').textContent = nT
+    ? 'Trajets réels de tractographie IRM recalés dans l\'atlas (staging)'
+    : 'Aucun trajet de tractographie ouvert pour cette figure (voir la fiche)';
+  const badge = document.getElementById('badge');
+  if (nT){ badge.textContent = '3D réel + schéma compagnon'; }
+  else { badge.textContent = 'Schéma interactif (H1) — pas de trajet ouvert'; badge.className = 'badge schema'; }
+
+  const group = new THREE.Group(); scene.add(group);
+  // contexte fantome : substance blanche + moelle
+  const ghostIds = ['white_matter_of_telencephalon_left','white_matter_of_telencephalon_right','white_matter_of_spinal_cord'];
+  for (const id of ghostIds){
+    try { const g = await loadGLB('../../' + fileOf[id]);
+      group.add(styleMesh(g, {color:0x5a7186, opacity:0.08})); } catch(e){ console.warn(id, e); }
+  }
+  // structures sujet/contexte de la scene
+  window.__skipped = [];
+  for (const st of sceneData.structures || []){
+    if (ghostIds.includes(st.id)) continue;
+    if (!fileOf[st.id]){ window.__skipped.push(st.id); continue; } // ex. reperes (autre manifeste)
+    try { const g = await loadGLB('../../' + fileOf[st.id]);
+      const op = st.role === 'sujet' ? 0.4 : 0.15;
+      const obj = styleMesh(g, {color:0xaebfcf, opacity:op});
+      obj.userData.info = {nom: st.nom_fr, seg: st.role === 'sujet' ? 'Structure de l\'atlas (maillage natif Z-Anatomy / BodyParts3D)' : 'Contexte anatomique (maillage natif)', fiche:'', src:''};
+      group.add(obj); pickables.push(obj);
+    } catch(e){ console.warn(st.id, e); }
+  }
+  // trajets tractographie
+  for (const t of sceneData.trajets_3d){
+    const g = await loadGLB('../../models-tracts/' + t.fichier);
+    const obj = styleMesh(g, {color: new THREE.Color(t.couleur).getHex(), opacity:1});
+    obj.userData.info = {nom: t.nom_fr, seg: t.segment_couvert, fiche: t.fiche_fr, src: t.source, tract:true};
+    tractById[t.id] = obj;
+    group.add(obj); pickables.push(obj);
+  }
+  // cadrage
+  const box = new THREE.Box3().setFromObject(group);
+  const center = box.getCenter(new THREE.Vector3()); const size = box.getSize(new THREE.Vector3());
+  const dir = new THREE.Vector3(...(VUES[FIG] || [0.6,0.4,-1])).normalize();
+  const dist = Math.max(size.x, size.y, size.z) * 1.55;
+  camera.position.copy(center).addScaledVector(dir, dist);
+  controls.target.copy(center);
+  camera.lookAt(center); controls.update();
+  render();
+  requestAnimationFrame(() => { render(); window.__ready = true; });
+}
+
+const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();
+let selected = null;
+function select(obj){
+  if (selected) styleMesh(selected, {color: selected.userData.__c, opacity: selected.userData.__o});
+  selected = obj;
+  if (!obj){ document.getElementById('panel').classList.remove('open'); return; }
+  obj.traverse(o => { if (o.isMesh){ obj.userData.__c = o.material.color.getHex(); obj.userData.__o = o.material.opacity; } });
+  const inf = obj.userData.info;
+  document.getElementById('p-nom').textContent = inf.nom;
+  document.getElementById('p-seg').textContent = inf.seg || '';
+  document.getElementById('p-fiche').textContent = inf.fiche || '';
+  document.getElementById('p-src').textContent = inf.src || '';
+  document.getElementById('panel').classList.add('open');
+  if (inf.tract) obj.traverse(o => { if (o.isMesh) o.material.emissive = new THREE.Color(0x333333); });
+  render();
+}
+function pickObj(x, y){
+  ptr.x = (x / innerWidth) * 2 - 1; ptr.y = -(y / innerHeight) * 2 + 1;
+  ray.setFromCamera(ptr, camera);
+  const hits = ray.intersectObjects(pickables, true);
+  const roots = hits.map(h => { let o = h.object; while (o && !o.userData.info) o = o.parent; return o; }).filter(Boolean);
+  return roots.find(o => o.userData.info.tract) || roots[0] || null;
+}
+function pickAt(x, y){
+  const o = pickObj(x, y);
+  if (o) { select(o); return o.userData.info.nom; }
+  select(null); return null;
+}
+renderer.domElement.addEventListener('pointerdown', e => { window.__downAt = [e.clientX, e.clientY]; });
+renderer.domElement.addEventListener('pointerup', e => {
+  const d = window.__downAt || [0,0];
+  if (Math.hypot(e.clientX - d[0], e.clientY - d[1]) < 8) window.__lastPick = pickAt(e.clientX, e.clientY);
+});
+window.__tapTract = (idx) => {
+  const ids = Object.keys(tractById);
+  if (!ids.length) return null;
+  const obj = tractById[ids[idx]];
+  // essaie des pixels reels de la geometrie du trajet (le centre de la bbox
+  // d'un faisceau courbe tombe souvent dans le vide)
+  const pts = [];
+  obj.updateWorldMatrix(true, true);
+  obj.traverse(o => { if (o.isMesh){
+    const pos = o.geometry.attributes.position;
+    const step = Math.max(1, Math.floor(pos.count / 300));
+    const v = new THREE.Vector3();
+    for (let i = 0; i < pos.count; i += step){ v.fromBufferAttribute(pos, i).applyMatrix4(o.matrixWorld); pts.push(v.clone()); }
+  }});
+  for (const w of pts){
+    const c = w.clone().project(camera);
+    if (c.z > 1) continue;
+    const x = (c.x * 0.5 + 0.5) * innerWidth, y = (-c.y * 0.5 + 0.5) * innerHeight;
+    if (pickObj(x, y) === obj){ select(obj); return obj.userData.info.nom; }
+  }
+  select(obj); return obj.userData.info.nom + ' (selection directe)';
+};
+main().catch(e => { window.__errors.push(String(e)); errBox.style.display='block'; errBox.textContent = 'ERREUR: ' + e.message; });
+</script>
+</body>
+</html>

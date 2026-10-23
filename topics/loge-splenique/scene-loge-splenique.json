@@ -1,0 +1,1438 @@
+{
+ "batch": "D",
+ "topic": 28,
+ "slug": "loge-splenique",
+ "partie": "IV",
+ "titre_fr": "La loge splénique",
+ "titre_en": "The splenic compartment",
+ "figures": [
+  {
+   "numero": 80,
+   "titre_fr": "Contenant de la loge splénique",
+   "titre_en": "Walls of the splenic compartment (containing)",
+   "classe": "[3D]",
+   "vue": "antero-laterale",
+   "diagram": null,
+   "systemes": [
+    "organes",
+    "muscles",
+    "arteres",
+    "veines"
+   ],
+   "structures": [
+    {
+     "id": "spleen",
+     "role": "sujet",
+     "nom_fr": "Rate",
+     "name_en": "Spleen",
+     "system": "lymphatique",
+     "file": "models/lymphatique/spleen.glb",
+     "couleur": "#7fae5c",
+     "bounds": {
+      "min": [
+       54.3,
+       1059.2,
+       51.2
+      ],
+      "max": [
+       111.6,
+       1129.8,
+       140.5
+      ],
+      "center": [
+       83.0,
+       1094.5,
+       95.9
+      ],
+      "size": [
+       57.2,
+       70.6,
+       89.3
+      ]
+     }
+    },
+    {
+     "id": "diaphragm",
+     "role": "sujet",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "system": "muscles",
+     "file": "models/muscles/diaphragm.glb",
+     "couleur": "#b03a2e",
+     "bounds": {
+      "min": [
+       -123.9,
+       974.6,
+       37.1
+      ],
+      "max": [
+       122.4,
+       1195.7,
+       194.8
+      ],
+      "center": [
+       -0.7,
+       1085.1,
+       115.9
+      ],
+      "size": [
+       246.3,
+       221.1,
+       157.7
+      ]
+     }
+    },
+    {
+     "id": "kidney_left",
+     "role": "sujet",
+     "nom_fr": "Rein gauche",
+     "name_en": "Left kidney",
+     "system": "organes",
+     "file": "models/organes/kidney_left.glb",
+     "couleur": "#7a3b2e",
+     "bounds": {
+      "min": [
+       32.8,
+       984.5,
+       59.6
+      ],
+      "max": [
+       90.4,
+       1090.4,
+       100.2
+      ],
+      "center": [
+       61.6,
+       1037.5,
+       79.9
+      ],
+      "size": [
+       57.5,
+       105.9,
+       40.6
+      ]
+     }
+    },
+    {
+     "id": "stomach",
+     "role": "sujet",
+     "nom_fr": "Estomac",
+     "name_en": "Stomach",
+     "system": "organes",
+     "file": "models/organes/stomach.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -28.5,
+       1036.3,
+       84.5
+      ],
+      "max": [
+       103.3,
+       1162.5,
+       183.4
+      ],
+      "center": [
+       37.4,
+       1099.4,
+       134.0
+      ],
+      "size": [
+       131.8,
+       126.2,
+       98.9
+      ]
+     }
+    },
+    {
+     "id": "splenic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère splénique",
+     "name_en": "Splenic artery",
+     "system": "arteres",
+     "file": "models/arteres/splenic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       3.9,
+       1077.2,
+       83.5
+      ],
+      "max": [
+       96.9,
+       1101.8,
+       133.7
+      ],
+      "center": [
+       50.4,
+       1089.5,
+       108.6
+      ],
+      "size": [
+       93.0,
+       24.7,
+       50.2
+      ]
+     }
+    },
+    {
+     "id": "splenic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine splénique",
+     "name_en": "Splenic vein",
+     "system": "veines",
+     "file": "models/veines/splenic_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -6.1,
+       1077.1,
+       91.6
+      ],
+      "max": [
+       98.2,
+       1102.2,
+       137.1
+      ],
+      "center": [
+       46.0,
+       1089.6,
+       114.4
+      ],
+      "size": [
+       104.2,
+       25.2,
+       45.5
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "sujet",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "pleura",
+     "role": "rapport",
+     "nom_fr": "Plèvre",
+     "name_en": "Pleura",
+     "system": "organes",
+     "file": "models/organes/pleura.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -130.1,
+       1101.5,
+       20.6
+      ],
+      "max": [
+       128.3,
+       1366.7,
+       197.4
+      ],
+      "center": [
+       -0.9,
+       1234.1,
+       109.0
+      ],
+      "size": [
+       258.5,
+       265.2,
+       176.7
+      ]
+     }
+    },
+    {
+     "id": "suprarenal_gland_left",
+     "role": "rapport",
+     "nom_fr": "Glande surrénale",
+     "name_en": "Left suprarenal gland",
+     "system": "organes",
+     "file": "models/organes/suprarenal_gland_left.glb",
+     "couleur": "#caa6d9",
+     "bounds": {
+      "min": [
+       26.5,
+       1071.0,
+       67.1
+      ],
+      "max": [
+       73.9,
+       1116.1,
+       86.0
+      ],
+      "center": [
+       50.2,
+       1093.5,
+       76.6
+      ],
+      "size": [
+       47.3,
+       45.1,
+       18.9
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Ligaments gastro-splénique et spléno-rénal (phrénico-splénique) : ABSENTS du manifeste — le 'contenant' péritonéal de la loge n'existe que par les organes voisins"
+   ],
+   "espaces": [
+    {
+     "key": "loge-splenique",
+     "nom_fr": "Loge splénique",
+     "name_en": "Splenic compartment (splenic lodge)",
+     "couleur": "#ef8354",
+     "bornes": [
+      "diaphragm",
+      "kidney_left",
+      "stomach",
+      "pancreas",
+      "spleen"
+     ],
+     "type": "volume schématique",
+     "desc_fr": "Espace péritonéal de l'étage sus-mésocolique, profondément situé dans l'hypochondre gauche entre les 9e et 11e espaces intercostaux, complètement fermé par le péritoine sauf au niveau de l'angle antéro-interne : coupole diaphragmatique gauche en haut et en dehors, rein gauche et queue du pancréas en arrière, grande courbure de l'estomac en dedans à travers les épiploons gastro-splénique et pancréatico-splénique, grill costal en avant. Il contient la rate (spleen, au centre du bounding). Limite inférieure du cours — l'angle colique gauche — absente de cette scène (elle figure dans la fig. 82) et ligaments de la loge non modélisés (audit) : la loge n'est donc délimitée ici que par ses organes voisins.",
+     "desc_en": "Peritoneal space of the supra-mesocolic compartment, deeply placed in the left hypochondrium between the 9th and 11th intercostal spaces, completely closed by peritoneum except at its antero-medial angle: left diaphragmatic cupola above and laterally, left kidney and tail of the pancreas behind, greater curvature of the stomach medially through the gastrosplenic and pancreaticosplenic omenta, costal margin in front. It contains the spleen (spleen, at the centre of the bounding set). The lower limit named by the course — the left colic angle — is absent from this scene (it appears in fig. 82) and the ligaments of the compartment are not modelled (audit): the compartment is therefore bounded here only by its neighbouring organs."
+    }
+   ]
+  },
+  {
+   "numero": 81,
+   "titre_fr": "Configuration extérieure de la rate",
+   "titre_en": "External configuration of the spleen",
+   "classe": "[3D]",
+   "vue": "laterale",
+   "diagram": null,
+   "systemes": [
+    "lymphatique",
+    "arteres",
+    "veines"
+   ],
+   "structures": [
+    {
+     "id": "spleen",
+     "role": "sujet",
+     "nom_fr": "Rate",
+     "name_en": "Spleen",
+     "system": "lymphatique",
+     "file": "models/lymphatique/spleen.glb",
+     "couleur": "#7fae5c",
+     "bounds": {
+      "min": [
+       54.3,
+       1059.2,
+       51.2
+      ],
+      "max": [
+       111.6,
+       1129.8,
+       140.5
+      ],
+      "center": [
+       83.0,
+       1094.5,
+       95.9
+      ],
+      "size": [
+       57.2,
+       70.6,
+       89.3
+      ]
+     }
+    },
+    {
+     "id": "splenic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère splénique",
+     "name_en": "Splenic artery",
+     "system": "arteres",
+     "file": "models/arteres/splenic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       3.9,
+       1077.2,
+       83.5
+      ],
+      "max": [
+       96.9,
+       1101.8,
+       133.7
+      ],
+      "center": [
+       50.4,
+       1089.5,
+       108.6
+      ],
+      "size": [
+       93.0,
+       24.7,
+       50.2
+      ]
+     }
+    },
+    {
+     "id": "splenic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine splénique",
+     "name_en": "Splenic vein",
+     "system": "veines",
+     "file": "models/veines/splenic_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -6.1,
+       1077.1,
+       91.6
+      ],
+      "max": [
+       98.2,
+       1102.2,
+       137.1
+      ],
+      "center": [
+       46.0,
+       1089.6,
+       114.4
+      ],
+      "size": [
+       104.2,
+       25.2,
+       45.5
+      ]
+     }
+    },
+    {
+     "id": "stomach",
+     "role": "rapport",
+     "nom_fr": "Estomac",
+     "name_en": "Stomach",
+     "system": "organes",
+     "file": "models/organes/stomach.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -28.5,
+       1036.3,
+       84.5
+      ],
+      "max": [
+       103.3,
+       1162.5,
+       183.4
+      ],
+      "center": [
+       37.4,
+       1099.4,
+       134.0
+      ],
+      "size": [
+       131.8,
+       126.2,
+       98.9
+      ]
+     }
+    },
+    {
+     "id": "diaphragm",
+     "role": "rapport",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "system": "muscles",
+     "file": "models/muscles/diaphragm.glb",
+     "couleur": "#b03a2e",
+     "bounds": {
+      "min": [
+       -123.9,
+       974.6,
+       37.1
+      ],
+      "max": [
+       122.4,
+       1195.7,
+       194.8
+      ],
+      "center": [
+       -0.7,
+       1085.1,
+       115.9
+      ],
+      "size": [
+       246.3,
+       221.1,
+       157.7
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Faces, bords et hile de la rate : lisibles sur le maillage unique 'spleen' (système lymphatique dans le manifeste), pas d'entrées séparées"
+   ],
+   "espaces": []
+  },
+  {
+   "numero": 82,
+   "titre_fr": "Rapports péritonéaux et viscéraux de la rate",
+   "titre_en": "Peritoneal and visceral relations of the spleen",
+   "classe": "[3D]",
+   "vue": "anterieure",
+   "diagram": null,
+   "systemes": [
+    "organes",
+    "lymphatique",
+    "muscles"
+   ],
+   "structures": [
+    {
+     "id": "spleen",
+     "role": "sujet",
+     "nom_fr": "Rate",
+     "name_en": "Spleen",
+     "system": "lymphatique",
+     "file": "models/lymphatique/spleen.glb",
+     "couleur": "#7fae5c",
+     "bounds": {
+      "min": [
+       54.3,
+       1059.2,
+       51.2
+      ],
+      "max": [
+       111.6,
+       1129.8,
+       140.5
+      ],
+      "center": [
+       83.0,
+       1094.5,
+       95.9
+      ],
+      "size": [
+       57.2,
+       70.6,
+       89.3
+      ]
+     }
+    },
+    {
+     "id": "stomach",
+     "role": "sujet",
+     "nom_fr": "Estomac",
+     "name_en": "Stomach",
+     "system": "organes",
+     "file": "models/organes/stomach.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -28.5,
+       1036.3,
+       84.5
+      ],
+      "max": [
+       103.3,
+       1162.5,
+       183.4
+      ],
+      "center": [
+       37.4,
+       1099.4,
+       134.0
+      ],
+      "size": [
+       131.8,
+       126.2,
+       98.9
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "sujet",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "kidney_left",
+     "role": "sujet",
+     "nom_fr": "Rein gauche",
+     "name_en": "Left kidney",
+     "system": "organes",
+     "file": "models/organes/kidney_left.glb",
+     "couleur": "#7a3b2e",
+     "bounds": {
+      "min": [
+       32.8,
+       984.5,
+       59.6
+      ],
+      "max": [
+       90.4,
+       1090.4,
+       100.2
+      ],
+      "center": [
+       61.6,
+       1037.5,
+       79.9
+      ],
+      "size": [
+       57.5,
+       105.9,
+       40.6
+      ]
+     }
+    },
+    {
+     "id": "suprarenal_gland_left",
+     "role": "sujet",
+     "nom_fr": "Glande surrénale",
+     "name_en": "Left suprarenal gland",
+     "system": "organes",
+     "file": "models/organes/suprarenal_gland_left.glb",
+     "couleur": "#caa6d9",
+     "bounds": {
+      "min": [
+       26.5,
+       1071.0,
+       67.1
+      ],
+      "max": [
+       73.9,
+       1116.1,
+       86.0
+      ],
+      "center": [
+       50.2,
+       1093.5,
+       76.6
+      ],
+      "size": [
+       47.3,
+       45.1,
+       18.9
+      ]
+     }
+    },
+    {
+     "id": "diaphragm",
+     "role": "sujet",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "system": "muscles",
+     "file": "models/muscles/diaphragm.glb",
+     "couleur": "#b03a2e",
+     "bounds": {
+      "min": [
+       -123.9,
+       974.6,
+       37.1
+      ],
+      "max": [
+       122.4,
+       1195.7,
+       194.8
+      ],
+      "center": [
+       -0.7,
+       1085.1,
+       115.9
+      ],
+      "size": [
+       246.3,
+       221.1,
+       157.7
+      ]
+     }
+    },
+    {
+     "id": "descending_colon",
+     "role": "sujet",
+     "nom_fr": "Côlon descendant",
+     "name_en": "Descending colon",
+     "system": "organes",
+     "file": "models/organes/descending_colon.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -18.2,
+       802.6,
+       45.5
+      ],
+      "max": [
+       112.0,
+       1067.3,
+       133.5
+      ],
+      "center": [
+       46.9,
+       934.9,
+       89.5
+      ],
+      "size": [
+       130.2,
+       264.7,
+       88.0
+      ]
+     }
+    },
+    {
+     "id": "transverse_colon",
+     "role": "sujet",
+     "nom_fr": "Côlon transverse",
+     "name_en": "Transverse colon",
+     "system": "organes",
+     "file": "models/organes/transverse_colon.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -86.0,
+       999.2,
+       105.6
+      ],
+      "max": [
+       97.1,
+       1068.0,
+       176.3
+      ],
+      "center": [
+       5.5,
+       1033.6,
+       141.0
+      ],
+      "size": [
+       183.1,
+       68.7,
+       70.7
+      ]
+     }
+    },
+    {
+     "id": "pleura",
+     "role": "rapport",
+     "nom_fr": "Plèvre",
+     "name_en": "Pleura",
+     "system": "organes",
+     "file": "models/organes/pleura.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -130.1,
+       1101.5,
+       20.6
+      ],
+      "max": [
+       128.3,
+       1366.7,
+       197.4
+      ],
+      "center": [
+       -0.9,
+       1234.1,
+       109.0
+      ],
+      "size": [
+       258.5,
+       265.2,
+       176.7
+      ]
+     }
+    },
+    {
+     "id": "splenic_artery",
+     "role": "rapport",
+     "nom_fr": "Artère splénique",
+     "name_en": "Splenic artery",
+     "system": "arteres",
+     "file": "models/arteres/splenic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       3.9,
+       1077.2,
+       83.5
+      ],
+      "max": [
+       96.9,
+       1101.8,
+       133.7
+      ],
+      "center": [
+       50.4,
+       1089.5,
+       108.6
+      ],
+      "size": [
+       93.0,
+       24.7,
+       50.2
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Rapports PÉRITONÉAUX (ligaments gastro-splénique, spléno-rénal, phréno-colique) : ABSENTS (voir Fig 80) — seuls les rapports viscéraux sont montrables en 3D"
+   ],
+   "espaces": []
+  },
+  {
+   "numero": 83,
+   "titre_fr": "Vascularisation artérielle de la rate",
+   "titre_en": "Arterial supply of the spleen",
+   "classe": "[3D]",
+   "vue": "anterieure",
+   "diagram": null,
+   "systemes": [
+    "arteres",
+    "veines",
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "splenic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère splénique",
+     "name_en": "Splenic artery",
+     "system": "arteres",
+     "file": "models/arteres/splenic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       3.9,
+       1077.2,
+       83.5
+      ],
+      "max": [
+       96.9,
+       1101.8,
+       133.7
+      ],
+      "center": [
+       50.4,
+       1089.5,
+       108.6
+      ],
+      "size": [
+       93.0,
+       24.7,
+       50.2
+      ]
+     }
+    },
+    {
+     "id": "splenic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine splénique",
+     "name_en": "Splenic vein",
+     "system": "veines",
+     "file": "models/veines/splenic_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -6.1,
+       1077.1,
+       91.6
+      ],
+      "max": [
+       98.2,
+       1102.2,
+       137.1
+      ],
+      "center": [
+       46.0,
+       1089.6,
+       114.4
+      ],
+      "size": [
+       104.2,
+       25.2,
+       45.5
+      ]
+     }
+    },
+    {
+     "id": "spleen",
+     "role": "sujet",
+     "nom_fr": "Rate",
+     "name_en": "Spleen",
+     "system": "lymphatique",
+     "file": "models/lymphatique/spleen.glb",
+     "couleur": "#7fae5c",
+     "bounds": {
+      "min": [
+       54.3,
+       1059.2,
+       51.2
+      ],
+      "max": [
+       111.6,
+       1129.8,
+       140.5
+      ],
+      "center": [
+       83.0,
+       1094.5,
+       95.9
+      ],
+      "size": [
+       57.2,
+       70.6,
+       89.3
+      ]
+     }
+    },
+    {
+     "id": "coeliac_trunk",
+     "role": "sujet",
+     "nom_fr": "Tronc coeliaque",
+     "name_en": "Coeliac trunk",
+     "system": "arteres",
+     "file": "models/arteres/coeliac_trunk.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       2.5,
+       1068.3,
+       111.8
+      ],
+      "max": [
+       13.3,
+       1092.8,
+       132.0
+      ],
+      "center": [
+       7.9,
+       1080.6,
+       121.9
+      ],
+      "size": [
+       10.8,
+       24.4,
+       20.2
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "rapport",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "stomach",
+     "role": "rapport",
+     "nom_fr": "Estomac",
+     "name_en": "Stomach",
+     "system": "organes",
+     "file": "models/organes/stomach.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -28.5,
+       1036.3,
+       84.5
+      ],
+      "max": [
+       103.3,
+       1162.5,
+       183.4
+      ],
+      "center": [
+       37.4,
+       1099.4,
+       134.0
+      ],
+      "size": [
+       131.8,
+       126.2,
+       98.9
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Artères gastriques courtes : ABSENTES ; artère gastro-omentale gauche : ABSENTE — les branches terminales spléniques de la figure sont incomplètes",
+    "Branches pancréatiques de la splénique (dorsale, grande pancréatique) : non individualisées"
+   ],
+   "espaces": []
+  }
+ ],
+ "structures": [
+  {
+   "id": "spleen",
+   "role": "sujet",
+   "nom_fr": "Rate",
+   "name_en": "Spleen",
+   "system": "lymphatique",
+   "file": "models/lymphatique/spleen.glb",
+   "couleur": "#7fae5c",
+   "bounds": {
+    "min": [
+     54.3,
+     1059.2,
+     51.2
+    ],
+    "max": [
+     111.6,
+     1129.8,
+     140.5
+    ],
+    "center": [
+     83.0,
+     1094.5,
+     95.9
+    ],
+    "size": [
+     57.2,
+     70.6,
+     89.3
+    ]
+   }
+  },
+  {
+   "id": "diaphragm",
+   "role": "sujet",
+   "nom_fr": "Diaphragme",
+   "name_en": "Diaphragm",
+   "system": "muscles",
+   "file": "models/muscles/diaphragm.glb",
+   "couleur": "#b03a2e",
+   "bounds": {
+    "min": [
+     -123.9,
+     974.6,
+     37.1
+    ],
+    "max": [
+     122.4,
+     1195.7,
+     194.8
+    ],
+    "center": [
+     -0.7,
+     1085.1,
+     115.9
+    ],
+    "size": [
+     246.3,
+     221.1,
+     157.7
+    ]
+   }
+  },
+  {
+   "id": "kidney_left",
+   "role": "sujet",
+   "nom_fr": "Rein gauche",
+   "name_en": "Left kidney",
+   "system": "organes",
+   "file": "models/organes/kidney_left.glb",
+   "couleur": "#7a3b2e",
+   "bounds": {
+    "min": [
+     32.8,
+     984.5,
+     59.6
+    ],
+    "max": [
+     90.4,
+     1090.4,
+     100.2
+    ],
+    "center": [
+     61.6,
+     1037.5,
+     79.9
+    ],
+    "size": [
+     57.5,
+     105.9,
+     40.6
+    ]
+   }
+  },
+  {
+   "id": "stomach",
+   "role": "sujet",
+   "nom_fr": "Estomac",
+   "name_en": "Stomach",
+   "system": "organes",
+   "file": "models/organes/stomach.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -28.5,
+     1036.3,
+     84.5
+    ],
+    "max": [
+     103.3,
+     1162.5,
+     183.4
+    ],
+    "center": [
+     37.4,
+     1099.4,
+     134.0
+    ],
+    "size": [
+     131.8,
+     126.2,
+     98.9
+    ]
+   }
+  },
+  {
+   "id": "splenic_artery",
+   "role": "sujet",
+   "nom_fr": "Artère splénique",
+   "name_en": "Splenic artery",
+   "system": "arteres",
+   "file": "models/arteres/splenic_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     3.9,
+     1077.2,
+     83.5
+    ],
+    "max": [
+     96.9,
+     1101.8,
+     133.7
+    ],
+    "center": [
+     50.4,
+     1089.5,
+     108.6
+    ],
+    "size": [
+     93.0,
+     24.7,
+     50.2
+    ]
+   }
+  },
+  {
+   "id": "splenic_vein",
+   "role": "sujet",
+   "nom_fr": "Veine splénique",
+   "name_en": "Splenic vein",
+   "system": "veines",
+   "file": "models/veines/splenic_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -6.1,
+     1077.1,
+     91.6
+    ],
+    "max": [
+     98.2,
+     1102.2,
+     137.1
+    ],
+    "center": [
+     46.0,
+     1089.6,
+     114.4
+    ],
+    "size": [
+     104.2,
+     25.2,
+     45.5
+    ]
+   }
+  },
+  {
+   "id": "pancreas",
+   "role": "sujet",
+   "nom_fr": "Pancréas",
+   "name_en": "Pancreas",
+   "system": "organes",
+   "file": "models/organes/pancreas.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -45.0,
+     1011.7,
+     95.2
+    ],
+    "max": [
+     71.1,
+     1085.8,
+     145.3
+    ],
+    "center": [
+     13.1,
+     1048.7,
+     120.2
+    ],
+    "size": [
+     116.1,
+     74.1,
+     50.1
+    ]
+   }
+  },
+  {
+   "id": "pleura",
+   "role": "rapport",
+   "nom_fr": "Plèvre",
+   "name_en": "Pleura",
+   "system": "organes",
+   "file": "models/organes/pleura.glb",
+   "couleur": "#c97b84",
+   "bounds": {
+    "min": [
+     -130.1,
+     1101.5,
+     20.6
+    ],
+    "max": [
+     128.3,
+     1366.7,
+     197.4
+    ],
+    "center": [
+     -0.9,
+     1234.1,
+     109.0
+    ],
+    "size": [
+     258.5,
+     265.2,
+     176.7
+    ]
+   }
+  },
+  {
+   "id": "suprarenal_gland_left",
+   "role": "sujet",
+   "nom_fr": "Glande surrénale",
+   "name_en": "Left suprarenal gland",
+   "system": "organes",
+   "file": "models/organes/suprarenal_gland_left.glb",
+   "couleur": "#caa6d9",
+   "bounds": {
+    "min": [
+     26.5,
+     1071.0,
+     67.1
+    ],
+    "max": [
+     73.9,
+     1116.1,
+     86.0
+    ],
+    "center": [
+     50.2,
+     1093.5,
+     76.6
+    ],
+    "size": [
+     47.3,
+     45.1,
+     18.9
+    ]
+   }
+  },
+  {
+   "id": "descending_colon",
+   "role": "sujet",
+   "nom_fr": "Côlon descendant",
+   "name_en": "Descending colon",
+   "system": "organes",
+   "file": "models/organes/descending_colon.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -18.2,
+     802.6,
+     45.5
+    ],
+    "max": [
+     112.0,
+     1067.3,
+     133.5
+    ],
+    "center": [
+     46.9,
+     934.9,
+     89.5
+    ],
+    "size": [
+     130.2,
+     264.7,
+     88.0
+    ]
+   }
+  },
+  {
+   "id": "transverse_colon",
+   "role": "sujet",
+   "nom_fr": "Côlon transverse",
+   "name_en": "Transverse colon",
+   "system": "organes",
+   "file": "models/organes/transverse_colon.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -86.0,
+     999.2,
+     105.6
+    ],
+    "max": [
+     97.1,
+     1068.0,
+     176.3
+    ],
+    "center": [
+     5.5,
+     1033.6,
+     141.0
+    ],
+    "size": [
+     183.1,
+     68.7,
+     70.7
+    ]
+   }
+  },
+  {
+   "id": "coeliac_trunk",
+   "role": "sujet",
+   "nom_fr": "Tronc coeliaque",
+   "name_en": "Coeliac trunk",
+   "system": "arteres",
+   "file": "models/arteres/coeliac_trunk.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     2.5,
+     1068.3,
+     111.8
+    ],
+    "max": [
+     13.3,
+     1092.8,
+     132.0
+    ],
+    "center": [
+     7.9,
+     1080.6,
+     121.9
+    ],
+    "size": [
+     10.8,
+     24.4,
+     20.2
+    ]
+   }
+  }
+ ],
+ "camera": {
+  "preset_par_figure": {
+   "80": "antero-laterale",
+   "81": "laterale",
+   "82": "anterieure",
+   "83": "anterieure"
+  },
+  "defaut": "antero-laterale"
+ },
+ "diagram": {},
+ "espaces": [
+  {
+   "key": "loge-splenique",
+   "nom_fr": "Loge splénique",
+   "name_en": "Splenic compartment (splenic lodge)",
+   "couleur": "#ef8354",
+   "bornes": [
+    "diaphragm",
+    "kidney_left",
+    "stomach",
+    "pancreas",
+    "spleen"
+   ],
+   "type": "volume schématique",
+   "desc_fr": "Espace péritonéal de l'étage sus-mésocolique, profondément situé dans l'hypochondre gauche entre les 9e et 11e espaces intercostaux, complètement fermé par le péritoine sauf au niveau de l'angle antéro-interne : coupole diaphragmatique gauche en haut et en dehors, rein gauche et queue du pancréas en arrière, grande courbure de l'estomac en dedans à travers les épiploons gastro-splénique et pancréatico-splénique, grill costal en avant. Il contient la rate (spleen, au centre du bounding). Limite inférieure du cours — l'angle colique gauche — absente de cette scène (elle figure dans la fig. 82) et ligaments de la loge non modélisés (audit) : la loge n'est donc délimitée ici que par ses organes voisins.",
+   "desc_en": "Peritoneal space of the supra-mesocolic compartment, deeply placed in the left hypochondrium between the 9th and 11th intercostal spaces, completely closed by peritoneum except at its antero-medial angle: left diaphragmatic cupola above and laterally, left kidney and tail of the pancreas behind, greater curvature of the stomach medially through the gastrosplenic and pancreaticosplenic omenta, costal margin in front. It contains the spleen (spleen, at the centre of the bounding set). The lower limit named by the course — the left colic angle — is absent from this scene (it appears in fig. 82) and the ligaments of the compartment are not modelled (audit): the compartment is therefore bounded here only by its neighbouring organs."
+  }
+ ],
+ "note_integration": "Scène de staging — IDs issus de FIGURES-AUDIT.json uniquement ; GLB résolus via proto-schemas/manifest.json."
+}

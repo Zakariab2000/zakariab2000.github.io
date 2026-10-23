@@ -1,0 +1,268 @@
+{
+ "titre_fr": "Nerf facial extra-pétreux — branches terminales et rameaux",
+ "titre_en": "Extrapetrous facial nerve — terminal branches and rami",
+ "w": 720,
+ "h": 900,
+ "levels": {
+  "tronc": {
+   "c": "#4fc3f7",
+   "fr": "Tronc et division",
+   "en": "Trunk and division"
+  },
+  "branche": {
+   "c": "#58d68d",
+   "fr": "Branches terminales",
+   "en": "Terminal branches"
+  },
+  "rameau": {
+   "c": "#f0a13c",
+   "fr": "Rameaux moteurs",
+   "en": "Motor rami"
+  },
+  "clinique": {
+   "c": "#e57373",
+   "fr": "Clinique",
+   "en": "Clinical"
+  }
+ },
+ "nodes": [
+  {
+   "id": "tronc",
+   "x": 200,
+   "y": 90,
+   "w": 280,
+   "label": "Tronc extra-crânien",
+   "sub": "à la sortie du trou stylo-mastoïdien",
+   "lvl": "tronc",
+   "desc": {
+    "fr": "À sa sortie du trou stylo-mastoïdien, le nerf facial redevient horizontal, oblique en avant et en dehors, et décrit une courbe à concavité antéro-interne. Le tronc et sa division ne sont pas décomposés en 3D (maillage unique, audit) — ce schéma porte la division parotidienne.",
+    "en": "On leaving the stylomastoid foramen, the facial nerve becomes horizontal again, obliquely forwards and laterally, curving with anteromedial concavity. The trunk and its division are not decomposed in 3D (single mesh, audit) — this diagram carries the parotid division."
+   }
+  },
+  {
+   "id": "rapports",
+   "x": 520,
+   "y": 90,
+   "w": 280,
+   "label": "Rapports parotidiens",
+   "sub": "stylo-hyoïdien · digastrique · carotide ext.",
+   "lvl": "tronc",
+   "desc": {
+    "fr": "Dans la loge parotidienne, le nerf est entre le muscle stylo-hyoïdien en dedans et le ventre postérieur du muscle digastrique en dehors ; il chemine en dehors de la carotide externe et de la jugulaire externe, puis traverse la glande parotide en plein parenchyme — rapports retrouvés dans la scène 3D de la figure 18.",
+    "en": "In the parotid compartment the nerve lies between the stylohyoid medially and the posterior belly of the digastric laterally; it runs lateral to the external carotid artery and external jugular vein, then crosses the parotid gland within its parenchyma — relations found in the figure 18 3D scene."
+   }
+  },
+  {
+   "id": "division",
+   "x": 200,
+   "y": 215,
+   "w": 280,
+   "label": "Division terminale",
+   "sub": "en plein parenchyme parotidien",
+   "lvl": "tronc",
+   "desc": {
+    "fr": "Le nerf facial se divise, en plein parenchyme parotidien, en 2 branches terminales : la branche temporo-faciale et la branche cervico-faciale, qui s'anastomosent et se ramifient en plexus intra-parotidien pour tous les muscles peauciers.",
+    "en": "Within the parotid parenchyma the facial nerve divides into 2 terminal branches: the temporofacial and cervicofacial branches, which anastomose and ramify into an intraparotid plexus for all the cutaneous muscles."
+   }
+  },
+  {
+   "id": "temporo_faciale",
+   "x": 170,
+   "y": 350,
+   "w": 270,
+   "label": "Branche temporo-faciale",
+   "sub": "branche terminale supérieure",
+   "lvl": "branche",
+   "desc": {
+    "fr": "Branche terminale supérieure du nerf facial : elle se ramifie en rameaux temporal, frontal, palpébral, sous-orbitaire et buccal supérieur, destinés aux muscles peauciers de la moitié supérieure de la face.",
+    "en": "Upper terminal branch of the facial nerve: it ramifies into temporal, frontal, palpebral, infraorbital and upper buccal rami for the cutaneous muscles of the upper half of the face."
+   }
+  },
+  {
+   "id": "cervico_faciale",
+   "x": 490,
+   "y": 350,
+   "w": 270,
+   "label": "Branche cervico-faciale",
+   "sub": "branche terminale inférieure",
+   "lvl": "branche",
+   "desc": {
+    "fr": "Branche terminale inférieure du nerf facial : elle se ramifie en rameaux buccal inférieur, mentonnier et cervical, destinés aux muscles peauciers de la moitié inférieure de la face et au peaucier du cou.",
+    "en": "Lower terminal branch of the facial nerve: it ramifies into lower buccal, mental and cervical rami for the cutaneous muscles of the lower half of the face and the platysma."
+   }
+  },
+  {
+   "id": "temporale",
+   "x": 90,
+   "y": 490,
+   "w": 150,
+   "label": "Rameau temporal",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau temporal de la branche temporo-faciale : muscles peauciers de la région temporale et de l'oreille.",
+    "en": "Temporal ramus of the temporofacial branch: cutaneous muscles of the temporal region and ear."
+   }
+  },
+  {
+   "id": "frontale",
+   "x": 90,
+   "y": 575,
+   "w": 150,
+   "label": "Rameau frontal",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau frontal de la branche temporo-faciale : muscle frontal — c'est lui qui permet de plisser le front ; son atteinte distingue la paralysie périphérique (front atteint) de la paralysie centrale (front épargné).",
+    "en": "Frontal ramus of the temporofacial branch: frontalis muscle — it wrinkles the forehead; its involvement distinguishes peripheral palsy (forehead involved) from central palsy (forehead spared)."
+   }
+  },
+  {
+   "id": "palpebrale",
+   "x": 90,
+   "y": 660,
+   "w": 150,
+   "label": "Rameau palpébral",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau palpébral de la branche temporo-faciale : muscle orbiculaire de l'œil — il assure l'occlusion palpébrale ; son atteinte donne le signe de Charles Bell et expose la cornée.",
+    "en": "Palpebral ramus of the temporofacial branch: orbicularis oculi — it closes the eyelids; its lesion gives Bell's sign and exposes the cornea."
+   }
+  },
+  {
+   "id": "sous_orbitaire",
+   "x": 90,
+   "y": 745,
+   "w": 150,
+   "label": "Rameau sous-orbitaire",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau sous-orbitaire de la branche temporo-faciale : muscles peauciers de la région sous-orbitaire et de la lèvre supérieure.",
+    "en": "Infraorbital ramus of the temporofacial branch: cutaneous muscles of the infraorbital region and upper lip."
+   }
+  },
+  {
+   "id": "buccale_sup",
+   "x": 90,
+   "y": 818,
+   "w": 150,
+   "label": "Rameau buccal supérieur",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau buccal supérieur de la branche temporo-faciale : muscles peauciers de la partie supérieure de la région buccale (buccinateur, orbiculaire de la bouche).",
+    "en": "Upper buccal ramus of the temporofacial branch: cutaneous muscles of the upper buccal region (buccinator, orbicularis oris)."
+   }
+  },
+  {
+   "id": "buccale_inf",
+   "x": 630,
+   "y": 490,
+   "w": 150,
+   "label": "Rameau buccal inférieur",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau buccal inférieur de la branche cervico-faciale : muscles peauciers de la partie inférieure de la région buccale et de la lèvre inférieure.",
+    "en": "Lower buccal ramus of the cervicofacial branch: cutaneous muscles of the lower buccal region and lower lip."
+   }
+  },
+  {
+   "id": "mentonniere",
+   "x": 630,
+   "y": 575,
+   "w": 150,
+   "label": "Rameau mentonnier",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau mentonnier (marginal mandibulaire) de la branche cervico-faciale : muscles du menton et de la lèvre inférieure ; il chemine sous le bord inférieur de la mandibule — rameau à protéger en chirurgie sous-mandibulaire.",
+    "en": "Mental (marginal mandibular) ramus of the cervicofacial branch: muscles of the chin and lower lip; it runs below the lower border of the mandible — a ramus to protect in submandibular surgery."
+   }
+  },
+  {
+   "id": "cervicale",
+   "x": 630,
+   "y": 660,
+   "w": 150,
+   "label": "Rameau cervical",
+   "sub": "",
+   "lvl": "rameau",
+   "desc": {
+    "fr": "Rameau cervical de la branche cervico-faciale : destiné au cou, il innerve le muscle peaucier (platysma).",
+    "en": "Cervical ramus of the cervicofacial branch: destined for the neck, it supplies the platysma muscle."
+   }
+  },
+  {
+   "id": "clinique_br",
+   "x": 360,
+   "y": 872,
+   "w": 430,
+   "label": "Clinique",
+   "sub": "paralysie périphérique = tous les rameaux",
+   "lvl": "clinique",
+   "desc": {
+    "fr": "Une lésion du tronc extra-crânien (traumatisme, tumeur parotidienne, chirurgie) donne une paralysie faciale périphérique complète : tous les rameaux sont atteints, front compris — à la différence de la paralysie centrale qui épargne le territoire supérieur. La division du nerf en plein parenchyme rend la chirurgie parotidienne délicate : le plan du nerf sépare les lobes superficiel et profond de la glande.",
+    "en": "A lesion of the extrapetrous trunk (trauma, parotid tumour, surgery) causes a complete peripheral facial palsy: all rami are involved, forehead included — unlike central palsy, which spares the upper territory. The nerve dividing within the parenchyma makes parotid surgery delicate: the nerve's plane separates the gland's superficial and deep lobes."
+   }
+  }
+ ],
+ "edges": [
+  [
+   "tronc",
+   "rapports",
+   1
+  ],
+  [
+   "tronc",
+   "division"
+  ],
+  [
+   "division",
+   "temporo_faciale"
+  ],
+  [
+   "division",
+   "cervico_faciale"
+  ],
+  [
+   "temporo_faciale",
+   "temporale"
+  ],
+  [
+   "temporo_faciale",
+   "frontale"
+  ],
+  [
+   "temporo_faciale",
+   "palpebrale"
+  ],
+  [
+   "temporo_faciale",
+   "sous_orbitaire"
+  ],
+  [
+   "temporo_faciale",
+   "buccale_sup"
+  ],
+  [
+   "cervico_faciale",
+   "buccale_inf"
+  ],
+  [
+   "cervico_faciale",
+   "mentonniere"
+  ],
+  [
+   "cervico_faciale",
+   "cervicale"
+  ],
+  [
+   "division",
+   "clinique_br",
+   1
+  ]
+ ]
+}

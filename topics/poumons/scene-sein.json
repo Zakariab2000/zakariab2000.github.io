@@ -1,0 +1,1479 @@
+{
+ "sujet": "sein",
+ "titre_fr": "Le sein",
+ "titre_en": "The breast",
+ "partie": "III",
+ "numero_topic": 18,
+ "batch": "F",
+ "figures": [
+  {
+   "numero": 48,
+   "titre_fr": "Vascularisation artérielle du sein",
+   "titre_en": "Arterial supply of the breast",
+   "classe": "3D+D",
+   "camera": {
+    "vue": "anterieure",
+    "preset_audit": "antérieure"
+   },
+   "structures": [
+    {
+     "id": "internal_thoracic_artery_right",
+     "nom_fr": "Artère thoracique interne",
+     "name_en": "Right internal thoracic artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/internal_thoracic_artery_right.glb",
+     "role": "sujet",
+     "centre": [
+      -28.2,
+      1269.4,
+      147.0
+     ],
+     "taille": [
+      28.3,
+      173.6,
+      97.6
+     ]
+    },
+    {
+     "id": "lateral_thoracic_artery_right",
+     "nom_fr": "Artère thoracique latérale",
+     "name_en": "Right lateral thoracic artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/lateral_thoracic_artery_right.glb",
+     "role": "sujet",
+     "centre": [
+      -117.5,
+      1224.2,
+      129.0
+     ],
+     "taille": [
+      22.0,
+      212.4,
+      67.8
+     ]
+    },
+    {
+     "id": "thoraco_acromial_artery_right",
+     "nom_fr": "Artère thoraco-acromiale",
+     "name_en": "Right thoraco-acromial artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/thoraco_acromial_artery_right.glb",
+     "role": "sujet",
+     "centre": [
+      -93.3,
+      1334.5,
+      99.8
+     ],
+     "taille": [
+      4.7,
+      10.4,
+      11.1
+     ]
+    },
+    {
+     "id": "pectoralis_major_muscle_right",
+     "nom_fr": "Muscle grand pectoral",
+     "name_en": "Right pectoralis major muscle",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/pectoralis_major_muscle_right.glb",
+     "role": "sujet",
+     "centre": [
+      -100.2,
+      1244.8,
+      151.7
+     ],
+     "taille": [
+      193.4,
+      197.9,
+      133.9
+     ]
+    },
+    {
+     "id": "axillary_artery_right",
+     "nom_fr": "Artère axillaire",
+     "name_en": "Right axillary artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/axillary_artery_right.glb",
+     "role": "contexte",
+     "centre": [
+      -106.1,
+      1323.1,
+      93.3
+     ],
+     "taille": [
+      57.2,
+      51.2,
+      12.4
+     ]
+    },
+    {
+     "id": "first_rib_right",
+     "nom_fr": "Première côte",
+     "name_en": "Right first rib",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "fichier": "models/squelette/first_rib_right.glb",
+     "role": "contexte",
+     "centre": [
+      -43.3,
+      1351.2,
+      101.7
+     ],
+     "taille": [
+      53.9,
+      59.7,
+      66.4
+     ]
+    },
+    {
+     "id": "anterior_axillary_nodes_right",
+     "nom_fr": "Lymphonoeuds axillaires antérieurs",
+     "name_en": "Right anterior axillary nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/anterior_axillary_nodes_right.glb",
+     "role": "contexte",
+     "centre": [
+      -116.7,
+      1259.2,
+      126.4
+     ],
+     "taille": [
+      15.2,
+      44.1,
+      23.3
+     ]
+    }
+   ],
+   "diagramme": "sein_arteriel",
+   "espaces": [],
+   "manquants": [
+    "GLANDE MAMMAIRE : ABSENTE du manifeste (aucune entrée mammaire/sein sur 4663) — le sujet même de la figure n'a pas de maillage ; la scène 3D ne peut montrer que les vaisseaux et la paroi thoracique, le sein devra être schématisé en regard ou modélisé plus tard",
+    "Rameaux perforants des intercostales antérieures : non individualisés"
+   ]
+  },
+  {
+   "numero": 49,
+   "titre_fr": "Vascularisation veineuse du sein",
+   "titre_en": "Venous drainage of the breast",
+   "classe": "3D+D",
+   "camera": {
+    "vue": "anterieure",
+    "preset_audit": "antérieure"
+   },
+   "structures": [
+    {
+     "id": "axillary_vein_right",
+     "nom_fr": "Veine axillaire",
+     "name_en": "Right axillary vein",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/axillary_vein_right.glb",
+     "role": "sujet",
+     "centre": [
+      -122.3,
+      1290.2,
+      99.5
+     ],
+     "taille": [
+      63.5,
+      95.2,
+      11.2
+     ]
+    },
+    {
+     "id": "lateral_thoracic_vein_right",
+     "nom_fr": "Veine thoracique latérale",
+     "name_en": "Right lateral thoracic vein",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/lateral_thoracic_vein_right.glb",
+     "role": "sujet",
+     "centre": [
+      -99.6,
+      1149.3,
+      155.8
+     ],
+     "taille": [
+      71.1,
+      340.8,
+      116.8
+     ]
+    },
+    {
+     "id": "cephalic_vein_right",
+     "nom_fr": "Veine céphalique",
+     "name_en": "Right cephalic vein",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/cephalic_vein_right.glb",
+     "role": "sujet",
+     "centre": [
+      -192.7,
+      1043.6,
+      102.5
+     ],
+     "taille": [
+      176.5,
+      567.9,
+      39.3
+     ]
+    },
+    {
+     "id": "pectoralis_major_muscle_right",
+     "nom_fr": "Muscle grand pectoral",
+     "name_en": "Right pectoralis major muscle",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/pectoralis_major_muscle_right.glb",
+     "role": "sujet",
+     "centre": [
+      -100.2,
+      1244.8,
+      151.7
+     ],
+     "taille": [
+      193.4,
+      197.9,
+      133.9
+     ]
+    },
+    {
+     "id": "left_subclavian_vein",
+     "nom_fr": "Veine sous-clavière gauche",
+     "name_en": "Left subclavian vein",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/left_subclavian_vein.glb",
+     "role": "contexte",
+     "centre": [
+      57.7,
+      1341.6,
+      110.6
+     ],
+     "taille": [
+      70.2,
+      20.5,
+      23.8
+     ]
+    },
+    {
+     "id": "anterior_axillary_nodes_right",
+     "nom_fr": "Lymphonoeuds axillaires antérieurs",
+     "name_en": "Right anterior axillary nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/anterior_axillary_nodes_right.glb",
+     "role": "contexte",
+     "centre": [
+      -116.7,
+      1259.2,
+      126.4
+     ],
+     "taille": [
+      15.2,
+      44.1,
+      23.3
+     ]
+    }
+   ],
+   "diagramme": "sein_veineux",
+   "espaces": [],
+   "manquants": [
+    "GLANDE MAMMAIRE : ABSENTE (voir Fig 48)",
+    "Veine thoracique interne : ABSENTE du manifeste",
+    "Veine thoraco-épigastrique : non retrouvée"
+   ]
+  },
+  {
+   "numero": 50,
+   "titre_fr": "Drainage lymphatique du sein",
+   "titre_en": "Lymphatic drainage of the breast",
+   "classe": "3D+D",
+   "camera": {
+    "vue": "anterieure",
+    "preset_audit": "antérieure"
+   },
+   "structures": [
+    {
+     "id": "anterior_axillary_nodes_right",
+     "nom_fr": "Lymphonoeuds axillaires antérieurs",
+     "name_en": "Right anterior axillary nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/anterior_axillary_nodes_right.glb",
+     "role": "sujet",
+     "centre": [
+      -116.7,
+      1259.2,
+      126.4
+     ],
+     "taille": [
+      15.2,
+      44.1,
+      23.3
+     ]
+    },
+    {
+     "id": "posterior_axillary_nodes_right",
+     "nom_fr": "Lymphonoeuds axillaires postérieurs",
+     "name_en": "Right posterior axillary nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/posterior_axillary_nodes_right.glb",
+     "role": "sujet",
+     "centre": [
+      -160.1,
+      1287.5,
+      89.2
+     ],
+     "taille": [
+      22.1,
+      41.8,
+      14.1
+     ]
+    },
+    {
+     "id": "lateral_axillary_nodes_right",
+     "nom_fr": "Lymphonoeuds axillaires latéraux",
+     "name_en": "Right lateral axillary nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/lateral_axillary_nodes_right.glb",
+     "role": "sujet",
+     "centre": [
+      -151.6,
+      1246.1,
+      66.4
+     ],
+     "taille": [
+      3.3,
+      8.5,
+      4.9
+     ]
+    },
+    {
+     "id": "central_axillary_nodes_right",
+     "nom_fr": "Lymphonoeuds axillaires centraux",
+     "name_en": "Right central axillary nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/central_axillary_nodes_right.glb",
+     "role": "sujet",
+     "centre": [
+      -141.3,
+      1246.1,
+      66.4
+     ],
+     "taille": [
+      3.3,
+      8.6,
+      4.8
+     ]
+    },
+    {
+     "id": "apical_axillary_nodes_right",
+     "nom_fr": "Lymphonoeuds axillaires apicaux",
+     "name_en": "Right apical axillary nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/apical_axillary_nodes_right.glb",
+     "role": "sujet",
+     "centre": [
+      -141.3,
+      1263.0,
+      66.4
+     ],
+     "taille": [
+      8.9,
+      2.6,
+      2.4
+     ]
+    },
+    {
+     "id": "parasternal_nodes_right",
+     "nom_fr": "Lymphonoeuds parasternaux",
+     "name_en": "Right parasternal nodes",
+     "systeme": "lymphatique",
+     "couleur": "#7fae5c",
+     "fichier": "models/lymphatique/parasternal_nodes_right.glb",
+     "role": "sujet",
+     "centre": [
+      -20.9,
+      1236.8,
+      176.1
+     ],
+     "taille": [
+      9.9,
+      125.2,
+      41.8
+     ]
+    },
+    {
+     "id": "axillary_vein_right",
+     "nom_fr": "Veine axillaire",
+     "name_en": "Right axillary vein",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/axillary_vein_right.glb",
+     "role": "contexte",
+     "centre": [
+      -122.3,
+      1290.2,
+      99.5
+     ],
+     "taille": [
+      63.5,
+      95.2,
+      11.2
+     ]
+    },
+    {
+     "id": "pectoralis_minor_muscle_right",
+     "nom_fr": "Muscle petit pectoral",
+     "name_en": "Right pectoralis minor muscle",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/pectoralis_minor_muscle_right.glb",
+     "role": "contexte",
+     "centre": [
+      -104.3,
+      1264.8,
+      127.0
+     ],
+     "taille": [
+      57.8,
+      139.7,
+      89.3
+     ]
+    }
+   ],
+   "diagramme": "sein_lymph",
+   "espaces": [],
+   "manquants": [
+    "GLANDE MAMMAIRE : ABSENTE (voir Fig 48) — les nœuds existent tous, mais le territoire drainé n'a pas de maillage",
+    "Les trajets de drainage (plexus sous-aréolaire de Sappey, voies parasternales) sont schématiques par nature → schéma en regard"
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "internal_thoracic_artery_right",
+   "nom_fr": "Artère thoracique interne",
+   "name_en": "Right internal thoracic artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/internal_thoracic_artery_right.glb",
+   "role": "sujet",
+   "centre": [
+    -28.2,
+    1269.4,
+    147.0
+   ],
+   "taille": [
+    28.3,
+    173.6,
+    97.6
+   ]
+  },
+  {
+   "id": "lateral_thoracic_artery_right",
+   "nom_fr": "Artère thoracique latérale",
+   "name_en": "Right lateral thoracic artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/lateral_thoracic_artery_right.glb",
+   "role": "sujet",
+   "centre": [
+    -117.5,
+    1224.2,
+    129.0
+   ],
+   "taille": [
+    22.0,
+    212.4,
+    67.8
+   ]
+  },
+  {
+   "id": "thoraco_acromial_artery_right",
+   "nom_fr": "Artère thoraco-acromiale",
+   "name_en": "Right thoraco-acromial artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/thoraco_acromial_artery_right.glb",
+   "role": "sujet",
+   "centre": [
+    -93.3,
+    1334.5,
+    99.8
+   ],
+   "taille": [
+    4.7,
+    10.4,
+    11.1
+   ]
+  },
+  {
+   "id": "pectoralis_major_muscle_right",
+   "nom_fr": "Muscle grand pectoral",
+   "name_en": "Right pectoralis major muscle",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "fichier": "models/muscles/pectoralis_major_muscle_right.glb",
+   "role": "sujet",
+   "centre": [
+    -100.2,
+    1244.8,
+    151.7
+   ],
+   "taille": [
+    193.4,
+    197.9,
+    133.9
+   ]
+  },
+  {
+   "id": "axillary_artery_right",
+   "nom_fr": "Artère axillaire",
+   "name_en": "Right axillary artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/axillary_artery_right.glb",
+   "role": "contexte",
+   "centre": [
+    -106.1,
+    1323.1,
+    93.3
+   ],
+   "taille": [
+    57.2,
+    51.2,
+    12.4
+   ]
+  },
+  {
+   "id": "first_rib_right",
+   "nom_fr": "Première côte",
+   "name_en": "Right first rib",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "fichier": "models/squelette/first_rib_right.glb",
+   "role": "contexte",
+   "centre": [
+    -43.3,
+    1351.2,
+    101.7
+   ],
+   "taille": [
+    53.9,
+    59.7,
+    66.4
+   ]
+  },
+  {
+   "id": "anterior_axillary_nodes_right",
+   "nom_fr": "Lymphonoeuds axillaires antérieurs",
+   "name_en": "Right anterior axillary nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/anterior_axillary_nodes_right.glb",
+   "role": "sujet",
+   "centre": [
+    -116.7,
+    1259.2,
+    126.4
+   ],
+   "taille": [
+    15.2,
+    44.1,
+    23.3
+   ]
+  },
+  {
+   "id": "axillary_vein_right",
+   "nom_fr": "Veine axillaire",
+   "name_en": "Right axillary vein",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/axillary_vein_right.glb",
+   "role": "sujet",
+   "centre": [
+    -122.3,
+    1290.2,
+    99.5
+   ],
+   "taille": [
+    63.5,
+    95.2,
+    11.2
+   ]
+  },
+  {
+   "id": "lateral_thoracic_vein_right",
+   "nom_fr": "Veine thoracique latérale",
+   "name_en": "Right lateral thoracic vein",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/lateral_thoracic_vein_right.glb",
+   "role": "sujet",
+   "centre": [
+    -99.6,
+    1149.3,
+    155.8
+   ],
+   "taille": [
+    71.1,
+    340.8,
+    116.8
+   ]
+  },
+  {
+   "id": "cephalic_vein_right",
+   "nom_fr": "Veine céphalique",
+   "name_en": "Right cephalic vein",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/cephalic_vein_right.glb",
+   "role": "sujet",
+   "centre": [
+    -192.7,
+    1043.6,
+    102.5
+   ],
+   "taille": [
+    176.5,
+    567.9,
+    39.3
+   ]
+  },
+  {
+   "id": "left_subclavian_vein",
+   "nom_fr": "Veine sous-clavière gauche",
+   "name_en": "Left subclavian vein",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/left_subclavian_vein.glb",
+   "role": "contexte",
+   "centre": [
+    57.7,
+    1341.6,
+    110.6
+   ],
+   "taille": [
+    70.2,
+    20.5,
+    23.8
+   ]
+  },
+  {
+   "id": "posterior_axillary_nodes_right",
+   "nom_fr": "Lymphonoeuds axillaires postérieurs",
+   "name_en": "Right posterior axillary nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/posterior_axillary_nodes_right.glb",
+   "role": "sujet",
+   "centre": [
+    -160.1,
+    1287.5,
+    89.2
+   ],
+   "taille": [
+    22.1,
+    41.8,
+    14.1
+   ]
+  },
+  {
+   "id": "lateral_axillary_nodes_right",
+   "nom_fr": "Lymphonoeuds axillaires latéraux",
+   "name_en": "Right lateral axillary nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/lateral_axillary_nodes_right.glb",
+   "role": "sujet",
+   "centre": [
+    -151.6,
+    1246.1,
+    66.4
+   ],
+   "taille": [
+    3.3,
+    8.5,
+    4.9
+   ]
+  },
+  {
+   "id": "central_axillary_nodes_right",
+   "nom_fr": "Lymphonoeuds axillaires centraux",
+   "name_en": "Right central axillary nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/central_axillary_nodes_right.glb",
+   "role": "sujet",
+   "centre": [
+    -141.3,
+    1246.1,
+    66.4
+   ],
+   "taille": [
+    3.3,
+    8.6,
+    4.8
+   ]
+  },
+  {
+   "id": "apical_axillary_nodes_right",
+   "nom_fr": "Lymphonoeuds axillaires apicaux",
+   "name_en": "Right apical axillary nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/apical_axillary_nodes_right.glb",
+   "role": "sujet",
+   "centre": [
+    -141.3,
+    1263.0,
+    66.4
+   ],
+   "taille": [
+    8.9,
+    2.6,
+    2.4
+   ]
+  },
+  {
+   "id": "parasternal_nodes_right",
+   "nom_fr": "Lymphonoeuds parasternaux",
+   "name_en": "Right parasternal nodes",
+   "systeme": "lymphatique",
+   "couleur": "#7fae5c",
+   "fichier": "models/lymphatique/parasternal_nodes_right.glb",
+   "role": "sujet",
+   "centre": [
+    -20.9,
+    1236.8,
+    176.1
+   ],
+   "taille": [
+    9.9,
+    125.2,
+    41.8
+   ]
+  },
+  {
+   "id": "pectoralis_minor_muscle_right",
+   "nom_fr": "Muscle petit pectoral",
+   "name_en": "Right pectoralis minor muscle",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "fichier": "models/muscles/pectoralis_minor_muscle_right.glb",
+   "role": "contexte",
+   "centre": [
+    -104.3,
+    1264.8,
+    127.0
+   ],
+   "taille": [
+    57.8,
+    139.7,
+    89.3
+   ]
+  }
+ ],
+ "diagrammes": {
+  "sein_arteriel": {
+   "titre_fr": "Vascularisation artérielle du sein — schéma interactif",
+   "titre_en": "Arterial supply of the breast — interactive diagram",
+   "w": 720,
+   "h": 700,
+   "levels": {
+    "origine": {
+     "c": "#b03a2e",
+     "fr": "Artères d'origine",
+     "en": "Parent arteries"
+    },
+    "source": {
+     "c": "#e05252",
+     "fr": "Sources mammaires",
+     "en": "Mammary sources"
+    },
+    "territoire": {
+     "c": "#8fa5ba",
+     "fr": "Territoires glandulaires",
+     "en": "Gland territories"
+    }
+   },
+   "nodes": [
+    {
+     "id": "subclav",
+     "x": 110,
+     "y": 110,
+     "w": 180,
+     "label": "Artère sub-clavière",
+     "label_en": "Subclavian artery",
+     "sub_en": "",
+     "lvl": "origine",
+     "desc": {
+      "fr": "Artère d'origine : elle donne l'artère thoracique interne, l'une des 3 sources artérielles du sein selon le cours (Q18).",
+      "en": "Parent artery: it gives off the internal thoracic artery, one of the three arterial sources of the breast in the course (Q18)."
+     }
+    },
+    {
+     "id": "axill",
+     "x": 110,
+     "y": 330,
+     "w": 180,
+     "label": "Artère axillaire",
+     "label_en": "Axillary artery",
+     "sub_en": "",
+     "lvl": "origine",
+     "desc": {
+      "fr": "Artère d'origine : ses branches destinées au sein irriguent la partie latérale et inférieure de la glande (cours, Q18). Elle figure dans la scène 3D de la figure (audit fig. 48).",
+      "en": "Parent artery: its branches to the breast supply the lateral and inferior parts of the gland (course, Q18). It is part of the 3D scene of the figure (audit fig. 48)."
+     }
+    },
+    {
+     "id": "ati",
+     "x": 355,
+     "y": 110,
+     "w": 180,
+     "label": "Artère thoracique",
+     "sub": "interne (mammaire interne)",
+     "label_en": "Internal thoracic",
+     "sub_en": "a. (internal mammary)",
+     "lvl": "source",
+     "desc": {
+      "fr": "Branche de l'artère sub-clavière ; elle donne des rameaux perforants pour la partie médiale de la glande (cours, Q18). Maillage présent dans la scène 3D (audit fig. 48).",
+      "en": "Branch of the subclavian artery; it gives perforating branches to the medial part of the gland (course, Q18). Modelled in the 3D scene (audit fig. 48)."
+     }
+    },
+    {
+     "id": "perf",
+     "x": 472,
+     "y": 110,
+     "r": 14,
+     "label": "perf.",
+     "label_en": "perforating",
+     "sub_en": "",
+     "lvl": "source",
+     "desc": {
+      "fr": "Rameaux perforants de l'artère thoracique interne — ils traversent les espaces intercostaux antérieurs vers la partie médiale de la glande. Non individualisés dans le manifeste (audit fig. 48) : schéma seul.",
+      "en": "Perforating branches of the internal thoracic artery — they cross the anterior intercostal spaces to the medial part of the gland. Not individually modelled in the manifest (audit fig. 48): diagram only."
+     }
+    },
+    {
+     "id": "thoraco",
+     "x": 355,
+     "y": 250,
+     "w": 180,
+     "label": "Branche thoracique",
+     "sub": "de la thoraco-acromiale",
+     "label_en": "Thoracic branch",
+     "sub_en": "of thoraco-acromial a.",
+     "lvl": "source",
+     "desc": {
+      "fr": "Branche thoracique de l'artère thoraco-acromiale, elle-même branche de l'axillaire : l'une des branches axillaires destinées, selon le cours, à la partie latérale et inférieure de la glande.",
+      "en": "Thoracic branch of the thoraco-acromial artery, itself a branch of the axillary artery: one of the axillary branches that the course assigns to the lateral and inferior parts of the gland."
+     }
+    },
+    {
+     "id": "thor_sup",
+     "x": 355,
+     "y": 340,
+     "w": 180,
+     "label": "Artère thoracique",
+     "sub": "supérieure",
+     "label_en": "Superior thoracic",
+     "sub_en": "artery",
+     "lvl": "source",
+     "note": {
+      "fr": "Non individualisée dans la scène fig. 48 — schéma seul",
+      "en": "Not individually modelled in the fig. 48 scene — diagram only"
+     },
+     "desc": {
+      "fr": "Branche de l'artère axillaire citée par le cours (Q18) parmi les sources du sein, avec les autres branches axillaires, pour la partie latérale et inférieure de la glande.",
+      "en": "Branch of the axillary artery listed by the course (Q18) among the sources of the breast, with the other axillary branches, for the lateral and inferior parts of the gland."
+     }
+    },
+    {
+     "id": "sous_scap",
+     "x": 355,
+     "y": 430,
+     "w": 190,
+     "label": "Artère sous-scapulaire",
+     "label_en": "Subscapular artery",
+     "sub_en": "",
+     "lvl": "source",
+     "note": {
+      "fr": "Non individualisée dans la scène fig. 48 — schéma seul",
+      "en": "Not individually modelled in the fig. 48 scene — diagram only"
+     },
+     "desc": {
+      "fr": "Branche de l'artère axillaire citée par le cours (Q18) parmi les sources du sein, pour sa partie latérale et inférieure.",
+      "en": "Branch of the axillary artery listed by the course (Q18) among the sources of the breast, for its lateral and inferior parts."
+     }
+    },
+    {
+     "id": "thor_lat",
+     "x": 355,
+     "y": 520,
+     "w": 180,
+     "label": "Artère thoracique",
+     "sub": "latérale (mammaire externe)",
+     "label_en": "Lateral thoracic",
+     "sub_en": "a. (external mammary)",
+     "lvl": "source",
+     "desc": {
+      "fr": "Artère mammaire externe : la source axillaire principale du sein selon le cours (« surtout l'artère mammaire externe ou thoracique latérale »), pour la partie latérale et inférieure de la glande. Maillage présent dans la scène 3D (audit fig. 48).",
+      "en": "External mammary artery: the main axillary source of the breast in the course ('above all the external mammary or lateral thoracic artery'), for the lateral and inferior parts of the gland. Modelled in the 3D scene (audit fig. 48)."
+     }
+    },
+    {
+     "id": "intercost",
+     "x": 355,
+     "y": 620,
+     "w": 190,
+     "label": "Artères intercostales",
+     "sub": "branches mammaires",
+     "label_en": "Intercostal arteries",
+     "sub_en": "mammary branches",
+     "lvl": "source",
+     "note": {
+      "fr": "Rameaux non individualisés (audit fig. 48) — schéma seul",
+      "en": "Branches not individually modelled (audit fig. 48) — diagram only"
+     },
+     "desc": {
+      "fr": "Deuxième source du cours (Q18) : les branches des artères intercostales irriguent la partie latérale de la glande.",
+      "en": "Second source in the course (Q18): branches of the intercostal arteries supply the lateral part of the gland."
+     }
+    },
+    {
+     "id": "terr_med",
+     "x": 605,
+     "y": 110,
+     "w": 170,
+     "label": "Partie médiale",
+     "sub": "de la glande",
+     "label_en": "Medial part",
+     "sub_en": "of the gland",
+     "lvl": "territoire",
+     "note": {
+      "fr": "Pas de maillage 3D — schéma seul",
+      "en": "No 3D mesh — diagram only"
+     },
+     "desc": {
+      "fr": "Territoire médial de la glande mammaire, irrigué par les rameaux perforants de la thoracique interne. La glande elle-même n'a aucun maillage 3D (audit fig. 48) : territoire schématique.",
+      "en": "Medial territory of the mammary gland, supplied by the perforating branches of the internal thoracic artery. The gland itself has no 3D mesh (audit fig. 48): schematic territory."
+     }
+    },
+    {
+     "id": "terr_lat",
+     "x": 605,
+     "y": 330,
+     "w": 170,
+     "label": "Partie latérale",
+     "sub": "de la glande",
+     "label_en": "Lateral part",
+     "sub_en": "of the gland",
+     "lvl": "territoire",
+     "note": {
+      "fr": "Pas de maillage 3D — schéma seul",
+      "en": "No 3D mesh — diagram only"
+     },
+     "desc": {
+      "fr": "Territoire latéral de la glande, irrigué par les branches des artères intercostales et par les branches de l'artère axillaire (cours, Q18).",
+      "en": "Lateral territory of the gland, supplied by branches of the intercostal arteries and by branches of the axillary artery (course, Q18)."
+     }
+    },
+    {
+     "id": "terr_inf",
+     "x": 605,
+     "y": 540,
+     "w": 170,
+     "label": "Partie inférieure",
+     "sub": "de la glande",
+     "label_en": "Inferior part",
+     "sub_en": "of the gland",
+     "lvl": "territoire",
+     "note": {
+      "fr": "Pas de maillage 3D — schéma seul",
+      "en": "No 3D mesh — diagram only"
+     },
+     "desc": {
+      "fr": "Territoire inférieur de la glande, irrigué avec la partie latérale par les branches de l'artère axillaire, surtout la thoracique latérale (cours, Q18).",
+      "en": "Inferior territory of the gland, supplied together with the lateral part by the branches of the axillary artery, above all the lateral thoracic artery (course, Q18)."
+     }
+    }
+   ],
+   "edges": [
+    [
+     "subclav",
+     "ati"
+    ],
+    [
+     "ati",
+     "perf"
+    ],
+    [
+     "perf",
+     "terr_med"
+    ],
+    [
+     "axill",
+     "thoraco"
+    ],
+    [
+     "axill",
+     "thor_sup"
+    ],
+    [
+     "axill",
+     "sous_scap"
+    ],
+    [
+     "axill",
+     "thor_lat"
+    ],
+    [
+     "thoraco",
+     "terr_lat"
+    ],
+    [
+     "thor_sup",
+     "terr_lat"
+    ],
+    [
+     "sous_scap",
+     "terr_lat"
+    ],
+    [
+     "thor_lat",
+     "terr_lat"
+    ],
+    [
+     "thor_lat",
+     "terr_inf"
+    ],
+    [
+     "intercost",
+     "terr_lat"
+    ]
+   ]
+  },
+  "sein_veineux": {
+   "titre_fr": "Vascularisation veineuse du sein — schéma interactif",
+   "titre_en": "Venous drainage of the breast — interactive diagram",
+   "w": 720,
+   "h": 620,
+   "levels": {
+    "territoire": {
+     "c": "#8fa5ba",
+     "fr": "Territoire drainé",
+     "en": "Drained territory"
+    },
+    "superficiel": {
+     "c": "#7fb2e5",
+     "fr": "Réseau superficiel",
+     "en": "Superficial network"
+    },
+    "courant": {
+     "c": "#4169b8",
+     "fr": "Courants profonds",
+     "en": "Deep currents"
+    },
+    "collecteur": {
+     "c": "#f0a13c",
+     "fr": "Veines collectrices",
+     "en": "Receiving veins"
+    }
+   },
+   "nodes": [
+    {
+     "id": "reseau_sup",
+     "x": 115,
+     "y": 110,
+     "w": 190,
+     "label": "Réseau veineux",
+     "sub": "superficiel",
+     "label_en": "Superficial venous",
+     "sub_en": "network",
+     "lvl": "superficiel",
+     "desc": {
+      "fr": "Réseau veineux superficiel du sein : visible pendant la grossesse, il forme le cercle veineux de Haller (cours, Q18). Le cours ne précise pas son exutoire ; l'arête en pointillés vers le courant externe est une convention schématique.",
+      "en": "Superficial venous network of the breast: visible during pregnancy, it forms the venous circle of Haller (course, Q18). The course does not state its outlet; the dashed edge to the external current is a diagram convention."
+     }
+    },
+    {
+     "id": "glande",
+     "x": 115,
+     "y": 280,
+     "w": 180,
+     "label": "Glande mammaire",
+     "sub": "territoire drainé",
+     "label_en": "Mammary gland",
+     "sub_en": "drained territory",
+     "lvl": "territoire",
+     "note": {
+      "fr": "Pas de maillage 3D — schéma seul",
+      "en": "No 3D mesh — diagram only"
+     },
+     "desc": {
+      "fr": "Territoire drainé par les veines profondes, qui suivent le trajet des artères homonymes et se groupent en 3 courants (cours, Q18). La glande n'a aucun maillage 3D (audit fig. 49) : schéma seul.",
+      "en": "Territory drained by the deep veins, which follow the course of the corresponding arteries and group into 3 currents (course, Q18). The gland has no 3D mesh (audit fig. 49): diagram only."
+     }
+    },
+    {
+     "id": "v_ext",
+     "x": 360,
+     "y": 110,
+     "w": 180,
+     "label": "Veines mammaires",
+     "sub": "externes",
+     "label_en": "External mammary",
+     "sub_en": "veins",
+     "lvl": "courant",
+     "desc": {
+      "fr": "Courant externe (latéral) des veines profondes : les veines mammaires externes se jettent dans la veine axillaire (cours, Q18). La veine thoracique latérale figure dans la scène 3D (audit fig. 49).",
+      "en": "External (lateral) current of the deep veins: the external mammary veins drain into the axillary vein (course, Q18). The lateral thoracic vein is part of the 3D scene (audit fig. 49)."
+     }
+    },
+    {
+     "id": "v_int",
+     "x": 360,
+     "y": 280,
+     "w": 180,
+     "label": "Veines mammaires",
+     "sub": "internes",
+     "label_en": "Internal mammary",
+     "sub_en": "veins",
+     "lvl": "courant",
+     "note": {
+      "fr": "Veine thoracique interne absente du manifeste (audit fig. 49) — schéma seul",
+      "en": "Internal thoracic vein absent from the manifest (audit fig. 49) — diagram only"
+     },
+     "desc": {
+      "fr": "Courant interne (médial) des veines profondes : les veines mammaires internes se jettent dans le tronc veineux brachio-céphalique (TVBC) (cours, Q18).",
+      "en": "Internal (medial) current of the deep veins: the internal mammary veins drain into the brachiocephalic venous trunk (course, Q18)."
+     }
+    },
+    {
+     "id": "v_perf",
+     "x": 360,
+     "y": 450,
+     "w": 190,
+     "label": "Veines perforantes",
+     "sub": "des intercostales",
+     "label_en": "Perforating veins",
+     "sub_en": "of the intercostals",
+     "lvl": "courant",
+     "desc": {
+      "fr": "Courant perforant : les veines perforantes des intercostales se drainent dans le système azygos (cours, Q18).",
+      "en": "Perforating current: the perforating veins of the intercostal spaces drain into the azygos system (course, Q18)."
+     }
+    },
+    {
+     "id": "v_axill",
+     "x": 600,
+     "y": 110,
+     "w": 170,
+     "label": "Veine axillaire",
+     "label_en": "Axillary vein",
+     "sub_en": "",
+     "lvl": "collecteur",
+     "desc": {
+      "fr": "Veine collectrice du courant mammaire externe ; elle figure dans la scène 3D de la figure (audit fig. 49).",
+      "en": "Receiving vein of the external mammary current; it is part of the 3D scene of the figure (audit fig. 49)."
+     }
+    },
+    {
+     "id": "tvbc",
+     "x": 600,
+     "y": 280,
+     "w": 190,
+     "label": "Tronc veineux",
+     "sub": "brachio-céphalique",
+     "label_en": "Brachiocephalic",
+     "sub_en": "venous trunk",
+     "lvl": "collecteur",
+     "desc": {
+      "fr": "Exutoire du courant mammaire interne, en dedans (cours, Q18 : « les veines mammaires internes, en dedans, qui se jettent dans le TVBC »).",
+      "en": "Outlet of the internal mammary current, medially (course, Q18: 'the internal mammary veins, medially, drain into the brachiocephalic trunk')."
+     }
+    },
+    {
+     "id": "azygos",
+     "x": 600,
+     "y": 450,
+     "w": 170,
+     "label": "Système azygos",
+     "label_en": "Azygos system",
+     "sub_en": "",
+     "lvl": "collecteur",
+     "desc": {
+      "fr": "Exutoire des veines perforantes des intercostales (cours, Q18).",
+      "en": "Outlet of the perforating veins of the intercostal spaces (course, Q18)."
+     }
+    }
+   ],
+   "edges": [
+    [
+     "glande",
+     "v_ext"
+    ],
+    [
+     "glande",
+     "v_int"
+    ],
+    [
+     "glande",
+     "v_perf"
+    ],
+    [
+     "reseau_sup",
+     "v_ext",
+     1
+    ],
+    [
+     "v_ext",
+     "v_axill"
+    ],
+    [
+     "v_int",
+     "tvbc"
+    ],
+    [
+     "v_perf",
+     "azygos"
+    ]
+   ]
+  },
+  "sein_lymph": {
+   "titre_fr": "Drainage lymphatique du sein — schéma interactif",
+   "titre_en": "Lymphatic drainage of the breast — interactive diagram",
+   "w": 720,
+   "h": 640,
+   "levels": {
+    "territoire": {
+     "c": "#8fa5ba",
+     "fr": "Territoires et plexus",
+     "en": "Territories and plexus"
+    },
+    "groupe": {
+     "c": "#4fae4a",
+     "fr": "Groupes ganglionnaires",
+     "en": "Node groups"
+    },
+    "tronc": {
+     "c": "#f0a13c",
+     "fr": "Tronc collecteur",
+     "en": "Collecting trunk"
+    }
+   },
+   "nodes": [
+    {
+     "id": "sappey",
+     "x": 110,
+     "y": 120,
+     "w": 190,
+     "label": "Plexus sous-aréolaire",
+     "sub": "de Sappey",
+     "label_en": "Subareolar plexus",
+     "sub_en": "of Sappey",
+     "lvl": "territoire",
+     "note": {
+      "fr": "Trajet schématique, sans maillage (audit fig. 50)",
+      "en": "Schematic pathway, no mesh (audit fig. 50)"
+     },
+     "desc": {
+      "fr": "Plexus lymphatique sous l'aréole où convergent les lymphatiques de la glande ; les trajets de drainage sont schématiques par nature (audit fig. 50). Voie principale vers le groupe pectoral, voie accessoire directe vers les nœuds apicaux (cours, Q18).",
+      "en": "Lymphatic plexus beneath the areola where the lymphatics of the gland converge; the drainage pathways are schematic by nature (audit fig. 50). Main route to the pectoral group, direct accessory route to the apical nodes (course, Q18)."
+     }
+    },
+    {
+     "id": "part_med",
+     "x": 110,
+     "y": 340,
+     "w": 180,
+     "label": "Partie médiale",
+     "sub": "de la glande",
+     "label_en": "Medial part",
+     "sub_en": "of the gland",
+     "lvl": "territoire",
+     "note": {
+      "fr": "Pas de maillage 3D — schéma seul",
+      "en": "No 3D mesh — diagram only"
+     },
+     "desc": {
+      "fr": "La partie médiale de la glande se draine vers les nœuds para-sternaux (cours, Q18). La glande elle-même n'a aucun maillage 3D (audit fig. 50).",
+      "en": "The medial part of the gland drains to the parasternal nodes (course, Q18). The gland itself has no 3D mesh (audit fig. 50)."
+     }
+    },
+    {
+     "id": "part_sup",
+     "x": 110,
+     "y": 540,
+     "w": 180,
+     "label": "Partie supérieure",
+     "sub": "de la glande",
+     "label_en": "Superior part",
+     "sub_en": "of the gland",
+     "lvl": "territoire",
+     "note": {
+      "fr": "Pas de maillage 3D — schéma seul",
+      "en": "No 3D mesh — diagram only"
+     },
+     "desc": {
+      "fr": "La partie supérieure de la glande se draine vers les nœuds sus-claviculaires (cours, Q18). La glande elle-même n'a aucun maillage 3D (audit fig. 50).",
+      "en": "The superior part of the gland drains to the supraclavicular nodes (course, Q18). The gland itself has no 3D mesh (audit fig. 50)."
+     }
+    },
+    {
+     "id": "g_ant",
+     "x": 355,
+     "y": 120,
+     "w": 180,
+     "label": "Groupe antérieur",
+     "sub": "pectoral",
+     "label_en": "Anterior group",
+     "sub_en": "pectoral",
+     "lvl": "groupe",
+     "desc": {
+      "fr": "Groupe pectoral de la fosse axillaire : voie principale de drainage du sein selon le cours (Q18) ; ses efférents gagnent le groupe central. Nœuds présents dans la scène 3D (audit fig. 50).",
+      "en": "Pectoral group of the axillary fossa: the main drainage route of the breast in the course (Q18); its efferents reach the central group. Nodes present in the 3D scene (audit fig. 50)."
+     }
+    },
+    {
+     "id": "g_lat",
+     "x": 355,
+     "y": 300,
+     "w": 180,
+     "label": "Groupe latéral",
+     "sub": "huméral",
+     "label_en": "Lateral group",
+     "sub_en": "humeral",
+     "lvl": "groupe",
+     "desc": {
+      "fr": "Le long des vaisseaux axillaires : groupe relais du creux axillaire vers le groupe central (voir aussi fig. 24). Le cours du sein (Q18) ne le cite pas comme voie directe de la glande. Nœuds présents dans la scène 3D (audit fig. 50).",
+      "en": "Along the axillary vessels: relay group of the axilla towards the central group (see also fig. 24). The breast course (Q18) does not list it as a direct route from the gland. Nodes present in the 3D scene (audit fig. 50)."
+     }
+    },
+    {
+     "id": "g_central",
+     "x": 355,
+     "y": 480,
+     "w": 180,
+     "label": "Groupe central",
+     "label_en": "Central group",
+     "sub_en": "",
+     "lvl": "groupe",
+     "desc": {
+      "fr": "Au centre du creux axillaire : reçoit les efférents des groupes antérieur et latéral et les transmet au groupe apical. Nœuds présents dans la scène 3D (audit fig. 50).",
+      "en": "In the centre of the axilla: receives the efferents of the anterior and lateral groups and transmits them to the apical group. Nodes present in the 3D scene (audit fig. 50)."
+     }
+    },
+    {
+     "id": "g_apical",
+     "x": 600,
+     "y": 150,
+     "w": 180,
+     "label": "Groupe apical",
+     "label_en": "Apical group",
+     "sub_en": "",
+     "lvl": "groupe",
+     "desc": {
+      "fr": "Au sommet du creux axillaire : reçoit le groupe central et la voie accessoire directe du sein (cours, Q18) ; ses efférents forment le tronc sous-clavier. Nœuds présents dans la scène 3D (audit fig. 50).",
+      "en": "At the apex of the axilla: receives the central group and the direct accessory route from the breast (course, Q18); its efferents form the subclavian trunk. Nodes present in the 3D scene (audit fig. 50)."
+     }
+    },
+    {
+     "id": "tronc_sc",
+     "x": 600,
+     "y": 290,
+     "w": 180,
+     "label": "Tronc sous-clavier",
+     "label_en": "Subclavian trunk",
+     "sub_en": "",
+     "lvl": "tronc",
+     "desc": {
+      "fr": "Tronc collecteur formé par les efférents du groupe apical, vers l'angle veineux jugulo-sous-clavier.",
+      "en": "Collecting trunk formed by the efferents of the apical group, towards the jugulo-subclavian venous angle."
+     }
+    },
+    {
+     "id": "parasternal",
+     "x": 600,
+     "y": 430,
+     "w": 190,
+     "label": "Nœuds para-sternaux",
+     "sub": "chaîne thoracique interne",
+     "label_en": "Parasternal nodes",
+     "sub_en": "internal thoracic chain",
+     "lvl": "groupe",
+     "desc": {
+      "fr": "Le long des vaisseaux thoraciques internes : ils drainent la partie médiale de la glande (cours, Q18). Nœuds présents dans la scène 3D (audit fig. 50).",
+      "en": "Along the internal thoracic vessels: they drain the medial part of the gland (course, Q18). Nodes present in the 3D scene (audit fig. 50)."
+     }
+    },
+    {
+     "id": "supra",
+     "x": 600,
+     "y": 560,
+     "w": 200,
+     "label": "Nœuds sus-claviculaires",
+     "label_en": "Supraclavicular nodes",
+     "sub_en": "",
+     "lvl": "groupe",
+     "note": {
+      "fr": "Non inclus dans la scène 3D de la figure — schéma seul",
+      "en": "Not included in the 3D scene of the figure — diagram only"
+     },
+     "desc": {
+      "fr": "Ils drainent la partie supérieure de la glande (cours, Q18) ; relais recherché à l'examen dans l'extension des cancers du sein.",
+      "en": "They drain the superior part of the gland (course, Q18); a relay palpated on examination in the spread of breast cancers."
+     }
+    }
+   ],
+   "edges": [
+    [
+     "sappey",
+     "g_ant"
+    ],
+    [
+     "sappey",
+     "g_apical",
+     1
+    ],
+    [
+     "g_ant",
+     "g_central"
+    ],
+    [
+     "g_lat",
+     "g_central"
+    ],
+    [
+     "g_central",
+     "g_apical"
+    ],
+    [
+     "g_apical",
+     "tronc_sc"
+    ],
+    [
+     "part_med",
+     "parasternal"
+    ],
+    [
+     "part_sup",
+     "supra"
+    ]
+   ]
+  }
+ }
+}

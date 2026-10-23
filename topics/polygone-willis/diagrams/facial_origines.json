@@ -1,0 +1,205 @@
+{
+ "titre_fr": "Nerf facial — origines réelles et origine apparente",
+ "titre_en": "Facial nerve — real origins and apparent origin",
+ "w": 720,
+ "h": 760,
+ "levels": {
+  "noyau": {
+   "c": "#f0a13c",
+   "fr": "Noyaux (origines réelles)",
+   "en": "Nuclei (real origins)"
+  },
+  "fibre": {
+   "c": "#4fc3f7",
+   "fr": "Fibres radiculaires",
+   "en": "Root fibres"
+  },
+  "racine": {
+   "c": "#58d68d",
+   "fr": "Les 2 racines : VII et VII bis",
+   "en": "The 2 roots: VII and VII bis"
+  },
+  "clinique": {
+   "c": "#e57373",
+   "fr": "Clinique",
+   "en": "Clinical"
+  },
+  "note": {
+   "c": "#607d8b",
+   "fr": "Repère",
+   "en": "Landmark"
+  }
+ },
+ "nodes": [
+  {
+   "id": "noyau_moteur",
+   "x": 150,
+   "y": 110,
+   "w": 230,
+   "label": "Noyau moteur",
+   "sub": "calotte protubérantielle antéro-latérale",
+   "lvl": "noyau",
+   "desc": {
+    "fr": "Origine réelle motrice : le noyau moteur du facial siège dans la partie antéro-latérale de la calotte protubérantielle (pont). Il commande les muscles de la mimique. Dans la scène 3D de la figure 15, ce noyau est un maillage réel du manifeste (motor_nucleus_of_facial_nerve).",
+    "en": "Motor real origin: the facial motor nucleus lies in the anterolateral part of the pontine tegmentum. It drives the mimetic muscles. In the figure 15 3D scene this nucleus is a real mesh of the manifest."
+   }
+  },
+  {
+   "id": "noyau_solitaire",
+   "x": 150,
+   "y": 215,
+   "w": 230,
+   "label": "Noyau du tractus solitaire",
+   "sub": "sensitif — bulbe, 1/3 supérieur",
+   "lvl": "noyau",
+   "desc": {
+    "fr": "Origine réelle sensitive : le noyau sensitif du facial se situe dans le bulbe, au 1/3 supérieur du noyau du tractus solitaire ; il reçoit la gustation des 2/3 antérieurs de la langue (par la corde du tympan). Troisième relais gustatif (noyau spinal du V) : non individualisé dans le manifeste — signalé par l'audit.",
+    "en": "Sensory real origin: the sensory nucleus of the facial nerve lies in the medulla, in the upper third of the nucleus of the solitary tract; it receives taste from the anterior 2/3 of the tongue (via the chorda tympani). The third taste relay (spinal trigeminal nucleus) is not individualised in the manifest — flagged by the audit."
+   }
+  },
+  {
+   "id": "noyau_lacrymo",
+   "x": 150,
+   "y": 320,
+   "w": 230,
+   "label": "Noyau lacrymo-muco-nasal",
+   "sub": "végétatif — en dehors du noyau moteur",
+   "lvl": "noyau",
+   "desc": {
+    "fr": "Noyau végétatif lacrymo-muco-nasal : situé à côté et en dehors du noyau moteur ; ses fibres parasympathiques gagnent, par le nerf grand pétreux, les glandes lacrymales et les muqueuses nasales.",
+    "en": "Lacrimo-muco-nasal vegetative nucleus: beside and lateral to the motor nucleus; its parasympathetic fibres reach, via the greater petrosal nerve, the lacrimal glands and nasal mucosae."
+   }
+  },
+  {
+   "id": "noyau_salivaire",
+   "x": 150,
+   "y": 425,
+   "w": 230,
+   "label": "Noyau salivaire supérieur",
+   "sub": "végétatif — en dedans du noyau sensitif",
+   "lvl": "noyau",
+   "desc": {
+    "fr": "Noyau salivaire supérieur : situé à côté et en dedans du noyau sensitif ; ses fibres gagnent, par la corde du tympan, les glandes salivaires submandibulaire et sublinguale. Maillage réel du manifeste (superior_salivatory_nucleus).",
+    "en": "Superior salivatory nucleus: beside and medial to the sensory nucleus; its fibres reach, via the chorda tympani, the submandibular and sublingual salivary glands. A real mesh of the manifest."
+   }
+  },
+  {
+   "id": "fibres",
+   "x": 440,
+   "y": 265,
+   "w": 210,
+   "label": "Fibres radiculaires",
+   "sub": "VII + VII bis réunis",
+   "lvl": "fibre",
+   "desc": {
+    "fr": "Le nerf facial est un nerf mixte et sensoriel (gustatif), formé par 2 racines : le VII proprement dit et le VII bis (intermédiaire de Wrisberg), dont les fibres issues des 4 noyaux se réunissent avant l'émergence.",
+    "en": "The facial nerve is a mixed and sensory (taste) nerve formed by 2 roots: VII proper and VII bis (intermediate nerve of Wrisberg), whose fibres from the 4 nuclei unite before emergence."
+   }
+  },
+  {
+   "id": "origine_apparente",
+   "x": 440,
+   "y": 420,
+   "w": 230,
+   "label": "Origine apparente",
+   "sub": "sillon bulbo-pontique",
+   "lvl": "fibre",
+   "desc": {
+    "fr": "Origine apparente : le VII, accolé en dedans du VII bis, émerge du sillon bulbo-protubérantiel (bulbo-pontique), en dehors du nerf moteur oculaire externe (VI) et en dedans du nerf vestibulo-cochléaire (VIII). Repère sans maillage dédié dans le manifeste — la scène 3D montre le nerf et le tronc cérébral.",
+    "en": "Apparent origin: VII, with VII bis medial to it, emerges from the bulbopontine sulcus, lateral to the abducens nerve (VI) and medial to the vestibulocochlear nerve (VIII). A landmark without a dedicated mesh in the manifest — the 3D scene shows the nerve and the brainstem."
+   }
+  },
+  {
+   "id": "vii",
+   "x": 180,
+   "y": 580,
+   "w": 250,
+   "label": "VII — facial proprement dit",
+   "sub": "moteur : mimique · stylo-hyoïdien · digastrique · étrier",
+   "lvl": "racine",
+   "desc": {
+    "fr": "Le VII proprement dit est exclusivement moteur : il innerve les muscles de la mimique faciale (muscles peauciers de la face et du cou), le muscle stylo-hyoïdien, le ventre postérieur du muscle digastrique et le muscle de l'étrier.",
+    "en": "VII proper is exclusively motor: it supplies the mimetic muscles (cutaneous muscles of face and neck), the stylohyoid, the posterior belly of the digastric and the stapedius muscle."
+   }
+  },
+  {
+   "id": "viibis",
+   "x": 480,
+   "y": 580,
+   "w": 250,
+   "label": "VII bis — intermédiaire de Wrisberg",
+   "sub": "sensitif · gustatif · végétatif",
+   "lvl": "racine",
+   "desc": {
+    "fr": "Le VII bis est sensitif et sensoriel : il innerve le tympan, la moitié postérieure du conduit auditif externe, le pavillon de l'oreille, et fournit l'innervation gustative de la langue en avant du V lingual. Il comprend en plus un contingent neurovégétatif pour les sécrétions lacrymales, nasales et salivaires.",
+    "en": "VII bis is sensory: it supplies the tympanum, the posterior half of the external acoustic meatus and the auricle, and provides taste innervation of the tongue in front of the lingual V. It also carries a neurovegetative contingent for lacrimal, nasal and salivary secretions."
+   }
+  },
+  {
+   "id": "angle_pc",
+   "x": 180,
+   "y": 690,
+   "w": 250,
+   "label": "Angle ponto-cérébelleux",
+   "sub": "avec le VIII, vers le CAI",
+   "lvl": "note",
+   "desc": {
+    "fr": "De son origine apparente au conduit auditif interne, le nerf facial chemine dans l'angle ponto-cérébelleux ; il représente un axe autour duquel s'enroulent le VII bis et le nerf auditif VIII. Par l'intermédiaire des méninges, il répond en avant à la face postérieure du rocher et en arrière au flocculus du cervelet.",
+    "en": "From its apparent origin to the internal acoustic meatus, the facial nerve travels through the cerebellopontine angle; it is an axis around which VII bis and the auditory nerve VIII wind. Through the meninges it relates anteriorly to the posterior surface of the petrous bone and posteriorly to the cerebellar flocculus."
+   }
+  },
+  {
+   "id": "clinique",
+   "x": 480,
+   "y": 690,
+   "w": 260,
+   "label": "Centrale ou périphérique ?",
+   "sub": "clinique du cours",
+   "lvl": "clinique",
+   "desc": {
+    "fr": "Clinique (cours des voies de la motricité) : l'atteinte du faisceau géniculé destiné au noyau du VII donne une paralysie faciale CENTRALE (territoire inférieur seul, le front est épargné) ; une atteinte au niveau du noyau du VII ou en aval donne une paralysie faciale PÉRIPHÉRIQUE (toute l'hémiface, front compris). Intérêt du sujet : paralysie faciale, fracture du rocher, chirurgie de l'oreille et de la région parotidienne.",
+    "en": "Clinical (motor pathways course): a lesion of the geniculate bundle to the VII nucleus causes a CENTRAL facial palsy (lower face only, forehead spared); a lesion at the VII nucleus or beyond causes a PERIPHERAL facial palsy (whole hemiface, forehead included). Stakes: facial palsy, petrous bone fracture, ear and parotid surgery."
+   }
+  }
+ ],
+ "edges": [
+  [
+   "noyau_moteur",
+   "fibres"
+  ],
+  [
+   "noyau_solitaire",
+   "fibres"
+  ],
+  [
+   "noyau_lacrymo",
+   "fibres"
+  ],
+  [
+   "noyau_salivaire",
+   "fibres"
+  ],
+  [
+   "fibres",
+   "origine_apparente"
+  ],
+  [
+   "origine_apparente",
+   "vii"
+  ],
+  [
+   "origine_apparente",
+   "viibis"
+  ],
+  [
+   "origine_apparente",
+   "angle_pc",
+   1
+  ],
+  [
+   "vii",
+   "clinique",
+   1
+  ]
+ ]
+}

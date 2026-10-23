@@ -1,0 +1,2030 @@
+{
+ "batch": "B",
+ "partie": "II",
+ "sujet": "articulation-coxo-femorale",
+ "titre_fr": "Articulation coxo-fémorale",
+ "titre_en": "Hip (coxofemoral) joint",
+ "figures": [
+  {
+   "numero": 35,
+   "titre_fr": "Surfaces articulaires de l'articulation coxo-fémorale",
+   "titre_en": "Articular surfaces of the hip (coxofemoral) joint",
+   "classe": "3D",
+   "vue": "laterale",
+   "vue_audit": "latérale",
+   "camera": {
+    "vue": "laterale",
+    "position": [
+     -377.7,
+     814.0,
+     147.6
+    ],
+    "target": [
+     -82.9,
+     796.3,
+     94.5
+    ]
+   },
+   "systemes": [
+    "squelette",
+    "articulations"
+   ],
+   "structures": [
+    {
+     "id": "hip_bone_right",
+     "role": "sujet",
+     "nom_fr": "Os coxal",
+     "name_en": "Right hip bone",
+     "name_la": "Os coxae",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/hip_bone_right.glb",
+     "bounds": {
+      "min": [
+       -132.8,
+       728.3,
+       18.5
+      ],
+      "max": [
+       -3.2,
+       944.5,
+       153.6
+      ],
+      "center": [
+       -68.0,
+       836.4,
+       86.1
+      ],
+      "size": [
+       129.6,
+       216.2,
+       135.1
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "sujet",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "acetabular_labrum_right",
+     "role": "sujet",
+     "nom_fr": "Bourrelet acétabulaire",
+     "name_en": "Right acetabular labrum",
+     "name_la": "Labrum acetabuli",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/acetabular_labrum_right.glb",
+     "bounds": {
+      "min": [
+       -100.3,
+       772.3,
+       67.6
+      ],
+      "max": [
+       -65.6,
+       820.4,
+       121.4
+      ],
+      "center": [
+       -83.0,
+       796.3,
+       94.5
+      ],
+      "size": [
+       34.7,
+       48.1,
+       53.8
+      ]
+     }
+    },
+    {
+     "id": "rep_acetabular_fossa_right",
+     "role": "contexte",
+     "nom_fr": "Fosse acétabulaire",
+     "name_en": "Right acetabular fossa",
+     "name_la": "Fossa acetabuli",
+     "systeme": "reperes",
+     "couleur": "#dd8a2e",
+     "file": "models-reperes/acetabular_fossa_right.glb",
+     "bounds": {
+      "min": [
+       -107.9,
+       797.1,
+       81.0
+      ],
+      "max": [
+       -61.1,
+       797.8,
+       81.5
+      ],
+      "center": [
+       -84.5,
+       797.5,
+       81.2
+      ],
+      "size": [
+       46.7,
+       0.7,
+       0.5
+      ]
+     }
+    },
+    {
+     "id": "rep_fovea_for_ligament_of_head_of_femur_right",
+     "role": "contexte",
+     "nom_fr": "Fossette de la tête fémorale",
+     "name_en": "Right fovea for ligament of head of femur",
+     "name_la": "Fovea capitis ossis femoris",
+     "systeme": "reperes",
+     "couleur": "#dd8a2e",
+     "file": "models-reperes/fovea_for_ligament_of_head_of_femur_right.glb",
+     "bounds": {
+      "min": [
+       -63.9,
+       794.4,
+       90.7
+      ],
+      "max": [
+       -25.5,
+       816.8,
+       91.1
+      ],
+      "center": [
+       -44.7,
+       805.6,
+       90.9
+      ],
+      "size": [
+       38.5,
+       22.3,
+       0.5
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [],
+   "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
+  },
+  {
+   "numero": 36,
+   "titre_fr": "Ligaments de l'articulation coxo-fémorale",
+   "titre_en": "Ligaments of the hip (coxofemoral) joint",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure puis postérieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -86.2,
+     810.8,
+     412.6
+    ],
+    "target": [
+     -86.2,
+     779.0,
+     94.2
+    ]
+   },
+   "systemes": [
+    "ligaments",
+    "articulations",
+    "squelette"
+   ],
+   "structures": [
+    {
+     "id": "descending_part_of_iliofemoral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Partie descendante du ligament iliofémoral",
+     "name_en": "Right descending part of iliofemoral ligament",
+     "name_la": "Pars descendens ligamenti iliofemoralis",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/descending_part_of_iliofemoral_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -99.3,
+       741.7,
+       93.7
+      ],
+      "max": [
+       -90.7,
+       817.2,
+       116.8
+      ],
+      "center": [
+       -95.0,
+       779.5,
+       105.3
+      ],
+      "size": [
+       8.6,
+       75.5,
+       23.1
+      ]
+     }
+    },
+    {
+     "id": "transverse_part_of_iliofemoral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Partie transverse du ligament iliofémoral",
+     "name_en": "Right transverse part of iliofemoral ligament",
+     "name_la": "Pars transversa ligamenti iliofemoralis",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/transverse_part_of_iliofemoral_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -117.2,
+       767.1,
+       103.7
+      ],
+      "max": [
+       -92.4,
+       818.8,
+       116.0
+      ],
+      "center": [
+       -104.8,
+       793.0,
+       109.9
+      ],
+      "size": [
+       24.7,
+       51.7,
+       12.3
+      ]
+     }
+    },
+    {
+     "id": "pubofemoral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament pubofémoral",
+     "name_en": "Right pubofemoral ligament",
+     "name_la": "Ligamentum pubofemorale",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/pubofemoral_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -92.1,
+       737.5,
+       83.0
+      ],
+      "max": [
+       -58.5,
+       782.4,
+       114.4
+      ],
+      "center": [
+       -75.3,
+       760.0,
+       98.7
+      ],
+      "size": [
+       33.6,
+       44.9,
+       31.4
+      ]
+     }
+    },
+    {
+     "id": "ischiofemoral_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament ischiofémoral",
+     "name_en": "Right ischiofemoral ligament",
+     "name_la": "Ligamentum ischiofemorale",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/ischiofemoral_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -118.8,
+       776.7,
+       67.0
+      ],
+      "max": [
+       -74.6,
+       793.4,
+       96.0
+      ],
+      "center": [
+       -96.7,
+       785.1,
+       81.5
+      ],
+      "size": [
+       44.1,
+       16.7,
+       29.0
+      ]
+     }
+    },
+    {
+     "id": "ligament_of_head_of_femur_right",
+     "role": "sujet",
+     "nom_fr": "Ligament de la tête du fémur",
+     "name_en": "Right ligament of head of femur",
+     "name_la": "Ligamentum capitis femoris",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/ligament_of_head_of_femur_right.glb",
+     "bounds": {
+      "min": [
+       -67.7,
+       774.1,
+       84.2
+      ],
+      "max": [
+       -54.2,
+       798.6,
+       114.8
+      ],
+      "center": [
+       -60.9,
+       786.3,
+       99.5
+      ],
+      "size": [
+       13.5,
+       24.6,
+       30.6
+      ]
+     }
+    },
+    {
+     "id": "transverse_acetabular_ligament_right",
+     "role": "sujet",
+     "nom_fr": "Ligament acétabulaire transverse",
+     "name_en": "Right transverse acetabular ligament",
+     "name_la": "Ligamentum transversum acetabuli",
+     "systeme": "ligaments",
+     "couleur": "#c2a15c",
+     "file": "models/ligaments/transverse_acetabular_ligament_right.glb",
+     "bounds": {
+      "min": [
+       -71.3,
+       773.6,
+       78.2
+      ],
+      "max": [
+       -53.6,
+       787.3,
+       118.0
+      ],
+      "center": [
+       -62.5,
+       780.4,
+       98.1
+      ],
+      "size": [
+       17.7,
+       13.7,
+       39.8
+      ]
+     }
+    },
+    {
+     "id": "articular_capsule_of_hip_joint_right",
+     "role": "sujet",
+     "nom_fr": "Capsule articulaire de l'articulation de la hanche",
+     "name_en": "Right articular capsule of hip joint",
+     "name_la": "Capsula articularis coxae",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/articular_capsule_of_hip_joint_right.glb",
+     "bounds": {
+      "min": [
+       -118.7,
+       741.3,
+       67.6
+      ],
+      "max": [
+       -65.6,
+       820.4,
+       121.4
+      ],
+      "center": [
+       -92.2,
+       780.8,
+       94.5
+      ],
+      "size": [
+       53.1,
+       79.1,
+       53.8
+      ]
+     }
+    },
+    {
+     "id": "hip_bone_right",
+     "role": "ghost",
+     "nom_fr": "Os coxal",
+     "name_en": "Right hip bone",
+     "name_la": "Os coxae",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/hip_bone_right.glb",
+     "bounds": {
+      "min": [
+       -132.8,
+       728.3,
+       18.5
+      ],
+      "max": [
+       -3.2,
+       944.5,
+       153.6
+      ],
+      "center": [
+       -68.0,
+       836.4,
+       86.1
+      ],
+      "size": [
+       129.6,
+       216.2,
+       135.1
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "ghost",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [],
+   "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
+  },
+  {
+   "numero": 37,
+   "titre_fr": "Vascularisation artérielle de l'articulation coxo-fémorale",
+   "titre_en": "Arterial supply of the hip (coxofemoral) joint",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -85.0,
+     841.6,
+     354.5
+    ],
+    "target": [
+     -85.0,
+     814.0,
+     79.0
+    ]
+   },
+   "systemes": [
+    "arteres",
+    "squelette"
+   ],
+   "structures": [
+    {
+     "id": "medial_circumflex_femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère circonflexe médiale de la cuisse",
+     "name_en": "Right medial circumflex femoral artery",
+     "name_la": "Arteria circumflexa medialis femoris",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/medial_circumflex_femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -105.5,
+       749.7,
+       75.9
+      ],
+      "max": [
+       -71.2,
+       795.1,
+       125.1
+      ],
+      "center": [
+       -88.3,
+       772.4,
+       100.5
+      ],
+      "size": [
+       34.3,
+       45.3,
+       49.2
+      ]
+     }
+    },
+    {
+     "id": "lateral_circumflex_femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère circonflexe fémorale latérale",
+     "name_en": "Right lateral circumflex femoral artery",
+     "name_la": "Arteria circumflexa lateralis femoris",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/lateral_circumflex_femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -140.6,
+       745.4,
+       65.9
+      ],
+      "max": [
+       -70.6,
+       793.3,
+       126.8
+      ],
+      "center": [
+       -105.6,
+       769.4,
+       96.3
+      ],
+      "size": [
+       70.0,
+       47.9,
+       60.9
+      ]
+     }
+    },
+    {
+     "id": "obturator_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère obturatrice",
+     "name_en": "Right obturator artery",
+     "name_la": "Arteria obturatoria",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/obturator_artery_right.glb",
+     "bounds": {
+      "min": [
+       -54.2,
+       784.2,
+       64.3
+      ],
+      "max": [
+       -38.2,
+       828.1,
+       112.1
+      ],
+      "center": [
+       -46.2,
+       806.2,
+       88.2
+      ],
+      "size": [
+       16.0,
+       43.9,
+       47.8
+      ]
+     }
+    },
+    {
+     "id": "superior_gluteal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère glutéale supérieure",
+     "name_en": "Right superior gluteal artery",
+     "name_la": "Arteria glutea superior",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/superior_gluteal_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.9,
+       842.6,
+       31.3
+      ],
+      "max": [
+       -29.5,
+       886.9,
+       85.6
+      ],
+      "center": [
+       -53.2,
+       864.7,
+       58.4
+      ],
+      "size": [
+       47.4,
+       44.3,
+       54.4
+      ]
+     }
+    },
+    {
+     "id": "inferior_gluteal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère glutéale inférieure",
+     "name_en": "Right inferior gluteal artery",
+     "name_la": "Arteria glutea inferior",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/inferior_gluteal_artery_right.glb",
+     "bounds": {
+      "min": [
+       -69.8,
+       741.2,
+       38.3
+      ],
+      "max": [
+       -29.5,
+       857.8,
+       85.2
+      ],
+      "center": [
+       -49.7,
+       799.5,
+       61.8
+      ],
+      "size": [
+       40.3,
+       116.5,
+       46.9
+      ]
+     }
+    },
+    {
+     "id": "deep_femoral_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère fémorale profonde",
+     "name_en": "Right deep femoral artery",
+     "name_la": "Arteria profunda femoris",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/deep_femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -93.3,
+       520.9,
+       71.8
+      ],
+      "max": [
+       -51.5,
+       782.1,
+       145.4
+      ],
+      "center": [
+       -72.4,
+       651.5,
+       108.6
+      ],
+      "size": [
+       41.8,
+       261.2,
+       73.6
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "ghost",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "hip_bone_right",
+     "role": "ghost",
+     "nom_fr": "Os coxal",
+     "name_en": "Right hip bone",
+     "name_la": "Os coxae",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/hip_bone_right.glb",
+     "bounds": {
+      "min": [
+       -132.8,
+       728.3,
+       18.5
+      ],
+      "max": [
+       -3.2,
+       944.5,
+       153.6
+      ],
+      "center": [
+       -68.0,
+       836.4,
+       86.1
+      ],
+      "size": [
+       129.6,
+       216.2,
+       135.1
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": [
+    "Branche acétabulaire de l'artère obturatrice et artère du ligament rond : NON individualisées (au mieux incluses dans les maillages parents)"
+   ],
+   "camera_note": "Cadrage resserré sur les structures focales de la figure : les os longs du manifeste sont des maillages entiers, un cadrage sur l'union de la scène rendrait l'articulation illisible."
+  },
+  {
+   "numero": 38,
+   "titre_fr": "Rapports antérieurs de l'articulation coxo-fémorale",
+   "titre_en": "Anterior relations of the hip (coxofemoral) joint",
+   "classe": "3D",
+   "vue": "anterieure",
+   "vue_audit": "antérieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -74.7,
+     836.2,
+     1621.0
+    ],
+    "target": [
+     -74.7,
+     682.9,
+     87.5
+    ]
+   },
+   "systemes": [
+    "arteres",
+    "veines",
+    "nerfs",
+    "muscles",
+    "articulations"
+   ],
+   "structures": [
+    {
+     "id": "femoral_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère fémorale",
+     "name_en": "Right femoral artery",
+     "name_la": "Arteria femoralis",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "file": "models/arteres/femoral_artery_right.glb",
+     "bounds": {
+      "min": [
+       -76.3,
+       489.4,
+       82.7
+      ],
+      "max": [
+       -44.8,
+       829.6,
+       148.0
+      ],
+      "center": [
+       -60.6,
+       659.5,
+       115.4
+      ],
+      "size": [
+       31.5,
+       340.3,
+       65.4
+      ]
+     }
+    },
+    {
+     "id": "femoral_vein_right",
+     "role": "sujet",
+     "nom_fr": "Veine fémorale",
+     "name_en": "Right femoral vein",
+     "name_la": "Vena femoralis",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "file": "models/veines/femoral_vein_right.glb",
+     "bounds": {
+      "min": [
+       -74.0,
+       494.8,
+       81.7
+      ],
+      "max": [
+       -35.2,
+       816.8,
+       148.6
+      ],
+      "center": [
+       -54.6,
+       655.8,
+       115.1
+      ],
+      "size": [
+       38.8,
+       322.0,
+       66.8
+      ]
+     }
+    },
+    {
+     "id": "femoral_nerve_right",
+     "role": "sujet",
+     "nom_fr": "Nerf fémoral",
+     "name_en": "Right femoral nerve",
+     "name_la": "Nervus femoralis",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "file": "models/nerfs/femoral_nerve_right.glb",
+     "bounds": {
+      "min": [
+       -87.2,
+       558.4,
+       72.5
+      ],
+      "max": [
+       -11.4,
+       1033.5,
+       141.0
+      ],
+      "center": [
+       -49.3,
+       796.0,
+       106.7
+      ],
+      "size": [
+       75.9,
+       475.1,
+       68.5
+      ]
+     }
+    },
+    {
+     "id": "psoas_major_right",
+     "role": "sujet",
+     "nom_fr": "Grand psoas",
+     "name_en": "Right psoas major",
+     "name_la": "Psoas major",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/psoas_major_right.glb",
+     "bounds": {
+      "min": [
+       -106.4,
+       706.4,
+       61.5
+      ],
+      "max": [
+       -8.3,
+       1088.4,
+       134.8
+      ],
+      "center": [
+       -57.4,
+       897.4,
+       98.1
+      ],
+      "size": [
+       98.1,
+       382.0,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "pectineus_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle pectiné",
+     "name_en": "Right pectineus muscle",
+     "name_la": "Musculus pectineus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/pectineus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -97.1,
+       663.9,
+       95.7
+      ],
+      "max": [
+       -15.8,
+       795.9,
+       152.6
+      ],
+      "center": [
+       -56.5,
+       729.9,
+       124.1
+      ],
+      "size": [
+       81.3,
+       132.0,
+       56.9
+      ]
+     }
+    },
+    {
+     "id": "sartorius_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle sartorius",
+     "name_en": "Right sartorius muscle",
+     "name_la": "Musculus sartorius",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/sartorius_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -122.6,
+       277.3,
+       69.4
+      ],
+      "max": [
+       -21.2,
+       879.8,
+       154.0
+      ],
+      "center": [
+       -71.9,
+       578.5,
+       111.7
+      ],
+      "size": [
+       101.4,
+       602.5,
+       84.6
+      ]
+     }
+    },
+    {
+     "id": "rectus_femoris_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle droit fémoral",
+     "name_en": "Right rectus femoris muscle",
+     "name_la": "Musculus rectus femoris",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/rectus_femoris_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -146.0,
+       299.1,
+       91.5
+      ],
+      "max": [
+       -65.8,
+       847.4,
+       156.6
+      ],
+      "center": [
+       -105.9,
+       573.3,
+       124.0
+      ],
+      "size": [
+       80.2,
+       548.3,
+       65.1
+      ]
+     }
+    },
+    {
+     "id": "articular_capsule_of_hip_joint_right",
+     "role": "sujet",
+     "nom_fr": "Capsule articulaire de l'articulation de la hanche",
+     "name_en": "Right articular capsule of hip joint",
+     "name_la": "Capsula articularis coxae",
+     "systeme": "articulations",
+     "couleur": "#a9bd8f",
+     "file": "models/articulations/articular_capsule_of_hip_joint_right.glb",
+     "bounds": {
+      "min": [
+       -118.7,
+       741.3,
+       67.6
+      ],
+      "max": [
+       -65.6,
+       820.4,
+       121.4
+      ],
+      "center": [
+       -92.2,
+       780.8,
+       94.5
+      ],
+      "size": [
+       53.1,
+       79.1,
+       53.8
+      ]
+     }
+    },
+    {
+     "id": "hip_bone_right",
+     "role": "ghost",
+     "nom_fr": "Os coxal",
+     "name_en": "Right hip bone",
+     "name_la": "Os coxae",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/hip_bone_right.glb",
+     "bounds": {
+      "min": [
+       -132.8,
+       728.3,
+       18.5
+      ],
+      "max": [
+       -3.2,
+       944.5,
+       153.6
+      ],
+      "center": [
+       -68.0,
+       836.4,
+       86.1
+      ],
+      "size": [
+       129.6,
+       216.2,
+       135.1
+      ]
+     }
+    },
+    {
+     "id": "femur_right",
+     "role": "ghost",
+     "nom_fr": "Fémur",
+     "name_en": "Right femur",
+     "name_la": "Os femoris",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "file": "models/squelette/femur_right.glb",
+     "bounds": {
+      "min": [
+       -146.2,
+       358.8,
+       44.3
+      ],
+      "max": [
+       -31.7,
+       815.8,
+       117.6
+      ],
+      "center": [
+       -88.9,
+       587.3,
+       80.9
+      ],
+      "size": [
+       114.5,
+       456.9,
+       73.3
+      ]
+     }
+    },
+    {
+     "id": "iliacus_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle iliaque",
+     "name_en": "Right iliacus muscle",
+     "name_la": "Musculus iliacus",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "file": "models/muscles/iliacus_muscle_right.glb",
+     "bounds": {
+      "min": [
+       -116.9,
+       703.0,
+       64.9
+      ],
+      "max": [
+       -61.8,
+       935.9,
+       145.8
+      ],
+      "center": [
+       -89.4,
+       819.5,
+       105.3
+      ],
+      "size": [
+       55.1,
+       232.9,
+       81.0
+      ]
+     }
+    }
+   ],
+   "diagram": null,
+   "espaces": [],
+   "manquants": []
+  }
+ ],
+ "structures_toutes": [
+  {
+   "id": "lateral_circumflex_femoral_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère circonflexe fémorale latérale",
+   "name_en": "Right lateral circumflex femoral artery",
+   "name_la": "Arteria circumflexa lateralis femoris",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/lateral_circumflex_femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -140.6,
+     745.4,
+     65.9
+    ],
+    "max": [
+     -70.6,
+     793.3,
+     126.8
+    ],
+    "center": [
+     -105.6,
+     769.4,
+     96.3
+    ],
+    "size": [
+     70.0,
+     47.9,
+     60.9
+    ]
+   }
+  },
+  {
+   "id": "medial_circumflex_femoral_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère circonflexe médiale de la cuisse",
+   "name_en": "Right medial circumflex femoral artery",
+   "name_la": "Arteria circumflexa medialis femoris",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/medial_circumflex_femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -105.5,
+     749.7,
+     75.9
+    ],
+    "max": [
+     -71.2,
+     795.1,
+     125.1
+    ],
+    "center": [
+     -88.3,
+     772.4,
+     100.5
+    ],
+    "size": [
+     34.3,
+     45.3,
+     49.2
+    ]
+   }
+  },
+  {
+   "id": "femoral_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère fémorale",
+   "name_en": "Right femoral artery",
+   "name_la": "Arteria femoralis",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -76.3,
+     489.4,
+     82.7
+    ],
+    "max": [
+     -44.8,
+     829.6,
+     148.0
+    ],
+    "center": [
+     -60.6,
+     659.5,
+     115.4
+    ],
+    "size": [
+     31.5,
+     340.3,
+     65.4
+    ]
+   }
+  },
+  {
+   "id": "inferior_gluteal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère glutéale inférieure",
+   "name_en": "Right inferior gluteal artery",
+   "name_la": "Arteria glutea inferior",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/inferior_gluteal_artery_right.glb",
+   "bounds": {
+    "min": [
+     -69.8,
+     741.2,
+     38.3
+    ],
+    "max": [
+     -29.5,
+     857.8,
+     85.2
+    ],
+    "center": [
+     -49.7,
+     799.5,
+     61.8
+    ],
+    "size": [
+     40.3,
+     116.5,
+     46.9
+    ]
+   }
+  },
+  {
+   "id": "superior_gluteal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère glutéale supérieure",
+   "name_en": "Right superior gluteal artery",
+   "name_la": "Arteria glutea superior",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/superior_gluteal_artery_right.glb",
+   "bounds": {
+    "min": [
+     -76.9,
+     842.6,
+     31.3
+    ],
+    "max": [
+     -29.5,
+     886.9,
+     85.6
+    ],
+    "center": [
+     -53.2,
+     864.7,
+     58.4
+    ],
+    "size": [
+     47.4,
+     44.3,
+     54.4
+    ]
+   }
+  },
+  {
+   "id": "obturator_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère obturatrice",
+   "name_en": "Right obturator artery",
+   "name_la": "Arteria obturatoria",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/obturator_artery_right.glb",
+   "bounds": {
+    "min": [
+     -54.2,
+     784.2,
+     64.3
+    ],
+    "max": [
+     -38.2,
+     828.1,
+     112.1
+    ],
+    "center": [
+     -46.2,
+     806.2,
+     88.2
+    ],
+    "size": [
+     16.0,
+     43.9,
+     47.8
+    ]
+   }
+  },
+  {
+   "id": "acetabular_labrum_right",
+   "role": "sujet",
+   "nom_fr": "Bourrelet acétabulaire",
+   "name_en": "Right acetabular labrum",
+   "name_la": "Labrum acetabuli",
+   "systeme": "articulations",
+   "couleur": "#a9bd8f",
+   "file": "models/articulations/acetabular_labrum_right.glb",
+   "bounds": {
+    "min": [
+     -100.3,
+     772.3,
+     67.6
+    ],
+    "max": [
+     -65.6,
+     820.4,
+     121.4
+    ],
+    "center": [
+     -83.0,
+     796.3,
+     94.5
+    ],
+    "size": [
+     34.7,
+     48.1,
+     53.8
+    ]
+   }
+  },
+  {
+   "id": "articular_capsule_of_hip_joint_right",
+   "role": "sujet",
+   "nom_fr": "Capsule articulaire de l'articulation de la hanche",
+   "name_en": "Right articular capsule of hip joint",
+   "name_la": "Capsula articularis coxae",
+   "systeme": "articulations",
+   "couleur": "#a9bd8f",
+   "file": "models/articulations/articular_capsule_of_hip_joint_right.glb",
+   "bounds": {
+    "min": [
+     -118.7,
+     741.3,
+     67.6
+    ],
+    "max": [
+     -65.6,
+     820.4,
+     121.4
+    ],
+    "center": [
+     -92.2,
+     780.8,
+     94.5
+    ],
+    "size": [
+     53.1,
+     79.1,
+     53.8
+    ]
+   }
+  },
+  {
+   "id": "femur_right",
+   "role": "sujet",
+   "nom_fr": "Fémur",
+   "name_en": "Right femur",
+   "name_la": "Os femoris",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/femur_right.glb",
+   "bounds": {
+    "min": [
+     -146.2,
+     358.8,
+     44.3
+    ],
+    "max": [
+     -31.7,
+     815.8,
+     117.6
+    ],
+    "center": [
+     -88.9,
+     587.3,
+     80.9
+    ],
+    "size": [
+     114.5,
+     456.9,
+     73.3
+    ]
+   }
+  },
+  {
+   "id": "psoas_major_right",
+   "role": "sujet",
+   "nom_fr": "Grand psoas",
+   "name_en": "Right psoas major",
+   "name_la": "Psoas major",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/psoas_major_right.glb",
+   "bounds": {
+    "min": [
+     -106.4,
+     706.4,
+     61.5
+    ],
+    "max": [
+     -8.3,
+     1088.4,
+     134.8
+    ],
+    "center": [
+     -57.4,
+     897.4,
+     98.1
+    ],
+    "size": [
+     98.1,
+     382.0,
+     73.3
+    ]
+   }
+  },
+  {
+   "id": "transverse_acetabular_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Ligament acétabulaire transverse",
+   "name_en": "Right transverse acetabular ligament",
+   "name_la": "Ligamentum transversum acetabuli",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/transverse_acetabular_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -71.3,
+     773.6,
+     78.2
+    ],
+    "max": [
+     -53.6,
+     787.3,
+     118.0
+    ],
+    "center": [
+     -62.5,
+     780.4,
+     98.1
+    ],
+    "size": [
+     17.7,
+     13.7,
+     39.8
+    ]
+   }
+  },
+  {
+   "id": "ligament_of_head_of_femur_right",
+   "role": "sujet",
+   "nom_fr": "Ligament de la tête du fémur",
+   "name_en": "Right ligament of head of femur",
+   "name_la": "Ligamentum capitis femoris",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/ligament_of_head_of_femur_right.glb",
+   "bounds": {
+    "min": [
+     -67.7,
+     774.1,
+     84.2
+    ],
+    "max": [
+     -54.2,
+     798.6,
+     114.8
+    ],
+    "center": [
+     -60.9,
+     786.3,
+     99.5
+    ],
+    "size": [
+     13.5,
+     24.6,
+     30.6
+    ]
+   }
+  },
+  {
+   "id": "ischiofemoral_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Ligament ischiofémoral",
+   "name_en": "Right ischiofemoral ligament",
+   "name_la": "Ligamentum ischiofemorale",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/ischiofemoral_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -118.8,
+     776.7,
+     67.0
+    ],
+    "max": [
+     -74.6,
+     793.4,
+     96.0
+    ],
+    "center": [
+     -96.7,
+     785.1,
+     81.5
+    ],
+    "size": [
+     44.1,
+     16.7,
+     29.0
+    ]
+   }
+  },
+  {
+   "id": "pubofemoral_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Ligament pubofémoral",
+   "name_en": "Right pubofemoral ligament",
+   "name_la": "Ligamentum pubofemorale",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/pubofemoral_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -92.1,
+     737.5,
+     83.0
+    ],
+    "max": [
+     -58.5,
+     782.4,
+     114.4
+    ],
+    "center": [
+     -75.3,
+     760.0,
+     98.7
+    ],
+    "size": [
+     33.6,
+     44.9,
+     31.4
+    ]
+   }
+  },
+  {
+   "id": "rectus_femoris_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle droit fémoral",
+   "name_en": "Right rectus femoris muscle",
+   "name_la": "Musculus rectus femoris",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/rectus_femoris_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -146.0,
+     299.1,
+     91.5
+    ],
+    "max": [
+     -65.8,
+     847.4,
+     156.6
+    ],
+    "center": [
+     -105.9,
+     573.3,
+     124.0
+    ],
+    "size": [
+     80.2,
+     548.3,
+     65.1
+    ]
+   }
+  },
+  {
+   "id": "pectineus_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle pectiné",
+   "name_en": "Right pectineus muscle",
+   "name_la": "Musculus pectineus",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/pectineus_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -97.1,
+     663.9,
+     95.7
+    ],
+    "max": [
+     -15.8,
+     795.9,
+     152.6
+    ],
+    "center": [
+     -56.5,
+     729.9,
+     124.1
+    ],
+    "size": [
+     81.3,
+     132.0,
+     56.9
+    ]
+   }
+  },
+  {
+   "id": "sartorius_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle sartorius",
+   "name_en": "Right sartorius muscle",
+   "name_la": "Musculus sartorius",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/sartorius_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -122.6,
+     277.3,
+     69.4
+    ],
+    "max": [
+     -21.2,
+     879.8,
+     154.0
+    ],
+    "center": [
+     -71.9,
+     578.5,
+     111.7
+    ],
+    "size": [
+     101.4,
+     602.5,
+     84.6
+    ]
+   }
+  },
+  {
+   "id": "femoral_nerve_right",
+   "role": "sujet",
+   "nom_fr": "Nerf fémoral",
+   "name_en": "Right femoral nerve",
+   "name_la": "Nervus femoralis",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "file": "models/nerfs/femoral_nerve_right.glb",
+   "bounds": {
+    "min": [
+     -87.2,
+     558.4,
+     72.5
+    ],
+    "max": [
+     -11.4,
+     1033.5,
+     141.0
+    ],
+    "center": [
+     -49.3,
+     796.0,
+     106.7
+    ],
+    "size": [
+     75.9,
+     475.1,
+     68.5
+    ]
+   }
+  },
+  {
+   "id": "hip_bone_right",
+   "role": "sujet",
+   "nom_fr": "Os coxal",
+   "name_en": "Right hip bone",
+   "name_la": "Os coxae",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "file": "models/squelette/hip_bone_right.glb",
+   "bounds": {
+    "min": [
+     -132.8,
+     728.3,
+     18.5
+    ],
+    "max": [
+     -3.2,
+     944.5,
+     153.6
+    ],
+    "center": [
+     -68.0,
+     836.4,
+     86.1
+    ],
+    "size": [
+     129.6,
+     216.2,
+     135.1
+    ]
+   }
+  },
+  {
+   "id": "descending_part_of_iliofemoral_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Partie descendante du ligament iliofémoral",
+   "name_en": "Right descending part of iliofemoral ligament",
+   "name_la": "Pars descendens ligamenti iliofemoralis",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/descending_part_of_iliofemoral_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -99.3,
+     741.7,
+     93.7
+    ],
+    "max": [
+     -90.7,
+     817.2,
+     116.8
+    ],
+    "center": [
+     -95.0,
+     779.5,
+     105.3
+    ],
+    "size": [
+     8.6,
+     75.5,
+     23.1
+    ]
+   }
+  },
+  {
+   "id": "transverse_part_of_iliofemoral_ligament_right",
+   "role": "sujet",
+   "nom_fr": "Partie transverse du ligament iliofémoral",
+   "name_en": "Right transverse part of iliofemoral ligament",
+   "name_la": "Pars transversa ligamenti iliofemoralis",
+   "systeme": "ligaments",
+   "couleur": "#c2a15c",
+   "file": "models/ligaments/transverse_part_of_iliofemoral_ligament_right.glb",
+   "bounds": {
+    "min": [
+     -117.2,
+     767.1,
+     103.7
+    ],
+    "max": [
+     -92.4,
+     818.8,
+     116.0
+    ],
+    "center": [
+     -104.8,
+     793.0,
+     109.9
+    ],
+    "size": [
+     24.7,
+     51.7,
+     12.3
+    ]
+   }
+  },
+  {
+   "id": "femoral_vein_right",
+   "role": "sujet",
+   "nom_fr": "Veine fémorale",
+   "name_en": "Right femoral vein",
+   "name_la": "Vena femoralis",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "file": "models/veines/femoral_vein_right.glb",
+   "bounds": {
+    "min": [
+     -74.0,
+     494.8,
+     81.7
+    ],
+    "max": [
+     -35.2,
+     816.8,
+     148.6
+    ],
+    "center": [
+     -54.6,
+     655.8,
+     115.1
+    ],
+    "size": [
+     38.8,
+     322.0,
+     66.8
+    ]
+   }
+  },
+  {
+   "id": "deep_femoral_artery_right",
+   "role": "contexte",
+   "nom_fr": "Artère fémorale profonde",
+   "name_en": "Right deep femoral artery",
+   "name_la": "Arteria profunda femoris",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "file": "models/arteres/deep_femoral_artery_right.glb",
+   "bounds": {
+    "min": [
+     -93.3,
+     520.9,
+     71.8
+    ],
+    "max": [
+     -51.5,
+     782.1,
+     145.4
+    ],
+    "center": [
+     -72.4,
+     651.5,
+     108.6
+    ],
+    "size": [
+     41.8,
+     261.2,
+     73.6
+    ]
+   }
+  },
+  {
+   "id": "rep_acetabular_fossa_right",
+   "role": "contexte",
+   "nom_fr": "Fosse acétabulaire",
+   "name_en": "Right acetabular fossa",
+   "name_la": "Fossa acetabuli",
+   "systeme": "reperes",
+   "couleur": "#dd8a2e",
+   "file": "models-reperes/acetabular_fossa_right.glb",
+   "bounds": {
+    "min": [
+     -107.9,
+     797.1,
+     81.0
+    ],
+    "max": [
+     -61.1,
+     797.8,
+     81.5
+    ],
+    "center": [
+     -84.5,
+     797.5,
+     81.2
+    ],
+    "size": [
+     46.7,
+     0.7,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "rep_fovea_for_ligament_of_head_of_femur_right",
+   "role": "contexte",
+   "nom_fr": "Fossette de la tête fémorale",
+   "name_en": "Right fovea for ligament of head of femur",
+   "name_la": "Fovea capitis ossis femoris",
+   "systeme": "reperes",
+   "couleur": "#dd8a2e",
+   "file": "models-reperes/fovea_for_ligament_of_head_of_femur_right.glb",
+   "bounds": {
+    "min": [
+     -63.9,
+     794.4,
+     90.7
+    ],
+    "max": [
+     -25.5,
+     816.8,
+     91.1
+    ],
+    "center": [
+     -44.7,
+     805.6,
+     90.9
+    ],
+    "size": [
+     38.5,
+     22.3,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "iliacus_muscle_right",
+   "role": "contexte",
+   "nom_fr": "Muscle iliaque",
+   "name_en": "Right iliacus muscle",
+   "name_la": "Musculus iliacus",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "file": "models/muscles/iliacus_muscle_right.glb",
+   "bounds": {
+    "min": [
+     -116.9,
+     703.0,
+     64.9
+    ],
+    "max": [
+     -61.8,
+     935.9,
+     145.8
+    ],
+    "center": [
+     -89.4,
+     819.5,
+     105.3
+    ],
+    "size": [
+     55.1,
+     232.9,
+     81.0
+    ]
+   }
+  }
+ ],
+ "diagrams": {},
+ "source": "data/FIGURES-AUDIT.json + proto-schemas/manifest.json + schemas-scenes/batch-B.json"
+}

@@ -1,0 +1,134 @@
+{
+ "figure": 14,
+ "slug": "voies-visuelles",
+ "titre_fr": "Voies de conduction visuelle",
+ "titre_en": "Visual pathways",
+ "classe": "3D+D",
+ "camera": {
+  "vue": "posterieure-inferieure",
+  "vue_audit": "inférieure puis postérieure"
+ },
+ "systemes": [
+  "cerveau",
+  "nerfs"
+ ],
+ "isoler": [
+  "Nerf optique",
+  "Chiasma",
+  "Bandelettes optiques",
+  "Corps géniculés latéraux",
+  "Sillon calcarin"
+ ],
+ "structures": [
+  {
+   "id": "optic_nerve_ii_right",
+   "role": "sujet",
+   "nom_fr": "Nerf optique droit"
+  },
+  {
+   "id": "optic_nerve_ii_left",
+   "role": "sujet",
+   "nom_fr": "Nerf optique gauche"
+  },
+  {
+   "id": "optic_chiasm_right",
+   "role": "sujet",
+   "nom_fr": "Chiasma optique (moitié droite)"
+  },
+  {
+   "id": "optic_chiasm_left",
+   "role": "sujet",
+   "nom_fr": "Chiasma optique (moitié gauche)"
+  },
+  {
+   "id": "optic_tract_right",
+   "role": "sujet",
+   "nom_fr": "Bandelette optique droite"
+  },
+  {
+   "id": "optic_tract_left",
+   "role": "sujet",
+   "nom_fr": "Bandelette optique gauche"
+  },
+  {
+   "id": "lateral_geniculate_body_right",
+   "role": "sujet",
+   "nom_fr": "Corps géniculé latéral droit"
+  },
+  {
+   "id": "lateral_geniculate_body_left",
+   "role": "sujet",
+   "nom_fr": "Corps géniculé latéral gauche"
+  },
+  {
+   "id": "calcarine_sulcus_right",
+   "role": "sujet",
+   "nom_fr": "Sillon calcarin droit"
+  },
+  {
+   "id": "calcarine_sulcus_left",
+   "role": "sujet",
+   "nom_fr": "Sillon calcarin gauche"
+  },
+  {
+   "id": "cuneus_right",
+   "role": "contexte",
+   "nom_fr": "Cuneus droit"
+  },
+  {
+   "id": "lingual_gyrus_right",
+   "role": "contexte",
+   "nom_fr": "Gyrus lingual droit"
+  },
+  {
+   "id": "retina_right",
+   "role": "contexte",
+   "nom_fr": "Rétine droite"
+  },
+  {
+   "id": "retina_left",
+   "role": "contexte",
+   "nom_fr": "Rétine gauche"
+  }
+ ],
+ "manquants": [
+  "La logique des décussations (fibres nasales/temporales) et des déficits campimétriques est schématique → schéma en regard ; la scène 3D couvre nerf → chiasma → bandelettes → corps géniculés → cortex calcarin"
+ ],
+ "trajets_3d": [
+  {
+   "fichier": "tract_or_left.glb",
+   "id": "tract_or_left",
+   "nom_fr": "Radiations optiques (de Gratiolet)",
+   "name_en": "Optic radiation",
+   "cote": "left",
+   "role": "sujet",
+   "couleur": "#69f0ae",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Corps géniculé latéral → cortex calcarin (lèvre supérieure : faisceau de Baumgarten ; lèvre inférieure : anse de Meyer par le lobe temporal)",
+   "fiche_fr": "Les radiations optiques, absentes de l'atlas, arrivent en tractographie réelle : l'anse de Meyer plonge dans le lobe temporal avant de rejoindre la lèvre inférieure de la scissure calcarine — le trajet qui explique les quadranopsies."
+  },
+  {
+   "fichier": "tract_or_right.glb",
+   "id": "tract_or_right",
+   "nom_fr": "Radiations optiques (de Gratiolet)",
+   "name_en": "Optic radiation",
+   "cote": "right",
+   "role": "sujet",
+   "couleur": "#69f0ae",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Corps géniculé latéral → cortex calcarin (lèvre supérieure : faisceau de Baumgarten ; lèvre inférieure : anse de Meyer par le lobe temporal)",
+   "fiche_fr": "Les radiations optiques, absentes de l'atlas, arrivent en tractographie réelle : l'anse de Meyer plonge dans le lobe temporal avant de rejoindre la lèvre inférieure de la scissure calcarine — le trajet qui explique les quadranopsies."
+  }
+ ],
+ "statut_segments": {
+  "reel_3d": [
+   "Nerf optique → chiasma → bandelettes → corps géniculés : maillages natifs de l'atlas",
+   "Radiations optiques CGL → cortex calcarin, anses de Meyer et de Baumgarten : tractographie HCP1065 recalée (le segment qui manquait)"
+  ],
+  "schema_seul": [
+   "Logique des décussations partielles (fibres nasales/temporales) et déficits campimétriques : schéma compagnon (batch H2)",
+   "Rétine → nerf : la rétine est un maillage-coque ; ses couches restent le schéma de la Fig 13"
+  ]
+ },
+ "note_3d": "MISE À JOUR tractographie : les radiations optiques — le chaînon manquant de la Fig 14 — sont désormais un vrai trajet 3D du corps géniculé au cortex calcarin. Le nerf optique de l'atlas de tractographie (CNII) n'a pas été retenu : l'atlas modélise déjà nerf/chiasma/bandelettes en maillages natifs (corridor CNII vérifié : médiane 3,6 mm de ces maillages)."
+}

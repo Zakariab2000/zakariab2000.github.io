@@ -1,0 +1,1015 @@
+{
+ "batch": "G",
+ "topic": 37,
+ "partie": "VI",
+ "slug": "region-carotidienne",
+ "sujet": "La région carotidienne",
+ "titre_fr": "La région carotidienne",
+ "titre_en": "The carotid region",
+ "classe": "3D",
+ "figures": [
+  {
+   "numero": 107,
+   "classe": "3D",
+   "titre_fr": "Compartiments du cou",
+   "titre_en": "Compartments of the neck",
+   "vue": "antero-laterale",
+   "structures": [
+    {
+     "id": "sternocleidomastoid_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle sternocléïdomastoïdien",
+     "name_en": "Right sternocleidomastoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternocleidomastoid_muscle_right.glb"
+    },
+    {
+     "id": "sternocleidomastoid_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle sternocléïdomastoïdien",
+     "name_en": "Left sternocleidomastoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternocleidomastoid_muscle_left.glb"
+    },
+    {
+     "id": "ascending_part_of_trapezius_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Partie ascendante du trapèze",
+     "name_en": "Right ascending part of trapezius muscle",
+     "system": "muscles",
+     "file": "models/muscles/ascending_part_of_trapezius_muscle_right.glb"
+    },
+    {
+     "id": "ascending_part_of_trapezius_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Partie ascendante du trapèze",
+     "name_en": "Left ascending part of trapezius muscle",
+     "system": "muscles",
+     "file": "models/muscles/ascending_part_of_trapezius_muscle_left.glb"
+    },
+    {
+     "id": "scalenus_anterior_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle scalène antérieur",
+     "name_en": "Right scalenus anterior muscle",
+     "system": "muscles",
+     "file": "models/muscles/scalenus_anterior_muscle_right.glb"
+    },
+    {
+     "id": "scalenus_anterior_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle scalène antérieur",
+     "name_en": "Left scalenus anterior muscle",
+     "system": "muscles",
+     "file": "models/muscles/scalenus_anterior_muscle_left.glb"
+    },
+    {
+     "id": "scalenus_medius_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle scalène moyen",
+     "name_en": "Right scalenus medius muscle",
+     "system": "muscles",
+     "file": "models/muscles/scalenus_medius_muscle_right.glb"
+    },
+    {
+     "id": "scalenus_medius_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle scalène moyen",
+     "name_en": "Left scalenus medius muscle",
+     "system": "muscles",
+     "file": "models/muscles/scalenus_medius_muscle_left.glb"
+    },
+    {
+     "id": "scalenus_posterior_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle scalène postérieur",
+     "name_en": "Right scalenus posterior muscle",
+     "system": "muscles",
+     "file": "models/muscles/scalenus_posterior_muscle_right.glb"
+    },
+    {
+     "id": "scalenus_posterior_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle scalène postérieur",
+     "name_en": "Left scalenus posterior muscle",
+     "system": "muscles",
+     "file": "models/muscles/scalenus_posterior_muscle_left.glb"
+    },
+    {
+     "id": "omohyoid_muscle_right",
+     "role": "sujet",
+     "nom_fr": "Muscle omohyoïdien",
+     "name_en": "Right omohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/omohyoid_muscle_right.glb"
+    },
+    {
+     "id": "omohyoid_muscle_left",
+     "role": "sujet",
+     "nom_fr": "Muscle omohyoïdien",
+     "name_en": "Left omohyoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/omohyoid_muscle_left.glb"
+    },
+    {
+     "id": "superficial_investing_cervical_fascia_right",
+     "role": "sujet",
+     "nom_fr": "Fascia engainant superficiel du cou",
+     "name_en": "Right superficial investing cervical fascia",
+     "system": "fascias",
+     "file": "models/muscles/superficial_investing_cervical_fascia_right.glb"
+    },
+    {
+     "id": "superficial_investing_cervical_fascia_left",
+     "role": "sujet",
+     "nom_fr": "Fascia engainant superficiel du cou",
+     "name_en": "Left superficial investing cervical fascia",
+     "system": "fascias",
+     "file": "models/muscles/superficial_investing_cervical_fascia_left.glb"
+    },
+    {
+     "id": "thyroid_gland",
+     "role": "contexte",
+     "nom_fr": "Glande thyroïde",
+     "name_en": "Thyroid gland",
+     "system": "organes",
+     "file": "models/organes/thyroid_gland.glb"
+    },
+    {
+     "id": "left_common_carotid_artery",
+     "role": "contexte",
+     "nom_fr": "Artère carotide commune gauche",
+     "name_en": "Left common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/left_common_carotid_artery.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_left",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Left internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_left.glb"
+    },
+    {
+     "id": "clavicle_right",
+     "role": "ghost",
+     "nom_fr": "Clavicule",
+     "name_en": "Right clavicle",
+     "system": "squelette",
+     "file": "models/squelette/clavicle_right.glb"
+    },
+    {
+     "id": "clavicle_left",
+     "role": "ghost",
+     "nom_fr": "Clavicule",
+     "name_en": "Left clavicle",
+     "system": "squelette",
+     "file": "models/squelette/clavicle_left.glb"
+    }
+   ],
+   "manquants": [
+    "Lames prétrachérale et prévertébrale du fascia cervical : absentes — voir cartes Espaces « Compartiment viscéral » et « Compartiment prévertébral »",
+    "Gaine carotidienne : absente — voir carte Espace « Gaine carotidienne »",
+    "Les compartiments sont des espaces délimités par les fascias : la délimitation 3D est partielle (fascia engainant + muscles)"
+   ]
+  },
+  {
+   "numero": 108,
+   "classe": "3D",
+   "titre_fr": "Système carotidien",
+   "titre_en": "The carotid system",
+   "vue": "antero-laterale",
+   "structures": [
+    {
+     "id": "left_common_carotid_artery",
+     "role": "sujet",
+     "nom_fr": "Artère carotide commune gauche",
+     "name_en": "Left common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/left_common_carotid_artery.glb"
+    },
+    {
+     "id": "right_common_carotid_artery",
+     "role": "sujet",
+     "nom_fr": "Artère carotide commune droite",
+     "name_en": "Right common carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/right_common_carotid_artery.glb"
+    },
+    {
+     "id": "external_carotid_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère carotide externe",
+     "name_en": "Right external carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/external_carotid_artery_right.glb"
+    },
+    {
+     "id": "external_carotid_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère carotide externe",
+     "name_en": "Left external carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/external_carotid_artery_left.glb"
+    },
+    {
+     "id": "internal_carotid_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère carotide interne",
+     "name_en": "Right internal carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/internal_carotid_artery_right.glb"
+    },
+    {
+     "id": "internal_carotid_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère carotide interne",
+     "name_en": "Left internal carotid artery",
+     "system": "arteres",
+     "file": "models/arteres/internal_carotid_artery_left.glb"
+    },
+    {
+     "id": "facial_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère faciale",
+     "name_en": "Right facial artery",
+     "system": "arteres",
+     "file": "models/arteres/facial_artery_right.glb"
+    },
+    {
+     "id": "facial_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère faciale",
+     "name_en": "Left facial artery",
+     "system": "arteres",
+     "file": "models/arteres/facial_artery_left.glb"
+    },
+    {
+     "id": "ascending_pharyngeal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère pharyngienne ascendante",
+     "name_en": "Right ascending pharyngeal artery",
+     "system": "arteres",
+     "file": "models/arteres/ascending_pharyngeal_artery_right.glb"
+    },
+    {
+     "id": "ascending_pharyngeal_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère pharyngienne ascendante",
+     "name_en": "Left ascending pharyngeal artery",
+     "system": "arteres",
+     "file": "models/arteres/ascending_pharyngeal_artery_left.glb"
+    },
+    {
+     "id": "maxillary_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère maxillaire",
+     "name_en": "Right maxillary artery",
+     "system": "arteres",
+     "file": "models/arteres/maxillary_artery_right.glb"
+    },
+    {
+     "id": "maxillary_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère maxillaire",
+     "name_en": "Left maxillary artery",
+     "system": "arteres",
+     "file": "models/arteres/maxillary_artery_left.glb"
+    },
+    {
+     "id": "superficial_temporal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Artère temporale superficielle",
+     "name_en": "Right superficial temporal artery",
+     "system": "arteres",
+     "file": "models/arteres/superficial_temporal_artery_right.glb"
+    },
+    {
+     "id": "superficial_temporal_artery_left",
+     "role": "sujet",
+     "nom_fr": "Artère temporale superficielle",
+     "name_en": "Left superficial temporal artery",
+     "system": "arteres",
+     "file": "models/arteres/superficial_temporal_artery_left.glb"
+    },
+    {
+     "id": "frontal_branch_of_superficial_temporal_artery_right",
+     "role": "sujet",
+     "nom_fr": "Branche frontale de l'artère temporale superficielle",
+     "name_en": "Right frontal branch of superficial temporal artery",
+     "system": "arteres",
+     "file": "models/arteres/frontal_branch_of_superficial_temporal_artery_right.glb"
+    },
+    {
+     "id": "frontal_branch_of_superficial_temporal_artery_left",
+     "role": "sujet",
+     "nom_fr": "Branche frontale de l'artère temporale superficielle",
+     "name_en": "Left frontal branch of superficial temporal artery",
+     "system": "arteres",
+     "file": "models/arteres/frontal_branch_of_superficial_temporal_artery_left.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_left",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Left internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_left.glb"
+    },
+    {
+     "id": "vertebral_artery_right",
+     "role": "contexte",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Right vertebral artery",
+     "system": "arteres",
+     "file": "models/arteres/vertebral_artery_right.glb"
+    },
+    {
+     "id": "vertebral_artery_left",
+     "role": "contexte",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Left vertebral artery",
+     "system": "arteres",
+     "file": "models/arteres/vertebral_artery_left.glb"
+    },
+    {
+     "id": "thyroid_gland",
+     "role": "ghost",
+     "nom_fr": "Glande thyroïde",
+     "name_en": "Thyroid gland",
+     "system": "organes",
+     "file": "models/organes/thyroid_gland.glb"
+    }
+   ],
+   "manquants": [
+    "4 des 8 collatérales classiques de la carotide externe ABSENTES : thyroïdienne supérieure, linguale, occipitale, auriculaire postérieure — voir schéma « Collatérales de la carotide externe »",
+    "Présentes : pharyngienne ascendante, faciale, maxillaire, temporale superficielle (+ sa branche frontale)"
+   ]
+  },
+  {
+   "numero": 109,
+   "classe": "3D",
+   "titre_fr": "Système lymphatique dans le cou",
+   "titre_en": "Lymphatic system of the neck",
+   "vue": "antero-laterale",
+   "structures": [
+    {
+     "id": "inferior_deep_lateral_cervical_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds cervicaux latéraux profonds inférieurs",
+     "name_en": "Right inferior deep lateral cervical nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/inferior_deep_lateral_cervical_nodes_right.glb"
+    },
+    {
+     "id": "inferior_deep_lateral_cervical_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds cervicaux latéraux profonds inférieurs",
+     "name_en": "Left inferior deep lateral cervical nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/inferior_deep_lateral_cervical_nodes_left.glb"
+    },
+    {
+     "id": "superficial_lateral_cervical_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds cervicaux latéraux superficiels",
+     "name_en": "Right superficial lateral cervical nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/superficial_lateral_cervical_nodes_right.glb"
+    },
+    {
+     "id": "superficial_lateral_cervical_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds cervicaux latéraux superficiels",
+     "name_en": "Left superficial lateral cervical nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/superficial_lateral_cervical_nodes_left.glb"
+    },
+    {
+     "id": "superficial_anterior_cervical_nodes",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds cervicaux antérieurs superficiels",
+     "name_en": "Superficial anterior cervical nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/superficial_anterior_cervical_nodes.glb"
+    },
+    {
+     "id": "paratracheal_cervical_nodes",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds cervicaux paratrachéaux",
+     "name_en": "Paratracheal cervical nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/paratracheal_cervical_nodes.glb"
+    },
+    {
+     "id": "supraclavicular_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds supraclaviculaires",
+     "name_en": "Right supraclavicular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/supraclavicular_nodes_right.glb"
+    },
+    {
+     "id": "supraclavicular_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds supraclaviculaires",
+     "name_en": "Left supraclavicular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/supraclavicular_nodes_left.glb"
+    },
+    {
+     "id": "anterior_inferior_jugular_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds jugulaires antéro-inférieurs",
+     "name_en": "Right anterior inferior jugular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/anterior_inferior_jugular_nodes_right.glb"
+    },
+    {
+     "id": "anterior_inferior_jugular_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds jugulaires antéro-inférieurs",
+     "name_en": "Left anterior inferior jugular nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/anterior_inferior_jugular_nodes_left.glb"
+    },
+    {
+     "id": "lateral_superior_jugular_node_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud jugulaire latérosupérieur",
+     "name_en": "Right lateral superior jugular node",
+     "system": "lymphatique",
+     "file": "models/lymphatique/lateral_superior_jugular_node_right.glb"
+    },
+    {
+     "id": "lateral_superior_jugular_node_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeud jugulaire latérosupérieur",
+     "name_en": "Left lateral superior jugular node",
+     "system": "lymphatique",
+     "file": "models/lymphatique/lateral_superior_jugular_node_left.glb"
+    },
+    {
+     "id": "pretracheal_nodes_right",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds prétrachéaux",
+     "name_en": "Right pretracheal nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/pretracheal_nodes_right.glb"
+    },
+    {
+     "id": "pretracheal_nodes_left",
+     "role": "sujet",
+     "nom_fr": "Lymphonoeuds prétrachéaux",
+     "name_en": "Left pretracheal nodes",
+     "system": "lymphatique",
+     "file": "models/lymphatique/pretracheal_nodes_left.glb"
+    },
+    {
+     "id": "internal_jugular_vein_right",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Right internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_right.glb"
+    },
+    {
+     "id": "internal_jugular_vein_left",
+     "role": "contexte",
+     "nom_fr": "Veine jugulaire interne",
+     "name_en": "Left internal jugular vein",
+     "system": "veines",
+     "file": "models/veines/internal_jugular_vein_left.glb"
+    },
+    {
+     "id": "sternocleidomastoid_muscle_right",
+     "role": "contexte",
+     "nom_fr": "Muscle sternocléïdomastoïdien",
+     "name_en": "Right sternocleidomastoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternocleidomastoid_muscle_right.glb"
+    },
+    {
+     "id": "sternocleidomastoid_muscle_left",
+     "role": "contexte",
+     "nom_fr": "Muscle sternocléïdomastoïdien",
+     "name_en": "Left sternocleidomastoid muscle",
+     "system": "muscles",
+     "file": "models/muscles/sternocleidomastoid_muscle_left.glb"
+    },
+    {
+     "id": "thyroid_gland",
+     "role": "ghost",
+     "nom_fr": "Glande thyroïde",
+     "name_en": "Thyroid gland",
+     "system": "organes",
+     "file": "models/organes/thyroid_gland.glb"
+    }
+   ],
+   "manquants": [
+    "Canal thoracique (terminaison cervicale à gauche, pièce maîtresse de la figure) : absent du manifeste — voir schéma « Terminaison du canal thoracique »",
+    "Conduit lymphatique droit : absent ; troncs jugulaires et sous-claviers : non modélisés",
+    "Chaîne spinale (du nerf accessoire XI) : pas d'entrée ganglionnaire dédiée"
+   ]
+  }
+ ],
+ "camera": {
+  "vue": "antero-laterale",
+  "note": "Cadrage auto sur l'union des structures de la figure active (bornes du manifeste)."
+ },
+ "diagrammes": [
+  {
+   "fichier": "diagramme-carotide-externe.html",
+   "figures": [
+    108
+   ],
+   "titre_fr": "Collatérales de la carotide externe",
+   "raison": "4 collatérales sur 8 absentes du manifeste (thyroïdienne supérieure, linguale, occipitale, auriculaire postérieure) : schéma complet avec statut 3D de chaque branche."
+  },
+  {
+   "fichier": "diagramme-canal-thoracique.html",
+   "figures": [
+    109
+   ],
+   "titre_fr": "Terminaison du canal thoracique",
+   "raison": "Canal thoracique, conduit lymphatique droit et troncs lymphatiques absents du manifeste : trajet et terminaison en schéma interactif nommé."
+  }
+ ],
+ "espaces": [
+  {
+   "key": "gaine-carotidienne",
+   "nom_fr": "Gaine carotidienne",
+   "nom_en": "Carotid sheath",
+   "couleur": "#4fc3f7",
+   "bornes": [
+    "left_common_carotid_artery",
+    "right_common_carotid_artery",
+    "internal_jugular_vein_right",
+    "internal_jugular_vein_left"
+   ],
+   "desc_fr": "Conduit fascial du cou (absent du manifeste) engainant l'artère carotide commune, la veine jugulaire interne et le nerf vague (X). Volume schématique délimité par les structures voisines.",
+   "desc_en": "Fascial conduit of the neck (absent from the manifest) enclosing the common carotid artery, internal jugular vein and vagus nerve (X). Schematic volume bounded by neighbouring structures."
+  },
+  {
+   "key": "compartiment-visceral",
+   "nom_fr": "Compartiment viscéral (prétrachéral)",
+   "nom_en": "Visceral compartment (pretracheal)",
+   "couleur": "#ba68c8",
+   "bornes": [
+    "thyroid_gland",
+    "trachea",
+    "oesophagus",
+    "sternohyoid_muscle_right",
+    "sternohyoid_muscle_left",
+    "sternothyroid_muscle_right",
+    "sternothyroid_muscle_left"
+   ],
+   "desc_fr": "Compartiment médian du cou limité par la lame prétrachérale du fascia cervical (absente du manifeste) : contient thyroïde, trachée, œsophage et parathyroïdes. Volume schématique délimité par les structures voisines.",
+   "desc_en": "Midline neck compartment bounded by the pretracheal layer of cervical fascia (absent from the manifest): contains thyroid, trachea, oesophagus and parathyroids. Schematic volume bounded by neighbouring structures."
+  },
+  {
+   "key": "compartiment-prevertebral",
+   "nom_fr": "Compartiment prévertébral",
+   "nom_en": "Prevertebral compartment",
+   "couleur": "#81c784",
+   "bornes": [
+    "scalenus_anterior_muscle_right",
+    "scalenus_anterior_muscle_left",
+    "scalenus_medius_muscle_right",
+    "scalenus_medius_muscle_left",
+    "scalenus_posterior_muscle_right",
+    "scalenus_posterior_muscle_left",
+    "vertebra_c6"
+   ],
+   "desc_fr": "Compartiment postérieur du cou limité par la lame prévertébrale du fascia cervical (absente du manifeste), sur les muscles prévertébraux et scalènes. Volume schématique délimité par les structures voisines.",
+   "desc_en": "Posterior neck compartment bounded by the prevertebral layer of cervical fascia (absent from the manifest), over the prevertebral and scalene muscles. Schematic volume bounded by neighbouring structures."
+  }
+ ],
+ "structures": [
+  {
+   "id": "right_common_carotid_artery",
+   "role": "sujet",
+   "nom_fr": "Artère carotide commune droite",
+   "name_en": "Right common carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/right_common_carotid_artery.glb"
+  },
+  {
+   "id": "left_common_carotid_artery",
+   "role": "sujet",
+   "nom_fr": "Artère carotide commune gauche",
+   "name_en": "Left common carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/left_common_carotid_artery.glb"
+  },
+  {
+   "id": "external_carotid_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère carotide externe",
+   "name_en": "Right external carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/external_carotid_artery_right.glb"
+  },
+  {
+   "id": "external_carotid_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère carotide externe",
+   "name_en": "Left external carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/external_carotid_artery_left.glb"
+  },
+  {
+   "id": "internal_carotid_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère carotide interne",
+   "name_en": "Right internal carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/internal_carotid_artery_right.glb"
+  },
+  {
+   "id": "internal_carotid_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère carotide interne",
+   "name_en": "Left internal carotid artery",
+   "system": "arteres",
+   "file": "models/arteres/internal_carotid_artery_left.glb"
+  },
+  {
+   "id": "facial_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère faciale",
+   "name_en": "Right facial artery",
+   "system": "arteres",
+   "file": "models/arteres/facial_artery_right.glb"
+  },
+  {
+   "id": "facial_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère faciale",
+   "name_en": "Left facial artery",
+   "system": "arteres",
+   "file": "models/arteres/facial_artery_left.glb"
+  },
+  {
+   "id": "maxillary_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère maxillaire",
+   "name_en": "Right maxillary artery",
+   "system": "arteres",
+   "file": "models/arteres/maxillary_artery_right.glb"
+  },
+  {
+   "id": "maxillary_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère maxillaire",
+   "name_en": "Left maxillary artery",
+   "system": "arteres",
+   "file": "models/arteres/maxillary_artery_left.glb"
+  },
+  {
+   "id": "ascending_pharyngeal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère pharyngienne ascendante",
+   "name_en": "Right ascending pharyngeal artery",
+   "system": "arteres",
+   "file": "models/arteres/ascending_pharyngeal_artery_right.glb"
+  },
+  {
+   "id": "ascending_pharyngeal_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère pharyngienne ascendante",
+   "name_en": "Left ascending pharyngeal artery",
+   "system": "arteres",
+   "file": "models/arteres/ascending_pharyngeal_artery_left.glb"
+  },
+  {
+   "id": "superficial_temporal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Artère temporale superficielle",
+   "name_en": "Right superficial temporal artery",
+   "system": "arteres",
+   "file": "models/arteres/superficial_temporal_artery_right.glb"
+  },
+  {
+   "id": "superficial_temporal_artery_left",
+   "role": "sujet",
+   "nom_fr": "Artère temporale superficielle",
+   "name_en": "Left superficial temporal artery",
+   "system": "arteres",
+   "file": "models/arteres/superficial_temporal_artery_left.glb"
+  },
+  {
+   "id": "frontal_branch_of_superficial_temporal_artery_right",
+   "role": "sujet",
+   "nom_fr": "Branche frontale de l'artère temporale superficielle",
+   "name_en": "Right frontal branch of superficial temporal artery",
+   "system": "arteres",
+   "file": "models/arteres/frontal_branch_of_superficial_temporal_artery_right.glb"
+  },
+  {
+   "id": "frontal_branch_of_superficial_temporal_artery_left",
+   "role": "sujet",
+   "nom_fr": "Branche frontale de l'artère temporale superficielle",
+   "name_en": "Left frontal branch of superficial temporal artery",
+   "system": "arteres",
+   "file": "models/arteres/frontal_branch_of_superficial_temporal_artery_left.glb"
+  },
+  {
+   "id": "superficial_investing_cervical_fascia_right",
+   "role": "sujet",
+   "nom_fr": "Fascia engainant superficiel du cou",
+   "name_en": "Right superficial investing cervical fascia",
+   "system": "fascias",
+   "file": "models/muscles/superficial_investing_cervical_fascia_right.glb"
+  },
+  {
+   "id": "superficial_investing_cervical_fascia_left",
+   "role": "sujet",
+   "nom_fr": "Fascia engainant superficiel du cou",
+   "name_en": "Left superficial investing cervical fascia",
+   "system": "fascias",
+   "file": "models/muscles/superficial_investing_cervical_fascia_left.glb"
+  },
+  {
+   "id": "lateral_superior_jugular_node_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud jugulaire latérosupérieur",
+   "name_en": "Right lateral superior jugular node",
+   "system": "lymphatique",
+   "file": "models/lymphatique/lateral_superior_jugular_node_right.glb"
+  },
+  {
+   "id": "lateral_superior_jugular_node_left",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeud jugulaire latérosupérieur",
+   "name_en": "Left lateral superior jugular node",
+   "system": "lymphatique",
+   "file": "models/lymphatique/lateral_superior_jugular_node_left.glb"
+  },
+  {
+   "id": "superficial_anterior_cervical_nodes",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds cervicaux antérieurs superficiels",
+   "name_en": "Superficial anterior cervical nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/superficial_anterior_cervical_nodes.glb"
+  },
+  {
+   "id": "inferior_deep_lateral_cervical_nodes_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds cervicaux latéraux profonds inférieurs",
+   "name_en": "Right inferior deep lateral cervical nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/inferior_deep_lateral_cervical_nodes_right.glb"
+  },
+  {
+   "id": "inferior_deep_lateral_cervical_nodes_left",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds cervicaux latéraux profonds inférieurs",
+   "name_en": "Left inferior deep lateral cervical nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/inferior_deep_lateral_cervical_nodes_left.glb"
+  },
+  {
+   "id": "superficial_lateral_cervical_nodes_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds cervicaux latéraux superficiels",
+   "name_en": "Right superficial lateral cervical nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/superficial_lateral_cervical_nodes_right.glb"
+  },
+  {
+   "id": "superficial_lateral_cervical_nodes_left",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds cervicaux latéraux superficiels",
+   "name_en": "Left superficial lateral cervical nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/superficial_lateral_cervical_nodes_left.glb"
+  },
+  {
+   "id": "paratracheal_cervical_nodes",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds cervicaux paratrachéaux",
+   "name_en": "Paratracheal cervical nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/paratracheal_cervical_nodes.glb"
+  },
+  {
+   "id": "anterior_inferior_jugular_nodes_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds jugulaires antéro-inférieurs",
+   "name_en": "Right anterior inferior jugular nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/anterior_inferior_jugular_nodes_right.glb"
+  },
+  {
+   "id": "anterior_inferior_jugular_nodes_left",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds jugulaires antéro-inférieurs",
+   "name_en": "Left anterior inferior jugular nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/anterior_inferior_jugular_nodes_left.glb"
+  },
+  {
+   "id": "pretracheal_nodes_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds prétrachéaux",
+   "name_en": "Right pretracheal nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/pretracheal_nodes_right.glb"
+  },
+  {
+   "id": "pretracheal_nodes_left",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds prétrachéaux",
+   "name_en": "Left pretracheal nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/pretracheal_nodes_left.glb"
+  },
+  {
+   "id": "supraclavicular_nodes_right",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds supraclaviculaires",
+   "name_en": "Right supraclavicular nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/supraclavicular_nodes_right.glb"
+  },
+  {
+   "id": "supraclavicular_nodes_left",
+   "role": "sujet",
+   "nom_fr": "Lymphonoeuds supraclaviculaires",
+   "name_en": "Left supraclavicular nodes",
+   "system": "lymphatique",
+   "file": "models/lymphatique/supraclavicular_nodes_left.glb"
+  },
+  {
+   "id": "omohyoid_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle omohyoïdien",
+   "name_en": "Right omohyoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/omohyoid_muscle_right.glb"
+  },
+  {
+   "id": "omohyoid_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle omohyoïdien",
+   "name_en": "Left omohyoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/omohyoid_muscle_left.glb"
+  },
+  {
+   "id": "scalenus_anterior_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle scalène antérieur",
+   "name_en": "Right scalenus anterior muscle",
+   "system": "muscles",
+   "file": "models/muscles/scalenus_anterior_muscle_right.glb"
+  },
+  {
+   "id": "scalenus_anterior_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle scalène antérieur",
+   "name_en": "Left scalenus anterior muscle",
+   "system": "muscles",
+   "file": "models/muscles/scalenus_anterior_muscle_left.glb"
+  },
+  {
+   "id": "scalenus_medius_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle scalène moyen",
+   "name_en": "Right scalenus medius muscle",
+   "system": "muscles",
+   "file": "models/muscles/scalenus_medius_muscle_right.glb"
+  },
+  {
+   "id": "scalenus_medius_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle scalène moyen",
+   "name_en": "Left scalenus medius muscle",
+   "system": "muscles",
+   "file": "models/muscles/scalenus_medius_muscle_left.glb"
+  },
+  {
+   "id": "scalenus_posterior_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle scalène postérieur",
+   "name_en": "Right scalenus posterior muscle",
+   "system": "muscles",
+   "file": "models/muscles/scalenus_posterior_muscle_right.glb"
+  },
+  {
+   "id": "scalenus_posterior_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle scalène postérieur",
+   "name_en": "Left scalenus posterior muscle",
+   "system": "muscles",
+   "file": "models/muscles/scalenus_posterior_muscle_left.glb"
+  },
+  {
+   "id": "sternocleidomastoid_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Muscle sternocléïdomastoïdien",
+   "name_en": "Right sternocleidomastoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternocleidomastoid_muscle_right.glb"
+  },
+  {
+   "id": "sternocleidomastoid_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Muscle sternocléïdomastoïdien",
+   "name_en": "Left sternocleidomastoid muscle",
+   "system": "muscles",
+   "file": "models/muscles/sternocleidomastoid_muscle_left.glb"
+  },
+  {
+   "id": "ascending_part_of_trapezius_muscle_right",
+   "role": "sujet",
+   "nom_fr": "Partie ascendante du trapèze",
+   "name_en": "Right ascending part of trapezius muscle",
+   "system": "muscles",
+   "file": "models/muscles/ascending_part_of_trapezius_muscle_right.glb"
+  },
+  {
+   "id": "ascending_part_of_trapezius_muscle_left",
+   "role": "sujet",
+   "nom_fr": "Partie ascendante du trapèze",
+   "name_en": "Left ascending part of trapezius muscle",
+   "system": "muscles",
+   "file": "models/muscles/ascending_part_of_trapezius_muscle_left.glb"
+  },
+  {
+   "id": "vertebral_artery_right",
+   "role": "contexte",
+   "nom_fr": "Artère vertébrale",
+   "name_en": "Right vertebral artery",
+   "system": "arteres",
+   "file": "models/arteres/vertebral_artery_right.glb"
+  },
+  {
+   "id": "vertebral_artery_left",
+   "role": "contexte",
+   "nom_fr": "Artère vertébrale",
+   "name_en": "Left vertebral artery",
+   "system": "arteres",
+   "file": "models/arteres/vertebral_artery_left.glb"
+  },
+  {
+   "id": "thyroid_gland",
+   "role": "contexte",
+   "nom_fr": "Glande thyroïde",
+   "name_en": "Thyroid gland",
+   "system": "organes",
+   "file": "models/organes/thyroid_gland.glb"
+  },
+  {
+   "id": "internal_jugular_vein_right",
+   "role": "contexte",
+   "nom_fr": "Veine jugulaire interne",
+   "name_en": "Right internal jugular vein",
+   "system": "veines",
+   "file": "models/veines/internal_jugular_vein_right.glb"
+  },
+  {
+   "id": "internal_jugular_vein_left",
+   "role": "contexte",
+   "nom_fr": "Veine jugulaire interne",
+   "name_en": "Left internal jugular vein",
+   "system": "veines",
+   "file": "models/veines/internal_jugular_vein_left.glb"
+  },
+  {
+   "id": "clavicle_right",
+   "role": "ghost",
+   "nom_fr": "Clavicule",
+   "name_en": "Right clavicle",
+   "system": "squelette",
+   "file": "models/squelette/clavicle_right.glb"
+  },
+  {
+   "id": "clavicle_left",
+   "role": "ghost",
+   "nom_fr": "Clavicule",
+   "name_en": "Left clavicle",
+   "system": "squelette",
+   "file": "models/squelette/clavicle_left.glb"
+  }
+ ]
+}

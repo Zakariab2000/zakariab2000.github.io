@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figure 23 — Branches du plexus brachial · Schéma interactif</title>
+<style>
+:root{--sans:-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 800px at 60% 20%,#0b1526,#060b14);color:#e8eef7;font-family:var(--sans);padding:14px 12px 26px}
+header{max-width:680px;margin:0 auto 6px}
+.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#f0a13c;font-weight:700}
+h1{font-size:19px;line-height:1.3;margin:3px 0 2px}
+.sub{font-size:12.5px;color:#9db1cc}
+.hint{max-width:680px;margin:8px auto;font-size:12.5px;color:#9db1cc}
+#wrap{max-width:680px;margin:0 auto}
+#schemasvg{display:block;width:100%;height:auto}
+.pnode{cursor:pointer}
+.pnode rect{stroke-width:1.5;transition:opacity .2s}
+.pnode text{fill:#e8eef7;font-size:11px;text-anchor:middle;pointer-events:none;font-family:var(--sans)}
+.pnode.dim,.pedge.dim{opacity:.1}
+.pnode.lit rect{stroke:#fff;stroke-width:2.5}
+.pnode.lit circle{stroke:#fff;stroke-width:2.5}
+.pedge{fill:none;stroke:#5b7ba6;stroke-width:1.6}
+.pedge.dash{stroke-dasharray:5 4}
+.pedge.lit{stroke:#f0b429;stroke-width:3}
+#schemacap{margin:10px auto;padding:10px 12px;max-width:680px;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:10px;font-size:13.5px;line-height:1.5;min-height:58px}
+#schemalegend{display:flex;flex-wrap:wrap;gap:6px 12px;max-width:680px;margin:0 auto;font-size:11px;color:#9db1cc}
+#schemalegend .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.fiche{max-width:680px;margin:16px auto 0;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+.fiche h2{font-size:14px;margin-bottom:8px;color:#f0a13c}
+.fiche dl div{margin-bottom:8px}
+.fiche dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9db1cc;font-weight:700}
+.fiche dd{font-size:13.5px;line-height:1.55;margin-top:2px}
+.note{max-width:680px;margin:12px auto 0;font-size:11.5px;color:#7e93b5;line-height:1.5}
+</style></head><body>
+<header><div class="kicker">Atlas 3D · Sujets du cours · Schéma interactif</div>
+<h1>Figure 23 — Branches du plexus brachial</h1>
+<div class="sub">[3D+D] : scène 3D de contexte + schéma interactif — schéma de la voie (le trajet n'existe pas comme maillage 3D continu : voir la scène 3D associée pour les structures qui existent)</div></header>
+<p class="hint">Touchez un nœud : tout son trajet (en amont et en aval) s'illumine et sa fiche s'affiche. Touchez le fond pour tout réafficher.</p>
+<div id="wrap"><svg id="schemasvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="schemacap"></div>
+<div id="schemalegend"></div>
+<section class="fiche"><h2>À propos de ce schéma</h2><p style="font-size:13.5px;line-height:1.55;margin:0">Schéma interactif nommé, construit depuis le texte du programme FMPR. Touchez un nœud : son trajet complet s'illumine et sa fiche s'affiche.</p></section>
+<p class="note">Source : texte du programme FMPR — aucun élément inventé. Les structures de cette figure sont aussi visibles dans le modèle 3D du sujet.</p>
+<script>
+const D = {"titre_fr": "Plexus brachial — schéma interactif", "titre_en": "Brachial plexus — interactive diagram", "w": 720, "h": 1060, "levels": {"racine": {"c": "#4fc3f7", "fr": "Racines", "en": "Roots"}, "tronc": {"c": "#58d68d", "fr": "Troncs primaires", "en": "Trunks"}, "division": {"c": "#9db1cc", "fr": "Divisions", "en": "Divisions"}, "faisceau": {"c": "#f0a13c", "fr": "Troncs secondaires", "en": "Cords"}, "terminal": {"c": "#f0d429", "fr": "Branches terminales", "en": "Terminal branches"}, "collaterale": {"c": "#b388ff", "fr": "Collatérales", "en": "Collateral branches"}}, "nodes": [{"id": "c5", "x": 58, "y": 105, "w": 52, "label": "C5", "lvl": "racine", "desc": {"fr": "Racine C5 — s'unit à C6 pour former le tronc primaire supérieur.", "en": "Root C5 — joins C6 to form the upper trunk."}}, {"id": "c6", "x": 58, "y": 185, "w": 52, "label": "C6", "lvl": "racine", "desc": {"fr": "Racine C6 — s'unit à C5 pour former le tronc primaire supérieur.", "en": "Root C6 — joins C5 to form the upper trunk."}}, {"id": "c7", "x": 58, "y": 295, "w": 52, "label": "C7", "lvl": "racine", "desc": {"fr": "Racine C7 — forme à elle seule le tronc primaire moyen. Donne aussi (avec C5–C6) le nerf du grand dentelé.", "en": "Root C7 — forms the middle trunk on its own. Also contributes (with C5–C6) to the long thoracic nerve."}}, {"id": "c8", "x": 58, "y": 405, "w": 52, "label": "C8", "lvl": "racine", "desc": {"fr": "Racine C8 — s'unit à D1 pour former le tronc primaire inférieur.", "en": "Root C8 — joins T1 to form the lower trunk."}}, {"id": "d1", "x": 58, "y": 485, "w": 52, "label": "D1", "lvl": "racine", "desc": {"fr": "Racine D1 (thoracique) — s'unit à C8 pour former le tronc primaire inférieur.", "en": "Root T1 (thoracic) — joins C8 to form the lower trunk."}}, {"id": "ts", "x": 205, "y": 145, "w": 150, "label": "Tronc primaire", "sub": "supérieur", "label_en": "Upper trunk", "sub_en": "", "lvl": "tronc", "desc": {"fr": "Tronc primaire supérieur (C5–C6) → se divise en branches postérieure et antérieure.", "en": "Upper trunk (C5–C6) → splits into posterior and anterior divisions."}}, {"id": "tm", "x": 205, "y": 295, "w": 150, "label": "Tronc primaire", "sub": "moyen", "label_en": "Middle trunk", "sub_en": "", "lvl": "tronc", "desc": {"fr": "Tronc primaire moyen (C7) → se divise en branches postérieure et antérieure.", "en": "Middle trunk (C7) → splits into posterior and anterior divisions."}}, {"id": "ti", "x": 205, "y": 445, "w": 150, "label": "Tronc primaire", "sub": "inférieur", "label_en": "Lower trunk", "sub_en": "", "lvl": "tronc", "desc": {"fr": "Tronc primaire inférieur (C8–D1) → se divise en branches postérieure et antérieure.", "en": "Lower trunk (C8–T1) → splits into posterior and anterior divisions."}}, {"id": "ts_post", "x": 345, "y": 95, "r": 10, "label": "post.", "lvl": "division", "desc": {"fr": "Division postérieure du tronc supérieur — rejoint les 2 autres divisions postérieures pour former le tronc secondaire postérieur.", "en": "Posterior division of the upper trunk — joins the other two posterior divisions to form the posterior cord."}}, {"id": "ts_ant", "x": 345, "y": 195, "r": 10, "label": "ant.", "lvl": "division", "desc": {"fr": "Division antérieure du tronc supérieur — rejoint celle du tronc moyen pour former le tronc secondaire antéro-externe.", "en": "Anterior division of the upper trunk — joins the middle trunk's to form the lateral cord."}}, {"id": "tm_post", "x": 345, "y": 250, "r": 10, "label": "post.", "lvl": "division", "desc": {"fr": "Division postérieure du tronc moyen — rejoint les 2 autres divisions postérieures pour former le tronc secondaire postérieur.", "en": "Posterior division of the middle trunk — joins the other two posterior divisions to form the posterior cord."}}, {"id": "tm_ant", "x": 345, "y": 345, "r": 10, "label": "ant.", "lvl": "division", "desc": {"fr": "Division antérieure du tronc moyen — rejoint celle du tronc supérieur pour former le tronc secondaire antéro-externe.", "en": "Anterior division of the middle trunk — joins the upper trunk's to form the lateral cord."}}, {"id": "ti_post", "x": 345, "y": 400, "r": 10, "label": "post.", "lvl": "division", "desc": {"fr": "Division postérieure du tronc inférieur — rejoint les 2 autres divisions postérieures pour former le tronc secondaire postérieur.", "en": "Posterior division of the lower trunk — joins the other two posterior divisions to form the posterior cord."}}, {"id": "ti_ant", "x": 345, "y": 490, "r": 10, "label": "ant.", "lvl": "division", "desc": {"fr": "Division antérieure du tronc inférieur — forme à elle seule le tronc secondaire antéro-interne.", "en": "Anterior division of the lower trunk — forms the medial cord on its own."}}, {"id": "cord_post", "x": 495, "y": 235, "w": 170, "label": "Tronc secondaire", "sub": "postérieur", "label_en": "Posterior cord", "sub_en": "", "lvl": "faisceau", "desc": {"fr": "Tronc secondaire postérieur (3 divisions postérieures) → nerf radial et nerf axillaire (circonflexe).", "en": "Posterior cord (3 posterior divisions) → radial nerve and axillary nerve."}}, {"id": "cord_al", "x": 495, "y": 380, "w": 170, "label": "Tronc secondaire", "sub": "antéro-externe", "label_en": "Lateral cord", "sub_en": "", "lvl": "faisceau", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Tronc secondaire antéro-externe (divisions antérieures des troncs supérieur et moyen) → nerf musculo-cutané et racine latérale du médian. Aucun maillage 3D distinct : représenté ici en schéma (dans le modèle 3D, voir les repères « branches du faisceau latéral »).", "en": "Lateral cord (anterior divisions of the upper and middle trunks) → musculocutaneous nerve and lateral root of the median nerve. No distinct 3D mesh: shown here as a diagram (in the 3D model, see the 'branches of lateral cord' landmark volumes)."}}, {"id": "cord_am", "x": 495, "y": 525, "w": 170, "label": "Tronc secondaire", "sub": "antéro-interne", "label_en": "Medial cord", "sub_en": "", "lvl": "faisceau", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Tronc secondaire antéro-interne (division antérieure du tronc inférieur) → racine médiale du médian, nerf cubital, cutanés médiaux de l'avant-bras et du bras. Aucun maillage 3D distinct : représenté ici en schéma (dans le modèle 3D, voir les repères « branches du faisceau médial »).", "en": "Medial cord (anterior division of the lower trunk) → medial root of the median nerve, ulnar nerve, medial cutaneous nerves of forearm and arm. No distinct 3D mesh: shown here as a diagram (in the 3D model, see the 'branches of medial cord' landmark volumes)."}}, {"id": "n_axillaire", "x": 640, "y": 80, "w": 140, "label": "Nerf axillaire", "sub": "(circonflexe)", "label_en": "Axillary nerve", "sub_en": "(circumflex)", "lvl": "terminal", "desc": {"fr": "Nerf axillaire (circonflexe) — vulnérable lors des luxations de l'épaule : paralysie du deltoïde, anesthésie du moignon de l'épaule.", "en": "Axillary nerve (circumflex) — at risk in shoulder dislocations: deltoid paralysis, anaesthesia over the shoulder tip."}}, {"id": "n_radial", "x": 640, "y": 160, "w": 140, "label": "Nerf radial", "label_en": "Radial nerve", "sub_en": "", "lvl": "terminal", "desc": {"fr": "Nerf radial — le plus volumineux du plexus, innerve les extenseurs du membre supérieur.", "en": "Radial nerve — the largest branch of the plexus, supplies the extensors of the upper limb."}}, {"id": "n_musculocutane", "x": 640, "y": 265, "w": 140, "label": "Nerf", "sub": "musculo-cutané", "label_en": "Musculocutaneous", "sub_en": "nerve", "lvl": "terminal", "desc": {"fr": "Nerf musculo-cutané — traverse le muscle coraco-brachial, innerve les fléchisseurs du bras.", "en": "Musculocutaneous nerve — pierces coracobrachialis, supplies the flexors of the arm."}}, {"id": "rac_lat", "x": 640, "y": 345, "w": 140, "label": "Racine latérale", "sub": "du médian", "label_en": "Lateral root", "sub_en": "of median nerve", "lvl": "terminal", "desc": {"fr": "Racine latérale du nerf médian — rejoint la racine médiale en avant de l'artère axillaire.", "en": "Lateral root of the median nerve — joins the medial root in front of the axillary artery."}}, {"id": "rac_med", "x": 640, "y": 425, "w": 140, "label": "Racine médiale", "sub": "du médian", "label_en": "Medial root", "sub_en": "of median nerve", "lvl": "terminal", "desc": {"fr": "Racine médiale du nerf médian — rejoint la racine latérale en avant de l'artère axillaire.", "en": "Medial root of the median nerve — joins the lateral root in front of the axillary artery."}}, {"id": "n_median", "x": 640, "y": 505, "w": 140, "label": "Nerf médian", "label_en": "Median nerve", "sub_en": "", "lvl": "terminal", "desc": {"fr": "Nerf médian — formé de ses deux racines en avant de l'artère axillaire.", "en": "Median nerve — formed by its two roots in front of the axillary artery."}}, {"id": "n_cubital", "x": 640, "y": 585, "w": 140, "label": "Nerf cubital", "sub": "(ulnaire)", "label_en": "Ulnar nerve", "sub_en": "", "lvl": "terminal", "desc": {"fr": "Nerf cubital (ulnaire) — innerve une partie des fléchisseurs et la main médiale.", "en": "Ulnar nerve — supplies part of the flexors and the medial hand."}}, {"id": "n_cut_avb", "x": 640, "y": 665, "w": 140, "label": "Cutané médial", "sub": "de l'avant-bras", "label_en": "Medial cutaneous", "sub_en": "of forearm", "lvl": "terminal", "desc": {"fr": "Nerf cutané médial de l'avant-bras — sensitif.", "en": "Medial cutaneous nerve of the forearm — sensory."}}, {"id": "n_cut_bras", "x": 640, "y": 745, "w": 140, "label": "Cutané médial", "sub": "du bras", "label_en": "Medial cutaneous", "sub_en": "of arm", "lvl": "terminal", "desc": {"fr": "Nerf cutané médial du bras — sensitif.", "en": "Medial cutaneous nerve of the arm — sensory."}}, {"id": "col_pect", "x": 495, "y": 660, "w": 170, "label": "N. grand & petit", "sub": "pectoral", "label_en": "Pectoral nerves", "sub_en": "", "lvl": "collaterale", "desc": {"fr": "Collatérale : nerfs du grand et du petit pectoral.", "en": "Collateral: nerves to pectoralis major and minor."}}, {"id": "col_sousscap", "x": 495, "y": 745, "w": 170, "label": "N. sous-scapulaire", "label_en": "Subscapular nerve", "sub_en": "", "lvl": "collaterale", "desc": {"fr": "Collatérale : nerf du muscle sous-scapulaire.", "en": "Collateral: nerve to subscapularis."}}, {"id": "col_granddorsal", "x": 495, "y": 830, "w": 170, "label": "N. grand dorsal", "label_en": "Thoracodorsal nerve", "sub_en": "", "lvl": "collaterale", "desc": {"fr": "Collatérale : nerf du muscle grand dorsal (thoraco-dorsal).", "en": "Collateral: nerve to latissimus dorsi (thoracodorsal nerve)."}}, {"id": "col_grandrond", "x": 495, "y": 915, "w": 170, "label": "N. grand rond", "label_en": "Nerve to teres major", "sub_en": "", "lvl": "collaterale", "desc": {"fr": "Collatérale : nerf du muscle grand rond.", "en": "Collateral: nerve to teres major."}}, {"id": "col_dentele", "x": 205, "y": 1010, "w": 170, "label": "N. grand dentelé", "label_en": "Long thoracic nerve", "sub_en": "", "lvl": "collaterale", "desc": {"fr": "Collatérale : nerf du muscle grand dentelé (dentelé antérieur) — naît des racines C5–C7, pas d'un tronc secondaire.", "en": "Collateral: nerve to serratus anterior (long thoracic nerve) — arises from roots C5–C7, not from a cord."}}], "edges": [["c5", "ts"], ["c6", "ts"], ["c7", "tm"], ["c8", "ti"], ["d1", "ti"], ["ts", "ts_post"], ["ts", "ts_ant"], ["tm", "tm_post"], ["tm", "tm_ant"], ["ti", "ti_post"], ["ti", "ti_ant"], ["ts_post", "cord_post"], ["tm_post", "cord_post"], ["ti_post", "cord_post"], ["ts_ant", "cord_al"], ["tm_ant", "cord_al"], ["ti_ant", "cord_am"], ["cord_post", "n_axillaire"], ["cord_post", "n_radial"], ["cord_al", "n_musculocutane"], ["cord_al", "rac_lat"], ["cord_am", "rac_med"], ["cord_am", "n_cubital"], ["cord_am", "n_cut_avb"], ["cord_am", "n_cut_bras"], ["rac_lat", "n_median"], ["rac_med", "n_median"], ["cord_al", "col_pect", 1], ["cord_post", "col_sousscap", 1], ["cord_post", "col_granddorsal", 1], ["cord_post", "col_grandrond", 1], ["c7", "col_dentele", 1]]};
+const lang = 'fr';
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('schemasvg');
+function edgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return 'M ' + x1 + ' ' + a.y + ' C ' + (x1+dx) + ' ' + a.y + ', ' + (x2-dx) + ' ' + b.y + ', ' + x2 + ' ' + b.y;
+}
+const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+svg.setAttribute('viewBox', '0 0 ' + D.w + ' ' + D.h);
+D.edges.forEach(function(e){
+  const p = document.createElementNS(NS, 'path');
+  p.setAttribute('d', edgePath(byId[e[0]], byId[e[1]]));
+  p.setAttribute('class', 'pedge' + (e[2] ? ' dash' : ''));
+  p.dataset.from = e[0]; p.dataset.to = e[1];
+  svg.appendChild(p);
+});
+D.nodes.forEach(function(n){
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+  const col = D.levels[n.lvl].c;
+  if (n.r){
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+    c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+    g.appendChild(c);
+    const tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+    tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+    tx.textContent = n.label; g.appendChild(tx);
+  } else {
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+    r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+    r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+    g.appendChild(r);
+    const t1 = document.createElementNS(NS, 'text');
+    t1.setAttribute('x', n.x); t1.setAttribute('y', n.sub ? n.y - 2 : n.y + 4);
+    t1.textContent = n.label; g.appendChild(t1);
+    if (n.sub){
+      const t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+      t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+      t2.textContent = n.sub; g.appendChild(t2);
+    }
+    if (n.note){
+      const t3 = document.createElementNS(NS, 'text');
+      t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+      t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+      t3.textContent = n.note.fr; g.appendChild(t3);
+    }
+  }
+  g.addEventListener('click', function(ev){ ev.stopPropagation(); trace(n.id); });
+  svg.appendChild(g);
+});
+const leg = document.getElementById('schemalegend');
+Object.values(D.levels).forEach(function(l){
+  const s = document.createElement('span');
+  s.innerHTML = '<span class="sw" style="background:' + l.c + '"></span>' + l.fr;
+  leg.appendChild(s);
+});
+function chain(id){
+  const down = {}, up = {};
+  D.edges.forEach(function(e){ (down[e[0]] = down[e[0]] || []).push(e[1]); (up[e[1]] = up[e[1]] || []).push(e[0]); });
+  const set = new Set([id]);
+  let stack = [id];
+  while (stack.length){ const c = stack.pop(); (down[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  stack = [id];
+  while (stack.length){ const c = stack.pop(); (up[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  return set;
+}
+function trace(id){
+  const set = chain(id);
+  svg.querySelectorAll('.pnode').forEach(function(g){
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  svg.querySelectorAll('.pedge').forEach(function(p){
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const node = byId[id];
+  document.getElementById('schemacap').textContent = node.desc.fr;
+}
+function reset(){
+  svg.querySelectorAll('.pnode,.pedge').forEach(function(el){ el.classList.remove('lit', 'dim'); });
+  document.getElementById('schemacap').textContent = 'Touchez un nœud du schéma pour illuminer son trajet complet et lire sa fiche.';
+}
+svg.addEventListener('click', reset);
+reset();
+window.__h1test = { trace: trace, reset: reset,
+  lit: function(){ return [...svg.querySelectorAll('.pnode.lit')].map(g=>g.dataset.id); } };
+</script><a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body></html>

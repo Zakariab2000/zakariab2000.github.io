@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figure 2 — Voies de la sensibilité proprioceptive inconsciente · Schéma interactif</title>
+<style>
+:root{--sans:-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 800px at 60% 20%,#0b1526,#060b14);color:#e8eef7;font-family:var(--sans);padding:14px 12px 26px}
+header{max-width:680px;margin:0 auto 6px}
+.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#f0a13c;font-weight:700}
+h1{font-size:19px;line-height:1.3;margin:3px 0 2px}
+.sub{font-size:12.5px;color:#9db1cc}
+.hint{max-width:680px;margin:8px auto;font-size:12.5px;color:#9db1cc}
+#wrap{max-width:680px;margin:0 auto}
+#schemasvg{display:block;width:100%;height:auto}
+.pnode{cursor:pointer}
+.pnode rect{stroke-width:1.5;transition:opacity .2s}
+.pnode text{fill:#e8eef7;font-size:11px;text-anchor:middle;pointer-events:none;font-family:var(--sans)}
+.pnode.dim,.pedge.dim{opacity:.1}
+.pnode.lit rect{stroke:#fff;stroke-width:2.5}
+.pnode.lit circle{stroke:#fff;stroke-width:2.5}
+.pedge{fill:none;stroke:#5b7ba6;stroke-width:1.6}
+.pedge.dash{stroke-dasharray:5 4}
+.pedge.lit{stroke:#f0b429;stroke-width:3}
+#schemacap{margin:10px auto;padding:10px 12px;max-width:680px;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:10px;font-size:13.5px;line-height:1.5;min-height:58px}
+#schemalegend{display:flex;flex-wrap:wrap;gap:6px 12px;max-width:680px;margin:0 auto;font-size:11px;color:#9db1cc}
+#schemalegend .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.fiche{max-width:680px;margin:16px auto 0;background:rgba(13,24,42,.95);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+.fiche h2{font-size:14px;margin-bottom:8px;color:#f0a13c}
+.fiche dl div{margin-bottom:8px}
+.fiche dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9db1cc;font-weight:700}
+.fiche dd{font-size:13.5px;line-height:1.55;margin-top:2px}
+.note{max-width:680px;margin:12px auto 0;font-size:11.5px;color:#7e93b5;line-height:1.5}
+</style></head><body>
+<header><div class="kicker">Atlas 3D · Sujets du cours · Schéma interactif</div>
+<h1>Figure 2 — Voies de la sensibilité proprioceptive inconsciente</h1>
+<div class="sub">[3D+D] : scène 3D de contexte + schéma interactif — schéma de la voie (le trajet n'existe pas comme maillage 3D continu : voir la scène 3D associée pour les structures qui existent)</div></header>
+<p class="hint">Touchez un nœud : tout son trajet (en amont et en aval) s'illumine et sa fiche s'affiche. Touchez le fond pour tout réafficher.</p>
+<div id="wrap"><svg id="schemasvg" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="schemacap"></div>
+<div id="schemalegend"></div>
+<section class="fiche"><h2>Fiche de la voie</h2><dl>
+<div><dt>Origine</dt><dd>Récepteurs para-articulaires ; le 1er neurone (N1) est la cellule du ganglion spinal, dont l'axone se termine à la base de la corne postérieure.</dd></div>
+<div><dt>Relais</dt><dd>Voie directe : colonne de Clarke, très développée dans la moelle dorso-lombo-sacrée. Voie indirecte (croisée) : colonne de Bechterew, développée dans la moelle cervicale. Voie à 2 neurones seulement.</dd></div>
+<div><dt>Décussation</dt><dd>Voie directe : aucun croisement — le 2e neurone rejoint le cordon latéral homolatéral (faisceau spinocérébelleux direct de Flechsig). Voie indirecte : le 2e neurone croise la ligne médiane (faisceau spinocérébelleux croisé de Gowers).</dd></div>
+<div><dt>Terminaison</dt><dd>Vermis cérébelleux : le faisceau de Flechsig atteint le vermis supérieur par le pédoncule cérébelleux inférieur ; le faisceau de Gowers atteint l'ensemble du vermis par le pédoncule cérébelleux supérieur.</dd></div>
+<div><dt>Clinique</dt><dd>Elle informe en permanence le cervelet de la position des articulations et des segments pour la régulation du tonus musculaire ; plus rapide que la voie consciente. Le cours conclut que la lésion des voies sensitives donne des troubles dont le caractère dépend du niveau lésionnel (Q1).</dd></div>
+</dl></section>
+<p class="note">Source du schéma : texte du programme FMPR (partie I) — aucun relais inventé. Limites 3D vérifiées à l'audit : Noyau dorsal de Clarke (relais médullaire) : ABSENT Le cervelet n'existe que par lobules/pièces séparées (pas de maillage 'cervelet' unique) et les pédoncules cérébelleux inférieurs (voie d'entrée principale) ne sont pas individualisés Trajet complet membre → moelle → cervelet : schéma requis en regard</p>
+<script>
+const D = {"titre_fr": "Voie de la sensibilité proprioceptive inconsciente (spino-cérébelleuse)", "titre_en": "Unconscious proprioceptive (spinocerebellar) pathway", "w": 720, "h": 940, "levels": {"recep": {"c": "#8d6e63", "fr": "Récepteurs", "en": "Receptors"}, "n1": {"c": "#5c6bc0", "fr": "1er neurone (N1)", "en": "1st neuron (N1)"}, "gangl": {"c": "#00838f", "fr": "Ganglion / relais", "en": "Ganglion / relay"}, "faisc": {"c": "#1565c0", "fr": "Faisceau / trajet", "en": "Tract / course"}, "term": {"c": "#2e7d32", "fr": "Terminaison", "en": "Termination"}, "decuss": {"c": "#ef6c00", "fr": "Décussation", "en": "Decussation"}}, "nodes": [{"id": "recepteurs", "x": 360, "y": 85, "w": 380, "label": "Récepteurs para-articulaires", "sub": "position des articulations et des segments", "label_en": "Para-articular receptors", "sub_en": "position of joints and segments", "lvl": "recep", "desc": {"fr": "La voie spino-cérébelleuse informe le cervelet sur la position des articulations et des différents segments, pour la régulation du tonus musculaire ; elle est beaucoup plus rapide que la voie consciente.", "en": "The spinocerebellar pathway informs the cerebellum about joint and segment position, for regulation of muscle tone; it is much faster than the conscious pathway."}}, {"id": "n1_ganglion", "x": 360, "y": 215, "w": 340, "label": "N1 — Ganglion spinal", "sub": "1er neurone commun aux 2 voies", "label_en": "N1 — Spinal ganglion", "sub_en": "1st neuron common to both routes", "lvl": "n1", "desc": {"fr": "Le premier neurone est représenté par la cellule du ganglion spinal ; son axone se termine à la base de la corne postérieure, dans la colonne de Clarke (voie directe) ou de Bechterew (voie croisée).", "en": "The first neuron is the spinal ganglion cell; its axon ends at the base of the posterior horn, in Clarke's column (direct route) or Bechterew's column (crossed route)."}}, {"id": "clarke", "x": 180, "y": 375, "w": 280, "label": "Colonne de Clarke", "sub": "moelle dorso-lombo-sacrée", "label_en": "Clarke's column", "sub_en": "dorso-lumbo-sacral cord", "lvl": "gangl", "desc": {"fr": "Relais du deuxième neurone de la voie directe, particulièrement développée au niveau de la moelle dorso-lombo-sacrée.", "en": "Relay of the second neuron of the direct route, particularly developed in the dorso-lumbo-sacral cord."}}, {"id": "bechterew", "x": 540, "y": 375, "w": 280, "label": "Colonne de Bechterew", "sub": "moelle cervicale", "label_en": "Bechterew's column", "sub_en": "cervical cord", "lvl": "gangl", "desc": {"fr": "Relais du deuxième neurone de la voie indirecte (croisée), particulièrement développée au niveau de la moelle cervicale.", "en": "Relay of the second neuron of the indirect (crossed) route, particularly developed in the cervical cord."}}, {"id": "flechsig", "x": 180, "y": 535, "w": 280, "label": "Faisceau de Flechsig", "sub": "spino-cérébelleux direct, homolatéral", "label_en": "Flechsig's tract", "sub_en": "direct spinocerebellar, ipsilateral", "lvl": "faisc", "desc": {"fr": "Le deuxième neurone rejoint le cordon latéral homolatéral de la moelle pour former le faisceau spino-cérébelleux direct de Flechsig : la voie directe ne croise pas.", "en": "The second neuron joins the ipsilateral lateral column of the cord to form Flechsig's direct spinocerebellar tract: the direct route does not cross."}}, {"id": "gowers", "x": 540, "y": 535, "w": 280, "label": "Faisceau de Gowers", "sub": "spino-cérébelleux croisé — décussation", "label_en": "Gowers' tract", "sub_en": "crossed spinocerebellar — decussation", "lvl": "decuss", "desc": {"fr": "Le deuxième neurone croise la ligne médiane, rejoint le cordon latéral controlatéral et forme le faisceau spino-cérébelleux croisé de Gowers.", "en": "The second neuron crosses the midline, joins the contralateral lateral column and forms Gowers' crossed spinocerebellar tract."}}, {"id": "ped_inf", "x": 180, "y": 690, "w": 280, "label": "Pédoncule cérébelleux inférieur", "sub": "porte d'entrée de la voie directe", "label_en": "Inferior cerebellar peduncle", "sub_en": "entry route of the direct tract", "lvl": "faisc", "desc": {"fr": "Le faisceau de Flechsig atteint le cervelet en empruntant le pédoncule cérébelleux inférieur.", "en": "Flechsig's tract reaches the cerebellum through the inferior cerebellar peduncle."}}, {"id": "ped_sup", "x": 540, "y": 690, "w": 280, "label": "Pédoncule cérébelleux supérieur", "sub": "porte d'entrée de la voie croisée", "label_en": "Superior cerebellar peduncle", "sub_en": "entry route of the crossed tract", "lvl": "faisc", "desc": {"fr": "Le faisceau de Gowers atteint le cervelet en empruntant le pédoncule cérébelleux supérieur.", "en": "Gowers' tract reaches the cerebellum through the superior cerebellar peduncle."}}, {"id": "vermis", "x": 360, "y": 845, "w": 340, "label": "Vermis cérébelleux", "sub": "terminaison des 2 voies", "label_en": "Cerebellar vermis", "sub_en": "termination of both routes", "lvl": "term", "desc": {"fr": "Le faisceau de Flechsig atteint le vermis supérieur ; le faisceau de Gowers atteint l'ensemble du vermis. Le cervelet régule ainsi le tonus musculaire en permanence.", "en": "Flechsig's tract reaches the superior vermis; Gowers' tract reaches the vermis as a whole. The cerebellum thus regulates muscle tone continuously."}}], "edges": [["recepteurs", "n1_ganglion"], ["n1_ganglion", "clarke"], ["n1_ganglion", "bechterew"], ["clarke", "flechsig"], ["bechterew", "gowers"], ["flechsig", "ped_inf"], ["gowers", "ped_sup"], ["ped_inf", "vermis"], ["ped_sup", "vermis"]]};
+const lang = 'fr';
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('schemasvg');
+function edgePath(a, b){
+  const x1 = a.r ? a.x + a.r : a.x + a.w/2, x2 = b.r ? b.x - b.r : b.x - b.w/2;
+  const dx = Math.max(40, (x2 - x1) * 0.5);
+  return 'M ' + x1 + ' ' + a.y + ' C ' + (x1+dx) + ' ' + a.y + ', ' + (x2-dx) + ' ' + b.y + ', ' + x2 + ' ' + b.y;
+}
+const byId = Object.fromEntries(D.nodes.map(n=>[n.id, n]));
+svg.setAttribute('viewBox', '0 0 ' + D.w + ' ' + D.h);
+D.edges.forEach(function(e){
+  const p = document.createElementNS(NS, 'path');
+  p.setAttribute('d', edgePath(byId[e[0]], byId[e[1]]));
+  p.setAttribute('class', 'pedge' + (e[2] ? ' dash' : ''));
+  p.dataset.from = e[0]; p.dataset.to = e[1];
+  svg.appendChild(p);
+});
+D.nodes.forEach(function(n){
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'pnode'); g.dataset.id = n.id;
+  const col = D.levels[n.lvl].c;
+  if (n.r){
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', n.x); c.setAttribute('cy', n.y); c.setAttribute('r', n.r);
+    c.setAttribute('fill', '#101d33'); c.setAttribute('stroke', col);
+    g.appendChild(c);
+    const tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', n.x + n.r + 6); tx.setAttribute('y', n.y + 4);
+    tx.setAttribute('style', 'text-anchor:start;font-size:10px;fill:#9db1cc');
+    tx.textContent = n.label; g.appendChild(tx);
+  } else {
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', n.x - n.w/2); r.setAttribute('y', n.y - 22);
+    r.setAttribute('width', n.w); r.setAttribute('height', 44); r.setAttribute('rx', 10);
+    r.setAttribute('fill', '#101d33'); r.setAttribute('stroke', col);
+    g.appendChild(r);
+    const t1 = document.createElementNS(NS, 'text');
+    t1.setAttribute('x', n.x); t1.setAttribute('y', n.sub ? n.y - 2 : n.y + 4);
+    t1.textContent = n.label; g.appendChild(t1);
+    if (n.sub){
+      const t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + 13);
+      t2.setAttribute('style', 'font-size:10px;fill:#9db1cc');
+      t2.textContent = n.sub; g.appendChild(t2);
+    }
+    if (n.note){
+      const t3 = document.createElementNS(NS, 'text');
+      t3.setAttribute('x', n.x); t3.setAttribute('y', n.y + 36);
+      t3.setAttribute('style', 'font-size:9px;fill:#f0a13c;font-style:italic');
+      t3.textContent = n.note.fr; g.appendChild(t3);
+    }
+  }
+  g.addEventListener('click', function(ev){ ev.stopPropagation(); trace(n.id); });
+  svg.appendChild(g);
+});
+const leg = document.getElementById('schemalegend');
+Object.values(D.levels).forEach(function(l){
+  const s = document.createElement('span');
+  s.innerHTML = '<span class="sw" style="background:' + l.c + '"></span>' + l.fr;
+  leg.appendChild(s);
+});
+function chain(id){
+  const down = {}, up = {};
+  D.edges.forEach(function(e){ (down[e[0]] = down[e[0]] || []).push(e[1]); (up[e[1]] = up[e[1]] || []).push(e[0]); });
+  const set = new Set([id]);
+  let stack = [id];
+  while (stack.length){ const c = stack.pop(); (down[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  stack = [id];
+  while (stack.length){ const c = stack.pop(); (up[c] || []).forEach(function(x){ if (!set.has(x)){ set.add(x); stack.push(x); } }); }
+  return set;
+}
+function trace(id){
+  const set = chain(id);
+  svg.querySelectorAll('.pnode').forEach(function(g){
+    const on = set.has(g.dataset.id);
+    g.classList.toggle('lit', on); g.classList.toggle('dim', !on);
+  });
+  svg.querySelectorAll('.pedge').forEach(function(p){
+    const on = set.has(p.dataset.from) && set.has(p.dataset.to);
+    p.classList.toggle('lit', on); p.classList.toggle('dim', !on);
+  });
+  const node = byId[id];
+  document.getElementById('schemacap').textContent = node.desc.fr;
+}
+function reset(){
+  svg.querySelectorAll('.pnode,.pedge').forEach(function(el){ el.classList.remove('lit', 'dim'); });
+  document.getElementById('schemacap').textContent = 'Touchez un nœud du schéma pour illuminer son trajet complet et lire sa fiche.';
+}
+svg.addEventListener('click', reset);
+reset();
+window.__h1test = { trace: trace, reset: reset,
+  lit: function(){ return [...svg.querySelectorAll('.pnode.lit')].map(g=>g.dataset.id); } };
+</script><a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body></html>

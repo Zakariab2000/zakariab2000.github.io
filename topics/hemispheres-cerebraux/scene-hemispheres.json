@@ -1,0 +1,568 @@
+{
+ "sujet": 5,
+ "partie": "I",
+ "titre_fr": "Les hémisphères cérébraux",
+ "titre_en": "The cerebral hemispheres",
+ "figures": [
+  {
+   "numero": 9,
+   "titre_fr": "Face latérale d'un hémisphère cérébral",
+   "titre_en": "Lateral surface of a cerebral hemisphere",
+   "classe": "3D",
+   "structures": [
+    {
+     "id": "superior_frontal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/superior_frontal_gyrus_right.glb",
+     "nom_fr": "Gyrus frontal supérieur",
+     "name_en": "Right superior frontal gyrus",
+     "name_la": "Gyrus frontalis superior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "middle_frontal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/middle_frontal_gyrus_right.glb",
+     "nom_fr": "Gyrus frontal moyen",
+     "name_en": "Right middle frontal gyrus",
+     "name_la": "Gyrus frontalis medius",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "precentral_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/precentral_gyrus_right.glb",
+     "nom_fr": "Gyrus précentral",
+     "name_en": "Right precentral gyrus",
+     "name_la": "Gyrus precentralis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "postcentral_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/postcentral_gyrus_right.glb",
+     "nom_fr": "Gyrus postcentral",
+     "name_en": "Right postcentral gyrus",
+     "name_la": "Gyrus postcentralis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "superior_parietal_lobule_right",
+     "role": "sujet",
+     "file": "models/cerveau/superior_parietal_lobule_right.glb",
+     "nom_fr": "Lobule pariétal supérieur",
+     "name_en": "Right superior parietal lobule",
+     "name_la": "Lobulus parietalis superior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "supramarginal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/supramarginal_gyrus_right.glb",
+     "nom_fr": "Gyrus supramarginal",
+     "name_en": "Right supramarginal gyrus",
+     "name_la": "Gyrus supramarginalis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "angular_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/angular_gyrus_right.glb",
+     "nom_fr": "Gyrus angulaire",
+     "name_en": "Right angular gyrus",
+     "name_la": "Gyrus angularis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "superior_temporal_gyrus_lateral_part_right",
+     "role": "sujet",
+     "file": "models/cerveau/superior_temporal_gyrus_lateral_part_right.glb",
+     "nom_fr": "Gyrus temporal supérieur",
+     "name_en": "Right superior temporal gyrus (Lateral part)",
+     "name_la": "Gyrus temporalis superior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "middle_temporal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/middle_temporal_gyrus_right.glb",
+     "nom_fr": "Gyrus temporal moyen",
+     "name_en": "Right middle temporal gyrus",
+     "name_la": "Gyrus temporalis medius",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "inferior_temporal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/inferior_temporal_gyrus_right.glb",
+     "nom_fr": "Gyrus temporal inférieur",
+     "name_en": "Right inferior temporal gyrus",
+     "name_la": "Gyrus temporalis inferior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "circular_sulcus_of_insula_right",
+     "role": "rapport",
+     "file": "models/cerveau/circular_sulcus_of_insula_right.glb",
+     "nom_fr": "Sillon circulaire de l'insula",
+     "name_en": "Right circular sulcus of insula",
+     "name_la": "Sulcus circularis insulae",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "opercular_part_of_inferior_frontal_gyrus_right",
+     "role": "rapport",
+     "file": "models/cerveau/opercular_part_of_inferior_frontal_gyrus_right.glb",
+     "nom_fr": "Partie operculaire du gyrus frontal inférieur",
+     "name_en": "Right opercular part of inferior frontal gyrus",
+     "name_la": "Pars opercularis gyri frontalis inferioris",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "triangular_part_of_inferior_frontal_gyrus_right",
+     "role": "rapport",
+     "file": "models/cerveau/triangular_part_of_inferior_frontal_gyrus_right.glb",
+     "nom_fr": "Partie triangulaire du gyrus frontal inférieur",
+     "name_en": "Right triangular part of inferior frontal gyrus",
+     "name_la": "Pars triangularis gyri frontalis inferioris",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    }
+   ],
+   "camera": {
+    "vue": "laterale",
+    "target": [
+     -34.2,
+     1576.4,
+     95.5
+    ],
+    "direction": [
+     0.993,
+     0.06,
+     0.099
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 285.5,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": null,
+   "manquants": [
+    "L'hémisphère n'existe pas comme coque unique : il est composé des maillages de gyri séparés (suffisant pour la figure, mais les sillons sont les espaces entre gyri, pas des maillages)"
+   ]
+  },
+  {
+   "numero": 10,
+   "titre_fr": "Face médiale d'un hémisphère cérébral",
+   "titre_en": "Medial surface of a cerebral hemisphere",
+   "classe": "3D",
+   "structures": [
+    {
+     "id": "corpus_callosum",
+     "role": "sujet",
+     "file": "models/cerveau/corpus_callosum.glb",
+     "nom_fr": "Corps calleux",
+     "name_en": "Corpus callosum",
+     "name_la": "Corpus callosum",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "cingulate_gyrus_posteroventral_part_right",
+     "role": "sujet",
+     "file": "models/cerveau/cingulate_gyrus_posteroventral_part_right.glb",
+     "nom_fr": "Gyrus du cingulum",
+     "name_en": "Right cingulate gyrus (Posteroventral part*)",
+     "name_la": "Gyrus cinguli",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "paracentral_gyrus_and_sulcus_right",
+     "role": "sujet",
+     "file": "models/cerveau/paracentral_gyrus_and_sulcus_right.glb",
+     "nom_fr": "Right paracentral gyrus and sulcus*",
+     "name_en": "Right paracentral gyrus and sulcus*",
+     "name_la": null,
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "precuneus_right",
+     "role": "sujet",
+     "file": "models/cerveau/precuneus_right.glb",
+     "nom_fr": "Précuneus",
+     "name_en": "Right precuneus",
+     "name_la": "Precuneus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "cuneus_right",
+     "role": "sujet",
+     "file": "models/cerveau/cuneus_right.glb",
+     "nom_fr": "Cuneus",
+     "name_en": "Right cuneus",
+     "name_la": "Cuneus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "lingual_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/lingual_gyrus_right.glb",
+     "nom_fr": "Gyrus lingual",
+     "name_en": "Right lingual gyrus",
+     "name_la": "Gyrus lingualis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "medial_occipitotemporal_gyrus_parahippocampal_right",
+     "role": "sujet",
+     "file": "models/cerveau/medial_occipitotemporal_gyrus_parahippocampal_right.glb",
+     "nom_fr": "Gyrus occipitotemporal médial",
+     "name_en": "Right medial occipitotemporal gyrus (Parahippocampal*)",
+     "name_la": "Gyrus occipitotemporalis medialis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "fornix_right",
+     "role": "sujet",
+     "file": "models/cerveau/fornix_right.glb",
+     "nom_fr": "Fornix",
+     "name_en": "Right fornix",
+     "name_la": "Fornix",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "thalamus_right",
+     "role": "rapport",
+     "file": "models/cerveau/thalamus_right.glb",
+     "nom_fr": "Thalamus",
+     "name_en": "Right thalamus",
+     "name_la": "Thalamus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "hippocampus_right",
+     "role": "rapport",
+     "file": "models/cerveau/hippocampus_right.glb",
+     "nom_fr": "Hippocampe",
+     "name_en": "Right hippocampus",
+     "name_la": "Hippocampus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "anterior_commissure",
+     "role": "rapport",
+     "file": "models/cerveau/anterior_commissure.glb",
+     "nom_fr": "Commissure antérieure",
+     "name_en": "Anterior commissure",
+     "name_la": "Commissura anterior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    }
+   ],
+   "camera": {
+    "vue": "mediale",
+    "target": [
+     -9.2,
+     1576.3,
+     72.9
+    ],
+    "direction": [
+     -0.99,
+     0.079,
+     0.119
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 255.8,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": null,
+   "manquants": []
+  },
+  {
+   "numero": 11,
+   "titre_fr": "Face inférieure d'un hémisphère cérébral",
+   "titre_en": "Inferior surface of a cerebral hemisphere",
+   "classe": "3D",
+   "structures": [
+    {
+     "id": "orbital_gyri_right",
+     "role": "sujet",
+     "file": "models/cerveau/orbital_gyri_right.glb",
+     "nom_fr": "Gyri orbitaires",
+     "name_en": "Right orbital gyri",
+     "name_la": "Gyri orbitales",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "straight_gyrus_gyrus_rectus_right",
+     "role": "sujet",
+     "file": "models/cerveau/straight_gyrus_gyrus_rectus_right.glb",
+     "nom_fr": "Gyrus rectus",
+     "name_en": "Right straight gyrus (Gyrus rectus)",
+     "name_la": "Gyrus rectus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "medial_occipitotemporal_gyrus_parahippocampal_right",
+     "role": "sujet",
+     "file": "models/cerveau/medial_occipitotemporal_gyrus_parahippocampal_right.glb",
+     "nom_fr": "Gyrus occipitotemporal médial",
+     "name_en": "Right medial occipitotemporal gyrus (Parahippocampal*)",
+     "name_la": "Gyrus occipitotemporalis medialis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "lateral_occipitotemporal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/lateral_occipitotemporal_gyrus_right.glb",
+     "nom_fr": "Gyrus occipitotemporal latéral",
+     "name_en": "Right lateral occipitotemporal gyrus",
+     "name_la": "Gyrus occipitotemporalis lateralis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "inferior_temporal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/inferior_temporal_gyrus_right.glb",
+     "nom_fr": "Gyrus temporal inférieur",
+     "name_en": "Right inferior temporal gyrus",
+     "name_la": "Gyrus temporalis inferior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "lingual_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/lingual_gyrus_right.glb",
+     "nom_fr": "Gyrus lingual",
+     "name_en": "Right lingual gyrus",
+     "name_la": "Gyrus lingualis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "hippocampus_right",
+     "role": "rapport",
+     "file": "models/cerveau/hippocampus_right.glb",
+     "nom_fr": "Hippocampe",
+     "name_en": "Right hippocampus",
+     "name_la": "Hippocampus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "fornix_right",
+     "role": "rapport",
+     "file": "models/cerveau/fornix_right.glb",
+     "nom_fr": "Fornix",
+     "name_en": "Right fornix",
+     "name_la": "Fornix",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    }
+   ],
+   "camera": {
+    "vue": "inferieure",
+    "target": [
+     -31.8,
+     1545.7,
+     92.7
+    ],
+    "direction": [
+     0.0,
+     -0.935,
+     0.355
+    ],
+    "up": [
+     0,
+     0,
+     1
+    ],
+    "distance": 252.6,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": null,
+   "manquants": [
+    "Bulbe olfactif / bandelette olfactive : non vérifiés comme entrées distinctes dans le manifeste"
+   ]
+  },
+  {
+   "numero": 12,
+   "titre_fr": "Aires fonctionnelles corticales selon Brodmann",
+   "titre_en": "Cortical functional areas according to Brodmann",
+   "classe": "3D+D",
+   "structures": [
+    {
+     "id": "precentral_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/precentral_gyrus_right.glb",
+     "nom_fr": "Gyrus précentral",
+     "name_en": "Right precentral gyrus",
+     "name_la": "Gyrus precentralis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "postcentral_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/postcentral_gyrus_right.glb",
+     "nom_fr": "Gyrus postcentral",
+     "name_en": "Right postcentral gyrus",
+     "name_la": "Gyrus postcentralis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "superior_frontal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/superior_frontal_gyrus_right.glb",
+     "nom_fr": "Gyrus frontal supérieur",
+     "name_en": "Right superior frontal gyrus",
+     "name_la": "Gyrus frontalis superior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "angular_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/angular_gyrus_right.glb",
+     "nom_fr": "Gyrus angulaire",
+     "name_en": "Right angular gyrus",
+     "name_la": "Gyrus angularis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "supramarginal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/supramarginal_gyrus_right.glb",
+     "nom_fr": "Gyrus supramarginal",
+     "name_en": "Right supramarginal gyrus",
+     "name_la": "Gyrus supramarginalis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "transverse_temporal_gyri_right",
+     "role": "sujet",
+     "file": "models/cerveau/transverse_temporal_gyri_right.glb",
+     "nom_fr": "Gyrus temporal transverse",
+     "name_en": "Right transverse temporal gyri",
+     "name_la": "Gyri temporales transversi",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "cuneus_right",
+     "role": "sujet",
+     "file": "models/cerveau/cuneus_right.glb",
+     "nom_fr": "Cuneus",
+     "name_en": "Right cuneus",
+     "name_la": "Cuneus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "lingual_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/lingual_gyrus_right.glb",
+     "nom_fr": "Gyrus lingual",
+     "name_en": "Right lingual gyrus",
+     "name_la": "Gyrus lingualis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "middle_frontal_gyrus_right",
+     "role": "sujet",
+     "file": "models/cerveau/middle_frontal_gyrus_right.glb",
+     "nom_fr": "Gyrus frontal moyen",
+     "name_en": "Right middle frontal gyrus",
+     "name_la": "Gyrus frontalis medius",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "superior_temporal_gyrus_lateral_part_right",
+     "role": "rapport",
+     "file": "models/cerveau/superior_temporal_gyrus_lateral_part_right.glb",
+     "nom_fr": "Gyrus temporal supérieur",
+     "name_en": "Right superior temporal gyrus (Lateral part)",
+     "name_la": "Gyrus temporalis superior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "inferior_temporal_gyrus_right",
+     "role": "rapport",
+     "file": "models/cerveau/inferior_temporal_gyrus_right.glb",
+     "nom_fr": "Gyrus temporal inférieur",
+     "name_en": "Right inferior temporal gyrus",
+     "name_la": "Gyrus temporalis inferior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    }
+   ],
+   "camera": {
+    "vue": "laterale",
+    "target": [
+     -34.1,
+     1576.4,
+     91.8
+    ],
+    "direction": [
+     0.993,
+     0.06,
+     0.099
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 293.3,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": "brodmann",
+   "manquants": [
+    "Aires de Brodmann : AUCUNE entrée dans le manifeste (recherche 'brodmann' = 0 résultat sur 4663) — la numérotation 4, 3-1-2, 17, 18, 19, 41, 44-45… est une cartographie, pas une géométrie : schéma interactif numéroté en regard des gyri 3D"
+   ]
+  }
+ ]
+}

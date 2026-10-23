@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schémas du cours — Batch E (aperçu)</title>
+<style>
+  :root{ --bg:#101318; --panel:#1a1f27; --panel2:#232a35; --txt:#e8e4da; --muted:#a9a294; --accent:#ffcf5c; --line:#343c48; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--txt); font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  body{ max-width:980px; margin:0 auto; padding:12px 12px 32px; }
+  header h1{ font-size:20px; line-height:1.25; margin:4px 0 10px; font-weight:700; }
+  .row{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 10px; }
+  .row .lbl{ width:100%; font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  button{ font:inherit; color:var(--txt); background:var(--panel2); border:1px solid var(--line); border-radius:999px; padding:8px 13px; cursor:pointer; }
+  button:hover{ border-color:var(--accent); }
+  button.actif{ background:var(--accent); color:#191408; border-color:var(--accent); font-weight:700; }
+  #figures button{ padding:6px 11px; font-size:14px; }
+  #titre-figure{ font-size:15px; font-weight:600; margin:2px 0 10px; }
+  #statut{ font-size:13px; color:var(--muted); margin:0 0 8px; min-height:18px; }
+  #canvas-wrap{ position:relative; height:62vh; min-height:340px; background:var(--bg); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  #scene{ position:absolute; inset:0; }
+  #scene canvas{ display:block; width:100%; height:100%; touch-action:none; }
+  /* --- Espaces & fascias : cartes en coin du canvas --- */
+  #espaces-panel{ position:absolute; top:10px; right:10px; z-index:5; width:min(248px,72%); background:rgba(16,19,24,.88); border:1px solid var(--line); border-radius:12px; padding:9px; backdrop-filter:blur(3px); }
+  #espaces-panel[hidden]{ display:none; }
+  #espaces-panel h2{ font-size:13px; margin:0 0 8px; text-transform:uppercase; letter-spacing:.05em; color:var(--accent); }
+  .espace-card{ display:block; width:100%; text-align:left; border-radius:10px; padding:8px 10px; margin:0 0 6px; font-size:14px; line-height:1.3; }
+  .espace-card:last-child{ margin-bottom:0; }
+  .espace-card .dot{ display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:7px; vertical-align:baseline; border:1px solid rgba(255,255,255,.35); }
+  .espace-card .espace-note{ display:none; font-size:12px; font-weight:400; color:var(--muted); margin-top:6px; line-height:1.45; }
+  .espace-card.actif .espace-note{ display:block; }
+  #fiche{ margin:12px 0 0; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:11px 13px; min-height:56px; }
+  #fiche .nom-fr{ font-weight:700; font-size:16px; }
+  #fiche .noms{ color:var(--muted); font-size:14px; margin-top:2px; }
+  #fiche .vide{ color:var(--muted); font-size:14px; }
+  #btn-diagramme{ margin:12px 0 0; }
+  #btn-diagramme[hidden]{ display:none; }
+  #panneau-diagramme{ margin:10px 0 0; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px; }
+  #panneau-diagramme[hidden]{ display:none; }
+  #panneau-diagramme object{ display:block; width:100%; min-height:220px; background:#fff; border-radius:8px; }
+  #panneau-diagramme .note{ font-size:12px; color:var(--muted); line-height:1.5; margin:8px 0 0; }
+  details#limites{ margin:14px 0 0; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 13px; }
+  details#limites summary{ cursor:pointer; font-weight:600; }
+  details#limites ul{ margin:8px 0 4px; padding-left:18px; }
+  details#limites li{ font-size:13px; line-height:1.5; color:var(--txt); margin:0 0 5px; }
+</style>
+<script type="importmap">
+{"imports": {"three": "../../assets/three/three.module.js", "three/addons/": "../../assets/three/addons/"}}
+</script>
+</head>
+<body>
+<header>
+  <h1>Schémas du cours — Batch E (aperçu)</h1>
+  <nav class="row" id="sujets" aria-label="Sujets"></nav>
+</header>
+
+<div class="row" id="figures" aria-label="Figures"></div>
+<p id="titre-figure"></p>
+<p id="statut">Chargement…</p>
+
+<div id="canvas-wrap">
+  <div id="scene"></div>
+  <aside id="espaces-panel" hidden>
+    <h2>Espaces &amp; fascias</h2>
+    <div id="espaces-cartes"></div>
+  </aside>
+</div>
+
+<div id="fiche"><span class="vide">Touchez une structure pour voir son nom.</span></div>
+
+<button id="btn-diagramme" type="button" hidden></button>
+<section id="panneau-diagramme" hidden>
+  <div id="diagramme-conteneur"></div>
+  <p class="note" id="diagramme-note"></p>
+</section>
+
+<details id="limites">
+  <summary>Limites (audit)</summary>
+  <ul id="manquants"></ul>
+</details>
+
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+/* ---------- Collecte des erreurs (test hooks) ---------- */
+const erreurs = [];
+window.addEventListener('error', (e) => { erreurs.push(String(e.message || e.error || 'erreur inconnue')); });
+window.addEventListener('unhandledrejection', (e) => { erreurs.push('unhandledrejection: ' + String((e.reason && e.reason.message) || e.reason)); });
+const _consoleError = console.error.bind(console);
+console.error = (...args) => { erreurs.push(args.map((a) => String((a && a.message) || a)).join(' ')); _consoleError(...args); };
+
+/* ---------- Constantes ---------- */
+const SUJETS = [
+  { slug: 'loge-prostatique', fichier: 'scene-loge-prostatique.json' },
+];
+const APP = '../../';
+
+/* ---------- État ---------- */
+let manifeste = new Map();       // id -> entrée manifest-e.json
+let scenes = new Map();          // slug -> scene JSON
+let sujetActuel = null;          // slug
+let sceneActuelle = null;        // scene JSON
+let figureActuelle = null;       // int
+let affichees = new Map();       // id -> { groupe, materiau, entree, nom_fr, role }
+let espacesActifs = [];          // [{ espace, mesh, cible, carte }]
+let selection = null;            // id sélectionné
+let jetonChargement = 0;
+
+/* ---------- DOM ---------- */
+const $ = (id) => document.getElementById(id);
+const elSujets = $('sujets'), elFigures = $('figures'), elTitreFig = $('titre-figure'),
+      elStatut = $('statut'), elFiche = $('fiche'),
+      elPanelEspaces = $('espaces-panel'), elCartes = $('espaces-cartes'),
+      elBtnDiag = $('btn-diagramme'), elPanneauDiag = $('panneau-diagramme'),
+      elDiagCont = $('diagramme-conteneur'), elDiagNote = $('diagramme-note'),
+      elManquants = $('manquants');
+
+/* ---------- Three.js ---------- */
+const conteneur = $('scene');
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.setClearColor(0x101318, 1);
+conteneur.appendChild(renderer.domElement);
+
+const threeScene = new THREE.Scene();
+threeScene.background = new THREE.Color(0x101318);
+const camera = new THREE.PerspectiveCamera(45, 1, 1, 8000);
+camera.position.set(0, 900, 700);
+
+threeScene.add(new THREE.HemisphereLight(0xfff6e0, 0x2a3038, 0.95));
+const lumCle = new THREE.DirectionalLight(0xffffff, 1.6);
+lumCle.position.set(350, 1800, 900);
+threeScene.add(lumCle);
+const lumDos = new THREE.DirectionalLight(0xbfd0ff, 0.45);
+lumDos.position.set(-400, 1200, -800);
+threeScene.add(lumDos);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+
+const racine = new THREE.Group();
+threeScene.add(racine);
+
+function dimensionner() {
+  const w = conteneur.clientWidth || 1, h = conteneur.clientHeight || 1;
+  renderer.setSize(w, h);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', dimensionner);
+dimensionner();
+
+/* ---------- Chargement GLB (cache par id) ---------- */
+const loader = new GLTFLoader();
+const cacheGLB = new Map(); // id -> Promise<Group>
+function chargerGLB(entree) {
+  if (!cacheGLB.has(entree.id)) {
+    cacheGLB.set(entree.id, loader.loadAsync(APP + entree.file).then((g) => g.scene));
+  }
+  return cacheGLB.get(entree.id);
+}
+
+function materiauPour(entree, role) {
+  const base = new THREE.Color((entree && entree.couleur) || '#cccccc');
+  if (role === 'contexte') base.lerp(new THREE.Color('#8a8f98'), 0.45);
+  if (role === 'ghost') {
+    return new THREE.MeshStandardMaterial({ color: base, transparent: true, opacity: 0.15, depthWrite: false, roughness: 0.6, metalness: 0 });
+  }
+  return new THREE.MeshStandardMaterial({ color: base, roughness: 0.55, metalness: 0.05 });
+}
+
+/* ---------- Fiche ---------- */
+function ficheVide() {
+  elFiche.innerHTML = '';
+  const s = document.createElement('span');
+  s.className = 'vide';
+  s.textContent = 'Touchez une structure pour voir son nom.';
+  elFiche.appendChild(s);
+}
+function montrerFiche(id) {
+  const a = affichees.get(id);
+  const entree = (a && a.entree) || manifeste.get(id) || {};
+  elFiche.innerHTML = '';
+  const nom = document.createElement('div');
+  nom.className = 'nom-fr';
+  nom.textContent = (a && a.nom_fr) || entree.nom_fr || id;
+  const noms = document.createElement('div');
+  noms.className = 'noms';
+  noms.textContent = [entree.name_en, entree.name_la].filter(Boolean).join(' · ');
+  elFiche.append(nom, noms);
+}
+function deselectionner() {
+  if (selection && affichees.has(selection)) {
+    const m = affichees.get(selection).materiau;
+    m.emissive.setHex(0x000000); m.emissiveIntensity = 1;
+  }
+  selection = null;
+  ficheVide();
+}
+function selectionner(id) {
+  deselectionner();
+  if (!id || !affichees.has(id)) return;
+  selection = id;
+  const m = affichees.get(id).materiau;
+  m.emissive.set('#ffcf5c'); m.emissiveIntensity = 0.55;
+  montrerFiche(id);
+}
+
+/* ---------- Raycast (tap / clic, sans confondre avec le drag OrbitControls) ---------- */
+const raycaster = new THREE.Raycaster();
+const pointeur = new THREE.Vector2();
+let appui = null;
+renderer.domElement.addEventListener('pointerdown', (e) => { appui = { x: e.clientX, y: e.clientY }; });
+renderer.domElement.addEventListener('pointerup', (e) => {
+  if (!appui) return;
+  const dx = e.clientX - appui.x, dy = e.clientY - appui.y;
+  appui = null;
+  if (dx * dx + dy * dy > 36) return; // c'était un drag
+  const r = renderer.domElement.getBoundingClientRect();
+  pointeur.x = ((e.clientX - r.left) / r.width) * 2 - 1;
+  pointeur.y = -((e.clientY - r.top) / r.height) * 2 + 1;
+  raycaster.setFromCamera(pointeur, camera);
+  const hits = raycaster.intersectObjects(racine.children, true);
+  let idTrouve = null;
+  for (const h of hits) {
+    let o = h.object;
+    while (o) { if (o.userData && o.userData.structureId) { idTrouve = o.userData.structureId; break; } o = o.parent; }
+    if (idTrouve) break;
+  }
+  if (idTrouve) selectionner(idTrouve); else deselectionner();
+});
+
+/* ---------- Espaces ---------- */
+function espacesDeFigure() {
+  if (!sceneActuelle) return [];
+  return (sceneActuelle.espaces || []).filter((e) => Number(e.figure) === Number(figureActuelle));
+}
+function retirerEspaces() {
+  for (const etat of espacesActifs) {
+    threeScene.remove(etat.mesh);
+    etat.mesh.geometry.dispose();
+    etat.mesh.material.dispose();
+  }
+  espacesActifs = [];
+}
+function basculeEspace(index) {
+  const liste = espacesDeFigure();
+  const espace = liste[index];
+  if (!espace) return;
+  const existant = espacesActifs.find((x) => x.espace === espace);
+  const carte = elCartes.children[index];
+  if (existant) {
+    existant.cible = 0; // fondu sortant, retrait dans la boucle de rendu
+    if (carte) carte.classList.remove('actif');
+    return;
+  }
+  const v = espace.volume || {};
+  const mesh = new THREE.Mesh(
+    new THREE.SphereGeometry(1, 40, 28),
+    new THREE.MeshStandardMaterial({ color: espace.couleur, transparent: true, opacity: 0, roughness: 0.3, metalness: 0, depthWrite: false, depthTest: false })
+  );
+  mesh.renderOrder = 10; // volume schématique : toujours lisible à travers les parois (précédent batch C)
+  if (Array.isArray(v.centre)) mesh.position.set(v.centre[0], v.centre[1], v.centre[2]);
+  if (Array.isArray(v.rayons)) mesh.scale.set(v.rayons[0], v.rayons[1], v.rayons[2]);
+  threeScene.add(mesh);
+  espacesActifs.push({ espace, mesh, cible: Number(espace.opacite != null ? espace.opacite : 0.35) });
+  if (carte) carte.classList.add('actif');
+}
+function construireCartesEspaces() {
+  retirerEspaces();
+  elCartes.innerHTML = '';
+  const liste = espacesDeFigure();
+  elPanelEspaces.hidden = liste.length === 0;
+  liste.forEach((espace, i) => {
+    const carte = document.createElement('button');
+    carte.type = 'button';
+    carte.className = 'espace-card';
+    const dot = document.createElement('span');
+    dot.className = 'dot';
+    dot.style.background = espace.couleur || '#ffffff';
+    const nom = document.createElement('span');
+    nom.textContent = espace.nom_fr;
+    const note = document.createElement('span');
+    note.className = 'espace-note';
+    note.textContent = espace.note || '';
+    carte.append(dot, nom, note);
+    carte.addEventListener('click', () => basculeEspace(i));
+    elCartes.appendChild(carte);
+  });
+}
+
+/* ---------- Diagramme ---------- */
+function diagrammeDeFigure(pf) {
+  if (pf && pf.diagramme) return pf.diagramme;
+  const d = (sceneActuelle.diagrammes || []).find((x) => Number(x.figure) === Number(figureActuelle));
+  return d || null;
+}
+elBtnDiag.addEventListener('click', () => {
+  elPanneauDiag.hidden = !elPanneauDiag.hidden;
+});
+
+/* ---------- Application d'une figure ---------- */
+async function appliquerFigure(fig) {
+  const pf = sceneActuelle.par_figure[String(fig)];
+  if (!pf) { erreurs.push('Figure absente de par_figure : ' + fig); return; }
+  figureActuelle = Number(fig);
+  const jeton = ++jetonChargement;
+  window.__batchE.prets = false;
+  deselectionner();
+
+  // Chips figures : état actif
+  [...elFigures.children].forEach((b) => b.classList.toggle('actif', Number(b.dataset.fig) === figureActuelle));
+  elTitreFig.textContent = pf.titre_fr ? ('Fig ' + fig + ' — ' + pf.titre_fr) : ('Fig ' + fig);
+
+  // Nettoyage de la scène
+  while (racine.children.length) racine.remove(racine.children[0]);
+  affichees = new Map();
+  construireCartesEspaces();
+
+  // Limites (audit)
+  elManquants.innerHTML = '';
+  (pf.manquants || []).forEach((m) => {
+    const li = document.createElement('li');
+    li.textContent = m;
+    elManquants.appendChild(li);
+  });
+  if (!(pf.manquants || []).length) {
+    const li = document.createElement('li');
+    li.textContent = 'Aucune limite signalée pour cette figure.';
+    elManquants.appendChild(li);
+  }
+
+  // Diagramme
+  const diag = diagrammeDeFigure(pf);
+  elPanneauDiag.hidden = true;
+  elDiagCont.innerHTML = '';
+  if (diag) {
+    elBtnDiag.hidden = false;
+    elBtnDiag.textContent = 'Schéma interactif — Fig ' + fig;
+    const obj = document.createElement('object');
+    obj.setAttribute('type', 'image/svg+xml');
+    obj.setAttribute('data', diag.fichier);
+    obj.style.width = '100%';
+    elDiagCont.appendChild(obj);
+    elDiagNote.textContent = diag.note || '';
+  } else {
+    elBtnDiag.hidden = true;
+    elDiagNote.textContent = '';
+  }
+
+  // Caméra de la figure
+  const cam = pf.camera || sceneActuelle.camera;
+  if (cam && Array.isArray(cam.position) && Array.isArray(cam.target)) {
+    camera.position.set(cam.position[0], cam.position[1], cam.position[2]);
+    controls.target.set(cam.target[0], cam.target[1], cam.target[2]);
+    controls.update();
+  }
+
+  // Chargement des structures de la figure uniquement
+  const structs = pf.structures || [];
+  elStatut.textContent = 'Chargement des structures… (' + structs.length + ')';
+  const resultats = await Promise.allSettled(structs.map(async (s) => {
+    const entree = manifeste.get(s.id);
+    if (!entree) throw new Error('Structure absente du manifeste : ' + s.id);
+    const groupe = await chargerGLB(entree);
+    return { s, entree, groupe };
+  }));
+  if (jeton !== jetonChargement) return; // une sélection plus récente a pris le relais
+  let n = 0;
+  for (const r of resultats) {
+    if (r.status !== 'fulfilled') { erreurs.push(String((r.reason && r.reason.message) || r.reason)); continue; }
+    const { s, entree, groupe } = r.value;
+    const mat = materiauPour(entree, s.role);
+    groupe.traverse((o) => { if (o.isMesh) { o.material = mat; o.userData.structureId = s.id; } });
+    groupe.userData.structureId = s.id;
+    racine.add(groupe);
+    affichees.set(s.id, { groupe, materiau: mat, entree, nom_fr: s.nom_fr, role: s.role });
+    n++;
+  }
+  elStatut.textContent = n + ' structure' + (n > 1 ? 's' : '') + ' chargée' + (n > 1 ? 's' : '') + ' — Fig ' + figureActuelle;
+  window.__batchE.prets = true;
+}
+
+/* ---------- Sélection d'un sujet ---------- */
+async function select(slug, fig) {
+  const def = SUJETS.find((x) => x.slug === slug);
+  if (!def) { erreurs.push('Sujet inconnu : ' + slug); return; }
+  sujetActuel = slug;
+  [...elSujets.children].forEach((b) => b.classList.toggle('actif', b.dataset.slug === slug));
+  if (!scenes.has(slug)) {
+    const rep = await fetch(def.fichier);
+    if (!rep.ok) throw new Error('Scene introuvable : ' + def.fichier);
+    scenes.set(slug, await rep.json());
+  }
+  sceneActuelle = scenes.get(slug);
+  // Chips figures
+  elFigures.innerHTML = '';
+  for (const f of sceneActuelle.figures || []) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.dataset.fig = f;
+    b.textContent = 'Fig ' + f;
+    b.addEventListener('click', () => { appliquerFigure(f); });
+    elFigures.appendChild(b);
+  }
+  const figCible = (fig != null && sceneActuelle.par_figure[String(fig)]) ? fig : sceneActuelle.figures[0];
+  await appliquerFigure(figCible);
+}
+
+/* ---------- Boucle de rendu (avec fondu des espaces) ---------- */
+const horloge = new THREE.Clock();
+function boucle() {
+  requestAnimationFrame(boucle);
+  const dt = Math.min(horloge.getDelta(), 0.1);
+  // Fondu ~400 ms : vitesse proportionnelle à l'opacité cible / initiale
+  for (let i = espacesActifs.length - 1; i >= 0; i--) {
+    const etat = espacesActifs[i];
+    const mat = etat.mesh.material;
+    const vitesse = Math.max(etat.cible, 0.35) / 0.4; // opacité par seconde
+    if (etat.cible > mat.opacity) {
+      mat.opacity = Math.min(etat.cible, mat.opacity + vitesse * dt);
+    } else if (etat.cible < mat.opacity) {
+      mat.opacity = Math.max(0, mat.opacity - vitesse * dt);
+      if (mat.opacity <= 0) {
+        threeScene.remove(etat.mesh);
+        etat.mesh.geometry.dispose();
+        mat.dispose();
+        espacesActifs.splice(i, 1);
+      }
+    }
+  }
+  controls.update();
+  renderer.render(threeScene, camera);
+}
+boucle();
+
+/* ---------- Test hooks ---------- */
+window.__batchE = {
+  erreurs,
+  prets: false,
+  select,
+  basculeEspace,
+  etat() {
+    return { sujet: sujetActuel, figure: figureActuelle, chargees: affichees.size, erreurs };
+  },
+};
+
+/* ---------- Démarrage ---------- */
+(async () => {
+  try {
+    const rep = await fetch('manifest-e.json');
+    if (!rep.ok) throw new Error('manifest-e.json introuvable');
+    const liste = await rep.json();
+    for (const e of liste) manifeste.set(e.id, e);
+    // Pré-charge les scènes pour libeller les boutons sujets avec titre_fr
+    await Promise.all(SUJETS.map(async (def) => {
+      const r = await fetch(def.fichier);
+      if (r.ok) scenes.set(def.slug, await r.json());
+    }));
+    for (const def of SUJETS) {
+      const sc = scenes.get(def.slug);
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.dataset.slug = def.slug;
+      b.textContent = sc ? sc.titre_fr : def.slug;
+      b.addEventListener('click', () => { select(def.slug); });
+      elSujets.appendChild(b);
+    }
+    await select(SUJETS[0].slug);
+  } catch (err) {
+    erreurs.push(String((err && err.message) || err));
+    elStatut.textContent = 'Erreur de chargement : ' + String((err && err.message) || err);
+    window.__batchE.prets = false;
+  }
+})();
+</script>
+</body>
+</html>

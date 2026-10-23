@@ -1,0 +1,719 @@
+{
+ "sujet": "loge-renale",
+ "titre_fr": "La loge rénale",
+ "partie": "IV",
+ "numero_sujet": 30,
+ "classe": "3D+D",
+ "figures": [
+  85,
+  86,
+  87,
+  88,
+  89
+ ],
+ "structures": [
+  {
+   "id": "abdominal_aorta",
+   "nom_fr": "Aorte abdominale",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "inferior_suprarenal_artery_right",
+   "nom_fr": "Artère surrénale inférieure",
+   "role": "sujet",
+   "figures": [
+    85,
+    86,
+    87,
+    88
+   ]
+  },
+  {
+   "id": "inferior_suprarenal_artery_left",
+   "nom_fr": "Artère surrénale inférieure",
+   "role": "sujet",
+   "figures": [
+    86,
+    88
+   ]
+  },
+  {
+   "id": "renal_pelvis_right",
+   "nom_fr": "Bassinet/ pelvis rénal",
+   "role": "sujet",
+   "figures": [
+    87
+   ]
+  },
+  {
+   "id": "anterior_branch_of_renal_artery_right",
+   "nom_fr": "Branche antérieure de l'artère rénale",
+   "role": "sujet",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "anterior_branch_of_renal_artery_left",
+   "nom_fr": "Branche antérieure de l'artère rénale",
+   "role": "sujet",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "posterior_branch_of_renal_artery_right",
+   "nom_fr": "Branche postérieure de l'artère rénale",
+   "role": "sujet",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "posterior_branch_of_renal_artery_left",
+   "nom_fr": "Branche postérieure de l'artère rénale",
+   "role": "sujet",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "ascending_colon",
+   "nom_fr": "Côlon ascendant",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "descending_colon",
+   "nom_fr": "Côlon descendant",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "transverse_colon",
+   "nom_fr": "Côlon transverse",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "diaphragm",
+   "nom_fr": "Diaphragme",
+   "role": "sujet",
+   "figures": [
+    85
+   ]
+  },
+  {
+   "id": "duodenum",
+   "nom_fr": "Duodénum",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "suprarenal_gland_right",
+   "nom_fr": "Glande surrénale",
+   "role": "sujet",
+   "figures": [
+    85,
+    86,
+    88
+   ]
+  },
+  {
+   "id": "suprarenal_gland_left",
+   "nom_fr": "Glande surrénale",
+   "role": "sujet",
+   "figures": [
+    86,
+    88
+   ]
+  },
+  {
+   "id": "psoas_major_right",
+   "nom_fr": "Grand psoas",
+   "role": "sujet",
+   "figures": [
+    85,
+    89
+   ]
+  },
+  {
+   "id": "psoas_major_left",
+   "nom_fr": "Grand psoas",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "transversus_abdominis_muscle_right",
+   "nom_fr": "Muscle transverse de l'abdomen",
+   "role": "sujet",
+   "figures": [
+    85
+   ]
+  },
+  {
+   "id": "pancreas",
+   "nom_fr": "Pancréas",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "kidney_right",
+   "nom_fr": "Rein droit",
+   "role": "sujet",
+   "figures": [
+    85,
+    86,
+    87,
+    88,
+    89
+   ]
+  },
+  {
+   "id": "kidney_left",
+   "nom_fr": "Rein gauche",
+   "role": "sujet",
+   "figures": [
+    86,
+    88,
+    89
+   ]
+  },
+  {
+   "id": "ureter_right",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    86,
+    87
+   ]
+  },
+  {
+   "id": "ureter_left",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    86
+   ]
+  },
+  {
+   "id": "inferior_vena_cava_abdominal_part",
+   "nom_fr": "Veine cave inférieure (partie abdominale)",
+   "role": "sujet",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "left_renal_vein",
+   "nom_fr": "Veine rénale gauche",
+   "role": "sujet",
+   "figures": [
+    86,
+    88
+   ]
+  },
+  {
+   "id": "inferior_phrenic_artery",
+   "nom_fr": "Artère phrénique inférieure",
+   "role": "contexte",
+   "figures": [
+    88
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "contexte",
+   "figures": [
+    85
+   ]
+  },
+  {
+   "id": "spleen",
+   "nom_fr": "Rate",
+   "role": "contexte",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "anterior_medial_segment_of_liver_v",
+   "nom_fr": "Segment antéromédial droit du foie (V)",
+   "role": "contexte",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "vertebra_l2",
+   "nom_fr": "Vertèbre L2",
+   "role": "contexte",
+   "figures": [
+    89
+   ]
+  },
+  {
+   "id": "pleura",
+   "nom_fr": "Plèvre",
+   "role": "ghost",
+   "figures": [
+    85
+   ]
+  }
+ ],
+ "camera": {
+  "vue": "posterieure",
+  "position": [
+   -419.9,
+   1027.9,
+   -531.7
+  ],
+  "target": [
+   -68.0,
+   951.2,
+   108.2
+  ],
+  "cadrage": "postéro-latérale resserrée sur la loge"
+ },
+ "par_figure": {
+  "85": {
+   "titre_fr": "Parois de la loge rénale",
+   "classe": "3D",
+   "vue": "posterieure",
+   "camera": {
+    "vue": "posterieure",
+    "position": [
+     -419.9,
+     1027.9,
+     -531.7
+    ],
+    "target": [
+     -68.0,
+     951.2,
+     108.2
+    ],
+    "cadrage": "postéro-latérale resserrée sur la loge"
+   },
+   "structures": [
+    {
+     "id": "kidney_right",
+     "nom_fr": "Rein droit",
+     "role": "sujet"
+    },
+    {
+     "id": "suprarenal_gland_right",
+     "nom_fr": "Glande surrénale",
+     "role": "sujet"
+    },
+    {
+     "id": "diaphragm",
+     "nom_fr": "Diaphragme",
+     "role": "sujet"
+    },
+    {
+     "id": "psoas_major_right",
+     "nom_fr": "Grand psoas",
+     "role": "sujet"
+    },
+    {
+     "id": "transversus_abdominis_muscle_right",
+     "nom_fr": "Muscle transverse de l'abdomen",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_suprarenal_artery_right",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "hip_bone_right",
+     "nom_fr": "Os coxal",
+     "role": "contexte"
+    },
+    {
+     "id": "pleura",
+     "nom_fr": "Plèvre",
+     "role": "ghost"
+    }
+   ],
+   "manquants": [
+    "Fascia rénal (de Gerota) : ABSENT du manifeste — la paroi propre de la loge n'a pas de maillage",
+    "Muscle carré des lombes (quadratus lumborum, paroi postérieure) : ABSENT ; péritoine : ABSENT"
+   ],
+   "espace": "Fascia rénal (de Gerota) — loge rénale"
+  },
+  "86": {
+   "titre_fr": "Configuration extérieure du rein",
+   "classe": "3D",
+   "vue": "anterieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     1.4,
+     1032.2,
+     695.0
+    ],
+    "target": [
+     1.4,
+     972.6,
+     98.8
+    ]
+   },
+   "structures": [
+    {
+     "id": "kidney_right",
+     "nom_fr": "Rein droit",
+     "role": "sujet"
+    },
+    {
+     "id": "kidney_left",
+     "nom_fr": "Rein gauche",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_right",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_left",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_suprarenal_artery_right",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_suprarenal_artery_left",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "left_renal_vein",
+     "nom_fr": "Veine rénale gauche",
+     "role": "sujet"
+    },
+    {
+     "id": "suprarenal_gland_right",
+     "nom_fr": "Glande surrénale",
+     "role": "sujet"
+    },
+    {
+     "id": "suprarenal_gland_left",
+     "nom_fr": "Glande surrénale",
+     "role": "sujet"
+    },
+    {
+     "id": "abdominal_aorta",
+     "nom_fr": "Aorte abdominale",
+     "role": "contexte"
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "role": "contexte"
+    }
+   ],
+   "manquants": []
+  },
+  "87": {
+   "titre_fr": "Configuration intérieure du rein",
+   "classe": "3D+D",
+   "vue": "anterieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -48.8,
+     997.4,
+     598.2
+    ],
+    "target": [
+     -48.8,
+     946.8,
+     92.0
+    ]
+   },
+   "structures": [
+    {
+     "id": "kidney_right",
+     "nom_fr": "Rein droit",
+     "role": "sujet"
+    },
+    {
+     "id": "renal_pelvis_right",
+     "nom_fr": "Bassinet/ pelvis rénal",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_right",
+     "nom_fr": "Uretère",
+     "role": "contexte"
+    },
+    {
+     "id": "inferior_suprarenal_artery_right",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Cortex rénal : ABSENT ; médulla / pyramides de Malpighi : ABSENTES ; papilles rénales : ABSENTES ; calices mineurs et majeurs : ABSENTS",
+    "Seul le bassinet (renal_pelvis) existe comme structure interne → la configuration intérieure de la figure est un schéma de coupe en regard du rein 3D"
+   ],
+   "diagramme": {
+    "fichier": "diagramme-rein-coupe.svg",
+    "titre_fr": "Schéma — coupe frontale du rein (configuration intérieure)",
+    "note": "Cortex, médulla (pyramides), papilles et calices n'ont aucun maillage : seul le bassinet est modélisé en 3D. Ce schéma interactif montre la configuration intérieure en regard du rein 3D."
+   }
+  },
+  "88": {
+   "titre_fr": "Vascularisation artérielle et veineuse des reins et surrénales",
+   "classe": "3D",
+   "vue": "anterieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     1.4,
+     1121.1,
+     530.0
+    ],
+    "target": [
+     1.4,
+     1079.8,
+     116.0
+    ]
+   },
+   "structures": [
+    {
+     "id": "inferior_suprarenal_artery_right",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_suprarenal_artery_left",
+     "nom_fr": "Artère surrénale inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "left_renal_vein",
+     "nom_fr": "Veine rénale gauche",
+     "role": "sujet"
+    },
+    {
+     "id": "anterior_branch_of_renal_artery_right",
+     "nom_fr": "Branche antérieure de l'artère rénale",
+     "role": "sujet"
+    },
+    {
+     "id": "anterior_branch_of_renal_artery_left",
+     "nom_fr": "Branche antérieure de l'artère rénale",
+     "role": "sujet"
+    },
+    {
+     "id": "posterior_branch_of_renal_artery_right",
+     "nom_fr": "Branche postérieure de l'artère rénale",
+     "role": "sujet"
+    },
+    {
+     "id": "posterior_branch_of_renal_artery_left",
+     "nom_fr": "Branche postérieure de l'artère rénale",
+     "role": "sujet"
+    },
+    {
+     "id": "suprarenal_gland_right",
+     "nom_fr": "Glande surrénale",
+     "role": "sujet"
+    },
+    {
+     "id": "suprarenal_gland_left",
+     "nom_fr": "Glande surrénale",
+     "role": "sujet"
+    },
+    {
+     "id": "kidney_right",
+     "nom_fr": "Rein droit",
+     "role": "sujet"
+    },
+    {
+     "id": "kidney_left",
+     "nom_fr": "Rein gauche",
+     "role": "sujet"
+    },
+    {
+     "id": "abdominal_aorta",
+     "nom_fr": "Aorte abdominale",
+     "role": "contexte"
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "role": "contexte"
+    },
+    {
+     "id": "inferior_phrenic_artery",
+     "nom_fr": "Artère phrénique inférieure",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Artères surrénales SUPÉRIEURE et MOYENNE : ABSENTES (seule l'artère surrénale inférieure, issue de la rénale, existe)",
+    "Veines surrénales : non individualisées"
+   ]
+  },
+  "89": {
+   "titre_fr": "Rapports des reins (coupe transversale à travers L2)",
+   "classe": "3D",
+   "vue": "superieure",
+   "camera": {
+    "vue": "superieure",
+    "position": [
+     -0.0,
+     1640.6,
+     385.3
+    ],
+    "target": [
+     -0.0,
+     925.1,
+     113.3
+    ]
+   },
+   "structures": [
+    {
+     "id": "kidney_right",
+     "nom_fr": "Rein droit",
+     "role": "sujet"
+    },
+    {
+     "id": "kidney_left",
+     "nom_fr": "Rein gauche",
+     "role": "sujet"
+    },
+    {
+     "id": "duodenum",
+     "nom_fr": "Duodénum",
+     "role": "sujet"
+    },
+    {
+     "id": "pancreas",
+     "nom_fr": "Pancréas",
+     "role": "sujet"
+    },
+    {
+     "id": "transverse_colon",
+     "nom_fr": "Côlon transverse",
+     "role": "sujet"
+    },
+    {
+     "id": "ascending_colon",
+     "nom_fr": "Côlon ascendant",
+     "role": "sujet"
+    },
+    {
+     "id": "descending_colon",
+     "nom_fr": "Côlon descendant",
+     "role": "sujet"
+    },
+    {
+     "id": "psoas_major_right",
+     "nom_fr": "Grand psoas",
+     "role": "sujet"
+    },
+    {
+     "id": "psoas_major_left",
+     "nom_fr": "Grand psoas",
+     "role": "sujet"
+    },
+    {
+     "id": "abdominal_aorta",
+     "nom_fr": "Aorte abdominale",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "role": "sujet"
+    },
+    {
+     "id": "anterior_medial_segment_of_liver_v",
+     "nom_fr": "Segment antéromédial droit du foie (V)",
+     "role": "contexte"
+    },
+    {
+     "id": "spleen",
+     "nom_fr": "Rate",
+     "role": "contexte"
+    },
+    {
+     "id": "vertebra_l2",
+     "nom_fr": "Vertèbre L2",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Muscle carré des lombes : ABSENT (voir Fig 85) ; péritoine : ABSENT"
+   ]
+  }
+ },
+ "diagrammes": [
+  {
+   "fichier": "diagramme-rein-coupe.svg",
+   "titre_fr": "Schéma — coupe frontale du rein (configuration intérieure)",
+   "note": "Cortex, médulla (pyramides), papilles et calices n'ont aucun maillage : seul le bassinet est modélisé en 3D. Ce schéma interactif montre la configuration intérieure en regard du rein 3D.",
+   "figure": 87
+  }
+ ],
+ "espaces": [
+  {
+   "nom_fr": "Fascia rénal (de Gerota) — loge rénale",
+   "type": "fascia",
+   "figure": 85,
+   "bornes": [
+    "kidney_right",
+    "suprarenal_gland_right"
+   ],
+   "couleur": "#e9c46a",
+   "opacite": 0.5,
+   "volume": {
+    "forme": "ellipsoide",
+    "centre": [
+     -59.0,
+     1031.2,
+     88.3
+    ],
+    "rayons": [
+     37.7,
+     80.0,
+     31.8
+    ]
+   },
+   "note": "Le fascia de Gerota n'a aucun maillage dans le manifeste : volume schématique de la loge, délimité par le rein et la surrénale qu'il enveloppe (feuillets antérieur et postérieur fusionnés derrière le rein)."
+  }
+ ],
+ "manquants": [
+  "Fascia rénal (de Gerota) : ABSENT du manifeste — la paroi propre de la loge n'a pas de maillage",
+  "Muscle carré des lombes (quadratus lumborum, paroi postérieure) : ABSENT ; péritoine : ABSENT",
+  "Cortex rénal : ABSENT ; médulla / pyramides de Malpighi : ABSENTES ; papilles rénales : ABSENTES ; calices mineurs et majeurs : ABSENTS",
+  "Seul le bassinet (renal_pelvis) existe comme structure interne → la configuration intérieure de la figure est un schéma de coupe en regard du rein 3D",
+  "Artères surrénales SUPÉRIEURE et MOYENNE : ABSENTES (seule l'artère surrénale inférieure, issue de la rénale, existe)",
+  "Veines surrénales : non individualisées",
+  "Muscle carré des lombes : ABSENT (voir Fig 85) ; péritoine : ABSENT"
+ ],
+ "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
+}

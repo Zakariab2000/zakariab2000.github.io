@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Constitution du système porte — schéma interactif — Schéma interactif (Batch D)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Georgia, 'Times New Roman', serif;
+         background:#101418; color:#eef2f5; }
+  header { padding:14px 16px 6px; }
+  h1 { font-size:19px; margin:0 0 4px; font-weight:600; }
+  .sous { color:#9fb2c1; font-size:13px; font-style:italic; }
+  #legende { display:flex; flex-wrap:wrap; gap:6px; padding:8px 16px; }
+  .chip { font-size:12px; padding:3px 9px; border-radius:20px;
+          border:1px solid #3a4652; }
+  .chip i { display:inline-block; width:9px; height:9px; border-radius:50%;
+             margin-right:5px; }
+  #wrap { padding:4px 8px; }
+  svg { width:100%; height:auto; display:block; }
+  .edge { fill:none; stroke:#5d6d7e; stroke-width:2; opacity:.55; }
+  .edge.sec { stroke-dasharray:5 5; opacity:.4; }
+  .edge.on { stroke:#ffd166; stroke-width:3.5; opacity:1; }
+  .nd { cursor:pointer; }
+  .nd rect, .nd circle { stroke-width:1.6; }
+  .nd text { fill:#10151a; font-family: Georgia, serif; pointer-events:none; }
+  .nd .lb { font-size:14.5px; font-weight:700; }
+  .nd .sb { font-size:11px; font-style:italic; fill:#26313b; }
+  svg.dim .nd { opacity:.28; } svg.dim .edge { opacity:.12; }
+  svg.dim .nd.on, svg.dim .nd.linked { opacity:1; }
+  #fiche { margin:10px 12px 20px; padding:13px 15px; background:#182029;
+            border:1px solid #2c3947; border-radius:10px; min-height:86px; }
+  #fiche h2 { margin:0 0 2px; font-size:17px; }
+  #fiche .sub { color:#9fb2c1; font-style:italic; font-size:13px;
+                 margin-bottom:6px; }
+  #fiche p { margin:0; font-size:14.5px; line-height:1.5; }
+  #fiche .note3d { margin-top:8px; font-size:12.5px; color:#ffd166; }
+  #fiche .vide { color:#9fb2c1; font-style:italic; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Constitution du système porte — schéma interactif</h1>
+  <div class="sous">Figures 75 et 112 — Constitution du système porte — toucher un élément pour le surligner et lire sa fiche.</div>
+</header>
+<div id="legende"></div>
+<div id="wrap"><svg id="svg" viewBox="0 0 720 920" role="img"></svg></div>
+<section id="fiche"><p class="vide">Aucun élément sélectionné.</p></section>
+<script>
+const D = {"titre_fr": "Constitution du système porte — schéma interactif", "titre_en": "Formation of the portal venous system — interactive diagram", "w": 720, "h": 920, "levels": {"racine": {"c": "#4fc3f7", "fr": "Racines (affluents constitutifs)", "en": "Roots (forming tributaries)"}, "tronc": {"c": "#5b8dd9", "fr": "Confluent et tronc porte", "en": "Confluence and portal trunk"}, "affluent": {"c": "#9db1cc", "fr": "Affluents accessoires", "en": "Accessory tributaries"}, "branche": {"c": "#58d68d", "fr": "Branches de division", "en": "Dividing branches"}, "anastomose": {"c": "#e57373", "fr": "Anastomoses porto-caves", "en": "Portacaval anastomoses"}, "cave": {"c": "#b388ff", "fr": "Système cave", "en": "Caval system"}}, "nodes": [{"id": "vms", "x": 105, "y": 140, "w": 180, "label": "V. mésentérique", "sub": "supérieure", "label_en": "Superior mesenteric", "sub_en": "vein", "lvl": "racine", "desc": {"fr": "Veine mésentérique supérieure — racine verticale du système porte ; elle draine le territoire mésentérique supérieur (intestin grêle, côlon droit, bloc duodéno-pancréatique) et conflue derrière l'isthme du pancréas avec le tronc spléno-mésaraïque pour former la veine porte (cours Q39). Présente en 3D.", "en": "Superior mesenteric vein — vertical root of the portal system; it drains the superior mesenteric territory (small intestine, right colon, duodenopancreatic block) and joins the splenomesenteric trunk behind the isthmus of the pancreas to form the portal vein (course Q39). Present in 3D."}}, {"id": "vsplen", "x": 105, "y": 340, "w": 180, "label": "Veine splénique", "sub": "racine du tronc spléno-mésaraïque", "label_en": "Splenic vein", "sub_en": "root of the splenomesenteric trunk", "lvl": "racine", "desc": {"fr": "Veine splénique — se constitue au hile de la rate, satellite de l'artère splénique et au-dessous d'elle, chemine transversalement vers la droite derrière le pancréas ; elle reçoit les veines gastriques courtes, la veine gastro-épiploïque gauche et les petites veines pancréatiques (cours Q28), puis s'unit à la veine mésentérique inférieure pour former le tronc spléno-mésaraïque. Présente en 3D.", "en": "Splenic vein — formed at the hilum of the spleen, companion of the splenic artery and below it, runs transversely to the right behind the pancreas; it receives the short gastric veins, the left gastro-epiploic vein and small pancreatic veins (course Q28), then joins the inferior mesenteric vein to form the splenomesenteric trunk. Present in 3D."}}, {"id": "vmi", "x": 105, "y": 520, "w": 180, "label": "V. mésentérique", "sub": "inférieure", "label_en": "Inferior mesenteric", "sub_en": "vein", "lvl": "racine", "desc": {"fr": "Veine mésentérique inférieure — draine le côlon gauche et la veine rectale supérieure ; elle se termine en s'unissant à la veine splénique pour former le tronc spléno-mésaraïque, qui constitue la veine porte avec la veine mésentérique supérieure (cours Q39). Présente en 3D.", "en": "Inferior mesenteric vein — drains the left colon and the superior rectal vein; it ends by joining the splenic vein to form the splenomesenteric trunk, which forms the portal vein together with the superior mesenteric vein (course Q39). Present in 3D."}}, {"id": "tsm", "x": 300, "y": 430, "w": 180, "label": "Tronc", "sub": "spléno-mésaraïque", "label_en": "Splenomesenteric", "sub_en": "trunk", "lvl": "tronc", "desc": {"fr": "Tronc spléno-mésaraïque — tronc veineux horizontal constitué par la réunion de la veine splénique et de la veine mésentérique inférieure, derrière le pancréas ; avec la veine mésentérique supérieure (verticale), il constitue la veine porte à la face postérieure de l'isthme pancréatique (cours Q39). Pas de maillage distinct en 3D : la confluence se lit sur les maillages des 3 veines racines.", "en": "Splenomesenteric trunk — horizontal venous trunk formed by the union of the splenic vein and the inferior mesenteric vein, behind the pancreas; together with the (vertical) superior mesenteric vein it forms the portal vein at the posterior face of the pancreatic isthmus (course Q39). No distinct 3D mesh: the confluence is read on the meshes of the 3 root veins."}}, {"id": "confluent", "x": 300, "y": 170, "w": 190, "label": "Confluent porte", "sub": "face post. de l'isthme pancréatique", "label_en": "Portal confluence", "sub_en": "behind the pancreatic isthmus", "lvl": "tronc", "desc": {"fr": "Confluent porte — la veine porte se constitue à la face postérieure de l'isthme (col) du pancréas, par la confluence de 2 troncs veineux volumineux : la veine mésentérique supérieure et le tronc spléno-mésaraïque (cours Q39). En arrière, par l'intermédiaire du fascia de Treitz : la veine cave inférieure à droite et l'artère mésentérique supérieure à gauche.", "en": "Portal confluence — the portal vein is formed at the posterior face of the isthmus (neck) of the pancreas, by the confluence of 2 large venous trunks: the superior mesenteric vein and the splenomesenteric trunk (course Q39). Behind, through Treitz's fascia: the inferior vena cava on the right and the superior mesenteric artery on the left."}}, {"id": "porte", "x": 490, "y": 300, "w": 170, "label": "Tronc porte", "sub": "pédicule hépatique", "label_en": "Portal trunk", "sub_en": "hepatic pedicle", "lvl": "tronc", "desc": {"fr": "Tronc de la veine porte — veine volumineuse qui amène au foie le sang veineux de la partie sous-diaphragmatique du tube digestif, du pancréas et de la rate ; elle s'interpose entre 2 systèmes capillaires (viscéral puis intra-hépatique, drainé par les veines sus-hépatiques). Elle monte obliquement en haut et à droite, croise la face antérieure de la VCI, puis devient l'élément le plus postérieur du pédicule hépatique, dans le bord libre du petit épiploon (en avant et à gauche : l'artère hépatique propre ; en avant et à droite : la voie biliaire), jusqu'au hile (cours Q39 et Q27). Présent en 3D.", "en": "Portal vein trunk — a large vein carrying to the liver the venous blood of the subdiaphragmatic digestive tract, the pancreas and the spleen; it is interposed between 2 capillary systems (visceral, then intrahepatic, drained by the hepatic veins). It ascends obliquely upwards and to the right, crosses the anterior face of the IVC, then becomes the most posterior element of the hepatic pedicle, in the free border of the lesser omentum (antero-left: proper hepatic artery; antero-right: bile duct), up to the hilum (course Q39 and Q27). Present in 3D."}}, {"id": "br_d", "x": 640, "y": 180, "w": 150, "label": "Branche droite", "sub": "division hilaire", "label_en": "Right branch", "sub_en": "hilar division", "lvl": "branche", "desc": {"fr": "Branche droite de la veine porte — terminaison au niveau du hile : plus volumineuse et plus courte que la gauche, elle se distribue dans le foie (lobe) droit. Les 2 branches forment un angle obtus ; chacune se distribue dans le foie suivant une systématisation segmentaire, accompagnée d'un rameau de l'artère hépatique et d'un conduit biliaire (cours Q39) — voir le schéma Couinaud (fig. 73).", "en": "Right branch of the portal vein — termination at the hilum: larger and shorter than the left, it distributes to the (lobe of the) right liver. The 2 branches form an obtuse angle; each distributes within the liver in a segmental pattern, accompanied by a branch of the hepatic artery and a bile duct (course Q39) — see the Couinaud diagram (fig. 73)."}}, {"id": "br_g", "x": 640, "y": 430, "w": 150, "label": "Branche gauche", "sub": "division hilaire", "label_en": "Left branch", "sub_en": "hilar division", "lvl": "branche", "desc": {"fr": "Branche gauche de la veine porte — terminaison au niveau du hile : elle se distribue dans le foie (lobe) gauche. Les 2 territoires portes ne communiquent pas : ils sont séparés par la scissure principale (cours Q39).", "en": "Left branch of the portal vein — termination at the hilum: it distributes to the (lobe of the) left liver. The 2 portal territories do not communicate: they are separated by the main scissura (course Q39)."}}, {"id": "vgast_g", "x": 105, "y": 700, "w": 180, "label": "V. gastrique gauche", "sub": "coronaire stomachique", "label_en": "Left gastric vein", "sub_en": "coronary vein", "lvl": "affluent", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Veine gastrique gauche (coronaire stomachique) — reçue par le tronc porte au cours de son trajet dans le pédicule hépatique (cours Q27 et Q39). C'est la voie de l'anastomose porto-cave œsophagienne. Absente du manifeste (audit fig. 75) : schéma seul.", "en": "Left gastric vein (coronary vein) — received by the portal trunk during its course in the hepatic pedicle (course Q27 and Q39). It is the route of the oesophageal portacaval anastomosis. Absent from the manifest (audit fig. 75): diagram only."}}, {"id": "vgast_d", "x": 300, "y": 640, "w": 170, "label": "V. gastrique droite", "sub": "pylorique", "label_en": "Right gastric vein", "sub_en": "pyloric vein", "lvl": "affluent", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Veine gastrique droite (veine pylorique) — affluent reçu par le tronc porte au cours de son trajet (cours Q27 : veine pylorique ; Q39 : veine gastrique droite). Absente du manifeste (audit fig. 75) : schéma seul.", "en": "Right gastric vein (pyloric vein) — tributary received by the portal trunk during its course (course Q27: pyloric vein; Q39: right gastric vein). Absent from the manifest (audit fig. 75): diagram only."}}, {"id": "vpanc", "x": 105, "y": 860, "w": 190, "label": "V. pancréatico-duodénale", "sub": "supérieure droite", "label_en": "Superior pancreaticoduodenal", "sub_en": "vein (right)", "lvl": "affluent", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Veine pancréatico-duodénale supérieure droite — affluent reçu par le tronc porte au cours de son trajet, citée par le cours dans le pédicule hépatique (Q27) et dans la veine porte (Q39). Pas de maillage dédié : schéma seul.", "en": "Right superior pancreaticoduodenal vein — tributary received by the portal trunk during its course, named by the course in the hepatic pedicle (Q27) and the portal vein (Q39). No dedicated mesh: diagram only."}}, {"id": "vcyst", "x": 300, "y": 800, "w": 160, "label": "Veines cystiques", "sub": "vers la branche droite", "label_en": "Cystic veins", "sub_en": "towards the right branch", "lvl": "affluent", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Veines cystiques — affluents accessoires du système porte ; le cours précise, dans le pédicule hépatique (Q27), qu'elles se jettent dans la branche droite de la veine porte (l'arête pointe donc le tronc, la destination exacte étant la branche droite). Absentes du manifeste (audit fig. 75) : schéma seul.", "en": "Cystic veins — accessory tributaries of the portal system; the course states, in the hepatic pedicle (Q27), that they open into the right branch of the portal vein (the edge therefore points to the trunk, the exact destination being the right branch). Absent from the manifest (audit fig. 75): diagram only."}}, {"id": "anast_oeso", "x": 490, "y": 640, "w": 180, "label": "Anastomose porto-cave", "sub": "œsophagienne", "label_en": "Portacaval anastomosis", "sub_en": "oesophageal", "lvl": "anastomose", "desc": {"fr": "Anastomose porto-cave œsophagienne — au niveau de la région oeso-cardio-tubérositaire, le retour veineux gastrique (veine gastrique gauche) peut rejoindre le système cave au lieu de la veine porte : c'est la zone d'anastomose porto-cave du cours (Q24, estomac). En hypertension portale, elle donne des varices œsophagiennes qui peuvent se rompre et être source d'hémorragie digestive.", "en": "Oesophageal portacaval anastomosis — in the oeso-cardio-tuberosity region, gastric venous return (left gastric vein) can reach the caval system instead of the portal vein: this is the portacaval anastomosis zone of the course (Q24, stomach). In portal hypertension it produces oesophageal varices, which may rupture and cause digestive haemorrhage."}}, {"id": "anast_rect", "x": 490, "y": 800, "w": 180, "label": "Anastomose porto-cave", "sub": "rectale", "label_en": "Portacaval anastomosis", "sub_en": "rectal", "lvl": "anastomose", "desc": {"fr": "Anastomose porto-cave rectale — la veine rectale supérieure se jette dans la veine porte par la veine mésentérique inférieure, tandis que les veines rectales moyennes et inférieures se drainent dans la VCI par les veines hypogastriques : les veines rectales réalisent ainsi une très importante anastomose porto-cave, expliquant la formation des hémorroïdes en cas d'obstacle portal (cours Q32, rectum).", "en": "Rectal portacaval anastomosis — the superior rectal vein opens into the portal vein via the inferior mesenteric vein, while the middle and inferior rectal veins drain into the IVC via the hypogastric veins: the rectal veins thus form a very important portacaval anastomosis, explaining haemorrhoid formation in portal obstruction (course Q32, rectum)."}}, {"id": "vci", "x": 640, "y": 720, "w": 150, "label": "Veine cave", "sub": "inférieure", "label_en": "Inferior vena", "sub_en": "cava", "lvl": "cave", "desc": {"fr": "Veine cave inférieure — système cave, destination des anastomoses porto-caves (dérivations porto-caves du cours Q39). La veine porte elle-même ne s'y jette pas : elle se termine dans le foie, et le sang hépatique la rejoint par les veines sus-hépatiques. Présente en 3D (dans les rapports des figs. 74, 79, 84 et 113).", "en": "Inferior vena cava — the caval system, destination of the portacaval anastomoses (the portacaval shunts of course Q39). The portal vein itself does not open into it: it ends in the liver, and hepatic blood reaches it through the hepatic veins. Present in 3D (in the relations of figs. 74, 79, 84 and 113)."}}], "edges": [["vms", "confluent"], ["vsplen", "tsm"], ["vmi", "tsm"], ["tsm", "confluent"], ["confluent", "porte"], ["porte", "br_d"], ["porte", "br_g"], ["vgast_g", "porte", 1], ["vgast_d", "porte", 1], ["vpanc", "porte", 1], ["vcyst", "porte", 1], ["vgast_g", "anast_oeso", 1], ["vmi", "anast_rect", 1], ["anast_oeso", "vci", 1], ["anast_rect", "vci", 1]]};
+const svg = document.getElementById('svg');
+const NS = 'http://www.w3.org/2000/svg';
+const nodes = {}; D.nodes.forEach(n => nodes[n.id] = n);
+const HW = n => n.r ? n.r : (n.w || 120) / 2;
+const HH = n => n.r ? n.r : 27;
+document.getElementById('legende').innerHTML =
+  Object.values(D.levels).map(l =>
+    `<span class="chip"><i style="background:${l.c}"></i>${l.fr}</span>`).join('');
+function el(tag, attrs) { const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]); return e; }
+D.edges.forEach(e => {
+  const [a, b, sec] = e, A = nodes[a], B = nodes[b];
+  const x1 = A.x + HW(A), y1 = A.y, x2 = B.x - HW(B), y2 = B.y;
+  const dx = Math.max(24, Math.abs(x2 - x1) / 2);
+  const p = el('path', { d: `M${x1},${y1} C${x1+dx},${y1} ${x2-dx},${y2} ${x2},${y2}`,
+    class: 'edge' + (sec ? ' sec' : ''), 'data-a': a, 'data-b': b });
+  svg.appendChild(p);
+});
+D.nodes.forEach(n => {
+  const g = el('g', { class: 'nd', 'data-id': n.id });
+  const col = (D.levels[n.lvl] || {}).c || '#ccc';
+  if (n.r) {
+    g.appendChild(el('circle', { cx: n.x, cy: n.y, r: n.r + 5, fill: col, stroke: '#0c1013' }));
+    const t = el('text', { x: n.x, y: n.y + n.r + 22, 'text-anchor': 'middle', class: 'lb' });
+    t.setAttribute('fill', '#eef2f5'); t.textContent = n.label; g.appendChild(t);
+  } else {
+    g.appendChild(el('rect', { x: n.x - HW(n), y: n.y - HH(n), width: n.w || 120,
+      height: HH(n) * 2, rx: 9, fill: col, stroke: '#0c1013' }));
+    const t = el('text', { x: n.x, y: n.y - (n.sub ? 2 : -5), 'text-anchor': 'middle', class: 'lb' });
+    t.textContent = n.label; g.appendChild(t);
+    if (n.sub) { const s = el('text', { x: n.x, y: n.y + 15, 'text-anchor': 'middle', class: 'sb' });
+      s.textContent = n.sub; g.appendChild(s); }
+  }
+  g.addEventListener('click', () => select(n.id));
+  svg.appendChild(g);
+});
+function select(id) {
+  const f = document.getElementById('fiche'), n = nodes[id];
+  const linked = new Set([id]);
+  document.querySelectorAll('.edge').forEach(p => {
+    const on = p.dataset.a === id || p.dataset.b === id;
+    p.classList.toggle('on', on);
+    if (on) { linked.add(p.dataset.a); linked.add(p.dataset.b); }
+  });
+  document.querySelectorAll('.nd').forEach(g => {
+    g.classList.toggle('on', g.dataset.id === id);
+    g.classList.toggle('linked', linked.has(g.dataset.id) && g.dataset.id !== id);
+  });
+  svg.classList.add('dim');
+  f.innerHTML = `<h2>${n.label}</h2>` +
+    (n.sub ? `<div class="sub">${n.sub}</div>` : '') +
+    `<p>${(n.desc && n.desc.fr) || ''}</p>` +
+    (n.note ? `<div class="note3d">⚠ ${n.note}</div>` : '');
+}
+window.__diagramReady = true;
+</script>
+<a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

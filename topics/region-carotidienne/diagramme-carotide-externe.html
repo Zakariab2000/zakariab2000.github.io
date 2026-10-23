@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schéma — Collatérales de la carotide externe</title>
+<style>
+  :root{ --bg:#101014; --panel:#1b1b22; --txt:#f2efe9; --mut:#9a97a3; --acc:#c9a227; }
+  *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body{ margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; }
+  header{ padding:14px 14px 4px; }
+  h1{ font-size:16px; margin:0; } .sub{ font-size:11.5px; color:var(--mut); margin-top:2px; line-height:1.4; }
+  svg{ display:block; width:100%; height:auto; }
+  .zone{ cursor:pointer; }
+  .zone .hit{ fill:transparent; }
+  .zone.sel .main{ stroke:var(--acc) !important; stroke-width:5.5 !important; }
+  text{ fill:var(--txt); font-size:10.5px; } .lbl{ font-size:10px; fill:#cfccc4; }
+  #fiche{ margin:6px 12px 18px; background:var(--panel); border:1px solid #33333f; border-radius:12px; padding:12px 14px; }
+  #fiche h2{ font-size:15px; margin:0 0 3px; }
+  #fiche .badge{ display:inline-block; font-size:10.5px; padding:2px 8px; border-radius:999px; margin-bottom:6px; }
+  .b-schema{ background:#4a2f35; color:#f0b7bd; } .b-3d{ background:#2f4a35; color:#b7f0c2; }
+  #fiche p{ font-size:13px; line-height:1.5; margin:0; }
+  .hint{ font-size:11px; color:var(--mut); padding:0 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Collatérales de la carotide externe</h1>
+  <div class="sub">Schéma interactif — Fig 108 (système carotidien), côté droit, vue antéro-latérale. Sur 8 collatérales classiques, <b>4 sont présentes en 3D</b> (faciale, pharyngienne ascendante + les 2 terminales) et <b>4 sont absentes des maillages</b> (pointillés). Touchez une branche.</div>
+</header>
+<p class="hint">De bas en haut : bifurcation carotidienne (C4) → carotide externe → ses branches.</p>
+
+<svg viewBox="0 0 360 470" role="img" aria-label="Schéma des branches de la carotide externe">
+  <!-- carotide commune -->
+  <g class="zone" data-k="acc">
+    <path class="hit" d="M150 460 v-120" stroke-width="26" fill="none"/>
+    <path class="main" d="M150 460 v-120" stroke="#b03a2e" stroke-width="11" fill="none"/>
+    <text x="86" y="448" class="lbl">A. carotide commune</text>
+  </g>
+  <!-- carotide interne (fantôme, pas de collatérale cervicale) -->
+  <g class="zone" data-k="aci">
+    <path class="hit" d="M150 340 q-26 -30 -24 -80 q1 -40 8 -70" stroke-width="24" fill="none"/>
+    <path class="main" d="M150 340 q-26 -30 -24 -80 q1 -40 8 -70" stroke="#8f4a42" stroke-width="8" fill="none"/>
+    <text x="18" y="240" class="lbl">A. carotide interne</text>
+    <text x="18" y="254" class="lbl">(aucune branche au cou)</text>
+  </g>
+  <!-- carotide externe : tronc -->
+  <g class="zone" data-k="ace">
+    <path class="hit" d="M150 340 q24 -26 26 -70 q2 -44 -6 -84" stroke-width="24" fill="none"/>
+    <path class="main" d="M150 340 q24 -26 26 -70 q2 -44 -6 -84" stroke="#cf5346" stroke-width="9" fill="none"/>
+    <text x="196" y="330" class="lbl">A. carotide externe</text>
+  </g>
+  <!-- 1 thyroïdienne supérieure (antérieure, basse) ABSENTE -->
+  <g class="zone" data-k="tsup">
+    <path class="hit" d="M158 322 q34 4 46 26 q8 16 2 30" stroke-width="20" fill="none"/>
+    <path class="main" d="M158 322 q34 4 46 26 q8 16 2 30" stroke="#e05b4b" stroke-width="4" fill="none" stroke-dasharray="6 4"/>
+    <text x="212" y="368" class="lbl">A. thyroïdienne supérieure ⚠</text>
+  </g>
+  <!-- 2 linguale (antérieure) ABSENTE -->
+  <g class="zone" data-k="ling">
+    <path class="hit" d="M166 292 q36 -2 52 12" stroke-width="20" fill="none"/>
+    <path class="main" d="M166 292 q36 -2 52 12" stroke="#e05b4b" stroke-width="4" fill="none" stroke-dasharray="6 4"/>
+    <text x="224" y="298" class="lbl">A. linguale ⚠</text>
+  </g>
+  <!-- 3 faciale (antérieure) PRÉSENTE -->
+  <g class="zone" data-k="fac">
+    <path class="hit" d="M172 262 q40 -6 56 14 q12 16 4 36" stroke-width="20" fill="none"/>
+    <path class="main" d="M172 262 q40 -6 56 14 q12 16 4 36" stroke="#cf5346" stroke-width="4.5" fill="none"/>
+    <text x="238" y="262" class="lbl">A. faciale ✓</text>
+  </g>
+  <!-- 4 pharyngienne ascendante (postéro-médiale) PRÉSENTE -->
+  <g class="zone" data-k="pha">
+    <path class="hit" d="M168 300 q-14 -30 -10 -62" stroke-width="20" fill="none"/>
+    <path class="main" d="M168 300 q-14 -30 -10 -62" stroke="#cf5346" stroke-width="3.5" fill="none"/>
+    <text x="52" y="300" class="lbl">A. pharyngienne ascendante ✓</text>
+  </g>
+  <!-- 5 occipitale (postérieure) ABSENTE -->
+  <g class="zone" data-k="occ">
+    <path class="hit" d="M174 236 q-30 -8 -48 6 q-18 14 -20 34" stroke-width="20" fill="none"/>
+    <path class="main" d="M174 236 q-30 -8 -48 6 q-18 14 -20 34" stroke="#e05b4b" stroke-width="4" fill="none" stroke-dasharray="6 4"/>
+    <text x="8" y="212" class="lbl">A. occipitale ⚠</text>
+  </g>
+  <!-- 6 auriculaire postérieure ABSENTE -->
+  <g class="zone" data-k="aur">
+    <path class="hit" d="M172 210 q-20 -12 -36 -6" stroke-width="20" fill="none"/>
+    <path class="main" d="M172 210 q-20 -12 -36 -6" stroke="#e05b4b" stroke-width="3.5" fill="none" stroke-dasharray="6 4"/>
+    <text x="34" y="182" class="lbl">A. auriculaire postérieure ⚠</text>
+  </g>
+  <!-- 7 temporale superficielle (terminale) PRÉSENTE -->
+  <g class="zone" data-k="temp">
+    <path class="hit" d="M170 186 q-2 -50 10 -84 q6 -16 18 -26" stroke-width="20" fill="none"/>
+    <path class="main" d="M170 186 q-2 -50 10 -84 q6 -16 18 -26" stroke="#cf5346" stroke-width="4.5" fill="none"/>
+    <text x="196" y="98" class="lbl">A. temporale superficielle ✓</text>
+    <text x="196" y="112" class="lbl">(+ branche frontale ✓)</text>
+  </g>
+  <!-- 8 maxillaire (terminale) PRÉSENTE -->
+  <g class="zone" data-k="max">
+    <path class="hit" d="M170 186 q36 -8 62 6" stroke-width="20" fill="none"/>
+    <path class="main" d="M170 186 q36 -8 62 6" stroke="#cf5346" stroke-width="4.5" fill="none"/>
+    <text x="240" y="182" class="lbl">A. maxillaire ✓</text>
+  </g>
+  <!-- bulbe -->
+  <circle cx="150" cy="342" r="9" fill="#cf5346"/>
+  <text x="96" y="330" class="lbl">Bifurcation (C4)</text>
+</svg>
+
+<div id="fiche"><h2>Touchez une branche</h2><p>✓ = visible dans la scène 3D de la Fig 108 · ⚠ = schéma seul (absente des maillages).</p></div>
+
+<script>
+const FICHES = {
+  acc: { t: "Artère carotide commune", b: ["b-3d", "✓ Présente en 3D"],
+    p: "Elle monte dans la gaine carotidienne et se bifurque au niveau de C4 (bord supérieur du cartilage thyroïde) en carotide externe (antéro-médiale) et carotide interne (postéro-latérale, renflée au sinus carotidien)." },
+  ace: { t: "Artère carotide externe", b: ["b-3d", "✓ Présente en 3D"],
+    p: "Branche de bifurcation de la carotide commune : elle irrigue la face, le cou et les parois du crâne. Ses 6 collatérales classiques + 2 terminales sont détaillées dans ce schéma ; 4 seulement existent dans les maillages 3D." },
+  aci: { t: "Artère carotide interne", b: ["b-3d", "✓ Présente en 3D"],
+    p: "Elle monte SANS donner de branche au cou, traverse le canal carotidien et rejoint le polygone de Willis. Le contraste avec la carotide externe (riche en collatérales) est le critère classique de distinction sur les coupes du cou." },
+  tsup: { t: "Artère thyroïdienne supérieure", b: ["b-schema", "⚠ Schéma seul — absente du maillage 3D"],
+    p: "Première collatérale de la carotide externe, née juste au-dessus de la bifurcation. Elle descend au pôle supérieur de la thyroïde, accompagnée du rameau externe du nerf laryngé supérieur." },
+  ling: { t: "Artère linguale", b: ["b-schema", "⚠ Schéma seul — absente du maillage 3D"],
+    p: "Deuxième branche antérieure, née en regard de la grande corne de l'os hyoïde. Elle passe sous le muscle hyoglosse et irrigue la langue (artère linguale profonde)." },
+  fac: { t: "Artère faciale", b: ["b-3d", "✓ Présente en 3D"],
+    p: "Branche antérieure née au-dessus de la linguale ; elle contourne le bord inférieur de la mandibule (pouls facial) et monte sinueuse vers la face où elle se termine en artère angulaire." },
+  pha: { t: "Artère pharyngienne ascendante", b: ["b-3d", "✓ Présente en 3D"],
+    p: "Petite branche postéro-médiale, souvent la première collatérale : elle monte verticalement le long du pharynx vers la base du crâne et donne des rameaux méningés et tympaniques." },
+  occ: { t: "Artère occipitale", b: ["b-schema", "⚠ Schéma seul — absente du maillage 3D"],
+    p: "Branche postérieure : elle se dirige en arrière sous le ventre postérieur du digastrique, irrigue la région occipitale et donne une branche descendante pour les muscles profonds du cou." },
+  aur: { t: "Artère auriculaire postérieure", b: ["b-schema", "⚠ Schéma seul — absente du maillage 3D"],
+    p: "Branche postérieure née au-dessus du digastrique ; elle monte en arrière de l'oreille et irrigue le pavillon, la mastoïde (branche stylo-mastoïdienne) et le cuir chevelu rétro-auriculaire." },
+  temp: { t: "Artère temporale superficielle", b: ["b-3d", "✓ Présente en 3D (+ branche frontale)"],
+    p: "Branche terminale latérale de la carotide externe : elle monte devant le tragus (pouls), traverse l'arcade zygomatique et se divise en branches frontale et pariétale. La branche frontale possède son propre maillage 3D." },
+  max: { t: "Artère maxillaire", b: ["b-3d", "✓ Présente en 3D"],
+    p: "Branche terminale médiale, née dans la parotide : elle traverse la fosse infra-temporale en trois portions et se termine dans la fosse ptérygo-palatine. Elle donne notamment l'artère méningée moyenne." }
+};
+const fiche = document.getElementById('fiche');
+document.querySelectorAll('.zone').forEach(z => {
+  z.addEventListener('click', () => {
+    document.querySelectorAll('.zone').forEach(x => x.classList.remove('sel'));
+    document.querySelectorAll(`.zone[data-k="${z.dataset.k}"]`).forEach(x => x.classList.add('sel'));
+    const f = FICHES[z.dataset.k]; if (!f) return;
+    fiche.innerHTML = `<h2>${f.t}</h2><span class="badge ${f.b[0]}">${f.b[1]}</span><p>${f.p}</p>`;
+    fiche.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+});
+</script>
+<a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

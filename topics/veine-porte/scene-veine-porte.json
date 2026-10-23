@@ -1,0 +1,1090 @@
+{
+ "batch": "D",
+ "topic": 39,
+ "slug": "veine-porte",
+ "partie": "VII",
+ "titre_fr": "La veine porte",
+ "titre_en": "The portal vein",
+ "figures": [
+  {
+   "numero": 112,
+   "titre_fr": "Constitution et trajet de la veine porte",
+   "titre_en": "Formation and course of the portal vein",
+   "classe": "[3D+D]",
+   "vue": "anterieure",
+   "diagram": "porte",
+   "systemes": [
+    "veines",
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "hepatic_portal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -10.2,
+       1080.5,
+       125.9
+      ],
+      "max": [
+       -1.5,
+       1132.0,
+       131.2
+      ],
+      "center": [
+       -5.9,
+       1106.2,
+       128.6
+      ],
+      "size": [
+       8.7,
+       51.5,
+       5.3
+      ]
+     }
+    },
+    {
+     "id": "splenic_vein",
+     "role": "sujet",
+     "nom_fr": "Veine splénique",
+     "name_en": "Splenic vein",
+     "system": "veines",
+     "file": "models/veines/splenic_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -6.1,
+       1077.1,
+       91.6
+      ],
+      "max": [
+       98.2,
+       1102.2,
+       137.1
+      ],
+      "center": [
+       46.0,
+       1089.6,
+       114.4
+      ],
+      "size": [
+       104.2,
+       25.2,
+       45.5
+      ]
+     }
+    },
+    {
+     "id": "superior_mesenteric_vein",
+     "role": "sujet",
+     "nom_fr": "Veine mésentérique supérieure",
+     "name_en": "Superior mesenteric vein",
+     "system": "veines",
+     "file": "models/veines/superior_mesenteric_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -61.6,
+       917.3,
+       111.8
+      ],
+      "max": [
+       2.0,
+       1081.0,
+       150.4
+      ],
+      "center": [
+       -29.8,
+       999.2,
+       131.1
+      ],
+      "size": [
+       63.6,
+       163.7,
+       38.6
+      ]
+     }
+    },
+    {
+     "id": "inferior_mesenteric_vein",
+     "role": "sujet",
+     "nom_fr": "Veine mésentérique inférieure",
+     "name_en": "Inferior mesenteric vein",
+     "system": "veines",
+     "file": "models/veines/inferior_mesenteric_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       3.6,
+       905.5,
+       113.0
+      ],
+      "max": [
+       33.3,
+       1082.1,
+       135.0
+      ],
+      "center": [
+       18.5,
+       993.8,
+       124.0
+      ],
+      "size": [
+       29.7,
+       176.7,
+       22.0
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "sujet",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "spleen",
+     "role": "sujet",
+     "nom_fr": "Rate",
+     "name_en": "Spleen",
+     "system": "lymphatique",
+     "file": "models/lymphatique/spleen.glb",
+     "couleur": "#7fae5c",
+     "bounds": {
+      "min": [
+       54.3,
+       1059.2,
+       51.2
+      ],
+      "max": [
+       111.6,
+       1129.8,
+       140.5
+      ],
+      "center": [
+       83.0,
+       1094.5,
+       95.9
+      ],
+      "size": [
+       57.2,
+       70.6,
+       89.3
+      ]
+     }
+    },
+    {
+     "id": "duodenum",
+     "role": "rapport",
+     "nom_fr": "Duodénum",
+     "name_en": "Duodenum",
+     "system": "organes",
+     "file": "models/organes/duodenum.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -64.8,
+       977.2,
+       105.4
+      ],
+      "max": [
+       31.5,
+       1076.1,
+       153.9
+      ],
+      "center": [
+       -16.7,
+       1026.7,
+       129.6
+      ],
+      "size": [
+       96.2,
+       98.9,
+       48.5
+      ]
+     }
+    },
+    {
+     "id": "posterior_segment_of_liver_i",
+     "role": "rapport",
+     "nom_fr": "Segment postérieur du foie (I)",
+     "name_en": "Posterior segment of liver (I)",
+     "system": "organes",
+     "file": "models/organes/posterior_segment_of_liver_i.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -33.4,
+       1096.8,
+       106.3
+      ],
+      "max": [
+       10.0,
+       1174.3,
+       138.6
+      ],
+      "center": [
+       -11.7,
+       1135.6,
+       122.4
+      ],
+      "size": [
+       43.5,
+       77.5,
+       32.3
+      ]
+     },
+     "couleur_presentation": "#c0563b",
+     "fiche_fr": "Segment I (caudé) — segment dorsal, situé en arrière du tronc de la veine porte ; il constitue à lui seul le lobe caudé (lobe de Spiegel). Vascularisation porte variable : branche droite, branche gauche ou les deux. Drainage sus-hépatique propre : les veines dorsales se jettent directement dans la veine cave inférieure (secteur dorsal) — c'est le seul point où les 2 segmentations se superposent."
+    }
+   ],
+   "manquants": [
+    "Même périmètre que la Fig 75 (constitution) : veine cystique, veines gastriques et para-ombilicales absentes ; la constitution rétro-pancréatique se lit mieux en schéma en regard"
+   ],
+   "espaces": []
+  },
+  {
+   "numero": 113,
+   "titre_fr": "Rapports de la veine porte",
+   "titre_en": "Relations of the portal vein",
+   "classe": "[3D]",
+   "vue": "anterieure",
+   "diagram": null,
+   "systemes": [
+    "veines",
+    "arteres",
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "hepatic_portal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -10.2,
+       1080.5,
+       125.9
+      ],
+      "max": [
+       -1.5,
+       1132.0,
+       131.2
+      ],
+      "center": [
+       -5.9,
+       1106.2,
+       128.6
+      ],
+      "size": [
+       8.7,
+       51.5,
+       5.3
+      ]
+     }
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "sujet",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -18.7,
+       962.9,
+       105.3
+      ],
+      "max": [
+       -0.5,
+       1106.8,
+       132.4
+      ],
+      "center": [
+       -9.6,
+       1034.8,
+       118.9
+      ],
+      "size": [
+       18.2,
+       143.8,
+       27.1
+      ]
+     }
+    },
+    {
+     "id": "pancreas",
+     "role": "sujet",
+     "nom_fr": "Pancréas",
+     "name_en": "Pancreas",
+     "system": "organes",
+     "file": "models/organes/pancreas.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -45.0,
+       1011.7,
+       95.2
+      ],
+      "max": [
+       71.1,
+       1085.8,
+       145.3
+      ],
+      "center": [
+       13.1,
+       1048.7,
+       120.2
+      ],
+      "size": [
+       116.1,
+       74.1,
+       50.1
+      ]
+     }
+    },
+    {
+     "id": "duodenum",
+     "role": "sujet",
+     "nom_fr": "Duodénum",
+     "name_en": "Duodenum",
+     "system": "organes",
+     "file": "models/organes/duodenum.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -64.8,
+       977.2,
+       105.4
+      ],
+      "max": [
+       31.5,
+       1076.1,
+       153.9
+      ],
+      "center": [
+       -16.7,
+       1026.7,
+       129.6
+      ],
+      "size": [
+       96.2,
+       98.9,
+       48.5
+      ]
+     }
+    },
+    {
+     "id": "proper_hepatic_artery",
+     "role": "sujet",
+     "nom_fr": "Artère hépatique propre",
+     "name_en": "Proper hepatic artery",
+     "system": "arteres",
+     "file": "models/arteres/proper_hepatic_artery.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -110.8,
+       1077.2,
+       143.1
+      ],
+      "max": [
+       -20.3,
+       1105.9,
+       169.6
+      ],
+      "center": [
+       -65.5,
+       1091.6,
+       156.4
+      ],
+      "size": [
+       90.4,
+       28.7,
+       26.5
+      ]
+     }
+    },
+    {
+     "id": "bile_duct",
+     "role": "sujet",
+     "nom_fr": "Canal biliaire",
+     "name_en": "Bile duct",
+     "system": "organes",
+     "file": "models/organes/bile_duct.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -57.7,
+       1021.9,
+       126.8
+      ],
+      "max": [
+       -13.2,
+       1095.7,
+       138.0
+      ],
+      "center": [
+       -35.5,
+       1058.8,
+       132.4
+      ],
+      "size": [
+       44.4,
+       73.8,
+       11.2
+      ]
+     }
+    },
+    {
+     "id": "abdominal_aorta",
+     "role": "sujet",
+     "nom_fr": "Aorte abdominale",
+     "name_en": "Abdominal aorta",
+     "system": "arteres",
+     "file": "models/arteres/abdominal_aorta.glb",
+     "couleur": "#cf5346",
+     "bounds": {
+      "min": [
+       -4.0,
+       960.9,
+       82.0
+      ],
+      "max": [
+       18.5,
+       1143.8,
+       138.0
+      ],
+      "center": [
+       7.2,
+       1052.4,
+       110.0
+      ],
+      "size": [
+       22.5,
+       182.9,
+       56.0
+      ]
+     }
+    },
+    {
+     "id": "kidney_right",
+     "role": "rapport",
+     "nom_fr": "Rein droit",
+     "name_en": "Right kidney",
+     "system": "organes",
+     "file": "models/organes/kidney_right.glb",
+     "couleur": "#7a3b2e",
+     "bounds": {
+      "min": [
+       -87.6,
+       966.8,
+       64.7
+      ],
+      "max": [
+       -30.4,
+       1071.2,
+       111.9
+      ],
+      "center": [
+       -59.0,
+       1019.0,
+       88.3
+      ],
+      "size": [
+       57.1,
+       104.4,
+       47.2
+      ]
+     }
+    },
+    {
+     "id": "left_medial_segment_of_liver_iv",
+     "role": "rapport",
+     "nom_fr": "Segment médial gauche du foie (IV)",
+     "name_en": "Left medial segment of liver (IV)",
+     "system": "organes",
+     "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -45.8,
+       1059.7,
+       122.7
+      ],
+      "max": [
+       10.2,
+       1186.3,
+       192.5
+      ],
+      "center": [
+       -17.8,
+       1123.0,
+       157.6
+      ],
+      "size": [
+       56.0,
+       126.5,
+       69.9
+      ]
+     },
+     "couleur_presentation": "#7fb069",
+     "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+    },
+    {
+     "id": "lesser_omentum",
+     "role": "rapport",
+     "nom_fr": "Petit omentum",
+     "name_en": "Lesser omentum",
+     "system": "organes",
+     "file": "models/organes/lesser_omentum.glb",
+     "couleur": "#c97b84",
+     "bounds": {
+      "min": [
+       -34.3,
+       1074.8,
+       115.7
+      ],
+      "max": [
+       24.7,
+       1133.2,
+       175.8
+      ],
+      "center": [
+       -4.8,
+       1104.0,
+       145.7
+      ],
+      "size": [
+       58.9,
+       58.4,
+       60.1
+      ]
+     }
+    }
+   ],
+   "manquants": [],
+   "espaces": []
+  }
+ ],
+ "structures": [
+  {
+   "id": "hepatic_portal_vein",
+   "role": "sujet",
+   "nom_fr": "Veine porte du foie",
+   "name_en": "Hepatic portal vein",
+   "system": "veines",
+   "file": "models/veines/hepatic_portal_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -10.2,
+     1080.5,
+     125.9
+    ],
+    "max": [
+     -1.5,
+     1132.0,
+     131.2
+    ],
+    "center": [
+     -5.9,
+     1106.2,
+     128.6
+    ],
+    "size": [
+     8.7,
+     51.5,
+     5.3
+    ]
+   }
+  },
+  {
+   "id": "splenic_vein",
+   "role": "sujet",
+   "nom_fr": "Veine splénique",
+   "name_en": "Splenic vein",
+   "system": "veines",
+   "file": "models/veines/splenic_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -6.1,
+     1077.1,
+     91.6
+    ],
+    "max": [
+     98.2,
+     1102.2,
+     137.1
+    ],
+    "center": [
+     46.0,
+     1089.6,
+     114.4
+    ],
+    "size": [
+     104.2,
+     25.2,
+     45.5
+    ]
+   }
+  },
+  {
+   "id": "superior_mesenteric_vein",
+   "role": "sujet",
+   "nom_fr": "Veine mésentérique supérieure",
+   "name_en": "Superior mesenteric vein",
+   "system": "veines",
+   "file": "models/veines/superior_mesenteric_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -61.6,
+     917.3,
+     111.8
+    ],
+    "max": [
+     2.0,
+     1081.0,
+     150.4
+    ],
+    "center": [
+     -29.8,
+     999.2,
+     131.1
+    ],
+    "size": [
+     63.6,
+     163.7,
+     38.6
+    ]
+   }
+  },
+  {
+   "id": "inferior_mesenteric_vein",
+   "role": "sujet",
+   "nom_fr": "Veine mésentérique inférieure",
+   "name_en": "Inferior mesenteric vein",
+   "system": "veines",
+   "file": "models/veines/inferior_mesenteric_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     3.6,
+     905.5,
+     113.0
+    ],
+    "max": [
+     33.3,
+     1082.1,
+     135.0
+    ],
+    "center": [
+     18.5,
+     993.8,
+     124.0
+    ],
+    "size": [
+     29.7,
+     176.7,
+     22.0
+    ]
+   }
+  },
+  {
+   "id": "pancreas",
+   "role": "sujet",
+   "nom_fr": "Pancréas",
+   "name_en": "Pancreas",
+   "system": "organes",
+   "file": "models/organes/pancreas.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -45.0,
+     1011.7,
+     95.2
+    ],
+    "max": [
+     71.1,
+     1085.8,
+     145.3
+    ],
+    "center": [
+     13.1,
+     1048.7,
+     120.2
+    ],
+    "size": [
+     116.1,
+     74.1,
+     50.1
+    ]
+   }
+  },
+  {
+   "id": "spleen",
+   "role": "sujet",
+   "nom_fr": "Rate",
+   "name_en": "Spleen",
+   "system": "lymphatique",
+   "file": "models/lymphatique/spleen.glb",
+   "couleur": "#7fae5c",
+   "bounds": {
+    "min": [
+     54.3,
+     1059.2,
+     51.2
+    ],
+    "max": [
+     111.6,
+     1129.8,
+     140.5
+    ],
+    "center": [
+     83.0,
+     1094.5,
+     95.9
+    ],
+    "size": [
+     57.2,
+     70.6,
+     89.3
+    ]
+   }
+  },
+  {
+   "id": "duodenum",
+   "role": "sujet",
+   "nom_fr": "Duodénum",
+   "name_en": "Duodenum",
+   "system": "organes",
+   "file": "models/organes/duodenum.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -64.8,
+     977.2,
+     105.4
+    ],
+    "max": [
+     31.5,
+     1076.1,
+     153.9
+    ],
+    "center": [
+     -16.7,
+     1026.7,
+     129.6
+    ],
+    "size": [
+     96.2,
+     98.9,
+     48.5
+    ]
+   }
+  },
+  {
+   "id": "posterior_segment_of_liver_i",
+   "role": "rapport",
+   "nom_fr": "Segment postérieur du foie (I)",
+   "name_en": "Posterior segment of liver (I)",
+   "system": "organes",
+   "file": "models/organes/posterior_segment_of_liver_i.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -33.4,
+     1096.8,
+     106.3
+    ],
+    "max": [
+     10.0,
+     1174.3,
+     138.6
+    ],
+    "center": [
+     -11.7,
+     1135.6,
+     122.4
+    ],
+    "size": [
+     43.5,
+     77.5,
+     32.3
+    ]
+   },
+   "couleur_presentation": "#c0563b",
+   "fiche_fr": "Segment I (caudé) — segment dorsal, situé en arrière du tronc de la veine porte ; il constitue à lui seul le lobe caudé (lobe de Spiegel). Vascularisation porte variable : branche droite, branche gauche ou les deux. Drainage sus-hépatique propre : les veines dorsales se jettent directement dans la veine cave inférieure (secteur dorsal) — c'est le seul point où les 2 segmentations se superposent."
+  },
+  {
+   "id": "inferior_vena_cava_abdominal_part",
+   "role": "sujet",
+   "nom_fr": "Veine cave inférieure (partie abdominale)",
+   "name_en": "Inferior vena cava (abdominal part)",
+   "system": "veines",
+   "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -18.7,
+     962.9,
+     105.3
+    ],
+    "max": [
+     -0.5,
+     1106.8,
+     132.4
+    ],
+    "center": [
+     -9.6,
+     1034.8,
+     118.9
+    ],
+    "size": [
+     18.2,
+     143.8,
+     27.1
+    ]
+   }
+  },
+  {
+   "id": "proper_hepatic_artery",
+   "role": "sujet",
+   "nom_fr": "Artère hépatique propre",
+   "name_en": "Proper hepatic artery",
+   "system": "arteres",
+   "file": "models/arteres/proper_hepatic_artery.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -110.8,
+     1077.2,
+     143.1
+    ],
+    "max": [
+     -20.3,
+     1105.9,
+     169.6
+    ],
+    "center": [
+     -65.5,
+     1091.6,
+     156.4
+    ],
+    "size": [
+     90.4,
+     28.7,
+     26.5
+    ]
+   }
+  },
+  {
+   "id": "bile_duct",
+   "role": "sujet",
+   "nom_fr": "Canal biliaire",
+   "name_en": "Bile duct",
+   "system": "organes",
+   "file": "models/organes/bile_duct.glb",
+   "couleur": "#c97b84",
+   "bounds": {
+    "min": [
+     -57.7,
+     1021.9,
+     126.8
+    ],
+    "max": [
+     -13.2,
+     1095.7,
+     138.0
+    ],
+    "center": [
+     -35.5,
+     1058.8,
+     132.4
+    ],
+    "size": [
+     44.4,
+     73.8,
+     11.2
+    ]
+   }
+  },
+  {
+   "id": "abdominal_aorta",
+   "role": "sujet",
+   "nom_fr": "Aorte abdominale",
+   "name_en": "Abdominal aorta",
+   "system": "arteres",
+   "file": "models/arteres/abdominal_aorta.glb",
+   "couleur": "#cf5346",
+   "bounds": {
+    "min": [
+     -4.0,
+     960.9,
+     82.0
+    ],
+    "max": [
+     18.5,
+     1143.8,
+     138.0
+    ],
+    "center": [
+     7.2,
+     1052.4,
+     110.0
+    ],
+    "size": [
+     22.5,
+     182.9,
+     56.0
+    ]
+   }
+  },
+  {
+   "id": "kidney_right",
+   "role": "rapport",
+   "nom_fr": "Rein droit",
+   "name_en": "Right kidney",
+   "system": "organes",
+   "file": "models/organes/kidney_right.glb",
+   "couleur": "#7a3b2e",
+   "bounds": {
+    "min": [
+     -87.6,
+     966.8,
+     64.7
+    ],
+    "max": [
+     -30.4,
+     1071.2,
+     111.9
+    ],
+    "center": [
+     -59.0,
+     1019.0,
+     88.3
+    ],
+    "size": [
+     57.1,
+     104.4,
+     47.2
+    ]
+   }
+  },
+  {
+   "id": "left_medial_segment_of_liver_iv",
+   "role": "rapport",
+   "nom_fr": "Segment médial gauche du foie (IV)",
+   "name_en": "Left medial segment of liver (IV)",
+   "system": "organes",
+   "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -45.8,
+     1059.7,
+     122.7
+    ],
+    "max": [
+     10.2,
+     1186.3,
+     192.5
+    ],
+    "center": [
+     -17.8,
+     1123.0,
+     157.6
+    ],
+    "size": [
+     56.0,
+     126.5,
+     69.9
+    ]
+   },
+   "couleur_presentation": "#7fb069",
+   "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+  },
+  {
+   "id": "lesser_omentum",
+   "role": "rapport",
+   "nom_fr": "Petit omentum",
+   "name_en": "Lesser omentum",
+   "system": "organes",
+   "file": "models/organes/lesser_omentum.glb",
+   "couleur": "#c97b84",
+   "bounds": {
+    "min": [
+     -34.3,
+     1074.8,
+     115.7
+    ],
+    "max": [
+     24.7,
+     1133.2,
+     175.8
+    ],
+    "center": [
+     -4.8,
+     1104.0,
+     145.7
+    ],
+    "size": [
+     58.9,
+     58.4,
+     60.1
+    ]
+   }
+  }
+ ],
+ "camera": {
+  "preset_par_figure": {
+   "112": "anterieure",
+   "113": "anterieure"
+  },
+  "defaut": "anterieure"
+ },
+ "diagram": {
+  "112": "porte"
+ },
+ "espaces": [],
+ "note_integration": "Scène de staging — IDs issus de FIGURES-AUDIT.json uniquement ; GLB résolus via proto-schemas/manifest.json."
+}

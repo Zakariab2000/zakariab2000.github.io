@@ -1,0 +1,1062 @@
+{
+ "batch": "D",
+ "topic": 26,
+ "slug": "segmentation-hepatique",
+ "partie": "IV",
+ "titre_fr": "La segmentation hépatique",
+ "titre_en": "Liver segmentation",
+ "figures": [
+  {
+   "numero": 73,
+   "titre_fr": "Segmentation hépatique fonctionnelle selon Couinaud",
+   "titre_en": "Functional liver segmentation according to Couinaud",
+   "classe": "[3D+D]",
+   "vue": "superieure",
+   "diagram": "couinaud",
+   "systemes": [
+    "organes",
+    "veines"
+   ],
+   "structures": [
+    {
+     "id": "posterior_segment_of_liver_i",
+     "role": "sujet",
+     "nom_fr": "Segment postérieur du foie (I)",
+     "name_en": "Posterior segment of liver (I)",
+     "system": "organes",
+     "file": "models/organes/posterior_segment_of_liver_i.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -33.4,
+       1096.8,
+       106.3
+      ],
+      "max": [
+       10.0,
+       1174.3,
+       138.6
+      ],
+      "center": [
+       -11.7,
+       1135.6,
+       122.4
+      ],
+      "size": [
+       43.5,
+       77.5,
+       32.3
+      ]
+     },
+     "couleur_presentation": "#c0563b",
+     "fiche_fr": "Segment I (caudé) — segment dorsal, situé en arrière du tronc de la veine porte ; il constitue à lui seul le lobe caudé (lobe de Spiegel). Vascularisation porte variable : branche droite, branche gauche ou les deux. Drainage sus-hépatique propre : les veines dorsales se jettent directement dans la veine cave inférieure (secteur dorsal) — c'est le seul point où les 2 segmentations se superposent."
+    },
+    {
+     "id": "left_posterior_lateral_segment_of_liver_ii",
+     "role": "sujet",
+     "nom_fr": "Segment postérolatéral gauche du foie (II)",
+     "name_en": "Left posterior lateral segment of liver (II)",
+     "system": "organes",
+     "file": "models/organes/left_posterior_lateral_segment_of_liver_ii.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       1.1,
+       1123.2,
+       95.3
+      ],
+      "max": [
+       89.2,
+       1179.6,
+       192.3
+      ],
+      "center": [
+       45.1,
+       1151.4,
+       143.8
+      ],
+      "size": [
+       88.1,
+       56.4,
+       97.0
+      ]
+     },
+     "couleur_presentation": "#d99058",
+     "fiche_fr": "Segment II — segment latéro-supérieur du secteur latéral gauche, extrémité gauche du foie. Vascularisation porte : branche gauche. Drainage sus-hépatique : veine hépatique gauche, qui chemine dans la scissure gauche (secteur sus-hépatique gauche, lobe gauche morphologique séparé par le ligament falciforme)."
+    },
+    {
+     "id": "left_anterior_lateral_segment_of_liver_iii",
+     "role": "sujet",
+     "nom_fr": "Segment antérolatéral gauche du foie (III)",
+     "name_en": "Left anterior lateral segment of liver (III)",
+     "system": "organes",
+     "file": "models/organes/left_anterior_lateral_segment_of_liver_iii.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -2.5,
+       1087.8,
+       122.3
+      ],
+      "max": [
+       71.6,
+       1159.1,
+       192.7
+      ],
+      "center": [
+       34.5,
+       1123.5,
+       157.5
+      ],
+      "size": [
+       74.1,
+       71.3,
+       70.4
+      ]
+     },
+     "couleur_presentation": "#e3b23c",
+     "fiche_fr": "Segment III — segment latéro-inférieur du secteur latéral gauche. Vascularisation porte : branche gauche. Drainage sus-hépatique : veine hépatique gauche (scissure gauche)."
+    },
+    {
+     "id": "left_medial_segment_of_liver_iv",
+     "role": "sujet",
+     "nom_fr": "Segment médial gauche du foie (IV)",
+     "name_en": "Left medial segment of liver (IV)",
+     "system": "organes",
+     "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -45.8,
+       1059.7,
+       122.7
+      ],
+      "max": [
+       10.2,
+       1186.3,
+       192.5
+      ],
+      "center": [
+       -17.8,
+       1123.0,
+       157.6
+      ],
+      "size": [
+       56.0,
+       126.5,
+       69.9
+      ]
+     },
+     "couleur_presentation": "#7fb069",
+     "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+    },
+    {
+     "id": "anterior_medial_segment_of_liver_v",
+     "role": "sujet",
+     "nom_fr": "Segment antéromédial droit du foie (V)",
+     "name_en": "Anterior medial segment of liver (V)",
+     "system": "organes",
+     "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -102.1,
+       1044.3,
+       110.0
+      ],
+      "max": [
+       -27.5,
+       1118.0,
+       188.5
+      ],
+      "center": [
+       -64.8,
+       1081.1,
+       149.3
+      ],
+      "size": [
+       74.6,
+       73.7,
+       78.4
+      ]
+     },
+     "couleur_presentation": "#4f9da6",
+     "fiche_fr": "Segment V — segment antéro-inférieur du secteur antérieur droit, au contact de la fossette cystique et de la vésicule biliaire. Vascularisation porte : branche antérieure de la branche droite. Drainage sus-hépatique par les veines des scissures principale et droite."
+    },
+    {
+     "id": "anterior_lateral_segment_of_liver_vi",
+     "role": "sujet",
+     "nom_fr": "Segment antérolatéral droit (VI)",
+     "name_en": "Anterior lateral segment of liver (VI)",
+     "system": "organes",
+     "file": "models/organes/anterior_lateral_segment_of_liver_vi.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -112.1,
+       1024.4,
+       51.1
+      ],
+      "max": [
+       -23.4,
+       1112.1,
+       161.9
+      ],
+      "center": [
+       -67.7,
+       1068.2,
+       106.5
+      ],
+      "size": [
+       88.7,
+       87.7,
+       110.8
+      ]
+     },
+     "couleur_presentation": "#5b8dd9",
+     "fiche_fr": "Segment VI — segment postéro-inférieur du secteur postérieur droit. Vascularisation porte : branche postérieure de la branche droite. Drainage sus-hépatique : veine hépatique droite (scissure droite)."
+    },
+    {
+     "id": "posterior_lateral_segment_of_liver_vii",
+     "role": "sujet",
+     "nom_fr": "Segment postérolatéral droit (VII)",
+     "name_en": "Posterior lateral segment of liver (VII)",
+     "system": "organes",
+     "file": "models/organes/posterior_lateral_segment_of_liver_vii.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -112.6,
+       1091.1,
+       49.7
+      ],
+      "max": [
+       -21.1,
+       1181.6,
+       149.6
+      ],
+      "center": [
+       -66.8,
+       1136.3,
+       99.7
+      ],
+      "size": [
+       91.6,
+       90.5,
+       99.9
+      ]
+     },
+     "couleur_presentation": "#8e6cc8",
+     "fiche_fr": "Segment VII — segment postéro-supérieur du secteur postérieur droit. Vascularisation porte : branche postérieure de la branche droite. Drainage sus-hépatique : veine hépatique droite, qui chemine dans la scissure droite."
+    },
+    {
+     "id": "posterior_medial_segment_of_liver_viii",
+     "role": "sujet",
+     "nom_fr": "Segment postéromédial droit du foie (VIII)",
+     "name_en": "Posterior medial segment of liver (VIII)",
+     "system": "organes",
+     "file": "models/organes/posterior_medial_segment_of_liver_viii.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -106.6,
+       1110.5,
+       76.2
+      ],
+      "max": [
+       -18.7,
+       1190.6,
+       189.9
+      ],
+      "center": [
+       -62.7,
+       1150.6,
+       133.0
+      ],
+      "size": [
+       87.9,
+       80.1,
+       113.7
+      ]
+     },
+     "couleur_presentation": "#c65d8f",
+     "fiche_fr": "Segment VIII — segment antéro-supérieur du secteur antérieur droit. Vascularisation porte : branche antérieure de la branche droite. C'est le seul segment visible uniquement sur la face diaphragmatique du foie (cours Q26). Drainage sus-hépatique par les veines cheminant dans les scissures principale et droite."
+    },
+    {
+     "id": "hepatic_portal_vein",
+     "role": "sujet",
+     "nom_fr": "Veine porte du foie",
+     "name_en": "Hepatic portal vein",
+     "system": "veines",
+     "file": "models/veines/hepatic_portal_vein.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -10.2,
+       1080.5,
+       125.9
+      ],
+      "max": [
+       -1.5,
+       1132.0,
+       131.2
+      ],
+      "center": [
+       -5.9,
+       1106.2,
+       128.6
+      ],
+      "size": [
+       8.7,
+       51.5,
+       5.3
+      ]
+     }
+    },
+    {
+     "id": "hepatic_veins",
+     "role": "sujet",
+     "nom_fr": "Veines hépatiques",
+     "name_en": "Hepatic veins",
+     "system": "veines",
+     "file": "models/veines/hepatic_veins.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -21.1,
+       1165.5,
+       111.4
+      ],
+      "max": [
+       1.7,
+       1181.0,
+       135.4
+      ],
+      "center": [
+       -9.7,
+       1173.3,
+       123.4
+      ],
+      "size": [
+       22.9,
+       15.5,
+       24.1
+      ]
+     }
+    },
+    {
+     "id": "gallbladder",
+     "role": "rapport",
+     "nom_fr": "Vésicule biliaire",
+     "name_en": "Gallbladder",
+     "system": "organes",
+     "file": "models/organes/gallbladder.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -62.5,
+       1048.1,
+       130.2
+      ],
+      "max": [
+       -26.9,
+       1091.8,
+       175.5
+      ],
+      "center": [
+       -44.7,
+       1070.0,
+       152.8
+      ],
+      "size": [
+       35.6,
+       43.7,
+       45.3
+      ]
+     }
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "rapport",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -18.7,
+       962.9,
+       105.3
+      ],
+      "max": [
+       -0.5,
+       1106.8,
+       132.4
+      ],
+      "center": [
+       -9.6,
+       1034.8,
+       118.9
+      ],
+      "size": [
+       18.2,
+       143.8,
+       27.1
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "BONNE NOUVELLE à contre-pied : les 8 segments de Couinaud EXISTENT comme 8 maillages séparés et nommés (I à VIII)",
+    "MAIS : les pédicules glissoniens segmentaires (branches portes par segment) ne sont pas individualisés — la veine porte est un maillage unique ; les plans de scissure sont virtuels → le schéma de la segmentation (pédicules + scissures) reste nécessaire en regard"
+   ],
+   "espaces": []
+  },
+  {
+   "numero": 74,
+   "titre_fr": "Retour veineux du foie (segmentation sus-hépatique)",
+   "titre_en": "Venous return of the liver (suprahepatic segmentation)",
+   "classe": "[3D]",
+   "vue": "posterieure",
+   "diagram": null,
+   "systemes": [
+    "veines",
+    "organes"
+   ],
+   "structures": [
+    {
+     "id": "hepatic_veins",
+     "role": "sujet",
+     "nom_fr": "Veines hépatiques",
+     "name_en": "Hepatic veins",
+     "system": "veines",
+     "file": "models/veines/hepatic_veins.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -21.1,
+       1165.5,
+       111.4
+      ],
+      "max": [
+       1.7,
+       1181.0,
+       135.4
+      ],
+      "center": [
+       -9.7,
+       1173.3,
+       123.4
+      ],
+      "size": [
+       22.9,
+       15.5,
+       24.1
+      ]
+     }
+    },
+    {
+     "id": "inferior_vena_cava_abdominal_part",
+     "role": "sujet",
+     "nom_fr": "Veine cave inférieure (partie abdominale)",
+     "name_en": "Inferior vena cava (abdominal part)",
+     "system": "veines",
+     "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+     "couleur": "#5b7fb4",
+     "bounds": {
+      "min": [
+       -18.7,
+       962.9,
+       105.3
+      ],
+      "max": [
+       -0.5,
+       1106.8,
+       132.4
+      ],
+      "center": [
+       -9.6,
+       1034.8,
+       118.9
+      ],
+      "size": [
+       18.2,
+       143.8,
+       27.1
+      ]
+     }
+    },
+    {
+     "id": "posterior_segment_of_liver_i",
+     "role": "sujet",
+     "nom_fr": "Segment postérieur du foie (I)",
+     "name_en": "Posterior segment of liver (I)",
+     "system": "organes",
+     "file": "models/organes/posterior_segment_of_liver_i.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -33.4,
+       1096.8,
+       106.3
+      ],
+      "max": [
+       10.0,
+       1174.3,
+       138.6
+      ],
+      "center": [
+       -11.7,
+       1135.6,
+       122.4
+      ],
+      "size": [
+       43.5,
+       77.5,
+       32.3
+      ]
+     },
+     "couleur_presentation": "#c0563b",
+     "fiche_fr": "Segment I (caudé) — segment dorsal, situé en arrière du tronc de la veine porte ; il constitue à lui seul le lobe caudé (lobe de Spiegel). Vascularisation porte variable : branche droite, branche gauche ou les deux. Drainage sus-hépatique propre : les veines dorsales se jettent directement dans la veine cave inférieure (secteur dorsal) — c'est le seul point où les 2 segmentations se superposent."
+    },
+    {
+     "id": "left_medial_segment_of_liver_iv",
+     "role": "sujet",
+     "nom_fr": "Segment médial gauche du foie (IV)",
+     "name_en": "Left medial segment of liver (IV)",
+     "system": "organes",
+     "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -45.8,
+       1059.7,
+       122.7
+      ],
+      "max": [
+       10.2,
+       1186.3,
+       192.5
+      ],
+      "center": [
+       -17.8,
+       1123.0,
+       157.6
+      ],
+      "size": [
+       56.0,
+       126.5,
+       69.9
+      ]
+     },
+     "couleur_presentation": "#7fb069",
+     "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+    },
+    {
+     "id": "anterior_medial_segment_of_liver_v",
+     "role": "sujet",
+     "nom_fr": "Segment antéromédial droit du foie (V)",
+     "name_en": "Anterior medial segment of liver (V)",
+     "system": "organes",
+     "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -102.1,
+       1044.3,
+       110.0
+      ],
+      "max": [
+       -27.5,
+       1118.0,
+       188.5
+      ],
+      "center": [
+       -64.8,
+       1081.1,
+       149.3
+      ],
+      "size": [
+       74.6,
+       73.7,
+       78.4
+      ]
+     },
+     "couleur_presentation": "#4f9da6",
+     "fiche_fr": "Segment V — segment antéro-inférieur du secteur antérieur droit, au contact de la fossette cystique et de la vésicule biliaire. Vascularisation porte : branche antérieure de la branche droite. Drainage sus-hépatique par les veines des scissures principale et droite."
+    },
+    {
+     "id": "posterior_medial_segment_of_liver_viii",
+     "role": "sujet",
+     "nom_fr": "Segment postéromédial droit du foie (VIII)",
+     "name_en": "Posterior medial segment of liver (VIII)",
+     "system": "organes",
+     "file": "models/organes/posterior_medial_segment_of_liver_viii.glb",
+     "couleur": "#9a5a44",
+     "bounds": {
+      "min": [
+       -106.6,
+       1110.5,
+       76.2
+      ],
+      "max": [
+       -18.7,
+       1190.6,
+       189.9
+      ],
+      "center": [
+       -62.7,
+       1150.6,
+       133.0
+      ],
+      "size": [
+       87.9,
+       80.1,
+       113.7
+      ]
+     },
+     "couleur_presentation": "#c65d8f",
+     "fiche_fr": "Segment VIII — segment antéro-supérieur du secteur antérieur droit. Vascularisation porte : branche antérieure de la branche droite. C'est le seul segment visible uniquement sur la face diaphragmatique du foie (cours Q26). Drainage sus-hépatique par les veines cheminant dans les scissures principale et droite."
+    },
+    {
+     "id": "gallbladder",
+     "role": "rapport",
+     "nom_fr": "Vésicule biliaire",
+     "name_en": "Gallbladder",
+     "system": "organes",
+     "file": "models/organes/gallbladder.glb",
+     "couleur": "#d9a583",
+     "bounds": {
+      "min": [
+       -62.5,
+       1048.1,
+       130.2
+      ],
+      "max": [
+       -26.9,
+       1091.8,
+       175.5
+      ],
+      "center": [
+       -44.7,
+       1070.0,
+       152.8
+      ],
+      "size": [
+       35.6,
+       43.7,
+       45.3
+      ]
+     }
+    }
+   ],
+   "manquants": [
+    "Les 3 veines sus-hépatiques (droite, moyenne, gauche) : UN SEUL maillage groupé 'hepatic_veins' — elles ne sont PAS séparables, donc la segmentation sus-hépatique de la figure ne peut pas être isolée veine par veine"
+   ],
+   "espaces": []
+  }
+ ],
+ "structures": [
+  {
+   "id": "posterior_segment_of_liver_i",
+   "role": "sujet",
+   "nom_fr": "Segment postérieur du foie (I)",
+   "name_en": "Posterior segment of liver (I)",
+   "system": "organes",
+   "file": "models/organes/posterior_segment_of_liver_i.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -33.4,
+     1096.8,
+     106.3
+    ],
+    "max": [
+     10.0,
+     1174.3,
+     138.6
+    ],
+    "center": [
+     -11.7,
+     1135.6,
+     122.4
+    ],
+    "size": [
+     43.5,
+     77.5,
+     32.3
+    ]
+   },
+   "couleur_presentation": "#c0563b",
+   "fiche_fr": "Segment I (caudé) — segment dorsal, situé en arrière du tronc de la veine porte ; il constitue à lui seul le lobe caudé (lobe de Spiegel). Vascularisation porte variable : branche droite, branche gauche ou les deux. Drainage sus-hépatique propre : les veines dorsales se jettent directement dans la veine cave inférieure (secteur dorsal) — c'est le seul point où les 2 segmentations se superposent."
+  },
+  {
+   "id": "left_posterior_lateral_segment_of_liver_ii",
+   "role": "sujet",
+   "nom_fr": "Segment postérolatéral gauche du foie (II)",
+   "name_en": "Left posterior lateral segment of liver (II)",
+   "system": "organes",
+   "file": "models/organes/left_posterior_lateral_segment_of_liver_ii.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     1.1,
+     1123.2,
+     95.3
+    ],
+    "max": [
+     89.2,
+     1179.6,
+     192.3
+    ],
+    "center": [
+     45.1,
+     1151.4,
+     143.8
+    ],
+    "size": [
+     88.1,
+     56.4,
+     97.0
+    ]
+   },
+   "couleur_presentation": "#d99058",
+   "fiche_fr": "Segment II — segment latéro-supérieur du secteur latéral gauche, extrémité gauche du foie. Vascularisation porte : branche gauche. Drainage sus-hépatique : veine hépatique gauche, qui chemine dans la scissure gauche (secteur sus-hépatique gauche, lobe gauche morphologique séparé par le ligament falciforme)."
+  },
+  {
+   "id": "left_anterior_lateral_segment_of_liver_iii",
+   "role": "sujet",
+   "nom_fr": "Segment antérolatéral gauche du foie (III)",
+   "name_en": "Left anterior lateral segment of liver (III)",
+   "system": "organes",
+   "file": "models/organes/left_anterior_lateral_segment_of_liver_iii.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -2.5,
+     1087.8,
+     122.3
+    ],
+    "max": [
+     71.6,
+     1159.1,
+     192.7
+    ],
+    "center": [
+     34.5,
+     1123.5,
+     157.5
+    ],
+    "size": [
+     74.1,
+     71.3,
+     70.4
+    ]
+   },
+   "couleur_presentation": "#e3b23c",
+   "fiche_fr": "Segment III — segment latéro-inférieur du secteur latéral gauche. Vascularisation porte : branche gauche. Drainage sus-hépatique : veine hépatique gauche (scissure gauche)."
+  },
+  {
+   "id": "left_medial_segment_of_liver_iv",
+   "role": "sujet",
+   "nom_fr": "Segment médial gauche du foie (IV)",
+   "name_en": "Left medial segment of liver (IV)",
+   "system": "organes",
+   "file": "models/organes/left_medial_segment_of_liver_iv.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -45.8,
+     1059.7,
+     122.7
+    ],
+    "max": [
+     10.2,
+     1186.3,
+     192.5
+    ],
+    "center": [
+     -17.8,
+     1123.0,
+     157.6
+    ],
+    "size": [
+     56.0,
+     126.5,
+     69.9
+    ]
+   },
+   "couleur_presentation": "#7fb069",
+   "fiche_fr": "Segment IV — segment du secteur médial gauche : IVa supérieur (parfois noté segment IX) et IVb inférieur, correspondant au lobe carré, en avant du hile. Vascularisation porte : branche gauche. Drainage sus-hépatique : partie centrale du foie, veine hépatique médiane (et gauche). Dans le modèle 3D, un seul maillage : left_medial_segment_of_liver_iv (IVa et IVb non séparés)."
+  },
+  {
+   "id": "anterior_medial_segment_of_liver_v",
+   "role": "sujet",
+   "nom_fr": "Segment antéromédial droit du foie (V)",
+   "name_en": "Anterior medial segment of liver (V)",
+   "system": "organes",
+   "file": "models/organes/anterior_medial_segment_of_liver_v.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -102.1,
+     1044.3,
+     110.0
+    ],
+    "max": [
+     -27.5,
+     1118.0,
+     188.5
+    ],
+    "center": [
+     -64.8,
+     1081.1,
+     149.3
+    ],
+    "size": [
+     74.6,
+     73.7,
+     78.4
+    ]
+   },
+   "couleur_presentation": "#4f9da6",
+   "fiche_fr": "Segment V — segment antéro-inférieur du secteur antérieur droit, au contact de la fossette cystique et de la vésicule biliaire. Vascularisation porte : branche antérieure de la branche droite. Drainage sus-hépatique par les veines des scissures principale et droite."
+  },
+  {
+   "id": "anterior_lateral_segment_of_liver_vi",
+   "role": "sujet",
+   "nom_fr": "Segment antérolatéral droit (VI)",
+   "name_en": "Anterior lateral segment of liver (VI)",
+   "system": "organes",
+   "file": "models/organes/anterior_lateral_segment_of_liver_vi.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -112.1,
+     1024.4,
+     51.1
+    ],
+    "max": [
+     -23.4,
+     1112.1,
+     161.9
+    ],
+    "center": [
+     -67.7,
+     1068.2,
+     106.5
+    ],
+    "size": [
+     88.7,
+     87.7,
+     110.8
+    ]
+   },
+   "couleur_presentation": "#5b8dd9",
+   "fiche_fr": "Segment VI — segment postéro-inférieur du secteur postérieur droit. Vascularisation porte : branche postérieure de la branche droite. Drainage sus-hépatique : veine hépatique droite (scissure droite)."
+  },
+  {
+   "id": "posterior_lateral_segment_of_liver_vii",
+   "role": "sujet",
+   "nom_fr": "Segment postérolatéral droit (VII)",
+   "name_en": "Posterior lateral segment of liver (VII)",
+   "system": "organes",
+   "file": "models/organes/posterior_lateral_segment_of_liver_vii.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -112.6,
+     1091.1,
+     49.7
+    ],
+    "max": [
+     -21.1,
+     1181.6,
+     149.6
+    ],
+    "center": [
+     -66.8,
+     1136.3,
+     99.7
+    ],
+    "size": [
+     91.6,
+     90.5,
+     99.9
+    ]
+   },
+   "couleur_presentation": "#8e6cc8",
+   "fiche_fr": "Segment VII — segment postéro-supérieur du secteur postérieur droit. Vascularisation porte : branche postérieure de la branche droite. Drainage sus-hépatique : veine hépatique droite, qui chemine dans la scissure droite."
+  },
+  {
+   "id": "posterior_medial_segment_of_liver_viii",
+   "role": "sujet",
+   "nom_fr": "Segment postéromédial droit du foie (VIII)",
+   "name_en": "Posterior medial segment of liver (VIII)",
+   "system": "organes",
+   "file": "models/organes/posterior_medial_segment_of_liver_viii.glb",
+   "couleur": "#9a5a44",
+   "bounds": {
+    "min": [
+     -106.6,
+     1110.5,
+     76.2
+    ],
+    "max": [
+     -18.7,
+     1190.6,
+     189.9
+    ],
+    "center": [
+     -62.7,
+     1150.6,
+     133.0
+    ],
+    "size": [
+     87.9,
+     80.1,
+     113.7
+    ]
+   },
+   "couleur_presentation": "#c65d8f",
+   "fiche_fr": "Segment VIII — segment antéro-supérieur du secteur antérieur droit. Vascularisation porte : branche antérieure de la branche droite. C'est le seul segment visible uniquement sur la face diaphragmatique du foie (cours Q26). Drainage sus-hépatique par les veines cheminant dans les scissures principale et droite."
+  },
+  {
+   "id": "hepatic_portal_vein",
+   "role": "sujet",
+   "nom_fr": "Veine porte du foie",
+   "name_en": "Hepatic portal vein",
+   "system": "veines",
+   "file": "models/veines/hepatic_portal_vein.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -10.2,
+     1080.5,
+     125.9
+    ],
+    "max": [
+     -1.5,
+     1132.0,
+     131.2
+    ],
+    "center": [
+     -5.9,
+     1106.2,
+     128.6
+    ],
+    "size": [
+     8.7,
+     51.5,
+     5.3
+    ]
+   }
+  },
+  {
+   "id": "hepatic_veins",
+   "role": "sujet",
+   "nom_fr": "Veines hépatiques",
+   "name_en": "Hepatic veins",
+   "system": "veines",
+   "file": "models/veines/hepatic_veins.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -21.1,
+     1165.5,
+     111.4
+    ],
+    "max": [
+     1.7,
+     1181.0,
+     135.4
+    ],
+    "center": [
+     -9.7,
+     1173.3,
+     123.4
+    ],
+    "size": [
+     22.9,
+     15.5,
+     24.1
+    ]
+   }
+  },
+  {
+   "id": "gallbladder",
+   "role": "rapport",
+   "nom_fr": "Vésicule biliaire",
+   "name_en": "Gallbladder",
+   "system": "organes",
+   "file": "models/organes/gallbladder.glb",
+   "couleur": "#d9a583",
+   "bounds": {
+    "min": [
+     -62.5,
+     1048.1,
+     130.2
+    ],
+    "max": [
+     -26.9,
+     1091.8,
+     175.5
+    ],
+    "center": [
+     -44.7,
+     1070.0,
+     152.8
+    ],
+    "size": [
+     35.6,
+     43.7,
+     45.3
+    ]
+   }
+  },
+  {
+   "id": "inferior_vena_cava_abdominal_part",
+   "role": "sujet",
+   "nom_fr": "Veine cave inférieure (partie abdominale)",
+   "name_en": "Inferior vena cava (abdominal part)",
+   "system": "veines",
+   "file": "models/veines/inferior_vena_cava_abdominal_part.glb",
+   "couleur": "#5b7fb4",
+   "bounds": {
+    "min": [
+     -18.7,
+     962.9,
+     105.3
+    ],
+    "max": [
+     -0.5,
+     1106.8,
+     132.4
+    ],
+    "center": [
+     -9.6,
+     1034.8,
+     118.9
+    ],
+    "size": [
+     18.2,
+     143.8,
+     27.1
+    ]
+   }
+  }
+ ],
+ "camera": {
+  "preset_par_figure": {
+   "73": "superieure",
+   "74": "posterieure"
+  },
+  "defaut": "superieure"
+ },
+ "diagram": {
+  "73": "couinaud"
+ },
+ "espaces": [],
+ "note_integration": "Scène de staging — IDs issus de FIGURES-AUDIT.json uniquement ; GLB résolus via proto-schemas/manifest.json."
+}

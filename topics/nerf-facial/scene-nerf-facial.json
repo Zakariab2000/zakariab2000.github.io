@@ -1,0 +1,363 @@
+{
+ "sujet": 7,
+ "partie": "I",
+ "titre_fr": "Le nerf facial",
+ "titre_en": "The facial nerve",
+ "figures": [
+  {
+   "numero": 15,
+   "titre_fr": "Origines apparentes et réelles du nerf facial (VII)",
+   "titre_en": "Real and apparent origins of the facial nerve (VII)",
+   "classe": "3D+D",
+   "structures": [
+    {
+     "id": "facial_nerve_vii_right",
+     "role": "sujet",
+     "file": "models/nerfs/facial_nerve_vii_right.glb",
+     "nom_fr": "Nerf facial (VII)",
+     "name_en": "Right facial nerve (VII)",
+     "name_la": "Nervus facialis (VII)",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "motor_nucleus_of_facial_nerve_right",
+     "role": "sujet",
+     "file": "models/cerveau/motor_nucleus_of_facial_nerve_right.glb",
+     "nom_fr": "Noyau moteur du nef facial",
+     "name_en": "Right motor nucleus of facial nerve",
+     "name_la": "Nucleus nervi facialis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "superior_salivatory_nucleus_right",
+     "role": "sujet",
+     "file": "models/cerveau/superior_salivatory_nucleus_right.glb",
+     "nom_fr": "Noyau salivaire supérieur",
+     "name_en": "Right superior salivatory nucleus",
+     "name_la": "Nucleus salivatorius superior",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "nucleus_of_solitary_tract_right",
+     "role": "sujet",
+     "file": "models/cerveau/nucleus_of_solitary_tract_right.glb",
+     "nom_fr": "Noyau du tractus solitaire",
+     "name_en": "Right nucleus of solitary tract",
+     "name_la": "Nucleus tractus solitarii",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "pons_right",
+     "role": "sujet",
+     "file": "models/cerveau/pons_right.glb",
+     "nom_fr": "Pont",
+     "name_en": "Right pons",
+     "name_la": "Pons",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "medulla_oblongata_right",
+     "role": "rapport",
+     "file": "models/cerveau/medulla_oblongata_right.glb",
+     "nom_fr": "Moëlle allongée",
+     "name_en": "Right medulla oblongata",
+     "name_la": "Medulla oblongata",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "midbrain_right",
+     "role": "rapport",
+     "file": "models/cerveau/midbrain_right.glb",
+     "nom_fr": "Mésencéphale",
+     "name_en": "Right midbrain",
+     "name_la": "Mesencephalon",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    }
+   ],
+   "camera": {
+    "vue": "anterieure",
+    "target": [
+     -32.5,
+     1501.5,
+     123.8
+    ],
+    "direction": [
+     0.0,
+     0.06,
+     0.998
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 238.4,
+    "fov": 45
+   },
+   "frame_ids": [
+    "motor_nucleus_of_facial_nerve_right",
+    "superior_salivatory_nucleus_right",
+    "nucleus_of_solitary_tract_right",
+    "pons_right",
+    "medulla_oblongata_right",
+    "midbrain_right"
+   ],
+   "diagram": "facial_origines",
+   "manquants": [
+    "Noyau spinal du trijumeau (3e relais des fibres du VII) : non individualisé dans le manifeste",
+    "Origine apparente (sillon bulbo-pontique / angle ponto-cérébelleux) : repère anatomique sans maillage dédié",
+    "Le détail noyaux → fibres → émergence est un schéma ; la 3D fournit nerf + noyaux moteur/salivaire/solitaire + tronc cérébral"
+   ]
+  },
+  {
+   "numero": 16,
+   "titre_fr": "Trajet et segments du nerf facial dans la base du crâne",
+   "titre_en": "Course and segments of the facial nerve in the skull base",
+   "classe": "3D+D",
+   "structures": [
+    {
+     "id": "facial_nerve_vii_right",
+     "role": "sujet",
+     "file": "models/nerfs/facial_nerve_vii_right.glb",
+     "nom_fr": "Nerf facial (VII)",
+     "name_en": "Right facial nerve (VII)",
+     "name_la": "Nervus facialis (VII)",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "temporal_bone_right",
+     "role": "sujet",
+     "file": "models/squelette/temporal_bone_right.glb",
+     "nom_fr": "Os temporal",
+     "name_en": "Right temporal bone",
+     "name_la": "Os temporale",
+     "couleur": "#e8dcc3",
+     "system": "squelette"
+    },
+    {
+     "id": "chorda_tympani_right",
+     "role": "sujet",
+     "file": "models/nerfs/chorda_tympani_right.glb",
+     "nom_fr": "Corde du tympan",
+     "name_en": "Right chorda tympani",
+     "name_la": "Chorda tympani",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "parotid_gland_right",
+     "role": "rapport",
+     "file": "models/organes/parotid_gland_right.glb",
+     "nom_fr": "Glande parotide",
+     "name_en": "Right parotid gland",
+     "name_la": "Glandula parotidea",
+     "couleur": "#d9a583",
+     "system": "organes"
+    }
+   ],
+   "camera": {
+    "vue": "laterale",
+    "target": [
+     -36.1,
+     1501.5,
+     116.5
+    ],
+    "direction": [
+     0.993,
+     0.06,
+     0.099
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 255.0,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": "facial_segments",
+   "manquants": [
+    "Le nerf facial = UN seul maillage par côté : les segments labyrinthique, tympanique et mastoïdien du canal facial NE sont PAS décomposés",
+    "Canal facial (aqueduc de Fallope) : pas de maillage ; foramen stylo-mastoïdien : absent des repères",
+    "La segmentation intra-pétreuse de la figure = schéma en regard de la scène 3D os temporal + nerf"
+   ]
+  },
+  {
+   "numero": 17,
+   "titre_fr": "Nerf VII intra-pétreux",
+   "titre_en": "Intrapetrous facial nerve (VII)",
+   "classe": "3D+D",
+   "structures": [
+    {
+     "id": "facial_nerve_vii_right",
+     "role": "sujet",
+     "file": "models/nerfs/facial_nerve_vii_right.glb",
+     "nom_fr": "Nerf facial (VII)",
+     "name_en": "Right facial nerve (VII)",
+     "name_la": "Nervus facialis (VII)",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "chorda_tympani_right",
+     "role": "sujet",
+     "file": "models/nerfs/chorda_tympani_right.glb",
+     "nom_fr": "Corde du tympan",
+     "name_en": "Right chorda tympani",
+     "name_la": "Chorda tympani",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "temporal_bone_right",
+     "role": "sujet",
+     "file": "models/squelette/temporal_bone_right.glb",
+     "nom_fr": "Os temporal",
+     "name_en": "Right temporal bone",
+     "name_la": "Os temporale",
+     "couleur": "#e8dcc3",
+     "system": "squelette"
+    },
+    {
+     "id": "stapes_right",
+     "role": "rapport",
+     "file": "models/squelette/stapes_right.glb",
+     "nom_fr": "Etrier",
+     "name_en": "Right stapes",
+     "name_la": "Stapes",
+     "couleur": "#e8dcc3",
+     "system": "squelette"
+    },
+    {
+     "id": "incus_right",
+     "role": "rapport",
+     "file": "models/squelette/incus_right.glb",
+     "nom_fr": "Enclume",
+     "name_en": "Right incus",
+     "name_la": "Incus",
+     "couleur": "#e8dcc3",
+     "system": "squelette"
+    },
+    {
+     "id": "malleus_right",
+     "role": "rapport",
+     "file": "models/squelette/malleus_right.glb",
+     "nom_fr": "Marteau",
+     "name_en": "Right malleus",
+     "name_la": "Malleus",
+     "couleur": "#e8dcc3",
+     "system": "squelette"
+    }
+   ],
+   "camera": {
+    "vue": "laterale",
+    "target": [
+     -36.1,
+     1501.5,
+     116.5
+    ],
+    "direction": [
+     0.993,
+     0.06,
+     0.099
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 255.0,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": "facial_intrapetreux",
+   "manquants": [
+    "Nerf grand pétreux (rameau intra-pétreux n°1 du cours) : ABSENT du manifeste",
+    "Nerf du muscle de l'étrier : ABSENT",
+    "Ganglion géniculé : non individualisé ; le nerf intra-pétreux reste un maillage unique → schéma des rameaux en regard"
+   ]
+  },
+  {
+   "numero": 18,
+   "titre_fr": "Nerf facial extra-pétreux",
+   "titre_en": "Extrapetrous facial nerve (VII)",
+   "classe": "3D+D",
+   "structures": [
+    {
+     "id": "facial_nerve_vii_right",
+     "role": "sujet",
+     "file": "models/nerfs/facial_nerve_vii_right.glb",
+     "nom_fr": "Nerf facial (VII)",
+     "name_en": "Right facial nerve (VII)",
+     "name_la": "Nervus facialis (VII)",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "parotid_gland_right",
+     "role": "sujet",
+     "file": "models/organes/parotid_gland_right.glb",
+     "nom_fr": "Glande parotide",
+     "name_en": "Right parotid gland",
+     "name_la": "Glandula parotidea",
+     "couleur": "#d9a583",
+     "system": "organes"
+    },
+    {
+     "id": "external_carotid_artery_right",
+     "role": "rapport",
+     "file": "models/arteres/external_carotid_artery_right.glb",
+     "nom_fr": "Artère carotide externe",
+     "name_en": "Right external carotid artery",
+     "name_la": "Carotis externa",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "deep_part_of_masseter_right",
+     "role": "rapport",
+     "file": "models/muscles/deep_part_of_masseter_right.glb",
+     "nom_fr": "Partie profonde du muscle masséter",
+     "name_en": "Right deep part of masseter",
+     "name_la": "Pars profunda masseteris",
+     "couleur": "#b03a2e",
+     "system": "muscles"
+    }
+   ],
+   "camera": {
+    "vue": "laterale",
+    "target": [
+     -32.6,
+     1490.2,
+     132.5
+    ],
+    "direction": [
+     0.993,
+     0.06,
+     0.099
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 246.0,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": "facial_branches",
+   "manquants": [
+    "Les 5 branches terminales (temporale, zygomatique, buccale, marginale mandibulaire, cervicale) et le plexus intra-parotidien : NON individualisés — le nerf facial est un maillage unique, sa division parotidienne n'existe pas en géométrie → schéma des branches en regard"
+   ]
+  }
+ ]
+}

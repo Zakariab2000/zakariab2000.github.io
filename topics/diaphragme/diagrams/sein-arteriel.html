@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vascularisation artérielle du sein — schéma interactif — Fig 48 · Batch F (staging)</title>
+<style>
+body{margin:0;background:#14161a;color:#e8e4da;font-family:system-ui,sans-serif}
+header{padding:14px 16px 6px}header h1{font-size:19px;margin:0 0 2px}
+header p{margin:0;font-size:12.5px;opacity:.65}
+.legend{display:flex;flex-wrap:wrap;gap:6px;padding:8px 16px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;background:#1d2026;
+ border:1px solid #34383f;border-radius:20px;padding:4px 10px}
+.chip i{width:10px;height:10px;border-radius:50%;display:inline-block}
+main{display:flex;gap:12px;padding:4px 12px 16px;align-items:flex-start}
+#svgwrap{flex:1 1 auto;min-width:0}svg{width:100%;height:auto;display:block}
+#fiche{flex:0 0 300px;background:#1d2026;border:1px solid #34383f;border-radius:12px;
+ padding:14px;position:sticky;top:10px}
+#fiche h2{font-size:16px;margin:0 0 2px}#fiche .en{font-size:12px;opacity:.6;font-style:italic;margin:0 0 8px}
+#fiche .desc{font-size:13.5px;line-height:1.5;margin:0}
+#fiche .notebox{margin-top:10px;font-size:12px;background:#2a2118;border:1px solid #8a6d2f;
+ border-radius:8px;padding:8px 10px;color:#f2cf8a}
+#fiche .lvl{display:inline-block;font-size:11px;border-radius:12px;padding:2px 9px;margin-bottom:8px;color:#14161a;font-weight:600}
+#reset{margin-top:12px;background:#2a2e36;color:#e8e4da;border:1px solid #4a4f59;border-radius:6px;padding:6px 12px;cursor:pointer}
+@media(max-width:760px){main{flex-direction:column}#fiche{flex:none;width:auto;align-self:stretch;position:static}}
+.node{cursor:pointer}.node rect{transition:opacity .15s}
+.n-label{fill:#e8e4da;font-size:13.5px;font-weight:600;text-anchor:middle;pointer-events:none}
+.n-sub{fill:#b9bec8;font-size:11px;font-style:italic;text-anchor:middle;pointer-events:none}
+.pt-label{fill:#e8e4da;font-size:11.5px;font-weight:600;text-anchor:middle;pointer-events:none}
+.badge{fill:#f2cf8a;stroke:#14161a;stroke-width:1}
+.edge{stroke:#7d8590;stroke-width:1.6}
+.edge.dashed{stroke-dasharray:6 5}
+svg.dim .node{opacity:.32}svg.dim .edge{opacity:.18}
+svg.dim .node.sel,svg.dim .node.nbr{opacity:1}
+svg.dim .edge.hl{opacity:1;stroke:#ffd166;stroke-width:2.8}
+.node.sel rect{stroke:#fff;stroke-width:2.8}
+.node.nbr rect{stroke-width:2.4}
+</style>
+</head>
+<body>
+<header>
+<h1>Fig 48 — Vascularisation artérielle du sein — schéma interactif</h1>
+<p>Arterial supply of the breast — interactive diagram · Schéma interactif : touchez un élément pour sa fiche.
+Les éléments en pointillés n'ont pas de maillage 3D (schéma seul).</p>
+</header>
+<div class="legend"><span class="chip"><i style="background:#b03a2e"></i>Artères d&#x27;origine</span><span class="chip"><i style="background:#e05252"></i>Sources mammaires</span><span class="chip"><i style="background:#8fa5ba"></i>Territoires glandulaires</span></div>
+<main>
+<div id="svgwrap">
+<svg viewBox="0 0 720 700" role="img" aria-label="Vascularisation artérielle du sein — schéma interactif">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+<path d="M0,0 L7,3 L0,6 Z" fill="#9aa3ad"/></marker></defs>
+<line x1="110" y1="110" x2="355" y2="110" class="edge" data-a="subclav" data-b="ati" marker-end="url(#arr)"/><line x1="355" y1="110" x2="472" y2="110" class="edge" data-a="ati" data-b="perf" marker-end="url(#arr)"/><line x1="472" y1="110" x2="605" y2="110" class="edge" data-a="perf" data-b="terr_med" marker-end="url(#arr)"/><line x1="110" y1="330" x2="355" y2="250" class="edge" data-a="axill" data-b="thoraco" marker-end="url(#arr)"/><line x1="110" y1="330" x2="355" y2="340" class="edge" data-a="axill" data-b="thor_sup" marker-end="url(#arr)"/><line x1="110" y1="330" x2="355" y2="430" class="edge" data-a="axill" data-b="sous_scap" marker-end="url(#arr)"/><line x1="110" y1="330" x2="355" y2="520" class="edge" data-a="axill" data-b="thor_lat" marker-end="url(#arr)"/><line x1="355" y1="250" x2="605" y2="330" class="edge" data-a="thoraco" data-b="terr_lat" marker-end="url(#arr)"/><line x1="355" y1="340" x2="605" y2="330" class="edge" data-a="thor_sup" data-b="terr_lat" marker-end="url(#arr)"/><line x1="355" y1="430" x2="605" y2="330" class="edge" data-a="sous_scap" data-b="terr_lat" marker-end="url(#arr)"/><line x1="355" y1="520" x2="605" y2="330" class="edge" data-a="thor_lat" data-b="terr_lat" marker-end="url(#arr)"/><line x1="355" y1="520" x2="605" y2="540" class="edge" data-a="thor_lat" data-b="terr_inf" marker-end="url(#arr)"/><line x1="355" y1="620" x2="605" y2="330" class="edge" data-a="intercost" data-b="terr_lat" marker-end="url(#arr)"/>
+<g class="node" data-id="subclav" tabindex="0" role="button"><rect x="20.0" y="87.0" width="180" height="46" rx="10" fill="#331d1e" stroke="#b03a2e" stroke-width="1.6"/><text x="110" y="113.5" class="n-label">Artère sub-clavière</text></g><g class="node" data-id="axill" tabindex="0" role="button"><rect x="20.0" y="307.0" width="180" height="46" rx="10" fill="#331d1e" stroke="#b03a2e" stroke-width="1.6"/><text x="110" y="333.5" class="n-label">Artère axillaire</text></g><g class="node" data-id="ati" tabindex="0" role="button"><rect x="265.0" y="85.5" width="180" height="49" rx="10" fill="#3d2225" stroke="#e05252" stroke-width="1.6"/><text x="355" y="105.5" class="n-label">Artère thoracique</text><text x="355" y="122.5" class="n-sub">interne (mammaire interne)</text></g><g class="node" data-id="perf" tabindex="0" role="button"><circle cx="472" cy="110" r="14" fill="#e05252" stroke="#e8e4da" stroke-width="1.2"/><text x="472" y="139" class="pt-label">perf.</text></g><g class="node" data-id="thoraco" tabindex="0" role="button"><rect x="265.0" y="225.5" width="180" height="49" rx="10" fill="#3d2225" stroke="#e05252" stroke-width="1.6"/><text x="355" y="245.5" class="n-label">Branche thoracique</text><text x="355" y="262.5" class="n-sub">de la thoraco-acromiale</text></g><g class="node" data-id="thor_sup" tabindex="0" role="button" data-note="1"><rect x="265.0" y="315.5" width="180" height="49" rx="10" fill="#3d2225" stroke="#e05252" stroke-width="1.6" stroke-dasharray="5 4"/><text x="355" y="335.5" class="n-label">Artère thoracique</text><text x="355" y="352.5" class="n-sub">supérieure</text><circle cx="436.0" cy="324.5" r="4.5" class="badge"/></g><g class="node" data-id="sous_scap" tabindex="0" role="button" data-note="1"><rect x="260.0" y="407.0" width="190" height="46" rx="10" fill="#3d2225" stroke="#e05252" stroke-width="1.6" stroke-dasharray="5 4"/><text x="355" y="433.5" class="n-label">Artère sous-scapulaire</text><circle cx="441.0" cy="416.0" r="4.5" class="badge"/></g><g class="node" data-id="thor_lat" tabindex="0" role="button"><rect x="265.0" y="495.5" width="180" height="49" rx="10" fill="#3d2225" stroke="#e05252" stroke-width="1.6"/><text x="355" y="515.5" class="n-label">Artère thoracique</text><text x="355" y="532.5" class="n-sub">latérale (mammaire externe)</text></g><g class="node" data-id="intercost" tabindex="0" role="button" data-note="1"><rect x="260.0" y="595.5" width="190" height="49" rx="10" fill="#3d2225" stroke="#e05252" stroke-width="1.6" stroke-dasharray="5 4"/><text x="355" y="615.5" class="n-label">Artères intercostales</text><text x="355" y="632.5" class="n-sub">branches mammaires</text><circle cx="441.0" cy="604.5" r="4.5" class="badge"/></g><g class="node" data-id="terr_med" tabindex="0" role="button" data-note="1"><rect x="520.0" y="85.5" width="170" height="49" rx="10" fill="#2d333a" stroke="#8fa5ba" stroke-width="1.6" stroke-dasharray="5 4"/><text x="605" y="105.5" class="n-label">Partie médiale</text><text x="605" y="122.5" class="n-sub">de la glande</text><circle cx="681.0" cy="94.5" r="4.5" class="badge"/></g><g class="node" data-id="terr_lat" tabindex="0" role="button" data-note="1"><rect x="520.0" y="305.5" width="170" height="49" rx="10" fill="#2d333a" stroke="#8fa5ba" stroke-width="1.6" stroke-dasharray="5 4"/><text x="605" y="325.5" class="n-label">Partie latérale</text><text x="605" y="342.5" class="n-sub">de la glande</text><circle cx="681.0" cy="314.5" r="4.5" class="badge"/></g><g class="node" data-id="terr_inf" tabindex="0" role="button" data-note="1"><rect x="520.0" y="515.5" width="170" height="49" rx="10" fill="#2d333a" stroke="#8fa5ba" stroke-width="1.6" stroke-dasharray="5 4"/><text x="605" y="535.5" class="n-label">Partie inférieure</text><text x="605" y="552.5" class="n-sub">de la glande</text><circle cx="681.0" cy="524.5" r="4.5" class="badge"/></g>
+</svg>
+</div>
+<aside id="fiche"><div id="fiche-body"><p class="desc">Touchez un élément du schéma pour afficher sa fiche.</p></div>
+<button id="reset">↺ Réinitialiser</button></aside>
+</main>
+<script>window.__NODES__ = {"subclav": {"id": "subclav", "x": 110, "y": 110, "w": 180, "label": "Artère sub-clavière", "label_en": "Subclavian artery", "sub_en": "", "lvl": "origine", "desc": {"fr": "Artère d'origine : elle donne l'artère thoracique interne, l'une des 3 sources artérielles du sein selon le cours (Q18).", "en": "Parent artery: it gives off the internal thoracic artery, one of the three arterial sources of the breast in the course (Q18)."}, "__c": "#b03a2e", "__lvlfr": "Artères d'origine"}, "axill": {"id": "axill", "x": 110, "y": 330, "w": 180, "label": "Artère axillaire", "label_en": "Axillary artery", "sub_en": "", "lvl": "origine", "desc": {"fr": "Artère d'origine : ses branches destinées au sein irriguent la partie latérale et inférieure de la glande (cours, Q18). Elle figure dans la scène 3D de la figure (audit fig. 48).", "en": "Parent artery: its branches to the breast supply the lateral and inferior parts of the gland (course, Q18). It is part of the 3D scene of the figure (audit fig. 48)."}, "__c": "#b03a2e", "__lvlfr": "Artères d'origine"}, "ati": {"id": "ati", "x": 355, "y": 110, "w": 180, "label": "Artère thoracique", "sub": "interne (mammaire interne)", "label_en": "Internal thoracic", "sub_en": "a. (internal mammary)", "lvl": "source", "desc": {"fr": "Branche de l'artère sub-clavière ; elle donne des rameaux perforants pour la partie médiale de la glande (cours, Q18). Maillage présent dans la scène 3D (audit fig. 48).", "en": "Branch of the subclavian artery; it gives perforating branches to the medial part of the gland (course, Q18). Modelled in the 3D scene (audit fig. 48)."}, "__c": "#e05252", "__lvlfr": "Sources mammaires"}, "perf": {"id": "perf", "x": 472, "y": 110, "r": 14, "label": "perf.", "label_en": "perforating", "sub_en": "", "lvl": "source", "desc": {"fr": "Rameaux perforants de l'artère thoracique interne — ils traversent les espaces intercostaux antérieurs vers la partie médiale de la glande. Non individualisés dans le manifeste (audit fig. 48) : schéma seul.", "en": "Perforating branches of the internal thoracic artery — they cross the anterior intercostal spaces to the medial part of the gland. Not individually modelled in the manifest (audit fig. 48): diagram only."}, "__c": "#e05252", "__lvlfr": "Sources mammaires"}, "thoraco": {"id": "thoraco", "x": 355, "y": 250, "w": 180, "label": "Branche thoracique", "sub": "de la thoraco-acromiale", "label_en": "Thoracic branch", "sub_en": "of thoraco-acromial a.", "lvl": "source", "desc": {"fr": "Branche thoracique de l'artère thoraco-acromiale, elle-même branche de l'axillaire : l'une des branches axillaires destinées, selon le cours, à la partie latérale et inférieure de la glande.", "en": "Thoracic branch of the thoraco-acromial artery, itself a branch of the axillary artery: one of the axillary branches that the course assigns to the lateral and inferior parts of the gland."}, "__c": "#e05252", "__lvlfr": "Sources mammaires"}, "thor_sup": {"id": "thor_sup", "x": 355, "y": 340, "w": 180, "label": "Artère thoracique", "sub": "supérieure", "label_en": "Superior thoracic", "sub_en": "artery", "lvl": "source", "note": {"fr": "Non individualisée dans la scène fig. 48 — schéma seul", "en": "Not individually modelled in the fig. 48 scene — diagram only"}, "desc": {"fr": "Branche de l'artère axillaire citée par le cours (Q18) parmi les sources du sein, avec les autres branches axillaires, pour la partie latérale et inférieure de la glande.", "en": "Branch of the axillary artery listed by the course (Q18) among the sources of the breast, with the other axillary branches, for the lateral and inferior parts of the gland."}, "__c": "#e05252", "__lvlfr": "Sources mammaires"}, "sous_scap": {"id": "sous_scap", "x": 355, "y": 430, "w": 190, "label": "Artère sous-scapulaire", "label_en": "Subscapular artery", "sub_en": "", "lvl": "source", "note": {"fr": "Non individualisée dans la scène fig. 48 — schéma seul", "en": "Not individually modelled in the fig. 48 scene — diagram only"}, "desc": {"fr": "Branche de l'artère axillaire citée par le cours (Q18) parmi les sources du sein, pour sa partie latérale et inférieure.", "en": "Branch of the axillary artery listed by the course (Q18) among the sources of the breast, for its lateral and inferior parts."}, "__c": "#e05252", "__lvlfr": "Sources mammaires"}, "thor_lat": {"id": "thor_lat", "x": 355, "y": 520, "w": 180, "label": "Artère thoracique", "sub": "latérale (mammaire externe)", "label_en": "Lateral thoracic", "sub_en": "a. (external mammary)", "lvl": "source", "desc": {"fr": "Artère mammaire externe : la source axillaire principale du sein selon le cours (« surtout l'artère mammaire externe ou thoracique latérale »), pour la partie latérale et inférieure de la glande. Maillage présent dans la scène 3D (audit fig. 48).", "en": "External mammary artery: the main axillary source of the breast in the course ('above all the external mammary or lateral thoracic artery'), for the lateral and inferior parts of the gland. Modelled in the 3D scene (audit fig. 48)."}, "__c": "#e05252", "__lvlfr": "Sources mammaires"}, "intercost": {"id": "intercost", "x": 355, "y": 620, "w": 190, "label": "Artères intercostales", "sub": "branches mammaires", "label_en": "Intercostal arteries", "sub_en": "mammary branches", "lvl": "source", "note": {"fr": "Rameaux non individualisés (audit fig. 48) — schéma seul", "en": "Branches not individually modelled (audit fig. 48) — diagram only"}, "desc": {"fr": "Deuxième source du cours (Q18) : les branches des artères intercostales irriguent la partie latérale de la glande.", "en": "Second source in the course (Q18): branches of the intercostal arteries supply the lateral part of the gland."}, "__c": "#e05252", "__lvlfr": "Sources mammaires"}, "terr_med": {"id": "terr_med", "x": 605, "y": 110, "w": 170, "label": "Partie médiale", "sub": "de la glande", "label_en": "Medial part", "sub_en": "of the gland", "lvl": "territoire", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Territoire médial de la glande mammaire, irrigué par les rameaux perforants de la thoracique interne. La glande elle-même n'a aucun maillage 3D (audit fig. 48) : territoire schématique.", "en": "Medial territory of the mammary gland, supplied by the perforating branches of the internal thoracic artery. The gland itself has no 3D mesh (audit fig. 48): schematic territory."}, "__c": "#8fa5ba", "__lvlfr": "Territoires glandulaires"}, "terr_lat": {"id": "terr_lat", "x": 605, "y": 330, "w": 170, "label": "Partie latérale", "sub": "de la glande", "label_en": "Lateral part", "sub_en": "of the gland", "lvl": "territoire", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Territoire latéral de la glande, irrigué par les branches des artères intercostales et par les branches de l'artère axillaire (cours, Q18).", "en": "Lateral territory of the gland, supplied by branches of the intercostal arteries and by branches of the axillary artery (course, Q18)."}, "__c": "#8fa5ba", "__lvlfr": "Territoires glandulaires"}, "terr_inf": {"id": "terr_inf", "x": 605, "y": 540, "w": 170, "label": "Partie inférieure", "sub": "de la glande", "label_en": "Inferior part", "sub_en": "of the gland", "lvl": "territoire", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Territoire inférieur de la glande, irrigué avec la partie latérale par les branches de l'artère axillaire, surtout la thoracique latérale (cours, Q18).", "en": "Inferior territory of the gland, supplied together with the lateral part by the branches of the axillary artery, above all the lateral thoracic artery (course, Q18)."}, "__c": "#8fa5ba", "__lvlfr": "Territoires glandulaires"}};</script>
+<script>
+const NODES = window.__NODES__;
+const svg = document.querySelector('svg');
+const fiche = document.getElementById('fiche-body');
+const byId = {}; document.querySelectorAll('.node').forEach(g => byId[g.dataset.id] = g);
+const adj = {};
+document.querySelectorAll('.edge').forEach(e => {
+  (adj[e.dataset.a] = adj[e.dataset.a] || []).push(e);
+  (adj[e.dataset.b] = adj[e.dataset.b] || []).push(e);
+});
+function clearSel(){
+  svg.classList.remove('dim');
+  document.querySelectorAll('.sel,.nbr,.hl').forEach(el => el.classList.remove('sel','nbr','hl'));
+  fiche.innerHTML = '<p class="desc">Touchez un élément du schéma pour afficher sa fiche.</p>';
+  window.__selected = null;
+}
+function select(id){
+  clearSel();
+  const n = NODES[id]; if(!n) return;
+  svg.classList.add('dim');
+  byId[id].classList.add('sel');
+  (adj[id] || []).forEach(e => {
+    e.classList.add('hl');
+    const other = e.dataset.a === id ? e.dataset.b : e.dataset.a;
+    if (byId[other]) byId[other].classList.add('nbr');
+  });
+  let h = '<span class="lvl" style="background:' + n.__c + '">' + n.__lvlfr + '</span>'
+        + '<h2>' + n.label + (n.sub ? ' <small>(' + n.sub + ')</small>' : '') + '</h2>'
+        + '<p class="en">' + (n.label_en || '') + (n.sub_en ? ' — ' + n.sub_en : '') + '</p>'
+        + '<p class="desc">' + ((n.desc && n.desc.fr) || '') + '</p>';
+  if (n.note) h += '<div class="notebox">◐ ' + (n.note.fr || n.note) + '</div>';
+  fiche.innerHTML = h;
+  window.__selected = id;
+}
+document.querySelectorAll('.node').forEach(g => {
+  g.addEventListener('click', ev => { ev.stopPropagation(); select(g.dataset.id); });
+  g.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(g.dataset.id); } });
+});
+svg.addEventListener('click', clearSel);
+document.getElementById('reset').addEventListener('click', clearSel);
+window.__select = select; window.__clearSel = clearSel;
+</script>
+<a href="../../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

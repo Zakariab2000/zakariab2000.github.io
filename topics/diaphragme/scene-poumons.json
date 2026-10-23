@@ -1,0 +1,1045 @@
+{
+ "sujet": "poumons",
+ "titre_fr": "Le poumon",
+ "titre_en": "The lung",
+ "partie": "III",
+ "numero_topic": 20,
+ "batch": "F",
+ "figures": [
+  {
+   "numero": 54,
+   "titre_fr": "Rapports supérieurs des poumons",
+   "titre_en": "Superior relations of the lungs",
+   "classe": "3D",
+   "camera": {
+    "vue": "superieure",
+    "preset_audit": "supéro-antérieure"
+   },
+   "structures": [
+    {
+     "id": "right_lung",
+     "nom_fr": "Poumon droit",
+     "name_en": "Right lung",
+     "systeme": "organes",
+     "couleur": "#d98f8f",
+     "fichier": "models/organes/right_lung.glb",
+     "role": "sujet",
+     "centre": [
+      -66.1,
+      1233.4,
+      109.0
+     ],
+     "taille": [
+      126.1,
+      261.0,
+      174.3
+     ]
+    },
+    {
+     "id": "left_lung",
+     "nom_fr": "Poumon gauche",
+     "name_en": "Left lung",
+     "systeme": "organes",
+     "couleur": "#d98f8f",
+     "fichier": "models/organes/left_lung.glb",
+     "role": "sujet",
+     "centre": [
+      67.8,
+      1232.8,
+      108.8
+     ],
+     "taille": [
+      118.8,
+      265.4,
+      173.0
+     ]
+    },
+    {
+     "id": "pleura",
+     "nom_fr": "Plèvre",
+     "name_en": "Pleura",
+     "systeme": "organes",
+     "couleur": "#c97b84",
+     "fichier": "models/organes/pleura.glb",
+     "role": "sujet",
+     "centre": [
+      -0.9,
+      1234.1,
+      109.0
+     ],
+     "taille": [
+      258.5,
+      265.2,
+      176.7
+     ]
+    },
+    {
+     "id": "scalenus_anterior_muscle_right",
+     "nom_fr": "Muscle scalène antérieur",
+     "name_en": "Right scalenus anterior muscle",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/scalenus_anterior_muscle_right.glb",
+     "role": "sujet",
+     "centre": [
+      -37.4,
+      1386.7,
+      99.1
+     ],
+     "taille": [
+      33.7,
+      83.3,
+      17.7
+     ]
+    },
+    {
+     "id": "scalenus_anterior_muscle_left",
+     "nom_fr": "Muscle scalène antérieur",
+     "name_en": "Left scalenus anterior muscle",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/scalenus_anterior_muscle_left.glb",
+     "role": "sujet",
+     "centre": [
+      36.8,
+      1386.7,
+      99.1
+     ],
+     "taille": [
+      33.7,
+      83.3,
+      17.7
+     ]
+    },
+    {
+     "id": "sympathetic_trunk_right",
+     "nom_fr": "Tronc sympathique",
+     "name_en": "Right sympathetic trunk",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/sympathetic_trunk_right.glb",
+     "role": "sujet",
+     "centre": [
+      -14.7,
+      1252.5,
+      73.0
+     ],
+     "taille": [
+      19.8,
+      373.1,
+      63.7
+     ]
+    },
+    {
+     "id": "sympathetic_trunk_left",
+     "nom_fr": "Tronc sympathique",
+     "name_en": "Left sympathetic trunk",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/sympathetic_trunk_left.glb",
+     "role": "sujet",
+     "centre": [
+      14.1,
+      1252.5,
+      73.0
+     ],
+     "taille": [
+      19.8,
+      373.1,
+      63.7
+     ]
+    },
+    {
+     "id": "vertebral_artery_right",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Right vertebral artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/vertebral_artery_right.glb",
+     "role": "sujet",
+     "centre": [
+      -20.6,
+      1434.6,
+      85.4
+     ],
+     "taille": [
+      42.4,
+      159.8,
+      28.5
+     ]
+    },
+    {
+     "id": "vertebral_artery_left",
+     "nom_fr": "Artère vertébrale",
+     "name_en": "Left vertebral artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/vertebral_artery_left.glb",
+     "role": "sujet",
+     "centre": [
+      20.0,
+      1434.6,
+      85.4
+     ],
+     "taille": [
+      42.4,
+      159.8,
+      28.5
+     ]
+    },
+    {
+     "id": "first_rib_right",
+     "nom_fr": "Première côte",
+     "name_en": "Right first rib",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "fichier": "models/squelette/first_rib_right.glb",
+     "role": "sujet",
+     "centre": [
+      -43.3,
+      1351.2,
+      101.7
+     ],
+     "taille": [
+      53.9,
+      59.7,
+      66.4
+     ]
+    },
+    {
+     "id": "first_rib_left",
+     "nom_fr": "Première côte",
+     "name_en": "Left first rib",
+     "systeme": "squelette",
+     "couleur": "#e8dcc3",
+     "fichier": "models/squelette/first_rib_left.glb",
+     "role": "sujet",
+     "centre": [
+      42.7,
+      1351.2,
+      101.7
+     ],
+     "taille": [
+      53.9,
+      59.7,
+      66.4
+     ]
+    },
+    {
+     "id": "right_subclavian_artery",
+     "nom_fr": "Artère subclavière droite",
+     "name_en": "Right subclavian artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/right_subclavian_artery.glb",
+     "role": "contexte",
+     "centre": [
+      -45.4,
+      1350.2,
+      106.4
+     ],
+     "taille": [
+      68.1,
+      15.5,
+      23.0
+     ]
+    },
+    {
+     "id": "left_subclavian_artery",
+     "nom_fr": "Artère subclavière gauche",
+     "name_en": "Left subclavian artery",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/left_subclavian_artery.glb",
+     "role": "contexte",
+     "centre": [
+      48.7,
+      1342.5,
+      97.9
+     ],
+     "taille": [
+      60.4,
+      38.6,
+      12.3
+     ]
+    },
+    {
+     "id": "trachea",
+     "nom_fr": "Trachée",
+     "name_en": "Trachea",
+     "systeme": "organes",
+     "couleur": "#d9bda6",
+     "fichier": "models/organes/trachea.glb",
+     "role": "contexte",
+     "centre": [
+      -0.5,
+      1342.2,
+      98.3
+     ],
+     "taille": [
+      26.7,
+      105.9,
+      36.6
+     ]
+    }
+   ],
+   "diagramme": null,
+   "espaces": [
+    {
+     "id": "cavite_pleurale_droite",
+     "nom_fr": "Cavité pleurale droite",
+     "couleur": "#ffa62b",
+     "fichier": "modeles-espaces/cavite_pleurale_droite.glb",
+     "bornes": [
+      "pleura",
+      "right_lung"
+     ],
+     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
+    },
+    {
+     "id": "cavite_pleurale_gauche",
+     "nom_fr": "Cavité pleurale gauche",
+     "couleur": "#2ec4b6",
+     "fichier": "modeles-espaces/cavite_pleurale_gauche.glb",
+     "bornes": [
+      "pleura",
+      "left_lung"
+     ],
+     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
+    }
+   ],
+   "manquants": [
+    "Canal thoracique (rapport supérieur gauche) et conduit lymphatique droit : ABSENTS du manifeste",
+    "Fascia sus-pleural (membrane de Sibson) : ABSENT"
+   ]
+  },
+  {
+   "numero": 55,
+   "titre_fr": "Rapports médiastinaux des poumons",
+   "titre_en": "Mediastinal relations of the lungs",
+   "classe": "3D",
+   "camera": {
+    "vue": "anterieure",
+    "preset_audit": "antérieure, poumons écartés en fondu"
+   },
+   "structures": [
+    {
+     "id": "right_lung",
+     "nom_fr": "Poumon droit",
+     "name_en": "Right lung",
+     "systeme": "organes",
+     "couleur": "#d98f8f",
+     "fichier": "models/organes/right_lung.glb",
+     "role": "sujet",
+     "centre": [
+      -66.1,
+      1233.4,
+      109.0
+     ],
+     "taille": [
+      126.1,
+      261.0,
+      174.3
+     ]
+    },
+    {
+     "id": "left_lung",
+     "nom_fr": "Poumon gauche",
+     "name_en": "Left lung",
+     "systeme": "organes",
+     "couleur": "#d98f8f",
+     "fichier": "models/organes/left_lung.glb",
+     "role": "sujet",
+     "centre": [
+      67.8,
+      1232.8,
+      108.8
+     ],
+     "taille": [
+      118.8,
+      265.4,
+      173.0
+     ]
+    },
+    {
+     "id": "oesophagus",
+     "nom_fr": "Oesophage",
+     "name_en": "Oesophagus",
+     "systeme": "organes",
+     "couleur": "#d9a583",
+     "fichier": "models/organes/oesophagus.glb",
+     "role": "sujet",
+     "centre": [
+      4.3,
+      1268.7,
+      92.8
+     ],
+     "taille": [
+      26.9,
+      283.0,
+      48.9
+     ]
+    },
+    {
+     "id": "thoracic_aorta",
+     "nom_fr": "Aorte thoracique",
+     "name_en": "Thoracic aorta",
+     "systeme": "arteres",
+     "couleur": "#cf5346",
+     "fichier": "models/arteres/thoracic_aorta.glb",
+     "role": "sujet",
+     "centre": [
+      14.7,
+      1219.0,
+      76.3
+     ],
+     "taille": [
+      31.0,
+      161.3,
+      45.4
+     ]
+    },
+    {
+     "id": "azygos_vein",
+     "nom_fr": "Veine azygos",
+     "name_en": "Azygos vein",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/azygos_vein.glb",
+     "role": "sujet",
+     "centre": [
+      -11.9,
+      1192.1,
+      88.8
+     ],
+     "taille": [
+      12.0,
+      216.3,
+      49.6
+     ]
+    },
+    {
+     "id": "trachea",
+     "nom_fr": "Trachée",
+     "name_en": "Trachea",
+     "systeme": "organes",
+     "couleur": "#d9bda6",
+     "fichier": "models/organes/trachea.glb",
+     "role": "sujet",
+     "centre": [
+      -0.5,
+      1342.2,
+      98.3
+     ],
+     "taille": [
+      26.7,
+      105.9,
+      36.6
+     ]
+    },
+    {
+     "id": "vagus_nerve_x_right",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Right vagus nerve (X)",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/vagus_nerve_x_right.glb",
+     "role": "sujet",
+     "centre": [
+      19.8,
+      1274.4,
+      98.5
+     ],
+     "taille": [
+      97.1,
+      473.5,
+      83.2
+     ]
+    },
+    {
+     "id": "vagus_nerve_x_left",
+     "nom_fr": "Nerf vague (X)",
+     "name_en": "Left vagus nerve (X)",
+     "systeme": "nerfs",
+     "couleur": "#d9a441",
+     "fichier": "models/nerfs/vagus_nerve_x_left.glb",
+     "role": "sujet",
+     "centre": [
+      14.7,
+      1395.7,
+      94.6
+     ],
+     "taille": [
+      26.8,
+      231.0,
+      69.4
+     ]
+    },
+    {
+     "id": "superior_vena_cava",
+     "nom_fr": "Veine cave supérieure",
+     "name_en": "Superior vena cava",
+     "systeme": "veines",
+     "couleur": "#5b7fb4",
+     "fichier": "models/veines/superior_vena_cava.glb",
+     "role": "sujet",
+     "centre": [
+      -16.3,
+      1292.9,
+      117.9
+     ],
+     "taille": [
+      24.5,
+      37.9,
+      25.4
+     ]
+    },
+    {
+     "id": "right_atrium",
+     "nom_fr": "Atrium droit",
+     "name_en": "Right atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/right_atrium.glb",
+     "role": "sujet",
+     "centre": [
+      -14.5,
+      1229.2,
+      127.4
+     ],
+     "taille": [
+      43.9,
+      99.2,
+      69.2
+     ]
+    },
+    {
+     "id": "left_atrium",
+     "nom_fr": "Atrium gauche",
+     "name_en": "Left atrium",
+     "systeme": "organes",
+     "couleur": "#cf4436",
+     "fichier": "models/organes/left_atrium.glb",
+     "role": "sujet",
+     "centre": [
+      20.3,
+      1234.3,
+      110.7
+     ],
+     "taille": [
+      87.8,
+      75.6,
+      81.4
+     ]
+    },
+    {
+     "id": "pleura",
+     "nom_fr": "Plèvre",
+     "name_en": "Pleura",
+     "systeme": "organes",
+     "couleur": "#c97b84",
+     "fichier": "models/organes/pleura.glb",
+     "role": "contexte",
+     "centre": [
+      -0.9,
+      1234.1,
+      109.0
+     ],
+     "taille": [
+      258.5,
+      265.2,
+      176.7
+     ]
+    },
+    {
+     "id": "diaphragm",
+     "nom_fr": "Diaphragme",
+     "name_en": "Diaphragm",
+     "systeme": "muscles",
+     "couleur": "#b03a2e",
+     "fichier": "models/muscles/diaphragm.glb",
+     "role": "contexte",
+     "centre": [
+      -0.7,
+      1085.1,
+      115.9
+     ],
+     "taille": [
+      246.3,
+      221.1,
+      157.7
+     ]
+    }
+   ],
+   "diagramme": null,
+   "espaces": [
+    {
+     "id": "cavite_pleurale_droite",
+     "nom_fr": "Cavité pleurale droite",
+     "couleur": "#ffa62b",
+     "fichier": "modeles-espaces/cavite_pleurale_droite.glb",
+     "bornes": [
+      "pleura",
+      "right_lung"
+     ],
+     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
+    },
+    {
+     "id": "cavite_pleurale_gauche",
+     "nom_fr": "Cavité pleurale gauche",
+     "couleur": "#2ec4b6",
+     "fichier": "modeles-espaces/cavite_pleurale_gauche.glb",
+     "bornes": [
+      "pleura",
+      "left_lung"
+     ],
+     "note_fr": "Espace virtuel entre les feuillets viscéral et pariétal de la plèvre. Volume schématique : coque régulière (~5 mm) autour du poumon, limitée au sac pleural (maillage `pleura`) — la cavité réelle est une simple fente capillaire contenant un film de liquide ; l'épaisseur affichée est une convention."
+    }
+   ],
+   "manquants": [
+    "Nerf phrénique (rapport médiastinal majeur des deux poumons) : ABSENT du manifeste",
+    "Péricarde : ABSENT ; canal thoracique : ABSENT"
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "right_lung",
+   "nom_fr": "Poumon droit",
+   "name_en": "Right lung",
+   "systeme": "organes",
+   "couleur": "#d98f8f",
+   "fichier": "models/organes/right_lung.glb",
+   "role": "sujet",
+   "centre": [
+    -66.1,
+    1233.4,
+    109.0
+   ],
+   "taille": [
+    126.1,
+    261.0,
+    174.3
+   ]
+  },
+  {
+   "id": "left_lung",
+   "nom_fr": "Poumon gauche",
+   "name_en": "Left lung",
+   "systeme": "organes",
+   "couleur": "#d98f8f",
+   "fichier": "models/organes/left_lung.glb",
+   "role": "sujet",
+   "centre": [
+    67.8,
+    1232.8,
+    108.8
+   ],
+   "taille": [
+    118.8,
+    265.4,
+    173.0
+   ]
+  },
+  {
+   "id": "pleura",
+   "nom_fr": "Plèvre",
+   "name_en": "Pleura",
+   "systeme": "organes",
+   "couleur": "#c97b84",
+   "fichier": "models/organes/pleura.glb",
+   "role": "sujet",
+   "centre": [
+    -0.9,
+    1234.1,
+    109.0
+   ],
+   "taille": [
+    258.5,
+    265.2,
+    176.7
+   ]
+  },
+  {
+   "id": "scalenus_anterior_muscle_right",
+   "nom_fr": "Muscle scalène antérieur",
+   "name_en": "Right scalenus anterior muscle",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "fichier": "models/muscles/scalenus_anterior_muscle_right.glb",
+   "role": "sujet",
+   "centre": [
+    -37.4,
+    1386.7,
+    99.1
+   ],
+   "taille": [
+    33.7,
+    83.3,
+    17.7
+   ]
+  },
+  {
+   "id": "scalenus_anterior_muscle_left",
+   "nom_fr": "Muscle scalène antérieur",
+   "name_en": "Left scalenus anterior muscle",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "fichier": "models/muscles/scalenus_anterior_muscle_left.glb",
+   "role": "sujet",
+   "centre": [
+    36.8,
+    1386.7,
+    99.1
+   ],
+   "taille": [
+    33.7,
+    83.3,
+    17.7
+   ]
+  },
+  {
+   "id": "sympathetic_trunk_right",
+   "nom_fr": "Tronc sympathique",
+   "name_en": "Right sympathetic trunk",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/sympathetic_trunk_right.glb",
+   "role": "sujet",
+   "centre": [
+    -14.7,
+    1252.5,
+    73.0
+   ],
+   "taille": [
+    19.8,
+    373.1,
+    63.7
+   ]
+  },
+  {
+   "id": "sympathetic_trunk_left",
+   "nom_fr": "Tronc sympathique",
+   "name_en": "Left sympathetic trunk",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/sympathetic_trunk_left.glb",
+   "role": "sujet",
+   "centre": [
+    14.1,
+    1252.5,
+    73.0
+   ],
+   "taille": [
+    19.8,
+    373.1,
+    63.7
+   ]
+  },
+  {
+   "id": "vertebral_artery_right",
+   "nom_fr": "Artère vertébrale",
+   "name_en": "Right vertebral artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/vertebral_artery_right.glb",
+   "role": "sujet",
+   "centre": [
+    -20.6,
+    1434.6,
+    85.4
+   ],
+   "taille": [
+    42.4,
+    159.8,
+    28.5
+   ]
+  },
+  {
+   "id": "vertebral_artery_left",
+   "nom_fr": "Artère vertébrale",
+   "name_en": "Left vertebral artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/vertebral_artery_left.glb",
+   "role": "sujet",
+   "centre": [
+    20.0,
+    1434.6,
+    85.4
+   ],
+   "taille": [
+    42.4,
+    159.8,
+    28.5
+   ]
+  },
+  {
+   "id": "first_rib_right",
+   "nom_fr": "Première côte",
+   "name_en": "Right first rib",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "fichier": "models/squelette/first_rib_right.glb",
+   "role": "sujet",
+   "centre": [
+    -43.3,
+    1351.2,
+    101.7
+   ],
+   "taille": [
+    53.9,
+    59.7,
+    66.4
+   ]
+  },
+  {
+   "id": "first_rib_left",
+   "nom_fr": "Première côte",
+   "name_en": "Left first rib",
+   "systeme": "squelette",
+   "couleur": "#e8dcc3",
+   "fichier": "models/squelette/first_rib_left.glb",
+   "role": "sujet",
+   "centre": [
+    42.7,
+    1351.2,
+    101.7
+   ],
+   "taille": [
+    53.9,
+    59.7,
+    66.4
+   ]
+  },
+  {
+   "id": "right_subclavian_artery",
+   "nom_fr": "Artère subclavière droite",
+   "name_en": "Right subclavian artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/right_subclavian_artery.glb",
+   "role": "contexte",
+   "centre": [
+    -45.4,
+    1350.2,
+    106.4
+   ],
+   "taille": [
+    68.1,
+    15.5,
+    23.0
+   ]
+  },
+  {
+   "id": "left_subclavian_artery",
+   "nom_fr": "Artère subclavière gauche",
+   "name_en": "Left subclavian artery",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/left_subclavian_artery.glb",
+   "role": "contexte",
+   "centre": [
+    48.7,
+    1342.5,
+    97.9
+   ],
+   "taille": [
+    60.4,
+    38.6,
+    12.3
+   ]
+  },
+  {
+   "id": "trachea",
+   "nom_fr": "Trachée",
+   "name_en": "Trachea",
+   "systeme": "organes",
+   "couleur": "#d9bda6",
+   "fichier": "models/organes/trachea.glb",
+   "role": "sujet",
+   "centre": [
+    -0.5,
+    1342.2,
+    98.3
+   ],
+   "taille": [
+    26.7,
+    105.9,
+    36.6
+   ]
+  },
+  {
+   "id": "oesophagus",
+   "nom_fr": "Oesophage",
+   "name_en": "Oesophagus",
+   "systeme": "organes",
+   "couleur": "#d9a583",
+   "fichier": "models/organes/oesophagus.glb",
+   "role": "sujet",
+   "centre": [
+    4.3,
+    1268.7,
+    92.8
+   ],
+   "taille": [
+    26.9,
+    283.0,
+    48.9
+   ]
+  },
+  {
+   "id": "thoracic_aorta",
+   "nom_fr": "Aorte thoracique",
+   "name_en": "Thoracic aorta",
+   "systeme": "arteres",
+   "couleur": "#cf5346",
+   "fichier": "models/arteres/thoracic_aorta.glb",
+   "role": "sujet",
+   "centre": [
+    14.7,
+    1219.0,
+    76.3
+   ],
+   "taille": [
+    31.0,
+    161.3,
+    45.4
+   ]
+  },
+  {
+   "id": "azygos_vein",
+   "nom_fr": "Veine azygos",
+   "name_en": "Azygos vein",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/azygos_vein.glb",
+   "role": "sujet",
+   "centre": [
+    -11.9,
+    1192.1,
+    88.8
+   ],
+   "taille": [
+    12.0,
+    216.3,
+    49.6
+   ]
+  },
+  {
+   "id": "vagus_nerve_x_right",
+   "nom_fr": "Nerf vague (X)",
+   "name_en": "Right vagus nerve (X)",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/vagus_nerve_x_right.glb",
+   "role": "sujet",
+   "centre": [
+    19.8,
+    1274.4,
+    98.5
+   ],
+   "taille": [
+    97.1,
+    473.5,
+    83.2
+   ]
+  },
+  {
+   "id": "vagus_nerve_x_left",
+   "nom_fr": "Nerf vague (X)",
+   "name_en": "Left vagus nerve (X)",
+   "systeme": "nerfs",
+   "couleur": "#d9a441",
+   "fichier": "models/nerfs/vagus_nerve_x_left.glb",
+   "role": "sujet",
+   "centre": [
+    14.7,
+    1395.7,
+    94.6
+   ],
+   "taille": [
+    26.8,
+    231.0,
+    69.4
+   ]
+  },
+  {
+   "id": "superior_vena_cava",
+   "nom_fr": "Veine cave supérieure",
+   "name_en": "Superior vena cava",
+   "systeme": "veines",
+   "couleur": "#5b7fb4",
+   "fichier": "models/veines/superior_vena_cava.glb",
+   "role": "sujet",
+   "centre": [
+    -16.3,
+    1292.9,
+    117.9
+   ],
+   "taille": [
+    24.5,
+    37.9,
+    25.4
+   ]
+  },
+  {
+   "id": "right_atrium",
+   "nom_fr": "Atrium droit",
+   "name_en": "Right atrium",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/right_atrium.glb",
+   "role": "sujet",
+   "centre": [
+    -14.5,
+    1229.2,
+    127.4
+   ],
+   "taille": [
+    43.9,
+    99.2,
+    69.2
+   ]
+  },
+  {
+   "id": "left_atrium",
+   "nom_fr": "Atrium gauche",
+   "name_en": "Left atrium",
+   "systeme": "organes",
+   "couleur": "#cf4436",
+   "fichier": "models/organes/left_atrium.glb",
+   "role": "sujet",
+   "centre": [
+    20.3,
+    1234.3,
+    110.7
+   ],
+   "taille": [
+    87.8,
+    75.6,
+    81.4
+   ]
+  },
+  {
+   "id": "diaphragm",
+   "nom_fr": "Diaphragme",
+   "name_en": "Diaphragm",
+   "systeme": "muscles",
+   "couleur": "#b03a2e",
+   "fichier": "models/muscles/diaphragm.glb",
+   "role": "contexte",
+   "centre": [
+    -0.7,
+    1085.1,
+    115.9
+   ],
+   "taille": [
+    246.3,
+    221.1,
+    157.7
+   ]
+  }
+ ],
+ "diagrammes": {}
+}

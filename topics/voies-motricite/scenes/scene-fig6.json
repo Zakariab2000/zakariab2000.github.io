@@ -1,0 +1,101 @@
+{
+ "figure": 6,
+ "slug": "voie-extrapyramidale",
+ "titre_fr": "Voies de la motricité involontaire (voie extrapyramidale)",
+ "titre_en": "Involuntary motor pathways (extrapyramidal system)",
+ "classe": "3D+D",
+ "diagram": "voie_extrapyramidale",
+ "diagram_file": "diagramme-voie-extrapyramidale.html",
+ "camera": {
+  "vue": "anterieure",
+  "vue_audit": "antérieure"
+ },
+ "systemes": [
+  "cerveau"
+ ],
+ "isoler": [
+  "Noyau caudé",
+  "Putamen",
+  "Globus pallidus",
+  "Tractus vestibulo/reticulospinaux"
+ ],
+ "structures": [
+  {
+   "id": "lateral_vestibulospinal_tract",
+   "role": "sujet",
+   "nom_fr": "Tractus vestibulospinal latéral"
+  },
+  {
+   "id": "lateral_reticulospinal_tract",
+   "role": "sujet",
+   "nom_fr": "Tractus réticulospinal latéral"
+  },
+  {
+   "id": "caudate_nucleus_right",
+   "role": "sujet",
+   "nom_fr": "Noyau caudé droit"
+  },
+  {
+   "id": "caudate_nucleus_left",
+   "role": "sujet",
+   "nom_fr": "Noyau caudé gauche"
+  },
+  {
+   "id": "putamen_right",
+   "role": "sujet",
+   "nom_fr": "Putamen droit"
+  },
+  {
+   "id": "putamen_left",
+   "role": "sujet",
+   "nom_fr": "Putamen gauche"
+  },
+  {
+   "id": "globus_pallidus_right",
+   "role": "sujet",
+   "nom_fr": "Globus pallidus droit"
+  },
+  {
+   "id": "globus_pallidus_left",
+   "role": "sujet",
+   "nom_fr": "Globus pallidus gauche"
+  },
+  {
+   "id": "pons_right",
+   "role": "contexte",
+   "nom_fr": "Pont"
+  },
+  {
+   "id": "medulla_oblongata_right",
+   "role": "contexte",
+   "nom_fr": "Moëlle allongée"
+  },
+  {
+   "id": "hypothalamus",
+   "role": "contexte",
+   "nom_fr": "Hypothalamus"
+  }
+ ],
+ "manquants": [
+  "Noyau rouge, substance noire, noyau sous-thalamique : non individualisés dans le manifeste (seuls caudé/putamen/pallidum existent parmi les noyaux gris centraux)",
+  "Les boucles cortico-striato-thalamiques sont par nature schématiques → schéma requis ; les tractus descendants existent dans la moelle seulement"
+ ],
+ "fiche": {
+  "origine": "Aires corticales extrapyramidales : frontales (6, 8, 46, 10), pariétales (3, 1, 2 et 5, 7), temporales (22) et occipitales (17, 19) ; noyaux gris centraux (néostriatum = noyau caudé + putamen ; paléostriatum = pallidum et noyaux sous-thalamiques) et noyaux gris du tronc cérébral.",
+  "relais": "Boucle cortico-strio-thalamo-corticale : cortex → néostriatum → pallidum → noyau latéro-ventral antérieur du thalamus → cortex préfrontal. Le pallidum, voie de sortie des noyaux gris centraux, se projette par le faisceau lenticulaire (supérieur) et l'anse lenticulaire (inférieure). Seconde projection corticale : faisceau cortico-pontin → noyaux du pont → néocervelet par les pédoncules cérébelleux moyens.",
+  "decussation": "Pas de décussation unique : voie polysynaptique, relativement lente, à relais sous-corticaux et du tronc cérébral multiples (locus niger, noyau rouge, substance réticulée, olive bulbaire, noyaux vestibulaires, tubercules quadrijumeaux).",
+  "terminaison": "Motoneurones γ de la corne antérieure de la moelle, par les faisceaux réticulo-spinal, tecto-spinal, rubro-spinal, olivo-spinal et vestibulo-spinal : régulation permanente du tonus musculaire (repos, posture, marche).",
+  "clinique": "Les troubles extrapyramidaux classiques cités par le cours (Q2) : maladie de Parkinson, syndrome athétosique et syndrome choréique."
+ },
+ "note_3d": "Aucun trajet de tractographie retenu pour cette figure (voir statut_segments) : la figure reste portée par le schéma de la boucle + les maillages natifs.",
+ "trajets_3d": [],
+ "statut_segments": {
+  "reel_3d": [
+   "Noyaux gris centraux présents dans l'atlas (caudé, putamen, pallidum) et tractus descendants médullaires natifs (vestibulo/réticulospinaux)"
+  ],
+  "schema_seul": [
+   "La boucle cortico-strio-thalamo-corticale : par nature schématique",
+   "Faisceau rubro-spinal : présent dans HCP1065 mais ÉCARTÉ après mesure — son fichier contient une sous-population de streamlines atteignant le cortex frontal (excursion max 25 mm, incompatible avec l'anatomie rubro-spinale) ; mieux vaut aucun trajet qu'un trajet faux"
+  ]
+ }
+}

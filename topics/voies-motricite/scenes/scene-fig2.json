@@ -1,0 +1,107 @@
+{
+ "figure": 2,
+ "slug": "voie-proprioceptive-inconsciente",
+ "titre_fr": "Voies de la sensibilité proprioceptive inconsciente",
+ "titre_en": "Unconscious proprioceptive sensory pathways",
+ "classe": "3D+D",
+ "diagram": "voie_proprio_inconsciente",
+ "diagram_file": "diagramme-voie-proprioceptive-inconsciente.html",
+ "camera": {
+  "vue": "posterieure",
+  "vue_audit": "postérieure"
+ },
+ "systemes": [
+  "cerveau"
+ ],
+ "isoler": [
+  "Tractus spinocérébelleux antérieur et postérieur"
+ ],
+ "structures": [
+  {
+   "id": "anterior_spinocerebellar_tract",
+   "role": "sujet",
+   "nom_fr": "Tractus spinocérébelleux antérieur"
+  },
+  {
+   "id": "posterior_spinocerebellar_tract",
+   "role": "sujet",
+   "nom_fr": "Tractus spinocérébelleux postérieur"
+  },
+  {
+   "id": "white_matter_of_spinal_cord",
+   "role": "sujet",
+   "nom_fr": "Substance blanche de la moëlle épinière"
+  },
+  {
+   "id": "rep_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Moëlle épinière (repère)"
+  },
+  {
+   "id": "superior_cerebellar_peduncle_right",
+   "role": "contexte",
+   "nom_fr": "Pédoncule cérébelleux supérieur"
+  }
+ ],
+ "manquants": [
+  "Noyau dorsal de Clarke (relais médullaire) : ABSENT",
+  "Trajet complet membre → moelle → cervelet : schéma requis en regard"
+ ],
+ "fiche": {
+  "origine": "Récepteurs para-articulaires ; le 1er neurone (N1) est la cellule du ganglion spinal, dont l'axone se termine à la base de la corne postérieure.",
+  "relais": "Voie directe : colonne de Clarke, très développée dans la moelle dorso-lombo-sacrée. Voie indirecte (croisée) : colonne de Bechterew, développée dans la moelle cervicale. Voie à 2 neurones seulement.",
+  "decussation": "Voie directe : aucun croisement — le 2e neurone rejoint le cordon latéral homolatéral (faisceau spinocérébelleux direct de Flechsig). Voie indirecte : le 2e neurone croise la ligne médiane (faisceau spinocérébelleux croisé de Gowers).",
+  "terminaison": "Vermis cérébelleux : le faisceau de Flechsig atteint le vermis supérieur par le pédoncule cérébelleux inférieur ; le faisceau de Gowers atteint l'ensemble du vermis par le pédoncule cérébelleux supérieur.",
+  "clinique": "Elle informe en permanence le cervelet de la position des articulations et des segments pour la régulation du tonus musculaire ; plus rapide que la voie consciente. Le cours conclut que la lésion des voies sensitives donne des troubles dont le caractère dépend du niveau lésionnel (Q1)."
+ },
+ "note_3d": "MISE À JOUR tractographie : les deux portes d'entrée cérébelleuses sont désormais des trajets 3D réels (pédoncules inférieur et supérieurs), en continuité avec les rubans spinocérébelleux natifs de la moelle. Le schéma reste le compagnon (relais de Clarke).",
+ "trajets_3d": [
+  {
+   "fichier": "tract_icp_left.glb",
+   "id": "tract_icp_left",
+   "nom_fr": "Pédoncule cérébelleux inférieur",
+   "name_en": "Inferior cerebellar peduncle",
+   "cote": "left",
+   "role": "sujet",
+   "couleur": "#b388ff",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Bulbe → cervelet (corps restiforme)",
+   "fiche_fr": "Porte d'entrée cérébelleuse du faisceau spinocérébelleux postérieur (Flechsig) : le pédoncule inférieur est désormais un vrai trajet 3D entre le bulbe et le cervelet."
+  },
+  {
+   "fichier": "tract_icp_right.glb",
+   "id": "tract_icp_right",
+   "nom_fr": "Pédoncule cérébelleux inférieur",
+   "name_en": "Inferior cerebellar peduncle",
+   "cote": "right",
+   "role": "sujet",
+   "couleur": "#b388ff",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Bulbe → cervelet (corps restiforme)",
+   "fiche_fr": "Porte d'entrée cérébelleuse du faisceau spinocérébelleux postérieur (Flechsig) : le pédoncule inférieur est désormais un vrai trajet 3D entre le bulbe et le cervelet."
+  },
+  {
+   "fichier": "tract_scp.glb",
+   "id": "tract_scp",
+   "nom_fr": "Pédoncules cérébelleux supérieurs (droit + gauche)",
+   "name_en": "Superior cerebellar peduncles",
+   "cote": null,
+   "role": "sujet",
+   "couleur": "#ff80ab",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Cervelet (noyaux dentelés) → décussation mésencéphalique → thalamus/noyau rouge",
+   "fiche_fr": "Porte d'entrée du faisceau spinocérébelleux antérieur (Gowers) pour sa terminaison cérébelleuse, et grande voie de sortie du cervelet. L'atlas de tractographie le fournit en un faisceau unique décussant (D+G non séparés)."
+  }
+ ],
+ "statut_segments": {
+  "reel_3d": [
+   "Faisceaux spinocérébelleux antérieur et postérieur dans la moelle : rubans atlas natifs",
+   "Pédoncule cérébelleux inférieur (entrée de Flechsig) : tractographie HCP1065 recalée",
+   "Pédoncules cérébelleux supérieurs (entrée de Gowers) : tractographie HCP1065 recalée"
+  ],
+  "schema_seul": [
+   "Noyau dorsal de Clarke : toujours absent (relais schématique)",
+   "Trajet membre → moelle : segment périphérique hors champ"
+  ]
+ }
+}

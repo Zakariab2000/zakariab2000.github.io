@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 620" width="390" height="620" role="img" aria-label="Coupe frontale du rein droit">
+<defs>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+<feGaussianBlur stdDeviation="2.2" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<style>
+text{font-family:Arial,Helvetica,sans-serif}
+.title{font-size:14px;font-weight:bold;fill:#f5f0e6}
+.sub{font-size:10px;fill:#8a8f98}
+.lbl{font-size:9.5px;fill:#c9cfd8}
+.lead{stroke:#69707c;stroke-width:.8;fill:none}
+.zone{cursor:pointer}
+.zone:hover{stroke:#e8c07a;stroke-width:2.5}
+.zone.sel{stroke:#ffd166;stroke-width:3.5;filter:url(#glow)}
+.zone.sel&gt;*{stroke:#ffd166;stroke-width:2.5}
+.ftitle{font-size:13px;font-weight:bold;fill:#f5f0e6}
+.fline{font-size:11.5px;fill:#c9cfd8}
+.note{font-size:9.5px;fill:#8a8f98}
+.dec{pointer-events:none}
+</style>
+<rect x="0" y="0" width="390" height="620" fill="#101318"/>
+<text class="title" x="195" y="30" text-anchor="middle">Coupe frontale du rein droit</text>
+<text class="sub" x="195" y="48" text-anchor="middle">Schéma — Fig. 87 · Touchez une zone pour sa fiche</text>
+
+<!-- leader lines -->
+<g class="dec">
+<line class="lead" x1="108" y1="118" x2="98" y2="190"/>
+<line class="lead" x1="108" y1="148" x2="96" y2="232"/>
+<line class="lead" x1="108" y1="177" x2="128" y2="200"/>
+<line class="lead" x1="108" y1="247" x2="138" y2="220"/>
+<line class="lead" x1="108" y1="292" x2="170" y2="240"/>
+<line class="lead" x1="108" y1="328" x2="140" y2="322"/>
+<line class="lead" x1="282" y1="98" x2="268" y2="102"/>
+<line class="lead" x1="282" y1="138" x2="262" y2="128"/>
+<line class="lead" x1="282" y1="178" x2="258" y2="185"/>
+<line class="lead" x1="282" y1="218" x2="262" y2="218"/>
+<line class="lead" x1="282" y1="258" x2="216" y2="262"/>
+<line class="lead" x1="282" y1="298" x2="200" y2="282"/>
+</g>
+
+<!-- capsule -->
+<path class="zone" data-k="capsule" fill="#7a3b2e" stroke="#d9a05b" stroke-width="1.5" d="M155,85 C185,65 240,65 262,100 C285,135 285,180 275,215 C285,250 282,300 255,335 C225,365 165,360 145,325 C130,295 132,260 145,240 C128,220 128,200 145,185 C132,150 135,105 155,85 Z"><title>Capsule fibreuse</title></path>
+<!-- cortex -->
+<path class="zone" data-k="cortex" fill="#a85b47" stroke="#7a3b2e" stroke-width="1.5" d="M162,97 C188,80 232,80 250,108 C268,138 268,178 260,212 C268,245 265,290 244,320 C220,345 175,342 158,315 C147,290 148,262 158,242 C145,222 145,205 158,190 C148,158 148,115 162,97 Z"><title>Cortex rénal</title></path>
+<!-- sinus -->
+<ellipse class="zone" data-k="sinus" cx="152" cy="216" rx="27" ry="50" fill="#3a2c20" stroke="#8c6a4a" stroke-width="1.5"><title>Sinus rénal</title></ellipse>
+<!-- uretere (behind pelvis) -->
+<path class="zone" data-k="uretere" fill="#d9b36a" stroke="#8c6a2f" stroke-width="1.5" d="M134,228 L153,228 L149,388 L138,388 Z"><title>Uretère</title></path>
+<!-- pyramides -->
+<g class="zone" data-k="pyramide" stroke="#8c4a38" stroke-width="1.5" fill="#c97b5a"><title>Pyramide rénale (de Malpighi)</title>
+<path d="M232,108 L263,133 L207,169 Z"/>
+<path d="M269,193 L269,242 L211,218 Z"/>
+<path d="M259,283 L229,323 L204,261 Z"/>
+</g>
+<g class="dec" stroke="#a85b47" stroke-width="1">
+<line x1="238" y1="122" x2="222" y2="152"/>
+<line x1="248" y1="128" x2="232" y2="158"/>
+<line x1="252" y1="207" x2="230" y2="214"/>
+<line x1="252" y1="222" x2="230" y2="220"/>
+<line x1="240" y1="292" x2="222" y2="278"/>
+<line x1="248" y1="300" x2="230" y2="286"/>
+</g>
+<!-- colonne de Bertin -->
+<path class="zone" data-k="colonne" fill="#a85b47" stroke="#5e2a1e" stroke-width="1.5" d="M238,168 L266,178 L264,200 L234,196 Z"><title>Colonne rénale (de Bertin)</title></path>
+<!-- calices majeurs -->
+<g class="zone" data-k="calmajeur" stroke="#8c6a2f" stroke-width="1.5" fill="#d9b36a"><title>Calice majeur</title>
+<path d="M192,158 L166,198 L181,209 L202,176 Z"/>
+<path d="M192,272 L167,234 L182,224 L203,256 Z"/>
+</g>
+<!-- calices mineurs -->
+<g class="zone" data-k="calmineur" stroke="#8c6a2f" stroke-width="1.5" fill="#d9b36a"><title>Calice mineur</title>
+<path d="M186,154 L208,158 L208,176 L186,180 L195,167 Z"/>
+<path d="M190,204 L213,204 L213,232 L190,232 L199,218 Z"/>
+<path d="M186,250 L208,254 L208,272 L186,276 L195,263 Z"/>
+</g>
+<!-- papilles -->
+<g class="zone" data-k="papille" stroke="#8c4a38" stroke-width="1.5" fill="#e8a07a"><title>Papille rénale</title>
+<ellipse cx="205" cy="167" rx="8" ry="6"/>
+<ellipse cx="210" cy="218" rx="8" ry="6"/>
+<ellipse cx="205" cy="263" rx="8" ry="6"/>
+</g>
+<!-- bassinet -->
+<path class="zone" data-k="bassinet" fill="#d9b36a" stroke="#8c6a2f" stroke-width="1.5" d="M170,194 L140,204 L140,230 L170,240 L180,217 Z"><title>Bassinet (pelvis rénal)</title></path>
+<!-- vaisseaux -->
+<path class="zone" data-k="artere" fill="#c0392b" stroke="#7b241c" stroke-width="1.5" d="M84,188 L152,188 L152,200 L84,200 Z"><title>Artère rénale</title></path>
+<path class="zone" data-k="veine" fill="#2471a3" stroke="#154360" stroke-width="1.5" d="M78,228 L150,228 L150,242 L78,242 Z"><title>Veine rénale</title></path>
+
+<!-- labels -->
+<g>
+<text class="lbl" x="108" y="121" text-anchor="end">Artère rénale</text>
+<text class="lbl" x="108" y="151" text-anchor="end">Veine rénale</text>
+<text class="lbl" x="108" y="180" text-anchor="end">Sinus rénal</text>
+<text class="lbl" x="108" y="250" text-anchor="end">Bassinet</text>
+<text class="lbl" x="108" y="295" text-anchor="end">Calice majeur</text>
+<text class="lbl" x="108" y="331" text-anchor="end">Uretère</text>
+<text class="lbl" x="282" y="101">Capsule fibreuse</text>
+<text class="lbl" x="282" y="141">Cortex rénal</text>
+<text class="lbl" x="282" y="181">Colonne de Bertin</text>
+<text class="lbl" x="282" y="221">Pyramide rénale</text>
+<text class="lbl" x="282" y="261">Papille rénale</text>
+<text class="lbl" x="282" y="301">Calice mineur</text>
+</g>
+
+<!-- fiche -->
+<rect x="14" y="430" width="362" height="112" rx="12" fill="#1a1e26"/>
+<text id="ficheTitle" class="ftitle" x="28" y="458">Fiche anatomique</text>
+<text class="fline"><tspan id="fl0" x="28" y="480">Touchez une zone du schéma pour afficher sa fiche.</tspan><tspan id="fl1" x="28" dy="17"></tspan><tspan id="fl2" x="28" dy="17"></tspan><tspan id="fl3" x="28" dy="17"></tspan></text>
+<text class="note" x="195" y="566" text-anchor="middle">Cortex, pyramides, papilles et calices n'ont aucun maillage 3D :</text>
+<text class="note" x="195" y="581" text-anchor="middle">ce schéma complète la scène 3D (bassinet seul modélisé).</text>
+
+<script><![CDATA[
+var DATA={
+capsule:{t:"Capsule fibreuse",l:["Enveloppe conjonctive lisse qui entoure le rein.","Elle se réfléchit au niveau du sinus rénal."]},
+cortex:{t:"Cortex rénal",l:["Zone périphérique granuleuse, entre capsule et pyramides.","Contient glomérules et tubes contournés."]},
+colonne:{t:"Colonne rénale (de Bertin)",l:["Prolongement du cortex entre deux pyramides voisines."]},
+pyramide:{t:"Pyramide rénale (de Malpighi)",l:["Zone médullaire striée : base vers le cortex,","sommet vers le sinus. Tubes droits et anses de Henle."]},
+papille:{t:"Papille rénale",l:["Sommet de la pyramide, percé de l'aire criblée,","emboîté dans un calice mineur."]},
+calmineur:{t:"Calice mineur",l:["Recueille l'urine d'une papille ;","plusieurs confluent en un calice majeur."]},
+calmajeur:{t:"Calice majeur",l:["Formé de 2 à 3 calices mineurs ;","les calices majeurs confluent dans le bassinet."]},
+bassinet:{t:"Bassinet (pelvis rénal)",l:["Réservoir en entonnoir logé dans le sinus,","continué par l'uretère. C'est la SEULE structure","interne du rein modélisée en 3D dans l'atlas."]},
+uretere:{t:"Uretère",l:["Conduit musculeux (~25 cm) qui mène l'urine","du bassinet à la vessie."]},
+sinus:{t:"Sinus rénal",l:["Cavité du bord médial : bassinet, vaisseaux, graisse."]},
+artere:{t:"Artère rénale",l:["Branche de l'aorte (L1), pénètre par le hile,","se divise en branches segmentaires."]},
+veine:{t:"Veine rénale",l:["Draine le rein vers la veine cave inférieure."]}
+};
+var fT=document.getElementById('ficheTitle');
+var fL=[document.getElementById('fl0'),document.getElementById('fl1'),document.getElementById('fl2'),document.getElementById('fl3')];
+function select(k){
+  var d=DATA[k]; if(!d) return;
+  var zones=document.querySelectorAll('.zone');
+  for(var i=0;i<zones.length;i++){ zones[i].classList.remove('sel'); }
+  var els=document.querySelectorAll('[data-k="'+k+'"]');
+  for(var j=0;j<els.length;j++){ els[j].classList.add('sel'); }
+  fT.textContent=d.t;
+  for(var n=0;n<fL.length;n++){ fL[n].textContent=(n<d.l.length)?d.l[n]:''; }
+}
+var zs=document.querySelectorAll('.zone');
+for(var i=0;i<zs.length;i++){
+  zs[i].addEventListener('click',function(ev){ select(ev.currentTarget.getAttribute('data-k')); });
+}
+]]></script>
+</svg>

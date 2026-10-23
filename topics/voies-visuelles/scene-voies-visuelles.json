@@ -1,0 +1,275 @@
+{
+ "sujet": 6,
+ "partie": "I",
+ "titre_fr": "Les voies de conduction visuelles",
+ "titre_en": "Visual conduction pathways",
+ "figures": [
+  {
+   "numero": 13,
+   "titre_fr": "Organisation schématique de la rétine",
+   "titre_en": "Schematic organisation of the retina",
+   "classe": "3D+D",
+   "structures": [
+    {
+     "id": "retina_right",
+     "role": "sujet",
+     "file": "models/cerveau/retina_right.glb",
+     "nom_fr": "Rétine",
+     "name_en": "Right retina",
+     "name_la": "Retina",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "sclera_right",
+     "role": "sujet",
+     "file": "models/cerveau/sclera_right.glb",
+     "nom_fr": "Sclère",
+     "name_en": "Right sclera",
+     "name_la": "Sclera",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "anterior_segment_of_eyeball_right",
+     "role": "sujet",
+     "file": "models/cerveau/anterior_segment_of_eyeball_right.glb",
+     "nom_fr": "Segment antérieur du globe occulaire",
+     "name_en": "Right anterior segment of eyeball",
+     "name_la": "Segmentum anterius bulbi oculi",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "posterior_segment_of_eyeball_right",
+     "role": "sujet",
+     "file": "models/cerveau/posterior_segment_of_eyeball_right.glb",
+     "nom_fr": "Segment postérieur du globe oculaire",
+     "name_en": "Right posterior segment of eyeball",
+     "name_la": "Segmentum posterius bulbi oculi",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "central_retinal_artery_right",
+     "role": "sujet",
+     "file": "models/arteres/central_retinal_artery_right.glb",
+     "nom_fr": "Artère centrale de la rétine",
+     "name_en": "Right central retinal artery",
+     "name_la": "Arteria centralis retinae",
+     "couleur": "#cf5346",
+     "system": "arteres"
+    },
+    {
+     "id": "optic_nerve_ii_right",
+     "role": "rapport",
+     "file": "models/nerfs/optic_nerve_ii_right.glb",
+     "nom_fr": "Nerf optique (II)",
+     "name_en": "Right optic nerve (II)",
+     "name_la": "Nervus opticus (II)",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    }
+   ],
+   "camera": {
+    "vue": "laterale",
+    "target": [
+     -21.8,
+     1529.0,
+     144.4
+    ],
+    "direction": [
+     0.993,
+     0.06,
+     0.099
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "distance": 102.4,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": "retine",
+   "manquants": [
+    "Les 10 couches de la rétine (épithélium pigmentaire, cônes/bâtonnets, membranes limitantes, couches nucléaires/plexiformes, cellules ganglionnaires, fibres optiques) : AUCUN maillage — la rétine existe comme UNE seule coque par œil (retina_left/right) → l'organisation en couches est un schéma histologique par nature"
+   ]
+  },
+  {
+   "numero": 14,
+   "titre_fr": "Voies de conduction visuelle",
+   "titre_en": "Visual conduction pathways",
+   "classe": "3D+D",
+   "structures": [
+    {
+     "id": "optic_nerve_ii_right",
+     "role": "sujet",
+     "file": "models/nerfs/optic_nerve_ii_right.glb",
+     "nom_fr": "Nerf optique (II)",
+     "name_en": "Right optic nerve (II)",
+     "name_la": "Nervus opticus (II)",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "optic_nerve_ii_left",
+     "role": "sujet",
+     "file": "models/nerfs/optic_nerve_ii_left.glb",
+     "nom_fr": "Nerf optique (II)",
+     "name_en": "Left optic nerve (II)",
+     "name_la": "Nervus opticus (II)",
+     "couleur": "#d9a441",
+     "system": "nerfs"
+    },
+    {
+     "id": "optic_chiasm_right",
+     "role": "sujet",
+     "file": "models/cerveau/optic_chiasm_right.glb",
+     "nom_fr": "Chiasma optique",
+     "name_en": "Right optic chiasm",
+     "name_la": "Chiasma opticum",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "optic_chiasm_left",
+     "role": "sujet",
+     "file": "models/cerveau/optic_chiasm_left.glb",
+     "nom_fr": "Chiasma optique",
+     "name_en": "Left optic chiasm",
+     "name_la": "Chiasma opticum",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "optic_tract_right",
+     "role": "sujet",
+     "file": "models/cerveau/optic_tract_right.glb",
+     "nom_fr": "Tractus optique",
+     "name_en": "Right optic tract",
+     "name_la": "Tractus opticus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "optic_tract_left",
+     "role": "sujet",
+     "file": "models/cerveau/optic_tract_left.glb",
+     "nom_fr": "Tractus optique",
+     "name_en": "Left optic tract",
+     "name_la": "Tractus opticus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "lateral_geniculate_body_right",
+     "role": "sujet",
+     "file": "models/cerveau/lateral_geniculate_body_right.glb",
+     "nom_fr": "Corps géniculé latéral",
+     "name_en": "Right lateral geniculate body",
+     "name_la": "Corpus geniculatum laterale",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "lateral_geniculate_body_left",
+     "role": "sujet",
+     "file": "models/cerveau/lateral_geniculate_body_left.glb",
+     "nom_fr": "Corps géniculé latéral",
+     "name_en": "Left lateral geniculate body",
+     "name_la": "Corpus geniculatum laterale",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "calcarine_sulcus_right",
+     "role": "sujet",
+     "file": "models/cerveau/calcarine_sulcus_right.glb",
+     "nom_fr": "Sillon calcarin",
+     "name_en": "Right calcarine sulcus",
+     "name_la": "Sulcus calcarinus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "calcarine_sulcus_left",
+     "role": "sujet",
+     "file": "models/cerveau/calcarine_sulcus_left.glb",
+     "nom_fr": "Sillon calcarin",
+     "name_en": "Left calcarine sulcus",
+     "name_la": "Sulcus calcarinus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "cuneus_right",
+     "role": "rapport",
+     "file": "models/cerveau/cuneus_right.glb",
+     "nom_fr": "Cuneus",
+     "name_en": "Right cuneus",
+     "name_la": "Cuneus",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "lingual_gyrus_right",
+     "role": "rapport",
+     "file": "models/cerveau/lingual_gyrus_right.glb",
+     "nom_fr": "Gyrus lingual",
+     "name_en": "Right lingual gyrus",
+     "name_la": "Gyrus lingualis",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "retina_right",
+     "role": "rapport",
+     "file": "models/cerveau/retina_right.glb",
+     "nom_fr": "Rétine",
+     "name_en": "Right retina",
+     "name_la": "Retina",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    },
+    {
+     "id": "retina_left",
+     "role": "rapport",
+     "file": "models/cerveau/retina_left.glb",
+     "nom_fr": "Rétine",
+     "name_en": "Left retina",
+     "name_la": "Retina",
+     "couleur": "#cf9bb4",
+     "system": "cerveau"
+    }
+   ],
+   "camera": {
+    "vue": "inferieure",
+    "target": [
+     -0.8,
+     1548.0,
+     87.0
+    ],
+    "direction": [
+     0.0,
+     -0.935,
+     0.355
+    ],
+    "up": [
+     0,
+     0,
+     1
+    ],
+    "distance": 259.8,
+    "fov": 45
+   },
+   "frame_ids": null,
+   "diagram": "voies_visuelles",
+   "manquants": [
+    "Radiations optiques (anses de Meyer et de Baumgarten) : ABSENTES du manifeste",
+    "La logique des décussations (fibres nasales/temporales) et des déficits campimétriques est schématique → schéma en regard ; la scène 3D couvre nerf → chiasma → bandelettes → corps géniculés → cortex calcarin"
+   ]
+  }
+ ]
+}

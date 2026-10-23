@@ -1,0 +1,818 @@
+{
+ "batch": "I",
+ "topics": [
+  38
+ ],
+ "figures": {
+  "110": {
+   "vue": "anterieure",
+   "titre_en": "Variations in position of the caecum and vermiform appendix",
+   "diagram": "caecum_variations",
+   "classe_override": null,
+   "espaces": []
+  },
+  "111": {
+   "vue": "anterieure",
+   "titre_en": "Configuration of the caecum",
+   "diagram": "caecum_configuration",
+   "classe_override": null,
+   "espaces": []
+  }
+ },
+ "diagrams": {
+  "caecum_variations": {
+   "titre_fr": "Variations de situation du cæcum et de l'appendice vermiculaire",
+   "titre_en": "Variations in position of the caecum and vermiform appendix",
+   "w": 720,
+   "h": 840,
+   "levels": {
+    "hub": {
+     "c": "#374151",
+     "fr": "Repère / situation",
+     "en": "Reference / position"
+    },
+    "caecum": {
+     "c": "#d97706",
+     "fr": "Positions du cæcum",
+     "en": "Positions of the caecum"
+    },
+    "appendice": {
+     "c": "#0f766e",
+     "fr": "Positions de l'appendice",
+     "en": "Positions of the appendix"
+    },
+    "clinique": {
+     "c": "#b91c1c",
+     "fr": "Clinique",
+     "en": "Clinical"
+    }
+   },
+   "nodes": [
+    {
+     "id": "sit_hub",
+     "x": 360,
+     "y": 48,
+     "w": 280,
+     "label": "CÆCUM — SITUATION",
+     "sub": "normalement fosse iliaque droite",
+     "label_en": "CAECUM — POSITION",
+     "sub_en": "normally right iliac fossa",
+     "lvl": "hub",
+     "desc": {
+      "fr": "Portion initiale et borgne du côlon droit, sous-jacente à l'orifice iléo-colique, portant l'appendice vermiculaire, son prolongement atrophié. Sa situation varie beaucoup avec le développement embryonnaire.",
+      "en": "Initial, blind-ending portion of the right colon, below the ileocolic orifice, bearing the vermiform appendix, its atrophied prolongation. Its position varies greatly with embryonic development."
+     }
+    },
+    {
+     "id": "cae_fid",
+     "x": 360,
+     "y": 138,
+     "w": 210,
+     "label": "Fosse iliaque droite",
+     "sub": "position normale",
+     "label_en": "Right iliac fossa",
+     "sub_en": "normal position",
+     "lvl": "caecum",
+     "desc": {
+      "fr": "Position normale : le cæcum siège dans la fosse iliaque droite, oblique en bas, en dedans et en avant. C'est la position de référence de la scène 3D.",
+      "en": "Normal position: the caecum lies in the right iliac fossa, oblique downwards, medially and forwards. This is the reference position of the 3D scene."
+     }
+    },
+    {
+     "id": "cae_sous_hepatique",
+     "x": 120,
+     "y": 138,
+     "w": 210,
+     "label": "Sous-hépatique",
+     "sub": "sous le foie",
+     "label_en": "Subhepatic",
+     "sub_en": "below the liver",
+     "lvl": "caecum",
+     "desc": {
+      "fr": "Variante haute : le cæcum reste sous le foie, par défaut de descente au cours du développement embryonnaire. Une appendicite dans cette position peut simuler une affection de l'hypochondre droit.",
+      "en": "High variant: the caecum remains below the liver, through failure of descent during embryonic development. Appendicitis in this position may mimic a right hypochondrial condition."
+     }
+    },
+    {
+     "id": "cae_epigastrique",
+     "x": 600,
+     "y": 138,
+     "w": 210,
+     "label": "Épigastrique",
+     "sub": "position haute, médiane",
+     "label_en": "Epigastric",
+     "sub_en": "high, midline position",
+     "lvl": "caecum",
+     "desc": {
+      "fr": "Variante citée par le cours : le cæcum peut occuper l'épigastre, loin de la fosse iliaque droite habituelle.",
+      "en": "Variant cited in the course: the caecum may occupy the epigastrium, far from the usual right iliac fossa."
+     }
+    },
+    {
+     "id": "cae_prelombaire",
+     "x": 120,
+     "y": 228,
+     "w": 210,
+     "label": "Pré-lombaire droite",
+     "sub": "en avant de la région lombaire",
+     "label_en": "Right pre-lumbar",
+     "sub_en": "in front of the lumbar region",
+     "lvl": "caecum",
+     "desc": {
+      "fr": "Variante citée par le cours : cæcum pré-lombaire droit, en position postérieure et haute dans l'abdomen droit.",
+      "en": "Variant cited in the course: right pre-lumbar caecum, in a posterior and high position in the right abdomen."
+     }
+    },
+    {
+     "id": "cae_pelvienne",
+     "x": 360,
+     "y": 228,
+     "w": 210,
+     "label": "Pelvienne",
+     "sub": "descente dans le pelvis",
+     "label_en": "Pelvic",
+     "sub_en": "descent into the pelvis",
+     "lvl": "caecum",
+     "desc": {
+      "fr": "Variante basse : le cæcum descend dans le pelvis. La douleur d'une appendicite peut alors être pelvienne et prêter à confusion avec une affection pelvienne.",
+      "en": "Low variant: the caecum descends into the pelvis. Appendicitis pain may then be pelvic and be confused with a pelvic condition."
+     }
+    },
+    {
+     "id": "cae_fig",
+     "x": 600,
+     "y": 228,
+     "w": 210,
+     "label": "Fosse iliaque gauche",
+     "sub": "exceptionnelle",
+     "label_en": "Left iliac fossa",
+     "sub_en": "exceptional",
+     "lvl": "caecum",
+     "desc": {
+      "fr": "Exceptionnellement, le cæcum siège dans la fosse iliaque gauche — situation évoquant une inversion / un défaut de rotation. Le cours la qualifie d'exceptionnelle, sans fréquence chiffrée.",
+      "en": "Exceptionally, the caecum lies in the left iliac fossa — a position suggesting inversion / malrotation. The course calls it exceptional, with no numerical frequency."
+     }
+    },
+    {
+     "id": "app_hub",
+     "x": 360,
+     "y": 318,
+     "w": 280,
+     "label": "APPENDICE — SITUATION",
+     "sub": "variable par rapport au cæcum",
+     "label_en": "APPENDIX — POSITION",
+     "sub_en": "variable relative to the caecum",
+     "lvl": "hub",
+     "desc": {
+      "fr": "La situation de l'appendice par rapport au cæcum est variable. Le schéma regroupe les positions demandées ; le cours insiste sur leur connaissance pour ne pas manquer une appendicite atypique.",
+      "en": "The position of the appendix relative to the caecum is variable. The diagram groups the required positions; the course stresses knowing them so as not to miss an atypical appendicitis."
+     }
+    },
+    {
+     "id": "app_medio",
+     "x": 120,
+     "y": 408,
+     "w": 210,
+     "label": "Médio-cæcale",
+     "sub": "position normale du cours",
+     "label_en": "Mediocaecal",
+     "sub_en": "normal position in the course",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Position normale selon le cours (texte : médio-cæcale) : l'appendice se dirige vers le centre / la face interne du cæcum, sous l'abouchement iléal.",
+      "en": "Normal position according to the course (text: mediocaecal): the appendix is directed towards the centre / medial surface of the caecum, below the ileal opening."
+     }
+    },
+    {
+     "id": "app_retrocaecale",
+     "x": 360,
+     "y": 408,
+     "w": 210,
+     "label": "Rétro-cæcale",
+     "sub": "derrière le cæcum",
+     "label_en": "Retrocaecal",
+     "sub_en": "behind the caecum",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Appendice situé derrière le cæcum. Position profonde : les signes antérieurs peuvent être discrets, d'où un risque d'appendicite atypique méconnue.",
+      "en": "Appendix lying behind the caecum. A deep position: anterior signs may be inconspicuous, hence a risk of unrecognised atypical appendicitis."
+     }
+    },
+    {
+     "id": "app_souscaecale",
+     "x": 600,
+     "y": 408,
+     "w": 210,
+     "label": "Sous-cæcale",
+     "sub": "sous le fond du cæcum",
+     "label_en": "Subcaecal",
+     "sub_en": "below the caecal fundus",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Appendice situé sous le cæcum, descendant depuis sa base au-dessous du corps cæcal.",
+      "en": "Appendix lying below the caecum, descending from its base beneath the caecal body."
+     }
+    },
+    {
+     "id": "app_precaecale",
+     "x": 120,
+     "y": 498,
+     "w": 210,
+     "label": "Pré-cæcale",
+     "sub": "en avant du cæcum",
+     "label_en": "Precaecal",
+     "sub_en": "in front of the caecum",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Variante citée par le cours : appendice pré-cæcal, en avant du cæcum, donc plus superficiel et proche de la paroi abdominale antérieure.",
+      "en": "Variant cited in the course: precaecal appendix, in front of the caecum, therefore more superficial and close to the anterior abdominal wall."
+     }
+    },
+    {
+     "id": "app_preileale",
+     "x": 360,
+     "y": 498,
+     "w": 210,
+     "label": "Pré-iléale",
+     "sub": "en avant de l'iléon terminal",
+     "label_en": "Pre-ileal",
+     "sub_en": "in front of the terminal ileum",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Appendice passant en avant de l'iléon terminal avant de se diriger vers le pelvis ou la fosse iliaque.",
+      "en": "Appendix passing in front of the terminal ileum before heading towards the pelvis or iliac fossa."
+     }
+    },
+    {
+     "id": "app_retroileale",
+     "x": 600,
+     "y": 498,
+     "w": 210,
+     "label": "Rétro-iléale",
+     "sub": "en arrière de l'iléon terminal",
+     "label_en": "Retro-ileal",
+     "sub_en": "behind the terminal ileum",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Variante citée par le cours (rétro-iléal) : appendice situé en arrière de l'iléon terminal, donc masqué par l'anse iléale en vue antérieure.",
+      "en": "Variant cited in the course (retro-ileal): appendix lying behind the terminal ileum, therefore hidden by the ileal loop in anterior view."
+     }
+    },
+    {
+     "id": "app_pelvienne",
+     "x": 180,
+     "y": 588,
+     "w": 230,
+     "label": "Pelvienne (appendice)",
+     "sub": "descente dans le pelvis",
+     "label_en": "Pelvic (appendix)",
+     "sub_en": "descent into the pelvis",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Appendice descendant dans le pelvis. Une appendicite peut y donner des signes pelviens et prêter à confusion diagnostique avec les organes pelviens.",
+      "en": "Appendix descending into the pelvis. Appendicitis here may give pelvic signs and be diagnostically confused with pelvic organs."
+     }
+    },
+    {
+     "id": "app_mesocoeliaque",
+     "x": 540,
+     "y": 588,
+     "w": 230,
+     "label": "Mésocœliaque",
+     "sub": "vers le centre / le mésentère",
+     "label_en": "Mesocoeliac",
+     "sub_en": "towards the centre / mesentery",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "Appendice dirigé vers le centre de la cavité abdominale, au milieu des anses grêles (position mésocœliaque). Les signes peuvent être centraux et atypiques.",
+      "en": "Appendix directed towards the centre of the abdominal cavity, among the small-bowel loops (mesocoeliac position). Signs may be central and atypical."
+     }
+    },
+    {
+     "id": "clin_mcburney",
+     "x": 180,
+     "y": 688,
+     "w": 230,
+     "label": "Point de McBurney",
+     "sub": "projection de la base appendiculaire",
+     "label_en": "McBurney's point",
+     "sub_en": "projection of the appendiceal base",
+     "lvl": "clinique",
+     "desc": {
+      "fr": "Repère chirurgical cutané de la face antérieure : au niveau de la peau siège le point de McBurney, décrit dans le cours comme la projection de la base appendiculaire. Il n'a de valeur que dans la position normale.",
+      "en": "Surgical surface landmark of the anterior aspect: at skin level lies McBurney's point, described in the course as the projection of the appendiceal base. It is only valid in the normal position."
+     }
+    },
+    {
+     "id": "clin_atypique",
+     "x": 540,
+     "y": 688,
+     "w": 230,
+     "label": "Appendicite atypique",
+     "sub": "risque de confusion diagnostique",
+     "label_en": "Atypical appendicitis",
+     "sub_en": "risk of diagnostic confusion",
+     "lvl": "clinique",
+     "desc": {
+      "fr": "Conclusion du cours : en raison de la fréquence des appendicites, il faut connaître toutes les variations pour ne pas passer à côté d'une « appendicite atypique » — douleur et signes déplacés selon la position du cæcum et de l'appendice.",
+      "en": "Course conclusion: because appendicitis is so frequent, all the variations must be known so as not to miss an 'atypical appendicitis' — pain and signs displaced according to the position of the caecum and appendix."
+     }
+    },
+    {
+     "id": "clin_interet",
+     "x": 360,
+     "y": 782,
+     "w": 280,
+     "label": "Intérêt du sujet",
+     "sub": "appendicite · Crohn · RCH",
+     "label_en": "Why it matters",
+     "sub_en": "appendicitis · Crohn's · UC",
+     "lvl": "clinique",
+     "desc": {
+      "fr": "Intérêt rappelé en introduction : le cæcum est le siège d'inflammations — appendicite, rectocolite hémorragique (RCH) et maladie de Crohn.",
+      "en": "Relevance stated in the introduction: the caecum is a site of inflammation — appendicitis, ulcerative colitis (UC) and Crohn's disease."
+     }
+    }
+   ],
+   "edges": [
+    [
+     "sit_hub",
+     "cae_fid"
+    ],
+    [
+     "sit_hub",
+     "cae_sous_hepatique"
+    ],
+    [
+     "sit_hub",
+     "cae_epigastrique"
+    ],
+    [
+     "sit_hub",
+     "cae_prelombaire"
+    ],
+    [
+     "sit_hub",
+     "cae_pelvienne"
+    ],
+    [
+     "sit_hub",
+     "cae_fig"
+    ],
+    [
+     "sit_hub",
+     "app_hub",
+     1
+    ],
+    [
+     "app_hub",
+     "app_medio"
+    ],
+    [
+     "app_hub",
+     "app_retrocaecale"
+    ],
+    [
+     "app_hub",
+     "app_souscaecale"
+    ],
+    [
+     "app_hub",
+     "app_precaecale"
+    ],
+    [
+     "app_hub",
+     "app_preileale"
+    ],
+    [
+     "app_hub",
+     "app_retroileale"
+    ],
+    [
+     "app_hub",
+     "app_pelvienne"
+    ],
+    [
+     "app_hub",
+     "app_mesocoeliaque"
+    ],
+    [
+     "cae_fid",
+     "clin_mcburney"
+    ],
+    [
+     "app_medio",
+     "clin_mcburney",
+     1
+    ],
+    [
+     "cae_pelvienne",
+     "clin_atypique"
+    ],
+    [
+     "app_retrocaecale",
+     "clin_atypique"
+    ],
+    [
+     "app_pelvienne",
+     "clin_atypique",
+     1
+    ],
+    [
+     "app_mesocoeliaque",
+     "clin_atypique",
+     1
+    ],
+    [
+     "clin_atypique",
+     "clin_interet"
+    ],
+    [
+     "clin_mcburney",
+     "clin_interet",
+     1
+    ]
+   ]
+  },
+  "caecum_configuration": {
+   "titre_fr": "Configuration du cæcum — externe et interne",
+   "titre_en": "Configuration of the caecum — external and internal",
+   "w": 720,
+   "h": 840,
+   "levels": {
+    "hub": {
+     "c": "#374151",
+     "fr": "Cæcum",
+     "en": "Caecum"
+    },
+    "externe": {
+     "c": "#d97706",
+     "fr": "Configuration externe",
+     "en": "External configuration"
+    },
+    "taenia": {
+     "c": "#7c3aed",
+     "fr": "Tænias coliques",
+     "en": "Taeniae coli"
+    },
+    "interne": {
+     "c": "#0369a1",
+     "fr": "Configuration interne / orifices",
+     "en": "Internal configuration / orifices"
+    },
+    "appendice": {
+     "c": "#0f766e",
+     "fr": "Appendice et méso-appendice",
+     "en": "Appendix and meso-appendix"
+    }
+   },
+   "nodes": [
+    {
+     "id": "cae_hub",
+     "x": 360,
+     "y": 48,
+     "w": 280,
+     "label": "CÆCUM",
+     "sub": "sac ouvert en haut",
+     "label_en": "CAECUM",
+     "sub_en": "blind sac open above",
+     "lvl": "hub",
+     "desc": {
+      "fr": "Le cæcum a la forme d'un sac ouvert en haut, présentant un corps et un fond. Portion borgne initiale du côlon droit, il reçoit l'iléon terminal et porte l'appendice.",
+      "en": "The caecum is shaped as a sac open above, with a body and a fundus. The blind initial portion of the right colon, it receives the terminal ileum and bears the appendix."
+     }
+    },
+    {
+     "id": "corps",
+     "x": 180,
+     "y": 138,
+     "w": 230,
+     "label": "Corps",
+     "sub": "partie principale du sac",
+     "label_en": "Body",
+     "sub_en": "main part of the sac",
+     "lvl": "externe",
+     "desc": {
+      "fr": "Le corps est parcouru en surface par les 3 bandelettes musculaires (tænias) et par des sillons transversaux qui délimitent des bosselures superposées.",
+      "en": "The body is crossed on its surface by the 3 muscular bands (taeniae) and by transverse grooves that delimit superimposed haustral bulges."
+     }
+    },
+    {
+     "id": "fond",
+     "x": 540,
+     "y": 138,
+     "w": 230,
+     "label": "Fond (fundus)",
+     "sub": "cul-de-sac · bosselure inféro-externe",
+     "label_en": "Fundus",
+     "sub_en": "blind end · inferolateral bulge",
+     "lvl": "externe",
+     "desc": {
+      "fr": "Le fond est constitué par la bosselure inféro-externe ; c'est le cul-de-sac borgne du cæcum, coudé à angle obtus ou même droit sur le corps.",
+      "en": "The fundus is formed by the inferolateral bulge; it is the blind cul-de-sac of the caecum, bent at an obtuse or even right angle on the body."
+     }
+    },
+    {
+     "id": "haustrations",
+     "x": 180,
+     "y": 228,
+     "w": 230,
+     "label": "Haustrations",
+     "sub": "sillons transversaux · bosselures",
+     "label_en": "Haustrations",
+     "sub_en": "transverse grooves · bulges",
+     "lvl": "externe",
+     "desc": {
+      "fr": "Des sillons transversaux délimitent des bosselures superposées (haustrations). La bosselure inféro-interne s'enroule sous le bord inférieur de l'iléon terminal : bosselure sous-iléale.",
+      "en": "Transverse grooves delimit superimposed bulges (haustrations). The inferomedial bulge curls under the lower border of the terminal ileum: the subileal bulge."
+     }
+    },
+    {
+     "id": "bosselure_sous_ileale",
+     "x": 540,
+     "y": 228,
+     "w": 230,
+     "label": "Bosselure sous-iléale",
+     "sub": "bosselure inféro-interne",
+     "label_en": "Subileal bulge",
+     "sub_en": "inferomedial bulge",
+     "lvl": "externe",
+     "desc": {
+      "fr": "La bosselure inféro-interne s'enroule sous le bord inférieur de l'iléon terminal et constitue la bosselure sous-iléale — repère du voisinage immédiat de l'abouchement iléal.",
+      "en": "The inferomedial bulge curls under the lower border of the terminal ileum and forms the subileal bulge — a landmark of the immediate vicinity of the ileal opening."
+     }
+    },
+    {
+     "id": "taenia_hub",
+     "x": 360,
+     "y": 318,
+     "w": 280,
+     "label": "TÆNIAS COLIQUES",
+     "sub": "3 bandelettes musculaires",
+     "label_en": "TAENIAE COLI",
+     "sub_en": "3 muscular bands",
+     "lvl": "taenia",
+     "desc": {
+      "fr": "Le corps est parcouru en surface par 3 bandelettes musculaires : antérieure, postéro-externe et postéro-interne. Elles convergent vers la base de l'appendice — repère chirurgical de l'appendice.",
+      "en": "The body is crossed on its surface by 3 muscular bands: anterior, posterolateral and posteromedial. They converge towards the base of the appendix — a surgical landmark for the appendix."
+     }
+    },
+    {
+     "id": "taenia_libre",
+     "x": 120,
+     "y": 408,
+     "w": 210,
+     "label": "Tænia libre",
+     "sub": "bandelette antérieure",
+     "label_en": "Free taenia",
+     "sub_en": "anterior band",
+     "lvl": "taenia",
+     "desc": {
+      "fr": "Bandelette antérieure du cæcum, visible en vue antérieure ; elle correspond au tænia libre (free_taenia dans l'audit). Elle descend vers le point de convergence appendiculaire.",
+      "en": "Anterior band of the caecum, visible in anterior view; it corresponds to the free taenia (free_taenia in the audit). It descends towards the appendiceal convergence point."
+     }
+    },
+    {
+     "id": "taenia_omentale",
+     "x": 360,
+     "y": 408,
+     "w": 210,
+     "label": "Tænia omentale",
+     "sub": "bandelette postéro-externe",
+     "label_en": "Omental taenia",
+     "sub_en": "posterolateral band",
+     "lvl": "taenia",
+     "desc": {
+      "fr": "Bandelette postéro-externe du cæcum ; elle correspond au tænia omental (omental_taenia dans l'audit), repère de la face postéro-externe du côlon.",
+      "en": "Posterolateral band of the caecum; it corresponds to the omental taenia (omental_taenia in the audit), a landmark of the posterolateral aspect of the colon."
+     }
+    },
+    {
+     "id": "taenia_mesocolique",
+     "x": 600,
+     "y": 408,
+     "w": 210,
+     "label": "Tænia mésocolique",
+     "sub": "bandelette postéro-interne",
+     "label_en": "Mesocolic taenia",
+     "sub_en": "posteromedial band",
+     "lvl": "taenia",
+     "desc": {
+      "fr": "Bandelette postéro-interne du cæcum ; elle correspond au tænia mésocolique (mesocolic_taenia dans l'audit), du côté de l'attache du mésocôlon.",
+      "en": "Posteromedial band of the caecum; it corresponds to the mesocolic taenia (mesocolic_taenia in the audit), on the side of the mesocolic attachment."
+     }
+    },
+    {
+     "id": "convergence",
+     "x": 360,
+     "y": 498,
+     "w": 260,
+     "label": "Convergence des tænias",
+     "sub": "base de l'appendice",
+     "label_en": "Convergence of the taeniae",
+     "sub_en": "base of the appendix",
+     "lvl": "taenia",
+     "desc": {
+      "fr": "Les 3 bandelettes convergent vers la base de l'appendice, sur la face interne du cæcum, à 3 cm au-dessous de l'abouchement iléal : suivre un tænia conduit à l'appendice.",
+      "en": "The 3 bands converge towards the base of the appendix, on the medial surface of the caecum, 3 cm below the ileal opening: following a taenia leads to the appendix."
+     }
+    },
+    {
+     "id": "ileon",
+     "x": 120,
+     "y": 588,
+     "w": 210,
+     "label": "Iléon terminal",
+     "sub": "abouchement face interne",
+     "label_en": "Terminal ileum",
+     "sub_en": "opens on the medial surface",
+     "lvl": "interne",
+     "desc": {
+      "fr": "L'iléon s'abouche à la face interne du cæcum, où il forme avec celui-ci l'angle iléo-cæcal ouvert en bas et à gauche.",
+      "en": "The ileum opens on the medial surface of the caecum, where it forms with it the ileocaecal angle, open downwards and to the left."
+     }
+    },
+    {
+     "id": "orifice_ileocaecal",
+     "x": 360,
+     "y": 588,
+     "w": 210,
+     "label": "Orifice iléo-cæcal",
+     "sub": "valvule de Bauhin",
+     "label_en": "Ileocaecal orifice",
+     "sub_en": "Bauhin's (ileocaecal) valve",
+     "lvl": "interne",
+     "desc": {
+      "fr": "Premier des 2 orifices, de haut en bas : l'orifice iléo-cæcal, muni d'un sphincter lisse très puissant et d'une valvule iléo-cæcale (valvule de Bauhin). Non modélisée en 3D selon l'audit — elle n'existe ici qu'en schéma.",
+      "en": "First of the 2 orifices, from above downwards: the ileocaecal orifice, provided with a very powerful smooth sphincter and an ileocaecal valve (Bauhin's valve). Not modelled in 3D according to the audit — it exists here only as a diagram."
+     }
+    },
+    {
+     "id": "orifice_appendiculaire",
+     "x": 600,
+     "y": 588,
+     "w": 210,
+     "label": "Orifice appendiculaire",
+     "sub": "valvule de Gerlach (inconstante)",
+     "label_en": "Appendiceal orifice",
+     "sub_en": "Gerlach's valve (inconstant)",
+     "lvl": "interne",
+     "desc": {
+      "fr": "Deuxième orifice, au-dessous de l'orifice iléal : l'orifice appendiculaire, parfois muni d'un repli muqueux, la valvule de Gerlach.",
+      "en": "Second orifice, below the ileal orifice: the appendiceal orifice, sometimes provided with a mucosal fold, Gerlach's valve."
+     }
+    },
+    {
+     "id": "appendice",
+     "x": 180,
+     "y": 688,
+     "w": 230,
+     "label": "Appendice vermiculaire",
+     "sub": "diverticule · face interne, −3 cm",
+     "label_en": "Vermiform appendix",
+     "sub_en": "diverticulum · medial surface, 3 cm below",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "L'appendice s'abouche au-dessous de l'orifice iléal : diverticule creux implanté sur la face interne du cæcum, au point de convergence des 3 bandelettes, à 3 cm au-dessous de l'abouchement iléal.",
+      "en": "The appendix opens below the ileal orifice: a hollow diverticulum implanted on the medial surface of the caecum, at the convergence point of the 3 bands, 3 cm below the ileal opening."
+     }
+    },
+    {
+     "id": "meso_appendice",
+     "x": 540,
+     "y": 688,
+     "w": 230,
+     "label": "Méso-appendice",
+     "sub": "repli péritonéal de l'appendice",
+     "label_en": "Meso-appendix",
+     "sub_en": "peritoneal fold of the appendix",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "L'appendice est suspendu par son méso-appendice (meso_appendix dans l'audit), repli péritonéal qui le relie à l'iléon terminal et au cæcum et qui contient ses vaisseaux.",
+      "en": "The appendix is suspended by its meso-appendix (meso_appendix in the audit), a peritoneal fold linking it to the terminal ileum and caecum and containing its vessels."
+     }
+    },
+    {
+     "id": "artere_appendiculaire",
+     "x": 180,
+     "y": 782,
+     "w": 230,
+     "label": "Artère appendiculaire",
+     "sub": "dans le méso-appendice",
+     "label_en": "Appendicular artery",
+     "sub_en": "within the meso-appendix",
+     "lvl": "appendice",
+     "desc": {
+      "fr": "L'artère appendiculaire chemine dans le méso-appendice jusqu'à l'appendice. Elle n'est pas individualisée comme maillage propre dans l'audit : elle est montrée en schéma, contenue dans le méso-appendice.",
+      "en": "The appendicular artery runs within the meso-appendix to the appendix. It is not individualized as its own mesh in the audit: it is shown diagrammatically, contained in the meso-appendix."
+     }
+    },
+    {
+     "id": "tuniques",
+     "x": 540,
+     "y": 782,
+     "w": 230,
+     "label": "4 tuniques",
+     "sub": "séreuse · musculeuse · sous-muq. · muqueuse",
+     "label_en": "4 coats",
+     "sub_en": "serosa · muscularis · submucosa · mucosa",
+     "lvl": "interne",
+     "desc": {
+      "fr": "Le cæcum comprend 4 tuniques : séreuse, musculeuse (2 couches de fibres), sous-muqueuse et muqueuse, riche en follicules lymphoïdes au niveau de l'appendice (plaque de Peyer du cours).",
+      "en": "The caecum has 4 coats: serosa, muscularis (2 fibre layers), submucosa and mucosa, rich in lymphoid follicles at the appendix (the course's Peyer's patch)."
+     }
+    }
+   ],
+   "edges": [
+    [
+     "cae_hub",
+     "corps"
+    ],
+    [
+     "cae_hub",
+     "fond"
+    ],
+    [
+     "corps",
+     "haustrations"
+    ],
+    [
+     "corps",
+     "bosselure_sous_ileale",
+     1
+    ],
+    [
+     "fond",
+     "bosselure_sous_ileale",
+     1
+    ],
+    [
+     "corps",
+     "taenia_hub"
+    ],
+    [
+     "taenia_hub",
+     "taenia_libre"
+    ],
+    [
+     "taenia_hub",
+     "taenia_omentale"
+    ],
+    [
+     "taenia_hub",
+     "taenia_mesocolique"
+    ],
+    [
+     "taenia_libre",
+     "convergence"
+    ],
+    [
+     "taenia_omentale",
+     "convergence",
+     1
+    ],
+    [
+     "taenia_mesocolique",
+     "convergence",
+     1
+    ],
+    [
+     "ileon",
+     "orifice_ileocaecal"
+    ],
+    [
+     "orifice_ileocaecal",
+     "orifice_appendiculaire"
+    ],
+    [
+     "convergence",
+     "appendice"
+    ],
+    [
+     "orifice_appendiculaire",
+     "appendice",
+     1
+    ],
+    [
+     "appendice",
+     "meso_appendice"
+    ],
+    [
+     "meso_appendice",
+     "artere_appendiculaire"
+    ],
+    [
+     "cae_hub",
+     "tuniques",
+     1
+    ],
+    [
+     "appendice",
+     "tuniques",
+     1
+    ]
+   ]
+  }
+ },
+ "notes": "Topic 38 (Partie VII), figs 110-111, both 3D+D, anterior view per audit preset.vue='antérieure'. The caecum itself has NO dedicated mesh in the manifest (audit manquants, both figures): it rides with ascending_colon / ileocecal_junction — no caecum mesh is claimed in either diagram; the diagrams carry the scheme content, the 3D scene only shows appendix, ileocaecal junction, distal ileum, meso-appendix, taeniae and ascending colon. No frequencies/percentages are given in the course text, so none were invented: only the course's own qualifiers are used (normale, exceptionnelle). Taenia mapping (judgment call): course anterior/postero-external/postero-internal = free / omental / mesocolic taenia of the audit. Appendicular artery is diagram-only, contained in the meso-appendix, not an audited mesh."
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voies biliaires — schéma interactif — Schéma interactif (Batch D)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Georgia, 'Times New Roman', serif;
+         background:#101418; color:#eef2f5; }
+  header { padding:14px 16px 6px; }
+  h1 { font-size:19px; margin:0 0 4px; font-weight:600; }
+  .sous { color:#9fb2c1; font-size:13px; font-style:italic; }
+  #legende { display:flex; flex-wrap:wrap; gap:6px; padding:8px 16px; }
+  .chip { font-size:12px; padding:3px 9px; border-radius:20px;
+          border:1px solid #3a4652; }
+  .chip i { display:inline-block; width:9px; height:9px; border-radius:50%;
+             margin-right:5px; }
+  #wrap { padding:4px 8px; }
+  svg { width:100%; height:auto; display:block; }
+  .edge { fill:none; stroke:#5d6d7e; stroke-width:2; opacity:.55; }
+  .edge.sec { stroke-dasharray:5 5; opacity:.4; }
+  .edge.on { stroke:#ffd166; stroke-width:3.5; opacity:1; }
+  .nd { cursor:pointer; }
+  .nd rect, .nd circle { stroke-width:1.6; }
+  .nd text { fill:#10151a; font-family: Georgia, serif; pointer-events:none; }
+  .nd .lb { font-size:14.5px; font-weight:700; }
+  .nd .sb { font-size:11px; font-style:italic; fill:#26313b; }
+  svg.dim .nd { opacity:.28; } svg.dim .edge { opacity:.12; }
+  svg.dim .nd.on, svg.dim .nd.linked { opacity:1; }
+  #fiche { margin:10px 12px 20px; padding:13px 15px; background:#182029;
+            border:1px solid #2c3947; border-radius:10px; min-height:86px; }
+  #fiche h2 { margin:0 0 2px; font-size:17px; }
+  #fiche .sub { color:#9fb2c1; font-style:italic; font-size:13px;
+                 margin-bottom:6px; }
+  #fiche p { margin:0; font-size:14.5px; line-height:1.5; }
+  #fiche .note3d { margin-top:8px; font-size:12.5px; color:#ffd166; }
+  #fiche .vide { color:#9fb2c1; font-style:italic; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Voies biliaires — schéma interactif</h1>
+  <div class="sous">Figure 77 — Voies biliaires — toucher un élément pour le surligner et lire sa fiche.</div>
+</header>
+<div id="legende"></div>
+<div id="wrap"><svg id="svg" viewBox="0 0 720 810" role="img"></svg></div>
+<section id="fiche"><p class="vide">Aucun élément sélectionné.</p></section>
+<script>
+const D = {"titre_fr": "Voies biliaires — schéma interactif", "titre_en": "Biliary tract — interactive diagram", "w": 720, "h": 810, "levels": {"intra": {"c": "#9db1cc", "fr": "Voies intra-hépatiques", "en": "Intrahepatic ducts"}, "hepatique": {"c": "#58d68d", "fr": "Canaux hépatiques", "en": "Hepatic ducts"}, "vesicule": {"c": "#4fc3f7", "fr": "Vésicule et canal cystique", "en": "Gallbladder and cystic duct"}, "choledoque": {"c": "#f0a13c", "fr": "Voie biliaire principale", "en": "Main bile duct"}, "pancreas": {"c": "#b388ff", "fr": "Canal pancréatique", "en": "Pancreatic duct"}, "duodenum": {"c": "#e57373", "fr": "Terminaison duodénale", "en": "Duodenal termination"}}, "nodes": [{"id": "canalic", "x": 105, "y": 110, "w": 180, "label": "Canalicules", "sub": "biliaires intra-hépatiques", "label_en": "Biliary canaliculi", "sub_en": "intrahepatic", "lvl": "intra", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Canalicules biliaires — les plus fins conduits intra-hépatiques : ils collectent la bile produite par le parenchyme hépatique et convergent, de segment en segment, vers les canaux hépatiques droit et gauche. Aucun maillage dédié dans la scène de la fig. 77 : schéma seul.", "en": "Biliary canaliculi — the finest intrahepatic ducts: they collect the bile produced by the liver parenchyma and converge, segment by segment, towards the right and left hepatic ducts. No dedicated mesh in the fig. 77 scene: diagram only."}}, {"id": "ch_d", "x": 285, "y": 205, "w": 170, "label": "Canal hépatique", "sub": "droit", "label_en": "Right hepatic", "sub_en": "duct", "lvl": "hepatique", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Canal hépatique droit — il draine les conduits biliaires du foie droit et rejoint le canal hépatique gauche au niveau du hile pour former le canal hépatique commun (cours Q27). ABSENT du manifeste (audit fig. 77) : ce conduit n'existe pas dans la scène 3D, il est porté par ce schéma seul.", "en": "Right hepatic duct — it drains the bile ducts of the right liver and joins the left hepatic duct at the hilum to form the common hepatic duct (course Q27). ABSENT from the manifest (audit fig. 77): this duct does not exist in the 3D scene and is carried by this diagram only."}}, {"id": "ch_g", "x": 285, "y": 335, "w": 170, "label": "Canal hépatique", "sub": "gauche", "label_en": "Left hepatic", "sub_en": "duct", "lvl": "hepatique", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Canal hépatique gauche — il draine les conduits biliaires du foie gauche et rejoint le canal hépatique droit au niveau du hile pour former le canal hépatique commun (cours Q27). ABSENT du manifeste (audit fig. 77) : schéma seul, aucun maillage 3D correspondant.", "en": "Left hepatic duct — it drains the bile ducts of the left liver and joins the right hepatic duct at the hilum to form the common hepatic duct (course Q27). ABSENT from the manifest (audit fig. 77): diagram only, no corresponding 3D mesh."}}, {"id": "chc", "x": 460, "y": 270, "w": 170, "label": "Canal hépatique", "sub": "commun", "label_en": "Common hepatic", "sub_en": "duct", "lvl": "hepatique", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Canal hépatique commun — il naît au niveau du hile, par la réunion des 2 canaux hépatiques droit et gauche ; il reçoit sur son bord droit, en bas du pédicule hépatique, le canal cystique, et devient alors le canal cholédoque (cours Q27). ABSENT du manifeste (audit fig. 77) : schéma seul.", "en": "Common hepatic duct — it arises at the hilum, from the union of the right and left hepatic ducts; it receives the cystic duct on its right border, at the lower part of the hepatic pedicle, and then becomes the common bile duct (course Q27). ABSENT from the manifest (audit fig. 77): diagram only."}}, {"id": "vesicule", "x": 285, "y": 545, "w": 170, "label": "Vésicule biliaire", "sub": "réservoir de la bile", "label_en": "Gallbladder", "sub_en": "bile reservoir", "lvl": "vesicule", "desc": {"fr": "Vésicule biliaire — réservoir de la bile, appliquée à la face inférieure du foie ; sa fossette (fossette cystique) est le repère de surface de la scissure portale principale (cours Q26). Elle se vide par le canal cystique. Présente en 3D (gallbladder), sujet de la fig. 77.", "en": "Gallbladder — reservoir of bile, applied to the inferior face of the liver; its fossa (cystic fossa) is the surface landmark of the main portal scissura (course Q26). It empties through the cystic duct. Present in 3D (gallbladder), subject of fig. 77."}}, {"id": "cystique", "x": 460, "y": 545, "w": 160, "label": "Canal cystique", "sub": "col de la vésicule → hépatique commun", "label_en": "Cystic duct", "sub_en": "neck of gallbladder → common hepatic", "lvl": "vesicule", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Canal cystique — il relie le col de la vésicule biliaire au canal hépatique commun ; sa jonction, sur le bord droit du canal hépatique commun en bas du pédicule, marque la naissance du cholédoque (cours Q27). ABSENT du manifeste (audit fig. 77) : ne pas le chercher dans la scène 3D, il n'existe qu'ici, en schéma.", "en": "Cystic duct — it connects the neck of the gallbladder to the common hepatic duct; its junction, on the right border of the common hepatic duct at the lower pedicle, marks the origin of the common bile duct (course Q27). ABSENT from the manifest (audit fig. 77): do not look for it in the 3D scene, it exists here only, as a diagram."}}, {"id": "chod", "x": 635, "y": 390, "w": 160, "label": "Canal cholédoque", "sub": "voie biliaire principale", "label_en": "Common bile duct", "sub_en": "main biliary tract", "lvl": "choledoque", "desc": {"fr": "Canal cholédoque (canal hépato-cholédoque, voie biliaire principale) — il descend à droite de l'artère hépatique et en avant de la veine porte, quitte le pédicule hépatique, passe derrière le 1er duodénum (D1), chemine à la face postérieure du pancréas et se termine à la face interne du 2e duodénum (D2), au niveau de l'ampoule de Vater, avec le canal de Wirsung (cours Q27). En 3D, c'est le maillage bile_duct, sujet de la fig. 77.", "en": "Common bile duct (hepato-choledochal duct, main biliary tract) — it descends to the right of the hepatic artery and in front of the portal vein, leaves the hepatic pedicle, passes behind the first part of the duodenum (D1), runs on the posterior face of the pancreas and ends at the inner face of the second part of the duodenum (D2), at the ampulla of Vater, together with the duct of Wirsung (course Q27). In 3D this is the bile_duct mesh, subject of fig. 77."}}, {"id": "wirsung", "x": 460, "y": 715, "w": 170, "label": "Canal de Wirsung", "sub": "canal pancréatique principal", "label_en": "Duct of Wirsung", "sub_en": "main pancreatic duct", "lvl": "pancreas", "note": {"fr": "Hors fig. 77 — schéma seul", "en": "Outside fig. 77 — diagram only"}, "desc": {"fr": "Canal pancréatique principal (canal de Wirsung) — il débute au niveau de la queue du pancréas, se dirige vers la tête et rejoint le canal cholédoque pour former l'ampoule hépato-pancréatique (cours Q25, loge duodéno-pancréatique). Il n'appartient pas à la scène de la fig. 77 : il n'apparaît ici que parce que la terminaison biliaire est commune avec lui.", "en": "Main pancreatic duct (duct of Wirsung) — it begins at the tail of the pancreas, runs towards the head and joins the common bile duct to form the hepatopancreatic ampulla (course Q25, duodenopancreatic region). It does not belong to the fig. 77 scene: it appears here only because the biliary termination is shared with it."}}, {"id": "ampoule", "x": 635, "y": 610, "w": 160, "label": "Ampoule", "sub": "hépato-pancréatique (Vater)", "label_en": "Hepatopancreatic", "sub_en": "ampulla (of Vater)", "lvl": "duodenum", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Ampoule hépato-pancréatique (ampoule de Vater) — réunion terminale du canal cholédoque et du canal de Wirsung, munie d'un sphincter, le sphincter d'Oddi (cours Q25) ; elle s'ouvre dans le 2e duodénum au niveau de la grande caroncule. Aucun maillage dédié : schéma seul.", "en": "Hepatopancreatic ampulla (ampulla of Vater) — terminal union of the common bile duct and the duct of Wirsung, provided with a sphincter, the sphincter of Oddi (course Q25); it opens into the second part of the duodenum at the major caruncle. No dedicated mesh: diagram only."}}, {"id": "caroncule", "x": 635, "y": 745, "w": 160, "label": "Grande caroncule", "sub": "face interne de D2", "label_en": "Major caruncle", "sub_en": "inner face of D2", "lvl": "duodenum", "note": {"fr": "Pas de maillage 3D — schéma seul", "en": "No 3D mesh — diagram only"}, "desc": {"fr": "Grande caroncule — éminence de la muqueuse duodénale, à la face interne du 2e duodénum, par laquelle l'ampoule de Vater s'ouvre dans le duodénum ; elle représente un repère important en chirurgie endoscopique. Le canal pancréatique accessoire (de Santorini) s'ouvre par la petite caroncule, située à 2,5 cm au-dessus (cours Q25). Aucun maillage dédié : schéma seul.", "en": "Major caruncle (major duodenal papilla) — eminence of the duodenal mucosa, on the inner face of the second part of the duodenum, through which the ampulla of Vater opens into the duodenum; it is an important landmark in endoscopic surgery. The accessory pancreatic duct (of Santorini) opens through the minor caruncle, 2.5 cm above it (course Q25). No dedicated mesh: diagram only."}}], "edges": [["canalic", "ch_d"], ["canalic", "ch_g"], ["ch_d", "chc"], ["ch_g", "chc"], ["chc", "chod"], ["vesicule", "cystique"], ["cystique", "chod"], ["chod", "ampoule"], ["wirsung", "ampoule"], ["ampoule", "caroncule"]]};
+const svg = document.getElementById('svg');
+const NS = 'http://www.w3.org/2000/svg';
+const nodes = {}; D.nodes.forEach(n => nodes[n.id] = n);
+const HW = n => n.r ? n.r : (n.w || 120) / 2;
+const HH = n => n.r ? n.r : 27;
+document.getElementById('legende').innerHTML =
+  Object.values(D.levels).map(l =>
+    `<span class="chip"><i style="background:${l.c}"></i>${l.fr}</span>`).join('');
+function el(tag, attrs) { const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]); return e; }
+D.edges.forEach(e => {
+  const [a, b, sec] = e, A = nodes[a], B = nodes[b];
+  const x1 = A.x + HW(A), y1 = A.y, x2 = B.x - HW(B), y2 = B.y;
+  const dx = Math.max(24, Math.abs(x2 - x1) / 2);
+  const p = el('path', { d: `M${x1},${y1} C${x1+dx},${y1} ${x2-dx},${y2} ${x2},${y2}`,
+    class: 'edge' + (sec ? ' sec' : ''), 'data-a': a, 'data-b': b });
+  svg.appendChild(p);
+});
+D.nodes.forEach(n => {
+  const g = el('g', { class: 'nd', 'data-id': n.id });
+  const col = (D.levels[n.lvl] || {}).c || '#ccc';
+  if (n.r) {
+    g.appendChild(el('circle', { cx: n.x, cy: n.y, r: n.r + 5, fill: col, stroke: '#0c1013' }));
+    const t = el('text', { x: n.x, y: n.y + n.r + 22, 'text-anchor': 'middle', class: 'lb' });
+    t.setAttribute('fill', '#eef2f5'); t.textContent = n.label; g.appendChild(t);
+  } else {
+    g.appendChild(el('rect', { x: n.x - HW(n), y: n.y - HH(n), width: n.w || 120,
+      height: HH(n) * 2, rx: 9, fill: col, stroke: '#0c1013' }));
+    const t = el('text', { x: n.x, y: n.y - (n.sub ? 2 : -5), 'text-anchor': 'middle', class: 'lb' });
+    t.textContent = n.label; g.appendChild(t);
+    if (n.sub) { const s = el('text', { x: n.x, y: n.y + 15, 'text-anchor': 'middle', class: 'sb' });
+      s.textContent = n.sub; g.appendChild(s); }
+  }
+  g.addEventListener('click', () => select(n.id));
+  svg.appendChild(g);
+});
+function select(id) {
+  const f = document.getElementById('fiche'), n = nodes[id];
+  const linked = new Set([id]);
+  document.querySelectorAll('.edge').forEach(p => {
+    const on = p.dataset.a === id || p.dataset.b === id;
+    p.classList.toggle('on', on);
+    if (on) { linked.add(p.dataset.a); linked.add(p.dataset.b); }
+  });
+  document.querySelectorAll('.nd').forEach(g => {
+    g.classList.toggle('on', g.dataset.id === id);
+    g.classList.toggle('linked', linked.has(g.dataset.id) && g.dataset.id !== id);
+  });
+  svg.classList.add('dim');
+  f.innerHTML = `<h2>${n.label}</h2>` +
+    (n.sub ? `<div class="sub">${n.sub}</div>` : '') +
+    `<p>${(n.desc && n.desc.fr) || ''}</p>` +
+    (n.note ? `<div class="note3d">⚠ ${n.note}</div>` : '');
+}
+window.__diagramReady = true;
+</script>
+<a href="../../index.html" style="position:fixed;left:10px;bottom:10px;z-index:99;background:rgba(13,24,42,.92);color:#f0a13c;border:1px solid rgba(240,161,60,.5);border-radius:999px;padding:8px 14px;font:600 13px system-ui;text-decoration:none">← Tous les sujets</a></body>
+</html>

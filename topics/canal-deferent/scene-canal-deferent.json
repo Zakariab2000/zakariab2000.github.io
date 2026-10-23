@@ -1,0 +1,420 @@
+{
+ "sujet": "canal-deferent",
+ "titre_fr": "Le canal déférent",
+ "partie": "V",
+ "numero_sujet": 33,
+ "classe": "3D",
+ "figures": [
+  95,
+  96,
+  97
+ ],
+ "structures": [
+  {
+   "id": "external_iliac_artery_right",
+   "nom_fr": "Artère iliaque externe",
+   "role": "sujet",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "right_testicular_artery",
+   "nom_fr": "Artère testiculaire droite",
+   "role": "sujet",
+   "figures": [
+    96
+   ]
+  },
+  {
+   "id": "inferior_epigastric_artery_right",
+   "nom_fr": "Artère épigastrique inférieure",
+   "role": "sujet",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "ductus_deferens_right",
+   "nom_fr": "Canal déférent",
+   "role": "sujet",
+   "figures": [
+    95,
+    96,
+    97
+   ]
+  },
+  {
+   "id": "ductus_deferens_left",
+   "nom_fr": "Canal déférent",
+   "role": "sujet",
+   "figures": [
+    95
+   ]
+  },
+  {
+   "id": "epididymis_right",
+   "nom_fr": "Epididyme",
+   "role": "sujet",
+   "figures": [
+    95,
+    96
+   ]
+  },
+  {
+   "id": "epididymis_left",
+   "nom_fr": "Epididyme",
+   "role": "sujet",
+   "figures": [
+    95
+   ]
+  },
+  {
+   "id": "seminal_gland_right",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    95,
+    97
+   ]
+  },
+  {
+   "id": "seminal_gland_left",
+   "nom_fr": "Glande séminale",
+   "role": "sujet",
+   "figures": [
+    95
+   ]
+  },
+  {
+   "id": "prostate",
+   "nom_fr": "Prostate",
+   "role": "sujet",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "testis_right",
+   "nom_fr": "Testicule",
+   "role": "sujet",
+   "figures": [
+    95,
+    96
+   ]
+  },
+  {
+   "id": "testis_left",
+   "nom_fr": "Testicule",
+   "role": "sujet",
+   "figures": [
+    95
+   ]
+  },
+  {
+   "id": "ureter_right",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    95,
+    97
+   ]
+  },
+  {
+   "id": "ureter_left",
+   "nom_fr": "Uretère",
+   "role": "sujet",
+   "figures": [
+    95
+   ]
+  },
+  {
+   "id": "external_iliac_vein_right",
+   "nom_fr": "Veine iliaque externe",
+   "role": "sujet",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "left_testicular_vein",
+   "nom_fr": "Veine testiculaire gauche",
+   "role": "sujet",
+   "figures": [
+    96
+   ]
+  },
+  {
+   "id": "urinary_bladder",
+   "nom_fr": "Vessie urinaire",
+   "role": "sujet",
+   "figures": [
+    95,
+    97
+   ]
+  },
+  {
+   "id": "inguinal_ligament_right",
+   "nom_fr": "Ligament inguinal",
+   "role": "contexte",
+   "figures": [
+    95,
+    96
+   ]
+  },
+  {
+   "id": "hip_bone_right",
+   "nom_fr": "Os coxal",
+   "role": "contexte",
+   "figures": [
+    97
+   ]
+  },
+  {
+   "id": "rectum",
+   "nom_fr": "Rectum",
+   "role": "contexte",
+   "figures": [
+    97
+   ]
+  }
+ ],
+ "camera": {
+  "vue": "laterale",
+  "position": [
+   -695.1,
+   916.4,
+   229.9
+  ],
+  "target": [
+   -33.5,
+   850.2,
+   110.8
+  ]
+ },
+ "par_figure": {
+  "95": {
+   "titre_fr": "Origine et trajet du canal déférent",
+   "classe": "3D",
+   "vue": "laterale",
+   "camera": {
+    "vue": "laterale",
+    "position": [
+     -695.1,
+     916.4,
+     229.9
+    ],
+    "target": [
+     -33.5,
+     850.2,
+     110.8
+    ]
+   },
+   "structures": [
+    {
+     "id": "ductus_deferens_right",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "ductus_deferens_left",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "epididymis_right",
+     "nom_fr": "Epididyme",
+     "role": "sujet"
+    },
+    {
+     "id": "epididymis_left",
+     "nom_fr": "Epididyme",
+     "role": "sujet"
+    },
+    {
+     "id": "testis_right",
+     "nom_fr": "Testicule",
+     "role": "sujet"
+    },
+    {
+     "id": "testis_left",
+     "nom_fr": "Testicule",
+     "role": "sujet"
+    },
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_right",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_left",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_right",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_left",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "inguinal_ligament_right",
+     "nom_fr": "Ligament inguinal",
+     "role": "contexte"
+    },
+    {
+     "id": "prostate",
+     "nom_fr": "Prostate",
+     "role": "contexte"
+    }
+   ],
+   "manquants": []
+  },
+  "96": {
+   "titre_fr": "Rapports du canal déférent dans le cordon spermatique",
+   "classe": "3D",
+   "vue": "anterieure",
+   "camera": {
+    "vue": "anterieure",
+    "position": [
+     -27.1,
+     913.5,
+     791.3
+    ],
+    "target": [
+     -27.1,
+     847.3,
+     129.3
+    ]
+   },
+   "structures": [
+    {
+     "id": "ductus_deferens_right",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "right_testicular_artery",
+     "nom_fr": "Artère testiculaire droite",
+     "role": "sujet"
+    },
+    {
+     "id": "left_testicular_vein",
+     "nom_fr": "Veine testiculaire gauche",
+     "role": "sujet"
+    },
+    {
+     "id": "epididymis_right",
+     "nom_fr": "Epididyme",
+     "role": "sujet"
+    },
+    {
+     "id": "testis_right",
+     "nom_fr": "Testicule",
+     "role": "sujet"
+    },
+    {
+     "id": "inguinal_ligament_right",
+     "nom_fr": "Ligament inguinal",
+     "role": "contexte"
+    },
+    {
+     "id": "inferior_epigastric_artery_right",
+     "nom_fr": "Artère épigastrique inférieure",
+     "role": "contexte"
+    }
+   ],
+   "manquants": [
+    "Plexus pampiniforme (l'élément veineux principal du cordon) : ABSENT — seule la veine testiculaire existe",
+    "Muscle crémastère et tuniques du cordon : ABSENTS"
+   ]
+  },
+  "97": {
+   "titre_fr": "Rapports des portions iliaque et pelvienne du canal déférent",
+   "classe": "3D",
+   "vue": "laterale",
+   "camera": {
+    "vue": "laterale",
+    "position": [
+     -667.4,
+     906.2,
+     212.3
+    ],
+    "target": [
+     -48.1,
+     844.2,
+     100.8
+    ]
+   },
+   "structures": [
+    {
+     "id": "ductus_deferens_right",
+     "nom_fr": "Canal déférent",
+     "role": "sujet"
+    },
+    {
+     "id": "ureter_right",
+     "nom_fr": "Uretère",
+     "role": "sujet"
+    },
+    {
+     "id": "external_iliac_artery_right",
+     "nom_fr": "Artère iliaque externe",
+     "role": "sujet"
+    },
+    {
+     "id": "external_iliac_vein_right",
+     "nom_fr": "Veine iliaque externe",
+     "role": "sujet"
+    },
+    {
+     "id": "urinary_bladder",
+     "nom_fr": "Vessie urinaire",
+     "role": "sujet"
+    },
+    {
+     "id": "seminal_gland_right",
+     "nom_fr": "Glande séminale",
+     "role": "sujet"
+    },
+    {
+     "id": "prostate",
+     "nom_fr": "Prostate",
+     "role": "sujet"
+    },
+    {
+     "id": "inferior_epigastric_artery_right",
+     "nom_fr": "Artère épigastrique inférieure",
+     "role": "sujet"
+    },
+    {
+     "id": "hip_bone_right",
+     "nom_fr": "Os coxal",
+     "role": "contexte"
+    },
+    {
+     "id": "rectum",
+     "nom_fr": "Rectum",
+     "role": "contexte"
+    }
+   ],
+   "manquants": []
+  }
+ },
+ "diagrammes": [],
+ "espaces": [],
+ "manquants": [
+  "Plexus pampiniforme (l'élément veineux principal du cordon) : ABSENT — seule la veine testiculaire existe",
+  "Muscle crémastère et tuniques du cordon : ABSENTS"
+ ],
+ "note_audit": "IDs et rôles repris tels quels de data/FIGURES-AUDIT.json (résolus contre app/manifest.json) — aucun ID inventé."
+}

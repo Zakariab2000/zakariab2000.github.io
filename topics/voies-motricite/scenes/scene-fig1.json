@@ -1,0 +1,138 @@
+{
+ "figure": 1,
+ "slug": "voie-proprioceptive-consciente",
+ "titre_fr": "Voies de la sensibilité proprioceptive consciente",
+ "titre_en": "Conscious proprioceptive sensory pathways",
+ "classe": "3D+D",
+ "diagram": "voie_proprio_consciente",
+ "diagram_file": "diagramme-voie-proprioceptive-consciente.html",
+ "camera": {
+  "vue": "posterieure",
+  "vue_audit": "postérieure (cordons postérieurs de la moelle) puis supérieure pour le relais thalamique"
+ },
+ "systemes": [
+  "cerveau",
+  "nerfs"
+ ],
+ "isoler": [
+  "Faisceaux gracile et cunéiforme",
+  "Thalamus",
+  "Gyrus postcentral"
+ ],
+ "structures": [
+  {
+   "id": "gracile_fasciculus",
+   "role": "sujet",
+   "nom_fr": "Faisceau gracile"
+  },
+  {
+   "id": "cuneate_fasciculus",
+   "role": "sujet",
+   "nom_fr": "Faisceau cunéïforme"
+  },
+  {
+   "id": "posterior_horn_of_spinal_cord",
+   "role": "sujet",
+   "nom_fr": "Corne postérieure de la moëlle épinière"
+  },
+  {
+   "id": "thalamus_right",
+   "role": "sujet",
+   "nom_fr": "Thalamus droit"
+  },
+  {
+   "id": "thalamus_left",
+   "role": "sujet",
+   "nom_fr": "Thalamus gauche"
+  },
+  {
+   "id": "postcentral_gyrus_right",
+   "role": "sujet",
+   "nom_fr": "Gyrus postcentral"
+  },
+  {
+   "id": "white_matter_of_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Substance blanche de la moëlle épinière"
+  },
+  {
+   "id": "rep_spinal_cord",
+   "role": "contexte",
+   "nom_fr": "Moëlle épinière (repère)"
+  }
+ ],
+ "manquants": [
+  "Noyaux gracile et cunéiforme (relais bulbaires du lemnisque médial) : ABSENTS du manifeste",
+  "Décussation des lemnisques (bulbe) : non modélisée"
+ ],
+ "fiche": {
+  "origine": "Récepteurs spécifiques para-articulaires (capsule articulaire, tendon, muscle, ligament). Le 1er neurone (N1) a son corps cellulaire dans le ganglion spinal ; son axone gagne le cordon postérieur homolatéral : faisceau de Goll en dedans (membre inférieur et tronc), faisceau de Burdach en dehors (membre supérieur et cou).",
+  "relais": "N2 : noyaux de Goll et de Burdach (bulbe). N3 : noyau ventral postéro-latéral (VPL) du thalamus.",
+  "decussation": "Au niveau du bulbe : l'axone du 2e neurone croise la ligne médiane (décussation des lemnisques) et constitue le ruban de Reil médian, placé en arrière du faisceau pyramidal, qui traverse les 3 étages du tronc cérébral.",
+  "terminaison": "Cortex sensitif primaire : circonvolution pariétale ascendante, aires 3, 1 et 2, selon une somatotopie très précise. Voie rapide, profonde et discriminative, à 3 neurones.",
+  "clinique": "L'atteinte du cordon postérieur donne une perte de la sensibilité profonde homolatérale à la lésion (syndrome cordonal postérieur) ; dans le syndrome de Brown-Séquard, elle s'associe à une paralysie homolatérale et à une atteinte de la sensibilité superficielle controlatérale (conclusion du cours, Q1)."
+ },
+ "note_3d": "MISE À JOUR tractographie : la voie est désormais en 3D réelle du bulbe au cortex (lemnisque médial + radiation thalamique postérieure, atlas ouvert HCP1065 recalé), en plus des rubans médullaires natifs. Le schéma reste le compagnon pour le segment périphérique et la décussation.",
+ "trajets_3d": [
+  {
+   "fichier": "tract_ml_left.glb",
+   "id": "tract_ml_left",
+   "nom_fr": "Lemnisque médial",
+   "name_en": "Medial lemniscus",
+   "cote": "left",
+   "role": "sujet",
+   "couleur": "#ffd740",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Bulbe (juste après la décussation des lemnisques) → pont → mésencéphale → thalamus (VPL) → radiation thalamo-corticale jusqu'au cortex sensitif",
+   "fiche_fr": "Le 2e neurone de la voie proprioceptive consciente, en vrai trajet 3D : le ruban de Reil médial monte du bulbe au VPL ; l'atlas de tractographie le suit jusqu'au cortex pariétal ascendant. Les fibres arquées internes de la décussation bulbaire ne sont pas individualisées."
+  },
+  {
+   "fichier": "tract_ml_right.glb",
+   "id": "tract_ml_right",
+   "nom_fr": "Lemnisque médial",
+   "name_en": "Medial lemniscus",
+   "cote": "right",
+   "role": "sujet",
+   "couleur": "#ffd740",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Bulbe (juste après la décussation des lemnisques) → pont → mésencéphale → thalamus (VPL) → radiation thalamo-corticale jusqu'au cortex sensitif",
+   "fiche_fr": "Le 2e neurone de la voie proprioceptive consciente, en vrai trajet 3D : le ruban de Reil médial monte du bulbe au VPL ; l'atlas de tractographie le suit jusqu'au cortex pariétal ascendant. Les fibres arquées internes de la décussation bulbaire ne sont pas individualisées."
+  },
+  {
+   "fichier": "tract_tr_p_left.glb",
+   "id": "tract_tr_p_left",
+   "nom_fr": "Radiation thalamique postérieure",
+   "name_en": "Posterior thalamic radiation",
+   "cote": "left",
+   "role": "sujet",
+   "couleur": "#40c4ff",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Thalamus postérieur (VPL/pulvinar) → cortex pariétal et occipital postérieur",
+   "fiche_fr": "Segment thalamo-cortical (3e neurone) : les radiations postérieures portent la somesthésie du VPL vers le cortex pariétal. Elles doublent la terminaison corticale du lemnisque médial."
+  },
+  {
+   "fichier": "tract_tr_p_right.glb",
+   "id": "tract_tr_p_right",
+   "nom_fr": "Radiation thalamique postérieure",
+   "name_en": "Posterior thalamic radiation",
+   "cote": "right",
+   "role": "sujet",
+   "couleur": "#40c4ff",
+   "source": "Trajet issu de tractographie IRM de diffusion — atlas ouvert HCP1065 (Yeh, Nat Commun 2022, CC BY-SA 4.0 ; données HCP WU-Minn), recalé dans l'espace de l'atlas (affine par repères, résidu moyen ~5 mm)",
+   "segment_couvert": "Thalamus postérieur (VPL/pulvinar) → cortex pariétal et occipital postérieur",
+   "fiche_fr": "Segment thalamo-cortical (3e neurone) : les radiations postérieures portent la somesthésie du VPL vers le cortex pariétal. Elles doublent la terminaison corticale du lemnisque médial."
+  }
+ ],
+ "statut_segments": {
+  "reel_3d": [
+   "Cordons postérieurs dans la moelle : rubans atlas gracile/cunéïforme (maillages natifs)",
+   "Lemnisque médial bulbe → thalamus (VPL) : tractographie HCP1065 recalée",
+   "Radiation thalamo-corticale (VPL → cortex sensitif) : tractographie (faisceau ML + radiation thalamique postérieure)"
+  ],
+  "schema_seul": [
+   "Récepteur → ganglion spinal → racine postérieure (segment périphérique, hors champ IRM cérébral)",
+   "Décussation des lemnisques : les fibres arquées internes ne sont pas individualisées dans l'atlas de tractographie",
+   "Noyaux gracile/cunéïforme : toujours absents comme maillages (relais indiqué dans le schéma)"
+  ]
+ }
+}
